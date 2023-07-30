@@ -1,0 +1,20 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+/* hidden section styles  */
+summary p{
+    display: inline-block;
+}

@@ -4,41 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <title>World Numerology Calculator</title>
 </head>
 <body>
     
     <header id="header">
-        <button>
+        <!-- <button>
             <i class="fa-sharp fa-solid fa-chevron-left"></i>
-            <h1>Chart Calculator</h1>
-        </button>
+        </button> -->
+        <h1>Chart Calculator</h1>
     </header>
 
+    <section class="main-body">
 
     <form class="form">
         <div class="styled-input">
-            <span>Current Name</span>
+            <span class="span">Current Name</span>
             <input type="text" id="cName" placeholder="current name" required>
         </div>
 
         <div class="styled-input">
-            <span>Full Name at Birth</span>
+            <span class="span">Full Name at Birth</span>
             <input type="text"  id="fName" placeholder="full name at birth" required>
         </div>
 
-        <div>
-            <span>Date of Birth</span>
-            <input type="date" id="dBirth" placeholder="dd/mm/yy"  required>
+        <div class="styled-input">
+            <span class="span">Date of Birth</span>
+            <input type="date" id="dBirth"  required>
         </div>
 
         <div class="trigger-btns">
-            <button type="submit" id="Calculate">Calculate</button>
-            <button id="reset">Reset</button>
+            <button type="submit" class="btn" id="calc">Calculate</button>
+            <button id="reset" class="btn">Reset</button>
         </div>
         
     </form>
@@ -54,7 +58,7 @@
             </summary>
             <p id="lpText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
         </details>
-    </section>
+    
 
     <!-- Birthday Number  -->
     <details>
@@ -87,9 +91,9 @@
     <details>
         <summary >
                 <p class="label">Soul Urge / Heart's Desire</p>
-                <p class="result" id="su/hdResult">10</p>
+                <p class="result" id="suhdResult">10</p>
         </summary>
-        <p id="su/hdText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+        <p id="suhdText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
     </details>
 
     <!-- Personality Number  -->
@@ -168,9 +172,18 @@
     <details>
         <summary >
                 <p class="label">Karmic Debt Number</p>
-                <p class="result" id="kbnResult">10</p>
+                <p class="result" id="kdnResult">10</p>
         </summary>
-        <p id="kbnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+        <p id="kdnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+    </details>
+
+    <!-- Karmic Lesson  -->
+    <details>
+        <summary >
+                <p class="label">Karmic Lesson</p>
+                <p class="result" id="kclResult">10</p>
+        </summary>
+        <p id="kclText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
     </details>
 
     <!-- Hidden Passion  -->
@@ -203,11 +216,96 @@
     <!-- Mental Plane of Expression  -->
     <details>
         <summary >
-                <p class="label">Mental </p>
-                <p class="result" id="blnResult">10</p>
+                <p class="label">Mental Plane of Expression</p>
+                <p class="result" id="mpeResult">10</p>
         </summary>
-        <p id="blnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+        <p id="mpeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
     </details>
+
+    <!-- Intuitive Plane of Expression  -->
+    <details>
+        <summary >
+                <p class="label">Intuitive Plane of Expression</p>
+                <p class="result" id="ipeResult">10</p>
+        </summary>
+        <p id="ipeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+    </details>
+    
+    <!-- Emotional Plane of Expression  -->
+    <details>
+        <summary >
+                <p class="label">Emotional Place of Expression</p>
+                <p class="result" id="epeResult">10</p>
+        </summary>
+        <p id="epeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+    </details>
+
+    <!-- Cornerstone  -->
+    <details>
+        <summary >
+                <p class="label">Cornerstone</p>
+                <p class="result" id="cstResult">10</p>
+        </summary>
+        <p id="cstText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+    </details>
+
+    <!--Personal Year Number  -->
+    <details>
+        <summary>
+                <p class="label">Personal Year Number</p>
+                <p class="result" id="pynResult">10</p>
+        </summary>
+        <p id="pynText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+    </details>
+
+    <!-- Essence Cycle  -->
+    <details>
+        <summary >
+                <p class="label">Essence Cycle</p>
+                <p class="result" id="ecResult">10</p>
+        </summary>
+        <p id="ecText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+    </details>
+
+    <!-- Transit Cycle  -->
+    <details>
+        <summary >
+                <p class="label">Transit Cycle</p>
+                <p class="result" id="ttcResult">10</p>
+        </summary>
+        <p id="ttcText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+    </details>
+
+    <!-- Period Cycle Number  -->
+    <details>
+        <summary >
+                <p class="label">Period Cycle Number</p>
+                <p class="result" id="pcnResult">10</p>
+        </summary>
+        <p id="pcnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+    </details>
+
+    <!-- Pinnacle Number  -->
+    <details>
+        <summary >
+                <p class="label">Pinnacle Number</p>
+                <p class="result" id="pnnResult">10</p>
+        </summary>
+        <p id="pnnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+    </details>
+
+    <!-- Challenge Number  -->
+    <details>
+        <summary >
+                <p class="label">Challenge Number</p>
+                <p class="result" id="clnResult">10</p>
+        </summary>
+        <p id="clnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+    </details>
+
+    </section>
+
+    </section>
 
     
   <script src="index.js">

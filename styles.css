@@ -184,6 +184,10 @@ details p {
     border: 1px solid grey;
 }
 
+.lined p{
+    border: 1px solid grey;
+}
+
 .cols3-equal {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

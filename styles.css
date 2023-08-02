@@ -180,11 +180,11 @@ details p {
 }
 
 
-.lines {
+.lined {
     border: 1px solid grey;
 }
 
-.3cols-equal {
+.cols3-equal {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;

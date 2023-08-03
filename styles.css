@@ -210,8 +210,14 @@ details p {
 
 .s-row {
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: 4fr .5fr .5fr;
 }
+
+/* .s-row p {
+    border: 1px solid transparent;
+} */
+
+
 
 .bold-head p {
     text-align: center;

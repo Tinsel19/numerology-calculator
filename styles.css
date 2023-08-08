@@ -143,9 +143,8 @@ input:focus {
 .hide {
     box-shadow: 5px 5px 7px grey;
     border-radius: 10px;
-    display: none;
+    /* display: none; */
     padding: 1rem;
-    display: none;
     
 }
 
@@ -189,9 +188,21 @@ details p {
     padding: .2rem;
 }
 
+#cols3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+#cols3 p {
+    padding: 10px;    
+}
+
 .cols3-equal {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 .top-margin{
@@ -213,11 +224,11 @@ details p {
     grid-template-columns: 4fr .5fr .5fr;
 }
 
-/* .s-row p {
-    border: 1px solid transparent;
-} */
-
-
+.bold-head {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .bold-head p {
     text-align: center;
@@ -226,4 +237,23 @@ details p {
 
 
 
+.med {
+    margin-top: 2px px solid white;
+}
+.line1 {
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+.line1p {
+    border-right: 2px solid grey;
+}
+
+.line2p {
+    border-right: 2px solid grey;
+}
+.line3p {
+    border-left: 2px solid grey;
+}
 

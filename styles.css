@@ -238,22 +238,49 @@ details p {
 
 
 .med {
-    margin-top: 2px px solid white;
+    margin-top: 2px px solid grey;
 }
 .line1 {
     border-top: 1px solid grey;
     border-right: 1px solid grey;
     border-left: 1px solid grey;
+    
+}
+
+.line1 {
+    border: 2px solid grey;
 }
 
 .line1p {
-    border-right: 2px solid grey;
+    border-right: 1px solid grey;
 }
 
 .line2p {
-    border-right: 2px solid grey;
+    border-right: 1px solid grey;
 }
 .line3p {
-    border-left: 2px solid grey;
+    border-left: 1px solid grey;
 }
+
+.padlow p{
+    padding-bottom: .1rem; 
+}
+
+.textpad {
+    padding-left: 1rem;
+    padding-bottom: .2rem;
+}
+
+.head1 {
+    border: 2px solid grey;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.head2 {
+    border: 2px solid grey;
+    border-right: 1px solid transparent;
+}
+
+
 

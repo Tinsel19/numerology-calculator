@@ -7,92 +7,105 @@ var cName = document.getElementById('cName');
 var fName = document.getElementById('fName');
 var dBrith = document.getElementById('dBirth');
 
-var lpResult = document.getElementById('lpResult');
+var lpNum = document.getElementById('lpNum')
 var lpText = document.getElementById('lpText');
 
-var bnResult = document.getElementById('bnResult');
-var bnText = document.getElementById('bnText');
+var bdNum = document.getElementById('bdNum');
+var bdnText = document.getElementById('bdText');
 
-var bdnResult = document.getElementById('bdnResult');
-var bdnText = document.getElementById('bdnText');
+var edNum= document.getElementById('edNum');
+var medNum = document.getElementById('medNum');
+var emeText = document.getElementById('emeText');
 
-var ednResult = document.getElementById('ednResult');
-var ednText = document.getElementById('ednText');
-
-var suhdResult = document.getElementById('suhdResult');
 var suhdText = document.getElementById('suhdText');
+var suhdNum = document.getElementById('suhdNum');
+var msuhdNum = document.getElementById('msuhdNum');
 
-var pnResult = document.getElementById('pnResult');
-var pnText = document.getElementById('pnText');
+var pNum = document.getElementById('pNum');
+var perText = document.getElementById('perText');
+var mpNum = document.getElementById('mpNum');
 
-var mnResult = document.getElementById('mnResult');
-var mnText = document.getElementById('mnText');
+var mText = document.getElementById('mText');
+var mNum = document.getElementById('mNum');
 
-var anResult = document.getElementById('anResult');
-var anText = document.getElementById('anText');
+var aText = document.getElementById('aText');
+var aNum = document.getElementById('aNum');
 
-var lpebResult = document.getElementById('lpebResult');
+var lpebNum = document.getElementById('lpebNum');
 var lpebText = document.getElementById('lpebText');
 
-var hdpbResult = document.getElementById('hdpbResult');
+var hdpbNum = document.getElementById('hdpbNum');
 var hdpbText = document.getElementById('hdpbText');
 
-var rtnResult = document.getElementById('rtnResult');
+var rtNum = document.getElementById('rtnNum');
 var rtnText = document.getElementById('rtnText');
 
-var blnResult = document.getElementById('blnResult');
-var blnText = document.getElementById('blnText');
+var bnNum = document.getElementById('bnNum');
+var bnText = document.getElementById('bnText');
 
-var ssnResult = document.getElementById('ssnResult');
-var ssnText = document.getElementById('ssnText');
+var ssNum = document.getElementById('ssNum');
+var ssText = document.getElementById('ssText');
 
-var kdnResult = document.getElementById('kdnResult');
-var kdnText = document.getElementById('kdnText');
+var klNum = document.getElementById('klNum');
+var klText = document.getElementById('klText');
 
-var kclResult = document.getElementById('kclResult');
-var kclText = document.getElementById('kclText');
+var kdNum = document.getElementById('kdNum');
+var kdText = document.getElementById('kdText');
 
-var hpResult = document.getElementById('hpResult');
+var hpNum = document.getElementById('hpNum');
 var hpText = document.getElementById('hpText');
 
-var hnnResult = document.getElementById('hnnResult');
-var hnnText = document.getElementById('hnnText');
+var hnNum = document.getElementById('hnNum');
+var hnText = document.getElementById('hnText');
 
-var ppoeResult = document.getElementById('ppoeResult');
-var ppoeText = document.getElementById('ppoeText');
-
-var mpeResult = document.getElementById('mpeResult');
-var mpeText = document.getElementById('mpeText');
-
-var ipeResult = document.getElementById('ipeResult');
-var ipeText = document.getElementById('ipeText');
-
-var epeResult = document.getElementById('epeResult');
-var epeText = document.getElementById('epeText');
-
-var cstResult = document.getElementById('cstResult');
+var cstNum = document.getElementById('cstNum');
 var cstText = document.getElementById('cstText');
 
-var pynResult = document.getElementById('pynResult');
-var pynText = document.getElementById('pynText');
+var ppoeNum = document.getElementById('ppoeNum');
+var ppoeText = document.getElementById('ppoeText');
 
-var ecResult = document.getElementById('ecResult');
-var ecText = document.getElementById('ecText');
+var mpoeNum = document.getElementById('mpoeNum');
+var mpoeText = document.getElementById('mpoeText');
 
-var ttcResult = document.getElementById('ttcResult');
-var ttcText = document.getElementById('ttcText');
+var ipoeNum = document.getElementById('ipoeNum');
+var ipoeText = document.getElementById('ipoeText');
 
-var pcnResult = document.getElementById('pcnResult');
-var pcnText = document.getElementById('pcnText');
+var epoeNum = document.getElementById('epoeNum');
+var epoeText = document.getElementById('epoeText');
 
-var pnnResult = document.getElementById('pnnResult');
-var pnnText = document.getElementById('pnnText');
 
-var clnResult = document.getElementById('clnResult');
-var clnText = document.getElementById('clnText');
+
 
 
 calculate.addEventListener('click', ()=> {
     
+    // lifr path Number calculation 
+    var date = dBrith.value;
+    var correctPattern =  ['(', ')', '[', ']', '{', '}', '!', '-', ''];
+    var wordsAndSymbols = date.split('');
+    var cleanedArray = wordsAndSymbols.filter(char => !correctPattern.includes(char));
+    var numbers = cleanedArray.map(str => parseInt(str));      
+    var sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    while (sum > 10) {
+        var numberString = sum.toString(); 
+        var digitArray = numberString.split('').map(Number);
+        numbers = digitArray.map(str => parseInt(str));     
+        sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        lpNum.textContent = sum;
+    }
+
+    
+    
+    
+
+
+    
 
 })
+
+function changeDefault(event) {
+    event.preventDefault();
+}
+
+const form = document.getElementById('myForm');
+form.addEventListener('submit', changeDefault);

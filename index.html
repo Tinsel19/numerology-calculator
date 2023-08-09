@@ -24,7 +24,7 @@
 
     <section class="main-body">
 
-    <form class="form">
+    <form class="form" id="myForm">
         <div class="styled-input">
             <span class="span">Current Name</span>
             <input type="text" id="cName" placeholder="current name" required>
@@ -47,271 +47,6 @@
         
     </form>
 
-    <section class="hide" id="hide">
-
-        <!-- life path number  -->
-        <details>
-            <summary>
-                    <p class="label">Life Path number</p>
-                    <p class="result" id="lpResult">12/3</p>
-
-            </summary>
-            <p id="lpText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-        </details>
-    
-
-    <!-- Birthday Number  -->
-    <details>
-        <summary>
-                <p class="label">Birthday Number</p>
-                <p class="result" id="bnResult">30/3</p>
-        </summary>
-        <p id="bnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Born Day Number  -->
-    <details>
-        <summary >
-                <p class="label">Born Day Number</p>
-                <p class="result" id="bdnResult">10</p>
-        </summary>
-        <p id="bdnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Expression ? Destiny Number  -->
-    <details>
-        <summary >
-                <p class="label">Expression / Destiny Number</p>
-                <p class="result" id="ednResult">10</p>
-        </summary>
-        <p id="ednText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Soul Urge / Heart's Desire  -->
-    <details>
-        <summary >
-                <p class="label">Soul Urge / Heart's Desire</p>
-                <p class="result" id="suhdResult">10</p>
-        </summary>
-        <p id="suhdText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Personality Number  -->
-    <details>
-        <summary >
-                <p class="label">Personality Number</p>
-                <p class="result" id="pnResult">10</p>
-        </summary>
-        <p id="pnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Maturity Number  -->
-    <details>
-        <summary >
-                <p class="label">Maturity Number</p>
-                <p class="result" id="mnResult">10</p>
-        </summary>
-        <p id="mnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Attitude Number  -->
-    <details>
-        <summary >
-                <p class="label">Attitude Number</p>
-                <p class="result" id="anResult">10</p>
-        </summary>
-        <p id="anText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Life Path Expression Bridge  -->
-    <details>
-        <summary >
-                <p class="label">Life Path Expression Bridge</p>
-                <p class="result" id="lpebResult">10</p>
-        </summary>
-        <p id="lpebText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- heart's Desire / Personality Bridge  -->
-    <details>
-        <summary >
-                <p class="label">Heart's Desire / Personality Bridge</p>
-                <p class="result" id="hdpbResult">10</p>
-        </summary>
-        <p id="hdpbText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Rational Thought Number  -->
-    <details>
-        <summary >
-                <p class="label">Rational Thought Number</p>
-                <p class="result" id="rtnResult">10</p>
-        </summary>
-        <p id="rtnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Balance Number  -->
-    <details>
-        <summary >
-                <p class="label">Balance Number</p>
-                <p class="result" id="blnResult">10</p>
-        </summary>
-        <p id="blnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Subconscious Self Number  -->
-    <details>
-        <summary >
-                <p class="label">Subconscious Self Number</p>
-                <p class="result" id="ssnResult">10</p>
-        </summary>
-        <p id="ssnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Karmic Debt Number  -->
-    <details>
-        <summary >
-                <p class="label">Karmic Debt Number</p>
-                <p class="result" id="kdnResult">10</p>
-        </summary>
-        <p id="kdnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Karmic Lesson  -->
-    <details>
-        <summary >
-                <p class="label">Karmic Lesson</p>
-                <p class="result" id="kclResult">10</p>
-        </summary>
-        <p id="kclText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Hidden Passion  -->
-    <details>
-        <summary >
-                <p class="label">Hidden Passion</p>
-                <p class="result" id="hpResult">10</p>
-        </summary>
-        <p id="hpText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Hereditary Name Number  -->
-    <details>
-        <summary >
-                <p class="label">Hereditary Name Number</p>
-                <p class="result" id="hnnResult">10</p>
-        </summary>
-        <p id="hnnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Physical plane of expression  -->
-    <details>
-        <summary >
-                <p class="label">Physical Plane of Expression</p>
-                <p class="result" id="ppoeResult">10</p>
-        </summary>
-        <p id="ppoeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Mental Plane of Expression  -->
-    <details>
-        <summary >
-                <p class="label">Mental Plane of Expression</p>
-                <p class="result" id="mpeResult">10</p>
-        </summary>
-        <p id="mpeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Intuitive Plane of Expression  -->
-    <details>
-        <summary >
-                <p class="label">Intuitive Plane of Expression</p>
-                <p class="result" id="ipeResult">10</p>
-        </summary>
-        <p id="ipeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-    
-    <!-- Emotional Plane of Expression  -->
-    <details>
-        <summary >
-                <p class="label">Emotional Place of Expression</p>
-                <p class="result" id="epeResult">10</p>
-        </summary>
-        <p id="epeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Cornerstone  -->
-    <details>
-        <summary >
-                <p class="label">Cornerstone</p>
-                <p class="result" id="cstResult">10</p>
-        </summary>
-        <p id="cstText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!--Personal Year Number  -->
-    <details>
-        <summary>
-                <p class="label">Personal Year Number</p>
-                <p class="result" id="pynResult">10</p>
-        </summary>
-        <p id="pynText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Essence Cycle  -->
-    <details>
-        <summary >
-                <p class="label">Essence Cycle</p>
-                <p class="result" id="ecResult">10</p>
-        </summary>
-        <p id="ecText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Transit Cycle  -->
-    <details>
-        <summary >
-                <p class="label">Transit Cycle</p>
-                <p class="result" id="ttcResult">10</p>
-        </summary>
-        <p id="ttcText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Period Cycle Number  -->
-    <details>
-        <summary >
-                <p class="label">Period Cycle Number</p>
-                <p class="result" id="pcnResult">10</p>
-        </summary>
-        <p id="pcnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Pinnacle Number  -->
-    <details>
-        <summary >
-                <p class="label">Pinnacle Number</p>
-                <p class="result" id="pnnResult">10</p>
-        </summary>
-        <p id="pnnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    <!-- Challenge Number  -->
-    <details>
-        <summary >
-                <p class="label">Challenge Number</p>
-                <p class="result" id="clnResult">10</p>
-        </summary>
-        <p id="clnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
-    </details>
-
-    </section>
-
-
-
-
-
-
-
-
     
     <section class="main-table">
         
@@ -329,47 +64,41 @@
 
         <div class="  lined">
             <details>
-                <summary>
+                <summary class="cols2">
                         <p class="label">Life Path number</p>
-                        <p class="result" id="lpResult">12/3</p>
-                        <p id="lPNum">3</p>
+                        <p class="result" id="lpNum">12/3</p>
                 </summary>
                 <p id="lpText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
             </details>
-            
         </div>
-
-
 
         <div class=" lined">
             <details>
                 <summary class="cols2">
                         <p class="label">Born Day/ Birthday Number</p>
-                        <p class="result" id="bDayNum">11/2</p>
+                        <p  id="bdNum">11/2</p>
                 </summary>
-                <p id="bDayText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+                <p id="bdText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
             </details>
         </div>
 
         <details>
             <summary class="cols2-nil">
-                <div class=" f-row " >
+                <div class="f-row" >
                     <p class="">Expression / Destiny</p>
-                    <p class=" textpad">Minor Expression / Destiny</p>
-                    <p class=""></p>
+                    <p class="textpad">Minor Expression / Destiny</p>
+                    <p ></p>
                 </div>
-
                 <div class="cols-half">
                     <div class="f-row">
-                        <p id="eDNum"  >14/5</p>
+                        <p id="edNum"  >14/5</p>
                         <p ></p>
                     </div>
                     <div class="s-row padlow" >
                         <p></p>
-                        <p id="mEDNum" >29/2</p>                
+                        <p id="medNum" >29/2</p>                
                     </div>
                 </div>
-
             </summary>
             <p id="emeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
         </details>
@@ -380,17 +109,15 @@
                 <div class=" f-row " >
                     <p >Soul Urge / Heart Desire</p>
                     <p class="textpad">Minor Soul Urge / Heart's Desire</p>
-                    
                 </div>
-
                 <div class="cols-half">
                     <div class="f-row">
-                        <p id="sUHDNum" >13/4</p>
+                        <p id="suhdNum" >13/4</p>
                         <p ></p>
                     </div>
                     <div class="s-row padlow" >
                         <p></p>
-                        <p id="mSUHDNum" >16/7</p>               
+                        <p id="msuhdNum" >16/7</p>               
                     </div>
                 </div>
 
@@ -398,98 +125,187 @@
             <p id="suhdText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
         </details>
 
-        <div class="cols3-nil line1">
-            <div class="f-row padlow">
-                <p class="line1p">Personality</p>
-                <p id="pNum" class="line2p">8</p>
-                <p class="line3p"></p>
-            </div>
-            <div class="s-row ">
-                <p class="line1p textpad">Minor Personlaity</p>
-                <p class="line2p"></p>
-                <p id="mPNum" class="line3p"></p>
-            </div>
+        <details>
+            <summary class="cols2-nil">
+                <div class=" f-row " >
+                    <p >Personality</p>
+                    <p class="textpad">Minor Personlaity</p>
+                </div>
+                <div class="cols-half">
+                    <div class="f-row">
+                        <p id="pNum" >8</p>
+                        <p ></p>
+                    </div>
+                    <div class="s-row padlow" >
+                        <p></p>
+                        <p id="mPNum" class=""></p>             
+                    </div>
+                </div>
+            </summary>
+            <p id="perText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+        </details>
+
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Maturity</p>
+                        <p id="mNum"></p>
+                </summary>
+                <p id="mText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Maturity</p>
-            <p id="mNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Attitude</p>
+                        <p id="aNum"></p>
+                </summary>
+                <p id="aText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Attitude</p>
-            <p id="aNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Life Path/ Expression Bridge</p>
+                        <p id="lpebNum"></p>
+                </summary>
+                <p id="lpebText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Life Path / Expression Bridge</p>
-            <p id="lPEBNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Heart's desire/ Personality Bridge</p>
+                        <p id="hdpbNum"></p>
+                </summary>
+                <p id="hdpbText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Heart's Desire / Personality Bridge</p>
-            <p id="hDPBNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Rational Thought</p>
+                        <p id="rtNum"></p>
+                </summary>
+                <p id="rtText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Rational Thought</p>
-            <p id="rtNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Balance Number</p>
+                        <p id="bnNum"></p>
+                </summary>
+                <p id="bnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Balance Number</p>
-            <p id="bnNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Subconscious Self</p>
+                        <p id="ssNum"></p>
+                </summary>
+                <p id="ssText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Subconscious Self</p>
-            <p id="ssNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Karmic Lesson</p>
+                        <p id="klNum"></p>
+                </summary>
+                <p id="klText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Karmic Lesson</p>
-            <p id="klNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Karmic Debt</p>
+                        <p id="kdNum"></p>
+                </summary>
+                <p id="kdText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Karmic Debt</p>
-            <p id="kdNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Hidden Passion</p>
+                        <p id="hpNum"></p>
+                </summary>
+                <p id="hpText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Hidden Passion</p>
-            <p id="hpNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Hereditary Name</p>
+                        <p id="hnNum"></p>
+                </summary>
+                <p id="hnText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Hereditary Name</p>
-            <p id="hnNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Cornerstone</p>
+                        <p id="cstNum"></p>
+                </summary>
+                <p id="cstText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Cornerstone</p>
-            <p id="cstNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Physical Plane of Expression</p>
+                        <p id="ppoeNum"></p>
+                </summary>
+                <p id="ppoeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Physical Plane of Expression</p>
-            <p id="ppoeNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Mental Plane of Expression</p>
+                        <p id="mpoeNum"></p>
+                </summary>
+                <p id="mpoeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Mental Plane of Expression</p>
-            <p id="mpoeNum"></p>
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Intuitive Plane of Expression</p>
+                        <p id="ipoeNum"></p>
+                </summary>
+                <p id="ipoeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Intuitive Plane of Expression</p>
-            <p id="ipoeNum"></p>
+
+        <div class=" lined">
+            <details>
+                <summary class="cols2">
+                        <p>Emotional Plane of Expression</p>
+                        <p id="epoeNum"></p>
+                </summary>
+                <p id="epoeText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non blanditiis sint ipsa facilis corporis, laborum alias rerum, nulla eligendi laudantium consectetur neque, sapiente ex! Recusandae sequi iste consectetur quaerat eos. Excepturi, voluptas! Corrupti eveniet eligendi perspiciatis ex earum illum, quisquam explicabo! Eius aliquid ipsum unde, quia animi reiciendis harum.</p>
+            </details>
         </div>
 
-        <div class="cols2 lined">
-            <p>Emotional Plane of Expression</p>
-            <p id="epoeNum"></p>
-        </div>
 
         <div class="cols2 line">
             <p class="head1">Chapters of Life: Period Cycle</p>
@@ -500,74 +316,6 @@
 
     </section>
 
-    <!-- <section>
-
-        <div class="cols3-equal bold-head">
-            <p >Present Name</p>
-            <p>Full Name at Birth</p>
-            <p>Date of Birth</p>
-        </div>
-
-        <table border="1">
-            <tr >
-                <td>Ali Meme</td>
-                <td>Ali Smith</td>
-                <td>June 16, 1966</td>
-            </tr>
-        </table>
-
-        <table border="1">
-            <tr>
-                <td width="70%">Life Path Number</td>
-                <td width="30%" id="lpnID"> 3</td>
-                
-            </tr>
-
-            <tr>
-                <td>Born Day / Birthday Number</td>
-                <td id="bdbnID">11/2</td>
-            </tr>
-        </table>
-
-        <table border="1">
-            <tr >
-                <td width="70%">Expression / Destiny</td>
-                <td width="15%">14/5</td>
-                <td width="15%"></td>
-            </tr>
-            <tr>
-                <td>Minor Expression / Destiny</td>
-                <td></td>
-                <td>29/2</td>
-            </tr>
-        </table>
-
-        <table border="1">
-            <tr >
-                <td width="70%">Soul Urge / Heart Desire</td>
-                <td width="15%" suhdID>14/5</td>
-                <td width="15%"></td>
-            </tr>
-            <tr>
-                <td>Minor Soul Urge / Heart's Desire</td>
-                <td></td>
-                <td id="msuhdID">29/2</td>
-            </tr>
-        </table>
-
-        <table border="1">
-            <tr >
-                <td width="70%">Personality</td>
-                <td width="15%" pID>8</td>
-                <td width="15%"></td>
-            </tr>
-            <tr>
-                <td>Minor Personality</td>
-                <td></td>
-                <td id="msuhdID"></td>
-            </tr>
-        </table>
-    </section> -->
 
     </section>
 

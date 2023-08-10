@@ -7,6 +7,10 @@ var cName = document.getElementById('cName');
 var fName = document.getElementById('fName');
 var dBrith = document.getElementById('dBirth');
 
+var ccName = document.getElementById('ccName');
+var ffName = document.getElementById('ffName');
+var ddBirth = document.getElementById('ddBirth');
+
 var lpNum = document.getElementById('lpNum')
 var lpText = document.getElementById('lpText');
 
@@ -79,7 +83,11 @@ var epoeText = document.getElementById('epoeText');
 
 calculate.addEventListener('click', ()=> {
     
-    // life path Number calculation 
+    // life path Number calculation
+    ccName.textContent = cName.value;
+    ffName.textContent = fName.value;
+    ddBirth.textContent = dBirth.value;
+    
     var date = dBrith.value;
     
     var dayString = date.split('-')[2];

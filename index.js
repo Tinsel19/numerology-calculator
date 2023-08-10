@@ -79,27 +79,46 @@ var epoeText = document.getElementById('epoeText');
 
 calculate.addEventListener('click', ()=> {
     
-    // lifr path Number calculation 
+    // life path Number calculation 
     var date = dBrith.value;
-    var correctPattern =  ['(', ')', '[', ']', '{', '}', '!', '-', ''];
-    var wordsAndSymbols = date.split('');
-    var cleanedArray = wordsAndSymbols.filter(char => !correctPattern.includes(char));
-    var numbers = cleanedArray.map(str => parseInt(str));      
-    var sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    
+    var dayString = date.split('-')[2];
+    var monthString = date.split('-')[1];
+    var yearString = date.split('-')[0];
+
+    var daySplit = dayString.split('');
+    var monthSplit = monthString.split('');
+    var yearSplit = yearString.split(''); 
+    
+    var dayNumArray = daySplit.map(str => parseInt(str));
+    var monthNumArray = monthSplit.map(str => parseInt(str));
+    var yearNumArray = yearSplit.map(str => parseInt(str));
+       
+    var sumDayArray = dayNumArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    var sumMonthArray = monthNumArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    var sumYearArray = yearNumArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+    var sum = sumDayArray + sumMonthArray + sumYearArray;
+
     while (sum > 10) {
-        var numberString = sum.toString(); 
-        var digitArray = numberString.split('').map(Number);
-        numbers = digitArray.map(str => parseInt(str));     
-        sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-        lpNum.textContent = sum;
-    }
+        if (sum === 11) {
+            lpNum.textContent = '11/2';
+            break
+        } else if(sum === 22) {
+            lpNum.textContent = '22/4';
+            break;
+        } else if (sum === 33) {
+            lpNum.textContent = '33/6';
+            break;
+        } else {
+            var numberString = sum.toString(); 
+            var digitArray = numberString.split('').map(Number);
+            numbers = digitArray.map(str => parseInt(str));     
+            sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+            lpNum.textContent = sum;
+        }  
+    };
 
-    
-    
-    
-
-
-    
 
 })
 

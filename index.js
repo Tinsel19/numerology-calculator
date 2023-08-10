@@ -83,7 +83,6 @@ var epoeText = document.getElementById('epoeText');
 
 calculate.addEventListener('click', ()=> {
     
-    // life path Number calculation
     ccName.textContent = cName.value;
     ffName.textContent = fName.value;
     ddBirth.textContent = dBirth.value;
@@ -106,6 +105,7 @@ calculate.addEventListener('click', ()=> {
     var sumMonthArray = monthNumArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     var sumYearArray = yearNumArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
+    // life path number 
     var sum = sumDayArray + sumMonthArray + sumYearArray;
 
     while (sum > 10) {
@@ -127,7 +127,55 @@ calculate.addEventListener('click', ()=> {
         }  
     };
 
+    
+    if (sumDayArray === 1) {
+        bdNum.textContent = parseInt(dayString) + '/' + '1';
+    } else if (sumDayArray === 2) {
+        bdNum.textContent = parseInt(dayString) + '/' + '2';
+    } else if (sumDayArray === 3) {
+        bdNum.textContent = parseInt(dayString) + '/' + '3';
+    } else if (sumDayArray === 4) {
+        bdNum.textContent = parseInt(dayString) + '/' + '4';
+    } else if (sumDayArray === 5) {
+        bdNum.textContent = parseInt(dayString) + '/' + '6';
+    } else if (sumDayArray === 6) {
+        bdNum.textContent = parseInt(dayString) + '/' + '6';
+    } else if (sumDayArray === 7) {
+        bdNum.textContent = parseInt(dayString) + '/' + '7';
+    } else if (sumDayArray === 8) {
+        bdNum.textContent = parseInt(dayString) + '/' + '8';
+    } else if (sumDayArray === 9) {
+        bdNum.textContent = parseInt(dayString) + '/' + '9';
+    };
 
+    var ednName = fName.value.split('');
+    var ednLength = ednName.length;
+    var i = 0;
+    var count = 0;
+    // console.log(ednName)
+    while (i <= ednLength) {
+
+        if (ednName[i].toUpperCase === 'A' || ednName[i].toUpperCase === 'J' || ednName[i].toUpperCase === 'S') {
+            count += 1;
+        } else if (ednName[i].toUpperCase === 'B' || ednName[i].toUpperCase === 'K' || ednName[i].toUpperCase === 'T') {
+            count += 2;
+        } else if (ednName[i].toUpperCase === 'C' || ednName[i].toUpperCase === 'L' || ednName[i].toUpperCase === 'U') {
+            count += 3;
+        } else if (ednName[i].toUpperCase === 'D' || ednName[i].toUpperCase === 'M' || ednName[i].toUpperCase === 'V') {
+            count += 4;
+        } else if (ednName[i].toUpperCase === 'E' || ednName[i].toUpperCase === 'N' || ednName[i].toUpperCase === 'W') {
+            count += 5;
+        } else if (ednName[i].toUpperCase === 'F' || ednName[i].toUpperCase === 'O' || ednName[i].toUpperCase === 'X') {
+            count += 6;
+        } else if (ednName[i].toUpperCase === 'G' || ednName[i].toUpperCase === 'P' || ednName[i].toUpperCase === 'Y') {
+            count += 7;
+        } else if (ednName[i].toUpperCase === 'H' || ednName[i].toUpperCase === 'Q' || ednName[i].toUpperCase === 'Z') {
+            count += 8;
+        } else if (ednName[i].toUpperCase === 'I' || ednName[i].toUpperCase === 'R' ) {
+            count += 4;
+        }
+
+    }
 })
 
 function changeDefault(event) {

@@ -156,39 +156,43 @@ calculate.addEventListener('click', ()=> {
     // console.log(ednfName)
     
     var ednLength = ednName.length;
-    var i = 0;
     var count = 0;
+    var countList = [];
 
     ednfName = Array.from(ednfName);
 
-    for (let iterate  = 0; iterate < 3; iterate++) {
-        console.log(iterate);
-        // console.log(ednfName[iterate]);
-        // console.log(ednfName.length);
-        while (i <= ednfName[iterate].length) {
-            if (ednfName[iterate][i].toUpperCase() === 'A' || ednfName[iterate][i].toUpperCase() === 'J' || ednfName[iterate][i].toUpperCase() === 'S') {
-                count += 1;
-            } else if (ednfName[iterate][i].toUpperCase() === 'B' || ednfName[iterate][i].toUpperCase() === 'K' || ednfName[iterate][i].toUpperCase() === 'T') {
-                count += 2;
-            } else if (ednfName[iterate][i].toUpperCase() === 'C' || ednfName[iterate][i].toUpperCase() === 'L' || ednfName[iterate][i].toUpperCase() === 'U') {
-                count += 3;
-            } else if (ednfName[iterate][i].toUpperCase() === 'D' || ednfName[iterate][i].toUpperCase() === 'M' || ednfName[iterate][i].toUpperCase() === 'V') {
-                count += 4;
-            } else if (ednfName[iterate][i].toUpperCase() === 'E' || ednfName[iterate][i].toUpperCase() === 'N' || ednfName[iterate][i].toUpperCase() === 'W') {
-                count += 5;
-            } else if (ednfName[iterate][i].toUpperCase() === 'F' || ednfName[iterate][i].toUpperCase() === 'O' || ednfName[iterate][i].toUpperCase() === 'iterate') {
-                count += 6;
-            } else if (ednfName[iterate][i].toUpperCase() === 'G' || ednfName[iterate][i].toUpperCase() === 'P' || ednfName[iterate][i].toUpperCase() === 'Y') {
-                count += 7;
-            } else if (ednfName[iterate][i].toUpperCase() === 'H' || ednfName[iterate][i].toUpperCase() === 'Q' || ednfName[iterate][i].toUpperCase() === 'Z') {
-                count += 8;
-            } else if (ednfName[iterate][i].toUpperCase() === 'I' || ednfName[iterate][i].toUpperCase() === 'R' ) {
-                count += 9;
-            }
-            console.log(ednfName[iterate][i]);
-            i++;
-        }
+    for (let iterate  = 0; iterate < ednfName.length; iterate++) {
+        // console.log(iterate);
 
+        for ( let i = 0; i <= ednfName[iterate].length; i++) {
+           console.log(ednfName[iterate][i])
+            if ( String(ednfName[iterate][i]).toLowerCase() === ( 'a') ||  String(ednfName[iterate][i]).toLowerCase() === ('j') || String(ednfName[iterate][i]).toLowerCase() === ('s') ) {
+                count += 1;
+            } else if ( String(ednfName[iterate][i]).toLowerCase() === 'b' || String(ednfName[iterate][i]).toLowerCase() === 'k' || String(ednfName[iterate][i]).toLowerCase() === 't') {
+                count += 2;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'c' || String(ednfName[iterate][i]).toLowerCase() === 'l' || String(ednfName[iterate][i]).toLowerCase() === 'u') {
+                count += 3;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'd' || String(ednfName[iterate][i]).toLowerCase() === 'm' || String(ednfName[iterate][i]).toLowerCase() === 'v') {
+                count += 4;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'e' || String(ednfName[iterate][i]).toLowerCase() === 'n' || String(ednfName[iterate][i]).toLowerCase() === 'w') {
+                count += 5;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'f' || String(ednfName[iterate][i]).toLowerCase() === 'o' || String(ednfName[iterate][i]).toLowerCase() === 'x') {
+                count += 6;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'g' || String(ednfName[iterate][i]).toLowerCase() === 'p' || String(ednfName[iterate][i]).toLowerCase() === 'y') {
+                count += 7;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'h' || String(ednfName[iterate][i]).toLowerCase() === 'q' || String(ednfName[iterate][i]).toLowerCase() === 'z') {
+                count += 8;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'i' || String(ednfName[iterate][i]).toLowerCase() === 'r' ) {
+                count += 9;
+                console.log('True')
+            }
+        
+        };
+        countList.push(count);
+        console.log(countList)
+
+
+        // console.log(ednfName[iterate])
     }
 
 

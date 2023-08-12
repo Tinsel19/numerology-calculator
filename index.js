@@ -153,65 +153,46 @@ calculate.addEventListener('click', ()=> {
 
     var ednName = fName.value.split('');
     var ednfName = fName.value.split(' ');
-    console.log(ednfName)
+    // console.log(ednfName)
     
     var ednLength = ednName.length;
     var i = 0;
     var count = 0;
-    var name;
-    for (name in ednfName) {
 
-        while (i <= ednfName[name].length) {
-            if (ednfName[name][i].toUpperCase() === 'A' || ednfName[name][i].toUpperCase() === 'J' || ednfName[name][i].toUpperCase() === 'S') {
+    ednfName = Array.from(ednfName);
+
+    for (let iterate  = 0; iterate < 3; iterate++) {
+        console.log(iterate);
+        // console.log(ednfName[iterate]);
+        // console.log(ednfName.length);
+        while (i <= ednfName[iterate].length) {
+            if (ednfName[iterate][i].toUpperCase() === 'A' || ednfName[iterate][i].toUpperCase() === 'J' || ednfName[iterate][i].toUpperCase() === 'S') {
                 count += 1;
-            } else if (ednfName[name][i].toUpperCase() === 'B' || ednfName[name][i].toUpperCase() === 'K' || ednfName[name][i].toUpperCase() === 'T') {
+            } else if (ednfName[iterate][i].toUpperCase() === 'B' || ednfName[iterate][i].toUpperCase() === 'K' || ednfName[iterate][i].toUpperCase() === 'T') {
                 count += 2;
-            } else if (ednfName[name][i].toUpperCase() === 'C' || ednfName[name][i].toUpperCase() === 'L' || ednfName[name][i].toUpperCase() === 'U') {
+            } else if (ednfName[iterate][i].toUpperCase() === 'C' || ednfName[iterate][i].toUpperCase() === 'L' || ednfName[iterate][i].toUpperCase() === 'U') {
                 count += 3;
-            } else if (ednfName[name][i].toUpperCase() === 'D' || ednfName[name][i].toUpperCase() === 'M' || ednfName[name][i].toUpperCase() === 'V') {
+            } else if (ednfName[iterate][i].toUpperCase() === 'D' || ednfName[iterate][i].toUpperCase() === 'M' || ednfName[iterate][i].toUpperCase() === 'V') {
                 count += 4;
-            } else if (ednfName[name][i].toUpperCase() === 'E' || ednfName[name][i].toUpperCase() === 'N' || ednfName[name][i].toUpperCase() === 'W') {
+            } else if (ednfName[iterate][i].toUpperCase() === 'E' || ednfName[iterate][i].toUpperCase() === 'N' || ednfName[iterate][i].toUpperCase() === 'W') {
                 count += 5;
-            } else if (ednfName[name][i].toUpperCase() === 'F' || ednfName[name][i].toUpperCase() === 'O' || ednfName[name][i].toUpperCase() === 'X') {
+            } else if (ednfName[iterate][i].toUpperCase() === 'F' || ednfName[iterate][i].toUpperCase() === 'O' || ednfName[iterate][i].toUpperCase() === 'iterate') {
                 count += 6;
-            } else if (ednfName[name][i].toUpperCase() === 'G' || ednfName[name][i].toUpperCase() === 'P' || ednfName[name][i].toUpperCase() === 'Y') {
+            } else if (ednfName[iterate][i].toUpperCase() === 'G' || ednfName[iterate][i].toUpperCase() === 'P' || ednfName[iterate][i].toUpperCase() === 'Y') {
                 count += 7;
-            } else if (ednfName[name][i].toUpperCase() === 'H' || ednfName[name][i].toUpperCase() === 'Q' || ednfName[name][i].toUpperCase() === 'Z') {
+            } else if (ednfName[iterate][i].toUpperCase() === 'H' || ednfName[iterate][i].toUpperCase() === 'Q' || ednfName[iterate][i].toUpperCase() === 'Z') {
                 count += 8;
-            } else if (ednfName[name][i].toUpperCase() === 'I' || ednfName[name][i].toUpperCase() === 'R' ) {
-                count += 4;
+            } else if (ednfName[iterate][i].toUpperCase() === 'I' || ednfName[iterate][i].toUpperCase() === 'R' ) {
+                count += 9;
             }
+            console.log(ednfName[iterate][i]);
             i++;
-            console.log(ednfName[name])
-            console.log(count)
         }
+
     }
 
 
-    // while (i <= ednLength) {
-    //     if (ednName[i].toUpperCase() === 'A' || ednName[i].toUpperCase() === 'J' || ednName[i].toUpperCase() === 'S') {
-    //         // count += 1;
-    //     } else if (ednName[i].toUpperCase() === 'B' || ednName[i].toUpperCase() === 'K' || ednName[i].toUpperCase() === 'T') {
-    //         count += 2;
-    //     } else if (ednName[i].toUpperCase() === 'C' || ednName[i].toUpperCase() === 'L' || ednName[i].toUpperCase() === 'U') {
-    //         count += 3;
-    //     } else if (ednName[i].toUpperCase() === 'D' || ednName[i].toUpperCase() === 'M' || ednName[i].toUpperCase() === 'V') {
-    //         count += 4;
-    //     } else if (ednName[i].toUpperCase() === 'E' || ednName[i].toUpperCase() === 'N' || ednName[i].toUpperCase() === 'W') {
-    //         count += 5;
-    //     } else if (ednName[i].toUpperCase() === 'F' || ednName[i].toUpperCase() === 'O' || ednName[i].toUpperCase() === 'X') {
-    //         count += 6;
-    //     } else if (ednName[i].toUpperCase() === 'G' || ednName[i].toUpperCase() === 'P' || ednName[i].toUpperCase() === 'Y') {
-    //         count += 7;
-    //     } else if (ednName[i].toUpperCase() === 'H' || ednName[i].toUpperCase() === 'Q' || ednName[i].toUpperCase() === 'Z') {
-    //         count += 8;
-    //     } else if (ednName[i].toUpperCase() === 'I' || ednName[i].toUpperCase() === 'R' ) {
-    //         count += 4;
-    //     }
-    //     i++;
-    // }
 
-    alert(typeof ednName)
     
 })
 

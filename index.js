@@ -107,6 +107,7 @@ calculate.addEventListener('click', ()=> {
 
     // life path number 
     var sum = sumDayArray + sumMonthArray + sumYearArray;
+    var lpHold, edHold, suHold, pnHold;
 
     while (sum > 10) {
         if (sum === 11) {
@@ -123,6 +124,7 @@ calculate.addEventListener('click', ()=> {
             var digitArray = numberString.split('').map(Number);
             numbers = digitArray.map(str => parseInt(str));     
             sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+            lpHold = sum
             lpNum.textContent = sum;
         }
     };
@@ -197,7 +199,8 @@ calculate.addEventListener('click', ()=> {
             sum = eval(dbSplit.join('+'));
         }
     }
-    edNum.textContent = sum
+    edHold = sum;
+    edNum.textContent = sum;
 
 
 
@@ -244,6 +247,7 @@ calculate.addEventListener('click', ()=> {
             sum = eval(suhdSplit.join('+'));
         }
     }
+    suHold = sum;
     suhdNum.textContent = sum;
 
 
@@ -251,15 +255,15 @@ calculate.addEventListener('click', ()=> {
     pnfName = fName.value.split(' ');
     count = 0;
     countList = [];
-    pnfName = Array.from(pnnfName);
+    pnfName = Array.from(pnfName);
 
-    for (let iterate  = 0; iterate < pnnfName.length; iterate++) {
+    for (let iterate  = 0; iterate < pnfName.length; iterate++) {
 
         for ( let i = 0; i <= pnfName[iterate].length; i++) {
 
-            if ( String(pnfName[iterate][i]).toLowerCase() === 'j' ||  String(pnfName[iterate][i]).toLowerCase() === 's'  ) {
+            if (String(pnfName[iterate][i]).toLowerCase() === 'j' ||  String(pnfName[iterate][i]).toLowerCase() === 's'  ) {
                 count += 1;
-            } else if ( String(pnfName[iterate][i]).toLowerCase() === 'b' || String(pnfName[iterate][i]).toLowerCase() === 'k' || String(pnfName[iterate][i]).toLowerCase() === 't') {
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'b' || String(pnfName[iterate][i]).toLowerCase() === 'k' || String(pnfName[iterate][i]).toLowerCase() === 't') {
                 count += 2;
             } else if (String(pnfName[iterate][i]).toLowerCase() === 'c' || String(pnfName[iterate][i]).toLowerCase() === 'l' ) {
                 count += 3;
@@ -275,6 +279,8 @@ calculate.addEventListener('click', ()=> {
                 count += 8;
             } else if ( String(pnfName[iterate][i]).toLowerCase() === 'r' ) {
                 count += 9;
+            } else {
+                count += 0;
             }
         };
         countList.push(count);
@@ -289,24 +295,20 @@ calculate.addEventListener('click', ()=> {
         } else if (countList[x] === 33) {
             pnResult = '33';
         } else {
+            
             pnSplit = String(countList[x]).split('');
             sum = eval(pnSplit.join('+'));
+            count += sum
             pnSumList.push(sum);
-            pnResult = eval(pnSumList.join('+'));
-            x = String(pnResult).split('');
-            sum = eval(pnSplit.join('+'));
+            pnResult = eval(pnSumList.join('+'));            
         }
+        
     }
-    pNum.textContent = sum
+    pnHold = count;
+    pNum.textContent = count
 
 
-    
-
-    
-
-
-
-
+    mNum.textContent = lpHold + pnHold;
     
 })
 

@@ -147,13 +147,10 @@ calculate.addEventListener('click', ()=> {
         bdNum.textContent = parseInt(dayString) + '/' + '9';
     };
 
-    var ednName = fName.value.split('');
+
     var ednfName = fName.value.split(' ');
-    
-    var ednLength = ednName.length;
     var count = 0;
     var countList = [];
-
     ednfName = Array.from(ednfName);
 
     for (let iterate  = 0; iterate < ednfName.length; iterate++) {
@@ -168,10 +165,8 @@ calculate.addEventListener('click', ()=> {
                 count += 3;
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'd' || String(ednfName[iterate][i]).toLowerCase() === 'm' || String(ednfName[iterate][i]).toLowerCase() === 'v') {
                 count += 4;
-                // console.log(count)
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'e' || String(ednfName[iterate][i]).toLowerCase() === 'n' || String(ednfName[iterate][i]).toLowerCase() === 'w') {
                 count += 5;
-                // console.log(count)
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'f' || String(ednfName[iterate][i]).toLowerCase() === 'o' || String(ednfName[iterate][i]).toLowerCase() === 'x') {
                 count += 6;
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'g' || String(ednfName[iterate][i]).toLowerCase() === 'p' || String(ednfName[iterate][i]).toLowerCase() === 'y') {
@@ -183,7 +178,6 @@ calculate.addEventListener('click', ()=> {
             }
         };
         countList.push(count);
-        // console.log(countList);
         count = 0;
     };
     var dbSplit, sum,  dbSumList = [], dbResult;
@@ -199,14 +193,112 @@ calculate.addEventListener('click', ()=> {
             sum = eval(dbSplit.join('+'));
             dbSumList.push(sum);
             dbResult = eval(dbSumList.join('+'));
-
-            console.log(dbResult);
             x = String(dbResult).split('');
             sum = eval(dbSplit.join('+'));
         }
     }
-
     edNum.textContent = sum
+
+
+
+    var suhdfName = fName.value.split(' ');
+    count = 0;
+    countList = [];
+    suhdfName = Array.from(suhdfName);
+
+    for (let iterate  = 0; iterate < suhdfName.length; iterate++) {
+
+        for ( let i = 0; i <= suhdfName[iterate].length; i++) {
+
+            if ( String(suhdfName[iterate][i]).toLowerCase() === 'a' ) {
+                count += 1;
+            } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'u' ) {
+                count += 3;
+            } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'e' ) {
+                count += 5;
+            } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'o' ) {
+                count += 6;
+            } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'i' ) {
+                count += 9;
+            } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'y' ) {
+                count += 7;
+            }
+        };
+        countList.push(count);
+        count = 0;
+    };
+    var suhdSplit, sum,  suhdSumList = [], suhdResult;
+    for (let x = 0; x < countList.length; x++) {
+        if (countList[x] === 11) {
+            suhdResult = '11/2';
+        } else if (countList[x] === 22) {
+            suhdResult = '22/4';
+        } else if (countList[x] === 33) {
+            suhdResult = '33/4';
+        } else {
+            suhdSplit = String(countList[x]).split('');
+            sum = eval(suhdSplit.join('+'));
+            suhdSumList.push(sum);
+            suhdResult = eval(suhdSumList.join('+'));
+            x = String(suhdResult).split('');
+            sum = eval(suhdSplit.join('+'));
+        }
+    }
+    suhdNum.textContent = sum;
+
+
+
+    pnfName = fName.value.split(' ');
+    count = 0;
+    countList = [];
+    pnfName = Array.from(pnnfName);
+
+    for (let iterate  = 0; iterate < pnnfName.length; iterate++) {
+
+        for ( let i = 0; i <= pnfName[iterate].length; i++) {
+
+            if ( String(pnfName[iterate][i]).toLowerCase() === 'j' ||  String(pnfName[iterate][i]).toLowerCase() === 's'  ) {
+                count += 1;
+            } else if ( String(pnfName[iterate][i]).toLowerCase() === 'b' || String(pnfName[iterate][i]).toLowerCase() === 'k' || String(pnfName[iterate][i]).toLowerCase() === 't') {
+                count += 2;
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'c' || String(pnfName[iterate][i]).toLowerCase() === 'l' ) {
+                count += 3;
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'd' || String(pnfName[iterate][i]).toLowerCase() === 'm' || String(pnfName[iterate][i]).toLowerCase() === 'v') {
+                count += 4;
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'n' || String(pnfName[iterate][i]).toLowerCase() === 'w') {
+                count += 5;
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'f' || String(pnfName[iterate][i]).toLowerCase() === 'x') {
+                count += 6;
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'g' || String(pnfName[iterate][i]).toLowerCase() === 'p' || String(pnfName[iterate][i]).toLowerCase() === 'y') {
+                count += 7;
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'h' || String(pnfName[iterate][i]).toLowerCase() === 'q' || String(pnfName[iterate][i]).toLowerCase() === 'z') {
+                count += 8;
+            } else if ( String(pnfName[iterate][i]).toLowerCase() === 'r' ) {
+                count += 9;
+            }
+        };
+        countList.push(count);
+        count = 0;
+    };
+    var pnSplit, sum,  pnSumList = [], pnResult;
+    for (let x = 0; x < countList.length; x++) {
+        if (countList[x] === 11) {
+            pnResult = '11';
+        } else if (countList[x] === 22) {
+            pnResult = '22';
+        } else if (countList[x] === 33) {
+            pnResult = '33';
+        } else {
+            pnSplit = String(countList[x]).split('');
+            sum = eval(pnSplit.join('+'));
+            pnSumList.push(sum);
+            pnResult = eval(pnSumList.join('+'));
+            x = String(pnResult).split('');
+            sum = eval(pnSplit.join('+'));
+        }
+    }
+    pNum.textContent = sum
+
 
     
 

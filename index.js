@@ -124,10 +124,9 @@ calculate.addEventListener('click', ()=> {
             numbers = digitArray.map(str => parseInt(str));     
             sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
             lpNum.textContent = sum;
-        }  
+        }
     };
 
-    
     if (sumDayArray === 1) {
         bdNum.textContent = parseInt(dayString) + '/' + '1';
     } else if (sumDayArray === 2) {
@@ -148,12 +147,8 @@ calculate.addEventListener('click', ()=> {
         bdNum.textContent = parseInt(dayString) + '/' + '9';
     };
 
-
-    var ednName1, ednName2;
-
     var ednName = fName.value.split('');
     var ednfName = fName.value.split(' ');
-    // console.log(ednfName)
     
     var ednLength = ednName.length;
     var count = 0;
@@ -162,11 +157,10 @@ calculate.addEventListener('click', ()=> {
     ednfName = Array.from(ednfName);
 
     for (let iterate  = 0; iterate < ednfName.length; iterate++) {
-        // console.log(iterate);
 
         for ( let i = 0; i <= ednfName[iterate].length; i++) {
-           console.log(ednfName[iterate][i])
-            if ( String(ednfName[iterate][i]).toLowerCase() === ( 'a') ||  String(ednfName[iterate][i]).toLowerCase() === ('j') || String(ednfName[iterate][i]).toLowerCase() === ('s') ) {
+
+            if ( String(ednfName[iterate][i]).toLowerCase() === 'a' ||  String(ednfName[iterate][i]).toLowerCase() === 'j' || String(ednfName[iterate][i]).toLowerCase() === 's' ) {
                 count += 1;
             } else if ( String(ednfName[iterate][i]).toLowerCase() === 'b' || String(ednfName[iterate][i]).toLowerCase() === 'k' || String(ednfName[iterate][i]).toLowerCase() === 't') {
                 count += 2;
@@ -174,8 +168,10 @@ calculate.addEventListener('click', ()=> {
                 count += 3;
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'd' || String(ednfName[iterate][i]).toLowerCase() === 'm' || String(ednfName[iterate][i]).toLowerCase() === 'v') {
                 count += 4;
+                // console.log(count)
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'e' || String(ednfName[iterate][i]).toLowerCase() === 'n' || String(ednfName[iterate][i]).toLowerCase() === 'w') {
                 count += 5;
+                // console.log(count)
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'f' || String(ednfName[iterate][i]).toLowerCase() === 'o' || String(ednfName[iterate][i]).toLowerCase() === 'x') {
                 count += 6;
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'g' || String(ednfName[iterate][i]).toLowerCase() === 'p' || String(ednfName[iterate][i]).toLowerCase() === 'y') {
@@ -184,16 +180,38 @@ calculate.addEventListener('click', ()=> {
                 count += 8;
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'i' || String(ednfName[iterate][i]).toLowerCase() === 'r' ) {
                 count += 9;
-                console.log('True')
             }
-        
         };
         countList.push(count);
-        console.log(countList)
+        // console.log(countList);
+        count = 0;
+    };
+    var dbSplit, sum,  dbSumList = [], dbResult;
+    for (let x = 0; x < countList.length; x++) {
+        if (countList[x] === 11) {
+            dbResult = '11/2';
+        } else if (countList[x] === 22) {
+            dbResult = '22/4';
+        } else if (countList[x] === 33) {
+            dbResult = '33/4';
+        } else {
+            dbSplit = String(countList[x]).split('');
+            sum = eval(dbSplit.join('+'));
+            dbSumList.push(sum);
+            dbResult = eval(dbSumList.join('+'));
 
-
-        // console.log(ednfName[iterate])
+            console.log(dbResult);
+            x = String(dbResult).split('');
+            sum = eval(dbSplit.join('+'));
+        }
     }
+
+    edNum.textContent = sum
+
+    
+
+    
+
 
 
 

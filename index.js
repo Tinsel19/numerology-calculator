@@ -93,6 +93,10 @@ calculate.addEventListener('click', ()=> {
     var monthString = date.split('-')[1];
     var yearString = date.split('-')[0];
 
+    // console.log(dayString);
+    // console.log(monthString);
+    // console.log(yearString);
+
     var daySplit = dayString.split('');
     var monthSplit = monthString.split('');
     var yearSplit = yearString.split(''); 
@@ -107,6 +111,7 @@ calculate.addEventListener('click', ()=> {
 
     // life path number 
     var sum = sumDayArray + sumMonthArray + sumYearArray;
+    var lsum = sum;
     var lpHold, edHold, suHold, pnHold;
 
     while (sum > 10) {
@@ -125,12 +130,17 @@ calculate.addEventListener('click', ()=> {
             numbers = digitArray.map(str => parseInt(str));     
             sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
             lpHold = sum
-            lpNum.textContent = sum;
+            if (sum === 10) {
+                lpNum.textContent = numberString + '/' + 10 + '/1';
+            } else {
+                lpNum.textContent = lsum + '/' +sum;
+            }
+            
         }
     };
 
     if (sumDayArray === 1) {
-        bdNum.textContent = parseInt(dayString) + '/' + '1';
+        bdNum.textContent = '1';
     } else if (sumDayArray === 2) {
         bdNum.textContent = parseInt(dayString) + '/' + '2';
     } else if (sumDayArray === 3) {
@@ -182,26 +192,44 @@ calculate.addEventListener('click', ()=> {
         countList.push(count);
         count = 0;
     };
-    var dbSplit, sum,  dbSumList = [], dbResult;
+    var dbSplit, sum,count11, count22, count33,  dbSumList = [], dbTotalSum ,dbResult, dbSumHoldList = [];
+    // console.log(countList);
     for (let x = 0; x < countList.length; x++) {
         if (countList[x] === 11) {
+            count11 += 11;
+            dbSumHoldList.push(11);
             dbResult = '11/2';
         } else if (countList[x] === 22) {
+            count22 += 22;
+            dbSumHoldList.push(22);
             dbResult = '22/4';
         } else if (countList[x] === 33) {
+            count33 += 33;
+            dbSumHoldList.push(33);
             dbResult = '33/4';
         } else {
             dbSplit = String(countList[x]).split('');
             sum = eval(dbSplit.join('+'));
             dbSumList.push(sum);
-            dbResult = eval(dbSumList.join('+'));
-            x = String(dbResult).split('');
             sum = eval(dbSplit.join('+'));
+            dbSumHoldList.push(sum);
+            
         }
     }
-    edHold = sum;
-    edNum.textContent = sum;
+    console.log(dbSumHoldList);
+    dbTotalSum = eval(dbSumHoldList.join('+'));
+    console.log(dbTotalSum);
 
+    dbSplit = String(dbTotalSum).split('');
+    nSum = eval(dbSplit.join('+'));
+
+    if (dbTotalSum === 10) {
+        edNum.textContent = dbTotalSum + '/' + 1;
+    } else {
+        edNum.textContent = dbTotalSum + '/' + nSum;
+    }
+
+    edHold = nSum;
 
 
     var suhdfName = fName.value.split(' ');

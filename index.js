@@ -139,6 +139,7 @@ calculate.addEventListener('click', ()=> {
         }
     };
 
+    // Birthday Number 
     if (sumDayArray === 1) {
         bdNum.textContent = '1';
     } else if (sumDayArray === 2) {
@@ -160,6 +161,7 @@ calculate.addEventListener('click', ()=> {
     };
 
 
+    // expression / destiny number 
     var ednfName = fName.value.split(' ');
     var count = 0;
     var countList = [];
@@ -169,9 +171,9 @@ calculate.addEventListener('click', ()=> {
 
         for ( let i = 0; i <= ednfName[iterate].length; i++) {
 
-            if ( String(ednfName[iterate][i]).toLowerCase() === 'a' ||  String(ednfName[iterate][i]).toLowerCase() === 'j' || String(ednfName[iterate][i]).toLowerCase() === 's' ) {
+            if (String(ednfName[iterate][i]).toLowerCase() === 'a' ||  String(ednfName[iterate][i]).toLowerCase() === 'j' || String(ednfName[iterate][i]).toLowerCase() === 's' ) {
                 count += 1;
-            } else if ( String(ednfName[iterate][i]).toLowerCase() === 'b' || String(ednfName[iterate][i]).toLowerCase() === 'k' || String(ednfName[iterate][i]).toLowerCase() === 't') {
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'b' || String(ednfName[iterate][i]).toLowerCase() === 'k' || String(ednfName[iterate][i]).toLowerCase() === 't') {
                 count += 2;
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'c' || String(ednfName[iterate][i]).toLowerCase() === 'l' || String(ednfName[iterate][i]).toLowerCase() === 'u') {
                 count += 3;
@@ -192,21 +194,18 @@ calculate.addEventListener('click', ()=> {
         countList.push(count);
         count = 0;
     };
-    var dbSplit, sum,count11, count22, count33,  dbSumList = [], dbTotalSum ,dbResult, dbSumHoldList = [];
+    var dbSplit, sum, dbSumList = [], dbTotalSum ,dbResult, dbSumHoldList = [];
     // console.log(countList);
     for (let x = 0; x < countList.length; x++) {
         if (countList[x] === 11) {
-            count11 += 11;
             dbSumHoldList.push(11);
-            dbResult = '11/2';
+            dbResult = '11';
         } else if (countList[x] === 22) {
-            count22 += 22;
             dbSumHoldList.push(22);
-            dbResult = '22/4';
+            dbResult = '22';
         } else if (countList[x] === 33) {
-            count33 += 33;
             dbSumHoldList.push(33);
-            dbResult = '33/4';
+            dbResult = '33';
         } else {
             dbSplit = String(countList[x]).split('');
             sum = eval(dbSplit.join('+'));
@@ -216,22 +215,131 @@ calculate.addEventListener('click', ()=> {
             
         }
     }
-    console.log(dbSumHoldList);
     dbTotalSum = eval(dbSumHoldList.join('+'));
     console.log(dbTotalSum);
-
     dbSplit = String(dbTotalSum).split('');
     nSum = eval(dbSplit.join('+'));
 
     if (dbTotalSum === 10) {
-        edNum.textContent = dbTotalSum + '/' + 1;
-    } else {
+        edNum.textContent = dbTotalSum + '/1' ;
+    } else if (dbTotalSum === 19) {
+        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 28) {
+        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 37) {
+        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 46) {
+        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 55) {
+        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 64) {
+        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 73) {
+        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 82) {
+        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 91) {
+        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    }
+    else {
         edNum.textContent = dbTotalSum + '/' + nSum;
     }
-
     edHold = nSum;
 
 
+    
+    // Minor expression number 
+    var ednfName = cName.value.split(' ');
+    var count = 0;
+    var countList = [];
+    ednfName = Array.from(ednfName);
+    for (let iterate  = 0; iterate < ednfName.length; iterate++) {
+
+        for ( let i = 0; i <= ednfName[iterate].length; i++) {
+
+            if (String(ednfName[iterate][i]).toLowerCase() === 'a' ||  String(ednfName[iterate][i]).toLowerCase() === 'j' || String(ednfName[iterate][i]).toLowerCase() === 's' ) {
+                count += 1;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'b' || String(ednfName[iterate][i]).toLowerCase() === 'k' || String(ednfName[iterate][i]).toLowerCase() === 't') {
+                count += 2;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'c' || String(ednfName[iterate][i]).toLowerCase() === 'l' || String(ednfName[iterate][i]).toLowerCase() === 'u') {
+                count += 3;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'd' || String(ednfName[iterate][i]).toLowerCase() === 'm' || String(ednfName[iterate][i]).toLowerCase() === 'v') {
+                count += 4;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'e' || String(ednfName[iterate][i]).toLowerCase() === 'n' || String(ednfName[iterate][i]).toLowerCase() === 'w') {
+                count += 5;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'f' || String(ednfName[iterate][i]).toLowerCase() === 'o' || String(ednfName[iterate][i]).toLowerCase() === 'x') {
+                count += 6;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'g' || String(ednfName[iterate][i]).toLowerCase() === 'p' || String(ednfName[iterate][i]).toLowerCase() === 'y') {
+                count += 7;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'h' || String(ednfName[iterate][i]).toLowerCase() === 'q' || String(ednfName[iterate][i]).toLowerCase() === 'z') {
+                count += 8;
+            } else if (String(ednfName[iterate][i]).toLowerCase() === 'i' || String(ednfName[iterate][i]).toLowerCase() === 'r' ) {
+                count += 9;
+            }
+        };
+        countList.push(count);
+        count = 0;
+    };
+    var dbSplit, sum, dbSumList = [], dbTotalSum ,dbResult, dbSumHoldList = [];
+
+    for (let x = 0; x < countList.length; x++) {
+        if (countList[x] === 11) {
+            dbSumHoldList.push(11);
+            dbResult = '11';
+        } else if (countList[x] === 22) {
+            dbSumHoldList.push(22);
+            dbResult = '22';
+        } else if (countList[x] === 33) {
+            dbSumHoldList.push(33);
+            dbResult = '33';
+        } else {
+            dbSplit = String(countList[x]).split('');
+            sum = eval(dbSplit.join('+'));
+            dbSumList.push(sum);
+            sum = eval(dbSplit.join('+'));
+            dbSumHoldList.push(sum);
+            
+        }
+    }
+    dbTotalSum = eval(dbSumHoldList.join('+'));
+    dbSplit = String(dbTotalSum).split('');
+    nSum = eval(dbSplit.join('+'));
+
+    countList = [];
+
+    if (dbTotalSum === 10) {
+        medNum.textContent = dbTotalSum + '/1' ;
+    } else if (dbTotalSum < 10) {
+        medNum.textContent = dbTotalSum ;
+    } else if (dbTotalSum === 19) {
+        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 28) {
+        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 37) {
+        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 46) {
+        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 55) {
+        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 64) {
+        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 73) {
+        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 82) {
+        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    } else if (dbTotalSum === 91) {
+        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+    }
+    else {
+        medNum.textContent = dbTotalSum + '/' + nSum;
+    }
+    medHold = nSum;
+
+
+    
+    
+
+    // Soul Urge / Heart Desire Number 
     var suhdfName = fName.value.split(' ');
     count = 0;
     countList = [];
@@ -259,6 +367,7 @@ calculate.addEventListener('click', ()=> {
         count = 0;
     };
     var suhdSplit, sum,  suhdSumList = [], suhdResult;
+    console.log(countList)
     for (let x = 0; x < countList.length; x++) {
         if (countList[x] === 11) {
             suhdResult = '11/2';
@@ -271,15 +380,70 @@ calculate.addEventListener('click', ()=> {
             sum = eval(suhdSplit.join('+'));
             suhdSumList.push(sum);
             suhdResult = eval(suhdSumList.join('+'));
-            x = String(suhdResult).split('');
-            sum = eval(suhdSplit.join('+'));
+            x = eval(countList.join('+'));
+            console.log(x);
+            sum = x + '/'+ eval(suhdSplit.join('+'));
         }
     }
     suHold = sum;
     suhdNum.textContent = sum;
 
+    // minor soul urge / heart desire 
+    var suhdfName = cName.value.split(' ');
+    count = 0;
+    countList = [];
+    suhdfName = Array.from(suhdfName);
+
+    for (let iterate  = 0; iterate < suhdfName.length; iterate++) {
+
+        for ( let i = 0; i <= suhdfName[iterate].length; i++) {
+
+            if ( String(suhdfName[iterate][i]).toLowerCase() === 'a' ) {
+                count += 1;
+            } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'u' ) {
+                count += 3;
+            } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'e' ) {
+                count += 5;
+            } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'o' ) {
+                count += 6;
+            } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'i' ) {
+                count += 9;
+            } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'y' ) {
+                count += 7;
+            }
+        };
+        countList.push(count);
+        count = 0;
+    };
+    var suhdSplit, sum,  suhdSumList = [], suhdResult;
+    console.log(countList)
+    
+    for (let x = 0; x < countList.length; x++) {
+        x = eval(countList.join('+'));
+        if (countList[x] === 11) {
+            sum = '11/2';
+        } else if (countList[x] === 22) {
+            sum = '22/4';
+        } else if (countList[x] === 33) {
+            sum = '33/4';
+        }  else if (x === 19 || x === 28 || x === 37 || x === 46 || x === 55 || x === 64 || x === 73 || x === 82 || x === 91) {
+            sum = '10/1';
+        } else {
+            suhdSplit = String(countList[x]).split('');
+            sum = eval(suhdSplit.join('+'));
+            suhdSumList.push(sum);
+            suhdResult = eval(suhdSumList.join('+'));
+            x = eval(countList.join('+'));
+            console.log(x);
+            msuHold = eval(suhdSplit.join('+'));
+            sum = x + '/'+ eval(suhdSplit.join('+'));
+        }
+    }
+    
+    msuhdNum.textContent = sum;
 
 
+    // personality number 
     pnfName = fName.value.split(' ');
     count = 0;
     countList = [];

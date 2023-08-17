@@ -867,10 +867,116 @@ calculate.addEventListener('click', ()=> {
     hpNum.textContent = emptyString;
 
 
+
+
+
+
+
     // Hereditary Name Number 
+    ednfName = fName.value.split(' ');
+    var lastName = ednfName[ednfName.length - 1];
+    indexList = lastName;
+    
+    for ( let i = 0; i <= indexList.length; i++) {
+
+        if (String(indexList[i]).toLowerCase() === 'a' ||  String(indexList[i]).toLowerCase() === 'j' || String(indexList[i]).toLowerCase() === 's' ) {
+            count += 1;
+        } else if (String(indexList[i]).toLowerCase() === 'b' || String(indexList[i]).toLowerCase() === 'k' || String(indexList[i]).toLowerCase() === 't') {
+            count += 2;
+        } else if (String(indexList[i]).toLowerCase() === 'c' || String(indexList[i]).toLowerCase() === 'l' || String(indexList[i]).toLowerCase() === 'u') {
+            count += 3;
+        } else if (String(indexList[i]).toLowerCase() === 'd' || String(indexList[i]).toLowerCase() === 'm' || String(indexList[i]).toLowerCase() === 'v') {
+            count += 4;
+        } else if (String(indexList[i]).toLowerCase() === 'e' || String(indexList[i]).toLowerCase() === 'n' || String(indexList[i]).toLowerCase() === 'w') {
+            count += 5;
+        } else if (String(indexList[i]).toLowerCase() === 'f' || String(indexList[i]).toLowerCase() === 'o' || String(indexList[i]).toLowerCase() === 'x') {
+            count += 6;
+        } else if (String(indexList[i]).toLowerCase() === 'g' || String(indexList[i]).toLowerCase() === 'p' || String(indexList[i]).toLowerCase() === 'y') {
+            count += 7;
+        } else if (String(indexList[i]).toLowerCase() === 'h' || String(indexList[i]).toLowerCase() === 'q' || String(indexList[i]).toLowerCase() === 'z') {
+            count += 8;
+        } else if (String(indexList[i]).toLowerCase() === 'i' || String(indexList[i]).toLowerCase() === 'r' ) {
+            count += 9;
+        }
+    };
+    if (count === 10) {
+        count = 1
+    } else if (count > 10) {
+        mSplit = String(count).split('');
+        sum = eval(mSplit.join('+'));
+        count = sum;
+    };
+    hnNum.textContent = count;
+    
     
 
 
+    // CornerStone Letter 
+    ednfName = fName.value.split(' ');
+    var firstLetter = ednfName[0][0].toUpperCase();
+    cstNum.textContent = firstLetter;
+
+
+
+
+
+    // Physical Plane of Expression Number 
+    ednfName = fName.value;
+    indexList = ednfName;
+    count = 0;
+    for ( let i = 0; i <= indexList.length; i++) {
+
+        if (String(indexList[i]).toLowerCase() === 'd' ||  String(indexList[i]).toLowerCase() === 'e' || String(indexList[i]).toLowerCase() === 'm' || String(indexList[i]).toLowerCase() === 'n' || String(indexList[i]).toLowerCase() === 'v' || String(indexList[i]).toLowerCase() === 'w' ) {
+            count += 1;
+        } 
+    };
+    ppoeNum.textContent = count;
+
+
+
+
+    // Mental Plane of Expression Number 
+    ednfName = fName.value;
+    indexList = ednfName;
+    count = 0;
+    for ( let i = 0; i <= indexList.length; i++) {
+
+        if (String(indexList[i]).toLowerCase() === 'a' ||  String(indexList[i]).toLowerCase() === 'h' || String(indexList[i]).toLowerCase() === 'j' || String(indexList[i]).toLowerCase() === 'q' || String(indexList[i]).toLowerCase() === 's' || String(indexList[i]).toLowerCase() === 'z' ) {
+            count += 1;
+        } 
+    };
+    mpoeNum.textContent = count;
+
+
+
+
+
+    // Intuitive Plane of Expressioon Number 
+    ednfName = fName.value;
+    indexList = ednfName;
+    count = 0;
+    for ( let i = 0; i <= indexList.length; i++) {
+
+        if (String(indexList[i]).toLowerCase() === 'g' ||  String(indexList[i]).toLowerCase() === 'i' || String(indexList[i]).toLowerCase() === 'p' || String(indexList[i]).toLowerCase() === 'r' || String(indexList[i]).toLowerCase() === 'y' ) {
+            count += 1;
+        } 
+    };
+    ipoeNum.textContent = count;
+
+
+
+
+    // Emotional Plane of Expression Number 
+    ednfName = fName.value;
+    indexList = ednfName;
+    count = 0;
+    for ( let i = 0; i <= indexList.length; i++) {
+
+        if (String(indexList[i]).toLowerCase() === 'b' ||  String(indexList[i]).toLowerCase() === 'c' || String(indexList[i]).toLowerCase() === 'f' || String(indexList[i]).toLowerCase() === 'k' || String(indexList[i]).toLowerCase() === 'l' || String(indexList[i]).toLowerCase() === 'o' || String(indexList[i]).toLowerCase() === 't' || String(indexList[i]).toLowerCase() === 'u' || String(indexList[i]).toLowerCase() === 'x' ) {
+            count += 1;
+        } 
+    };
+    epoeNum.textContent = count;
 
 })
 

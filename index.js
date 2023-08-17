@@ -5,11 +5,13 @@ var reset = document.getElementById('reset');
 
 var cName = document.getElementById('cName');
 var fName = document.getElementById('fName');
-var dBrith = document.getElementById('dBirth');
 
 var ccName = document.getElementById('ccName');
 var ffName = document.getElementById('ffName');
 var ddBirth = document.getElementById('ddBirth');
+var dDay = document.getElementById('day');
+var dMonth = document.getElementById('month');
+var dYear = document.getElementById('year');
 
 var lpNum = document.getElementById('lpNum')
 var lpText = document.getElementById('lpText');
@@ -82,16 +84,69 @@ var epoeText = document.getElementById('epoeText');
 
 
 calculate.addEventListener('click', ()=> {
+    var month = Number(dMonth.value);
+    switch (month) {
+        case 1:
+            month = 'January'
+            break;
+        case 2:
+            month = 'February'
+            break;
+
+        case 3:
+            month = 'March'
+            break;
+
+        case 4:
+            month = 'April'
+            break;
+        
+        case 5:
+            month = 'May'
+            break;
+        
+        case 6:
+            month = 'June'
+            break;
+        
+        case 7:
+            month = 'July'
+            break;
+
+        case 8:
+            month = 'August'
+            break;
+        
+        case 9:
+            month = 'September'
+            break;
+
+        case 10:
+            month = 'October'
+            break;
+
+        case 11:
+            month = 'November'
+            break;
+        
+        case 1:
+            month = 'December'
+            break;
+
     
+        default:
+            break;
+    }
     ccName.textContent = cName.value;
     ffName.textContent = fName.value;
-    ddBirth.textContent = dBirth.value;
+
+    ddBirth.textContent = String(month) + '-' + String(dDay.value) + '-' + String(dYear.value);
     
-    var date = dBrith.value;
+    // var date = dBrith.value;
     
-    var dayString = date.split('-')[2];
-    var monthString = date.split('-')[1];
-    var yearString = date.split('-')[0];
+    var dayString = String(dDay.value);
+    var monthString = String(dMonth.value);
+    var yearString = String(dYear.value);
 
     // // // // console.log(dayString);
     // // // // console.log(monthString);

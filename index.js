@@ -1091,6 +1091,9 @@ calculate.addEventListener('click', ()=> {
 
     // Second Cycle Life 
     dayHold;
+    mSplit = String(dayHold).split('');
+    sum = eval(mSplit.join('+'));
+    dayHold = sum;
     if (dayHold === 10) {
         dayHold = 1;
     } else if (dayHold === 11) {

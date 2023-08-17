@@ -232,6 +232,8 @@ select {
     border-radius: 10px;
     font-weight: bold;
     font-size: .9rem;
+    background-color: white;
+    
 }
 #yforecast {
     font-weight: 600;

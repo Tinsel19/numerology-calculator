@@ -79,12 +79,29 @@ var ipoeText = document.getElementById('ipoeText');
 var epoeNum = document.getElementById('epoeNum');
 var epoeText = document.getElementById('epoeText');
 
+var fpCycle = document.getElementById('fpCycle');
+var spCycle = document.getElementById('spCycle');
+var tpCycle = document.getElementById('tpCycle');
+
+var fPin = document.getElementById('fPin');
+var sPin = document.getElementById('sPin');
+var tPin = document.getElementById('tPin');
+var ftPin = document.getElementById('ftPin');
+
+var fCha = document.getElementById('fCha');
+var sCha = document.getElementById('sCha');
+var tCha = document.getElementById('tCha');
+var ftCha = document.getElementById('ftCha');
+
 
 
 
 
 calculate.addEventListener('click', ()=> {
     var month = Number(dMonth.value);
+    var monthHold = month;
+    var dayHold = dDay.value;
+    var yearHold = dYear.value;
     switch (month) {
         case 1:
             month = 'January'
@@ -141,9 +158,7 @@ calculate.addEventListener('click', ()=> {
     ffName.textContent = fName.value;
 
     ddBirth.textContent = String(month) + '-' + String(dDay.value) + '-' + String(dYear.value);
-    
-    // var date = dBrith.value;
-    
+
     var dayString = String(dDay.value);
     var monthString = String(dMonth.value);
     var yearString = String(dYear.value);
@@ -1032,6 +1047,154 @@ calculate.addEventListener('click', ()=> {
         } 
     };
     epoeNum.textContent = count;
+
+
+    // Chapters of Life: Period Cycle 
+
+    // First Period Life Cycle 
+    monthHold;
+    if (monthHold === 10) {
+        monthHold = 1;
+    } else if (monthHold === 11) {
+        monthHold = 11;
+    } else if (monthHold === 12) {
+        monthHold = 3
+    } else {
+        monthHold;
+    };
+
+    if (monthHold === 1) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 26'
+    } else if (monthHold === 2) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 34'
+    } else if (monthHold === 3) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 33'
+    } else if (monthHold === 4) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 32'
+    } else if (monthHold === 5) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 31'
+    } else if (monthHold === 6) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 30'
+    } else if (monthHold === 7) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 29'
+    } else if (monthHold === 8) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 28'
+    } else if (monthHold === 9) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 27'
+    } else if (monthHold === 11) {
+        fpCycle.textContent = monthHold + '/from birth to age  0 - 34'
+    } else if (monthHold === 22) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 32'
+    } else if (monthHold === 33) {
+        fpCycle.textContent = monthHold + '/from birth to age 0 - 30'
+    };
+
+    // Second Cycle Life 
+    dayHold;
+    if (dayHold === 10) {
+        dayHold = 1;
+    } else if (dayHold === 11) {
+        dayHold = 11;
+    } else if (dayHold === 22) {
+        dayHold = 22
+    } else if (dayHold === 33 ) {
+        dayHold = 33
+    } else if (dayHold > 11 ) {
+        mSplit = String(dayHold).split('');
+        sum = eval(mSplit.join('+'));
+        dayHold = sum;
+    }  else {
+        dayHold;
+    };
+    if (dayHold === 1) {
+        spCycle.textContent = dayHold + '/from age 26 to 53'
+    } else if (dayHold === 2) {
+        spCycle.textContent = dayHold + '/from age 34 to 61'
+    } else if (dayHold === 3) {
+        spCycle.textContent = dayHold + '/from age 33 to 60'
+    } else if (dayHold === 4) {
+        spCycle.textContent = dayHold + '/from age 32 to 59'
+    } else if (dayHold === 5) {
+        spCycle.textContent = dayHold + '/from age 31 to 58'
+    } else if (dayHold === 6) {
+        spCycle.textContent = dayHold + '/from age 30 to 57'
+    } else if (dayHold === 7) {
+        spCycle.textContent = dayHold + '/from age 29 to 56'
+    } else if (dayHold === 8) {
+        spCycle.textContent = dayHold + '/from age 28 to 55'
+    } else if (dayHold === 9) {
+        spCycle.textContent = dayHold + '/from age 27 to 54'
+    } else if (dayHold === 11) {
+        spCycle.textContent = dayHold + '/from age 34 to 61'
+    } else if (dayHold === 22) {
+        spCycle.textContent = dayHold + '/from age 32 to 59'
+    } else if (dayHold === 33) {
+        spCycle.textContent = dayHold + '/from age 30 to 57'
+    };
+
+    // Third Period Cycle 
+    yearHold;
+    mSplit = String(yearHold).split('');
+    sum = eval(mSplit.join('+'));
+    yearHold = sum;
+    if (yearHold === 10) {
+        yearHold = 1;
+    } else if (yearHold === 11) {
+        yearHold = 11;
+    } else if (yearHold === 22) {
+        yearHold = 22
+    } else if (yearHold === 33 ) {
+        yearHold = 33
+    } else if (yearHold > 11 ) {
+        mSplit = String(yearHold).split('');
+        sum = eval(mSplit.join('+'));
+        yearHold = sum;
+    }  else {
+        yearHold;
+    };
+    if (yearHold === 1) {
+        tpCycle.textContent = yearHold + '/from age 53 and on'
+    } else if (yearHold === 2) {
+        tpCycle.textContent = yearHold + '/from age 61 and on'
+    } else if (yearHold === 3) {
+        tpCycle.textContent = yearHold + '/from age 60 and on'
+    } else if (yearHold === 4) {
+        tpCycle.textContent = yearHold + '/from age 59 and on'
+    } else if (yearHold === 5) {
+        tpCycle.textContent = yearHold + '/from age 58 and on'
+    } else if (yearHold === 6) {
+        tpCycle.textContent = yearHold + '/from age 57 and on'
+    } else if (yearHold === 7) {
+        tpCycle.textContent = yearHold + '/from age 56 and on'
+    } else if (yearHold === 8) {
+        tpCycle.textContent = yearHold + '/from age 55 and on'
+    } else if (yearHold === 9) {
+        tpCycle.textContent = yearHold + '/from age 54 and on'
+    } else if (yearHold === 11) {
+        tpCycle.textContent = yearHold + '/from age 61 and on'
+    } else if (yearHold === 22) {
+        tpCycle.textContent = yearHold + '/from age 59 and on'
+    } else if (yearHold === 33) {
+        tpCycle.textContent = yearHold + '/from age 57 and on'
+    };
+
+
+
+
+
+    // Season Of Your Life : Pinnacle # 
+
+    // First Pinnacle
+
+
+
+
+
+
+
+
+
+
 
     document.querySelector('.hide').style.display = 'block';
 

@@ -778,7 +778,6 @@ calculate.addEventListener('click', ()=> {
     filteredList = ednfName
     for (let iterate  = 0; iterate < filteredList.length; iterate++) {
         for ( let i = 0; i <= filteredList[iterate].length; i++) {
-
             if (String(filteredList[iterate][i]).toLowerCase() === 'a' ||  String(filteredList[iterate][i]).toLowerCase() === 'j' || String(filteredList[iterate][i]).toLowerCase() === 's' ) {
                 mainNumString += '1';
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'b' || String(filteredList[iterate][i]).toLowerCase() === 'k' || String(filteredList[iterate][i]).toLowerCase() === 't') {
@@ -801,6 +800,78 @@ calculate.addEventListener('click', ()=> {
         };
     };  
     filteredNum = mainNumString;
+    var emptyString = '';
+    if (mainNumString.split('1').length-1 >= 2) {
+        if (emptyString !== '') {
+            emptyString += ', 1';
+        } else if (emptyString === ''){
+            emptyString += '1';
+        }
+    } 
+    if (mainNumString.split('2').length-1 >= 2) {
+        if (emptyString !== '') {
+            emptyString += ', 2';
+        } else if (emptyString === '') {
+            emptyString += '2';
+        }
+    }
+    if (mainNumString.split('3').length-1 >= 2) {
+        if(emptyString !== '') {
+            emptyString += ', 3';
+        } else if (emptyString === '') {
+            emptyString += '3';
+        }
+    }
+    if (mainNumString.split('4').length-1 >= 2) {
+        if(emptyString !== '') {
+            emptyString += ', 4';
+        } else if (emptyString === '') {
+            emptyString += '4';
+        }
+    } 
+    if (mainNumString.split('5').length-1 >= 2) {
+        if(emptyString !== '') {
+            emptyString += ', 5';
+        } else if (emptyString === '') {
+            emptyString += '5';
+        }
+    }
+    if (mainNumString.split('6').length-1 >= 2) {
+        if (emptyString !== '') {
+            emptyString += ', 6';
+        } else if (emptyString === ''){
+            emptyString += '6';
+        }
+    }
+    if (mainNumString.split('7').length-1 >= 2) {
+        if (emptyString !== '') {
+            emptyString += ', 7';
+        } else if (emptyString === '') {
+            emptyString += '7';
+        }
+    }
+    if (mainNumString.split('8').length-1 >= 2) {
+        if (emptyString !== '') {
+            emptyString += ', 8';
+        } else if (emptyString === ''){
+            emptyString += '8';
+        }
+    }
+    if (mainNumString.split('9').length-1 >= 2) {
+        if (emptyString !== '') {
+            emptyString += ', 9';
+        } else if (emptyString === '') {
+            emptyString += '9';
+        }
+    };
+    hpNum.textContent = emptyString;
+
+
+    // Hereditary Name Number 
+    
+
+
+
 })
 
 function changeDefault(event) {

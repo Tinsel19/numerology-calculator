@@ -978,6 +978,15 @@ calculate.addEventListener('click', ()=> {
     };
     epoeNum.textContent = count;
 
+    document.querySelector('.hide').style.display = 'block';
+
+});
+
+document.getElementById('reset').addEventListener('click', ()=> {
+    document.querySelector('.hide').style.display = 'none';
+    cName.value = '';
+    fName.value = '';
+    dBrith.value = '';
 })
 
 function changeDefault(event) {

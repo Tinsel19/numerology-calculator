@@ -169,7 +169,7 @@ calculate.addEventListener('click', ()=> {
 
     var daySplit = dayString.split('');
     var monthSplit = monthString.split('');
-    var yearSplit = yearString.split(''); 
+    var yearSplit = yearString.split('');
     
     var dayNumArray = daySplit.map(str => parseInt(str));
     var monthNumArray = monthSplit.map(str => parseInt(str));
@@ -183,6 +183,32 @@ calculate.addEventListener('click', ()=> {
 
     // life path number 
     var sum = 0;
+    mSplit = String(sumYearArray).split('');
+    var xsum = eval(mSplit.join('+'));
+    sumYearArray = xsum;
+
+    if (Number(dayString) < 10) {
+        sumDayArray = Number(dayString);
+    } else if (Number(dayString) === 10) {
+        sumDayArray = 1;
+    } else if (Number(dayString) === 11 || Number(dayString) === 22) {
+        sumDayArray = Number(dayString);
+    } else {
+        mSplit = String(dayString).split('');
+        xsum = eval(mSplit.join('+'));
+        sumDayArray = xsum
+    };
+
+    if (Number(monthString) < 10) {
+        sumMonthArray;
+    } else if (Number(dayString) === 10) {
+        sumMonthArray = 1;
+    } else if (Number(monthString) === 11 ) {
+        sumMonthArray = 11;
+    } else if (Number(monthString) === 12){
+        sumMonthArray = 3;
+    }
+    
     sum = sumDayArray + sumMonthArray + sumYearArray;
     var lsum = sum;
     var lpHold, edHold, suHold, pnHold;
@@ -1053,6 +1079,9 @@ calculate.addEventListener('click', ()=> {
 
     // First Period Life Cycle 
     monthHold;
+    // mSplit = String(monthHold).split('');
+    // sum = eval(mSplit.join('+'));
+    // monthHold = sum;
     if (monthHold === 10) {
         monthHold = 1;
     } else if (monthHold === 11) {
@@ -1188,6 +1217,270 @@ calculate.addEventListener('click', ()=> {
     // Season Of Your Life : Pinnacle # 
 
     // First Pinnacle
+    monthHold = Number(dMonth.value);
+    dayHold = Number(dDay.value);
+    yearHold = Number(dYear.value);
+    dayHold, monthHold, yearHold;
+
+    if (monthHold === 10) {
+        monthHold = 1;
+    } else if (monthHold === 11) {
+        monthHold = 2;
+    } else if (monthHold === 12) {
+        monthHold = 3
+    } else {
+        monthHold;
+    };
+
+    mSplit = String(dayHold).split('');
+    sum = eval(mSplit.join('+'));
+    if (sum === 10) {
+        sum = 1;
+    } else if (sum === 11) {
+        sum = 2;
+    } else if (sum === 22) {
+        sum = 4;
+    } else if (sum === 33) {
+        sum = 6;
+    } else if (sum < 10) {
+        sum;
+    } else {
+        mSplit = String(sum).split('');
+        sum = eval(mSplit.join('+'));
+    }
+    var fpSum = monthHold + sum;
+    dayHold = sum;
+
+    if (fpSum === 10) {
+        fpSum = 1;
+    } else if (fpSum === 11 || fpSum === 22 || fpSum === 33) {
+        fpSum;
+    } else if (fpSum < 10) {
+        fpSum;
+    } else {
+        mSplit = String(fpSum).split('');
+        sum = eval(mSplit.join('+'));
+        fpSum = sum;
+    }
+    
+    if (fpSum === 1) {
+        fPin.textContent = fpSum + '/from birth to age 35'
+    } else if (fpSum === 2) {
+        fPin.textContent = fpSum + '/from birth to age 34'
+    } else if (fpSum === 3) {
+        fPin.textContent = fpSum + '/from birth to age 33'
+    } else if (fpSum === 4) {
+        fPin.textContent = fpSum + '/from birth to age 32'
+    } else if (fpSum === 5) {
+        fPin.textContent = fpSum + '/from birth to age 31'
+    } else if (fpSum === 6) {
+        fPin.textContent = fpSum + '/from birth to age 30'
+    } else if (fpSum === 7) {
+        fPin.textContent = fpSum + '/from birth to age 29'
+    } else if (fpSum === 8) {
+        fPin.textContent = fpSum + '/from birth to age 28'
+    } else if (fpSum === 9) {
+        fPin.textContent = fpSum + '/from birth to age 27'
+    } else if (fpSum === 11) {
+        fPin.textContent = fpSum + '/from birth to age 34'
+    } else if (fpSum === 22) {
+        fPin.textContent = fpSum + '/from birth to age 32'
+    } else if (fpSum === 33) {
+        fPin.textContent = fpSum + '/from birth to age 30'
+    };
+
+
+    // Second Pinnacle 
+    dayHold;
+    yearHold = Number(dYear.value);
+
+    mSplit = String(yearHold).split('');
+    sum = eval(mSplit.join('+'));
+    if (sum === 10) {
+        sum = 1;
+    } else if (sum === 11) {
+        sum = 2;
+    } else if (sum === 22) {
+        sum = 4;
+    } else if (sum === 33) {
+        sum = 6;
+    } else if (sum < 10) {
+        sum;
+    } else {
+        mSplit = String(sum).split('');
+        sum = eval(mSplit.join('+'));
+    };
+    yearHold = sum;
+    var spSum = dayHold + yearHold;
+
+    if (spSum === 10) {
+        spSum = 1;
+    } else if (spSum === 11 || spSum === 22 || spSum === 33 || spSum < 10) {
+        spSum;
+    } else {
+        mSplit = String(spSum).split('');
+        sum = eval(mSplit.join('+'));
+        spSum = sum;
+    };
+
+    if (spSum === 1) {
+        sPin.textContent = spSum + '/from age 35 to 44'
+    } else if (spSum === 2) {
+        sPin.textContent = spSum + '/from age 34 to 43'
+    } else if (spSum === 3) {
+        sPin.textContent = spSum + '/from age 33 to 42'
+    } else if (spSum === 4) {
+        sPin.textContent = spSum + '/from age 32 to 41'
+    } else if (spSum === 5) {
+        sPin.textContent = spSum + '/from age 31 to 40'
+    } else if (spSum === 6) {
+        sPin.textContent = spSum + '/from age 30 to 39'
+    } else if (spSum === 7) {
+        sPin.textContent = spSum + '/from age 29 to 38'
+    } else if (spSum === 8) {
+        sPin.textContent = spSum + '/from age 28 to 37'
+    } else if (spSum === 9) {
+        sPin.textContent = spSum + '/from age 27 to 36'
+    } else if (spSum === 11) {
+        sPin.textContent = spSum + '/from age 34 to 43'
+    } else if (spSum === 22) {
+        sPin.textContent = spSum + '/from age 32 to 41'
+    } else if (spSum === 33) {
+        sPin.textContent = spSum + '/from age 30 to 39'
+    };
+
+
+    // Third Pinnacle Cycle 
+    var tpSum = fpSum + spSum;
+
+    if (tpSum === 10) {
+        tpSum = 1;
+    } else if (tpSum === 11 || tpSum === 22 || tpSum === 33 || tpSum < 10) {
+        tpSum;
+    } else {
+        mSplit = String(tpSum).split('');
+        sum = eval(mSplit.join('+'));
+        tpSum = sum;
+    };
+
+    if (tpSum === 1) {
+        tPin.textContent = tpSum + '/from age 44 to 53'
+    } else if (tpSum === 2) {
+        tPin.textContent = tpSum + '/from age 43 to 52'
+    } else if (tpSum === 3) {
+        tPin.textContent = tpSum + '/from age 42 to 51'
+    } else if (tpSum === 4) {
+        tPin.textContent = tpSum + '/from age 41 to 50'
+    } else if (tpSum === 5) {
+        tPin.textContent = tpSum + '/from age 40 to 49'
+    } else if (tpSum === 6) {
+        tPin.textContent = tpSum + '/from age 39 to 48'
+    } else if (tpSum === 7) {
+        tPin.textContent = tpSum + '/from age 38 to 47'
+    } else if (tpSum === 8) {
+        tPin.textContent = tpSum + '/from age 37 to 46'
+    } else if (tpSum === 9) {
+        tPin.textContent = tpSum + '/from age 36 to 45'
+    } else if (tpSum === 11) {
+        tPin.textContent = tpSum + '/from age 43 to 52'
+    } else if (tpSum === 22) {
+        tPin.textContent = tpSum + '/from age 41 to 50'
+    } else if (tpSum === 33) {
+        tPin.textContent = tpSum + '/from age 39 to 48'
+    };
+
+
+    // fourth pinnacle 
+    var ftSum = monthHold + yearHold;
+
+    if (ftSum === 10) {
+        ftSum = 1;
+    } else if (ftSum === 11 || ftSum === 22 || ftSum === 33 || ftSum < 10) {
+        ftSum;
+    } else {
+        mSplit = String(ftSum).split('');
+        sum = eval(mSplit.join('+'));
+        ftSum = sum;
+    };
+    
+
+    if (ftSum === 1) {
+        ftPin.textContent = ftSum + '/from age 53 and on'
+    } else if (ftSum === 2) {
+        ftPin.textContent = ftSum + '/from age 52 and on'
+    } else if (ftSum === 3) {
+        ftPin.textContent = ftSum + '/from age 51 and on'
+    } else if (ftSum === 4) {
+        ftPin.textContent = ftSum + '/from age 50 and on'
+    } else if (ftSum === 5) {
+        ftPin.textContent = ftSum + '/from age 49 and on'
+    } else if (ftSum === 6) {
+        ftPin.textContent = ftSum + '/from age 48 and on'
+    } else if (ftSum === 7) {
+        ftPin.textContent = ftSum + '/from age 47 and on'
+    } else if (ftSum === 8) {
+        ftPin.textContent = ftSum + '/from age 46 and on'
+    } else if (ftSum === 9) {
+        ftPin.textContent = ftSum + '/from age 45 and on'
+    } else if (ftSum === 11) {
+        ftPin.textContent = ftSum + '/from age 52 and on'
+    } else if (ftSum === 22) {
+        ftPin.textContent = ftSum + '/from age 50 and on'
+    } else if (ftSum === 33) {
+        ftPin.textContent = ftSum + '/from age 48 and on'
+    };
+
+
+
+    // Challenges in Life 
+
+    // First Challenge 
+    dayHold, monthHold, yearHold;
+    fCha;
+
+    var fAnim = dayHold - monthHold;
+    if (fAnim < 0) {
+        fAnim = fAnim * (-1);
+    } else {
+        fAnim;
+    };
+    fCha.textContent = fAnim;
+
+    // Second Challenge 
+    sCha;
+    var sAnim = yearHold - dayHold;
+    if (sAnim < 0) {
+        sAnim = sAnim * (-1);
+    } else {
+        sAnim;
+    };
+    sCha.textContent = sAnim;
+
+    // Third Challenge 
+    var tAnim = sAnim - fAnim;
+
+    if (tAnim < 0) {
+        tAnim = tAnim * (-1);
+    } else {
+        tAnim;
+    };
+    tCha.textContent = tAnim;
+
+    // Forth Challenge 
+    var ftAnim = yearHold - monthHold;
+    if (ftAnim < 0) {
+        ftAnim = ftAnim * (-1)
+    } else {
+        ftAnim;
+    };
+    ftCha.textContent = ftAnim;
+
+
+
+
+
+
+
 
 
 

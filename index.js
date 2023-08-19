@@ -163,9 +163,6 @@ calculate.addEventListener('click', ()=> {
     var monthString = String(dMonth.value);
     var yearString = String(dYear.value);
 
-    // // // // console.log(dayString);
-    // // // // console.log(monthString);
-    // // // // console.log(yearString);
 
     var daySplit = dayString.split('');
     var monthSplit = monthString.split('');
@@ -183,7 +180,7 @@ calculate.addEventListener('click', ()=> {
 
     // life path number 
     var sum = 0;
-    mSplit = String(sumYearArray).split('');
+    mSplit = String(yearString).split('');
     var xsum = eval(mSplit.join('+'));
     sumYearArray = xsum;
 
@@ -198,9 +195,8 @@ calculate.addEventListener('click', ()=> {
         xsum = eval(mSplit.join('+'));
         sumDayArray = xsum
     };
-
     if (Number(monthString) < 10) {
-        sumMonthArray;
+        sumMonthArray = Number(monthString);
     } else if (Number(dayString) === 10) {
         sumMonthArray = 1;
     } else if (Number(monthString) === 11 ) {
@@ -208,21 +204,44 @@ calculate.addEventListener('click', ()=> {
     } else if (Number(monthString) === 12){
         sumMonthArray = 3;
     }
+
+    if (Number(sumYearArray) < 10) {
+        sumYearArray = Number(sumYearArray);
+    } else if (Number(sumYearArray) === 10) {
+        sumYearArray = 1;
+    } else if (Number(sumYearArray) === 11 ) {
+        sumYearArray = 11;
+    } else if (Number(sumYearArray) === 22){
+        sumYearArray = 22;
+    } else if (Number(sumYearArray) === 33){
+        sumYearArray = 33;
+    } else {
+        mSplit = String(sumYearArray).split('');
+        xsum = eval(mSplit.join('+'));
+        sumYearArray = xsum;
+    }
+
     
     sum = sumDayArray + sumMonthArray + sumYearArray;
+
     var lsum = sum;
     var lpHold, edHold, suHold, pnHold;
+    if (sum < 10) {
+        lpNum.innerHTML = '<b>' +sum + '</b>';
+    } else if (sum === 10) {
+        lpNum.innerHTML = '<b> 1 </b>'
+    }
     while (sum > 10) {
         if (sum === 11) {
-            lpNum.textContent = '11/2';
+            lpNum.innerHTML = '11/<b>2</b>';
             sum = 2;
             break
         } else if(sum === 22) {
-            lpNum.textContent = '22/4';
+            lpNum.innerHTML = '22/<b>4</b>';
             sum = 4;
             break;
         } else if (sum === 33) {
-            lpNum.textContent = '33/6';
+            lpNum.innerHTML = '33/<b>6</b>';
             sum = 6;
             break;
         } else {
@@ -232,9 +251,9 @@ calculate.addEventListener('click', ()=> {
             sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
             lpHold = sum;
             if (sum === 10) {
-                lpNum.textContent = numberString + '/' + 10 + '/1';
+                lpNum.innerHTML = numberString + '/' + 10 + '/<b>1</b>';
             } else {
-                lpNum.textContent = lsum + '/' +sum;
+                lpNum.innerHTML = lsum + '/<b>' +sum + '</b>';
             }
         }
     };
@@ -245,23 +264,23 @@ calculate.addEventListener('click', ()=> {
 
     // Birthday Number 
     if (sumDayArray === 1) {
-        bdNum.textContent = '1';
+        bdNum.innerHTML = '<b>1</b>';
     } else if (sumDayArray === 2) {
-        bdNum.textContent = parseInt(dayString) + '/' + '2';
+        bdNum.innerHTML = parseInt(dayString) + '/' + '<b>2</b>';
     } else if (sumDayArray === 3) {
-        bdNum.textContent = parseInt(dayString) + '/' + '3';
+        bdNum.innerHTML = parseInt(dayString) + '/' + '<b>3</b>';
     } else if (sumDayArray === 4) {
-        bdNum.textContent = parseInt(dayString) + '/' + '4';
+        bdNum.innerHTML = parseInt(dayString) + '/' + '<b>4</b>';
     } else if (sumDayArray === 5) {
-        bdNum.textContent = parseInt(dayString) + '/' + '6';
+        bdNum.innerHTML = parseInt(dayString) + '/' + '<b>6</b>';
     } else if (sumDayArray === 6) {
-        bdNum.textContent = parseInt(dayString) + '/' + '6';
+        bdNum.innerHTML = parseInt(dayString) + '/' + '<b>6</b>';
     } else if (sumDayArray === 7) {
-        bdNum.textContent = parseInt(dayString) + '/' + '7';
+        bdNum.innerHTML = parseInt(dayString) + '/' + '<b>7</b>';
     } else if (sumDayArray === 8) {
-        bdNum.textContent = parseInt(dayString) + '/' + '8';
+        bdNum.innerHTML = parseInt(dayString) + '/' + '<b>8</b>';
     } else if (sumDayArray === 9) {
-        bdNum.textContent = parseInt(dayString) + '/' + '9';
+        bdNum.innerHTML = parseInt(dayString) + '/' + '<b>9</b>';
     };
 
 
@@ -321,28 +340,28 @@ calculate.addEventListener('click', ()=> {
     dbSplit = String(dbTotalSum).split('');
     nSum = eval(dbSplit.join('+'));
     if (dbTotalSum === 10) {
-        edNum.textContent = dbTotalSum + '/1' ;
+        edNum.innerHTML = dbTotalSum + '/<b>1</b>' ;
     } else if (dbTotalSum === 19) {
-        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        edNum.innerHTML = dbTotalSum + '/' + nSum + '/<b>1</b>';
     } else if (dbTotalSum === 28) {
-        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        edNum.innerHTML = dbTotalSum + '/' + nSum + '/<b>1</b>';
     } else if (dbTotalSum === 37) {
-        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        edNum.innerHTML = dbTotalSum + '/' + nSum + '/<b>1</b>';
     } else if (dbTotalSum === 46) {
-        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        edNum.innerHTML = dbTotalSum + '/' + nSum + '/<b>1</b>';
     } else if (dbTotalSum === 55) {
-        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        edNum.innerHTML = dbTotalSum + '/' + nSum + '/<b>1</b>';
     } else if (dbTotalSum === 64) {
-        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        edNum.innerHTML = dbTotalSum + '/' + nSum + '/<b>1</b>';
     } else if (dbTotalSum === 73) {
-        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        edNum.innerHTML = dbTotalSum + '/' + nSum + '/<b>1</b>';
     } else if (dbTotalSum === 82) {
-        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        edNum.innerHTML = dbTotalSum + '/' + nSum + '/<b>1</b>';
     } else if (dbTotalSum === 91) {
-        edNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        edNum.innerHTML = dbTotalSum + '/' + nSum + '/<b>1</b>';
     }
     else {
-        edNum.textContent = dbTotalSum + '/' + nSum;
+        edNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
     }
     edHold = nSum;
 
@@ -403,30 +422,30 @@ calculate.addEventListener('click', ()=> {
     nSum = eval(dbSplit.join('+'));
     countList = [];
     if (dbTotalSum === 10) {
-        medNum.textContent = dbTotalSum + '/1' ;
+        medNum.innerHTML = dbTotalSum + '/1' ;
     } else if (dbTotalSum < 10) {
-        medNum.textContent = dbTotalSum ;
+        medNum.innerHTML = dbTotalSum ;
     } else if (dbTotalSum === 19) {
-        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        medNum.innerHTML = dbTotalSum + '/' + nSum + '/1';
     } else if (dbTotalSum === 28) {
-        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        medNum.innerHTML = dbTotalSum + '/' + nSum + '/1';
     } else if (dbTotalSum === 37) {
-        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        medNum.innerHTML = dbTotalSum + '/' + nSum + '/1';
     } else if (dbTotalSum === 46) {
-        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        medNum.innerHTML = dbTotalSum + '/' + nSum + '/1';
     } else if (dbTotalSum === 55) {
-        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        medNum.innerHTML = dbTotalSum + '/' + nSum + '/1';
     } else if (dbTotalSum === 64) {
-        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        medNum.innerHTML = dbTotalSum + '/' + nSum + '/1';
     } else if (dbTotalSum === 73) {
-        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        medNum.innerHTML = dbTotalSum + '/' + nSum + '/1';
     } else if (dbTotalSum === 82) {
-        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        medNum.innerHTML = dbTotalSum + '/' + nSum + '/1';
     } else if (dbTotalSum === 91) {
-        medNum.textContent = dbTotalSum + '/' + nSum + '/1';
+        medNum.innerHTML = dbTotalSum + '/' + nSum + '/1';
     }
     else {
-        medNum.textContent = dbTotalSum + '/' + nSum;
+        medNum.innerHTML = dbTotalSum + '/' + nSum;
     }
     medHold = nSum;
 
@@ -458,26 +477,32 @@ calculate.addEventListener('click', ()=> {
         countList.push(count);
         count = 0;
     };
-    var suhdSplit, sum,  suhdSumList = [], suhdResult, y;
+    console.log(countList);
+    var suhdSplit, sum,  suhdSumList = [], suhdResult, y, count = 0;
     for (let x = 0; x < countList.length; x++) {
         if (countList[x] === 11) {
-            suhdResult = '11/2';
+            // suhdResult = '11/2';
+            sum = 11
         } else if (countList[x] === 22) {
-            suhdResult = '22/4';
+            // suhdResult = '22/4';
+            sum = 22
         } else if (countList[x] === 33) {
-            suhdResult = '33/4';
+            // suhdResult = '33/6'
+            sum = 33
         } else {
             suhdSplit = String(countList[x]).split('');
             sum = eval(suhdSplit.join('+'));
             suhdSumList.push(sum);
-            suhdResult = eval(suhdSumList.join('+'));
             x = eval(countList.join('+'));
-            sum = x + '/'+ eval(suhdSplit.join('+'));
+            var xx = String(x).split('');
+            sum = eval(xx.join('+'));
             y = eval(suhdSplit.join('+'));
-        }
-    }
+        };
+        count += sum;
+    };
+
     suHold = y;
-    suhdNum.textContent = sum;
+    suhdNum.innerHTML = '<b>' +sum+ '</b>';
 
 
 
@@ -525,16 +550,12 @@ calculate.addEventListener('click', ()=> {
         }  else if (x === 19 || x === 28 || x === 37 || x === 46 || x === 55 || x === 64 || x === 73 || x === 82 || x === 91) {
             sum = '10/1';
         } else {
-            // suhdSplit = String(countList[x]).split('');
-            // sum = eval(suhdSplit.join('+'));
-            // suhdSumList.push(sum);
-            // suhdResult = eval(suhdSumList.join('+'));
             x = eval(countList.join('+'));
             msuHold = eval(suhdSplit.join('+'));
             sum = x + '/'+ eval(suhdSplit.join('+'));
         }
     }
-    msuhdNum.textContent = sum;
+    msuhdNum.innerHTML = sum;
 
 
 
@@ -592,7 +613,7 @@ calculate.addEventListener('click', ()=> {
         sum = eval(pnSplit.join('+'));
     }
     pnHold = count ;
-    pNum.textContent = count ;
+    pNum.innerHTML = '<b>' +count+ '</b>' ;
 
 
 
@@ -654,14 +675,14 @@ calculate.addEventListener('click', ()=> {
     }
     // console.log(sum);
     mpHold = count ;
-    mpNum.textContent = count ;
+    mpNum.innerHTML = count ;
 
 
     // Muaturity Number 
     count = lpHold + edHold;
     mSplit = String(count).split('');
     sum = eval(mSplit.join('+'));
-    mNum.textContent = count + '/' + sum;
+    mNum.innerHTML = count + '/' + sum;
 
 
     // Attitude Number 
@@ -688,11 +709,6 @@ calculate.addEventListener('click', ()=> {
     } else if (intMonthNum === 12){
         intMonthNum = 3;
     }
-    // } else if (intMonthNum > 10) {
-    //     mSplit = intMonthNum(intMonthNum).split('');
-    //     sum = eval(mSplit.join('+'));
-    //     intMonthNum = sum;
-    // }
 
     sumAttitude = intDayNum + intMonthNum;
     if (sumAttitude === 10) {
@@ -702,7 +718,7 @@ calculate.addEventListener('click', ()=> {
         sum = eval(mSplit.join('+'));
         sumAttitude = sum;
     }
-    aNum.textContent = sumAttitude;
+    aNum.innerHTML = sumAttitude;
 
 
 
@@ -714,20 +730,20 @@ calculate.addEventListener('click', ()=> {
     } else {
         subtract;
     }
-    lpebNum.textContent = String(subtract)
+    lpebNum.innerHTML = String(subtract)
 
 
 
     // Heart's Desire ? Personlaity Bridge Number 
-    hdpbNum.textContent;
+    hdpbNum.innerHTML;
     var hdPB = suHold - pnHold;
     var x = hdPB;
     if (x < 1) {
-        hdPB = 1;
+        hdPB = 0;
     } else {
         hdPB = x;
     }
-    hdpbNum.textContent = hdPB;
+    hdpbNum.innerHTML = hdPB;
 
 
 
@@ -743,7 +759,7 @@ calculate.addEventListener('click', ()=> {
     }
 
     x = sum + edHold;
-    rtNum.textContent = String(x);
+    rtNum.innerHTML = String(x);
 
 
 
@@ -779,7 +795,7 @@ calculate.addEventListener('click', ()=> {
             count += 9;
         }
     };
-    bnNum.textContent = count;
+    bnNum.innerHTML = count;
 
 
 
@@ -815,7 +831,7 @@ calculate.addEventListener('click', ()=> {
             }
         };
     };
-    ssNum.textContent = count;
+    ssNum.innerHTML = count;
 
 
 
@@ -855,7 +871,7 @@ calculate.addEventListener('click', ()=> {
         };
     };  
     filteredNum = mainNumString;
-    klNum.textContent = filteredNum;
+    klNum.innerHTML = filteredNum;
 
 
     
@@ -960,7 +976,7 @@ calculate.addEventListener('click', ()=> {
             emptyString += '9';
         }
     };
-    hpNum.textContent = emptyString;
+    hpNum.innerHTML = emptyString;
 
 
 
@@ -1002,7 +1018,7 @@ calculate.addEventListener('click', ()=> {
         sum = eval(mSplit.join('+'));
         count = sum;
     };
-    hnNum.textContent = count;
+    hnNum.innerHTML = count;
     
     
 
@@ -1010,7 +1026,7 @@ calculate.addEventListener('click', ()=> {
     // CornerStone Letter 
     ednfName = fName.value.split(' ');
     var firstLetter = ednfName[0][0].toUpperCase();
-    cstNum.textContent = firstLetter;
+    cstNum.innerHTML = firstLetter;
 
 
 
@@ -1026,7 +1042,7 @@ calculate.addEventListener('click', ()=> {
             count += 1;
         } 
     };
-    ppoeNum.textContent = count;
+    ppoeNum.innerHTML = count;
 
 
 
@@ -1041,7 +1057,7 @@ calculate.addEventListener('click', ()=> {
             count += 1;
         } 
     };
-    mpoeNum.textContent = count;
+    mpoeNum.innerHTML = count;
 
 
 
@@ -1057,7 +1073,7 @@ calculate.addEventListener('click', ()=> {
             count += 1;
         } 
     };
-    ipoeNum.textContent = count;
+    ipoeNum.innerHTML = count;
 
 
 
@@ -1072,7 +1088,7 @@ calculate.addEventListener('click', ()=> {
             count += 1;
         } 
     };
-    epoeNum.textContent = count;
+    epoeNum.innerHTML = count;
 
 
     // Chapters of Life: Period Cycle 
@@ -1093,29 +1109,29 @@ calculate.addEventListener('click', ()=> {
     };
 
     if (monthHold === 1) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 26'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 26'
     } else if (monthHold === 2) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 34'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 34'
     } else if (monthHold === 3) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 33'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 33'
     } else if (monthHold === 4) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 32'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 32'
     } else if (monthHold === 5) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 31'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 31'
     } else if (monthHold === 6) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 30'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 30'
     } else if (monthHold === 7) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 29'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 29'
     } else if (monthHold === 8) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 28'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 28'
     } else if (monthHold === 9) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 27'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 27'
     } else if (monthHold === 11) {
-        fpCycle.textContent = monthHold + '/from birth to age  0 - 34'
+        fpCycle.innerHTML = monthHold + '/from birth to age  0 - 34'
     } else if (monthHold === 22) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 32'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 32'
     } else if (monthHold === 33) {
-        fpCycle.textContent = monthHold + '/from birth to age 0 - 30'
+        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 30'
     };
 
     // Second Cycle Life 
@@ -1139,29 +1155,29 @@ calculate.addEventListener('click', ()=> {
         dayHold;
     };
     if (dayHold === 1) {
-        spCycle.textContent = dayHold + '/from age 26 to 53'
+        spCycle.innerHTML = dayHold + '/from age 26 to 53'
     } else if (dayHold === 2) {
-        spCycle.textContent = dayHold + '/from age 34 to 61'
+        spCycle.innerHTML = dayHold + '/from age 34 to 61'
     } else if (dayHold === 3) {
-        spCycle.textContent = dayHold + '/from age 33 to 60'
+        spCycle.innerHTML = dayHold + '/from age 33 to 60'
     } else if (dayHold === 4) {
-        spCycle.textContent = dayHold + '/from age 32 to 59'
+        spCycle.innerHTML = dayHold + '/from age 32 to 59'
     } else if (dayHold === 5) {
-        spCycle.textContent = dayHold + '/from age 31 to 58'
+        spCycle.innerHTML = dayHold + '/from age 31 to 58'
     } else if (dayHold === 6) {
-        spCycle.textContent = dayHold + '/from age 30 to 57'
+        spCycle.innerHTML = dayHold + '/from age 30 to 57'
     } else if (dayHold === 7) {
-        spCycle.textContent = dayHold + '/from age 29 to 56'
+        spCycle.innerHTML = dayHold + '/from age 29 to 56'
     } else if (dayHold === 8) {
-        spCycle.textContent = dayHold + '/from age 28 to 55'
+        spCycle.innerHTML = dayHold + '/from age 28 to 55'
     } else if (dayHold === 9) {
-        spCycle.textContent = dayHold + '/from age 27 to 54'
+        spCycle.innerHTML = dayHold + '/from age 27 to 54'
     } else if (dayHold === 11) {
-        spCycle.textContent = dayHold + '/from age 34 to 61'
+        spCycle.innerHTML = dayHold + '/from age 34 to 61'
     } else if (dayHold === 22) {
-        spCycle.textContent = dayHold + '/from age 32 to 59'
+        spCycle.innerHTML = dayHold + '/from age 32 to 59'
     } else if (dayHold === 33) {
-        spCycle.textContent = dayHold + '/from age 30 to 57'
+        spCycle.innerHTML = dayHold + '/from age 30 to 57'
     };
 
     // Third Period Cycle 
@@ -1185,29 +1201,29 @@ calculate.addEventListener('click', ()=> {
         yearHold;
     };
     if (yearHold === 1) {
-        tpCycle.textContent = yearHold + '/from age 53 and on'
+        tpCycle.innerHTML = yearHold + '/from age 53 and on'
     } else if (yearHold === 2) {
-        tpCycle.textContent = yearHold + '/from age 61 and on'
+        tpCycle.innerHTML = yearHold + '/from age 61 and on'
     } else if (yearHold === 3) {
-        tpCycle.textContent = yearHold + '/from age 60 and on'
+        tpCycle.innerHTML = yearHold + '/from age 60 and on'
     } else if (yearHold === 4) {
-        tpCycle.textContent = yearHold + '/from age 59 and on'
+        tpCycle.innerHTML = yearHold + '/from age 59 and on'
     } else if (yearHold === 5) {
-        tpCycle.textContent = yearHold + '/from age 58 and on'
+        tpCycle.innerHTML = yearHold + '/from age 58 and on'
     } else if (yearHold === 6) {
-        tpCycle.textContent = yearHold + '/from age 57 and on'
+        tpCycle.innerHTML = yearHold + '/from age 57 and on'
     } else if (yearHold === 7) {
-        tpCycle.textContent = yearHold + '/from age 56 and on'
+        tpCycle.innerHTML = yearHold + '/from age 56 and on'
     } else if (yearHold === 8) {
-        tpCycle.textContent = yearHold + '/from age 55 and on'
+        tpCycle.innerHTML = yearHold + '/from age 55 and on'
     } else if (yearHold === 9) {
-        tpCycle.textContent = yearHold + '/from age 54 and on'
+        tpCycle.innerHTML = yearHold + '/from age 54 and on'
     } else if (yearHold === 11) {
-        tpCycle.textContent = yearHold + '/from age 61 and on'
+        tpCycle.innerHTML = yearHold + '/from age 61 and on'
     } else if (yearHold === 22) {
-        tpCycle.textContent = yearHold + '/from age 59 and on'
+        tpCycle.innerHTML = yearHold + '/from age 59 and on'
     } else if (yearHold === 33) {
-        tpCycle.textContent = yearHold + '/from age 57 and on'
+        tpCycle.innerHTML = yearHold + '/from age 57 and on'
     };
 
 
@@ -1264,29 +1280,29 @@ calculate.addEventListener('click', ()=> {
     }
     
     if (fpSum === 1) {
-        fPin.textContent = fpSum + '/from birth to age 35'
+        fPin.innerHTML = fpSum + '/from birth to age 35'
     } else if (fpSum === 2) {
-        fPin.textContent = fpSum + '/from birth to age 34'
+        fPin.innerHTML = fpSum + '/from birth to age 34'
     } else if (fpSum === 3) {
-        fPin.textContent = fpSum + '/from birth to age 33'
+        fPin.innerHTML = fpSum + '/from birth to age 33'
     } else if (fpSum === 4) {
-        fPin.textContent = fpSum + '/from birth to age 32'
+        fPin.innerHTML = fpSum + '/from birth to age 32'
     } else if (fpSum === 5) {
-        fPin.textContent = fpSum + '/from birth to age 31'
+        fPin.innerHTML = fpSum + '/from birth to age 31'
     } else if (fpSum === 6) {
-        fPin.textContent = fpSum + '/from birth to age 30'
+        fPin.innerHTML = fpSum + '/from birth to age 30'
     } else if (fpSum === 7) {
-        fPin.textContent = fpSum + '/from birth to age 29'
+        fPin.innerHTML = fpSum + '/from birth to age 29'
     } else if (fpSum === 8) {
-        fPin.textContent = fpSum + '/from birth to age 28'
+        fPin.innerHTML = fpSum + '/from birth to age 28'
     } else if (fpSum === 9) {
-        fPin.textContent = fpSum + '/from birth to age 27'
+        fPin.innerHTML = fpSum + '/from birth to age 27'
     } else if (fpSum === 11) {
-        fPin.textContent = fpSum + '/from birth to age 34'
+        fPin.innerHTML = fpSum + '/from birth to age 34'
     } else if (fpSum === 22) {
-        fPin.textContent = fpSum + '/from birth to age 32'
+        fPin.innerHTML = fpSum + '/from birth to age 32'
     } else if (fpSum === 33) {
-        fPin.textContent = fpSum + '/from birth to age 30'
+        fPin.innerHTML = fpSum + '/from birth to age 30'
     };
 
 
@@ -1324,29 +1340,29 @@ calculate.addEventListener('click', ()=> {
     };
 
     if (spSum === 1) {
-        sPin.textContent = spSum + '/from age 35 to 44'
+        sPin.innerHTML = spSum + '/from age 35 to 44'
     } else if (spSum === 2) {
-        sPin.textContent = spSum + '/from age 34 to 43'
+        sPin.innerHTML = spSum + '/from age 34 to 43'
     } else if (spSum === 3) {
-        sPin.textContent = spSum + '/from age 33 to 42'
+        sPin.innerHTML = spSum + '/from age 33 to 42'
     } else if (spSum === 4) {
-        sPin.textContent = spSum + '/from age 32 to 41'
+        sPin.innerHTML = spSum + '/from age 32 to 41'
     } else if (spSum === 5) {
-        sPin.textContent = spSum + '/from age 31 to 40'
+        sPin.innerHTML = spSum + '/from age 31 to 40'
     } else if (spSum === 6) {
-        sPin.textContent = spSum + '/from age 30 to 39'
+        sPin.innerHTML = spSum + '/from age 30 to 39'
     } else if (spSum === 7) {
-        sPin.textContent = spSum + '/from age 29 to 38'
+        sPin.innerHTML = spSum + '/from age 29 to 38'
     } else if (spSum === 8) {
-        sPin.textContent = spSum + '/from age 28 to 37'
+        sPin.innerHTML = spSum + '/from age 28 to 37'
     } else if (spSum === 9) {
-        sPin.textContent = spSum + '/from age 27 to 36'
+        sPin.innerHTML = spSum + '/from age 27 to 36'
     } else if (spSum === 11) {
-        sPin.textContent = spSum + '/from age 34 to 43'
+        sPin.innerHTML = spSum + '/from age 34 to 43'
     } else if (spSum === 22) {
-        sPin.textContent = spSum + '/from age 32 to 41'
+        sPin.innerHTML = spSum + '/from age 32 to 41'
     } else if (spSum === 33) {
-        sPin.textContent = spSum + '/from age 30 to 39'
+        sPin.innerHTML = spSum + '/from age 30 to 39'
     };
 
 
@@ -1364,29 +1380,29 @@ calculate.addEventListener('click', ()=> {
     };
 
     if (tpSum === 1) {
-        tPin.textContent = tpSum + '/from age 44 to 53'
+        tPin.innerHTML = tpSum + '/from age 44 to 53'
     } else if (tpSum === 2) {
-        tPin.textContent = tpSum + '/from age 43 to 52'
+        tPin.innerHTML = tpSum + '/from age 43 to 52'
     } else if (tpSum === 3) {
-        tPin.textContent = tpSum + '/from age 42 to 51'
+        tPin.innerHTML = tpSum + '/from age 42 to 51'
     } else if (tpSum === 4) {
-        tPin.textContent = tpSum + '/from age 41 to 50'
+        tPin.innerHTML = tpSum + '/from age 41 to 50'
     } else if (tpSum === 5) {
-        tPin.textContent = tpSum + '/from age 40 to 49'
+        tPin.innerHTML = tpSum + '/from age 40 to 49'
     } else if (tpSum === 6) {
-        tPin.textContent = tpSum + '/from age 39 to 48'
+        tPin.innerHTML = tpSum + '/from age 39 to 48'
     } else if (tpSum === 7) {
-        tPin.textContent = tpSum + '/from age 38 to 47'
+        tPin.innerHTML = tpSum + '/from age 38 to 47'
     } else if (tpSum === 8) {
-        tPin.textContent = tpSum + '/from age 37 to 46'
+        tPin.innerHTML = tpSum + '/from age 37 to 46'
     } else if (tpSum === 9) {
-        tPin.textContent = tpSum + '/from age 36 to 45'
+        tPin.innerHTML = tpSum + '/from age 36 to 45'
     } else if (tpSum === 11) {
-        tPin.textContent = tpSum + '/from age 43 to 52'
+        tPin.innerHTML = tpSum + '/from age 43 to 52'
     } else if (tpSum === 22) {
-        tPin.textContent = tpSum + '/from age 41 to 50'
+        tPin.innerHTML = tpSum + '/from age 41 to 50'
     } else if (tpSum === 33) {
-        tPin.textContent = tpSum + '/from age 39 to 48'
+        tPin.innerHTML = tpSum + '/from age 39 to 48'
     };
 
 
@@ -1405,29 +1421,29 @@ calculate.addEventListener('click', ()=> {
     
 
     if (ftSum === 1) {
-        ftPin.textContent = ftSum + '/from age 53 and on'
+        ftPin.innerHTML = ftSum + '/from age 53 and on'
     } else if (ftSum === 2) {
-        ftPin.textContent = ftSum + '/from age 52 and on'
+        ftPin.innerHTML = ftSum + '/from age 52 and on'
     } else if (ftSum === 3) {
-        ftPin.textContent = ftSum + '/from age 51 and on'
+        ftPin.innerHTML = ftSum + '/from age 51 and on'
     } else if (ftSum === 4) {
-        ftPin.textContent = ftSum + '/from age 50 and on'
+        ftPin.innerHTML = ftSum + '/from age 50 and on'
     } else if (ftSum === 5) {
-        ftPin.textContent = ftSum + '/from age 49 and on'
+        ftPin.innerHTML = ftSum + '/from age 49 and on'
     } else if (ftSum === 6) {
-        ftPin.textContent = ftSum + '/from age 48 and on'
+        ftPin.innerHTML = ftSum + '/from age 48 and on'
     } else if (ftSum === 7) {
-        ftPin.textContent = ftSum + '/from age 47 and on'
+        ftPin.innerHTML = ftSum + '/from age 47 and on'
     } else if (ftSum === 8) {
-        ftPin.textContent = ftSum + '/from age 46 and on'
+        ftPin.innerHTML = ftSum + '/from age 46 and on'
     } else if (ftSum === 9) {
-        ftPin.textContent = ftSum + '/from age 45 and on'
+        ftPin.innerHTML = ftSum + '/from age 45 and on'
     } else if (ftSum === 11) {
-        ftPin.textContent = ftSum + '/from age 52 and on'
+        ftPin.innerHTML = ftSum + '/from age 52 and on'
     } else if (ftSum === 22) {
-        ftPin.textContent = ftSum + '/from age 50 and on'
+        ftPin.innerHTML = ftSum + '/from age 50 and on'
     } else if (ftSum === 33) {
-        ftPin.textContent = ftSum + '/from age 48 and on'
+        ftPin.innerHTML = ftSum + '/from age 48 and on'
     };
 
 
@@ -1444,7 +1460,7 @@ calculate.addEventListener('click', ()=> {
     } else {
         fAnim;
     };
-    fCha.textContent = fAnim;
+    fCha.innerHTML = fAnim;
 
     // Second Challenge 
     sCha;
@@ -1454,7 +1470,7 @@ calculate.addEventListener('click', ()=> {
     } else {
         sAnim;
     };
-    sCha.textContent = sAnim;
+    sCha.innerHTML = sAnim;
 
     // Third Challenge 
     var tAnim = sAnim - fAnim;
@@ -1464,7 +1480,7 @@ calculate.addEventListener('click', ()=> {
     } else {
         tAnim;
     };
-    tCha.textContent = tAnim;
+    tCha.innerHTML = tAnim;
 
     // Forth Challenge 
     var ftAnim = yearHold - monthHold;
@@ -1473,7 +1489,7 @@ calculate.addEventListener('click', ()=> {
     } else {
         ftAnim;
     };
-    ftCha.textContent = ftAnim;
+    ftCha.innerHTML = ftAnim;
 
 
 

@@ -223,6 +223,7 @@ calculate.addEventListener('click', ()=> {
 
     
     sum = sumDayArray + sumMonthArray + sumYearArray;
+    var kdHold = sum;
 
     var lsum = sum;
     var lpHold, edHold, suHold, pnHold;
@@ -877,7 +878,20 @@ calculate.addEventListener('click', ()=> {
     
 
 
-    // Karmic Debt Number 
+    // Karmic Debt Number
+    kdNum;
+    if (kdHold === 13) {
+        kdNum.innerHTML = '13/4'
+    } else if (kdHold === 14) {
+        kdNum.innerHTML = '14/5'
+    } else if (kdHold === 16) {
+        kdNum.innerHTML = '16/7'
+    } else if (kdHold === 19) {
+        kdNum.innerHTML = '19/1'
+    } else {
+        kdNum.innerHTML = 'None'
+    }
+    
 
 
 
@@ -1492,6 +1506,51 @@ calculate.addEventListener('click', ()=> {
     ftCha.innerHTML = ftAnim;
 
 
+
+
+
+
+
+    // Tansit Cycle
+
+    // Physical Transit
+    ednfName = fName.value.split(' ');
+    lastName = ednfName[ednfName.length - 1];
+    indexList = lastName;
+    var firstName = ednfName[0];
+    count = 0;
+    
+    for ( let i = 0; i <= firstName.length; i++) {
+
+        if (String(firstName[i]).toLowerCase() === 'a' ||  String(firstName[i]).toLowerCase() === 'j' || String(firstName[i]).toLowerCase() === 's' ) {
+            count += 1;
+        } else if (String(firstName[i]).toLowerCase() === 'b' || String(firstName[i]).toLowerCase() === 'k' || String(firstName[i]).toLowerCase() === 't') {
+            count += 2;
+        } else if (String(firstName[i]).toLowerCase() === 'c' || String(firstName[i]).toLowerCase() === 'l' || String(firstName[i]).toLowerCase() === 'u') {
+            count += 3;
+        } else if (String(firstName[i]).toLowerCase() === 'd' || String(firstName[i]).toLowerCase() === 'm' || String(firstName[i]).toLowerCase() === 'v') {
+            count += 4;
+        } else if (String(firstName[i]).toLowerCase() === 'e' || String(firstName[i]).toLowerCase() === 'n' || String(firstName[i]).toLowerCase() === 'w') {
+            count += 5;
+        } else if (String(firstName[i]).toLowerCase() === 'f' || String(firstName[i]).toLowerCase() === 'o' || String(firstName[i]).toLowerCase() === 'x') {
+            count += 6;
+        } else if (String(firstName[i]).toLowerCase() === 'g' || String(firstName[i]).toLowerCase() === 'p' || String(firstName[i]).toLowerCase() === 'y') {
+            count += 7;
+        } else if (String(firstName[i]).toLowerCase() === 'h' || String(firstName[i]).toLowerCase() === 'q' || String(firstName[i]).toLowerCase() === 'z') {
+            count += 8;
+        } else if (String(firstName[i]).toLowerCase() === 'i' || String(firstName[i]).toLowerCase() === 'r' ) {
+            count += 9;
+        }
+    };
+    
+
+    // Mental Transit 
+    var fullString = fName.value;
+    ednfName = fName.value.split(' ');
+    lastName = ednfName[ednfName.length - 1];
+    indexList = lastName;
+    var middleName = ednfName[0];
+    count = 0;
 
 
 

@@ -326,6 +326,12 @@ calculate.addEventListener('click', ()=> {
         } else if (countList[x] === 22) {
             dbSumHoldList.push(22);
             dbResult = '22';
+        } else if (countList[x] < 10) {
+            dbSumHoldList.push(countList[x]);
+            dbResult = countList[x];
+        } else if (countList[x] === 10) {
+            dbSumHoldList.push(1);
+            dbResult = '1';
         } else if (countList[x] === 33) {
             dbSumHoldList.push(33);
             dbResult = '33';
@@ -482,14 +488,15 @@ calculate.addEventListener('click', ()=> {
     var suhdSplit, sum,  suhdSumList = [], suhdResult, y, count = 0;
     for (let x = 0; x < countList.length; x++) {
         if (countList[x] === 11) {
-            // suhdResult = '11/2';
             sum = 11
+        } else if (countList[x] === 10) {
+            sum = 1;
+        } else if (countList[x] < 10) {
+            sum = countList[x];
         } else if (countList[x] === 22) {
-            // suhdResult = '22/4';
             sum = 22
         } else if (countList[x] === 33) {
-            // suhdResult = '33/6'
-            sum = 33
+            sum = 33;
         } else {
             suhdSplit = String(countList[x]).split('');
             sum = eval(suhdSplit.join('+'));
@@ -1052,7 +1059,7 @@ calculate.addEventListener('click', ()=> {
     count = 0;
     for ( let i = 0; i <= indexList.length; i++) {
 
-        if (String(indexList[i]).toLowerCase() === 'd' ||  String(indexList[i]).toLowerCase() === 'e' || String(indexList[i]).toLowerCase() === 'm' || String(indexList[i]).toLowerCase() === 'n' || String(indexList[i]).toLowerCase() === 'v' || String(indexList[i]).toLowerCase() === 'w' ) {
+        if (String(indexList[i]).toLowerCase() === 'e' ||  String(indexList[i]).toLowerCase() === 'w' || String(indexList[i]).toLowerCase() === 'd' || String(indexList[i]).toLowerCase() === 'm' ) {
             count += 1;
         } 
     };
@@ -1067,7 +1074,7 @@ calculate.addEventListener('click', ()=> {
     count = 0;
     for ( let i = 0; i <= indexList.length; i++) {
 
-        if (String(indexList[i]).toLowerCase() === 'a' ||  String(indexList[i]).toLowerCase() === 'h' || String(indexList[i]).toLowerCase() === 'j' || String(indexList[i]).toLowerCase() === 'q' || String(indexList[i]).toLowerCase() === 's' || String(indexList[i]).toLowerCase() === 'z' ) {
+        if (String(indexList[i]).toLowerCase() === 'a' ||  String(indexList[i]).toLowerCase() === 'h' || String(indexList[i]).toLowerCase() === 'j' || String(indexList[i]).toLowerCase() === 'n' || String(indexList[i]).toLowerCase() === 'p' || String(indexList[i]).toLowerCase() === 'g' || String(indexList[i]).toLowerCase() === 'l' ) {
             count += 1;
         } 
     };
@@ -1083,7 +1090,7 @@ calculate.addEventListener('click', ()=> {
     count = 0;
     for ( let i = 0; i <= indexList.length; i++) {
 
-        if (String(indexList[i]).toLowerCase() === 'g' ||  String(indexList[i]).toLowerCase() === 'i' || String(indexList[i]).toLowerCase() === 'p' || String(indexList[i]).toLowerCase() === 'r' || String(indexList[i]).toLowerCase() === 'y' ) {
+        if (String(indexList[i]).toLowerCase() === 'k' ||  String(indexList[i]).toLowerCase() === 'f' || String(indexList[i]).toLowerCase() === 'q' || String(indexList[i]).toLowerCase() === 'u' || String(indexList[i]).toLowerCase() === 'y' || String(indexList[i]).toLowerCase() === 'c' || String(indexList[i]).toLowerCase() === 'v') {
             count += 1;
         } 
     };
@@ -1098,7 +1105,7 @@ calculate.addEventListener('click', ()=> {
     count = 0;
     for ( let i = 0; i <= indexList.length; i++) {
 
-        if (String(indexList[i]).toLowerCase() === 'b' ||  String(indexList[i]).toLowerCase() === 'c' || String(indexList[i]).toLowerCase() === 'f' || String(indexList[i]).toLowerCase() === 'k' || String(indexList[i]).toLowerCase() === 'l' || String(indexList[i]).toLowerCase() === 'o' || String(indexList[i]).toLowerCase() === 't' || String(indexList[i]).toLowerCase() === 'u' || String(indexList[i]).toLowerCase() === 'x' ) {
+        if (String(indexList[i]).toLowerCase() === 'a' ||  String(indexList[i]).toLowerCase() === 'h' || String(indexList[i]).toLowerCase() === 'j' || String(indexList[i]).toLowerCase() === 'n' || String(indexList[i]).toLowerCase() === 'p' || String(indexList[i]).toLowerCase() === 'g' || String(indexList[i]).toLowerCase() === 'l' ) {
             count += 1;
         } 
     };
@@ -1109,9 +1116,6 @@ calculate.addEventListener('click', ()=> {
 
     // First Period Life Cycle 
     monthHold;
-    // mSplit = String(monthHold).split('');
-    // sum = eval(mSplit.join('+'));
-    // monthHold = sum;
     if (monthHold === 10) {
         monthHold = 1;
     } else if (monthHold === 11) {

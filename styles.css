@@ -347,5 +347,5 @@ select {
 
 .cols-half {
     display: grid;
-    grid-template-columns: .5fr .5fr;
+    grid-template-columns: 1fr 1fr;
 }

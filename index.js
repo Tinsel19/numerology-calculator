@@ -1055,14 +1055,62 @@ calculate.addEventListener('click', ()=> {
 
     // Physical Plane of Expression Number 
     ednfName = fName.value;
-    indexList = ednfName;
+    indexList = ednfName.split(' ');
     count = 0;
+    countList = [];
+    var finalList = []
+
     for ( let i = 0; i <= indexList.length; i++) {
 
-        if (String(indexList[i]).toLowerCase() === 'e' ||  String(indexList[i]).toLowerCase() === 'w' || String(indexList[i]).toLowerCase() === 'd' || String(indexList[i]).toLowerCase() === 'm' ) {
-            count += 1;
+        if (String(indexList[i]).toLowerCase() === 'd' || String(indexList[i]).toLowerCase() === 'm' ) {
+            count += 4;
+        } else if (String(indexList[i]).toLowerCase() === 'e' || String(indexList[i]).toLowerCase() === 'w') {
+            count += 5;
+        }
+        countList.push(count);
+    };
+    for (let i = 0; i < countList.length; i++) {
+        if (countList[i] < 10) {
+            sum = countList[i];
+            finalList.push(sum);
+        } else if (countList === 10) {
+            sum = 1;
+            finalList.push(sum);
+        } else if (countList[i] === 11) {
+            sum = 11;
+            finalList.push(sum);
+        } else if (countList[i] === 22) {
+            sum = 22;
+        } else if (countList[i] === 33) {
+            sum = 33;
+            finalList.push(sum);
+        } else {
+            mSplit = String(countList[i]).split('');
+            sum = eval(mSplit.join('+'));
+            finalList.push(sum);
+        }
+    };
+
+    if (finalList === 1) {
+        if (finalList[0] < 10) {
+            count = finalList[0]
+        } else if (finalList[0] === 10) {
+            count = 1;
+        } else if (finalList[0] === 11 || finalList[0] === 22 || finalList[0] === 33) {
+            mSplit = String(countList[0]).split('');
+            sum = eval(mSplit.join('+'));
+            count = countList[0] + '/' + sum;
+        } else {
+            mSplit = String(countList[0]).split('');
+            sum = eval(mSplit.join('+'));
+            count = sum;
         } 
     };
+
+    if (finalList > 1) {
+        
+    }
+
     ppoeNum.innerHTML = count;
 
 

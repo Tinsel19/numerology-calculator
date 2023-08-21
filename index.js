@@ -821,7 +821,7 @@ calculate.addEventListener('click', ()=> {
     } else if (Number(count) === 11 || Number(count) === 22  || Number(count) === 33){
         mSplit = String(count).split('');
         var xsum = eval(mSplit.join('+'));
-        sum = Number(count) + '/'+ xsum
+        sum = Number(count) 
     }else if (Number(count) > 10) {
         mSplit = String(count).split('');
         sum = eval(mSplit.join('+'));

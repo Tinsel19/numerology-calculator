@@ -577,9 +577,9 @@ calculate.addEventListener('click', ()=> {
         countList.push(count);
         count = 0;
     };
-    var suhdSplit, sum,  suhdSumList = [], suhdResult;
+    var suhdSplit, sum,  suhdSumList = [], sum1, sum2;
     count = 0;
-    for (let x = 0; x < countList.length; x++) {
+    for (let x = 0; x <= countList.length; x++) {
         x = eval(countList.join('+'));
         if (countList[x] === 11) {
             count += 11;
@@ -590,11 +590,13 @@ calculate.addEventListener('click', ()=> {
         } else if (countList[x] === 33) {
             count += 33;
         }  else if (x === 19 || x === 28 || x === 37 || x === 46 || x === 55 || x === 64 || x === 73 || x === 82 || x === 91) {
-            sum = '10/1';
+            count = 1;
         } else {
-            x = eval(countList.join('+'));
-            // msuHold = eval(suhdSplit.join('+'));
-            sum = x + '/'+ eval(String(countList[x]).join('+'));
+
+            mSplit = String(countList[x]).split('');
+            sum1 = eval(dbSplit.join('+'));
+            count+= sum1;
+            
         }
     }
     msuhdNum.innerHTML = sum;

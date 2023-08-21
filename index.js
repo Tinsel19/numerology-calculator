@@ -80,18 +80,37 @@ var epoeNum = document.getElementById('epoeNum');
 var epoeText = document.getElementById('epoeText');
 
 var fpCycle = document.getElementById('fpCycle');
+var fpCycleNum = document.getElementById('fpCycleNum');
+
 var spCycle = document.getElementById('spCycle');
+var spCycleNum = document.getElementById('spCycleNum');
+
 var tpCycle = document.getElementById('tpCycle');
+var tpCycleNum = document.getElementById('tpCycleNum');
 
 var fPin = document.getElementById('fPin');
+var fPinNum = document.getElementById('fPinNum');
+
 var sPin = document.getElementById('sPin');
+var sPinNum = document.getElementById('sPinNum');
+
 var tPin = document.getElementById('tPin');
+var tPinNum = document.getElementById('tPinNum');
+
 var ftPin = document.getElementById('ftPin');
+var ftPinNum = document.getElementById('ftPinNum');
 
 var fCha = document.getElementById('fCha');
+var fChaNum = document.getElementById('fChaNum');
+
 var sCha = document.getElementById('sCha');
+var sChaNum = document.getElementById('sChaNum');
+
 var tCha = document.getElementById('tCha');
+var tChaNum = document.getElementById('tChaNum');
+
 var ftCha = document.getElementById('ftCha');
+var ftChaNum = document.getElementById('ftChaNum')
 
 
 
@@ -484,7 +503,7 @@ calculate.addEventListener('click', ()=> {
         countList.push(count);
         count = 0;
     };
-    console.log(countList);
+    var dfList = [];
     var suhdSplit, sum,  suhdSumList = [], suhdResult, y, count = 0;
     for (let x = 0; x < countList.length; x++) {
         if (countList[x] === 11) {
@@ -506,10 +525,25 @@ calculate.addEventListener('click', ()=> {
             sum = eval(xx.join('+'));
             y = eval(suhdSplit.join('+'));
         };
-        count += sum;
+        dfList.push(sum);
     };
 
-    suHold = y;
+    count = 0;
+    for (let i = 0; i < dfList.length; i++) {
+        count += dfList[i];
+    };
+    if (count < 10) {
+        sum = count;
+    } else if (count === 10){
+        sum = 1;
+    } else if (count === 11 || count === 22 || count === 33) {
+        sum = count
+    } else {
+        mSplit = String(count).split('');
+        sum = eval(mSplit.join('+'));
+    }
+
+    suHold = sum;
     suhdNum.innerHTML = '<b>' +sum+ '</b>';
 
 
@@ -559,8 +593,8 @@ calculate.addEventListener('click', ()=> {
             sum = '10/1';
         } else {
             x = eval(countList.join('+'));
-            msuHold = eval(suhdSplit.join('+'));
-            sum = x + '/'+ eval(suhdSplit.join('+'));
+            // msuHold = eval(suhdSplit.join('+'));
+            sum = x + '/'+ eval(String(countList[x]).join('+'));
         }
     }
     msuhdNum.innerHTML = sum;
@@ -681,7 +715,6 @@ calculate.addEventListener('click', ()=> {
         pnSplit = String(count).split('');
         sum = eval(pnSplit.join('+'));
     }
-    // console.log(sum);
     mpHold = count ;
     mpNum.innerHTML = count ;
 
@@ -731,7 +764,7 @@ calculate.addEventListener('click', ()=> {
 
 
 
-    // life Path / Expression Bridge 
+    // life Path / Expression Bridge
     var subtract = lpHold - edHold;
     if (subtract < 0) {
         subtract = 1;
@@ -747,7 +780,7 @@ calculate.addEventListener('click', ()=> {
     var hdPB = suHold - pnHold;
     var x = hdPB;
     if (x < 1) {
-        hdPB = 0;
+        hdPB = x * (-1);
     } else {
         hdPB = x;
     }
@@ -755,17 +788,59 @@ calculate.addEventListener('click', ()=> {
 
 
 
-    // Rational Thought Number 
+    // Rational Thought Number
     var x;
-    if (Number(dayString) === 10) {
+    var firstName = ednfName[0];
+    count = 0;
+    for ( let i = 0; i <= firstName.length; i++) {
+
+        if (String(firstName[i]).toLowerCase() === 'a' ||  String(firstName[i]).toLowerCase() === 'j' || String(firstName[i]).toLowerCase() === 's' ) {
+            count += 1;
+        } else if (String(firstName[i]).toLowerCase() === 'b' || String(firstName[i]).toLowerCase() === 'k' || String(firstName[i]).toLowerCase() === 't') {
+            count += 2;
+        } else if (String(firstName[i]).toLowerCase() === 'c' || String(firstName[i]).toLowerCase() === 'l' || String(firstName[i]).toLowerCase() === 'u') {
+            count += 3;
+        } else if (String(firstName[i]).toLowerCase() === 'd' || String(firstName[i]).toLowerCase() === 'm' || String(firstName[i]).toLowerCase() === 'v') {
+            count += 4;
+        } else if (String(firstName[i]).toLowerCase() === 'e' || String(firstName[i]).toLowerCase() === 'n' || String(firstName[i]).toLowerCase() === 'w') {
+            count += 5;
+        } else if (String(firstName[i]).toLowerCase() === 'f' || String(firstName[i]).toLowerCase() === 'o' || String(firstName[i]).toLowerCase() === 'x') {
+            count += 6;
+        } else if (String(firstName[i]).toLowerCase() === 'g' || String(firstName[i]).toLowerCase() === 'p' || String(firstName[i]).toLowerCase() === 'y') {
+            count += 7;
+        } else if (String(firstName[i]).toLowerCase() === 'h' || String(firstName[i]).toLowerCase() === 'q' || String(firstName[i]).toLowerCase() === 'z') {
+            count += 8;
+        } else if (String(firstName[i]).toLowerCase() === 'i' || String(firstName[i]).toLowerCase() === 'r' ) {
+            count += 9;
+        }
+    };
+    if (Number(count) === 10) {
         sum = 1;
-    } else if (Number(dayString > 10)) {
-        mSplit = String(dayString).split('');
+    } else if (Number(count) < 10) {
+        sum = Number(count)
+    } else if (Number(count) === 11 || Number(count) === 22  || Number(count) === 33){
+        mSplit = String(count).split('');
+        var xsum = eval(mSplit.join('+'));
+        sum = Number(count) + '/'+ xsum
+    }else if (Number(count) > 10) {
+        mSplit = String(count).split('');
         sum = eval(mSplit.join('+'));
     } else {
-        sum = Number(dayString)
-    }
+        sum = Number(count)
+    };
 
+    if (Number(dayString) === 10) {
+        edHold = 1;
+    } else if (Number(dayString) < 10) {
+        edHold = Number(dayString)
+    } else if (Number(dayString) === 11 || Number(dayString) === 22  || Number(dayString) === 33){
+        edHold = Number(dayString)
+    }else if (Number(dayString > 10)) {
+        mSplit = String(dayString).split('');
+        edHold = eval(mSplit.join('+'));
+    } else {
+        edHold = Number(dayString)
+    }
     x = sum + edHold;
     rtNum.innerHTML = String(x);
 
@@ -847,6 +922,7 @@ calculate.addEventListener('click', ()=> {
 
     // Karmic Lesson 
     count = 0;
+    ednfName = fName.value.split(' ');
     var filtered, filteredList = [], filteredNum, combString = '';
     let mainNumString = '1,2,3,4,5,6,7,8,9';
     
@@ -872,12 +948,20 @@ calculate.addEventListener('click', ()=> {
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'g' || String(filteredList[iterate][i]).toLowerCase() === 'p' || String(filteredList[iterate][i]).toLowerCase() === 'y') {
                 mainNumString = mainNumString.replace('7,', '');
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'h' || String(filteredList[iterate][i]).toLowerCase() === 'q' || String(filteredList[iterate][i]).toLowerCase() === 'z') {
-                mainNumString = mainNumString.replace('8,', '');
+                mainNumString = mainNumString.replace('8', '');
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'i' || String(filteredList[iterate][i]).toLowerCase() === 'r' ) {
                 mainNumString = mainNumString.replace(',9', '');
             }
         };
-    };  
+    };
+
+    if (mainNumString[mainNumString.length - 1] === ',') {
+        mainNumString = mainNumString.slice(0, -1);
+    }
+    var test = mainNumString.split(',');
+    var testLength = 9 - test.length;
+    ssNum.innerHTML = testLength;
+    
     filteredNum = mainNumString;
     klNum.innerHTML = filteredNum;
 
@@ -1060,14 +1144,17 @@ calculate.addEventListener('click', ()=> {
     countList = [];
     var finalList = []
 
-    for ( let i = 0; i <= indexList.length; i++) {
-
-        if (String(indexList[i]).toLowerCase() === 'd' || String(indexList[i]).toLowerCase() === 'm' ) {
-            count += 4;
-        } else if (String(indexList[i]).toLowerCase() === 'e' || String(indexList[i]).toLowerCase() === 'w') {
-            count += 5;
+    for ( let i = 0; i < indexList.length; i++) {
+        for (let ii = 0; ii < indexList[i].length; ii++) {
+            if (String(indexList[i][ii]).toLowerCase() === 'd' || String(indexList[i][ii]).toLowerCase() === 'm' ) {
+                    count += 4;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'e' || String(indexList[i][ii]).toLowerCase() === 'w') {
+                    count += 5;
+            }
+            
         }
         countList.push(count);
+        count = 0;
     };
     for (let i = 0; i < countList.length; i++) {
         if (countList[i] < 10) {
@@ -1090,8 +1177,113 @@ calculate.addEventListener('click', ()=> {
             finalList.push(sum);
         }
     };
+    var sumCount = 0;
+    count = 0;
+    if (finalList.length === 1) {
+        if (finalList[0] < 10) {
+            count = finalList[0]
+        } else if (finalList[0] === 10) {
+            count = 1;
+        } else if (finalList[0] === 11 || finalList[0] === 22 || finalList[0] === 33) {
+            mSplit = String(countList[0]).split('');
+            sum = eval(mSplit.join('+'));
+            count = countList[0] + '/' + sum;
+        } else {
+            mSplit = String(countList[0]).split('');
+            sum = eval(mSplit.join('+'));
+            count = sum;
+        }
+        sumCount = count;
+    } else if (finalList.length > 1) {
+        for (let i = 0; i < finalList.length; i++) {
+            if (finalList[i] < 10) {
+                count = finalList[i]
+            } else if (finalList[i] === 10) {
+                count = 1;
+            } else if (finalList[i] === 11 || finalList[i] === 22 || finalList[i] === 33) {
+                mSplit = String(countList[i]).split('');
+                sum = eval(mSplit.join('+'));
+                count = countList[i] + '/' + sum;
+            } else {
+                mSplit = String(countList[i]).split('');
+                sum = eval(mSplit.join('+'));
+                count = sum;
+            }
 
-    if (finalList === 1) {
+            sumCount += count
+        }
+        
+    };
+
+    mSplit = String(sumCount).split('');
+    sum = eval(mSplit.join('+'));
+    if (sum < 10) {
+        count = sum
+    } else if (sum === 10) {
+        count = 1
+    } else if (sum === 11 || sum === 22 || sum === 33) {
+        count = sum
+    } else {
+        mSplit = String(sum).split('');
+        sum = eval(mSplit.join('+'));
+    }
+    count = sum;
+
+    ppoeNum.innerHTML = sumCount;
+
+
+
+
+    // Mental Plane of Expression Number 
+    ednfName = fName.value;
+    indexList = ednfName.split(' ');
+    count = 0;
+    countList = [];
+    var finalList = []
+
+    for ( let i = 0; i < indexList.length; i++) {
+        for (let ii = 0; ii < indexList[i].length; ii++) {
+            if (String(indexList[i][ii]).toLowerCase() === 'a' || String(indexList[i][ii]).toLowerCase() === 'j' ) {
+                    count += 1;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'l' ) {
+                    count += 3;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'n' ) {
+                count += 5;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'p' || String(indexList[i][ii]).toLowerCase() === 'g') {
+                count += 7;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'h' ) {
+                count += 8;
+            }
+        }
+        countList.push(count);
+        count = 0;
+    };
+    // console.log(countList)
+    for (let i = 0; i < countList.length; i++) {
+        if (countList[i] < 10) {
+            sum = countList[i];
+            finalList.push(sum);
+        } else if (countList === 10) {
+            sum = 1;
+            finalList.push(sum);
+        } else if (countList[i] === 11) {
+            sum = 11;
+            finalList.push(sum);
+        } else if (countList[i] === 22) {
+            sum = 22;
+        } else if (countList[i] === 33) {
+            sum = 33;
+            finalList.push(sum);
+        } else {
+            mSplit = String(countList[i]).split('');
+            sum = eval(mSplit.join('+'));
+            finalList.push(sum);
+        }
+    };
+    // console.log(finalList);
+    count = 0;
+    sumCount = 0;
+    if (finalList.length === 1) {
         if (finalList[0] < 10) {
             count = finalList[0]
         } else if (finalList[0] === 10) {
@@ -1105,27 +1297,41 @@ calculate.addEventListener('click', ()=> {
             sum = eval(mSplit.join('+'));
             count = sum;
         } 
-    };
-
-    if (finalList > 1) {
+    
+    } else if (finalList.length > 1) {
+        for (let i = 0; i < finalList.length; i++) {
+            if (finalList[i] < 10) {
+                count = finalList[i]
+            } else if (finalList[i] === 10) {
+                count = 1;
+            } else if (finalList[i] === 11 || finalList[i] === 22 || finalList[i] === 33) {
+                mSplit = String(countList[i]).split('');
+                sum = eval(mSplit.join('+'));
+                count = countList[i] + '/' + sum;
+            } else {
+                mSplit = String(countList[i]).split('');
+                sum = eval(mSplit.join('+'));
+                count = sum;
+            }
+            sumCount += count
+            
+        }
         
     }
-
-    ppoeNum.innerHTML = count;
-
-
-
-
-    // Mental Plane of Expression Number 
-    ednfName = fName.value;
-    indexList = ednfName;
-    count = 0;
-    for ( let i = 0; i <= indexList.length; i++) {
-
-        if (String(indexList[i]).toLowerCase() === 'a' ||  String(indexList[i]).toLowerCase() === 'h' || String(indexList[i]).toLowerCase() === 'j' || String(indexList[i]).toLowerCase() === 'n' || String(indexList[i]).toLowerCase() === 'p' || String(indexList[i]).toLowerCase() === 'g' || String(indexList[i]).toLowerCase() === 'l' ) {
-            count += 1;
-        } 
-    };
+    // count = sumCount
+    mSplit = String(sumCount).split('');
+    sum = eval(mSplit.join('+'));
+    if (sum < 10) {
+        count = sum
+    } else if (sum === 10) {
+        count = 1
+    } else if (sum === 11 || sum === 22 || sum === 33) {
+        count = sum
+    } else {
+        mSplit = String(sum).split('');
+        sum = eval(mSplit.join('+'));
+    }
+    count = sum;
     mpoeNum.innerHTML = count;
 
 
@@ -1134,14 +1340,104 @@ calculate.addEventListener('click', ()=> {
 
     // Intuitive Plane of Expressioon Number 
     ednfName = fName.value;
-    indexList = ednfName;
+    indexList = ednfName.split(' ');
     count = 0;
-    for ( let i = 0; i <= indexList.length; i++) {
+    countList = [];
+    var finalList = []
 
-        if (String(indexList[i]).toLowerCase() === 'k' ||  String(indexList[i]).toLowerCase() === 'f' || String(indexList[i]).toLowerCase() === 'q' || String(indexList[i]).toLowerCase() === 'u' || String(indexList[i]).toLowerCase() === 'y' || String(indexList[i]).toLowerCase() === 'c' || String(indexList[i]).toLowerCase() === 'v') {
-            count += 1;
-        } 
+    for ( let i = 0; i < indexList.length; i++) {
+        for (let ii = 0; ii < indexList[i].length; ii++) {
+            if (String(indexList[i][ii]).toLowerCase() === 'k'  ) {
+                    count += 2;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'u' || String(indexList[i][ii]).toLowerCase() === 'c'  ) {
+                    count += 3;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'v' ) {
+                count += 4;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'f') {
+                count += 6;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'y' ) {
+                count += 7;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'q' ) {
+                count += 8;
+            }
+        }
+        countList.push(count);
+        count = 0;
     };
+    // console.log(countList)
+    for (let i = 0; i < countList.length; i++) {
+        if (countList[i] < 10) {
+            sum = countList[i];
+            finalList.push(sum);
+        } else if (countList === 10) {
+            sum = 1;
+            finalList.push(sum);
+        } else if (countList[i] === 11) {
+            sum = 11;
+            finalList.push(sum);
+        } else if (countList[i] === 22) {
+            sum = 22;
+        } else if (countList[i] === 33) {
+            sum = 33;
+            finalList.push(sum);
+        } else {
+            mSplit = String(countList[i]).split('');
+            sum = eval(mSplit.join('+'));
+            finalList.push(sum);
+        }
+    };
+    // console.log(finalList);
+    count = 0;
+    sumCount = 0;
+    if (finalList.length === 1) {
+        if (finalList[0] < 10) {
+            count = finalList[0]
+        } else if (finalList[0] === 10) {
+            count = 1;
+        } else if (finalList[0] === 11 || finalList[0] === 22 || finalList[0] === 33) {
+            mSplit = String(countList[0]).split('');
+            sum = eval(mSplit.join('+'));
+            count = countList[0] + '/' + sum;
+        } else {
+            mSplit = String(countList[0]).split('');
+            sum = eval(mSplit.join('+'));
+            count = sum;
+        } 
+    
+    } else if (finalList.length > 1) {
+        for (let i = 0; i < finalList.length; i++) {
+            if (finalList[i] < 10) {
+                count = finalList[i]
+            } else if (finalList[i] === 10) {
+                count = 1;
+            } else if (finalList[i] === 11 || finalList[i] === 22 || finalList[i] === 33) {
+                mSplit = String(countList[i]).split('');
+                sum = eval(mSplit.join('+'));
+                count = countList[i] + '/' + sum;
+            } else {
+                mSplit = String(countList[i]).split('');
+                sum = eval(mSplit.join('+'));
+                count = sum;
+            }
+            sumCount += count
+            
+        }
+        
+    }
+    // count = sumCount
+    mSplit = String(sumCount).split('');
+    sum = eval(mSplit.join('+'));
+    if (sum < 10) {
+        count = sum
+    } else if (sum === 10) {
+        count = 1
+    } else if (sum === 11 || sum === 22 || sum === 33) {
+        count = sum
+    } else {
+        mSplit = String(sum).split('');
+        sum = eval(mSplit.join('+'));
+    }
+    count = sum;
     ipoeNum.innerHTML = count;
 
 
@@ -1149,14 +1445,102 @@ calculate.addEventListener('click', ()=> {
 
     // Emotional Plane of Expression Number 
     ednfName = fName.value;
-    indexList = ednfName;
+    indexList = ednfName.split(' ');
     count = 0;
-    for ( let i = 0; i <= indexList.length; i++) {
+    countList = [];
+    var finalList = []
 
-        if (String(indexList[i]).toLowerCase() === 'a' ||  String(indexList[i]).toLowerCase() === 'h' || String(indexList[i]).toLowerCase() === 'j' || String(indexList[i]).toLowerCase() === 'n' || String(indexList[i]).toLowerCase() === 'p' || String(indexList[i]).toLowerCase() === 'g' || String(indexList[i]).toLowerCase() === 'l' ) {
-            count += 1;
-        } 
+    for ( let i = 0; i < indexList.length; i++) {
+        for (let ii = 0; ii < indexList[i].length; ii++) {
+            if (String(indexList[i][ii]).toLowerCase() === 's'  ) {
+                    count += 1;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'b' || String(indexList[i][ii]).toLowerCase() === 't'  ) {
+                    count += 2;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'o' || String(indexList[i][ii]).toLowerCase() === 'x' ) {
+                count += 6;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'z') {
+                count += 8;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'i' || String(indexList[i][ii]).toLowerCase() === 'r' ) {
+                count += 9;
+            } 
+        }
+        countList.push(count);
+        count = 0;
     };
+    // console.log(countList)
+    for (let i = 0; i < countList.length; i++) {
+        if (countList[i] < 10) {
+            sum = countList[i];
+            finalList.push(sum);
+        } else if (countList === 10) {
+            sum = 1;
+            finalList.push(sum);
+        } else if (countList[i] === 11) {
+            sum = 11;
+            finalList.push(sum);
+        } else if (countList[i] === 22) {
+            sum = 22;
+        } else if (countList[i] === 33) {
+            sum = 33;
+            finalList.push(sum);
+        } else {
+            mSplit = String(countList[i]).split('');
+            sum = eval(mSplit.join('+'));
+            finalList.push(sum);
+        }
+    };
+    // console.log(finalList);
+    count = 0;
+    sumCount = 0;
+    if (finalList.length === 1) {
+        if (finalList[0] < 10) {
+            count = finalList[0]
+        } else if (finalList[0] === 10) {
+            count = 1;
+        } else if (finalList[0] === 11 || finalList[0] === 22 || finalList[0] === 33) {
+            mSplit = String(countList[0]).split('');
+            sum = eval(mSplit.join('+'));
+            count = countList[0] + '/' + sum;
+        } else {
+            mSplit = String(countList[0]).split('');
+            sum = eval(mSplit.join('+'));
+            count = sum;
+        } 
+    
+    } else if (finalList.length > 1) {
+        for (let i = 0; i < finalList.length; i++) {
+            if (finalList[i] < 10) {
+                count = finalList[i]
+            } else if (finalList[i] === 10) {
+                count = 1;
+            } else if (finalList[i] === 11 || finalList[i] === 22 || finalList[i] === 33) {
+                mSplit = String(countList[i]).split('');
+                sum = eval(mSplit.join('+'));
+                count = countList[i] + '/' + sum;
+            } else {
+                mSplit = String(countList[i]).split('');
+                sum = eval(mSplit.join('+'));
+                count = sum;
+            }
+            sumCount += count
+            
+        }
+        
+    }
+    // count = sumCount
+    mSplit = String(sumCount).split('');
+    sum = eval(mSplit.join('+'));
+    if (sum < 10) {
+        count = sum
+    } else if (sum === 10) {
+        count = 1
+    } else if (sum === 11 || sum === 22 || sum === 33) {
+        count = sum
+    } else {
+        mSplit = String(sum).split('');
+        sum = eval(mSplit.join('+'));
+    }
+    count = sum;
     epoeNum.innerHTML = count;
 
 
@@ -1175,29 +1559,41 @@ calculate.addEventListener('click', ()=> {
     };
 
     if (monthHold === 1) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 26'
+        fpCycle.innerHTML = 'from birth to age 0 - 26';
+        fpCycleNum.innerHTML = monthHold
     } else if (monthHold === 2) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 34'
+        fpCycle.innerHTML = 'from birth to age 0 - 34';
+        fpCycleNum.innerHTML = monthHold
     } else if (monthHold === 3) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 33'
+        fpCycle.innerHTML = 'from birth to age 0 - 33';
+        fpCycleNum.innerHTML = monthHold;
     } else if (monthHold === 4) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 32'
+        fpCycle.innerHTML = 'from birth to age 0 - 32';
+        fpCycle.innerHTML = monthHold;
     } else if (monthHold === 5) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 31'
+        fpCycle.innerHTML = 'from birth to age 0 - 31';
+        fpCycleNum.innerHTML = monthHold
     } else if (monthHold === 6) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 30'
+        fpCycle.innerHTML = 'from birth to age 0 - 30';
+        fpCycleNum.innerHTML = monthHold;
     } else if (monthHold === 7) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 29'
+        fpCycle.innerHTML = 'from birth to age 0 - 29';
+        fpCycleNum.innerHTML = monthHold;
     } else if (monthHold === 8) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 28'
+        fpCycle.innerHTML = 'from birth to age 0 - 28';
+        fpCycleNum.innerHTML = monthHold
     } else if (monthHold === 9) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 27'
+        fpCycle.innerHTML = 'from birth to age 0 - 27';
+        fpCycleNum.innerHTML = monthHold;
     } else if (monthHold === 11) {
-        fpCycle.innerHTML = monthHold + '/from birth to age  0 - 34'
+        fpCycle.innerHTML = 'from birth to age  0 - 34';
+        fpCycleNum.innerHTML = monthHold;
     } else if (monthHold === 22) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 32'
+        fpCycle.innerHTML = 'from birth to age 0 - 32';
+        fpCycleNum.innerHTML = monthHold;
     } else if (monthHold === 33) {
-        fpCycle.innerHTML = monthHold + '/from birth to age 0 - 30'
+        fpCycle.innerHTML = 'from birth to age 0 - 30';
+        fpCycleNum.innerHTML = monthHold;
     };
 
     // Second Cycle Life 
@@ -1221,29 +1617,41 @@ calculate.addEventListener('click', ()=> {
         dayHold;
     };
     if (dayHold === 1) {
-        spCycle.innerHTML = dayHold + '/from age 26 to 53'
+        spCycle.innerHTML = 'from age 26 to 53';
+        spCycleNum.innerHTML = dayHold;
     } else if (dayHold === 2) {
-        spCycle.innerHTML = dayHold + '/from age 34 to 61'
+        spCycle.innerHTML = 'from age 34 to 61'
+        spCycleNum.innerHTML = dayHold;
     } else if (dayHold === 3) {
-        spCycle.innerHTML = dayHold + '/from age 33 to 60'
+        spCycle.innerHTML = 'from age 33 to 60';
+        spCycleNum.innerHTML = dayHold;
     } else if (dayHold === 4) {
-        spCycle.innerHTML = dayHold + '/from age 32 to 59'
+        spCycle.innerHTML = 'from age 32 to 59';
+        spCycleNum.innerHTML = dayHold;
     } else if (dayHold === 5) {
-        spCycle.innerHTML = dayHold + '/from age 31 to 58'
+        spCycle.innerHTML = 'from age 31 to 58';
+        spCycleNum.innerHTML = dayHold;
     } else if (dayHold === 6) {
-        spCycle.innerHTML = dayHold + '/from age 30 to 57'
+        spCycle.innerHTML = 'from age 30 to 57';
+        spCycleNum.innerHTML = dayHold;
     } else if (dayHold === 7) {
-        spCycle.innerHTML = dayHold + '/from age 29 to 56'
+        spCycle.innerHTML = 'from age 29 to 56';
+        spCycleNum.innerHTML = dayHold;
     } else if (dayHold === 8) {
-        spCycle.innerHTML = dayHold + '/from age 28 to 55'
+        spCycle.innerHTML = 'from age 28 to 55';
+        spCycleNum.innerHTML = dayHold;
     } else if (dayHold === 9) {
-        spCycle.innerHTML = dayHold + '/from age 27 to 54'
+        spCycle.innerHTML = 'from age 27 to 54';
+        spCycleNum.innerHTML = dayHold;
     } else if (dayHold === 11) {
-        spCycle.innerHTML = dayHold + '/from age 34 to 61'
+        spCycle.innerHTML = 'from age 34 to 61';
+        spCycleNum.innerHTML = dayHold
     } else if (dayHold === 22) {
-        spCycle.innerHTML = dayHold + '/from age 32 to 59'
+        spCycle.innerHTML = 'from age 32 to 59';
+        spCycleNum.innerHTML = dayHold;
     } else if (dayHold === 33) {
-        spCycle.innerHTML = dayHold + '/from age 30 to 57'
+        spCycle.innerHTML = 'from age 30 to 57';
+        spCycleNum.innerHTML = dayHold;
     };
 
     // Third Period Cycle 
@@ -1267,29 +1675,41 @@ calculate.addEventListener('click', ()=> {
         yearHold;
     };
     if (yearHold === 1) {
-        tpCycle.innerHTML = yearHold + '/from age 53 and on'
+        tpCycle.innerHTML =  'from age 53 and on';
+        tpCycleNum.innerHTML = yearHold;
     } else if (yearHold === 2) {
-        tpCycle.innerHTML = yearHold + '/from age 61 and on'
+        tpCycle.innerHTML = 'from age 61 and on'
+        tpCycleNum.innerHTML = yearHold
     } else if (yearHold === 3) {
-        tpCycle.innerHTML = yearHold + '/from age 60 and on'
+        tpCycle.innerHTML = 'from age 60 and on'
+        tpCycleNum.innerHTML = yearHold
     } else if (yearHold === 4) {
-        tpCycle.innerHTML = yearHold + '/from age 59 and on'
+        tpCycle.innerHTML = 'from age 59 and on'
+        tpCycleNum.innerHTML = yearHold
     } else if (yearHold === 5) {
-        tpCycle.innerHTML = yearHold + '/from age 58 and on'
+        tpCycle.innerHTML = 'from age 58 and on'
+        tpCycleNum.innerHTML = yearHold
     } else if (yearHold === 6) {
-        tpCycle.innerHTML = yearHold + '/from age 57 and on'
+        tpCycle.innerHTML = 'from age 57 and on'
+        tpCycleNum.innerHTML = yearHold
     } else if (yearHold === 7) {
-        tpCycle.innerHTML = yearHold + '/from age 56 and on'
+        tpCycle.innerHTML = 'from age 56 and on'
+        tpCycleNum.innerHTML = yearHold
     } else if (yearHold === 8) {
-        tpCycle.innerHTML = yearHold + '/from age 55 and on'
+        tpCycle.innerHTML = 'from age 55 and on'
+        tpCycleNum.innerHTML = yearHold
     } else if (yearHold === 9) {
-        tpCycle.innerHTML = yearHold + '/from age 54 and on'
+        tpCycle.innerHTML =  'from age 54 and on'
+        tpCycleNum.innerHTML = yearHold
     } else if (yearHold === 11) {
-        tpCycle.innerHTML = yearHold + '/from age 61 and on'
+        tpCycle.innerHTML = 'from age 61 and on'
+        tpCycleNum.innerHTML = yearHold
     } else if (yearHold === 22) {
-        tpCycle.innerHTML = yearHold + '/from age 59 and on'
+        tpCycle.innerHTML = 'from age 59 and on'
+        tpCycleNum.innerHTML = yearHold
     } else if (yearHold === 33) {
-        tpCycle.innerHTML = yearHold + '/from age 57 and on'
+        tpCycle.innerHTML = 'from age 57 and on'
+        tpCycleNum.innerHTML = yearHold
     };
 
 
@@ -1346,29 +1766,41 @@ calculate.addEventListener('click', ()=> {
     }
     
     if (fpSum === 1) {
-        fPin.innerHTML = fpSum + '/from birth to age 35'
+        fPin.innerHTML = 'from birth to age 35'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 2) {
-        fPin.innerHTML = fpSum + '/from birth to age 34'
+        fPin.innerHTML = 'from birth to age 34'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 3) {
-        fPin.innerHTML = fpSum + '/from birth to age 33'
+        fPin.innerHTML = 'from birth to age 33'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 4) {
-        fPin.innerHTML = fpSum + '/from birth to age 32'
+        fPin.innerHTML = 'from birth to age 32'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 5) {
-        fPin.innerHTML = fpSum + '/from birth to age 31'
+        fPin.innerHTML = 'from birth to age 31'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 6) {
-        fPin.innerHTML = fpSum + '/from birth to age 30'
+        fPin.innerHTML = 'from birth to age 30'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 7) {
-        fPin.innerHTML = fpSum + '/from birth to age 29'
+        fPin.innerHTML = 'from birth to age 29'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 8) {
-        fPin.innerHTML = fpSum + '/from birth to age 28'
+        fPin.innerHTML = 'from birth to age 28'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 9) {
-        fPin.innerHTML = fpSum + '/from birth to age 27'
+        fPin.innerHTML = 'from birth to age 27'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 11) {
-        fPin.innerHTML = fpSum + '/from birth to age 34'
+        fPin.innerHTML = 'from birth to age 34'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 22) {
-        fPin.innerHTML = fpSum + '/from birth to age 32'
+        fPin.innerHTML = 'from birth to age 32'
+        fPinNum.innerHTML = fpSum;
     } else if (fpSum === 33) {
-        fPin.innerHTML = fpSum + '/from birth to age 30'
+        fPin.innerHTML = 'from birth to age 30'
+        fPinNum.innerHTML = fpSum;
     };
 
 
@@ -1406,29 +1838,41 @@ calculate.addEventListener('click', ()=> {
     };
 
     if (spSum === 1) {
-        sPin.innerHTML = spSum + '/from age 35 to 44'
+        sPin.innerHTML = 'from age 35 to 44';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 2) {
-        sPin.innerHTML = spSum + '/from age 34 to 43'
+        sPin.innerHTML = 'from age 34 to 43';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 3) {
-        sPin.innerHTML = spSum + '/from age 33 to 42'
+        sPin.innerHTML = 'from age 33 to 42';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 4) {
-        sPin.innerHTML = spSum + '/from age 32 to 41'
+        sPin.innerHTML = 'from age 32 to 41';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 5) {
-        sPin.innerHTML = spSum + '/from age 31 to 40'
+        sPin.innerHTML = 'from age 31 to 40';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 6) {
-        sPin.innerHTML = spSum + '/from age 30 to 39'
+        sPin.innerHTML = 'from age 30 to 39';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 7) {
-        sPin.innerHTML = spSum + '/from age 29 to 38'
+        sPin.innerHTML = 'from age 29 to 38';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 8) {
-        sPin.innerHTML = spSum + '/from age 28 to 37'
+        sPin.innerHTML = 'from age 28 to 37';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 9) {
-        sPin.innerHTML = spSum + '/from age 27 to 36'
+        sPin.innerHTML = 'from age 27 to 36';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 11) {
-        sPin.innerHTML = spSum + '/from age 34 to 43'
+        sPin.innerHTML = 'from age 34 to 43';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 22) {
-        sPin.innerHTML = spSum + '/from age 32 to 41'
+        sPin.innerHTML = 'from age 32 to 41';
+        sPinNum.innerHTML = spSum;
     } else if (spSum === 33) {
-        sPin.innerHTML = spSum + '/from age 30 to 39'
+        sPin.innerHTML = 'from age 30 to 39';
+        sPinNum.innerHTML = spSum;
     };
 
 
@@ -1446,29 +1890,41 @@ calculate.addEventListener('click', ()=> {
     };
 
     if (tpSum === 1) {
-        tPin.innerHTML = tpSum + '/from age 44 to 53'
+        tPin.innerHTML = 'from age 44 to 53';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 2) {
-        tPin.innerHTML = tpSum + '/from age 43 to 52'
+        tPin.innerHTML = 'from age 43 to 52';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 3) {
-        tPin.innerHTML = tpSum + '/from age 42 to 51'
+        tPin.innerHTML = 'from age 42 to 51';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 4) {
-        tPin.innerHTML = tpSum + '/from age 41 to 50'
+        tPin.innerHTML = 'from age 41 to 50';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 5) {
-        tPin.innerHTML = tpSum + '/from age 40 to 49'
+        tPin.innerHTML = 'from age 40 to 49';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 6) {
-        tPin.innerHTML = tpSum + '/from age 39 to 48'
+        tPin.innerHTML = 'from age 39 to 48';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 7) {
-        tPin.innerHTML = tpSum + '/from age 38 to 47'
+        tPin.innerHTML = 'from age 38 to 47';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 8) {
-        tPin.innerHTML = tpSum + '/from age 37 to 46'
+        tPin.innerHTML = 'from age 37 to 46';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 9) {
-        tPin.innerHTML = tpSum + '/from age 36 to 45'
+        tPin.innerHTML = 'from age 36 to 45';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 11) {
-        tPin.innerHTML = tpSum + '/from age 43 to 52'
+        tPin.innerHTML = 'from age 43 to 52';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 22) {
-        tPin.innerHTML = tpSum + '/from age 41 to 50'
+        tPin.innerHTML = 'from age 41 to 50';
+        tPinNum.innerHTML = tpSum
     } else if (tpSum === 33) {
-        tPin.innerHTML = tpSum + '/from age 39 to 48'
+        tPin.innerHTML = 'from age 39 to 48';
+        tPinNum.innerHTML = tpSum
     };
 
 
@@ -1487,29 +1943,41 @@ calculate.addEventListener('click', ()=> {
     
 
     if (ftSum === 1) {
-        ftPin.innerHTML = ftSum + '/from age 53 and on'
+        ftPin.innerHTML = 'from age 53 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 2) {
-        ftPin.innerHTML = ftSum + '/from age 52 and on'
+        ftPin.innerHTML = 'from age 52 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 3) {
-        ftPin.innerHTML = ftSum + '/from age 51 and on'
+        ftPin.innerHTML = 'from age 51 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 4) {
-        ftPin.innerHTML = ftSum + '/from age 50 and on'
+        ftPin.innerHTML = 'from age 50 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 5) {
-        ftPin.innerHTML = ftSum + '/from age 49 and on'
+        ftPin.innerHTML = 'from age 49 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 6) {
-        ftPin.innerHTML = ftSum + '/from age 48 and on'
+        ftPin.innerHTML = 'from age 48 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 7) {
-        ftPin.innerHTML = ftSum + '/from age 47 and on'
+        ftPin.innerHTML = 'from age 47 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 8) {
-        ftPin.innerHTML = ftSum + '/from age 46 and on'
+        ftPin.innerHTML = 'from age 46 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 9) {
-        ftPin.innerHTML = ftSum + '/from age 45 and on'
+        ftPin.innerHTML = 'from age 45 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 11) {
-        ftPin.innerHTML = ftSum + '/from age 52 and on'
+        ftPin.innerHTML = 'from age 52 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 22) {
-        ftPin.innerHTML = ftSum + '/from age 50 and on'
+        ftPin.innerHTML = 'from age 50 and on';
+        ftPinNum.innerHTML = ftSum;
     } else if (ftSum === 33) {
-        ftPin.innerHTML = ftSum + '/from age 48 and on'
+        ftPin.innerHTML = 'from age 48 and on';
+        ftPinNum.innerHTML = ftSum;
     };
 
 
@@ -1526,7 +1994,7 @@ calculate.addEventListener('click', ()=> {
     } else {
         fAnim;
     };
-    fCha.innerHTML = fAnim;
+    fChaNum.innerHTML = fAnim;
 
     // Second Challenge 
     sCha;
@@ -1536,7 +2004,7 @@ calculate.addEventListener('click', ()=> {
     } else {
         sAnim;
     };
-    sCha.innerHTML = sAnim;
+    sChaNum.innerHTML = sAnim;
 
     // Third Challenge 
     var tAnim = sAnim - fAnim;
@@ -1546,7 +2014,7 @@ calculate.addEventListener('click', ()=> {
     } else {
         tAnim;
     };
-    tCha.innerHTML = tAnim;
+    tChaNum.innerHTML = tAnim;
 
     // Forth Challenge 
     var ftAnim = yearHold - monthHold;
@@ -1555,7 +2023,7 @@ calculate.addEventListener('click', ()=> {
     } else {
         ftAnim;
     };
-    ftCha.innerHTML = ftAnim;
+    ftChaNum.innerHTML = ftAnim;
 
 
 
@@ -1569,7 +2037,7 @@ calculate.addEventListener('click', ()=> {
     ednfName = fName.value.split(' ');
     lastName = ednfName[ednfName.length - 1];
     indexList = lastName;
-    var firstName = ednfName[0];
+    firstName = ednfName[0];
     count = 0;
     
     for ( let i = 0; i <= firstName.length; i++) {

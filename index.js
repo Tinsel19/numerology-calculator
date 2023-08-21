@@ -819,8 +819,7 @@ calculate.addEventListener('click', ()=> {
     } else if (Number(count) < 10) {
         sum = Number(count)
     } else if (Number(count) === 11 || Number(count) === 22  || Number(count) === 33){
-        mSplit = String(count).split('');
-        var xsum = eval(mSplit.join('+'));
+        
         sum = Number(count) 
     }else if (Number(count) > 10) {
         mSplit = String(count).split('');
@@ -842,6 +841,22 @@ calculate.addEventListener('click', ()=> {
         edHold = Number(dayString)
     }
     x = sum + edHold;
+    if (x < 10) {
+        x;
+    } else if (x === 10) {
+        x = 1;
+    } else if (x === 11) {
+        x = '11/2'
+    } else if (x === 22) {
+        x = '22/4'
+    } else if (x === 33) {
+        x = '33/6'
+    } else {
+        mSplit = String(x).split('');
+        edHold = eval(mSplit.join('+'));
+        x = edHold;
+    }
+
     rtNum.innerHTML = String(x);
 
 
@@ -1015,7 +1030,8 @@ calculate.addEventListener('click', ()=> {
                 mainNumString += '9';
             }
         };
-    };  
+    }; 
+    console.log(mainNumString)
     filteredNum = mainNumString;
     var emptyString = '';
     if (mainNumString.split('1').length-1 >= 2) {
@@ -1024,7 +1040,7 @@ calculate.addEventListener('click', ()=> {
         } else if (emptyString === ''){
             emptyString += '1';
         }
-    } 
+    };
     if (mainNumString.split('2').length-1 >= 2) {
         if (emptyString !== '') {
             emptyString += ', 2';

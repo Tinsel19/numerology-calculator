@@ -652,12 +652,24 @@ calculate.addEventListener('click', ()=> {
             pnSumList.push(sum);        
         }
     };
-    if (count > 10) {
+    var count1;
+    if (count == 10) {
+        count = 1;
+        count1 = 1;
+    } else if (count = 11 || count === 22 || count === 33) {
+        count;
         pnSplit = String(count).split('');
         sum = eval(pnSplit.join('+'));
+        count1 =  sum;
+        
+    } else if (count > 10) {
+        pnSplit = String(count).split('');
+        sum = eval(pnSplit.join('+'));
+        count = sum;
+        count1 = sum;
     }
-    pnHold = count ;
-    pNum.innerHTML = '<b>' +count+ '</b>' ;
+    pnHold = count1 ;
+    pNum.innerHTML = count + '/<b>' +count1+ '</b>' ;
 
 
 

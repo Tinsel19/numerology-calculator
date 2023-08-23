@@ -112,6 +112,11 @@ var tChaNum = document.getElementById('tChaNum');
 var ftCha = document.getElementById('ftCha');
 var ftChaNum = document.getElementById('ftChaNum')
 
+var phtrNum = document.getElementById('phtrNum');
+var metrNum = document.getElementById('metrNum');
+var sptrNum = document.getElementById('sptrNum');
+var escyNum = document.getElementById('escyNum');
+
 
 
 
@@ -293,7 +298,7 @@ calculate.addEventListener('click', ()=> {
     } else if (sumDayArray === 4) {
         bdNum.innerHTML = parseInt(dayString) + '/' + '<b>4</b>';
     } else if (sumDayArray === 5) {
-        bdNum.innerHTML = parseInt(dayString) + '/' + '<b>6</b>';
+        bdNum.innerHTML = parseInt(dayString) + '/' + '<b>5</b>';
     } else if (sumDayArray === 6) {
         bdNum.innerHTML = parseInt(dayString) + '/' + '<b>6</b>';
     } else if (sumDayArray === 7) {
@@ -646,13 +651,17 @@ calculate.addEventListener('click', ()=> {
     // console.log(countList)
     var pnSplit, sum,  pnSumList = [];
     for (let x = 0; x < countList.length; x++) {
-        if (countList[x] === 11) {
+        if ( countList[x] < 10) {
+            count += countList[x];
+        } else if (countList[x] === 11) {
             count += 11;
         } else if (countList[x] === 22) {
             count == 22;
         } else if (countList[x] === 33) {
             count += 33;
-        } else {
+        } else if (countList[x] === 10) {
+            count += 1;
+        } else if (countList[x] > 10 ) {
             pnSplit = String(countList[x]).split('');
             sum = eval(pnSplit.join('+'));
             count += sum;
@@ -661,7 +670,10 @@ calculate.addEventListener('click', ()=> {
     };
     // console.log(count)
     var count1;
-    if (count == 10) {
+    if (count < 10) {
+        count;
+        pNum.innerHTML = '<b>' + count + '</b>' ;
+    } else if (count == 10) {
         count = 1;
         pNum.innerHTML = 10 + '/<b>1</b>' ;
         // count1 = 1;
@@ -756,7 +768,6 @@ calculate.addEventListener('click', ()=> {
     dayString, monthString;
     intDayNum = Number(dayString);
     intMonthNum = Number(monthString);
-
     if (intDayNum === 10) {
         intDayNum = 1;
     } else if (intDayNum === 11 || intDayNum === 22){
@@ -767,7 +778,6 @@ calculate.addEventListener('click', ()=> {
         sum = eval(mSplit.join('+'));
         intDayNum = sum;
     }
-
     if (intMonthNum === 10) {
         intMonthNum = 1;
     } else if (intMonthNum === 11){
@@ -775,7 +785,6 @@ calculate.addEventListener('click', ()=> {
     } else if (intMonthNum === 12){
         intMonthNum = 3;
     }
-
     sumAttitude = intDayNum + intMonthNum;
     if (sumAttitude === 10) {
         sumAttitude = 1;
@@ -848,7 +857,7 @@ calculate.addEventListener('click', ()=> {
         if (countList[0] < 10) {
             rtNum.innerHTML = countList[0]
         } else if (countList[0] === 10) {
-            rtNum.innerHTML = '10/1'
+            rtNum.innerHTML = '1'
         } else if (countList[0] === 11 || countList[0] === 22 || countList[0] === 33) {
             mSplit = String(countList[0]).split('');
             sum = eval(mSplit.join('+'));
@@ -889,10 +898,11 @@ calculate.addEventListener('click', ()=> {
     }
     
     var rtResult = count + keepDay;
+    var sumHold ;
     if (rtResult < 10) {
         rtNum.innerHTML = rtResult;
     } else if (rtResult === 10) {
-        rtNum.innerHTML = '10/1';
+        rtNum.innerHTML = '1';
     } else if (rtResult === 11 || rtResult === 22 || rtResult === 33) {
         mSplit = String(rtResult).split('');
         sum = eval(mSplit.join('+'));
@@ -900,7 +910,22 @@ calculate.addEventListener('click', ()=> {
     } else if (rtResult > 10) {
         mSplit = String(rtResult).split('');
         sum = eval(mSplit.join('+'));
-        rtNum.innerHTML = sum;
+        if (sum < 10) {
+            rtNum.innerHTML = sum;
+        } else if (sum === 10) {
+            rtNum.innerHTML = '1';
+        } else if (sum === 11 || sum === 22 || sum === 33) {
+            sumHold = count;
+            mSplit = String(sum).split('');
+            sum = eval(mSplit.join('+'));
+            rtNum.innerHTML = sumHold + '/' + sum ;
+        } else if (sum > 10) {
+            // sumHold = count;
+            mSplit = String(sum).split('');
+            sum = eval(mSplit.join('+'));
+            rtNum.innerHTML = sum ;
+        }
+        // rtNum.innerHTML = sum;
     }
 
     // rtNum.innerHTML = String(x);
@@ -916,6 +941,7 @@ calculate.addEventListener('click', ()=> {
         indexName = ednfName[i][0];
         indexList.push(indexName);
     };
+    // console.log(indexList)
     for ( let i = 0; i <= indexList.length; i++) {
         if (String(indexList[i]).toLowerCase() === 'a' ||  String(indexList[i]).toLowerCase() === 'j' || String(indexList[i]).toLowerCase() === 's' ) {
             count += 1;
@@ -937,7 +963,7 @@ calculate.addEventListener('click', ()=> {
             count += 9;
         }
     };
-
+    // console.log(count)
     if (count < 10) {
         bnNum.innerHTML = count;
     } else if (count === 10) {
@@ -1436,17 +1462,15 @@ calculate.addEventListener('click', ()=> {
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
             mpoeNum.innerHTML = count + '/' + sum;
-        } else {
+        } else if (sum > 10) {
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
             mpoeNum.innerHTML = sum;
         }
-        count = sum;
+        // count = sum;
         
     }
-    // count = sumCount
-    
-    // mpoeNum.innerHTML = count;
+
 
 
 
@@ -1655,10 +1679,8 @@ calculate.addEventListener('click', ()=> {
             sumCount += count
             
         }
-        // console.log(sumCount)
-        // mSplit = String(sumCount).split('');
-        // sum = eval(mSplit.join('+'));
         sum = sumCount;
+        // console.log(sum)
         if (sum < 10) {
             // count = sum
             epoeNum.innerHTML = sum;
@@ -1670,13 +1692,13 @@ calculate.addEventListener('click', ()=> {
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
             epoeNum.innerHTML = count + '/' + sum;
-        } else {
+        } else if (sum > 10){
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
             epoeNum.innerHTML = sum;
         }
         count = sum;
-        epoeNum.innerHTML = count;
+        // epoeNum.innerHTML = count;
         
     }
     // count = sumCount
@@ -2201,6 +2223,7 @@ calculate.addEventListener('click', ()=> {
             count += 9;
         }
     };
+    phtrNum.innerHTML = count + ' years'
     
 
     // Mental Transit 

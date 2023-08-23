@@ -214,11 +214,12 @@ calculate.addEventListener('click', ()=> {
         sumDayArray = 1;
     } else if (Number(dayString) === 11 || Number(dayString) === 22) {
         sumDayArray = Number(dayString);
-    } else {
+    } else if (Number(dayString) > 10) {
         mSplit = String(dayString).split('');
         xsum = eval(mSplit.join('+'));
         sumDayArray = xsum
     };
+    
     if (Number(monthString) < 10) {
         sumMonthArray = Number(monthString);
     } else if (Number(dayString) === 10) {
@@ -239,12 +240,13 @@ calculate.addEventListener('click', ()=> {
         sumYearArray = 22;
     } else if (Number(sumYearArray) === 33){
         sumYearArray = 33;
-    } else {
+    } else if (Number(sumYearArray) > 10) {
         mSplit = String(sumYearArray).split('');
         xsum = eval(mSplit.join('+'));
         sumYearArray = xsum;
     }
 
+    console.log(sumDayArray, sumMonthArray, sumYearArray)
     
     sum = sumDayArray + sumMonthArray + sumYearArray;
     var keepDay = sumDayArray;

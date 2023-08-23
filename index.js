@@ -2357,6 +2357,12 @@ calculate.addEventListener('click', ()=> {
         }
     };
     phtrNum.innerHTML = count + ' years'
+
+
+
+
+
+    // Spiritual Transit
     
 
     // Mental Transit 
@@ -2366,6 +2372,9 @@ calculate.addEventListener('click', ()=> {
     indexList = lastName;
     var middleName = ednfName[0];
     count = 0;
+
+
+    // Essence Cycle
 
 
 

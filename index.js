@@ -645,6 +645,7 @@ calculate.addEventListener('click', ()=> {
     count = 0;
     countList = [];
     suhdfName = Array.from(suhdfName);
+    countHold = 0;
     for (let iterate  = 0; iterate < suhdfName.length; iterate++) {
         for ( let i = 0; i <= suhdfName[iterate].length; i++) {
             if ( String(suhdfName[iterate][i]).toLowerCase() === 'a' ) {
@@ -664,32 +665,71 @@ calculate.addEventListener('click', ()=> {
                 count+=0;
             }
         };
-        countList.push(count);
+        if (count < 10) {
+            countHold += count;
+        } else if (count === 10) {
+            countHold += 1
+        } else if (count === 11 || count === 22 || count === 33) {
+            countHold += count;
+        } else if (count > 10) {
+            dbSplit = String(count).split('');
+            nSum = eval(dbSplit.join('+'));
+            if (nSum < 10) {
+                nSum;
+            } else if (nSum === 10) {
+                nSum = 1;
+            } else if (nSum === 11 || nSum === 22 || nSum === 33 ) {
+                nSum;
+            } else if (nSum > 10) {
+                dbSplit = String(count).split('');
+                nSum = eval(dbSplit.join('+'));
+            }
+            countHold += nSum;
+        }
+        
         count = 0;
     };
-    var suhdSplit, sum,  suhdSumList = [], sum1, sum2;
-    count = 0;
-    for (let x = 0; x <= countList.length; x++) {
-        x = eval(countList.join('+'));
-        if (countList[x] === 11) {
-            count += 11;
-        } else if (countList[x] === 11) {
-            count += 11;
-        }else if (countList[x] === 22) {
-            count += 22;
-        } else if (countList[x] === 33) {
-            count += 33;
-        }  else if (x === 19 || x === 28 || x === 37 || x === 46 || x === 55 || x === 64 || x === 73 || x === 82 || x === 91) {
-            count = 1;
-        } else {
-
-            mSplit = String(countList[x]).split('');
-            sum1 = eval(dbSplit.join('+'));
-            count+= sum1;
-            
+    if (countHold < 10) {
+        dbTotalSum = countHold;
+        nSum = countHold;
+    } else if (countHold === 10) {
+        dbTotalSum = 10;
+        nSum = 1;
+    } else if (countHold === 11) {
+        dbTotalSum = 11;
+        nSum = 2
+    } else if (countHold === 22) {
+        dbTotalSum = 22;
+        nSum = 4
+    } else if (countHold === 33) {
+        dbTotalSum = 33;
+        nSum = 6;
+    } else if (countHold > 10) {
+        dbTotalSum = countHold;
+        dbSplit = String(countHold).split('');
+        nSum = eval(dbSplit.join('+'));
+        if (nSum < 10) {
+            dbTotalSum;
+            nSum;
+        } else if (nSum === 10) {
+            dbTotalSum = 10;
+            nSum = 1;
+        } else if (nSum === 11) {
+            dbTotalSum = 11;
+            nSum = 2;
+        } else if (nSum === 22) {
+            dbTotalSum = 22;
+            nSum = 4;
+        } else if (nSum === 33) {
+            dbTotalSum = 33;
+            nSum = 6;
+        } else if (nSum > 10) {
+            dbTotalSum = nsum;
+            dbSplit = String(dbTotalSum).split('');
+            nSum = eval(dbSplit.join('+'));
         }
     }
-    msuhdNum.innerHTML = sum;
+    msuhdNum.innerHTML = dbTotalSum + '/' + nSum;
 
 
 
@@ -755,23 +795,18 @@ calculate.addEventListener('click', ()=> {
     } else if (count == 10) {
         count = 1;
         pNum.innerHTML = 10 + '/<b>1</b>' ;
-        // count1 = 1;
     } else if (count === 11 || count === 22 || count === 33) {
         count;
         pnSplit = String(count).split('');
         sum = eval(pnSplit.join('+'));
         pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
-        // count1 =  sum;
-        
     } else if (count > 10) {
         pnSplit = String(count).split('');
         sum = eval(pnSplit.join('+'));
-        // count1 = sum;
         pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
         count = sum
     }
     pnHold = count ;
-    // pNum.innerHTML = count + '/<b>' +count1+ '</b>' ;
 
 
 
@@ -827,12 +862,26 @@ calculate.addEventListener('click', ()=> {
         }
         
     };
-    if (count > 10) {
+
+    if (count < 10) {
+        count;
+        mpNum.innerHTML =  count  ;
+    } else if (count == 10) {
+        count = 1;
+        mpNum.innerHTML = 10 + '/1' ;
+    } else if (count === 11 || count === 22 || count === 33) {
+        count;
         pnSplit = String(count).split('');
         sum = eval(pnSplit.join('+'));
+        mpNum.innerHTML = count + '/' +sum ;
+    } else if (count > 10) {
+        pnSplit = String(count).split('');
+        sum = eval(pnSplit.join('+'));
+        mpNum.innerHTML = count + '/' +sum ;
+        count = sum
     }
     mpHold = count ;
-    mpNum.innerHTML = count ;
+    // mpNum.innerHTML = count ;
 
 
     // Muaturity Number 

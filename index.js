@@ -365,9 +365,6 @@ calculate.addEventListener('click', ()=> {
             }
             countHold += nSum;
         }
-
-
-        countList.push(count);
         count = 0;
     };
 
@@ -440,11 +437,12 @@ calculate.addEventListener('click', ()=> {
     edHold = nSum;
 
 
-    
+
     // Minor expression number 
     var ednfName = cName.value.split(' ');
     var count = 0;
     var countList = [];
+    countHold = 0;
     ednfName = Array.from(ednfName);
     for (let iterate  = 0; iterate < ednfName.length; iterate++) {
         for ( let i = 0; i <= ednfName[iterate].length; i++) {
@@ -467,34 +465,73 @@ calculate.addEventListener('click', ()=> {
             } else if (String(ednfName[iterate][i]).toLowerCase() === 'i' || String(ednfName[iterate][i]).toLowerCase() === 'r' ) {
                 count += 9;
             }
+            
         };
-        countList.push(count);
+        if (count < 10) {
+            countHold += count;
+        } else if (count === 10) {
+            countHold += 1
+        } else if (count === 11 || count === 22 || count === 33) {
+            countHold += count;
+        } else if (count > 10) {
+            dbSplit = String(count).split('');
+            nSum = eval(dbSplit.join('+'));
+            if (nSum < 10) {
+                nSum;
+            } else if (nSum === 10) {
+                nSum = 1;
+            } else if (nSum === 11 || nSum === 22 || nSum === 33 ) {
+                nSum;
+            } else if (nSum > 10) {
+                dbSplit = String(count).split('');
+                nSum = eval(dbSplit.join('+'));
+            }
+            countHold += nSum;
+        }
+        
         count = 0;
     };
-    var dbSplit, sum, dbSumList = [], dbTotalSum ,dbResult, dbSumHoldList = [];
-
-    for (let x = 0; x < countList.length; x++) {
-        if (countList[x] === 11) {
-            dbSumHoldList.push(11);
-            dbResult = '11';
-        } else if (countList[x] === 22) {
-            dbSumHoldList.push(22);
-            dbResult = '22';
-        } else if (countList[x] === 33) {
-            dbSumHoldList.push(33);
-            dbResult = '33';
-        } else {
-            dbSplit = String(countList[x]).split('');
-            sum = eval(dbSplit.join('+'));
-            dbSumList.push(sum);
-            sum = eval(dbSplit.join('+'));
-            dbSumHoldList.push(sum);
+    if (countHold < 10) {
+        dbTotalSum = countHold;
+        nSum = countHold;
+    } else if (countHold === 10) {
+        dbTotalSum = 10;
+        nSum = 1;
+    } else if (countHold === 11) {
+        dbTotalSum = 11;
+        nSum = 2
+    } else if (countHold === 22) {
+        dbTotalSum = 22;
+        nSum = 4
+    } else if (countHold === 33) {
+        dbTotalSum = 33;
+        nSum = 6;
+    } else if (countHold > 10) {
+        dbTotalSum = countHold;
+        dbSplit = String(countHold).split('');
+        nSum = eval(dbSplit.join('+'));
+        if (nSum < 10) {
+            dbTotalSum;
+            nSum;
+        } else if (nSum === 10) {
+            dbTotalSum = 10;
+            nSum = 1;
+        } else if (nSum === 11) {
+            dbTotalSum = 11;
+            nSum = 2;
+        } else if (nSum === 22) {
+            dbTotalSum = 22;
+            nSum = 4;
+        } else if (nSum === 33) {
+            dbTotalSum = 33;
+            nSum = 6;
+        } else if (nSum > 10) {
+            dbTotalSum = nsum;
+            dbSplit = String(dbTotalSum).split('');
+            nSum = eval(dbSplit.join('+'));
         }
     }
-    dbTotalSum = eval(dbSumHoldList.join('+'));
-    dbSplit = String(dbTotalSum).split('');
-    nSum = eval(dbSplit.join('+'));
-    countList = [];
+
     if (dbTotalSum === 10) {
         medNum.innerHTML = dbTotalSum + '/1' ;
     } else if (dbTotalSum < 10) {
@@ -1962,8 +1999,6 @@ calculate.addEventListener('click', ()=> {
         monthHold;
     };
 
-    // mSplit = String(dayHold).split('');
-    // sum = eval(mSplit.join('+'));
     if (Number(dayHold) < 10) {
         sum = Number(dayHold)
     } else if (Number(dayHold) === 10) {
@@ -1990,27 +2025,53 @@ calculate.addEventListener('click', ()=> {
 
     var fpSum = monthHold + sum;
     dayHold = sum;
-
+    // console.log(fpSum)
     if (fpSum === 10) {
         fpSum = 1;
-    } else if (fpSum === 11 || fpSum === 22 || fpSum === 33) {
-        fpSum;
+    } else if (fpSum === 11 ) {
+        fpSum = '11/2';
     } else if (fpSum < 10) {
         fpSum;
-    } else {
+    } else if (fpSum === 22) {
+        fpSum = '22/4'
+    } else if (fpSum === 33) {
+        fpSum = '33/6'
+    } else if(fpSum > 10) {
         mSplit = String(fpSum).split('');
         sum = eval(mSplit.join('+'));
         if ( sum < 10) {
-            sum;
+            fpSum = sum;
         } else if (sum === 10) {
             sum =1;
-        } else if (sum === 11 || sum === 22 || sum === 33) {
-            sum;
-        } else {
+            fpSum = sum
+        } else if (sum === 11 ) {
+            sum = '11/2';
+            fpSum = sum
+        } else if (sum === 22) {
+            sum = '22/4';
+            fpSum = sum;
+        } else if (sum === 33) {
+            sum = '33/6';
+            fpSum = sum;
+        } else if (sum > 10) {
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
+            if (sum < 10) {
+                sum;
+            } else if (sum === 10) {
+                sum = 1
+            } else if (sum === 11) {
+                sum = '11/2'
+            } else if (sum === 22) {
+                sum = '22/4'
+            } else if (sum === 33) {
+                sum = '33/6'
+            } else if (sum > 10) {
+                mSplit = String(sum).split('');
+                sum = eval(mSplit.join('+'));
+            }
+            fpSum = sum
         }
-        fpSum = sum;
     }
     
     if (fpSum === 1) {
@@ -2040,13 +2101,13 @@ calculate.addEventListener('click', ()=> {
     } else if (fpSum === 9) {
         fPin.innerHTML = 'from birth to age 27'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 11) {
+    } else if (fpSum === '11/2') {
         fPin.innerHTML = 'from birth to age 34'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 22) {
+    } else if (fpSum === '22/4') {
         fPin.innerHTML = 'from birth to age 32'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 33) {
+    } else if (fpSum === '33/6') {
         fPin.innerHTML = 'from birth to age 30'
         fPinNum.innerHTML = fpSum;
     };
@@ -2055,7 +2116,6 @@ calculate.addEventListener('click', ()=> {
     // Second Pinnacle 
     dayHold;
     yearHold = Number(dYear.value);
-
     mSplit = String(yearHold).split('');
     sum = eval(mSplit.join('+'));
     if (sum === 10) {

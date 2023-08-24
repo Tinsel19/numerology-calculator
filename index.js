@@ -255,7 +255,7 @@ calculate.addEventListener('click', ()=> {
     var lsum = sum;
     var lpHold, edHold, suHold, pnHold;
     if (sum < 10) {
-        lpNum.innerHTML = '<b>' +sum + '</b>';
+        lpNum.innerHTML = '<b>' +sum+ '</b>';
     } else if (sum === 10) {
         lpNum.innerHTML = '<b> 1 </b>'
     }
@@ -286,6 +286,7 @@ calculate.addEventListener('click', ()=> {
         }
     };
     lpHold = sum;
+    // console.log(lpNum.textContent)
 
 
 
@@ -1866,47 +1867,66 @@ calculate.addEventListener('click', ()=> {
         monthHold = '11/2';
     } else if (monthHold === 12) {
         monthHold = 3;
-    } else {
+    } else if (monthHold < 10) {
         monthHold;
     };
+    var fpHold;
+    var lpHoldList = lpNum.textContent.split('/');
+    var lpHoldText = lpNum.textContent;
+    if (lpHoldList.length === 1) {
+        fpHold = Number(lpHoldText[0])
+    } else if (lpHoldList.length > 1) {
+        if (lpHoldText === '11/2') {
+            fpHold = '11/2'
+        } else if (lpHoldText === '22/4') {
+            fpHold = '22/4'
+        } else if (lpHoldText === '33/6') {
+            fpHold = '33/6'
+        } else if (lpHoldList[lpHoldList.length - 1] < 10) {
+            fpHold = Number(lpHoldList[lpHoldList.length - 1])
+        }
+    }
 
-    if (monthHold === 1) {
+    console.log(fpHold)
+
+    if (fpHold === 1) {
         fpCycle.innerHTML = 'from birth to age 0 - 26';
         fpCycleNum.innerHTML = monthHold
-    } else if (monthHold === 2) {
+    } else if (fpHold === 2) {
         fpCycle.innerHTML = 'from birth to age 0 - 34';
         fpCycleNum.innerHTML = monthHold
-    } else if (monthHold === 3) {
+    } else if (fpHold === 3) {
         fpCycle.innerHTML = 'from birth to age 0 - 33';
         fpCycleNum.innerHTML = monthHold;
-    } else if (monthHold === 4) {
+    } else if (fpHold === 4) {
         fpCycle.innerHTML = 'from birth to age 0 - 32';
         fpCycle.innerHTML = monthHold;
-    } else if (monthHold === 5) {
+    } else if (fpHold === 5) {
         fpCycle.innerHTML = 'from birth to age 0 - 31';
         fpCycleNum.innerHTML = monthHold
-    } else if (monthHold === 6) {
+    } else if (fpHold === 6) {
         fpCycle.innerHTML = 'from birth to age 0 - 30';
         fpCycleNum.innerHTML = monthHold;
-    } else if (monthHold === 7) {
+    } else if (fpHold === 7) {
         fpCycle.innerHTML = 'from birth to age 0 - 29';
         fpCycleNum.innerHTML = monthHold;
-    } else if (monthHold === 8) {
+    } else if (fpHold === 8) {
         fpCycle.innerHTML = 'from birth to age 0 - 28';
         fpCycleNum.innerHTML = monthHold
-    } else if (monthHold === 9) {
+    } else if (fpHold === 9) {
         fpCycle.innerHTML = 'from birth to age 0 - 27';
         fpCycleNum.innerHTML = monthHold;
-    } else if (monthHold === '11/2') {
+    } else if (fpHold === '11/2') {
         fpCycle.innerHTML = 'from birth to age  0 - 34';
         fpCycleNum.innerHTML = monthHold;
-    } else if (monthHold === 22) {
+    } else if (fpHold === '22/4') {
         fpCycle.innerHTML = 'from birth to age 0 - 32';
         fpCycleNum.innerHTML = monthHold;
-    } else if (monthHold === 33) {
+    } else if (fpHold === '33/6') {
         fpCycle.innerHTML = 'from birth to age 0 - 30';
         fpCycleNum.innerHTML = monthHold;
     };
+
 
     // Second Cycle Life 
     dayHold;
@@ -1928,40 +1948,58 @@ calculate.addEventListener('click', ()=> {
     }  else {
         dayHold;
     };
-    if (dayHold === 1) {
+
+    var spHold;
+    lpHoldList = lpNum.textContent.split('/');
+    lpHoldText = lpNum.textContent;
+    if (lpHoldList.length === 1) {
+        spHold = Number(lpHoldText[0])
+    } else if (lpHoldList.length > 1) {
+        if (lpHoldText === '11/2') {
+            spHold = '11/2'
+        } else if (lpHoldText === '22/4') {
+            spHold = '22/4'
+        } else if (lpHoldText === '33/6') {
+            spHold = '33/6'
+        } else if (lpHoldList[lpHoldList.length - 1] < 10) {
+            spHold = Number(lpHoldList[lpHoldList.length - 1])
+        }
+    }
+
+    if (spHold === 1) {
         spCycle.innerHTML = 'from age 26 to 53';
         spCycleNum.innerHTML = dayHold;
-    } else if (dayHold === 2) {
+    } else if (spHold === 2) {
         spCycle.innerHTML = 'from age 34 to 61'
         spCycleNum.innerHTML = dayHold;
-    } else if (dayHold === 3) {
+    } else if (spHold === 3) {
         spCycle.innerHTML = 'from age 33 to 60';
         spCycleNum.innerHTML = dayHold;
-    } else if (dayHold === 4) {
+    } else if (spHold === 4) {
         spCycle.innerHTML = 'from age 32 to 59';
         spCycleNum.innerHTML = dayHold;
-    } else if (dayHold === 5) {
+    } else if (spHold === 5) {
         spCycle.innerHTML = 'from age 31 to 58';
         spCycleNum.innerHTML = dayHold;
-    } else if (dayHold === 6) {
+    } else if (spHold === 6) {
         spCycle.innerHTML = 'from age 30 to 57';
         spCycleNum.innerHTML = dayHold;
-    } else if (dayHold === 7) {
+    } else if (spHold === 7) {
         spCycle.innerHTML = 'from age 29 to 56';
         spCycleNum.innerHTML = dayHold;
-    } else if (dayHold === 8) {
+    } else if (spHold === 8) {
         spCycle.innerHTML = 'from age 28 to 55';
         spCycleNum.innerHTML = dayHold;
-    } else if (dayHold === 9) {
+    } else if (spHold === 9) {
         spCycle.innerHTML = 'from age 27 to 54';
         spCycleNum.innerHTML = dayHold;
-    } else if (dayHold === '11/2') {
+    } else if (spHold === '11/2') {
         spCycle.innerHTML = 'from age 34 to 61';
         spCycleNum.innerHTML = dayHold
-    } else if (dayHold === '22/4') {
+    } else if (spHold === '22/4') {
         spCycle.innerHTML = 'from age 32 to 59';
         spCycleNum.innerHTML = dayHold;
-    } else if (dayHold === '33/6') {
+    } else if (spHold === '33/6') {
         spCycle.innerHTML = 'from age 30 to 57';
         spCycleNum.innerHTML = dayHold;
     };
@@ -1987,41 +2025,57 @@ calculate.addEventListener('click', ()=> {
         yearHold = sum;
     }  
 
+    var tpHold;
+    lpHoldList = lpNum.textContent.split('/');
+    lpHoldText = lpNum.textContent;
+    if (lpHoldList.length === 1) {
+        tpHold = Number(lpHoldText[0])
+    } else if (lpHoldList.length > 1) {
+        if (lpHoldText === '11/2') {
+            tpHold = '11/2'
+        } else if (lpHoldText === '22/4') {
+            tpHold = '22/4'
+        } else if (lpHoldText === '33/6') {
+            tpHold = '33/6'
+        } else if (lpHoldList[lpHoldList.length - 1] < 10) {
+            tpHold = Number(lpHoldList[lpHoldList.length - 1])
+        }
+    }
 
-    if (yearHold === 1) {
+    if (tpHold === 1) {
         tpCycle.innerHTML =  'from age 53 and on';
         tpCycleNum.innerHTML = yearHold;
-    } else if (yearHold === 2) {
+    } else if (tpHold === 2) {
         tpCycle.innerHTML = 'from age 61 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (yearHold === 3) {
+    } else if (tpHold === 3) {
         tpCycle.innerHTML = 'from age 60 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (yearHold === 4) {
+    } else if (tpHold === 4) {
         tpCycle.innerHTML = 'from age 59 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (yearHold === 5) {
+    } else if (tpHold === 5) {
         tpCycle.innerHTML = 'from age 58 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (yearHold === 6) {
+    } else if (tpHold === 6) {
         tpCycle.innerHTML = 'from age 57 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (yearHold === 7) {
+    } else if (tpHold === 7) {
         tpCycle.innerHTML = 'from age 56 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (yearHold === 8) {
+    } else if (tpHold === 8) {
         tpCycle.innerHTML = 'from age 55 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (yearHold === 9) {
+    } else if (tpHold === 9) {
         tpCycle.innerHTML =  'from age 54 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (yearHold === '11/2') {
+    } else if (tpHold === '11/2') {
         tpCycle.innerHTML = 'from age 61 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (yearHold === '22/4') {
+    } else if (tpHold === '22/4') {
         tpCycle.innerHTML = 'from age 59 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (yearHold === '33/6') {
+    } else if (tpHold === '33/6') {
         tpCycle.innerHTML = 'from age 57 and on'
         tpCycleNum.innerHTML = yearHold
     };
@@ -2074,7 +2128,6 @@ calculate.addEventListener('click', ()=> {
 
     var fpSum = monthHold + sum;
     dayHold = sum;
-    // console.log(fpSum)
     if (fpSum === 10) {
         fpSum = 1;
     } else if (fpSum === 11 ) {
@@ -2122,41 +2175,59 @@ calculate.addEventListener('click', ()=> {
             fpSum = sum
         }
     }
+
+
+    fpHold;
+    lpHoldList = lpNum.textContent.split('/');
+    lpHoldText = lpNum.textContent;
+    if (lpHoldList.length === 1) {
+        fpHold = Number(lpHoldText[0])
+    } else if (lpHoldList.length > 1) {
+        if (lpHoldText === '11/2') {
+            fpHold = '11/2'
+        } else if (lpHoldText === '22/4') {
+            fpHold = '22/4'
+        } else if (lpHoldText === '33/6') {
+            fpHold = '33/6'
+        } else if (lpHoldList[lpHoldList.length - 1] < 10) {
+            fpHold = Number(lpHoldList[lpHoldList.length - 1])
+        }
+    }
     
-    if (fpSum === 1) {
+    if (fpHold === 1) {
         fPin.innerHTML = 'from birth to age 35'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 2) {
+    } else if (fpHold === 2) {
         fPin.innerHTML = 'from birth to age 34'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 3) {
+    } else if (fpHold === 3) {
         fPin.innerHTML = 'from birth to age 33'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 4) {
+    } else if (fpHold === 4) {
         fPin.innerHTML = 'from birth to age 32'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 5) {
+    } else if (fpHold === 5) {
         fPin.innerHTML = 'from birth to age 31'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 6) {
+    } else if (fpHold === 6) {
         fPin.innerHTML = 'from birth to age 30'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 7) {
+    } else if (fpHold === 7) {
         fPin.innerHTML = 'from birth to age 29'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 8) {
+    } else if (fpHold === 8) {
         fPin.innerHTML = 'from birth to age 28'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === 9) {
+    } else if (fpHold === 9) {
         fPin.innerHTML = 'from birth to age 27'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === '11/2') {
+    } else if (fpHold === '11/2') {
         fPin.innerHTML = 'from birth to age 34'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === '22/4') {
+    } else if (fpHold === '22/4') {
         fPin.innerHTML = 'from birth to age 32'
         fPinNum.innerHTML = fpSum;
-    } else if (fpSum === '33/6') {
+    } else if (fpHold === '33/6') {
         fPin.innerHTML = 'from birth to age 30'
         fPinNum.innerHTML = fpSum;
     };
@@ -2217,40 +2288,58 @@ calculate.addEventListener('click', ()=> {
         sspSum = spSum
     };
 
-    if (spSum === 1) {
+
+    spHold;
+    lpHoldList = lpNum.textContent.split('/');
+    lpHoldText = lpNum.textContent;
+    if (lpHoldList.length === 1) {
+        spHold = Number(lpHoldText[0])
+    } else if (lpHoldList.length > 1) {
+        if (lpHoldText === '11/2') {
+            spHold = '11/2'
+        } else if (lpHoldText === '22/4') {
+            spHold = '22/4'
+        } else if (lpHoldText === '33/6') {
+            spHold = '33/6'
+        } else if (lpHoldList[lpHoldList.length - 1] < 10) {
+            spHold = Number(lpHoldList[lpHoldList.length - 1])
+        }
+    }
+
+    if (spHold === 1) {
         sPin.innerHTML = 'from age 35 to 44';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === 2) {
+    } else if (spHold === 2) {
         sPin.innerHTML = 'from age 34 to 43';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === 3) {
+    } else if (spHold === 3) {
         sPin.innerHTML = 'from age 33 to 42';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === 4) {
+    } else if (spHold === 4) {
         sPin.innerHTML = 'from age 32 to 41';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === 5) {
+    } else if (spHold === 5) {
         sPin.innerHTML = 'from age 31 to 40';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === 6) {
+    } else if (spHold === 6) {
         sPin.innerHTML = 'from age 30 to 39';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === 7) {
+    } else if (spHold === 7) {
         sPin.innerHTML = 'from age 29 to 38';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === 8) {
+    } else if (spHold === 8) {
         sPin.innerHTML = 'from age 28 to 37';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === 9) {
+    } else if (spHold === 9) {
         sPin.innerHTML = 'from age 27 to 36';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === '11/2') {
+    } else if (spHold === '11/2') {
         sPin.innerHTML = 'from age 34 to 43';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === '22/4') {
+    } else if (spHold === '22/4') {
         sPin.innerHTML = 'from age 32 to 41';
         sPinNum.innerHTML = spSum;
-    } else if (spSum === '33/6') {
+    } else if (spHold === '33/6') {
         sPin.innerHTML = 'from age 30 to 39';
         sPinNum.innerHTML = spSum;
     };
@@ -2290,42 +2379,57 @@ calculate.addEventListener('click', ()=> {
         }
         tpSum = sum;
     };
-    // console.log(tpSum)
+    tpHold;
+    lpHoldList = lpNum.textContent.split('/');
+    lpHoldText = lpNum.textContent;
+    if (lpHoldList.length === 1) {
+        tpHold = Number(lpHoldText[0])
+    } else if (lpHoldList.length > 1) {
+        if (lpHoldText === '11/2') {
+            tpHold = '11/2'
+        } else if (lpHoldText === '22/4') {
+            tpHold = '22/4'
+        } else if (lpHoldText === '33/6') {
+            tpHold = '33/6'
+        } else if (lpHoldList[lpHoldList.length - 1] < 10) {
+            tpHold = Number(lpHoldList[lpHoldList.length - 1])
+        }
+    }
 
-    if (tpSum === 1) {
+    if (tpHold === 1) {
         tPin.innerHTML = 'from age 44 to 53';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === 2) {
+    } else if (tpHold === 2) {
         tPin.innerHTML = 'from age 43 to 52';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === 3) {
+    } else if (tpHold === 3) {
         tPin.innerHTML = 'from age 42 to 51';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === 4) {
+    } else if (tpHold === 4) {
         tPin.innerHTML = 'from age 41 to 50';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === 5) {
+    } else if (tpHold === 5) {
         tPin.innerHTML = 'from age 40 to 49';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === 6) {
+    } else if (tpHold === 6) {
         tPin.innerHTML = 'from age 39 to 48';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === 7) {
+    } else if (tpHold === 7) {
         tPin.innerHTML = 'from age 38 to 47';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === 8) {
+    } else if (tpHold === 8) {
         tPin.innerHTML = 'from age 37 to 46';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === 9) {
+    } else if (tpHold === 9) {
         tPin.innerHTML = 'from age 36 to 45';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === '11/2') {
+    } else if (tpHold === '11/2') {
         tPin.innerHTML = 'from age 43 to 52';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === '22/4') {
+    } else if (tpHold === '22/4') {
         tPin.innerHTML = 'from age 41 to 50';
         tPinNum.innerHTML = tpSum
-    } else if (tpSum === '33/6') {
+    } else if (tpHold === '33/6') {
         tPin.innerHTML = 'from age 39 to 48';
         tPinNum.innerHTML = tpSum
     };
@@ -2344,41 +2448,57 @@ calculate.addEventListener('click', ()=> {
         ftSum = sum;
     };
     
+    fpHold;
+    lpHoldList = lpNum.textContent.split('/');
+    lpHoldText = lpNum.textContent;
+    if (lpHoldList.length === 1) {
+        fpHold = Number(lpHoldText[0])
+    } else if (lpHoldList.length > 1) {
+        if (lpHoldText === '11/2') {
+            fpHold = '11/2'
+        } else if (lpHoldText === '22/4') {
+            fpHold = '22/4'
+        } else if (lpHoldText === '33/6') {
+            fpHold = '33/6'
+        } else if (lpHoldList[lpHoldList.length - 1] < 10) {
+            fpHold = Number(lpHoldList[lpHoldList.length - 1])
+        }
+    }
 
-    if (ftSum === 1) {
+    if (fpHold === 1) {
         ftPin.innerHTML = 'from age 53 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 2) {
+    } else if (fpHold === 2) {
         ftPin.innerHTML = 'from age 52 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 3) {
+    } else if (fpHold === 3) {
         ftPin.innerHTML = 'from age 51 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 4) {
+    } else if (fpHold === 4) {
         ftPin.innerHTML = 'from age 50 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 5) {
+    } else if (fpHold === 5) {
         ftPin.innerHTML = 'from age 49 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 6) {
+    } else if (fpHold === 6) {
         ftPin.innerHTML = 'from age 48 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 7) {
+    } else if (fpHold === 7) {
         ftPin.innerHTML = 'from age 47 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 8) {
+    } else if (fpHold === 8) {
         ftPin.innerHTML = 'from age 46 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 9) {
+    } else if (fpHold === 9) {
         ftPin.innerHTML = 'from age 45 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 11) {
+    } else if (fpHold === '11/2') {
         ftPin.innerHTML = 'from age 52 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 22) {
+    } else if (fpHold === '22/4') {
         ftPin.innerHTML = 'from age 50 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (ftSum === 33) {
+    } else if (fpHold === '33/6') {
         ftPin.innerHTML = 'from age 48 and on';
         ftPinNum.innerHTML = ftSum;
     };

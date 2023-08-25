@@ -889,7 +889,38 @@ calculate.addEventListener('click', ()=> {
     count = lpHold + edHold;
     mSplit = String(count).split('');
     sum = eval(mSplit.join('+'));
-    mNum.innerHTML = count + '/' + sum;
+
+    if (sum < 10) {
+        mNum.innerHTML = sum;
+    } else if (sum === 10) {
+        mNum.innerHTML = 1;
+    } else if (sum = 11) {
+        mNum.innerHTML = '11/2';
+    } else if (sum === 22) {
+        mNum.innerHTML = '22/4';
+    } else if (sum = 33) {
+        mNum.innerHTML = '33/6';
+    } else if (sum > 10) {
+        mSplit = String(sum).split('');
+        sum = eval(mSplit.join('+'));
+        if (sum < 10) {
+            sum;
+        } else if (sum === 10) {
+            sum  = 1;
+        } else if (sum === 11) {
+            sum = '11/2'
+        } else if (sum === 22) {
+            sum = '22/4'
+        } else if (sum === 33) {
+            sum = '33/6'
+        } else if (sum > 10) {
+            mSplit = String(sum).split('');
+            sum = eval(mSplit.join('+'));
+        }
+        mNum.innerHTML = sum;
+    }
+    
+    
 
 
     // Attitude Number 
@@ -920,6 +951,20 @@ calculate.addEventListener('click', ()=> {
     } else if (sumAttitude > 10) {
         mSplit = String(sumAttitude).split('');
         sum = eval(mSplit.join('+'));
+        if (sum < 10) {
+            sum;
+        } else if (sum === 10) {
+            sum =1
+        } else if (sum === 11) {
+            sum = '11/2'
+        } else if (sum === 22) {
+            sum = '22/4'
+        } else if (sum === 33) {
+            sum = '33/6'
+        } else if (sum > 10) {
+            mSplit = String(sumAttitude).split('');
+            sum = eval(mSplit.join('+'));
+        }
         sumAttitude = sum;
     }
     aNum.innerHTML = sumAttitude;
@@ -1096,7 +1141,7 @@ calculate.addEventListener('click', ()=> {
     if (count < 10) {
         bnNum.innerHTML = count;
     } else if (count === 10) {
-        bnNum.innerHTML = '10/1';
+        bnNum.innerHTML = 1;
     } else if (count === 11 || count === 22 || count === 33) {
         mSplit = String(count).split('');
         sum = eval(mSplit.join('+'));
@@ -2347,7 +2392,6 @@ calculate.addEventListener('click', ()=> {
 
     // Third Pinnacle Cycle 
     var tpSum = fpSum + sspSum;
-    // console.log(tpSum)
 
     if (tpSum < 10) {
         tpSum;
@@ -2382,6 +2426,7 @@ calculate.addEventListener('click', ()=> {
     tpHold;
     lpHoldList = lpNum.textContent.split('/');
     lpHoldText = lpNum.textContent;
+
     if (lpHoldList.length === 1) {
         tpHold = Number(lpHoldText[0])
     } else if (lpHoldList.length > 1) {

@@ -1906,15 +1906,16 @@ calculate.addEventListener('click', ()=> {
 
     // First Period Life Cycle 
     monthHold;
+    if (monthHold < 10) {
+        monthHold;
+    }
     if (monthHold === 10) {
         monthHold = 1;
     } else if (monthHold === 11) {
         monthHold = '11/2';
     } else if (monthHold === 12) {
         monthHold = 3;
-    } else if (monthHold < 10) {
-        monthHold;
-    };
+    }
     var fpHold;
     var lpHoldList = lpNum.textContent.split('/');
     var lpHoldText = lpNum.textContent;
@@ -1932,7 +1933,7 @@ calculate.addEventListener('click', ()=> {
         }
     }
 
-    console.log(fpHold)
+    // console.log(fpHold, monthHold)
 
     if (fpHold === 1) {
         fpCycle.innerHTML = 'from birth to age 0 - 26';
@@ -1945,7 +1946,7 @@ calculate.addEventListener('click', ()=> {
         fpCycleNum.innerHTML = monthHold;
     } else if (fpHold === 4) {
         fpCycle.innerHTML = 'from birth to age 0 - 32';
-        fpCycle.innerHTML = monthHold;
+        fpCycleNum.innerHTML = monthHold;
     } else if (fpHold === 5) {
         fpCycle.innerHTML = 'from birth to age 0 - 31';
         fpCycleNum.innerHTML = monthHold
@@ -2173,49 +2174,66 @@ calculate.addEventListener('click', ()=> {
 
     var fpSum = monthHold + sum;
     dayHold = sum;
+    var ffpHold;
     if (fpSum === 10) {
         fpSum = 1;
+        ffpHold = fpSum
     } else if (fpSum === 11 ) {
         fpSum = '11/2';
+        ffpHold = 11
     } else if (fpSum < 10) {
         fpSum;
+        ffpHold = fpSum
     } else if (fpSum === 22) {
-        fpSum = '22/4'
+        fpSum = '22/4';
+        ffpHold = 22
     } else if (fpSum === 33) {
-        fpSum = '33/6'
+        fpSum = '33/6';
+        ffpHold = 33;
     } else if(fpSum > 10) {
         mSplit = String(fpSum).split('');
         sum = eval(mSplit.join('+'));
         if ( sum < 10) {
             fpSum = sum;
+            ffpHold = fpSum
         } else if (sum === 10) {
             sum =1;
-            fpSum = sum
+            fpSum = sum;
+            ffpHold = 1;
         } else if (sum === 11 ) {
             sum = '11/2';
-            fpSum = sum
+            fpSum = sum;
+            ffpHold = 11;
         } else if (sum === 22) {
             sum = '22/4';
             fpSum = sum;
+            ffpHold = 22;
         } else if (sum === 33) {
             sum = '33/6';
             fpSum = sum;
+            ffpHold = 33;
         } else if (sum > 10) {
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
             if (sum < 10) {
                 sum;
+                ffpHold = sum;
             } else if (sum === 10) {
-                sum = 1
+                sum = 1;
+                ffpHold = 1;
             } else if (sum === 11) {
-                sum = '11/2'
+                sum = '11/2';
+                ffpHold = 11;
             } else if (sum === 22) {
-                sum = '22/4'
+                sum = '22/4';
+                ffpHold = 22;
             } else if (sum === 33) {
-                sum = '33/6'
+                sum = '33/6';
+                ffpHold = 33;
             } else if (sum > 10) {
                 mSplit = String(sum).split('');
                 sum = eval(mSplit.join('+'));
+                ffpHold = sum;
             }
             fpSum = sum
         }
@@ -2319,13 +2337,13 @@ calculate.addEventListener('click', ()=> {
         sspSum = spSum;
     } else if (spSum === 11 ) {
         spSum = '11/2';
-        sspSum = 2;
+        sspSum = 11;
     } else if (spSum === 22) {
         spSum = '22/4';
-        sspSum = 4;
+        sspSum = 22;
     } else if(spSum === 33) {
         spSum = '33/6';
-        sspSum = 6
+        sspSum = 33
     } else if (spSum > 10) {
         mSplit = String(spSum).split('');
         sum = eval(mSplit.join('+'));
@@ -2391,7 +2409,8 @@ calculate.addEventListener('click', ()=> {
 
 
     // Third Pinnacle Cycle 
-    var tpSum = fpSum + sspSum;
+    var tpSum = ffpHold + sspSum;
+    // console.log(tpSum, ffpHold, sspSum)
 
     if (tpSum < 10) {
         tpSum;
@@ -2408,20 +2427,25 @@ calculate.addEventListener('click', ()=> {
         sum = eval(mSplit.join('+'));
         if (sum < 10) {
             sum;
+            tpSum = sum;
         } else if (sum === 10) {
             sum = 1;
+            tpSum = sum;
         } else if (sum === 11) {
-            sum = '11/2'
+            sum = '11/2';
+            tpSum = sum;
         } else if (sum === 22) {
-            sum = '22/4'
+            sum = '22/4';
+            tpSum = sum;
         } else if (sum === 33) {
-            sum = '33/6'
+            sum = '33/6';
+            tpSum = sum;
         } else if (sum > 10) {
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
             tpSum = sum
         }
-        tpSum = sum;
+        
     };
     tpHold;
     lpHoldList = lpNum.textContent.split('/');

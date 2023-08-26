@@ -2638,9 +2638,13 @@ calculate.addEventListener('click', ()=> {
         dayHold =2
     } else if (dayHold === 22) {
         dayHold = 4
-    }
+    } else if (dayHold < 10) {
+        dayHold
+    };
     if (monthHold === 11) {
         monthHold = 2
+    } else if (monthHold < 10) {
+        monthHold
     }
     // console.log(dayHold, monthHold)
     var fAnim = dayHold - monthHold;

@@ -2630,9 +2630,18 @@ calculate.addEventListener('click', ()=> {
 
     // Challenges in Life 
 
-    // First Challenge 
+    // First Challenge
     dayHold, monthHold, yearHold;
     fCha;
+
+    if (dayHold === 11) {
+        dayHold =2
+    } else if (dayHold === 22) {
+        dayHold = 4
+    }
+    if (monthHold === 11) {
+        monthHold = 2
+    }
     // console.log(dayHold, monthHold)
     var fAnim = dayHold - monthHold;
     if (fAnim < 0) {

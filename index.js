@@ -725,7 +725,7 @@ calculate.addEventListener('click', ()=> {
             dbTotalSum = 33;
             nSum = 6;
         } else if (nSum > 10) {
-            dbTotalSum = nsum;
+            dbTotalSum = nSum;
             dbSplit = String(dbTotalSum).split('');
             nSum = eval(dbSplit.join('+'));
         }

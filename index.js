@@ -253,7 +253,7 @@ calculate.addEventListener('click', ()=> {
     var kdHold = sum;
 
     var lsum = sum;
-    var lpHold, edHold, suHold, pnHold;
+    var lpHold, edHold, suHold, pnHold, nSum, dbTotalSum;
     if (sum < 10) {
         lpNum.innerHTML = '<b>' +sum+ '</b>';
     } else if (sum === 10) {
@@ -404,7 +404,7 @@ calculate.addEventListener('click', ()=> {
             dbTotalSum = 33;
             nSum = 6;
         } else if (nSum > 10) {
-            dbTotalSum = nsum;
+            dbTotalSum = nSum;
             dbSplit = String(dbTotalSum).split('');
             nSum = eval(dbSplit.join('+'));
         }
@@ -527,7 +527,7 @@ calculate.addEventListener('click', ()=> {
             dbTotalSum = 33;
             nSum = 6;
         } else if (nSum > 10) {
-            dbTotalSum = nsum;
+            dbTotalSum = nSum;
             dbSplit = String(dbTotalSum).split('');
             nSum = eval(dbSplit.join('+'));
         }

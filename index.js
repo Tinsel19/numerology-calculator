@@ -889,6 +889,7 @@ calculate.addEventListener('click', ()=> {
     count = lpHold + edHold;
     mSplit = String(count).split('');
     sum = eval(mSplit.join('+'));
+    sum = count;
 
     if (sum < 10) {
         mNum.innerHTML = sum;
@@ -2653,7 +2654,6 @@ calculate.addEventListener('click', ()=> {
 
     // Third Challenge 
     var tAnim = sAnim - fAnim;
-
     if (tAnim < 0) {
         tAnim = tAnim * (-1);
     } else {
@@ -2728,6 +2728,8 @@ calculate.addEventListener('click', ()=> {
 
 
 
+    // Personal Year 
+    
 
 
 

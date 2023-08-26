@@ -1244,6 +1244,59 @@ calculate.addEventListener('click', ()=> {
 
     // Karmic Debt Number
     kdNum;
+    // life path 
+    if (kdHold === 13) {
+        kdNum.innerHTML = '13/4'
+    } else if (kdHold === 14) {
+        kdNum.innerHTML = '14/5'
+    } else if (kdHold === 16) {
+        kdNum.innerHTML = '16/7'
+    } else if (kdHold === 19) {
+        kdNum.innerHTML = '19/1'
+    } else {
+        kdNum.innerHTML = 'None'
+    }
+
+    // destiny 
+    if (kdHold === 13) {
+        kdNum.innerHTML = '13/4'
+    } else if (kdHold === 14) {
+        kdNum.innerHTML = '14/5'
+    } else if (kdHold === 16) {
+        kdNum.innerHTML = '16/7'
+    } else if (kdHold === 19) {
+        kdNum.innerHTML = '19/1'
+    } else {
+        kdNum.innerHTML = 'None'
+    }
+
+    // soul urge 
+    if (kdHold === 13) {
+        kdNum.innerHTML = '13/4'
+    } else if (kdHold === 14) {
+        kdNum.innerHTML = '14/5'
+    } else if (kdHold === 16) {
+        kdNum.innerHTML = '16/7'
+    } else if (kdHold === 19) {
+        kdNum.innerHTML = '19/1'
+    } else {
+        kdNum.innerHTML = 'None'
+    }
+
+    // birthday number 
+    if (kdHold === 13) {
+        kdNum.innerHTML = '13/4'
+    } else if (kdHold === 14) {
+        kdNum.innerHTML = '14/5'
+    } else if (kdHold === 16) {
+        kdNum.innerHTML = '16/7'
+    } else if (kdHold === 19) {
+        kdNum.innerHTML = '19/1'
+    } else {
+        kdNum.innerHTML = 'None'
+    }
+
+    // expression 
     if (kdHold === 13) {
         kdNum.innerHTML = '13/4'
     } else if (kdHold === 14) {
@@ -2013,40 +2066,40 @@ calculate.addEventListener('click', ()=> {
     }
 
     if (spHold === 1) {
-        spCycle.innerHTML = 'from age 26 to 53';
+        spCycle.innerHTML = 'from age 27 to 53';
         spCycleNum.innerHTML = dayHold;
     } else if (spHold === 2) {
-        spCycle.innerHTML = 'from age 34 to 61'
+        spCycle.innerHTML = 'from age 35 to 61'
         spCycleNum.innerHTML = dayHold;
     } else if (spHold === 3) {
-        spCycle.innerHTML = 'from age 33 to 60';
+        spCycle.innerHTML = 'from age 34 to 60';
         spCycleNum.innerHTML = dayHold;
     } else if (spHold === 4) {
-        spCycle.innerHTML = 'from age 32 to 59';
+        spCycle.innerHTML = 'from age 33 to 59';
         spCycleNum.innerHTML = dayHold;
     } else if (spHold === 5) {
-        spCycle.innerHTML = 'from age 31 to 58';
+        spCycle.innerHTML = 'from age 32 to 58';
         spCycleNum.innerHTML = dayHold;
     } else if (spHold === 6) {
-        spCycle.innerHTML = 'from age 30 to 57';
+        spCycle.innerHTML = 'from age 31 to 57';
         spCycleNum.innerHTML = dayHold;
     } else if (spHold === 7) {
-        spCycle.innerHTML = 'from age 29 to 56';
+        spCycle.innerHTML = 'from age 30 to 56';
         spCycleNum.innerHTML = dayHold;
     } else if (spHold === 8) {
-        spCycle.innerHTML = 'from age 28 to 55';
+        spCycle.innerHTML = 'from age 29 to 55';
         spCycleNum.innerHTML = dayHold;
     } else if (spHold === 9) {
-        spCycle.innerHTML = 'from age 27 to 54';
+        spCycle.innerHTML = 'from age 28 to 54';
         spCycleNum.innerHTML = dayHold;
     } else if (spHold === '11/2') {
-        spCycle.innerHTML = 'from age 34 to 61';
+        spCycle.innerHTML = 'from age 35 to 61';
         spCycleNum.innerHTML = dayHold
     } else if (spHold === '22/4') {
-        spCycle.innerHTML = 'from age 32 to 59';
+        spCycle.innerHTML = 'from age 33 to 59';
         spCycleNum.innerHTML = dayHold;
     } else if (spHold === '33/6') {
-        spCycle.innerHTML = 'from age 30 to 57';
+        spCycle.innerHTML = 'from age 31 to 57';
         spCycleNum.innerHTML = dayHold;
     };
 
@@ -2089,40 +2142,40 @@ calculate.addEventListener('click', ()=> {
     }
 
     if (tpHold === 1) {
-        tpCycle.innerHTML =  'from age 53 and on';
+        tpCycle.innerHTML =  'from age 54 and on';
         tpCycleNum.innerHTML = yearHold;
     } else if (tpHold === 2) {
-        tpCycle.innerHTML = 'from age 61 and on'
+        tpCycle.innerHTML = 'from age 62 and on'
         tpCycleNum.innerHTML = yearHold
     } else if (tpHold === 3) {
-        tpCycle.innerHTML = 'from age 60 and on'
-        tpCycleNum.innerHTML = yearHold
-    } else if (tpHold === 4) {
-        tpCycle.innerHTML = 'from age 59 and on'
-        tpCycleNum.innerHTML = yearHold
-    } else if (tpHold === 5) {
-        tpCycle.innerHTML = 'from age 58 and on'
-        tpCycleNum.innerHTML = yearHold
-    } else if (tpHold === 6) {
-        tpCycle.innerHTML = 'from age 57 and on'
-        tpCycleNum.innerHTML = yearHold
-    } else if (tpHold === 7) {
-        tpCycle.innerHTML = 'from age 56 and on'
-        tpCycleNum.innerHTML = yearHold
-    } else if (tpHold === 8) {
-        tpCycle.innerHTML = 'from age 55 and on'
-        tpCycleNum.innerHTML = yearHold
-    } else if (tpHold === 9) {
-        tpCycle.innerHTML =  'from age 54 and on'
-        tpCycleNum.innerHTML = yearHold
-    } else if (tpHold === '11/2') {
         tpCycle.innerHTML = 'from age 61 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (tpHold === '22/4') {
+    } else if (tpHold === 4) {
+        tpCycle.innerHTML = 'from age 60 and on'
+        tpCycleNum.innerHTML = yearHold
+    } else if (tpHold === 5) {
         tpCycle.innerHTML = 'from age 59 and on'
         tpCycleNum.innerHTML = yearHold
-    } else if (tpHold === '33/6') {
+    } else if (tpHold === 6) {
+        tpCycle.innerHTML = 'from age 58 and on'
+        tpCycleNum.innerHTML = yearHold
+    } else if (tpHold === 7) {
         tpCycle.innerHTML = 'from age 57 and on'
+        tpCycleNum.innerHTML = yearHold
+    } else if (tpHold === 8) {
+        tpCycle.innerHTML = 'from age 56 and on'
+        tpCycleNum.innerHTML = yearHold
+    } else if (tpHold === 9) {
+        tpCycle.innerHTML =  'from age 55 and on'
+        tpCycleNum.innerHTML = yearHold
+    } else if (tpHold === '11/2') {
+        tpCycle.innerHTML = 'from age 62 and on'
+        tpCycleNum.innerHTML = yearHold
+    } else if (tpHold === '22/4') {
+        tpCycle.innerHTML = 'from age 60 and on'
+        tpCycleNum.innerHTML = yearHold
+    } else if (tpHold === '33/6') {
+        tpCycle.innerHTML = 'from age 58 and on'
         tpCycleNum.innerHTML = yearHold
     };
 
@@ -2370,40 +2423,40 @@ calculate.addEventListener('click', ()=> {
     }
 
     if (spHold === 1) {
-        sPin.innerHTML = 'from age 35 to 44';
+        sPin.innerHTML = 'from age 36 to 44';
         sPinNum.innerHTML = spSum;
     } else if (spHold === 2) {
-        sPin.innerHTML = 'from age 34 to 43';
+        sPin.innerHTML = 'from age 35 to 43';
         sPinNum.innerHTML = spSum;
     } else if (spHold === 3) {
-        sPin.innerHTML = 'from age 33 to 42';
+        sPin.innerHTML = 'from age 34 to 42';
         sPinNum.innerHTML = spSum;
     } else if (spHold === 4) {
-        sPin.innerHTML = 'from age 32 to 41';
+        sPin.innerHTML = 'from age 33 to 41';
         sPinNum.innerHTML = spSum;
     } else if (spHold === 5) {
-        sPin.innerHTML = 'from age 31 to 40';
+        sPin.innerHTML = 'from age 32 to 40';
         sPinNum.innerHTML = spSum;
     } else if (spHold === 6) {
-        sPin.innerHTML = 'from age 30 to 39';
+        sPin.innerHTML = 'from age 31 to 39';
         sPinNum.innerHTML = spSum;
     } else if (spHold === 7) {
-        sPin.innerHTML = 'from age 29 to 38';
+        sPin.innerHTML = 'from age 30 to 38';
         sPinNum.innerHTML = spSum;
     } else if (spHold === 8) {
-        sPin.innerHTML = 'from age 28 to 37';
+        sPin.innerHTML = 'from age 29 to 37';
         sPinNum.innerHTML = spSum;
     } else if (spHold === 9) {
-        sPin.innerHTML = 'from age 27 to 36';
+        sPin.innerHTML = 'from age 28 to 36';
         sPinNum.innerHTML = spSum;
     } else if (spHold === '11/2') {
-        sPin.innerHTML = 'from age 34 to 43';
+        sPin.innerHTML = 'from age 35 to 43';
         sPinNum.innerHTML = spSum;
     } else if (spHold === '22/4') {
-        sPin.innerHTML = 'from age 32 to 41';
+        sPin.innerHTML = 'from age 33 to 41';
         sPinNum.innerHTML = spSum;
     } else if (spHold === '33/6') {
-        sPin.innerHTML = 'from age 30 to 39';
+        sPin.innerHTML = 'from age 31 to 39';
         sPinNum.innerHTML = spSum;
     };
 
@@ -2466,40 +2519,40 @@ calculate.addEventListener('click', ()=> {
     }
 
     if (tpHold === 1) {
-        tPin.innerHTML = 'from age 44 to 53';
+        tPin.innerHTML = 'from age 45 to 53';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === 2) {
-        tPin.innerHTML = 'from age 43 to 52';
+        tPin.innerHTML = 'from age 44 to 52';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === 3) {
-        tPin.innerHTML = 'from age 42 to 51';
+        tPin.innerHTML = 'from age 43 to 51';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === 4) {
-        tPin.innerHTML = 'from age 41 to 50';
+        tPin.innerHTML = 'from age 42 to 50';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === 5) {
-        tPin.innerHTML = 'from age 40 to 49';
+        tPin.innerHTML = 'from age 41 to 49';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === 6) {
-        tPin.innerHTML = 'from age 39 to 48';
+        tPin.innerHTML = 'from age 40 to 48';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === 7) {
-        tPin.innerHTML = 'from age 38 to 47';
+        tPin.innerHTML = 'from age 39 to 47';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === 8) {
-        tPin.innerHTML = 'from age 37 to 46';
+        tPin.innerHTML = 'from age 38 to 46';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === 9) {
-        tPin.innerHTML = 'from age 36 to 45';
+        tPin.innerHTML = 'from age 37 to 45';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === '11/2') {
-        tPin.innerHTML = 'from age 43 to 52';
+        tPin.innerHTML = 'from age 44 to 52';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === '22/4') {
-        tPin.innerHTML = 'from age 41 to 50';
+        tPin.innerHTML = 'from age 42 to 50';
         tPinNum.innerHTML = tpSum
     } else if (tpHold === '33/6') {
-        tPin.innerHTML = 'from age 39 to 48';
+        tPin.innerHTML = 'from age 40 to 48';
         tPinNum.innerHTML = tpSum
     };
 
@@ -2535,40 +2588,40 @@ calculate.addEventListener('click', ()=> {
     }
 
     if (fpHold === 1) {
-        ftPin.innerHTML = 'from age 53 and on';
+        ftPin.innerHTML = 'from age 54 and on';
         ftPinNum.innerHTML = ftSum;
     } else if (fpHold === 2) {
-        ftPin.innerHTML = 'from age 52 and on';
+        ftPin.innerHTML = 'from age 53 and on';
         ftPinNum.innerHTML = ftSum;
     } else if (fpHold === 3) {
-        ftPin.innerHTML = 'from age 51 and on';
-        ftPinNum.innerHTML = ftSum;
-    } else if (fpHold === 4) {
-        ftPin.innerHTML = 'from age 50 and on';
-        ftPinNum.innerHTML = ftSum;
-    } else if (fpHold === 5) {
-        ftPin.innerHTML = 'from age 49 and on';
-        ftPinNum.innerHTML = ftSum;
-    } else if (fpHold === 6) {
-        ftPin.innerHTML = 'from age 48 and on';
-        ftPinNum.innerHTML = ftSum;
-    } else if (fpHold === 7) {
-        ftPin.innerHTML = 'from age 47 and on';
-        ftPinNum.innerHTML = ftSum;
-    } else if (fpHold === 8) {
-        ftPin.innerHTML = 'from age 46 and on';
-        ftPinNum.innerHTML = ftSum;
-    } else if (fpHold === 9) {
-        ftPin.innerHTML = 'from age 45 and on';
-        ftPinNum.innerHTML = ftSum;
-    } else if (fpHold === '11/2') {
         ftPin.innerHTML = 'from age 52 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (fpHold === '22/4') {
+    } else if (fpHold === 4) {
+        ftPin.innerHTML = 'from age 51 and on';
+        ftPinNum.innerHTML = ftSum;
+    } else if (fpHold === 5) {
         ftPin.innerHTML = 'from age 50 and on';
         ftPinNum.innerHTML = ftSum;
-    } else if (fpHold === '33/6') {
+    } else if (fpHold === 6) {
+        ftPin.innerHTML = 'from age 49 and on';
+        ftPinNum.innerHTML = ftSum;
+    } else if (fpHold === 7) {
         ftPin.innerHTML = 'from age 48 and on';
+        ftPinNum.innerHTML = ftSum;
+    } else if (fpHold === 8) {
+        ftPin.innerHTML = 'from age 47 and on';
+        ftPinNum.innerHTML = ftSum;
+    } else if (fpHold === 9) {
+        ftPin.innerHTML = 'from age 46 and on';
+        ftPinNum.innerHTML = ftSum;
+    } else if (fpHold === '11/2') {
+        ftPin.innerHTML = 'from age 53 and on';
+        ftPinNum.innerHTML = ftSum;
+    } else if (fpHold === '22/4') {
+        ftPin.innerHTML = 'from age 51 and on';
+        ftPinNum.innerHTML = ftSum;
+    } else if (fpHold === '33/6') {
+        ftPin.innerHTML = 'from age 49 and on';
         ftPinNum.innerHTML = ftSum;
     };
 

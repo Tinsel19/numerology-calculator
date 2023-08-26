@@ -2630,49 +2630,49 @@ calculate.addEventListener('click', ()=> {
     lastName = ednfName[ednfName.length - 1];
     indexList = lastName;
     firstName = ednfName[0];
+    var fNameLength = firstName.length;
     count = 0;
-    
-    for ( let i = 0; i <= firstName.length; i++) {
 
-        if (String(firstName[i]).toLowerCase() === 'a' ||  String(firstName[i]).toLowerCase() === 'j' || String(firstName[i]).toLowerCase() === 's' ) {
-            count += 1;
-        } else if (String(firstName[i]).toLowerCase() === 'b' || String(firstName[i]).toLowerCase() === 'k' || String(firstName[i]).toLowerCase() === 't') {
-            count += 2;
-        } else if (String(firstName[i]).toLowerCase() === 'c' || String(firstName[i]).toLowerCase() === 'l' || String(firstName[i]).toLowerCase() === 'u') {
-            count += 3;
-        } else if (String(firstName[i]).toLowerCase() === 'd' || String(firstName[i]).toLowerCase() === 'm' || String(firstName[i]).toLowerCase() === 'v') {
-            count += 4;
-        } else if (String(firstName[i]).toLowerCase() === 'e' || String(firstName[i]).toLowerCase() === 'n' || String(firstName[i]).toLowerCase() === 'w') {
-            count += 5;
-        } else if (String(firstName[i]).toLowerCase() === 'f' || String(firstName[i]).toLowerCase() === 'o' || String(firstName[i]).toLowerCase() === 'x') {
-            count += 6;
-        } else if (String(firstName[i]).toLowerCase() === 'g' || String(firstName[i]).toLowerCase() === 'p' || String(firstName[i]).toLowerCase() === 'y') {
-            count += 7;
-        } else if (String(firstName[i]).toLowerCase() === 'h' || String(firstName[i]).toLowerCase() === 'q' || String(firstName[i]).toLowerCase() === 'z') {
-            count += 8;
-        } else if (String(firstName[i]).toLowerCase() === 'i' || String(firstName[i]).toLowerCase() === 'r' ) {
-            count += 9;
-        }
-    };
-    phtrNum.innerHTML = count + ' years'
+    var currentYear = Number(new Date().getFullYear());
+    yearNum = Number(yearString);
+    var yearDiff = currentYear - yearNum;
+    var remainder = yearDiff % fNameLength;
+    var divisible = Math.floor(yearDiff / fNameLength);
+    var transit;
 
+    if (yearDiff < fNameLength) {
+        transit = firstName[yearDiff - 1]
+    } else if (remainder === 0) {
+        transit = firstName[fNameLength -1]
+    } else if (remainder > 0) {
+        transit = firstName[remainder -1];
+    }
 
-
+    phtrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
 
     // Spiritual Transit
-    
+    lastName;
+    var lNameLength = lastName.length;
+    remainder = yearDiff % lNameLength;
+    divisible = Math.floor(yearDiff / lNameLength);
 
-    // Mental Transit 
-    var fullString = fName.value;
-    ednfName = fName.value.split(' ');
-    lastName = ednfName[ednfName.length - 1];
-    indexList = lastName;
-    var middleName = ednfName[0];
-    count = 0;
+    if (yearDiff < lNameLength) {
+        transit = lastName[yearDiff - 1]
+    } else if (remainder === 0) {
+        transit = lastName[lNameLength -1]
+    } else if (remainder > 0) {
+        transit = lastName[remainder -1];
+    }
+    sptrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
+
+    // Mental Transit
+
 
 
     // Essence Cycle
+    var middleName, mNameLength;
+
 
 
 

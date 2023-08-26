@@ -885,7 +885,7 @@ calculate.addEventListener('click', ()=> {
     // mpNum.innerHTML = count ;
 
 
-    // Muaturity Number 
+    // Maturity Number 
     count = lpHold + edHold;
     mSplit = String(count).split('');
     sum = eval(mSplit.join('+'));
@@ -894,11 +894,11 @@ calculate.addEventListener('click', ()=> {
         mNum.innerHTML = sum;
     } else if (sum === 10) {
         mNum.innerHTML = 1;
-    } else if (sum = 11) {
+    } else if (sum === 11) {
         mNum.innerHTML = '11/2';
     } else if (sum === 22) {
         mNum.innerHTML = '22/4';
-    } else if (sum = 33) {
+    } else if (sum === 33) {
         mNum.innerHTML = '33/6';
     } else if (sum > 10) {
         mSplit = String(sum).split('');

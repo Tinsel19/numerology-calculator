@@ -117,6 +117,15 @@ var metrNum = document.getElementById('metrNum');
 var sptrNum = document.getElementById('sptrNum');
 var escyNum = document.getElementById('escyNum');
 
+var cYear = document.getElementById('cYear');
+var cYearNum = document.getElementById('cYearNum');
+
+var cMonth = document.getElementById('cMonth');
+var cMonthNum = document.getElementById('cMonthNum');
+
+var cDay = document.getElementById('cDay');
+var cDayNum = document.getElementById('cDayNum');
+
 
 
 
@@ -2789,11 +2798,196 @@ calculate.addEventListener('click', ()=> {
 
 
 
+    // Personal Cycles 
+    cYear.innerHTML = currentYear;
+    // cDay.innerHTML = day.value
+
     // Personal Year 
+
     
 
+    var sum = 0;
+    mSplit = String(currentYear).split('');
+    xsum = eval(mSplit.join('+'));
+    sumYearArray = xsum;
+
+    if (Number(dayString) < 10) {
+        sumDayArray = Number(dayString);
+    } else if (Number(dayString) === 10) {
+        sumDayArray = 1;
+    } else if (Number(dayString) === 11 || Number(dayString) === 22) {
+        sumDayArray = Number(dayString);
+    } else if (Number(dayString) > 10) {
+        mSplit = String(dayString).split('');
+        xsum = eval(mSplit.join('+'));
+        sumDayArray = xsum
+    };
+    
+    if (Number(monthString) < 10) {
+        sumMonthArray = Number(monthString);
+    } else if (Number(dayString) === 10) {
+        sumMonthArray = 1;
+    } else if (Number(monthString) === 11 ) {
+        sumMonthArray = 11;
+    } else if (Number(monthString) === 12){
+        sumMonthArray = 3;
+    }
+
+    if (Number(sumYearArray) < 10) {
+        sumYearArray = Number(sumYearArray);
+    } else if (Number(sumYearArray) === 10) {
+        sumYearArray = 1;
+    } else if (Number(sumYearArray) === 11 ) {
+        sumYearArray = 11;
+    } else if (Number(sumYearArray) === 22){
+        sumYearArray = 22;
+    } else if (Number(sumYearArray) === 33){
+        sumYearArray = 33;
+    } else if (Number(sumYearArray) > 10) {
+        mSplit = String(sumYearArray).split('');
+        xsum = eval(mSplit.join('+'));
+        sumYearArray = xsum;
+    }
+    
+    sum = sumDayArray + sumMonthArray + sumYearArray;
+    var keepDay = sumDayArray;
+    var kdHold = sum;
+
+    var lsum = sum;
+    var lpHold, edHold, suHold, pnHold, nSum, dbTotalSum;
+    if (sum < 10) {
+        cYearNum.innerHTML = '<b>' +sum+ '</b>';
+    } else if (sum === 10) {
+        cYearNum.innerHTML = '<b> 1 </b>'
+    }
+    while (sum > 10) {
+        if (sum === 11) {
+            cYearNum.innerHTML = '11/<b>2</b>';
+            sum = 2;
+            break
+        } else if(sum === 22) {
+            cYearNum.innerHTML = '22/<b>4</b>';
+            sum = 4;
+            break;
+        } else if (sum === 33) {
+            cYearNum.innerHTML = '33/<b>6</b>';
+            sum = 6;
+            break;
+        } else {
+            var numberString = sum.toString(); 
+            var digitArray = numberString.split('').map(Number);
+            numbers = digitArray.map(str => parseInt(str));     
+            sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+            if (sum === 10) {
+                cYearNum.innerHTML = '/<b>1</b>';
+            } else {
+                cYearNum.innerHTML = '<b>' +sum + '</b>';
+            }
+        }
+    };
 
 
+    // Personal Month 
+    var monthNum = new Date().getMonth();
+    monthNum = monthNum + 1;
+
+    var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var d = new Date();
+    let name = month[d.getMonth()];
+    cMonth.innerHTML = name;
+
+    if (monthNum === 10) {
+        monthNum = 1;
+    } else if (monthNum == 11) {
+            monthNum = 11
+    } else if (monthNum === 12) {
+        monthNum = 3;
+    } else {
+        monthNum;
+    };
+
+    var cYearText = cYearNum.textContent;
+    var cYearInt;
+    if (cYearText === '11/2') {
+        cYearInt = 11;
+    } else if (cYearText === '22/4') {
+        cYearInt = 22;
+    } else if (cYearText === '33/6') {
+        cYearInt = 33;
+    } else {
+        cYearInt = Number(cYearText)
+    }
+    var personalMonth = monthNum + cYearInt ;
+    if (personalMonth < 10) {
+        personalMonth;
+    } else if (personalMonth === 10) {
+        personalMonth = 1
+    } else if (personalMonth === 11) {
+        personalMonth = '11/2'
+    } else if (personalMonth === 22) {
+        personalMonth = '22/4'
+    } else if (personalMonth === 33) {
+        personalMonth = '33/6'
+    } else if (personalMonth > 10) {
+        mSplit = String(personalMonth).split('');
+        personalMonth = eval(mSplit.join('+'));
+        if (personalMonth < 10) {
+            personalMonth;
+        } else if (personalMonth === 10) {
+            personalMonth = 1;
+        } else if (personalMonth === 11) {
+            personalMonth = '11/2'
+        } else if (personalMonth === 22) {
+            personalMonth = '22/4'
+        } else if (personalMonth === 33) {
+            personalMonth = '33/6'
+        } else if (personalMonth > 10) {
+            mSplit = String(personalMonth).split('');
+            personalMonth = eval(mSplit.join('+'));
+        };
+    };
+    cMonthNum.innerHTML = '<b>' + personalMonth + '</b>';
+
+    
+    // Personal Day 
+    var currentDay = new Date().getDay();
+    
+    var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satursday'];
+    var d = new Date();
+    name = day[d.getDay()];
+    cDay.innerHTML = name ;
+
+    var personalDay, cMonthInt;
+
+    var cMonthText = cMonth.textContent;
+    if (cMonthText === '11/2') {
+        cMonthInt = 11
+    } else if (cMonthText === '22/4') {
+        cMonthInt = 22;
+    } else if (cMonthText === '33/6') {
+        cMonthInt = 33;
+    } else if (Number(cMonthText) < 10) {
+        cMonthInt = Number(cMonthText);
+    };
+
+    personalDay = cMonthInt + Number(currentDay);
+
+    if (personalDay <  10) {
+        personalDay;
+    } else if (personalDay === 10) {
+        personalDay = 1;
+    } else if (personalDay === 11) {
+        personalDay = '11/2'
+    } else if (personalDay === 22) {
+        personalDay = '22/4'
+    } else if (personalDay === 33) {
+        personalDay = '33/6'
+    } else if (personalDay > 10) {
+        mSplit = String(personalDay).split('');
+        personalDay = eval(mSplit.join('+'));
+    }
+
+    cDayNum.innerHTML = personalDay;
 
 
 

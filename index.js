@@ -1314,53 +1314,57 @@ calculate.addEventListener('click', ()=> {
         kdNum.innerHTML = 'None'
     }
 
-    // destiny 
-    if (kdHold === 13) {
+    // destiny
+    kdHold = edNum.textContent
+    if (kdHold === '13/4') {
         kdNum.innerHTML = '13/4'
-    } else if (kdHold === 14) {
+    } else if (kdHold === '14/5') {
         kdNum.innerHTML = '14/5'
-    } else if (kdHold === 16) {
+    } else if (kdHold === '16/7') {
         kdNum.innerHTML = '16/7'
-    } else if (kdHold === 19) {
+    } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
     } else {
         kdNum.innerHTML = 'None'
     }
 
     // soul urge 
-    if (kdHold === 13) {
+    kdHold = suhdNum.textContent
+    if (kdHold === '13/4') {
         kdNum.innerHTML = '13/4'
-    } else if (kdHold === 14) {
+    } else if (kdHold === '14/5') {
         kdNum.innerHTML = '14/5'
-    } else if (kdHold === 16) {
+    } else if (kdHold === '16/7') {
         kdNum.innerHTML = '16/7'
-    } else if (kdHold === 19) {
+    } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
     } else {
         kdNum.innerHTML = 'None'
     }
 
     // birthday number 
-    if (kdHold === 13) {
+    kdHold = bdNum.textContent
+    if (kdHold === '13/4') {
         kdNum.innerHTML = '13/4'
-    } else if (kdHold === 14) {
+    } else if (kdHold === '14/5') {
         kdNum.innerHTML = '14/5'
-    } else if (kdHold === 16) {
+    } else if (kdHold === '16/7') {
         kdNum.innerHTML = '16/7'
-    } else if (kdHold === 19) {
+    } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
     } else {
         kdNum.innerHTML = 'None'
     }
 
     // expression 
-    if (kdHold === 13) {
+    kdHold = pNum.textContent
+    if (kdHold === '13/4') {
         kdNum.innerHTML = '13/4'
-    } else if (kdHold === 14) {
+    } else if (kdHold === '14/5') {
         kdNum.innerHTML = '14/5'
-    } else if (kdHold === 16) {
+    } else if (kdHold === '16/7') {
         kdNum.innerHTML = '16/7'
-    } else if (kdHold === 19) {
+    } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
     } else {
         kdNum.innerHTML = 'None'
@@ -2959,7 +2963,8 @@ calculate.addEventListener('click', ()=> {
 
     var personalDay, cMonthInt;
 
-    var cMonthText = cMonth.textContent;
+    var cMonthText = monthNum;
+    // console.log(cMonthText)
     if (cMonthText === '11/2') {
         cMonthInt = 11
     } else if (cMonthText === '22/4') {
@@ -2971,6 +2976,7 @@ calculate.addEventListener('click', ()=> {
     };
 
     personalDay = cMonthInt + Number(currentDay);
+    // console.log(personalDay, cMonthInt, currentDay)
 
     if (personalDay <  10) {
         personalDay;
@@ -2987,7 +2993,7 @@ calculate.addEventListener('click', ()=> {
         personalDay = eval(mSplit.join('+'));
     }
 
-    cDayNum.innerHTML = personalDay;
+    cDayNum.innerHTML = '<b>'+personalDay +'</b>';
 
 
 

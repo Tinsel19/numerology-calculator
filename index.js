@@ -292,6 +292,28 @@ calculate.addEventListener('click', ()=> {
 
 
     // Birthday Number 
+    var xSum;
+    mSplit = String(dayString).split('');
+    xSum = eval(mSplit.join('+'));
+
+    if (xSum < 10) {
+        sumDayArray = xSum;
+    } else if (xSum === 10) {
+        sumDayArray = 1;
+    } else if (xSum > 10) {
+        mSplit = String(xSum).split('');
+        xSum = eval(mSplit.join('+'));
+
+        if (xSum < 10) {
+            xSum
+        } else if (xSum === 10) {
+            xSum = 1
+        } else if (xSum > 10) {
+            mSplit = String(xSum).split('');
+            xSum = eval(mSplit.join('+'));
+        };
+        sumDayArray = xSum;
+    }
     if (sumDayArray === 1) {
         bdNum.innerHTML = '<b>1</b>';
     } else if (sumDayArray === 2) {
@@ -739,7 +761,7 @@ calculate.addEventListener('click', ()=> {
     // personality number 
     pnfName = fName.value.split(' ');
     count = 0;
-    countList = [];
+    countList = [], countHold = 0;
     pnfName = Array.from(pnfName);
     for (let iterate  = 0; iterate < pnfName.length; iterate++) {
         for ( let i = 0; i <= pnfName[iterate].length; i++) {
@@ -764,32 +786,41 @@ calculate.addEventListener('click', ()=> {
             } else {
                 count += 0;
             }
+            
         };
-        countList.push(count);
+        // console.log(count);
+
+
+        if (count < 10) {
+            count;
+        } else if (count === 10) {
+            count = 1; 
+        } else if (count === 11 || count === 22 || count === 33) {
+            count;
+        } else if (count > 10) {
+            pnSplit = String(count).split('');
+            count = eval(pnSplit.join('+'));
+
+        }
+        countHold += count;
         count = 0;
     };
-    // console.log(countList)
-    var pnSplit, sum,  pnSumList = [];
-    for (let x = 0; x < countList.length; x++) {
-        if ( countList[x] < 10) {
-            count += countList[x];
-        } else if (countList[x] === 11) {
-            count += 11;
-        } else if (countList[x] === 22) {
-            count == 22;
-        } else if (countList[x] === 33) {
-            count += 33;
-        } else if (countList[x] === 10) {
-            count += 1;
-        } else if (countList[x] > 10 ) {
-            pnSplit = String(countList[x]).split('');
-            sum = eval(pnSplit.join('+'));
-            count += sum;
-            // pnSumList.push(sum);        
-        }
-    };
-    // console.log(count)
-    var count1;
+    // console.log(countHold)
+
+    if (countHold < 10) {
+        countHold;
+    } else if (countHold === 10) {
+        countHold = 1;
+    } else if (countHold === 11 || countHold === 22 || countHold === 33 || countHold === 13 || countHold === 14 || countHold === 16 || countHold === 19) {
+        countHold;
+    } else if (countHold > 10) {
+        countHold;
+        
+        
+    }
+
+    // console.log(countHold)
+    count = countHold;
     if (count < 10) {
         count;
         pNum.innerHTML = '<b>' + count + '</b>' ;
@@ -800,6 +831,22 @@ calculate.addEventListener('click', ()=> {
         count;
         pnSplit = String(count).split('');
         sum = eval(pnSplit.join('+'));
+        pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
+    } else if ( count === 13) {
+        count = 13;
+        sum = 4;
+        pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
+    } else if ( count === 14) {
+        count = 14;
+        sum = 5;
+        pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
+    } else if ( count === 16) {
+        count = 16;
+        sum = 7;
+        pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
+    } else if ( count === 19) {
+        count = 19;
+        sum = 1;
         pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
     } else if (count > 10) {
         pnSplit = String(count).split('');
@@ -975,7 +1022,7 @@ calculate.addEventListener('click', ()=> {
 
     // life Path / Expression Bridge
     var subtract = lpHold - edHold;
-    console.log(subtract);
+    // console.log(subtract);
     if (subtract < 0) {
         subtract = subtract * (-1);
     } else {
@@ -1480,8 +1527,9 @@ calculate.addEventListener('click', ()=> {
 
 
     // CornerStone Letter 
-    ednfName = fName.value.split(' ');
-    var firstLetter = ednfName[0][0].toUpperCase();
+    ednfName = (fName.value).split(' ');
+    // console.log((ednfName[0][0]))
+    var firstLetter = (ednfName[0][0]).toUpperCase();
     cstNum.innerHTML = firstLetter;
 
 
@@ -2291,7 +2339,7 @@ calculate.addEventListener('click', ()=> {
             }
             fpSum = sum
         }
-    }
+    };
 
 
     fpHold;

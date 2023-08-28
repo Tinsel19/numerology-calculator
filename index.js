@@ -3250,8 +3250,27 @@ calculate.addEventListener('click', ()=> {
     } else if (spSum > 10) {
         mSplit = String(spSum).split('');
         sum = eval(mSplit.join('+'));
+        if (sum < 10) {
+            sum;
+            sspSum = sum;
+        } else if (sum === 10) {
+            sum = 1;
+            sspSum = 1;
+        } else if (sum === 11) {
+            sum = '11/2';
+            sspSum = 11;
+        } else if (sum === 22) {
+            sum = '22/4';
+            sspSum = 22;
+        } else if (sum === 33) {
+            sum = '33/6';
+            sspSum = 33
+        } else if (sum > 10) {
+            mSplit = String(sum).split('');
+            sum = eval(mSplit.join('+'));
+            sspSum = sum;
+        }
         spSum = sum;
-        sspSum = spSum
     };
 
 
@@ -3414,9 +3433,23 @@ calculate.addEventListener('click', ()=> {
         ftSum = 1;
     } else if (ftSum === 11 || ftSum === 22 || ftSum === 33 || ftSum < 10) {
         ftSum;
-    } else {
+    } else if (ftSum > 10) {
         mSplit = String(ftSum).split('');
         sum = eval(mSplit.join('+'));
+        if (sum < 10) {
+            sum;
+        } else if (sum === 10) {
+            sum = 1
+        } else if (sum === 11) {
+            sum = '11/2'
+        } else if ( sum === 22 ) {
+            sum = '22/4'
+        } else if (sum === 33) {
+            sum === '33/6';
+        } else if (sum > 10) {
+            mSplit = String(sum).split('');
+            sum = eval(mSplit.join('+'));
+        }
         ftSum = sum;
     };
     
@@ -3496,26 +3529,62 @@ calculate.addEventListener('click', ()=> {
         monthHold
     }
     // console.log(dayHold, monthHold)
+    var fAnims, sAnims;
     var fAnim = dayHold - monthHold;
     if (fAnim < 0) {
         fAnim = fAnim * (-1);
-    } else {
+        fAnims = fAnim;
+    } else if (fAnim < 10) {
         fAnim;
-    };
+        fAnims = fAnim;
+    } else if (fAnim === 10) {
+        fAnim = 1;
+        fAnims = 1
+    } else if ( fAnim === 11) {
+        fAnim = '11/2'
+        fAnims = 11;
+    } else if (fAnim === 22) {
+        fAnim = '22/4';
+        fAnims = 22;
+    } else if (fAnim === 33) {
+        fAnim = '33/6';
+        fAnims = 33;
+    } else if (fAnim > 10) {
+        mSplit = String(fAnim).split('');
+        fAnim = eval(mSplit.join('+'));
+        fAnims = fAnim;
+    }
     fChaNum.innerHTML = fAnim;
 
     // Second Challenge 
-    sCha;
+    sAnims;
     var sAnim = yearHold - dayHold;
     if (sAnim < 0) {
         sAnim = sAnim * (-1);
-    } else {
+    } else if (sAnim < 10) {
         sAnim;
+        sAnims = fAnim;
+    } else if (fAnim === 10) {
+        sAnim = 1;
+        sAnims = 1
+    } else if ( sAnim === 11) {
+        sAnim = '11/2'
+        sAnims = 11;
+    } else if (sAnim === 22) {
+        sAnim = '22/4';
+        sAnims = 22;
+    } else if (sAnim === 33) {
+        fAnim = '33/6';
+        sAnims = 33;
+    } else if (sAnim > 10) {
+        mSplit = String(sAnim).split('');
+        sAnim = eval(mSplit.join('+'));
+        sAnims = sAnim;
     };
     sChaNum.innerHTML = sAnim;
 
     // Third Challenge 
-    var tAnim = sAnim - fAnim;
+    var tAnim = sAnims - fAnims;
     if (tAnim < 0) {
         tAnim = tAnim * (-1);
     } else {

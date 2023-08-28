@@ -2090,13 +2090,14 @@ calculate.addEventListener('click', ()=> {
     // Karmic Debt Number
     kdNum;
     // life path 
-    if (kdHold === 13) {
+    kdHold = lpNum.textContent;
+    if (kdHold === '13/4') {
         kdNum.innerHTML = '13/4'
-    } else if (kdHold === 14) {
+    } else if (kdHold === '14/5') {
         kdNum.innerHTML = '14/5'
-    } else if (kdHold === 16) {
+    } else if (kdHold === '16/7') {
         kdNum.innerHTML = '16/7'
-    } else if (kdHold === 19) {
+    } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
     } else {
         kdNum.innerHTML = 'None'

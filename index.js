@@ -2099,7 +2099,7 @@ calculate.addEventListener('click', ()=> {
         kdNum.innerHTML = '16/7'
     } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
-    } else {
+    } else if(kdNum.textContent === '') {
         kdNum.innerHTML = 'None'
     }
 
@@ -2113,7 +2113,7 @@ calculate.addEventListener('click', ()=> {
         kdNum.innerHTML = '16/7'
     } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
-    } else {
+    } else if(kdNum.textContent === '') {
         kdNum.innerHTML = 'None'
     }
 
@@ -2127,7 +2127,7 @@ calculate.addEventListener('click', ()=> {
         kdNum.innerHTML = '16/7'
     } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
-    } else {
+    } else if(kdNum.textContent === '') {
         kdNum.innerHTML = 'None'
     }
 
@@ -2141,7 +2141,7 @@ calculate.addEventListener('click', ()=> {
         kdNum.innerHTML = '16/7'
     } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
-    } else {
+    } else if(kdNum.textContent === '') {
         kdNum.innerHTML = 'None'
     }
 
@@ -2155,7 +2155,7 @@ calculate.addEventListener('click', ()=> {
         kdNum.innerHTML = '16/7'
     } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
-    } else {
+    } else if(kdNum.textContent === '') {
         kdNum.innerHTML = 'None'
     }
     

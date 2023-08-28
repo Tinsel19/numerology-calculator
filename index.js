@@ -306,6 +306,21 @@ calculate.addEventListener('click', ()=> {
 
     if (lifePathText === '11/2') {
         lpText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p> 
+        The Life Path number represents the path you’ll take in this life. It
+        exposes your true self, our life purpose, strengths, weaknesses,
+        abilities, and goals, as well as how you will develop through life. It also
+        gives details about your life mission, the lessons you must learn over
+        your lifetime, and the best career options for you to pursue. It also
+        reveals the tone of your experiences and why things happen the way
+        they do: past, present, and future. It's one of the most crucial of your
+        chart's core numbers. Any single digit from 1 to 9, as well as Master
+        Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+        Path number, add the month, day, and year of your birth together and
+        continue until you reach a single digit. 
+        </p> <br> <br>
+
         <h3 class="bold-description-label">Life Path Number 11/2</h3> <br>
         <p>
         As a Life Path Master 11 person, you have a keen sense of intuition
@@ -365,6 +380,21 @@ calculate.addEventListener('click', ()=> {
         </p> 
         `   } else if (lifePathText === '22/4') {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+
             <h3 class="bold-description-label">Life Path Number 22/4</h3> <br>
             <p>
             As a Life Path Master 22 person, you're a master builder because you
@@ -425,6 +455,21 @@ calculate.addEventListener('click', ()=> {
             `
         } else if (lifePathText === '33/6') {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+            
             <h3 class="bold-description-label">Life Path Number 33/6</h3> <br>
             <p>
             As a Life Path Master 33 person, you are a master teacher, a healer,
@@ -472,6 +517,21 @@ calculate.addEventListener('click', ()=> {
             `
         } else if (lifePathText === '1' || lifePathNum[lifePathNum.length - 1] === 1) {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+            
             <h3 class="bold-description-label">Life Path Number 1</h3> <br>
             <p>
             As a life path number 1 person, you are a natural-born leader with a
@@ -558,6 +618,21 @@ calculate.addEventListener('click', ()=> {
             `
         } else if (lifePathText === '2' || lifePathText === '20/2' || lifePathNum[lifePathNum.length - 1] === '2') {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+            
             <h3 class="bold-description-label">Life Path Number 2</h3> <br>
             <p>
             As a Life Path number 2, you are insightful, cooperative, and sensitive
@@ -618,6 +693,21 @@ calculate.addEventListener('click', ()=> {
             `
         } else if (lifePathText === '3' || lifePathText === '12/3' || lifePathText === '21/3' || lifePathText === '30/3' || lifePathNum[lifePathNum.length -1] === 3) {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+            
             <h3 class="bold-description-label">Life Path Number 3</h3> <br>
             <p>
             As a Life Path number 3 person, you are cognitively attentive and
@@ -675,6 +765,21 @@ calculate.addEventListener('click', ()=> {
             `
         } else if (lifePathText === '4' || lifePathText === '13/4' || lifePathText === '31/4' || lifePathText === '40/4' || lifePathNum[lifePathNum.length -1] === '4') {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+            
             <h3 class="bold-description-label">Life Path Number 4</h3> <br>
             <p>
             If you’re vibrating on the positive side of your life path number 4, you
@@ -726,6 +831,21 @@ calculate.addEventListener('click', ()=> {
             `
         } else if (lifePathText === '5' || lifePathText === '14/5' || lifePathText === '23/5' || lifePathText === '32/5' || lifePathText === '41/5' || lifePathNum[lifePathNum.length -1] === '5') {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+            
             <h3 class="bold-description-label">Life Path Number 5</h3> <br>
             <p>
             As a Life Path 5 person, you want freedom, movement, and change,
@@ -782,6 +902,21 @@ calculate.addEventListener('click', ()=> {
             `
         } else if (lifePathText === '6' || lifePathText === '15/6' || lifePathText === '24/6' || lifePathText === '42/6' || lifePathText === '51/6' || lifePathNum[lifePathNum.length -1] === '6') {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+            
             <h3 class="bold-description-label">Life Path Number 6</h3> <br>
             <p>
             As a Life Path number 6, you like helping people. You are kind,
@@ -832,6 +967,21 @@ calculate.addEventListener('click', ()=> {
             `
         } else if (lifePathText === '7' || lifePathText === '16/7' || lifePathText === '25/7' || lifePathText === '34/7' || lifePathNum[lifePathNum.length -1] === '7') {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+            
             <h3 class="bold-description-label">Life Path Number 7</h3> <br>
             <p>
             As a Life Path number 7, you are the truth seekers. The number 7
@@ -926,6 +1076,21 @@ calculate.addEventListener('click', ()=> {
             `
         } else if (lifePathText === '8' || lifePathText === '17/8' || lifePathText === '26/8' || lifePathText === '35/8' || lifePathNum[lifePathNum.length - 1] === '8') {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+            
             <h3 class="bold-description-label">Life Path Number 8</h3> <br>
             <p>
             Money, wealth, and power are associated with the number 8.
@@ -1036,6 +1201,21 @@ calculate.addEventListener('click', ()=> {
             `
         } else if (lifePathText === '9' || lifePathText === '18/9' || lifePathText === '27/9' || lifePathText === '36/9' || lifePathNum[lifePathNum.length - 1] === '9') {
             lpText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p> 
+            The Life Path number represents the path you’ll take in this life. It
+            exposes your true self, our life purpose, strengths, weaknesses,
+            abilities, and goals, as well as how you will develop through life. It also
+            gives details about your life mission, the lessons you must learn over
+            your lifetime, and the best career options for you to pursue. It also
+            reveals the tone of your experiences and why things happen the way
+            they do: past, present, and future. It's one of the most crucial of your
+            chart's core numbers. Any single digit from 1 to 9, as well as Master
+            Numbers 11, 22, and 33, are life path numbers. To calculate your Life
+            Path number, add the month, day, and year of your birth together and
+            continue until you reach a single digit. 
+            </p> <br> <br>
+            
             <h3 class="bold-description-label">Life Path Number 9</h3> <br>
             <p>
             As a Life Path 9 person, you are a natural humanitarian who wants to
@@ -2159,9 +2339,6 @@ calculate.addEventListener('click', ()=> {
         kdNum.innerHTML = 'None'
     }
     
-
-
-
 
 
     // Hidden Passion Number 

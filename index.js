@@ -257,12 +257,23 @@ calculate.addEventListener('click', ()=> {
     } else if (Number(sumYearArray) > 10) {
         mSplit = String(sumYearArray).split('');
         xsum = eval(mSplit.join('+'));
+        if (xsum < 10) {
+            xsum
+        } else if (xsum === 10) {
+            xsum = 1
+        } else if (xsum === 11 || xsum === 22 || xsum === 33) {
+            xsum
+        } else if (xsum > 10) {
+            mSplit = String(xsum).split('');
+            xsum = eval(mSplit.join('+'));
+        }
         sumYearArray = xsum;
     }
 
     // console.log(sumDayArray, sumMonthArray, sumYearArray)
     
     sum = sumDayArray + sumMonthArray + sumYearArray;
+    console.log(sum)
     var keepDay = sumDayArray;
     var kdHold = sum;
 

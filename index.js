@@ -1584,14 +1584,14 @@ calculate.addEventListener('click', ()=> {
         
         <h3 class="bold-description-label">Birthday Number 8</h3> <br>
         <p>
-        Money, wealth, and power are associated with the number 8. <b> <br>
+        Money, wealth, and power are associated with the number 8. <br> <br>
         Furthermore, this number is linked to excellent administrative,
         entrepreneur, and management abilities. The negative aspects of
         number 8 include dictatorial proclivity, misused or abuse of power,
         stubborn attitude, a procrastinating propensity, and relationship issues.
         Despite the fact that 8 appears to be associated with the material
-        world. It has a spiritual component as well. If you have 8 in your <span class='red-span'>core
-        chart</span>: <span class='underline'>life path number</span>, <span class='underlinne'>birth number</span>, <span class='underline'>expression/destiny </span>, <span class='underline'>soul</span>
+        world. It has a spiritual component as well. If you have 8 in your 
+        <span class='red-span'>core chart</span>: <span class='underline'>life path number</span>, <span class='underlinne'>birth number</span>, <span class='underline'>expression/destiny </span>, <span class='underline'>soul</span>
         urge/heart desire, and personality number, then you have the number
         8 vibration, which is a very strong energy that can be both powerful
         and destructive. Understand that the more 8s you have in your core
@@ -3007,6 +3007,48 @@ calculate.addEventListener('click', ()=> {
         You can do things on your own, and are willing to take risks. For
         weaknesses, you can be reckless, selfish, self-centered, uninhibited,
         loner, and push people away by being too critical of them.
+        
+        </p>
+    
+        `
+    } else if (expressionText === '2' || expressionText === '20/2' || expressionInt[expressionInt.length - 1] === '2') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 2</h3> <br>
+        <p>
+        With an Expression number 2, you can collaborate well with others
+        and like having a partner. You are diplomatic, sensitive, peacemaker,
+        influential, cooperative, inclusive, intuitive, supportive, empathetic,
+        accepting, protective, and gentle. You’re easy to get along with and
+        agreeable. You can make a great doctor, nurse, social/community 
+        worker, or therapist. For weaknesses, you can be oversensitive,
+        codependent (dependent on others), and don’t take criticism well.
+        </p>
+    
+        `
+    } else if (expressionText === '3' || expressionText === '12/3' || expressionText === '21/3' || expressionText === '30/3' || expressionInt[expressionInt.length -1] === '3') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 3</h3> <br>
+        <p>
+        With an Expression number 3, you’re a positive person who likes to
+        express yourself through art or communication. You are creative,
+        curious, jovial, scattered, social, optimistic, naïve, youthful, funny,
+        charming. You can be an actor/actress, artist, singer, dancer,
+        designer, writer, painter, social media influencer, journalist,
+        photographer, anything that allows you to express yourself. People
+        love being around you. For weaknesses, you can be scatterbrained,
+        negative, and unfocused.
         
         </p>
     

@@ -22,6 +22,7 @@ var bdText = document.getElementById('bdText');
 var edNum= document.getElementById('edNum');
 var medNum = document.getElementById('medNum');
 var emeText = document.getElementById('emeText');
+var memeText = document.getElementById('memeText');
 
 var suhdText = document.getElementById('suhdText');
 var suhdNum = document.getElementById('suhdNum');
@@ -435,7 +436,7 @@ calculate.addEventListener('click', ()=> {
             an unhealthy relationship. You're a reliable and emotionally supportive
             spouse who wants to develop a healthy and long-lasting relationship.
             You'll need a life partner who understands and supports your goals.
-            If you are on the negative side of your life path number 22, you can
+            If you are on the <b>negative side</b> of your life path number 22, you can
             be a very lazy person, and have high expectations, people can easily
             take advantage of your kindness. You can have extreme anxiety and
             stress, workaholic, mental overload, insanity, illness, unstable, very
@@ -664,7 +665,7 @@ calculate.addEventListener('click', ()=> {
             holding too much inside, which can lead to anxiety or sadness.
             Therefore, you should concentrate on occupations or activities that
             emphasize your strengths. <br> <br>
-            If you are vibrating on the negative side of life path 2, you can
+            If you are vibrating on the <b>negative side</b> of life path 2, you can
             become a people pleaser and a pushover. You may cling to your
             possessions and be preoccupied with little issues. You are
             always worried about the future or other problems. You depend 
@@ -735,7 +736,7 @@ calculate.addEventListener('click', ()=> {
             you work hard. You must let your artistic nature flourish and not be
             silent for lengthy periods of time since you were born to express
             yourself. <br> <br>
-            If you’re on the negative side of life path 3, your weaknesses are that
+            If you’re on the <b>negative side</b> of life path 3, your weaknesses are that
             you make snap decisions from time to time, but they aren't always the
             best. You might be extremely gloomy and negative about the future or
             life in general. You may have a pessimistic attitude about many things
@@ -817,7 +818,7 @@ calculate.addEventListener('click', ()=> {
             try hard to ensure the relationship is fruitful and long-lasting. If you are
             overly controlling or dull, your relationship may not be the most
             interesting, but it may surely be solid and prosperous. <br> <br>
-            If you’re on the negative side of your life path 4, your weaknesses are
+            If you’re on the <b>negative side</b> of your life path 4, your weaknesses are
             that you can become a workaholic, controlling, stubborn, narrowminded, argumentative, boring, blunt, undisciplined, lazy, insensitive to
             others, dull, worrisome, anxious, materialistic, risk aversion. You can
             also be careless and have a narrow view of life. You might lack
@@ -1054,7 +1055,7 @@ calculate.addEventListener('click', ()=> {
             lawyer, scientist, analyst, detective, spiritual leader or teacher,
             psychotherapist, or in any other profession that requires you to utilize
             your intellect. <br> <br>
-            Your weaknesses are that you are secretive, reclusive, suspicious,
+            Your <b>weaknesses</b> are that you are secretive, reclusive, suspicious,
             shy, perceptive, reserved/private, skeptical, lonely, cannot stand noisy
             environment, condescending, selfish, out of touch with reality, have
             trust issues, conservative or close-minded, high standard/perfections,
@@ -1099,9 +1100,9 @@ calculate.addEventListener('click', ()=> {
             number 8 include dictatorial proclivity, misused or abuse of power,
             stubborn attitude, a procrastinating propensity, and relationship issues.
             Despite the fact that 8 appears to be associated with the material
-            world. It has a spiritual component as well. If you have 8 in your core
-            chart: life path number, birth number, expression/destiny, soul
-            urge/heart desire, and personality number, then you have the number
+            world. It has a spiritual component as well. If you have 8 in your <span class='red-span'>core
+            chart</span>: <span class='underline'>life path number</span>, <span class='underline'>birth number </span>, <span class='underline'>expression/destiny</span>, <span class= 'underline'>soul
+            urge/heart desire</span>, and <span class='underline'>personality number</span>, then you have the number
             8 vibration, which is a very strong energy that can be both powerful
             and destructive. Understand that the more 8s you have in your core
             chart, the more opportunities, prosperity, and achievement you will
@@ -1321,10 +1322,10 @@ calculate.addEventListener('click', ()=> {
         as a single-digit and a double-digit number.        
         </p> <br> <br>
 
-        <h3 class="bold-description-label">Birth Number 1</h3> <br>
+        <h3 class="bold-description-label">Birthday Number 1</h3> <br>
         <p>
-        If you are born on the 1st, 10th, 19th, and 28th of any month of any
-        year, your birth number is 1. You were born to be a leader. You are  
+        If you are born on the <span class='underline'>1st, 10th, 19th, and 28th</span> of any month of any
+        year, your birth number is <b>1</b>. You were born to be a leader. You are  
         independent, determined, energetic, daring, creative, ambitious, and
         quickly bored. You are continuously searching for a leadership role or
         to lead others, and you have excellent management and leadership
@@ -1363,7 +1364,7 @@ calculate.addEventListener('click', ()=> {
         <h3 class="bold-description-label">Birthday Number 2</h3> <br>
         <p>
         If you are born on the 2nd, 11th, 20th, and 29th of any month of any year,
-        your birth number is 2. <br> <br>
+        your birth number is <span class='underline-bold'>2</span>. <br> <br>
         By nature, you are passionate, sensitive, and artistic. You are a skilled
         diplomat, and your efforts can contribute to a more peaceful and
         prosperous world. Because of your caring, nurturing, and loving
@@ -1400,7 +1401,7 @@ calculate.addEventListener('click', ()=> {
         <h3 class="bold-description-label">Birthday Number 3</h3> <br>
         <p>
         If you are born on 3rd, 12th, 21st, 30th of any month, your birth number
-        is 3 <br> <br>
+        is <span class='underline-bold'>3</span> <br> <br>
         You are outgoing, upbeat, outspoken, dispersed, and like social
         interaction. You are inherently creative, but this may manifest in a
         variety of ways. You're usually adept at multitasking and handling
@@ -1589,8 +1590,8 @@ calculate.addEventListener('click', ()=> {
         number 8 include dictatorial proclivity, misused or abuse of power,
         stubborn attitude, a procrastinating propensity, and relationship issues.
         Despite the fact that 8 appears to be associated with the material
-        world. It has a spiritual component as well. If you have 8 in your core
-        chart: life path number, birth number, expression/destiny, soul
+        world. It has a spiritual component as well. If you have 8 in your <span class='red-span'>core
+        chart</span>: <span class='underline'>life path number</span>, <span class='underlinne'>birth number</span>, <span class='underline'>expression/destiny </span>, <span class='underline'>soul</span>
         urge/heart desire, and personality number, then you have the number
         8 vibration, which is a very strong energy that can be both powerful
         and destructive. Understand that the more 8s you have in your core
@@ -2987,6 +2988,33 @@ calculate.addEventListener('click', ()=> {
     }
     edHold = nSum;
 
+    var expressionText = (edNum.innerHTML).trim();
+    var expressionInt = expressionText.split('/');
+
+    if (expressionText === '1' || expressionText === '10/1' || expressionInt[expressionInt.length -1] === '1') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 1</h3> <br>
+        <p>
+        With an Expression number 1, you have a natural talent to lead and
+        can be an inventor in life. You are independent, ambitious, proactive,
+        pioneering, innovative, goal-oriented, motivated, and freedom-loving.
+        You can do things on your own, and are willing to take risks. For
+        weaknesses, you can be reckless, selfish, self-centered, uninhibited,
+        loner, and push people away by being too critical of them.
+        
+        </p>
+    
+        `
+    }
+    
+
+
 
 
     // Minor expression number 
@@ -3888,6 +3916,102 @@ calculate.addEventListener('click', ()=> {
         kdNum.innerHTML = '19/1'
     } else if(kdNum.textContent === '') {
         kdNum.innerHTML = 'None'
+    }
+
+    switch ((kdNum.textContent).trim()) {
+        case '13/4':
+            kdText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                Usually derived from your date of birth, which can be discovered by
+                looking at the numbers present (day of birth or life path number). Can
+                be viewed as current challenges that you may experience during your
+                lifetime.   
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Karmic Debt Number 13/4</h3> <br>
+            <p>
+            With a 13 Karmic Debt, you must face the challenges that life throws
+            at you. Delays, difficulties, and roadblocks appear along the way,
+            forcing you to work twice as hard to accomplish your goals. It may
+            appear that you will never receive what you want, but this is not the
+            case. All you have to do now is put in the extra effort. You must learn
+            to put in a lot of effort in this lifetime to achieve your goal. 
+            </p>
+            `
+            break;
+        case '14/5':
+            kdText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                Usually derived from your date of birth, which can be discovered by
+                looking at the numbers present (day of birth or life path number). Can
+                be viewed as current challenges that you may experience during your
+                lifetime.   
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Karmic Debt Number 14/5</h3> <br>
+            <p>
+            With a 14 Karmic Debt, you must conquer your fear of change. You
+            must learn to familiarize yourself with whatsoever life throws at you
+            and regain internal strength. Refrain from doing terrible things and
+            escaping from life. The way to victory is moderation. No matter how
+            often you move up and down in life, you must devote yourself to
+            whatever you want.
+            </p>
+            `
+            break;
+        case '16/7':
+            kdText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                Usually derived from your date of birth, which can be discovered by
+                looking at the numbers present (day of birth or life path number). Can
+                be viewed as current challenges that you may experience during your
+                lifetime.   
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Karmic Debt Number 16/7</h3> <br>
+            <p>
+            With a 16 Karmic Debt, you continuously feel as if your life is being
+            ripped apart and rebuilt, or that some aspect of yourself is being ripped
+            apart and rebuilt. Everything being torn down is a terrible process, but
+            you must be humbled by it and learn from it. It allows you to expand
+            your consciousness and connect with your true self. This Karmic Debt
+            Number 16 may affect your marital home or relationship where it feels
+            like something is missing to make the relationship flourish or complete.
+            It may also be manifested by making you feel unloved, unappreciated,
+            and neglected in your relationship or marriage. Most people with this
+            karmic debt may experience divorce or separation. Therefore, you
+            need to learn to love and value yourself and heal. You should try to be
+            strong and positive. 
+            </p>
+            `
+            break;
+        
+        case '19/1':
+            kdText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                Usually derived from your date of birth, which can be discovered by
+                looking at the numbers present (day of birth or life path number). Can
+                be viewed as current challenges that you may experience during your
+                lifetime.   
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Karmic Debt Number 19/1</h3> <br>
+            <p>
+            With a Karmic Debt 19, You must learn to be interdependent. You may
+            find yourself alone all of the time, having to battle for yourself without
+            the assistance of others, and feeling separated from the rest of the
+            world, but this is mainly due to a refusal to open up to people or accept
+            support. You must learn to accept help and understand that doing so
+            does not imply that you are less autonomous
+            </p>
+            `
+            break;
+        default:
+            break;
     }
     
 

@@ -360,3 +360,17 @@ select {
     font-weight: bold;
     
 }
+
+.red-span {
+    color: red;
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline-bold {
+    text-decoration: underline;
+    font-weight: bold;
+}

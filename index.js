@@ -25,6 +25,7 @@ var emeText = document.getElementById('emeText');
 var memeText = document.getElementById('memeText');
 
 var suhdText = document.getElementById('suhdText');
+var msuhdText = document.getElementById('msuhdText')
 var suhdNum = document.getElementById('suhdNum');
 var msuhdNum = document.getElementById('msuhdNum');
 
@@ -2999,9 +3000,9 @@ calculate.addEventListener('click', ()=> {
     }
     edHold = nSum;
 
-    var expressionText = (edNum.innerHTML).trim();
+    var expressionText = (edNum.textContent).trim();
     var expressionInt = expressionText.split('/');
-
+    // console.log(expressionInt);
     if (expressionText === '1' || expressionText === '10/1' || expressionInt[expressionInt.length -1] === '1') {
         emeText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
@@ -3064,10 +3065,215 @@ calculate.addEventListener('click', ()=> {
         </p>
     
         `
+    } else if (expressionText === '4' || expressionText === '13/4' || expressionText === '31/4' || expressionInt[expressionInt.length -1] === '4') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 4</h3> <br>
+        <p>
+        With an Expression number 4, you want law and order. You maintain
+        order, and keep everything under control and running smoothly. You
+        are strong and a hard worker. You are also traditional, practical, loyal,
+        organized, strict, patient, dependable, responsible, reliable, and
+        determined. You can be a great business owner or manager. For
+        weaknesses, you can be controlling, stubborn, too conservative, and
+        often struggle with changes
+        </p>
+    
+        `
+    } else if (expressionText === '5' || expressionText === '14/5' || expressionText === '23/5' || expressionText === '32/5' || expressionInt[expressionInt.length -1] === '5') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 5</h3> <br>
+        <p>
+        With an Expression number 5, you’re daring, flexible, traveler,
+        adventurous, outgoing, social, energetic, playful, independent, fun,
+        curious, adaptable, bold, freedom lover, and risk-taker. You are willing
+        to try anything and go anywhere. A career in real estate or any
+        profession that allows you to travel. For weaknesses, you can be
+        restless, careless, inconsistent, unpredictable, superficial, and
+        unfaithful. You may have a hard time sticking with anything for very
+        long and always want changes in life. 
+        </p>
+    
+        `
+    } else if (expressionText === '6' || expressionText === '15/6' || expressionText === '24/6' || expressionInt[expressionInt.length -1] === '6') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 6</h3> <br>
+        <p>
+        With an Expression number 6, you’re caring, supportive, healing,
+        compassionate, nurturing, protective, idealistic, romantic, warm,
+        harmonious, self-sacrificing, dependable, and want to serve others.
+        You are brilliant at helping people through their problems and trying to
+        make them feel better. You can make a great doctor, nurse, social
+        worker, or therapist. For weaknesses, you can sacrifice too much of
+        yourself for others. You can also be too critical or gossipy about other
+        people. 
+        </p>
+    
+        `
+    } else if (expressionText === '7' || expressionText === '16/7' || expressionText === '25/7' || expressionText === '34/7' || expressionInt[expressionInt.length - 1] === '7') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 7</h3> <br>
+        <p>
+        With an Expression number 7, you’re a truth seeker, intellectual,
+        mysterious, spiritual, perceptive, skeptical, solitary, introspective, and
+        analytical. You may feel one with the universe and always looking for
+        the so call truth in everything. You dig below the surface and ask deep
+        questions others don’t even think of. You can make a great surgeon,
+        researcher, investigator, lawyer, spiritual leader, or teacher. For
+        weaknesses, you can spend too much time by yourself in your head
+        contemplating and researching which can make you detached,
+        resentful, cold, reserved, secretive, depressed, lonely, and unable to
+        express yourself. 
+        </p>
+    
+        `
+    } else if (expressionText === '8' || expressionText === '17/8' || expressionText === '26/8' || expressionText === '35/8' || expressionInt[expressionInt.length - 1] === '8') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 8</h3> <br>
+        <p>
+        With an Expression number 8, you try to be successful, you are
+        concerned about material wellbeing, money, power, and building
+        wealth. You can make a great business owner or entrepreneur as well
+        as a good administrator or manager. You are ambitious,
+        accomplished, balanced, dedicated, focused, powerful, prosperous,
+        authoritative, strong, professional, goal-oriented, and a leader. You’re
+        a good authority figure and others admire you. For weaknesses, you
+        can be bossy, stubborn attitude, misused or abuse of power, inflexible,
+        dictatorial tendency, care too much about money, manipulative, and
+        materialistic. 
+        </p>
+    
+        `
+    } else if (expressionText === '9' || expressionText === '18/9' === expressionText === '27/9' || expressionText === '36/9' || expressionInt[expressionInt.length - 1] === '9') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 9</h3> <br>
+        <p>
+        With an Expression number 9, you’re tolerant of everybody, you want
+        to make the world a better place, and want to help others. You are
+        kind, wise, experienced, spiritual, sacrificial, compassionate,
+        accepting, humanitarian, aware, accepting, and loving. You feel you
+        must help everybody and wants to solve the world's biggest issues.
+        Careers in medicine, nursing, counseling, and community work,
+        anything helping others are a good fit for you. For weaknesses, you
+        can be manipulative, narcissistic, have a hard time opening up
+        emotionally, and appear cold.
+        
+        </p>
+    
+        `
+    } else if (expressionText === '11/2' || expressionInt[0] === '11') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 11/2</h3> <br>
+        <p>
+        With an Expression number 11, you are a caring and understanding
+        person. You are sensitive, spiritual, and collaborate well with others.
+        You have a very powerful intuition. You are cooperative, influenced,
+        instinctive, and may have telepathic ability and clear visions. Master
+        number 11 is a powerful number that enables you to quickly ascend
+        into the spiritual realm. <br> <br>
+        You are an inspirational person and have the ability to encourage
+        others in important situations or decisions. You are a teacher or a 
+        counselor that will inspire people. Most people with master 11
+        numbers sometimes come from broken homes and your childhood
+        may not have been a joyful one, but twisted with challenges and trials.
+        Though, through your misery, you have become stronger and cleverer.
+        You can now resolve problems successfully. You make great
+        decisions because you’ve been through a lot. For weaknesses, you
+        can be too sensitive, anxious, codependent, vulnerable, and unsure of
+        yourself or your direction in life.
+        </p>
+    
+        `
+    } else if (expressionText === '22/4' || expressionInt[0] === '22') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 22/4</h3> <br>
+        <p>
+        With an Expression number 22, you want to create something that will
+        have a long-term impact on people and the world. You are a master
+        builder, practical, rational thinker, strong, disciplined, and focused. You
+        are confident, and a hard worker who is determined on creating
+        something of great value and meaning. Your childhood may not have
+        been a joyful one but twisted with challenges and trials, and you may
+        have come from broken home. Though, through your misery, you have
+        become stronger and cleverer. You can now resolve problems
+        successfully. You make great decisions because you’ve been through
+        a lot. You’re intelligent and are capable of greatness. For weaknesses,
+        you can be lazy, lack confidence and uncertainty, wasted talent, or
+        have difficulty to grip what you’re capable of in life. 
+        </p>
+    
+        `
+    } else if (expressionText === '33/6' || expressionInt[0] === '33') {
+        emeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Expression or destiny number comes from all of the letters of your full
+        name on your birth certificate. It defines our character and inner gifts 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Expression Number 33/6</h3> <br>
+        <p>
+        With an Expression number 33, You are a representation of pure love
+        and light. You are a master teacher, healer, and can impart wisdom
+        because you have the deep responsibility of guiding others on their
+        path to healing and enlightenment. You have a strong calling in life to
+        heal people. You can make a great educator, doctor, nurse, social
+        worker, or therapist. For weaknesses, you can manipulate and impact
+        people in a negative way, molding them into evil, or you take
+        advantage of them. You can also be critical and gossipy about others.
+        </p>
+    
+        `
     }
     
-
-
+    
 
 
     // Minor expression number 
@@ -3193,7 +3399,234 @@ calculate.addEventListener('click', ()=> {
     medHold = nSum;
 
 
+    var minorExpressionText = (medNum.textContent).trim();
+    var minorExpressionInt = minorExpressionText.split('/');
+
+    if (minorExpressionText === '1' || minorExpressionText === '10/1' || minorExpressionText === '19/1' || minorExpressionInt[minorExpressionInt.length -1] === '1') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 1</h3> <br>
+        <p>
+        You have the ability to lead others. You are independent,
+        ambitious, proactive, pioneering, innovative, goal-oriented,
+        motivated, and freedom-loving. You can also be uninhibited,
+        self-centered, reckless, critical of others, and a lone wolf. 
+        </p>
     
+        `
+    } else if (minorExpressionText === '2' || minorExpressionText === '20/2' || minorExpressionInt[minorExpressionInt.length - 1] === '2') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 2</h3> <br>
+        <p>
+        You can collaborate easily with others. You are diplomatic,
+        sensitive, peacemaker, influential, cooperative, inclusive,
+        intuitive, supportive, empathetic, protective, and gentle. You
+        can be a mediator, social/community worker, therapist,
+        medicine.
+        
+        </p>
+    
+        `
+    } else if (minorExpressionText === '3' || minorExpressionText === '12/3' || minorExpressionText === '21/3' || minorExpressionText === '30/3' || minorExpressionInt[minorExpressionInt.length -1] === '3') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 3</h3> <br>
+        <p>
+        You are creative, communicative, curious, jovial, scattered,
+        social, optimistic, naïve, youthful, funny, charming. You can be
+        an artist, singer, designer, journalist, writer, anything that allows
+        you to express yourself or ideas. 
+        </p>
+    
+        `
+    } else if (minorExpressionText === '4' || minorExpressionText === '13/4' || minorExpressionText === '31/4' || minorExpressionText === '40/4' || minorExpressionInt[minorExpressionInt.length - 1] === '4') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 4</h3> <br>
+        <p>
+        You are strong and a hard worker. You are also traditional,
+        practical, hard worker, loyal, organized, strict, patient,
+        dependable, responsible, reliable, and determined. You can be
+        a manager, business owner, planner, project manager, etc.…
+        </p>
+    
+        `
+    } else if (minorExpressionText === '5' || minorExpressionText === '14/5' || minorExpressionText === '23/5' || minorExpressionText === '32/5' || minorExpressionInt[minorExpressionInt.length - 1] === '5') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 5</h3> <br>
+        <p>
+        You are flexible, traveler, adventurous, outgoing, social,
+        restless, adaptable, energetic, independent, fun, curious,
+        freedom lover, inconsistent, and unpredictable. You can be a
+        realtor, travel agent, flight attendant, anything that allows you to
+        have your freedom. 
+        </p>
+    
+        `
+    } else if (minorExpressionText === '6' || minorExpressionText === '15/6' || minorExpressionText === '24/6' || minorExpressionInt[minorExpressionInt.length -1] === '6') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 6</h3> <br>
+        <p>
+        You are caring, supportive, healing, compassionate, nurturing,
+        protective, idealistic, romantic, warm, harmonious, and selfsacrificing. You are a doctor, nurse, therapist, community/social
+        worker, counselor, or teacher. 
+        </p>
+    
+        `
+    } else if (minorExpressionText === '7' || minorExpressionText === '16/7' || minorExpressionText === '25/7' || minorExpressionText === '34/7' || minorExpressionInt[minorExpressionInt.length - 1] === '7') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 7</h3> <br>
+        <p>
+        - You are the truth seeker, intellectual, analytical, mysterious,
+        spiritual, reserved, skeptical, perceptive, solitary, introspective,
+        and secretive. You can make a great researcher, investigator,
+        lawyer, or surgeon.
+        
+        </p>
+    
+        `
+    } else if (minorExpressionText === '8' || minorExpressionText === '17/8' || minorExpressionText === '26/8' || minorExpressionText === '35/8' || minorExpressionInt[minorExpressionInt.length -1] === '8') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 8</h3> <br>
+        <p>
+        You are concerned about material wellbeing, money, and
+        wealth. You can make a great business owner or entrepreneur
+        as well as a good administrator or manager. You are ambitious,
+        accomplished, balanced, dedicated, powerful, prosperous,
+        authoritative, strong, professional, materialistic, goal-oriented,
+        the powerhouse, leader/manager, and money maker
+        </p>
+    
+        `
+    } else if (minorExpressionText === '9' || minorExpressionText === '18/9' || minorExpressionText === '27/9' || minorExpressionText === '36/9' || minorExpressionInt[minorExpressionInt.length -1] === '9') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 9</h3> <br>
+        <p>
+        You want to make the world a better place. You accept
+        everyone and want to help others. You have a desire to
+        advocate for world issues and the vulnerable. You are kind,
+        caring, wise, experienced, spiritual, sacrificial, compassionate,
+        humanitarian, aware, tolerant, and loving. Careers in medicine,
+        nursing, counseling, and community work, anything helping
+        others are a good fit for you. 
+        </p>
+    
+        `
+    } else if (minorExpressionText === '11/2' || minorExpressionInt[0] === '11') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 11/2</h3> <br>
+        <p>
+        You are sensitive, spiritual, and collaborates well with others.
+        You have a powerful intuition. You are cooperative, influenced,
+        instinctive, and may have psychic ability. You are inspirational
+        and easily encourage others on important things or decisions.
+        You are a teacher, counselor, or healer that will inspire people. 
+        </p>
+    
+        `
+    } else if (minorExpressionText === '22/4' || minorExpressionInt[0] === '22') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 22/4</h3> <br>
+        <p>
+        You are a master Builder, practical, rational thinking,
+        methodical. You are confident, and a hard worker who is
+        determined on making something of great value and meaning
+        that will help society or last a long time. 
+        </p>
+    
+        `
+    } else if (minorExpressionText === '33/6' || minorExpressionInt[0] === '33') {
+        memeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Minor Expression/ Destiny influences the current name which is the
+            name you use to present yourself together with your last name in
+            social settings. Is minor in contrast to your full name at birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Expression/ Destiny 33/6</h3> <br>
+        <p>
+        You represent love and light. You are a teacher, a healer, and
+        can impart wisdom because you have a profound responsibility
+        of guiding people on their path to healing and illumination. 
+        </p>
+    
+        `
+    }
     
 
     // Soul Urge / Heart Desire Number 
@@ -3268,7 +3701,494 @@ calculate.addEventListener('click', ()=> {
     suHold = sum;
     // suhdNum.innerHTML = '<b>' +sum+ '</b>';
 
+    var soulUrgeText = (suhdNum.textContent).trim();
+    var soulUrgeInt = soulUrgeText.split('/');
+    console.log(soulUrgeText)
 
+    if (soulUrgeText === '1' || soulUrgeText === '10/1' || soulUrgeInt[soulUrgeInt.length - 1] == '1') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 1</h3> <br>
+        <p>
+        If you have a number 1 soul urge, it suggests your heart and soul want
+        to take the lead, which might include sharing an idea, creating a
+        movement, or beginning something new. You are self-sufficient,
+        independent, and individual. You're a natural leader with creative
+        abilities and high standards. You may be competitive and follow your
+        own ideas in life. You're a confident person who isn't afraid to make
+        challenging judgments that others might avoid. Many people may not
+        understand you since you live life on your own terms. <br> <br>
+        Success will come easy to you if you are ready to put in the effort. Be
+        aware that your courage might come off as arrogant to others at times.
+        You aren't cut out for a 9-to-5 job, and you can easily make a living as
+        an entrepreneur or service provider. Many people will look up to you
+        and follow you, and they will have faith in your decisions. Some
+        individuals may even be envious of your success or jealous of you.
+        You could have a persuasive personality. You have a lot of intelligence
+        and are one-of-a-kind. While you may value your uniqueness, you
+        should strive to relax a little while you're with other people or in your
+        relationship. When it comes to love or partnership connections, try to
+        compromise otherwise you may find yourself being lonely in life.
+
+        </p>
+    
+        `
+    } else if (soulUrgeText === '2' || soulUrgeText === '20/2' || soulUrgeInt[soulUrgeInt.length - 1] === '2') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 2</h3> <br>
+        <p>
+        If you have a soul urge number 2, that’s meant you have a sensitive
+        and emotional side to your personality. Your soul yearns for harmony,
+        balance, and compassion. You are a mediator, not a combatant. You
+        desire a sense of safety and comfort. You may despise your sensitivity
+        at times, but realize that it conceals a significant benefit. You have a
+        keen sense of intuition. You are a person who is diligent and
+        enthusiastic about what you do. You place a high importance on love
+        and a great desire to be loved by others. You are someone who
+        requires companionship and partnership. To avoid being betrayed or
+        deceived, you must try your best to invest your affection and
+        confidence in the proper individuals. Keep in mind that you are a
+        highly perceptive, empathic, and creative person. In partnerships, you
+        may prefer the submissive position. <br> <br>
+        Your inherent tenderness and caring nature make you an excellent
+        companion, and you place such a high value on love relationships that
+        you are sad if you are not in one. You make an effort to avoid
+        confrontation and self-doubt. Because your judgments are typically
+        correct, you must learn to trust your powerful intuition and speak up for
+        what you feel is right. You can be shy, even if you like socializing. You
+        can underrate your contribution and compare yourself to others all the
+        time.
+        </p>
+    
+        `
+    } else if (soulUrgeText === '3' || soulUrgeText === '12/3' || soulUrgeText === '21/3' || soulUrgeText === '30/3' || soulUrgeInt[soulUrgeInt.length - 1] === '3') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 3</h3> <br>
+        <p>
+        If you have a soul urge number 3, that’s meant you're an excellent
+        communicator, an actress, a painter, an artist, a writer, a hairstylist, a
+        designer, a singer, a podcaster, a teacher, a dancer, or a poet, to
+        name a few professions. Your soul yearns to express itself in this
+        world. People will admire you since you were born to entertain. <br> <br>
+        Recognize that you are a creative genius with a plethora of intriguing
+        ideas. You must learn to use art to convey your deepest thoughts and
+        feelings. If you use your artistic ambition, your abilities and personality
+        can help you succeed in life. While you may constantly want to be the
+        life of the party or socialize, if you want to achieve, you must focus on
+        working hard and exercising self-discipline. Relax and concentrate
+        since that's when you'll get the best results.
+        </p>
+    
+        `
+    } else if (soulUrgeText === '4' || soulUrgeText === '13/4' || soulUrgeText === '31/4' || soulUrgeText === '40/4' || soulUrgeInt[soulUrgeInt.length - 1] === '4') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 4</h3> <br>
+        <p>
+        If you have a soul urge number 4, that’s meant your soul would rather
+        be in a state of order than in a state of disorder. You want consistency
+        and dislike abrupt changes. You're looking for law and order. When
+        you put forth the effort to achieve your objective, you are ecstatic.
+        Because of your dedication and perseverance, many people will look
+        up to you. You consider money to be a kind of security, and you want
+        to establish a comfortable and secure living with it. You have a strong
+        desire to create a pleasant household. You want a strong relationship
+        as well as a steady family life. <br> <br>
+        You take a reasonable, measured, and realistic approach to any
+        problem. You place a high value on time and have no issues about
+        taking on extra responsibilities. Any organization you work with will see
+        you as a savior as a result of this. Because you are incredibly
+        ambitious, you pick competitive occupations that allow you to climb up 
+        the corporate ladder. However, don't let your drive for control make
+        your spouse or kids feel isolated, and don't make life all about work.
+        Make an effort to choose a profession that you like and that allows you
+        to be flexible so that you can enjoy life.
+
+        </p>
+    
+        `
+    } else if (soulUrgeText === '5' || soulUrgeText === '14/5' || soulUrgeText === '23/5' || soulUrgeText === '32/5' || soulUrgeInt[soulUrgeInt.length - 1] === '5') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 5</h3> <br>
+        <p>
+        If you have a soul urge number 5, that’s meant your soul yearns for
+        freedom, adventure, change, and taking chances. You like traveling,
+        learning new things, and having fun. You're naturally charming and
+        wish to stay young for the rest of your life. People are drawn to you
+        and appreciate you because you have a lively personality. Some
+        people with soul drive 5 may find it difficult to combine their sense of
+        fun with duty, but as they become older, it becomes simpler. You are
+        more capable of facing your fears and worries than others. <br> <br>
+        You are prone to developing undesirable habits as a result of your
+        eagerness to discover new things, such as drugs, alcohol, shopping,
+        sex, and other vices. Because you like your independence, committed
+        relationships or a structured schedule tend to terrify you. You despise
+        being shackled in a traditional relationship. You're a high-energy
+        person who is always on the go. You like socializing and are never
+        boring to those around you. Your restless personality might make life
+        feel like a thrill ride at times. Because you enjoy change and flexibility,
+        committing to a single job may be challenging. You're used to dealing
+        with change and can quickly adjust to new situations. You could be
+        drawn to careers that require you to travel.
+        
+        </p>
+    
+        `
+    } else if (soulUrgeText === '6' || soulUrgeText === '15/6' || soulUrgeText === '24/6' || soulUrgeInt[soulUrgeInt.length - 1] === '6') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 6</h3> <br>
+        <p>
+        If you have a soul urge number 6, harmony, balance, and diplomacy
+        are all desires of your soul. You have a propensity of putting others
+        before yourself, and you are particularly concerned about the
+        vulnerable. Others are captivated by your personality because you are
+        sympathetic, kind, humble, and generous. You have the vitality of a
+        mother and father, as well as a caregiver. Soul urge 6 makes a
+        wonderful partner or companion. You have a lot of valuable advice and
+        may be able to fulfill your full potential in healing practices or other
+        creative fields. You're probably well-known for being a compassionate
+        and loving person. You're a natural healer who wants to work in
+        healthcare, community or social service, law, or as a therapist. <br> <br>
+        You want to utilize your abilities to serve others, and this brings you
+        joy. You place a high value on looking after the well-being and comfort
+        of your friends and family. When you have strong emotional thoughts,
+        you prefer to keep them hidden and are frightened to express yourself.
+        You are a joyful person because you are incredibly generous and
+        giving to your loved ones. Take cautious not to lose track of your own 
+        goals in order to fulfill the aspirations of others. Always be an advocate
+        for your own needs and desires. Because of your loving nature, you
+        may have a hard time letting people or things go. Try not to settle in a
+        job, love, or life. Know that you deserve the finest and that you should
+        be and feel valued.
+        </p>
+    
+        `
+    } else if (soulUrgeText === '7' || soulUrgeText === '16/7' || soulUrgeText === '25/7' || soulUrgeText === '34/7' || soulUrgeInt[soulUrgeInt.length - 1] === '7') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 7</h3> <br>
+        <p>
+        If your heart’s desire or soul urge is 7 then you are very
+        independent with a strong sense of self-motivation. You like learning
+        new things. You're looking for the truth, not what other people are
+        saying. You're always thinking in your brain. Before you believe
+        anything or anybody, you must have actual evidence. You have a
+        critical intellect that helps you to delve further into subjects that others
+        would avoid. You could even be attempting self-development and
+        seeking enlightenment. You are always seeking the truth, and it is
+        difficult for others to deceive you since you are intuitive and welleducated in many areas. <br> <br>
+        Many people may not understand you because you ask big, significant
+        questions that might take a lifetime to answer. You may find it difficult
+        to communicate yourself or your thoughts. You require a companion
+        who will provide you with space and time alone in order to recharge
+        and think, as you are always on your mind. You don't like it when
+        people are needy. Because you don't enjoy being bossed around, you
+        prefer to work alone. Since you don't trust readily, you don't open
+        yourself to everyone. You may feel depressed, isolated,
+        misunderstood, and suffer mood swings because you take your time
+        before sharing your feelings. 
+        </p>
+    
+        `
+    } else if (soulUrgeText === '8' || soulUrgeText === '17/8' || soulUrgeText === '26/8' || soulUrgeInt[soulUrgeInt.length - 1] === '8' ) {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 8</h3> <br>
+        <p>
+        Material things, money, power, and prosperity are all important to
+        those with soul urge number 8. You have exceptional administrative,
+        entrepreneurial, and managerial skills. You are a go-getter who wants
+        to succeed in life. You thrive on praise and attention, and if you don't
+        receive what you want, you might get frustrated and even negative.
+        However, this hardly occurs since you work really hard to ensure you
+        succeed in life. You are driven, goal-oriented, confident, balanced, and
+        determined. Despite your numerous skills, you will face many
+        challenges in life as a result of this soul urge. Understand that soul
+        urge 8 has a powerful force that may be both inspiring and detrimental. <br> <br>
+        Your soul was born to not only acquire but also to donate to others in
+        need. You have the ability to be generous and nice to others. Know
+        that, as a result of this powerful inner need, you will go through many
+        lessons in life, some of which may be more difficult than those around
+        you. These teachings are designed to help you grow into the person 
+        that God intended for you to be. It's possible that authority figures may
+        be tough to deal with. Many people may be puzzled by your actions
+        and unable to comprehend why you think or act the way you do. Your
+        life may be difficult at first, but you will surprise many people who have
+        ever doubted you. Remember that you are a powerful figure, a natural
+        leader, and a role model for others. <br> <br>
+        You must realize that your soul will not rest until it has what it desires
+        in this life. As a result, you must not defraud or steal from others.
+        Since you are an entrepreneur, positions in leadership and
+        administration are advantageous. Because you have a pleasant
+        personality, you are likely to enjoy a variety of romantic relationships.
+        And since money is so important to your soul, you may have a greater
+        hunger for achievement than other people, so if you don't achieve
+        financial prosperity in life, you may feel furious and resentful. Some 8s
+        may have difficulty obtaining or earning money. <br> <br>
+        Due to the fact that your soul's desire is to gain control in this
+        physical world, your determination and ambition can help you flourish,
+        but it can also drive you to do the unimaginable, like violating the law
+        and lying to get what you want. You may be skilled at accumulating
+        wealth and making money, but you may also be prone to lose them
+        quickly. Try not to borrow excessively or take huge risks in order to get
+        rich quickly. You have a tendency to be guarded, so try to let down
+        your guard and relax once in a while. Try to see things from other
+        people's perspectives rather than trying to control it all. To be happy,
+        you must learn how to balance your ambition with other vital aspects
+        of your life. Dictatorship, forcefulness, dishonesty, misused or abuse of
+        power, stubborn mentality, aggressiveness, a procrastinating
+        tendency, bossy, controlling, and relationship problems are all
+        negative features of number 8.
+
+        </p>
+    
+        `
+    } else if (soulUrgeText === '9' || soulUrgeText === '18/9' || soulUrgeText === '27/9' || soulUrgeText === '36/9' || soulUrgeInt[soulUrgeInt.length - 1] === '9') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 9</h3> <br>
+        <p>
+        If your soul urge number is 9, that’s meant you are a selfless and kind
+        soul who is sincerely focused on improving the world. You're a natural
+        humanitarian who sees yourself as a global citizen with a strong and
+        genuine sense of social responsibility. Teaching, law, writing, healing,
+        psychology, or counseling are all positions that you're drawn to since
+        they allow you to make the world a better place. You might want to
+        volunteer for a charity. You can also choose a career in medicine,
+        either as a doctor or as a nurse. <br> <br>
+        Your warmth and unselfish soul will aid your career advancement. You
+        may be motivated by the desire to help others at the expense of your
+        own needs. You have a fantastic mental clarity and you are artistic.
+        This enables you to perceive things in a far broader light than others
+        could. It's possible that you're more idealistic, generous, and selfless
+        than others. You want to change the world for the better. Human and
+        Animal rights are things you really concerned about. Or looking for
+        solutions to eliminate poverty. Many may see you as a hero. The
+        negative side is that you may end things easily, and become cold,
+        aloof, and narcissistic. You may have lots of beginning and ending on
+        relationships and other things. 
+        </p>
+    
+        `
+    } else if (soulUrgeText === '11/2' || soulUrgeInt[0] === '11') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 11/2</h3> <br>
+        <p>
+        If the number 11 is your heart's desire, you are on a unique spiritual
+        journey in this lifetime. As a messenger, healer, and inspirational
+        instructor, you have a wonderful purpose in life. You have a sound
+        understanding of fundamentals. Your keen intuition aids you in
+        comprehending the physical world's impermanence. Your visions or
+        dreams are very clear, and you have a strong spiritual connection. The
+        number 11 is associated with visions, psychic power, messengers,
+        and strength. However, gaining that power and rising into it might be
+        difficult. The majority of individuals with soul's urge number 11 come
+        from a rough background and may have come from a broken
+        household. Your upbringing may not have been a happy one, but it
+        was laced with hardships and tribulations. <br> <br>
+        Despite this, you have become stronger and wiser as a result of your
+        sorrow. You can now effectively solve difficulties. Because you've
+        gone through so much, you make excellent judgments. You are highly
+        intuitive, inspire people, inventive, creative, collaborative, manifesto,
+        co-operative, accepting, sensitive, intellectual, leader, bring
+        illumination, counselor, teacher, innovator, mediator, diplomatic,
+        driven, spiritual, mystic, psychic, healer, empathic if you are vibrating
+        in the positive side of your soul urge number 11. You yearn for
+        companionship or partnership, both of which are quite essential to you.
+        Just remember that you were born to make a big difference in the
+        world, and as a result, you have the power to positively influence a lot
+        of people's lives. <br> <br>
+        Your weaknesses are that you can have extreme stress because you
+        have great expectations for your life, mental turmoil, self-critical, selfconsciousness, worried a lot about the future, situation, or anything.
+        Unhappy, overly self-reflective, nervous, prone to depression and
+        anxiety due to higher frequency or energy from the spiritual realm
+        which you may not be aware of. You can be addicted, impatience,
+        delusions, hardness and stubbornness, misunderstandings,
+        codependent - dependent on others instead of self, too sensitive, huge
+        ego, push people away, physical illness, and manipulative. 
+        </p>
+    
+        `
+    } else if (soulUrgeText === '22/4' || soulUrgeInt[0] === '22') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 22/4</h3> <br>
+        <p>
+        You want to create something meaningful that will have a long-term
+        impact on the world. You want to feel like you've had a positive impact
+        on the world. You have big ambitions, but you're realistic about how
+        you'll achieve them. You're also a great teacher since you have a
+        strong desire to share your knowledge and encourage others to
+        pursue their dreams. You not only have the ability to lead yourself, but
+        also others. You don't let your emotions get in the way of your goals,
+        and no one raises the bar higher than you. You are a hard worker who
+        craves a comfortable home and family. <br> <br>
+        If you are on the positive side of soul urge 22, you are very intuitive,
+        visionary, builder of society, practical, achiever, diplomatic, brimming
+        with potential, great manifesto, influential, kind, dependable, empathic,
+        honest, stable, hard worker, confident, organized, disciplined, balance,
+        and empath. You may struggle with having this strong soul urge
+        number 22 in your early years, and it may not manifest till later in life.
+        You may face several hardships or come from a broken home in order
+        to be pushed toward your life's mission. Recognize that all of the
+        challenges and tests you face in life are there to help you develop. <br> <br>
+        If you are on the negative side of soul urge number 22, you can be a
+        very lazy person, and have high expectations, people can easily take
+        advantage of your kindness. You can have extreme anxiety and
+        stress, workaholic, mental overload, insanity, illness, unstable, very
+        controlling, destructive, rigid, huge ego, damaging, oversensitive,
+        worrying about the future or life, codependent, discontent, wasted
+        talents, vulnerable, manipulative, and Inflexible. Depended on others
+        instead of self; complainer, and emotional. Prone to depression. 
+        </p>
+    
+        `
+    } else if (soulUrgeText === '33/6' || soulUrgeInt[0] === '33') {
+        suhdText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your soul urge, also known as heart's desire, represents what makes
+            you happy in life; this number expresses what your heart and soul
+            seek more than anything else in the world. It expresses your desires,
+            goals, and dreams. It is the prism through which you make decisions
+            and displays your fundamental motives. The vowels in your birth name
+            can be used to calculate your soul urge number.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Soul Urge Number 33/6</h3> <br>
+        <p>
+        You want to provide joy to as many individuals as possible. You offer
+        so much of yourself without expecting anything in return. You are kind
+        and empathetic, and you believe that everyone can live in harmony.
+        You're also a gifted teacher, healer, and spiritual leader who wants to
+        educate people on how to connect with their own hearts and
+        awareness. Honesty and integrity are important to you. You want to
+        have a stable home and family. <br> <br>
+        If you are on the positive side of your soul urge number 33, you are a
+        healer, caring, loving, compassionate, empathic, supportive, nurturing,
+        communicator, sensible, responsible, devoted, idealistic, highly selfexpressive, beautifully inspired creative, imaginative, jovial, concern
+        about the community and family. This number 33 heart desire may be
+        both a joy and a burden. In life, you may face a number of difficulties
+        and problems. Recognize that all of the challenges and tests you face
+        in life are there to help you develop. One of the most important truths
+        you'll learn is that you must first heal yourself before you can help
+        others. You'd be a fantastic fit for a career in counseling, nursing,
+        teaching, medicine, charity work, community service, or healer. <br> <br>
+        Your weaknesses are that you might be a perfectionist, controlling,
+        have very high moral standards, higher critical, high expectations,
+        irresponsible, prone to depression and anxiety, fear of rejection or
+        criticism, indulgent, meddling, huge ego, idealization, self-destructive,
+        bad listener, self-righteous, childish, untrusting, disorganized,
+        scattered. 
+        </p>
+    
+        `
+    }
+    
 
 
 
@@ -3363,7 +4283,8 @@ calculate.addEventListener('click', ()=> {
     }
     msuhdNum.innerHTML = dbTotalSum + '/' + nSum;
 
-
+    var minorSoulUrgeText = (msuhdNum.textContent).trim();
+    var minorSoulUrgeInt = minorExpressionText.split('/');
 
 
 
@@ -3464,6 +4385,8 @@ calculate.addEventListener('click', ()=> {
         count = sum
     }
     pnHold = count ;
+
+    
 
 
 

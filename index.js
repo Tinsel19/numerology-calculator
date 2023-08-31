@@ -6022,7 +6022,147 @@ your    cool or temper.
         </p>
     
         `
-    } 
+    } else if (attitudeText === '4' || attitudeText === '13/4' || attitudeText=== '31/4' || attitudeText === '40/4' || attitudeInt[attitudeInt.length - 1] === '4') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 4</h3> <br>
+        <p>
+        You give an attitude that you’re at your highest and best when you key
+        into your organization and management skills. You have natural
+        abilities of logical thinking, detailing, perfection, hard work, and
+        managing. You’re determined, organized, honest, stable, loyal, and
+        reliable. You’re a great planner, strategist, and manager. You can
+        become very successful in any field due to your organizational skill.
+        The other side of you is that you may become criticizers, blunt,
+        controlling, and stubborn.
+        
+        </p>
+    
+        `
+    } else if (attitudeText === '5' || attitudeText === '14/5' || attitudeText === '23/5' || attitudeInt[attitudeInt.length - 1] === '5') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 5</h3> <br>
+        <p>
+        You give an attitude of a freedom lover, adventurous, multitalented,
+        playful, fun, daring, loving, risk-taker, and creative. You may fall under
+        the Intellect group. You can become very successful in any field where 
+        your get freedom. You’re flirty, gregarious, and full of life. You like
+        changes and like traveling. The other side of you is that you may have
+        a depressive nature, and may lead yourself to addiction, unstable,
+        unpredictable, constant life change, self-destruction, and unfaithful. 
+        </p>
+    
+        `
+    } else if (attitudeText === '6' || attitudeText === '15/6' || attitudeText === '24/6' || attitudeInt[attitudeInt.length - 1] === '6') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 6</h3> <br>
+        <p>
+        You give an attitude of a harmonious individual. You are
+        compassionate, loving, nurtured, peaceful, family-oriented gentle,
+        warm, and caring. You are a very social creature. Your attitude is of a
+        loving and harmonious person. You can become very fruitful in any
+        field linked to social/community work, educational activities, medicine,
+        nursing, as well as in business. Perfectionist tendencies have a major
+        impact on your ability to be content and tolerant of yourself and others
+        </p>
+    
+        `
+    } else if (attitudeText === '7' || attitudeText === '16/7' || attitudeText === '25/7' || attitudeText === '34/7' || attitudeInt[attitudeInt.length - 1] === '7') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 7</h3> <br>
+        <p>
+        You give the attitude of someone who is introverted and have great
+        qualities of observing and analyzing. You are knowledge-oriented and
+        intuitive. Therefore, you have an attitude of an intellect and a
+        knowledgeable individual. You can become very successful in any
+        field where observation, research, lawyer, education, surgeon, and
+        analysis. The dark side of you is that you can become isolated,
+        paranoid, reserved, loner, and secretive.        
+        </p>
+    
+        `
+    } else if (attitudeText === '8' || attitudeText === '17/8' || attitudeText === '26/8' || attitudeText === '35/8' || attitudeInt[attitudeInt.length - 1] === '8') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 8</h3> <br>
+        <p>
+        You have a natural talent for administration, management, and money
+        matters. You value money for all it can do for you in this life, it offers
+        stability, security, freedom, power, and respect. You have money,
+        wealth, manager’s attitude. You’re strong-willed, confident, and more
+        powerful. You can become very successful in a business or leader
+        position. You’ll have authority issues a letting go of past issues, bossy,
+        and inflexible. 
+        </p>
+    
+        `
+    } else if (attitudeText === '9' || attitudeText === '18/9' || attitudeText === '27/9' || attitudeText === '36/9' || attitudeInt[attitudeInt.length - 1] === '9') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 9</h3> <br>
+        <p>
+        You are high-tempered, compassionate, humanitarian, and a warrior.
+        You have a humanitarian attitude. You can become very successful in
+        bigger ventures, business, or humanitarian causes. You’re a gifted,
+        intuitive, natural teacher, and compassionate leader. You’re at your
+        best when you are serving and helping others. The dark side is that
+        you may detach yourself from others, be drained emotionally, be
+        insensitive, seem cold, lack involvement, narcissistic, and angry. 
+        </p>
+    
+        `
+    }
 
 
 
@@ -6038,6 +6178,234 @@ your    cool or temper.
     lpebNum.innerHTML = String(subtract)
 
 
+    var lifePathExpText = (lpebNum.textContent).trim();
+    var lifePathExpInt = lifePathExpText.split('/');
+
+    if (lifePathExpText === '0' || lifePathExpInt[lifePathExpInt.length - 1] === 0) {
+        lpebText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Life Path / Expression bridge number provides insight into your
+            personality. It aids in bridging the gap between who you are and who
+            you want to be, allowing you to take the appropriate steps in life and
+            achieve success in everything you do.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Life Path/ Expression Bridge 0</h3> <br>
+        <p>
+        indicates that you are a person who makes smart judgments on a
+        regular basis. In general, you are self-assured and take the best path
+        to your accomplishment. You are able to achieve your goals with ease.
+        It makes you feel peaceful on the inside. The Life Path/Expression
+        Bridge Number 0 combination is quite favorable. People that have this
+        combination make significant success in their lives.
+        </p>
+    
+        `
+    } else if (lifePathExpText === '1' || lifePathExpText === '10/1' || lifePathExpInt[lifePathExpInt.length - 1] === '1') {
+        lpebText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Life Path / Expression bridge number provides insight into your
+            personality. It aids in bridging the gap between who you are and who
+            you want to be, allowing you to take the appropriate steps in life and
+            achieve success in everything you do.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Life Path/ Expression Bridge 1</h3> <br>
+        <p>
+        signifies a lack of self-assurance. You prefer to believe other people's
+        opinions above your own. You frequently believe that others are
+        smarter and have a greater understanding of all things. However, you
+        should be aware that the majority of them just appear to be. Except for
+        yourself, no one knows what's best for you. Maybe you're still learning,
+        yet you have the strong intuitive ability. You will be considerably more
+        successful and attain your goals more rapidly if you have greater
+        confidence and assurance in your talents. You expect others to
+        appreciate anything you do. You value acknowledgment. However, the
+        cause is just a lack of self-confidence on your part. Undeniably, you
+        are self-sufficient, and the views of others only serve to obstruct you.
+        </p>
+    
+        `
+    } else if (lifePathExpText === '2' || lifePathExpText === '20/2' || lifePathExpInt[lifePathExpInt.length - 1] === '2') {
+        lpebText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Life Path / Expression bridge number provides insight into your
+            personality. It aids in bridging the gap between who you are and who
+            you want to be, allowing you to take the appropriate steps in life and
+            achieve success in everything you do.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Life Path/ Expression Bridge 2</h3> <br>
+        <p>
+        Gives you the personality of someone who is really caring and friendly.
+        However, the majority of individuals are unaware of this. You believe
+        that you are an open person who is understood by others, but this is
+        not the case. Everyone is different, and you must be more delicate
+        with others in order for them to notice your kindness. Peacekeeping
+        and pragmatism may also be useful in some situations. Sometimes
+        you aren't paying enough attention to other individuals. It might cause
+        them pain and more confusion. You must be nicer and more open
+        while interacting with others in order to avoid confrontations that will
+        almost certainly prevent you from achieving your goals. You must be
+        confident in your talents and avoid repelling others which is a formula
+        for good fortune and contentment.
+        
+        </p>
+    
+        `
+    } else if (lifePathExpText === '3' || lifePathExpText === '12/3' || lifePathExpText === '21/3' || lifePathExpText === '30/3' || lifePathExpInt[lifePathExpInt.length -  1] === '3') {
+        lpebText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Life Path / Expression bridge number provides insight into your
+            personality. It aids in bridging the gap between who you are and who
+            you want to be, allowing you to take the appropriate steps in life and
+            achieve success in everything you do.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Life Path/ Expression Bridge 3</h3> <br>
+        <p>
+        fits those who are tense, uptight, nervous, and stressed most of the
+        time. They are serious individuals. It makes their lives more difficult.
+        You should learn to take life easily. You must converse and connect
+        with others more. If you make an effort to socialize, you will notice that
+        your life turns out to be simpler. It doesn't mean you can't be serious
+        about the important elements of your life. However, it is crucial to
+        distinguish between serious matters and times in which you may just
+        relax. You may express yourself and put your skills to use in a variety
+        of creative industries. It will assist you in relaxing and channeling your
+        thoughts in a constructive direction.
+        
+        </p>
+    
+        `
+    } else if (lifePathExpText === '4' || lifePathExpText === '13/4' || lifePathExpText === '31/4' || lifePathExpText === '40/4' || lifePathExpInt[lifePathExpInt.length - 1] === '4') {
+        lpebText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Life Path / Expression bridge number provides insight into your
+            personality. It aids in bridging the gap between who you are and who
+            you want to be, allowing you to take the appropriate steps in life and
+            achieve success in everything you do.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Life Path/ Expression Bridge 4</h3> <br>
+        <p>
+        suggests that you are someone whose success is based on your
+        capacity to focus on a certain task and stay up with the times. Don't be
+        afraid to embrace new ideas and concepts; otherwise, you risk missing
+        out on the important possibilities that life has to offer. Pragmatism isn't
+        the last thing on your mind when it comes to achieving success. As a
+        result, you must be more practical and broaden your perspective on
+        occurrences. It is vital to join the world's rapid pace and respond
+        quickly. This number encourages you to complete your tasks as soon
+        as possible rather than procrastinate. If you put anything off, there's a
+        good chance you won't get back to it and finish it.
+        
+        </p>
+    
+        `
+    } else if (lifePathExpText === '5' || lifePathExpText === '14/5' || lifePathExpText === '23/5' || lifePathExpInt[lifePathExpInt.length - 1] === '5') {
+        lpebText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Life Path / Expression bridge number provides insight into your
+            personality. It aids in bridging the gap between who you are and who
+            you want to be, allowing you to take the appropriate steps in life and
+            achieve success in everything you do.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Life Path/ Expression Bridge 5</h3> <br>
+        <p>
+        indicates you're a person who doesn't make decisions based on
+        uniqueness. You have a tendency to be predictable in your activities.
+        The majority of people with bridge number 5 are unaware of their
+        inventive abilities. However, it allows them to succeed in a variety of
+        disciplines. It's simply a matter of listening to your inner voice and
+        experimenting with different ways. Try to be more courageous in
+        expressing your point of view. It is sometimes even important to take a
+        chance and be more open with your opinions. You're stiff and rigid
+        from time to time. These are not the finest qualities for achieving
+        success. Try to modify it by becoming more tolerant and capable of
+        reaching a compromise
+        </p>
+    
+        `
+    } else if (lifePathExpText === '6' || lifePathExpText === '15/6' || lifePathExpText === '24/6' || lifePathExpInt[lifePathExpInt.length - 1] === '6') {
+        lpebText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Life Path / Expression bridge number provides insight into your
+            personality. It aids in bridging the gap between who you are and who
+            you want to be, allowing you to take the appropriate steps in life and
+            achieve success in everything you do.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Life Path/ Expression Bridge 6</h3> <br>
+        <p>
+        belongs to a group of people who are quite inventive. This quality may
+        be shown in whatever sector you work in. It is beneficial to your
+        personal development and success to communicate your views and
+        opinions. You may proudly display your creative initiatives while being
+        calm and relaxed, knowing that your original approach is usually rather
+        effective. Relationships are a vital part of your life. Your good impact is
+        undeniable. As a result, you must pay greater attention to maintaining
+        warm ties with close friends and spending quality time with your family
+        </p>
+    
+        `
+    } else if (lifePathExpText === '7' || lifePathExpText === '16/7' || lifePathExpText === '25/7' || lifePathExpText === '34/7' || lifePathExpInt[lifePathExpInt.length - 1] === '7') {
+        lpebText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Life Path / Expression bridge number provides insight into your
+            personality. It aids in bridging the gap between who you are and who
+            you want to be, allowing you to take the appropriate steps in life and
+            achieve success in everything you do.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Life Path/ Expression Bridge 7</h3> <br>
+        <p>
+        Usually fits somebody who spends a lot of time thinking about
+        everything. Such folks are always on the search or look out for life's
+        truths. Solitariness is the state in which these people are able to
+        develop their philosophical ideas and feel joyful and free. They do not
+        act fast; they require time to process all of the information. If 7 is your
+        bridge number, you have a lot of questions on your mind and need
+        isolation to clear your thoughts and discover answers. You are
+        continually hungry for fresh information
+        </p>
+    
+        `
+    } else if (lifePathExpText === '8' || lifePathExpText === '17/8' || lifePathExpText === '26/8' || lifePathExpText === '35/8' || lifePathExpInt[lifePathExpInt.length - 1] === '8') {
+        lpebText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Life Path / Expression bridge number provides insight into your
+            personality. It aids in bridging the gap between who you are and who
+            you want to be, allowing you to take the appropriate steps in life and
+            achieve success in everything you do.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Life Path/ Expression Bridge 8</h3> <br>
+        <p>
+        says you don't have a feeling of direction. Ambition is not one of your
+        characteristics and afraid of being competitive. However, nowadays it
+        is hard to exist without a purpose. You are compelled to create specific
+        goals in today's world. You are uneasy because you must exert effort
+        in order to reach your goal, but you are ecstatic when you succeed. It's
+        simply a matter of being more diligent and realistic. Modern life
+        imposes strict constraints on us. You must realize that material goods
+        and money are not the most important factors. It's crucial even for
+        achieving non-material goals. Your capacity to work hard and grasp
+        what can benefit you determines your success on any path.
+        </p>
+    
+        `
+    }
 
     // Heart's Desire ? Personlaity Bridge Number 
     hdpbNum.innerHTML;
@@ -6049,6 +6417,108 @@ your    cool or temper.
         hdPB = x;
     }
     hdpbNum.innerHTML = hdPB;
+
+    var HerDesPerText = (hdpbNum.textContent).trim();
+    var HerDesPerInt = HerDesPerText.split('/');
+
+    if (HerDesPerText === '0' || HerDesPerInt[HerDesPerInt.length - 1] === 0) {
+        hdpbText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The heart’s desire/personality bridge number is like a bridge between
+            what you really are and what others think you are.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Heart Desire/ Personality Bridge 0</h3> <br>
+        <p>
+        This is a lucky number for you. You have an amazing capacity to make
+        those around you feel peaceful, joyful, and at ease. They enjoy
+        spending time with you and are interested in your company. You are a
+        responsible individual who recognizes that your success is contingent
+        on your efforts. But it's not always feasible to keep everything under
+        control. Accept it and don't surrender. If your strategy does not go as
+        planned, you are likely to become anxious. You won't have to be
+        concerned if something goes wrong. Everything will fall into place over
+        time.
+        </p>
+    
+        `
+    } else if (HerDesPerText === '1' || HerDesPerText === '10/1' || HerDesPerInt[HerDesPerInt.length - 1] === '1') {
+        hdpbText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The heart’s desire/personality bridge number is like a bridge between
+            what you really are and what others think you are.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Heart Desire/ Personality Bridge Bridge 1</h3> <br>
+        <p>
+        This number motivates you to put forth more effort. It is not simple to
+        achieve the goal. The technique that is most comfortable for you is not
+        the greatest answer. For you, changes are required. If you keep
+        looking for new methods to succeed, working hard, and remembering
+        that it all comes down to your efforts, you'll be successful.
+        Others are waiting for you to communicate openly with them.
+        Unfortunately, even if you believe they do, most of the time they don't.
+        Make an effort to be more transparent with others. Clearly express
+        your views so that people can comprehend you. To make
+        communication simpler and to be on the same page with others, it is
+        vital to explain oneself in a basic manner.
+        </p>
+    
+        `
+    } else if (HerDesPerText === '2' || HerDesPerText === '20/2' || HerDesPerInt[HerDesPerInt.length - 1] === '2') {
+        hdpbText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The heart’s desire/personality bridge number is like a bridge between
+            what you really are and what others think you are.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Heart Desire/ Personality Bridge Bridge 2</h3> <br>
+        <p>
+        You have the power to persuade others. You don't use this ability for
+        your personal goals. Maybe you're not even aware of this talent, but
+        others frequently do what you want. Regardless of this, you must pay
+        greater attention to the needs of others. If you understand and don't
+        neglect the expectations of people who are important to you, you will
+        have long-lasting friendly connections. It's sometimes vital to focus on
+        other people's interests and needs. It will aid in the development of
+        natural, harmonious connections. Patience is essential for both your
+        profession and your personal connections. Make sure you don't rush
+        anything. In such circumstances, it's vital to take a deep breath and
+        wait for a moment.
+        </p>
+    
+        `
+    } else if (HerDesPerText === '3' || HerDesPerText === '12/3' || HerDesPerText === '21/3' || HerDesPerText === '30/3' || HerDesPerInt[HerDesPerInt.length - 1] === '3') {
+        hdpbText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The heart’s desire/personality bridge number is like a bridge between
+            what you really are and what others think you are.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Heart Desire/ Personality Bridge Bridge 3</h3> <br>
+        <p>
+        You're an extremely creative and innovative individual. You get easily
+        frustrated by failures. You need to have trust in yourself and face life’s
+        tough situations with courage. It's always fascinating to talk to you and
+        observe you. That is why so many people admire your friendship.
+        However, you are not always at ease with others because it is so easy
+        to harm or hurt you. You are a highly sensitive individual. It is
+        preferable for you to reveal your deepest sentiments and be honest till
+        the end only with trusted friends and family members who will not hurt
+        you. It is critical that you gain confidence. You have numerous skills
+        and deserve to be appreciated, satisfied, and at ease in any
+        organization. All of the disciplines associated with arts are a good fit
+        for you.
+        </p>
+    
+        `
+    }
+
+
 
 
 

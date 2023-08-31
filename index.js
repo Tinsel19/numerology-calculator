@@ -6516,6 +6516,123 @@ your    cool or temper.
         </p>
     
         `
+    } else if (HerDesPerText === '4' || HerDesPerText === '13/4' || HerDesPerText === '31/4' || HerDesPerInt[HerDesPerInt.length - 1] === '4') {
+        hdpbText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The heart’s desire/personality bridge number is like a bridge between
+            what you really are and what others think you are.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Heart Desire/ Personality Bridge Bridge 4</h3> <br>
+        <p>
+        Nature has a positive impact on you. Spending time outside and taking
+        in the beauty of nature might help you relax. You should put more
+        effort to be more reliable, honest, punctual, stable, and follow certain
+        systematic approaches. As well, you should learn to appreciate and
+        love your environments; and it is beneficial for you to be more
+        organized. Without a systematic, well-understood set of stages,
+        success is impossible. Another important aspect is to comprehend the
+        true condition of affairs, because your imagination may sometimes
+        paint a false image of events. Others will comprehend you well if you
+        understand yourself and are confident in such fundamentals as your
+        life's meaning and ideas. The most crucial things to improve are
+        dependability and timeliness.
+        
+        </p>
+    
+        `
+    } else if (HerDesPerText === '5' || HerDesPerText === '14/5' || HerDesPerText === '23/5' || HerDesPerInt[HerDesPerInt.length - 1] === '5') {
+        hdpbText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The heart’s desire/personality bridge number is like a bridge between
+            what you really are and what others think you are.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Heart Desire/ Personality Bridge Bridge 5</h3> <br>
+        <p>
+        You should get rid of your dependence on others since now is the time
+        to be self-sufficient and independent. You should have faith in your
+        own ability and follow your gut instincts. Risks made at this time will
+        pay off handsomely. Adaptability and resilience are really important.
+        Make an effort to be more courageous and unorthodox. To reach the
+        pinnacle of achievement, you must take risks. Make an effort to strike
+        a balance between sacrificing and behaving yourself. Make an effort to
+        be more consistent.
+        </p>
+    
+        `
+    } else if (HerDesPerText === '6' || HerDesPerText === '15/6' || HerDesPerText === '24/6' || HerDesPerInt[HerDesPerInt.length - 1] === '6') {
+        hdpbText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The heart’s desire/personality bridge number is like a bridge between
+            what you really are and what others think you are.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Heart Desire/ Personality Bridge Bridge 6</h3> <br>
+        <p>
+        Relationships are really important in your life. Build positive and
+        pleasant friendships with your peers. Spend lots of time with your
+        family and close friends. It will provide you with a sense of inner peace
+        and harmony. Companionship with other individuals has a beneficial
+        impact on achieving your purpose. Understand that in any relationship,
+        honesty is crucial. You must develop a sense of trust for others and
+        take responsibility for your own people's sentiments. Don't be afraid to
+        express your emotions to them. Use your imagination and
+        inventiveness. It will have a positive impact on your growth. Tranquility
+        and peace will follow if you fully express yourself and your feelings.
+        </p>
+    
+        `
+    } else if (HerDesPerText === '7' || HerDesPerText === '16/7' || HerDesPerText === '25/7' || HerDesPerInt[HerDesPerInt.length - 1] === '7') {
+        hdpbText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The heart’s desire/personality bridge number is like a bridge between
+            what you really are and what others think you are.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Heart Desire/ Personality Bridge Bridge 7</h3> <br>
+        <p>
+        For you, simply spending some time alone would be plenty. You will
+        get a lot of knowledge and feel satisfied as a result of this. You want to 
+        explore further into issues in order to discover some previously
+        undisclosed answers. It's possible that you'll need to spend a lot of
+        time by yourself and reflect on spiritual issues. Through your studies,
+        you will seek out and obtain information and insight. Your mind is
+        bursting at the seams with concepts. You'll have a lot of inquiries
+        regarding various topics on your mind. You must be considerate. For
+        you, self-reflection and solitude are the keys to cheerfulness
+        </p>
+    
+        `
+    } else if (HerDesPerText === '8' || HerDesPerText === '17/8' || HerDesPerText === '26/8' || HerDesPerInt[HerDesPerInt.length -1 ] === '8') {
+        hdpbText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The heart’s desire/personality bridge number is like a bridge between
+            what you really are and what others think you are.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Heart Desire/ Personality Bridge Bridge 8</h3> <br>
+        <p>
+        You focus more on money, wealth, and power. Shortcuts should be
+        avoided at all costs. This strategy isn't going to work for you. You'll
+        also need to work with a thorough and structured approach. To be
+        fruitful in anything you do, you must combat your relaxed or lazy
+        attitude and work hard. If you make the most of your resources now,
+        you can achieve financial and monetary success. You must cherish
+        the fact that financial security leads to happiness. You'll have to relax
+        and let things happen naturally. You should strive for a high level of
+        ambition. To reach your objectives, you will have to put in a lot of
+        effort. Don't be irrational; instead, attempt to instill in yourself the belief
+        that monetary stability equals security.
+        
+        </p>
+    
+        `
     }
 
 
@@ -6619,15 +6736,310 @@ your    cool or temper.
             sum = eval(mSplit.join('+'));
             rtNum.innerHTML = sumHold + '/' + sum ;
         } else if (sum > 10) {
-            // sumHold = count;
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
             rtNum.innerHTML = sum ;
         }
-        // rtNum.innerHTML = sum;
-    }
+    };
+    var ratTotText = (rtNum.textContent).trim();
+    var ratTotInt = ratTotText.split('/');
 
-    // rtNum.innerHTML = String(x);
+    if (ratTotText === '1' || ratTotText === '10/1' || ratTotInt[ratTotInt.length - 1] === '1') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 1</h3> <br>
+        <p>
+        You're filled with creative concepts. You are well-concentrated,
+        determined, and intelligent. You have diverse perspectives on the
+        same situation. You put your thoughts into action and don't give others
+        much thought. Your way of thinking is analytical, and if you don't
+        believe in it, it's difficult to influence you. You prefer to do things your
+        own way and dislike it when others call out your flaws. In challenging
+        moments, instead of giving up, you are more likely to fight until the
+        finish. You don't duplicate other people's ideas; instead, you have your
+        own style. You have a unique way of thinking and seeing things that
+        are often at odds with others. You are calm and composed in a
+        stressful or tense situation, and you have a clear idea of what you
+        desire.
+        </p>
+    
+        `
+    } else if (ratTotText === '11/2' || ratTotInt[0] === '11') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 11/2</h3> <br>
+        <p>
+        You may not be aware of your skills since you are spiritually gifted and
+        active. You have artistic tastes and want to work in a unique and
+        creative manner. Your talents, together with your work and effort, and
+        enthusiasm, ensure that you succeed in every venture you take on.
+        Though you can do it alone, you respect other people's opinions and
+        would like to work in a group. You have the ability to be incredibly
+        expressive. As a result, you can effectively communicate your ideas
+        and views with others. You may be completely unaware of your
+        dynamism, as well as your psychic side.
+        
+        </p>
+    
+        `
+    } else if (ratTotText === '22/4' || ratTotInt[0] === '22') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 22/4</h3> <br>
+        <p>
+        You fantasize about more important things in life. You enjoy working in
+        a methodical and organized manner to bring your ideas to life. And
+        you go into the nitty-gritty of a situation, weighing the advantages and
+        disadvantages before coming to a conclusion. You have a strong
+        intuitive tendency and have premonitions about future events. You are
+        ambitious, practical, a visionary, and a thinker at the same time. At the
+        same time, you see the little and the larger image. You have a keen
+        sense of intuition and may have visions of the future.
+        </p>
+    
+        `
+    } else if (ratTotText === '2' || ratTotText === '20/2' || ratTotInt[ratTotInt.length - 1] === '2') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 2</h3> <br>
+        <p>
+        You're outgoing and kind, and you enjoy debating issues with people
+        before coming to a conclusion. You have excellent organizational skills
+        and are always able to maintain a friendly environment at the
+        workplace while avoiding conflicts. You value other people's opinions
+        more than your own, therefore you're more likely to be affected by
+        them. You're also a highly cautious thinker who prefers to find answers
+        to challenges that benefit everyone. Before making a final decision,
+        you prefer to connect with people and collaborate. You may be a
+        daydreamer, yet your intuitive abilities are excellent.
+        </p>
+    
+        `
+    } else if (ratTotText === '3' || ratTotText === '12/3' || ratTotText === '21/3' || ratTotText === '30/3' || ratTotInt[ratTotInt.length -1] === '3') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 3</h3> <br>
+        <p>
+        Nobody really knows what's on your mind since you're a highly
+        creative person with a flexible mind. Your mind is bursting at the
+        seams with numerous thoughts. Despite this, you have a proclivity for
+        extensively examining alternative options and developing the finest
+        potential decision. You pay more attention to your instincts than to the
+        current situation. You're extremely emotional and sensitive. You are
+        indeed sensitive to the opinions of others. You have a powerful artistic
+        side and enjoy getting to the bottom of things.
+        
+        </p>
+    
+        `
+    } else if (ratTotText === '4' || ratTotText === '13/4' || ratTotText === '31/4' || ratTotInt[ratTotInt.length - 1] === '4') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 4</h3> <br>
+        <p>
+        You're brimming with various ideas. You develop a balanced and wellstructured mentality. You're always thinking about the future and
+        weighing the pros and disadvantages. You don't want to take any
+        chances by attempting to solve the situation. You, on the other hand,
+        are extremely structured, methodical, and ordered, and would prefer to
+        use a surefire approach to deal with a situation. Your most picky
+        tendency to make you rigid at times. Despite the fact that your mind is
+        full of varied thoughts, you are a well-organized thinker. Your strategy
+        is really practical and reasonable. You're an excellent organizer and
+        planner. You can, unfortunately, be a little too strict in your reasoning
+        process at times
+        </p>
+    
+        `
+    } else if (ratTotText === '5' || ratTotText === '14/5' || ratTotText === '23/5' || ratTotInt[ratTotInt.length -1 ] === '5') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 5</h3> <br>
+        <p>
+        You have a unique perspective. You're always bursting at the seams
+        with new and inventive ideas. When you perceive something, you
+        respond with something. It might be difficult to interact with someone
+        who always has a critical view and is so straight and truthful that it can
+        cause you trouble. You like experimenting with your ideas by putting
+        them into other contexts. Your thinking is fast and nimble. You are
+        adaptive to shifting events and are always coming up with fresh ideas
+        in response to changing circumstances. You're also a thinker who
+        thinks beyond the box. You're also willing to take chances. Intense
+        situations, you behave quickly and confidently.
+        </p>
+    
+        `
+    } else if (ratTotText === '6' || ratTotText === '15/6' || ratTotText === '24/6' || ratTotInt[ratTotInt.length - 1] === '6') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 6</h3> <br>
+        <p>
+        You are extremely alert and always keep track of what is going on
+        around you. You notice even the tiniest changes in your workplace or
+        home, and you are always willing to assist. You may become so
+        focused on the specifics that the problem appears to be larger than it
+        is, but you are simply missing the overall picture. You may quickly
+        assign a grade to a person's behavior. You have a strong sense of
+        unfairness, particularly in society, and you tend to defend those in
+        need. You are willing to offer practical help and sound advice, and
+        your assistance will be genuine. Take a deeper look at a sociological
+        profession; you'll make money while also achieving full self-realization
+        </p>
+    
+        `
+    } else if (ratTotText === '7' || ratTotText === '16/7' || ratTotText === '25/7' || ratTotInt[ratTotInt.length - 1] === '7') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 7</h3> <br>
+        <p>
+        By nature, you're a researcher. You tend to be skeptical of most
+        information unless you are certain that it is correct or until you have
+        firsthand experience with it. When you are certain about something,
+        you act quickly and impulsively. Because you are frequently correct, it
+        is uncommon to find someone willing to dispute with you. If you are
+        incorrect, you are not scared to lose; you will discover additional
+        knowledge on this topic and be completely competent in it. You have
+        an analytical mindset, and your findings or ideas are frequently
+        intriguing and well-considered. You become annoyed when someone
+        does not do the task as it should be completed. You'd rather things be
+        done correctly the first time.
+        </p>
+    
+        `
+    } else if (ratTotText === '8' || ratTotText === '17/8' || ratTotText === '26/8' || ratTotInt[ratTotInt.length - 1] === '8') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 8</h3> <br>
+        <p>
+        Your mental activity is rarely understood by those around you since
+        you are incredibly creative and full of thoughts. Working on ideas and
+        projects always allows you to see more. You possess the ability to
+        motivate others. You skip unnecessary details of any problem and
+        reach a speedy conclusion since they can swiftly and readily grasp
+        any subject or circumstance. Your capacity to understand concepts
+        quickly makes you impatient and annoyed with those who aren't in
+        your league. Despite this, you are a fast thinker and a visionary, and
+        you are always looking for the bigger picture. You delegate the finer
+        points to others. However, while you might be irritable and impulsive at
+        times, you are incredibly self-aware and take excellent care of
+        yourself.
+        </p>
+    
+        `
+    } else if (ratTotText === '9' || ratTotText === '18/9' || ratTotText === '27/9' || ratTotInt[ratTotInt.length -1 ] === '9') {
+        rtText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Rational Thought number tells how your mind functions in
+            various life situations People may gain a sense of your personality by
+            understanding your style of thinking. This number also represents your
+            intelligence and capacity to think logically. It is found by adding the
+            sum of the value of all the letters in your first name that is <span class="underline">growth
+            number</span> to your day of birth
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Rational Thought Number 9</h3> <br>
+        <p>
+        You are focused and considerate. Your analytical abilities are
+        excellent, and you frequently accept even the tiniest errors made by
+        others; nonetheless, you never act arrogantly; you may provide a
+        courteous tip about the error, and it will not cause tension between
+        you. Your ability is in coming up with a solution by eliminating all of the
+        alternatives that aren't viable. You are typically kind and empathetic,
+        and you have excellent intuition and can predict future occurrences
+        </p>
+    
+        `
+    }
 
 
 
@@ -6676,7 +7088,282 @@ your    cool or temper.
         sum = eval(mSplit.join('+'));
         bnNum.innerHTML =  sum;
     }
-    // bnNum.innerHTML = count;
+    var balText = (bnNum.textContent).trim();
+    var balInt = balText.split('/');
+
+    if (balText === '1' || balText === '10/1' || balInt[balInt.length - 1] === '1') {
+        bnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Balance Number is a tool that assists us in dealing with real-life
+            circumstances/crises and issues. It instructs you on how to handle
+            challenging situations. It's calculated by adding the numerical value of
+            your complete name's initials at birth.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Balance Number 1</h3> <br>
+        <p>
+        To get out of stressful or difficult situations, you must use your mind's
+        strength and inborn imagination. Because you have a big ego, you
+        don't like to ask for help willingly. You are also harsh and inflexible.
+        Don't be afraid to ask for help when you're in difficulties; no matter how
+        self-assured you are. Understand that many of us need to feel
+        supported and cared for during difficult times. Instead of building a
+        protective barrier around you, allow your dearest friends and family to
+        be present. You are self-assured and capable of dealing well with a
+        problem; however, you should appreciate the perspectives of others
+        as well. This mindset may benefit you in the long term. 
+        </p>
+    
+        `
+    } else if (balText === '2' || balText === '20/2' ||balInt[balInt.length - 1] === '2') {
+        bnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Balance Number is a tool that assists us in dealing with real-life
+            circumstances/crises and issues. It instructs you on how to handle
+            challenging situations. It's calculated by adding the numerical value of
+            your complete name's initials at birth.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Balance Number 2</h3> <br>
+        <p>
+        Learn to control your reaction, which is typically quite energetic and
+        aggressive in nature. Demonstrate diplomatic abilities and learn how
+        to deal with disputes through words. It's far more difficult to regulate all
+        of your feelings at once; self-control and commitment are your best
+        allies. If you use your intelligence, most confrontations can be whittled
+        down and resolved before they begin. In tough situations, you allow
+        people to influence and guide you. You lack the fundamental selfassurance and tenacity required to deal with a challenging scenario. In
+        addition, in difficult situations, you lose your nerves. To discover an
+        appropriate solution to an issue, you must be more calm, cool, and
+        contemplative.
+        
+        </p>
+    
+        `
+    } else if (balText === '3' || balText === '12/3' || balText === '21/3' || balText === '30/3' || balInt[balInt.length - 1] === '3') {
+        bnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Balance Number is a tool that assists us in dealing with real-life
+            circumstances/crises and issues. It instructs you on how to handle
+            challenging situations. It's calculated by adding the numerical value of
+            your complete name's initials at birth.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Balance Number 3</h3> <br>
+        <p>
+        You tend to lose faith in yourself in challenging times and situations.
+        You get anxious and disoriented, which makes things even more
+        difficult for you. To prevent messing things up, you should choose
+        easy solutions to your difficulties. Learn to effectively communicate
+        your thoughts and ideas. You should use your good sense of humor
+        and expressivity. Try to adjust your mindset about it, and don't let
+        stress destroy you. Focus on the problem and keep your emotions
+        under control. Make use of your oratorical abilities. If you make
+        a commitment during a difficult moment, keep it or don't make it at all.
+        When necessary, you should keep your tongue in check. Make an
+        effort to improve your listening skills. To fulfill your responsibilities, you
+        should make use of all of your greatest resources. To achieve your
+        objectives, have faith in yourself and be positive. You should take a
+        lighter attitude to problem-solving.
+        
+        </p>
+    
+        `
+    } else if (balText === '4' || balText === '13/4' || balText ==='31/4' || balText === '40/4' || balInt[balInt.length - 1] === '4') {
+        bnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Balance Number is a tool that assists us in dealing with real-life
+            circumstances/crises and issues. It instructs you on how to handle
+            challenging situations. It's calculated by adding the numerical value of
+            your complete name's initials at birth.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Balance Number 4</h3> <br>
+        <p>
+        You're emotional, and you can't see things clearly or solve difficulties
+        in a sensible way. You're conservative and stubborn. You also have
+        prejudices or assumptions about things. Learn to study a matter
+        thoroughly before coming to a decision based on all of its advantages
+        and disadvantages. Therefore, you should focus on controlling your
+        emotions. You're prone to emotional explosions which block your
+        progress. Remember the state of your emotional control reflects how
+        you manage the entire circumstance. Analyze the problem and
+        attempt to resolve it via discussion and compromise. Don't be ruled by
+        your emotions. Keep track of things so you're sure you're aware of
+        everything and practice self-discipline. Contest for justice, but always
+        be truthful in exchange. You should also show others forgiveness,
+        compassion, and profound understanding. Confrontations can be
+        avoided by putting yourself in the shoes of the individual with whom
+        you're having a disagreement.
+        </p>
+    
+        `
+    } else if (balText === '5' || balText === '14/5' || balText === '23/5' || balInt[balInt.length - 1] === '5') {
+        bnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Balance Number is a tool that assists us in dealing with real-life
+            circumstances/crises and issues. It instructs you on how to handle
+            challenging situations. It's calculated by adding the numerical value of
+            your complete name's initials at birth.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Balance Number 5</h3> <br>
+        <p>
+        You have a strict and traditional outlook, and you like to do things the
+        same way everyone else does. You have a hard time adjusting to
+        changing circumstances. As a result, you deal with an issue using tried
+        and true methods. You attempt to hide when something worries or
+        stresses you out because you can't seem to put yourself together. It is
+        not the most advantageous choice for you. Being more proactive and
+        persistent can assist you in getting out of the bind and reducing the
+        amount of tension and tasks you must complete. Avoid putting
+        anything on the shelf. If you don't want to do anything, you should just
+        decline the request. Also, try to do everything completely so that you
+        won't have to retake it later. You need to be trendier and value creative
+        problem-solving techniques. You should also understand that human
+        beings are social creatures and that if you do not keep up with
+        changes or trends, you will fall behind in this competitive environment.
+        When you face stressful situations, you become anxious and worried
+        and try to avoid the situation. If you set your mind to it, you will find the
+        solution. You have a proclivity towards binge eating or
+        substance abuse. Understand that if you set your mind to it, you may
+        come up with a highly innovative solution to any problem.
+        </p>
+    
+        `
+    } else if (balText === '6' || balText === '15/6' || balText === '24/6' || balInt[balInt.length - 1] === '6') {
+        bnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Balance Number is a tool that assists us in dealing with real-life
+            circumstances/crises and issues. It instructs you on how to handle
+            challenging situations. It's calculated by adding the numerical value of
+            your complete name's initials at birth.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Balance Number 6</h3> <br>
+        <p>
+        You are a positive individual, and sadly, your strength is required in
+        some scenarios. Let's not be frightened to assume responsibility since
+        you are the best person for the job. During difficult times in your life, try
+        to restrict your interactions with others since they might make you
+        angrier, sad, or encourage due process notions in you, which will only
+        aggravate the situation. You lose confidence in your own talents while
+        having certain great attributes. To fix an issue, you seek advice from
+        others. You should also be aware of your own talents and appreciate
+        your own as well as others' judgments. In life, you must adopt a more
+        balanced perspective. You hold people accountable for any mistakes
+        you make in life. It makes people have a poor image of you. In order
+        to be respected and appreciated by everyone, you should strive to be
+        more self-sufficient, dependable, and competent.
+        </p>
+    
+        `
+    } else if (balText === '7' || balText === '16/7' || balText === '25/7' || balInt[balInt.length - 1] === '7') {
+        bnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Balance Number is a tool that assists us in dealing with real-life
+            circumstances/crises and issues. It instructs you on how to handle
+            challenging situations. It's calculated by adding the numerical value of
+            your complete name's initials at birth.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Balance Number 7</h3> <br>
+        <p>
+        You have a tendency to flee from life's challenges, understand that
+        you must confront the issues since they do not go away. Maintain a
+        level head and assess the situation analytically and with perceptive
+        thinking so that you can solve the issue more quickly. You must
+        develop the ability to combat your own fights. When confronted with a
+        challenging scenario, you withdraw inside your skin or head to protect
+        yourself. You must understand that your brain's precision and logical 
+        talents are adequate to supply you with the knowledge you need to
+        solve any problem and find a clear route to its solution. <br> <br>
+        However, you should prevent getting worked up about little problems
+        because this will not address the situation. Rather than avoiding
+        difficulties, learn to address them and find a solution. You must be
+        able to regulate your emotions or feelings and think rationally. Attempt
+        to stay focused, no matter how much you want to hide, and try to
+        guide it all the way to the conclusion. If you refuse to deal with
+        difficulties, they will simply become more serious and detrimental.
+        Surround yourself with individuals who can either assist you or at the 
+        </p>
+    
+        `
+    } else if (balText === '8' || balText === '17/8' || balText === '26/8' || balInt[balInt.length - 1] === '8') {
+        bnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Balance Number is a tool that assists us in dealing with real-life
+            circumstances/crises and issues. It instructs you on how to handle
+            challenging situations. It's calculated by adding the numerical value of
+            your complete name's initials at birth.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Balance Number 8</h3> <br>
+        <p>
+        You're the one who lends a hand and usually assists people in
+        navigating difficult situations. When you're having a hard time, be
+        truthful with yourself and seek a positive resolution. You are impatient
+        and you prefer to do and finish things as quickly as possible at all
+        costs. You must learn to be methodical and structured. When
+        confronted with a difficulty, you get confused, scared, and nervous, by
+        making the problem bigger than it is. <br> <br>
+        You make compromises with your honor and fairness from time to
+        time. While you can employ manipulative and cruel strategies to fix
+        your difficulties. You must recognize that everything has its own place
+        and time. As a result, it must be dealt with at a certain moment, and
+        losing your patience will not assist you. Using shortcuts to address an
+        issue is not the simple way out, and it might lead to problems in the
+        future. To discover solutions to your challenges, be creative; don't be
+        too domineering and don't impose your option on others; instead,
+        consider their worries and thoughts while coming up with a complete
+        conclusion.
+        
+        </p>
+    
+        `
+    } else if (balText === '9' || balText === '18/9' || balText === '27/9' || balInt[balInt.length - 1] === '9') {
+        bnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Balance Number is a tool that assists us in dealing with real-life
+            circumstances/crises and issues. It instructs you on how to handle
+            challenging situations. It's calculated by adding the numerical value of
+            your complete name's initials at birth.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Balance Number 9</h3> <br>
+        <p>
+        You were born to be a mediator since you usually discover solutions
+        that are both equal and practical for all parties involved. You treat
+        others with respect and expect the same in return. Though you are a
+        kind person, you lack initiative and are unresponsive to difficulties.
+        Don't wait for time to solve these issues; take action now. You should
+        not be frightened of making errors; they are just transitory, and taking
+        a passive approach to them will only prolong their impact on your life.
+        By nature, you are sympathetic and understanding. You, on the other
+        hand, have a propensity to remain distant. <br> <br>
+        You enjoy isolation, yet you are always willing to support and assist
+        others in their moments of need. People have a tendency to 
+        misinterpret you because of your introverted personality. To resolve
+        problems, you must demonstrate compassion and patience. You
+        should realize that love may help you achieve a lot. Instead of being
+        detached, learn to become connected with people and their issues.
+        You have a propensity to withdraw into an aloofness in which you
+        imagine yourself to be an elite above the rest. Being more practical
+        and realistic can help you identify answers. Helping and giving to
+        others will bring you benefits.
+        </p>
+    
+        `
+    }
 
 
 
@@ -6713,7 +7400,7 @@ your    cool or temper.
         };
     };
     ssNum.innerHTML = count;
-
+    
 
 
 
@@ -6759,11 +7446,405 @@ your    cool or temper.
     var test = mainNumString.split(',');
     var testLength = 9 - test.length;
     ssNum.innerHTML = testLength;
+
+    var subConText = (ssNum.textContent).trim();
+    var subConInt = subConText.split('/');
+
+    if (subConText === '3' || subConText === '12/3' || subConText === '21/3' || subConInt[subConInt.length - 1] === '3') {
+        ssText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Subconscious Self Number reflects your belief in yourself, your
+            unique perspective on your skills and prospects, as well as <span class="underline">how you
+            behave in stressful and unusual situations</span>. Also shows how you deal
+            with difficult problems or something new. It helps in determining how to
+            appropriately respond and react or how to increase your selfconfidence and assertiveness so that you can effectively tackle life's
+            obstacles. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Subconcious Self Number 3</h3> <br>
+        <p>
+        You want other people to help and support you with your difficulties if
+        you have Subconscious Self number 3, you will continue to have
+        troubles in your life until you learn to confront your problems on your
+        own. In most cases, you rely on the help of your family members and
+        friends to get through a crisis. For help and support, you will look for a
+        long-term partner at a young age. You're more likely to date someone
+        older than you who can provide you with stability and safety. You lack
+        self-assurance and are easily upset. Allowing depression to overcome
+        you is not a good idea. You might be too emotional, trust the wrong
+        kind of people, and be disorganized at times. Discipline, attention,
+        excellent judgment, and guidance are all required for success.
+        
+        </p>
     
+        `
+    } else if (subConText === '4' || subConText === '13/4' || subConText === '31/4' || subConInt[subConInt.length - 1] === '4') {
+        ssText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Subconscious Self Number reflects your belief in yourself, your
+            unique perspective on your skills and prospects, as well as <span class="underline">how you
+            behave in stressful and unusual situations</span>. Also shows how you deal
+            with difficult problems or something new. It helps in determining how to
+            appropriately respond and react or how to increase your selfconfidence and assertiveness so that you can effectively tackle life's
+            obstacles. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Subconcious Self Number 4</h3> <br>
+        <p>
+        When presented with details, you thoroughly immerse yourself inside
+        them and become entirely lost. It makes it challenging for you to make
+        a choice, and vacillation may be crushing. You have a tendency for
+        obsessing over minor things, which leads to a lack of attention,
+        disorientation, and uncertainty. It may even render you incapable of
+        reacting fast and strongly. You're notorious for being slow/sluggish to
+        respond to problems. You're possibly uncertain and prone to
+        procrastination since you're not confident. Understand that a calm and
+        steady pace is the best way to go. You should be more focused and
+        confident in your abilities to make rapid and confident judgments.
+        </p>
+    
+        `
+    } else if (subConText === '5' || subConText === '14/5' || subConText === '23/5' || subConInt[subConInt.length - 1] === '5') {
+        ssText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Subconscious Self Number reflects your belief in yourself, your
+            unique perspective on your skills and prospects, as well as <span class="underline">how you
+            behave in stressful and unusual situations</span>. Also shows how you deal
+            with difficult problems or something new. It helps in determining how to
+            appropriately respond and react or how to increase your selfconfidence and assertiveness so that you can effectively tackle life's
+            obstacles. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Subconcious Self Number 5</h3> <br>
+        <p>
+        You are chaotic and undisciplined, and you have a difficult time
+        devoting yourself to almost anything. You quickly lose interest and
+        focus. Your escapist impulses cause more harm than good. You are
+        anxious at times and avoid addressing issues. Instead of
+        understanding the fundamental causes of the problem, you want to
+        force change to avoid challenges. You really need to be more
+        balanced and accountable, and you need to look for something to
+        anchor you.
+        </p>
+    
+        `
+    } else if (subConText === '6' || subConText === '15/6' || subConText === '24/6' || subConInt[subConInt.length - 1] === '6') {
+        ssText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Subconscious Self Number reflects your belief in yourself, your
+            unique perspective on your skills and prospects, as well as <span class="underline">how you
+            behave in stressful and unusual situations</span>. Also shows how you deal
+            with difficult problems or something new. It helps in determining how to
+            appropriately respond and react or how to increase your selfconfidence and assertiveness so that you can effectively tackle life's
+            obstacles. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Subconcious Self Number 6</h3> <br>
+        <p>
+        Because you are a responsible person, you sacrifice yourself for
+        others while neglecting your own needs. The main focus in your life is
+        your family. When you're in a bad mood or facing troubles, you run to
+        your relatives and friends for support and assistance, but you must
+        eventually grow as an individual and be responsible.
+        </p>
+    
+        `
+    } else if (subConText === '7' || subConText === '16/7' || subConText === '25/7' || subConInt[subConInt.length -1 ] === '7') {
+        ssText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Subconscious Self Number reflects your belief in yourself, your
+            unique perspective on your skills and prospects, as well as <span class="underline">how you
+            behave in stressful and unusual situations</span>. Also shows how you deal
+            with difficult problems or something new. It helps in determining how to
+            appropriately respond and react or how to increase your selfconfidence and assertiveness so that you can effectively tackle life's
+            obstacles. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Subconcious Self Number 7</h3> <br>
+        <p>
+        Despite the fact that you are capable of dealing with life's obstacles
+        and effectively overcoming them. In difficult situations, on the other
+        hand, you withdraw into yourself and your mind, becoming emotionally
+        distant and disturbed. Therefore, as a result, you tend to separate
+        yourself and spend time alone for self-analysis. People tend to
+        misinterpret you during these moments, and they may perceive you as
+        cold and distant. You have an analytical mindset and strive to discover
+        solutions to all difficulties. Normally, you look unconcerned about your
+        surroundings and maintain a detached demeanor. You must learn to
+        connect with others in difficult times instead of retreat and believe in
+        your ability to withstand whatever storms life throws at you.
+        </p>
+    
+        `
+    } else if (subConText === '8' || subConText === '17/8' || subConText === '26/8' || subConInt[subConInt.length - 1] === '8') {
+        ssText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Subconscious Self Number reflects your belief in yourself, your
+            unique perspective on your skills and prospects, as well as <span class="underline">how you
+            behave in stressful and unusual situations</span>. Also shows how you deal
+            with difficult problems or something new. It helps in determining how to
+            appropriately respond and react or how to increase your selfconfidence and assertiveness so that you can effectively tackle life's
+            obstacles. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Subconcious Self Number 8</h3> <br>
+        <p>
+        You can get through everything life throws at you, and you can
+        effectively handle abrupt and unexpected events, frequently making
+        the most of them. You have the ability to rapidly learn from your
+        mistakes and repair them. You're recognized for being able to
+        overcome adversity and emerge stronger than before. So, you're
+        realistic when it comes to challenges, fast to adapt to changes, and
+        don't get into bad patterns. You want to be appreciated and rewarded
+        for your work, and you want to be able to quantify your achievement.
+        You are well-versed in financial and monetary stuff. Therefore, you
+        can deal with any issue or crisis without displaying undue worry and
+        do so effectively. You certainly know how to avoid being paralyzed by
+        fear.
+        </p>
+    
+        `
+    } else if (subConText === '9' || subConText === '18/9' || subConText === '27/9' || subConInt[subConInt.length - 1] === '9') {
+        ssText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Subconscious Self Number reflects your belief in yourself, your
+            unique perspective on your skills and prospects, as well as <span class="underline">how you
+            behave in stressful and unusual situations</span>. Also shows how you deal
+            with difficult problems or something new. It helps in determining how to
+            appropriately respond and react or how to increase your selfconfidence and assertiveness so that you can effectively tackle life's
+            obstacles. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Subconcious Self Number 9</h3> <br>
+        <p>
+        Even though your emotions are strong, it might be difficult, to be
+        honest about them. Problems that arise in your life have little impact
+        on you. You like to stay in your own little world. Though you
+        remain alone and don’t typically seek the support of others, you tackle
+        hard situations with confidence and skill. It's tough for others to
+        comprehend you because of your reserved personality. You are
+        unconcerned with other people's problems or feelings and are cold.
+        Although you are often efficient and poised in the face of
+        adversity, you can also be arrogant, cold, withdrawn, and unable to
+        see your own flaws. You should try to keep your anger under control
+        and maintain a laidback attitude.
+        
+        </p>
+    
+        `
+    }
+    
+
+
     filteredNum = mainNumString;
     klNum.innerHTML = filteredNum;
 
+    var klcText = (klNum.textContent).trim();
+    var klcInt = klcText.split('/');
 
+    if (klcText === '1' || klcText === '10/1' || klcInt[klcInt.length - 1] === '1') {
+        klText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Karmic Lessons disclose weaknesses or undeveloped parts. It is
+            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+            observing the missing numbers, you can gain an understanding and
+            insight into what you can do to help you overcome some of the
+            potential disadvantages of the missing characteristics these numbers
+            signify
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Karmic Lesson Number 1</h3> <br>
+        <p>
+        You lack confidence, are afraid to lead, and need to build strength. Be
+        more self-reliant by learning to think for yourself. The moral of the
+        lesson is to be more determined, decisive, resolute, and independent.
+        When the situation calls for it, try to be more aggressive. You may
+        work on being more confident in your daily chores, with others, and
+        while evaluating your own decisions, talents, and actions. 
+        </p>
+    
+        `
+    } else if (klcText === '2' || klcText === '20/2' || klcInt[klcInt.length - 1] === '2') {
+        klText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Karmic Lessons disclose weaknesses or undeveloped parts. It is
+            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+            observing the missing numbers, you can gain an understanding and
+            insight into what you can do to help you overcome some of the
+            potential disadvantages of the missing characteristics these numbers
+            signify
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Karmic Lesson Number 2</h3> <br>
+        <p>
+        Your lesson is that you must know when it is appropriate to say
+        something and what the appropriate response is. You must pay more
+        attention, be more conscious, and be more sensitive to others around
+        you. When working with others, you may become a valuable member
+        of the team by cooperating, being diplomatic, and being patient. Learn
+        to collaborate more effectively with others and to be more
+        compassionate. Therefore, you should learn to work better with others
+        and be sensitive toward them so that you can keep the peace. 
+        </p>
+    
+        `
+    } else if (klcText === '3' || klcText === '12/3' || klcText === '21/3' || klcText === '30/3' || klcInt[klcInt.length - 1] === '3') {
+        klText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Karmic Lessons disclose weaknesses or undeveloped parts. It is
+            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+            observing the missing numbers, you can gain an understanding and
+            insight into what you can do to help you overcome some of the
+            potential disadvantages of the missing characteristics these numbers
+            signify
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Karmic Lesson Number 3</h3> <br>
+        <p>
+        When you're in the limelight, you shouldn't expect too much of
+        yourself. Be creative/imaginative and learn to see the positive side of
+        things. 
+        </p>
+    
+        `
+    } else if (klcText === '4' || klcText === '13/4' || klcText === '31/4' || klcInt[klcInt.length - 1] === '4' ) {
+        klText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Karmic Lessons disclose weaknesses or undeveloped parts. It is
+            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+            observing the missing numbers, you can gain an understanding and
+            insight into what you can do to help you overcome some of the
+            potential disadvantages of the missing characteristics these numbers
+            signify
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Karmic Lesson Number 4</h3> <br>
+        <p>
+        When it comes to your life's purpose and where you're heading, learn
+        to be more structured, royal, and disciplined. The lesson for you is to
+        be more careful, practical, and realistic in coping with whatever life
+        throws at you.
+        </p>
+    
+        `
+    } else if (klcText === '5' || klcText === '14/5' || klcText === '23/5' || klcInt[klcInt.length - 1] === '5') {
+        klText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Karmic Lessons disclose weaknesses or undeveloped parts. It is
+            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+            observing the missing numbers, you can gain an understanding and
+            insight into what you can do to help you overcome some of the
+            potential disadvantages of the missing characteristics these numbers
+            signify
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Karmic Lesson Number 5</h3> <br>
+        <p>
+        You must grip your independence and be more courageous and
+        daring. Accept change, adapt to new situations, and take a chance or
+        risk
+        </p>
+    
+        `
+    } else if (klcText === '6' || klcText === '15/6' || klcText === '24/6' || klcInt[klcInt.length - 1] === '6') {
+        klText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Karmic Lessons disclose weaknesses or undeveloped parts. It is
+            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+            observing the missing numbers, you can gain an understanding and
+            insight into what you can do to help you overcome some of the
+            potential disadvantages of the missing characteristics these numbers
+            signify
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Karmic Lesson Number 6</h3> <br>
+        <p>
+        Instead of avoiding your obligations, you should commit to them and
+        accept them. Learn to give of yourself and open out to others.
+        </p>
+    
+        `
+    } else if (klcText === '7' || klcText === '16/7' || klcText === '25/7' || klcInt[klcInt.length - 1] === '7') {
+        klText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Karmic Lessons disclose weaknesses or undeveloped parts. It is
+            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+            observing the missing numbers, you can gain an understanding and
+            insight into what you can do to help you overcome some of the
+            potential disadvantages of the missing characteristics these numbers
+            signify
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Karmic Lesson Number 7</h3> <br>
+        <p>
+        Your lesson is to concentrate more on gaining experience and
+        knowledge in any of your numerous subjects of interest. Everything
+        should be questioned, and you should allow yourself to explore and
+        study. Rather than wasting your energy, attempt to be more organized
+        and disciplined in order to reach your full potential.
+        
+        </p>
+    
+        `
+    } else if (klcText === '8' || klcText === '17/8' || klcText === '26/8' || klcInt[klcInt.length - 1] === '8') {
+        klText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Karmic Lessons disclose weaknesses or undeveloped parts. It is
+            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+            observing the missing numbers, you can gain an understanding and
+            insight into what you can do to help you overcome some of the
+            potential disadvantages of the missing characteristics these numbers
+            signify
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Karmic Lesson Number 8</h3> <br>
+        <p>
+        Your lesson is to be more open to outside help and other people's
+        perspectives. Try to be less stubborn and listen rather than just
+        hearing when it comes to advise about your assets, whether it's
+        money, material goods, or the people in your life. You may have
+        challenges in your professional life, and you may have poor judgment
+        of others. Learn to be self-disciplined and self-restrained.
+        </p>
+    
+        `
+    } else if (klcText === '9' || klcText === '18/9' || klcText === '27/9' || klcInt[klcInt.length -1] === '9') {
+        klText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Karmic Lessons disclose weaknesses or undeveloped parts. It is
+            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+            observing the missing numbers, you can gain an understanding and
+            insight into what you can do to help you overcome some of the
+            potential disadvantages of the missing characteristics these numbers
+            signify
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Karmic Lesson Number 9</h3> <br>
+        <p>
+        Your lesson is to be more understanding, helpful, accepting, and
+        compassionate with everyone in your life, including family, friends,
+        colleagues, and the rest of the public. Try to observe things from a
+        different angle.
+        </p>
+    
+        `
+    } 
     
 
 

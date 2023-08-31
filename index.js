@@ -31,6 +31,7 @@ var msuhdNum = document.getElementById('msuhdNum');
 
 var pNum = document.getElementById('pNum');
 var perText = document.getElementById('perText');
+var mperText = document.getElementById('mperText')
 var mpNum = document.getElementById('mpNum');
 
 var mText = document.getElementById('mText');
@@ -4286,6 +4287,7 @@ calculate.addEventListener('click', ()=> {
     var minorSoulUrgeInt = minorSoulUrgeText.split('/');
 
     if (minorSoulUrgeText === '1' || minorSoulUrgeText === '10/1' || minorSoulUrgeInt[minorSoulUrgeInt.length - 1] === '1')  {
+        console.log('hi')
         msuhdText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
@@ -4654,6 +4656,371 @@ calculate.addEventListener('click', ()=> {
     }
     pnHold = count ;
 
+
+    var personalityText = (pNum.textContent).trim();
+    var personalityInt = personalityText.split('/');
+
+    if (personalityText === '1' || personalityText === '10/1' || personalityInt[personalityInt.length - 1] === '1' ) {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the <span class='redLine'>Inner Dreams Number</span>. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 1</h3> <br>
+        <p>
+        You are driven, focused, and motivated, and you are capable of great
+        things in life. You appear to be somebody who knows what you want
+        and doing, is in complete control, and isn't afraid to take risks. You're
+        fiercely competitive, ambitious, and optimistic, and you're always ready
+        to fight for what you believe in. You're also a risk-taker, which is a
+        quality that helps you succeed. You're conscious of how you seem and
+        take care of your appearance. <br> <br>
+        You feel free to express yourself. You appear to be outgoing, creative,
+        brave and adventurous, honest, and capable of breaking new ground.
+        You give the impression of being a responsible leader, and your family
+        looks to you for guidance and wisdom. You're outspoken and forceful,
+        but you should be cautious of becoming overly aggressive and 
+        frightening others. You are easily irritated by criticism and rapidly lose
+your    cool or temper. 
+        </p>
+    
+        `
+    } else if (personalityText === '11/2' || personalityInt[0] === '11') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 11/2</h3> <br>
+        <p>
+        Collaboration, perfectionism, sensitivity, empathy, idealism, high
+        intelligence, and the ability to enlighten the world via your creative
+        ideas are all qualities you possess. You have a strong interest in the
+        arts and music. Though, you don't appear to be someone who has a
+        lot of confidence or who is at ease in front of the camera. You appear 
+        to be a very spiritual and intuitive person with a unique ability to
+        communicate with God. <br> <br>
+        Because of your mild nature, you are vulnerable to vicious individuals
+        and must take precautions. You also seem to be shy, quiet, and lowkey, interesting to talk to, compassionate, warm-hearted, and you pay
+        attention to others. You are powerful and stronger than you believe.
+        Your flaws include a lack of confidence, anxiety, and emotionality, as
+        well as a reluctance to pursue your passions. You may find it difficult
+        to adjust to change and are frequently criticized for your lack of
+        ambition. You may be dependent on others, worried, stressed,
+        unhappy, or nervous.
+        </p>
+    
+        `
+    } else if (personalityText === '22/4' || personalityInt[0] === '22') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 22/4</h3> <br>
+        <p>
+        You appear to be a skilled and reliable individual. You are a dedicated
+        worker who is focused, powerful, and successful in business. You
+        don't obsess over your appearance, instead, you concentrate on your
+        tasks. You want your work to be remembered. You may have battled
+        with your intrinsic strength as a child, and you've had to mature into it
+        as you've become older. You are a builder and a hard worker, and you
+        let nothing come between your dream. You are strong and talented.
+        You want to create something that can help society. Your flaws include
+        a lack of confidence, anxiety, inability to pursue your passions,
+        worried, stress, nervousness, and acting like a victim. 
+        </p>
+    
+        `
+    } else if (personalityText === '33/6' || personalityInt[0] === '33') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 33/6</h3> <br>
+        <p>
+        You appear to be a sympathetic, loving, pleasant person who is
+        concerned about everything and everyone. You'll speak out for those
+        unable to speak for themselves. You may be caring, teach others, and
+        provide a solid environment for yourself and your loved ones. You
+        have the potential to be an excellent nurse, doctor, adviser, counselor,
+        teacher, healer, and listener. You do not really care about stylish and
+        prefer to be at ease. You don't mind sacrificing yourself for others.
+        Your flaws include being a gossiper, getting involved in other people's
+        businesses, and being vulnerable. 
+        </p>
+    
+        `
+    } else if (personalityText === '2' || personalityText === '20/2' || personalityInt[personalityInt.length - 1] === '2') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 2</h3> <br>
+        <p>
+        You appear like someone who is warm, friendly, welcoming, intuitive,
+        open-minded, reliable, honest, responsible, humble and
+        understanding, trustworthy, peacemaker, cooperative, and a good
+        team player. Because of these characteristics, people like spending
+        time with you. You don't seem to be someone who gets overly excited
+        or too depressed, yet you might be monotonous at times. <br> <br>
+        You want to be in a relationship at all times because without it, you
+        feel sad. You have a seductive aura about you, which makes it simple
+        to draw others to you. You prefer to be in a quiet setting, and you try to
+        avoid clashes or confrontational. You may be shy, have low selfesteem, oversensitive, anxious, dislike being criticized, or be skeptical,
+        which are all flaws to be mindful of.
+        </p>
+    
+        `
+    } else if (personalityText === '3' || personalityText === '12/3' || personalityText === '21/3' || personalityText === '30/3' || personalityInt[personalityInt.length - 1] === '3') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 3</h3> <br>
+        <p>
+        You appear to be a vibrant, outgoing, pleasant, and creative individual
+        who is also highly attractive. You're a cheerful, sociable, humorous,
+        and upbeat individual. You have a fashionable personality and are
+        compassionate. With hard work and a little effort, you can have nice
+        things happen to you such as success. You may pay attention to a
+        number of different individuals, but it's difficult to devote a lot of time to
+        just one person. You have a captivating personality, excellent social
+        skills, diligent and responsible, possess exceptional intuition, and are
+        brave and confident. You may look materialistic and manipulative if
+        you utilize your insight and captivating charm to influence others for
+        your own gain.
+        </p>
+    
+        `
+    } else if (personalityText === '4' || personalityText === '13/4' || personalityText === '31/4' || personalityInt[personalityInt.length - 1] === '4') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 4</h3> <br>
+        <p>
+        You appear to be a person who is dependable, trustworthy, and
+        honest. You come across as a hardworking, rational person who
+        doesn't spend too much time worrying about how you look. Others
+        regard you as self-sufficient and dedicated. You're also extremely wellorganized and always have a clear and exact goal in mind. You
+        consistently prioritize your family and wish to keep them safe from
+        harm. <br> <br>
+        You value hard work and integrity and dislike taking shortcuts.
+        Because you are not adept at following other people's commands, you
+        may have difficulty in subordinate roles. You don't appreciate being
+        questioned about how you do things, either. You are focused, stable
+        and determined. People may also see you as controlling, bossy,
+        conservative, or suborn. 
+        </p>
+    
+        `
+    } else if (personalityText === '5' || personalityText === '14/5' || personalityText === '23/5' || personalityText === '32/5' || personalityInt[personalityInt.length - 1] === '5') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 5</h3> <br>
+        <p>
+        You appear to be a person who is interesting, outgoing, adventurous,
+        creative, lively, humorous, and unpredictable. You don't like to be tied
+        down and need to be able to move about freely. Others perceive you
+        as someone who easily changes his or her mind. You want to explore
+        the world and do things that other people are afraid of. You're
+        intelligent, energetic, and your fascinating stories frequently captivate
+        others around you. You're upbeat about life, enjoy traveling, and want
+        to make changes if something isn't right. <br> <br>
+        You can't be controlled by others since you want to be free at all times.
+        People enjoy spending time with you and are inspired by your bravery.
+        You're a quick learner who can quickly adjust to new surroundings.
+        You enjoy presenting yourself in a bright, flashy, or extravagant
+        manner and are willing to try everything. You like doing things that thrill
+        you, such as eating, socializing, traveling, drinking, and a variety of
+        other activities. You can have problems in your love life if your partner
+        isn’t satisfying you or willy to make changes that you like. You get
+        bored easily. You may be prone to overindulging in food, drugs,
+        alcohol, or sex.
+        
+        </p>
+    
+        `
+    } else if (personalityText === '6' || personalityText === '15/6' || personalityText === '24/6' || personalityInt[personalityInt.length - 1] === '6') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 6</h3> <br>
+        <p>
+        You appear to be someone who is nurturing, loving, compassionate,
+        sensitive, and enjoys looking after your family and others. You are
+        selfless and always eager to put others first, even if it means
+        sacrificing your own wishes and objectives. You just like assisting
+        people who are less fortunate without expecting something in return.
+        People believe they can turn to you for aid and that you can be
+        trustworthy. You are unconcerned with your appearance and want to
+        feel at ease. You are kind and approachable, which makes it simple
+        for others to approach you. You make an excellent therapist or
+        counselor because of your immense compassion. Your flaws include
+        being a gossiper, getting involved in other people's affairs, and being
+        vulnerable.
+        
+        </p>
+    
+        `
+    } else if (personalityText === '7' || personalityText === '16/7' || personalityText === '25/7' || personalityText === '34/7' || personalityInt[personalityInt.length - 1] === '7') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 7</h3> <br>
+        <p>
+        You appear to be clever, opinionated, independent, shy, secretive, and
+        occasionally mysterious, with a thirst for learning. You take life
+        seriously, don't require anybody else's help, and are quite intelligent.
+        You may be philosophical and intelligent yet cold, at least on the
+        outside. You dislike engaging with others and prefer to spend your
+        time alone. <br> <br>
+        You have a mysterious aura about you, and few people know anything
+        about you. Other people's ability to recognize you is frequently
+        hampered as a result of this. Your care for your looks fluctuates, but
+        when you do put out effort, it pays off. You enjoy doing things on your
+        own and are always able to solve challenges. You should be
+        conscious of your weaknesses, which include being aloof, loner,
+        suspicious, paranoid, and depressed.
+        </p>
+    
+        `
+    } else if (personalityText === '8' || personalityText === '17/8' || personalityText === '26/8' || personalityText === '35/8' || personalityInt[personalityInt.length - 1] === '8') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 8</h3> <br>
+        <p>
+        You appear to be a confident, industrious, motivated, focused,
+        powerful, highly competitive, ambitious, and well-informed individual.
+        You're confident in yourself, and others look to you to take command.
+        Your charm conveys strength and authority, and you are frequently
+        seen as a leader. You have excellent decision-making skills and are a
+        natural entrepreneur. <br> <br>
+        You may also appear to be extremely wealthy and accomplished. You
+        like giving and frequently contribute the majority of your money to
+        charity. You take pride in your appearance and strive to look your best
+        at all times. You might be a workaholic who is also selfish, but you
+        must consider other people, especially your romantic partner.
+        Whenever you do, you can be kind, loving, and enjoyable. Understand
+        that bossiness, dictatorial personality, misuse of authority, forceful,
+        greedy, materialistic, and always eager for money are all
+        your weaknesses.
+        
+        </p>
+    
+        `
+    } else if (personalityText === '9' || personalityText === '18/9' || personalityText === '27/9' || personalityText === '36/9' || personalityInt[personalityInt.length - 1] === '9') {
+        perText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Personality number is derived from the consonants of your full
+            name at birth. It describes how you come across to people when you
+            first meet. It’s your outside character, the you that you present to the
+            world. Therefore, if you want to know what other people think about
+            you, you need to know your personality number. The personality
+            number is called the Inner Dreams Number. 
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Personality Number 9</h3> <br>
+        <p>
+        You appear to be graceful, outgoing, talkative, like helping people,
+        charming, self-sacrifice, honest, charitable, kind, humanitarian, and
+        self-assured. Others look up to you because of how nicely you present
+        yourself. You have outstanding communication skills and like being in
+        the company of others. You appear calm, gentle, and concerned about
+        others, yet you might think too highly of yourself and be self-centered
+        at times. You're also a creative person who enjoys doing activities
+        relating to art forms. You're an excellent leader who can assist others
+        in becoming their greatest selves. You also enjoy meeting new people
+        and traveling. Your flaws are that you may be cold, aloof,
+        manipulative, narcissistic like to end things, and a loner.
+        
+        </p>
+    
+        `
+    }
+
     
 
 
@@ -4729,7 +5096,215 @@ calculate.addEventListener('click', ()=> {
         count = sum
     }
     mpHold = count ;
-    // mpNum.innerHTML = count ;
+
+    var minorPerText = (mpNum.textContent).trim();
+    var minorPerInt = (minorPerText.split('/'));
+
+    if (minorPerText === '1') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 1</h3> <br>
+        <p>
+        You appear like someone who is independent, ambitious, proactive,
+        freedom-loving, pioneering, innovative, motivated, self-centered,
+        uninhibited, reckless, or selfish. 
+        </p>
+    
+        `
+    } else if (minorPerText === '11/2' || minorPerInt[0] === '11') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 11/2</h3> <br>
+        <p>
+        You appear like someone who is collaborative, perfectionism, intuitive,
+        sensitive, empathetic, idealisms, high intelligence, ambitious, and has
+        the ability to enlighten the world via your creative ideas.
+        </p>
+    
+        `
+    } else if (minorPerText === '22/4' || minorPerInt[0] === '22') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 22/4</h3> <br>
+        <p>
+        You appear to be a skilled and reliable individual. You are a dedicated
+        worker who is focused, hard worker, powerful, successful in business,
+        and a builder.
+        
+        </p>
+    
+        `
+    } else if (minorPerText === '33/6' || minorPerInt[0] === '33') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 1</h3> <br>
+        <p>
+        You appear to be a sympathetic, loving, nurturing, peaceful, and
+        pleasant person who is concerned about everyone. 
+        </p>
+    
+        `
+    } else if (minorPerText === '2' || minorPerText === '20/2' || minorPerInt[minorPerInt.length - 1] === '2' === '2') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 2</h3> <br>
+        <p>
+        You appear like someone who is diplomatic, caring, sensitive,
+        influential, cooperative, inclusive, intuitive, supportive, empathetic, and
+        protective. 
+        </p>
+    
+        `
+    } else if (minorPerText === '3' || minorPerText === '12/3' || minorPerText === '21/3' || minorPerText === '30/3' || minorPerInt[minorPerInt.length - 1] === '3') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 3</h3> <br>
+        <p>
+        You appear like someone who is artistic, communicative, curious,
+        creative, cheerful, scattered, social, positive, naïve, youthful, funny,
+        and playful. 
+        </p>
+    
+        `
+    } else if (minorPerText === '4' || minorPerText === '13/4' || minorPerText === '31/4' || minorPerInt[minorPerInt.length - 1] === '4') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 4</h3> <br>
+        <p>
+        You appear like someone who is strong, traditional, practical, hard
+        worker, trustworthy, organized, strict, easy-going, and reliable. 
+        </p>
+    
+        `
+    } else if (minorPerText === '5' || minorPerText === '14/5' || minorPerText === '23/5' || minorPerInt[minorPerInt.length - 1] === '5') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 5</h3> <br>
+        <p>
+        You appear like someone who is flexible, adventurous, changeable,
+        unpredictable outgoing social, restless, energetic, independent,
+        freedom-loving, inconsistent, unfaithful. 
+        </p>
+    
+        `
+    } else if (minorPerText === '6' || minorPerText === '15/6' || minorPerText === '24/6' || minorPerInt[minorPerInt.length - 1] === '6') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 6</h3> <br>
+        <p>
+        You appear like someone who is caring, healing, loving,
+        compassionate, nurturing, protective, idealistic, romantic, warm,
+        harmonious, gentle, and easygoing. 
+        </p>
+    
+        `
+    } else if (minorPerText === '7' || minorPerText === '16/7' || minorPerText === '25/7' || minorPerInt[minorPerInt.length - 1] === '7') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 7</h3> <br>
+        <p>
+        You appear like someone who is insightful, intellectual, mysterious,
+        intuitive, spiritual, reserved, skeptical, knowledgeable, solitary,
+        introspective, shy, analytical, mistrustful, distant, or a loner.
+        </p>
+    
+        `
+    } else if (minorPerText === '8' || minorPerText === '17/8' || minorPerText === '26/8' || minorPerInt[minorPerInt.length - 1] === '8' ) {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 8</h3> <br>
+        <p>
+        You appear like someone who is accomplished, balanced, wealthy,
+        dedicated, prosperous, successful, authoritative, strong, professional,
+        risk-taker, materialistic, goal-oriented, business-minded, ambitious, or
+        forceful. 
+        </p>
+    
+        `
+    } else if (minorPerText === '9' || minorPerText === '18/9' || minorPerText === '27/9' || minorPerInt[minorPerInt.length - 1] === '9') {
+        mperText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The consonants in your present name, the name you use to identify
+            yourself in social circumstances, are used to generate your Minor
+            Personality Number
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Minor Personality Number 9</h3> <br>
+        <p>
+        You appear like someone who is kind, wise, experienced, spiritual,
+        sacrificial, compassionate, accepting, helping others, and
+        humanitarian. 
+        </p>
+    
+        `
+    }
 
 
     // Maturity Number 
@@ -4767,8 +5342,516 @@ calculate.addEventListener('click', ()=> {
         }
         mNum.innerHTML = sum;
     }
+
+    var matText = (mNum.textContent).trim();
+    var matInt = matText.split('/');
+
+    if (matText === '1' || matText === '10/1' || matInt[matInt.length - 1] === '1') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 1</h3> <br>
+        <p>
+        If your Maturity number is 1, you'll discover that as you get older, you'll
+        require more freedom and individualism. You learn how to be a leader,
+        a risk-taker, ambitious, opinionated, and someone who is eager to try
+        new things. You'll battle tooth and nail for the recognition and rewards
+        you believe you deserve, and you'll be less ready to accept defeat,
+        failure, or limits in any form. Your ability to take command and provide
+        very solid advice will improve, as will your drive, determination, and
+        passion. <br> <br>
+        People will look to you for good guidance. Other people may even
+        attempt to mimic or replicate you. You become more successful, and
+        this is where you lay the foundation for future achievement, as well as
+        a life filled with excitement, adventure, and other things that will help
+        If your Maturity number is 1, you'll discover that as you get older, you'll
+        require more freedom and individualism. You learn how to be a leader,
+        a risk-taker, ambitious, opinionated, and someone who is eager to try
+        new things. You'll battle tooth and nail for the recognition and rewards
+        you believe you deserve, and you'll be less ready to accept defeat,
+        failure, or limits in any form. Your ability to take command and provide
+        very solid advice will improve, as will your drive, determination, and
+        passion.
+        People will look to you for good guidance. Other people may even
+        attempt to mimic or replicate you. You become more successful, and
+        this is where you lay the foundation for future achievement, as well as
+        a life filled with excitement, adventure, and other things that will help  
+        </p>
+    
+        `
+    } else if (matText === '11/2' || matInt[0] === '11') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 11/2</h3> <br>
+        <p>
+        If your maturity number is master 11, you will be an inspirational
+        teacher when you grow up. You are diplomatic, crave love, sensitive,
+        and peacemaker. You could also find the mate you've been looking
+        for, as well as the harmony you desire. This master 11 maturity, points
+        to a higher sense of spiritual purpose. You may have had a lot of
+        difficulties and obstacles in your early years, such as being overly
+        sensitive and experiencing that you don't fit in. You may have come
+        from a dysfunctional family or home. But keep in mind that it is your
+        ability to overcome tremendous obstacles that make you so
+        inspirational and motivating to others. <br> <br>
+        People will frequently look to you for guidance and influence. You'll be
+        pushed into spirituality, and if you haven't already, something or an
+        event will occur that will force you to do so. You may undergo a
+        spiritual awakening where you find that you have psychic abilities and
+        may investigate the spiritual realm. Premonitions, vivid dreams, having
+        a clear audience, clairvoyance, and clear cognizance (clear hearing,
+        seeing, and thinking) are all examples of psychic experiences. In your
+        mid-30s, you'll notice significant changes in your intuition or psychic
+        abilities. Therefore, you should allow your intuition to guide you
+        through life. You'll even be more sensitive to the energies around you,
+        and you'll be surprised at how factual your first impressions or insights
+        are. You may find yourself drawn to spiritual activities. <br> <br>
+        Traditional religion will not suffice, and you may try to take spirituality
+        to the next step, beyond societal expectations and standards. As you
+        become older, you'll have a better grasp of life and everything, and
+        you'll begin to have greater trust in your Divine skills. Understand that
+        you may encounter more intense challenges. Personal problems and
+        physical and emotional sensitivity are all areas where you'll be put to
+        the test time and above. Because of this maturity number 11, you may
+        become pickier about who you let into your life because many people
+        may judge you. Thus, you must avoid being overly sensitive. Try to be
+        confident and do not judge when speaking about life experiences
+        since you may find fame with this Maturity number 11. 
+        </p>
+    
+        `
+    } else if (matText === '22/4' || matInt[0] === '22') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 22/4</h3> <br>
+        <p>
+        You might be practical and hardworking if your maturity number is
+        master 22. You have a strong need for structure and order, and you
+        know how to construct something solid from the bottom up. People
+        with this maturity number sometimes have a lot of difficulty and
+        challenges in the early stages of their lives since they are exceedingly
+        sensitive and potentially feel quite vulnerable. You may have found it
+        difficult to accept responsibility for your actions. However, as you grow 
+        older, you will gain greater power by being able to utilize your unique
+        personal strength to achieve your goals. <br> <br>
+        You'll learn how to inspire others and, more often than not, you'll do so
+        without really trying. This maturity number has many blessings, but the
+        secret to acquiring those rewards comes from your capacity to
+        improve your self-confidence. As a result, as you become older,
+        establishing self-confidence will be a major topic in your life, and you
+        will grow in this area. You may go through a phase of devastation in
+        your life, which may be quite upsetting, but this devastation occurs
+        solely so that bigger and innovative things can be developed since all
+        acts of invention began with actions of demolition. Understand that
+        things will get better and more solid in your environment at this time.
+        You may be humble, realistic, and enjoy developing something as you
+        get older. You will build something long-lasting that benefits society. 
+        </p>
+    
+        `
+    } else if (matText === '33/6' || matInt[0] === '33') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 33/6</h3> <br>
+        <p>
+        If you have a master 33 maturity number, you care deeply about
+        others and will sacrifice yourself for others. You can build the family
+        you desire as you become older, and you can discover the joy you
+        deserve. People with this maturity number normally have a lot of
+        trouble in the early stages of their lives since they are very sensitive
+        and may feel like they don't fit. However, as you grow older, your
+        capacity to heal or educate others will become progressively strong. <br> <br>
+        But, because 33 is the master healer and teacher, God will place you
+        in situations or positions where you can provide healing and
+        educate those in need as you grow older, but first, you must heal
+        yourself. So much of your journey will be one of self-healing, whether
+        physically, emotionally, cognitively, or spiritually. You will heal yourself
+        from all of the tragedies you have suffered throughout your life as a
+        result of this process, and you will then be able to heal others or
+        educate them on how to heal themselves. It is entirely up to you how
+        you go about doing this. People with this maturity number frequently
+        have a youthful character as well as a more responsible nature.
+        </p>
+    
+        `
+    } else if (matText === '2' || matText === '20/2' || matInt[matInt.length -1] === '2') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 2</h3> <br>
+        <p>
+        If your maturity number is 2, you'll notice that as you get older, your
+        capacity to work with people improves, as does your ability to be
+        diplomatic and patient with others. You become social, prefer
+        harmony, sensitive, and you want to preserve the peace. These skills
+        can help you advance in your job, business, or whatever endeavor you
+        are pursuing in life. Your sensitivity will expand, as will your capacity to
+        pick up on various types of information. As you get older, you will find
+        the spouse and harmony that you desire. You'll become more
+        sensitive to other people's wants and desires. Because of your
+        sensitivity, you'll become a much more empathic person. <br> <br>
+        You'll be able to accurately assess other people's intentions, desires,
+        and thoughts. You'll be able to do a lot more by being nice to others
+        rather than using force. You may be taking on a more supportive
+        position at this period, rather than being the one in charge, and instead
+        of being the one who is there to help, your impact will be less visible.
+        You'll find that working as part of a team and cooperating with others
+        makes you happier. You'll have a better knowledge of how other
+        people feel, and you'll get along with them better. You'll find that as
+        you get older, you'll form more and more friendships, and people will
+        be drawn to you because of your sympathetic and kind ways, and
+        you'll attract more romantic partners. It’s possible you may find
+        yourself becoming more dependent on others instead of yourself and
+        overly sensitive later on in life. 
+        </p>
+    
+        `
+    } else if (matText === '3' || matText === '12/3' || matText === '21/3' || matText === '30/3' || matInt[matInt.length - 1] === '3') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 3</h3> <br>
+        <p>
+        If your maturity number is 3, you'll get more cheerful, upbeat, playful,
+        sociable, fun, happy, expressive, and outgoing as you get older. Your
+        capacity to think creatively will increase and your ability to
+        communicate and express yourself will improve. You may be inspired
+        to take up some creative activities and become more involved in some
+        form of self-expression such as writing, music, or something more
+        creative but also more public such as acting or public speaking. <br> <br>
+        You'll grow more fluent in your ability to interact with others and
+        express your ideas and views, and you'll be able to convince people in
+        ways you've never been able to before. Even though you never
+        anticipated or desired it, you may wind up being famous. You could 
+        begin to express yourself more through the way you dress, decorating,
+        or hairstyling. You may begin podcasting, writing, designing,
+        communicating, using social media, and other forms of expression as
+        time goes on. You must be extremely cautious not to be seduced by
+        superficial looks or to pursue glitter and extravagance. Try not to
+        squander your energy and money by scattering your resources.
+        </p>
+    
+        `
+    } else if (matText === '4' || matText === '13/4' || matText === '31/4' || matText === '40/4' || matInt[matInt.length - 1] === '4') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 4</h3> <br>
+        <p>
+        If your maturity number is 4, then you're going to notice that as you
+        grow older, you're going to become a lot more down-to-earth, practical,
+        organized, focused, hardworking, determined, accomplishment, goaloriented, dependable. You'll become more helpful, honest, reliable,
+        trustworthy, and stable. You have a strong need for structure and
+        order, and you know how to construct something solid from the bottom
+        up. You may find it difficult to accept responsibility for mistakes. You
+        may be humble, realistic, and enjoy developing something enduring as
+        you become older. You might wish to guard against becoming overly
+        controlling, stiff, or stubborn. You must ensure that you relax,
+        meditate, take time out, take breaks, spend time with family and
+        friends, and as well as enjoy life.
+        </p>
+    
+        `
+    } else if (matText === '5' || matText === '14/5' || matText === '23/5' || matText === '32/5' || matInt[matInt.length - 1] === '5') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 5</h3> <br>
+        <p>
+        If your maturity number is 5, you like change, independence, and
+        adventure as you get older. You're not scared to take risks and try new
+        things. You'll gain a lot of strength and energy, and you'll become
+        more lively and charming, as well as more fast-paced, while others
+        slow down. You'll undoubtedly strive to enjoy yourself. <br> <br>
+        You will prefer to travel and discover new. You'll be more sociable,
+        outgoing, daring, free, friendly, romantic, charming, flexible, funny,
+        playful, thrilling, energetic, adaptive, accepting, dynamic, and
+        resourceful. You may be a globe traveler and an explorer while still
+        remaining youthful at heart. However, you may get restless and
+        impatient. You may easily fall in love with something, only to get bored
+        and lose interest in it. It's possible that you'll become addicted,
+        unstable, and unpredictable. You should try to maintain your focus and
+        self-discipline. 
+        </p>
+    
+        `
+    } else if (matText === '6' || matText === '15/6' || matText === '24/6' || matInt[matInt.length - 1] === '6') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 6</h3> <br>
+        <p>
+        If your maturity number is 6, as you grow older, you will become more
+        concerned with the people in your life, your family, friends, and
+        community/volunteering work. You're going to become more
+        concerned with their well-being and taking care of them. As you get
+        older, you will be more kind, accepting, compassionate, gentle, 
+        respectful, peaceful, stable, responsible, loving, caring, devoted,
+        caretaker, domestic, harmonious, balanced, and attractive. You’ll
+        demonstrate a warm and welcoming energy that others want to be
+        around. You have a natural ability to collaborate with others and offer
+        assistance and guidance. <br> <br>
+        As you grow older, romantic relationships, family, and home will be
+        very important to you. You want to take care of everyone around you
+        by being the nurturer, the supporter, and the comforter. You're going to
+        be drawn into all kinds of roles where you have to take responsibility
+        for helping, teaching, counseling, and healing people. You will create
+        the family that you always wanted and find happiness. You will create
+        financial stability for yourself and build a foundation for future
+        generations. You will also be surrounded by lots of friends and family
+        in your older years. You should try to avoid becoming too perfectionist
+        or self-sacrificing.
+
+        </p>
+    
+        `
+    } else if (matText === '7' || matText === '16/7' || matText === '25/7' || matInt[matInt.length - 1] === '7') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 7</h3> <br>
+        <p>
+        If your maturity number is 7, as you become older, you live your life
+        the way you want to live it, which is unique to you. You attempt to
+        study as much as possible and spend a lot of time alone in search of
+        knowledge. You may think and reflect as much as you like, and you
+        can share the wisdom you've received. You'll grow increasingly
+        preoccupied with life's larger issues or questioning, such as the
+        purpose of life, why we're here, what we're doing on this planet, and
+        why things are occurring the way they are. You'll be drawn to
+        philosophy, or religion, if not esoteric arts. You'll be looking at a
+        number of new concepts and broadening your knowledge in a variety
+        of fields. <br> <br>
+        As you become older, your intuition will get stronger and stronger.
+        You may have strong intuition at first, but around the age of 35 or
+        older, you'll realize that you're becoming more psychic and developing
+        psychic talents like clear cognition, clairaudience, and clairvoyance
+        (clear thinking, hearing, and seeing). As you become older, your
+        capacity to evaluate abstract topics and concepts will improve, and
+        you will begin to live according to higher values. You'll have a better
+        knowledge of life and be able to perceive things for what they truly are,
+        as well as connect with the spiritual realm in ways you've never been
+        able to. You may find that you want to spend more time alone and
+        have more privacy. You may decide to relocate to the suburbs or a
+        small town because you want more time to relax and enjoy the peace
+        and quiet. You definitely don't want to become overly withdrawn,
+        lonely, paranoid, suspicious, too secretive, and isolated which are the
+        negative traits of the 7 number. 
+        </p>
+    
+        `
+    } else if (matText === '8' || matText === '17/8' || matText === '26/8' || matInt[matInt.length - 1] === '8') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 8</h3> <br>
+        <p>
+        If your maturity number is 8, you'll become more successful,
+        ambitious, risk-taker, hard worker, achiever, driven, organized, and
+        financially stable as you become older. It's possible that you'll become
+        more committed to your work and profession. When it comes to
+        manifesting things, you'll realize that things are becoming easier for
+        you. If you've had problems manifesting your desires in the past, this
+        maturity 8 will undoubtedly assist you, since the number 8's energy is
+        all about power, money, and accumulating wealth. Your capacity to tap
+        into your own inner power will improve with time. You may see that
+        others begin to rely on you for financial assistance and resources. <br> <br>
+        You may become an expert at whatever you choose to do as you
+        become older and attain enlightenment. The universe will frequently
+        place you in higher-ranking positions or positions of leadership, and
+        you will be granted more authority over other people, organizations,
+        corporations, enterprises, and businesses. Your chances of achieving
+        success and financial freedom have greatly improved. To avoid
+        suffering from abrupt and devastating material losses, you will need to
+        be tough and self-disciplined. There can be financial gain, but there
+        can also be a financial loss because you'll be taking more risks. Simply
+        avoid having an oversized ego and use greater caution. You may
+        become materialistic and extremely selfish or greedy as a result of
+        your obsession with money.
+        
+        </p>
+    
+        `
+    } else if (matText === '9' || matText === '18/9' || matText === '27/9' || matInt[matInt.length - 1] === '9') {
+        mText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The maturity number also called <span class="redLine">Reality or Realization Number</span> is what
+            you may likely see in life once you've completed your childhood and
+            become a true adult (what you will become as you grow older). At the
+            age of 30, the energy of this number begins to have an effect on you,
+            and it begins to have a deeper impact on your life. Then after the age
+            of 35, you'll really start to notice the impact of this number, and that
+            influence will only expand as you get older. With the exception of
+            masters 11, 22, and 33, the maturity number is calculated by adding
+            the life path and destiny/expression numbers to produce a single digit.
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Maturity Number 9</h3> <br>
+        <p>
+        If you have a maturity number of 9, you must learn to embrace and
+        serve all of humanity. As you become older, you'll care more about
+        society and the environment. Your heart will open and strive toward
+        assisting others in some way, particularly via healing, teaching, or
+        charity. You'll be thinking a lot about how your community and the rest
+        of the planet are doing, you could feel compelled to get more involved
+        in public service. Your appreciation for both the arts, music, and
+        beauty will grow, and you may find yourself involved in some type of
+        creative art and design, or perhaps as a humanitarian. <br> <br>
+        As you become older, your wisdom and awareness of the world will
+        expand, and more people will seek your expert advice. You may be
+        placed in positions or situations where you will be called upon to help
+        others. As time passes, your intuitive and empathic talents will
+        improve, and you will become more sensitive to the energy around
+        you. You may be able to pick up on other people's energies as well. As
+        you become a caretaker to mankind, you will feel as if you are
+        genuinely making a difference and leaving a valuable long-lasting
+        impression in the world. Thus, you must avoid being arrogant, aloof,
+        distant, mentally unstable, cold, narcissistic, moody, or too sensitive.
+        </p>
+    
+        `
+    }
     
     
+
+        
 
 
     // Attitude Number 
@@ -4816,6 +5899,130 @@ calculate.addEventListener('click', ()=> {
         sumAttitude = sum;
     }
     aNum.innerHTML = sumAttitude;
+
+    var attitudeText = (aNum.textContent).trim();
+    var attitudeInt = attitudeText.split('/');
+
+    if (attitudeText === '1') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 1</h3> <br>
+        <p>
+        You give the impression that you’re competitive, a leader, driven, and
+        highly self-motivated. You are ambitious, original, responsible, loyal,
+        intelligent, insightful, courageous, innovative, confident, independent, 
+        and unconventional individualism. You are more likely to try new
+        avenues, take risks, and venture out into unknown territories. You
+        don’t usually ask for help. You’re at your best when you’re in a
+        leadership position. You’ll grapple with self-esteem issues, so you’ll
+        want praise from others to keep you moving. Weaknesses: loneliness,
+        depression, selfishness, isolation, huge ego. You may have a bossy
+        and dominating attitude. 
+        </p>
+    
+        `
+    } else if (attitudeText === '11/2' || attitudeInt[0] === '11') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 11/2</h3> <br>
+        <p>
+        You are at your best when you’re being an inspired teacher or healer
+        in whatever scopes you choose. You are compassionate, kind, caring,
+        extremely artistically creative, very intuitive, and emotionally sensitive.
+        You might give the imprint that you’re a bit peeling, too sensitive,
+        dreamy, and anxious. Can have an intense and struggling life. 
+        </p>
+    
+        `
+    } else if (attitudeText === '22/4' || attitudeInt[0] === '22') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 22/4</h3> <br>
+        <p>
+        You give an attitude of a builder. You’re were innate to be a Master
+        Builder who should create something useful and lasting for society.
+        You are a practical, self-absorbed, open-minded, organized, hard
+        worker, and honest. You’re at your best when you establish and
+        manage. You’re determined, stable, loyal, and reliable. Dark side: you
+        can be controlling, sensitive, a waste of talents, having an intense and
+        struggling life. 
+        </p>
+    
+        `
+    } else if (attitudeText === '2' || attitudeText === '20/2' || attitudeInt[attitudeInt.length - 1] === '2') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 2</h3> <br>
+        <p>
+        You give an attitude of someone that can get things accomplished
+        through kindness, diplomacy, being accommodating, and
+        collaboration. You have inborn abilities of communication skills,
+        negotiations, gentle, salesmanship, mediation, loving. You are softspoken. You have an easygoing manner and often display nervous
+        tension because you’re so concerned about managing everyone’s
+        emotions. You are naturally intuitive and love-centered. Relationships
+        are of the utmost importance to you. You’re compassionate and
+        always want a partnership. You can take everything personally and be
+        overly emotionally sensitive at times. You may be codependent and
+        unstable if you are on the negative side of this number. 
+        </p>
+    
+        `
+    } else if (attitudeText === '3' || attitudeText === '12/3' || attitudeText === '21/3' || attitudeText === '30/3' || attitudeInt[attitudeInt.length - 1] === '3') {
+        aText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Your Attitude number shows a great deal about your natural ability to
+        succeed at anything you choose to pursue. Also called <span class="redLine"> Achievement
+        Number. </span>
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Attitude Number 3</h3> <br>
+        <p>
+        You give an attitude of a creative genius, social, dynamic, and active.
+        You have inborn abilities of entertaining, presentation, motivating,
+        artistic, writing, playful, friendship, and fun. You five a performer’s
+        attitude. You can become very successful in any field related to
+        entertainment and performing arts. You’re also moody and scattered,
+        and you are often hard on yourself. You may have a habit of
+        lavishness, superficial, overspending, and immature thoughts.
+        </p>
+    
+        `
+    } 
 
 
 

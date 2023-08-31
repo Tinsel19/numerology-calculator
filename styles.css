@@ -374,3 +374,9 @@ select {
     text-decoration: underline;
     font-weight: bold;
 }
+
+.redLine {
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+}

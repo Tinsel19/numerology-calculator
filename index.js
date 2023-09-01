@@ -10571,9 +10571,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -10610,9 +10608,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -10650,9 +10646,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -10688,9 +10682,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -10723,9 +10715,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -10753,9 +10743,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -10790,9 +10778,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -10825,9 +10811,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -10863,9 +10847,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -10901,9 +10883,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -10947,9 +10927,7 @@ your    cool or temper.
         spCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Second</b> Period Cycle or Middle Period
                 - Throughout your middle years of life, you are on a tough
                 journey of personal development (about ages 28/30 to 55/60).
@@ -11079,9 +11057,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the
@@ -11115,9 +11091,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the
@@ -11151,9 +11125,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the
@@ -11189,9 +11161,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the
@@ -11222,9 +11192,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the
@@ -11252,9 +11220,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the
@@ -11283,9 +11249,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the
@@ -11316,9 +11280,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the
@@ -11347,9 +11309,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the
@@ -11383,9 +11343,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+            
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the
@@ -11419,9 +11377,7 @@ your    cool or temper.
         tpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+             
             <b>Third</b> Period or Final Cycle
                 - May signify the blossoming of our inner essence, bringing our
                 real nature to manifestation. This is the time when you have the

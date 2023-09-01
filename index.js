@@ -92,6 +92,7 @@ var spCycleText = document.getElementById('spCycleText');
 
 var tpCycle = document.getElementById('tpCycle');
 var tpCycleNum = document.getElementById('tpCycleNum');
+var tpCycleText = document.getElementById('tpCycleText');
 
 
 var fPin = document.getElementById('fPin');
@@ -10563,8 +10564,428 @@ your    cool or temper.
     };
 
 
-    var sCyceText = (spCycleNum.textContent).trim();
-    var sCyleInt = sCyceText.split('/')
+    var sCycleText = (spCycleNum.textContent).trim();
+    var sCycleInt = sCycleText.split('/');
+
+    if (sCycleText === '1' || sCycleText === '10/1' || sCycleInt[sCycleInt.length - 1] === '1') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 1</h3> <br>
+        <p>
+        You'll be ambitious, focused, determined, and able to do a lot; you'll
+        be a wonderful leader, but you'll be impatient. You'll almost certainly find
+        yourself in a position of leadership, which will boost your self-assurance
+        even further. <br> <br>
+        This is the moment to define your own objectives and commit all of your focus
+        and resources to accomplish them. You must put your abilities to good use in
+        order to succeed. Instead of depending on others, you should have faith in
+        yourself and depend on your talents and abilities. Keep a watch on the
+        objectives you've set for yourself. Work hard and conquer the challenges that
+        you face. <br> <br>
+        Know that this is a period of intensive activity that may provide opportunities
+        for personal advancement and growth. You'll have greater self-confidence and 
+        freedom when it comes to trying new things. At that moment, you will be
+        focused on your own goals and dreams. You will have the option of
+        breaking out on your own in a relationship or working for yourself.
+        During this time, divorce, separation, and singleness (loneliness) are all
+        common. During this period, you can do great things (starting a business or
+        something new) and lead others.
+
+        </p>
+    
+        `
+    } else if (sCycleText === '11/2' || sCycleInt[0] === '11') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 11/2</h3> <br>
+        <p>
+        An 11 is spiritual during the Second Period and tries to assist others with
+        their spiritual struggle. If you don't establish a balance, you may get
+        nervous. You will have a lot of spiritual growth, if not outright revelation. You
+        will be sensitive, cooperative, and kind. You will gain knowledge and wisdom.
+        This is not the time to pursue personal material aspirations, but rather to
+        explore larger human values. <br> <br>
+        It's a moment of enormous spiritual development, insight, and inspiration.
+        You can be drawn to the spiritual realm if you have psychic powers such as
+        clairvoyance, clear hearing, and clear seeing. You are a messenger, and you
+        will have many visions during this time. You may also gain fame and popularity. <br> <br>
+        Understand that in this period, you have a message or a skill that should
+        be presented among your society, but this gift can only be provided via
+        significant personal development and improved by expressing yourself. The
+        more determined you are to improve yourself, the greater the ability you'll
+        have to help the rest of the world. There is a tremendous reward for those
+        who adopt and embrace this route, including plenty of financial assistance
+        and even celebrity. There's also the added joy of knowing that your
+        attempts have aided individuals' growth. You will inspire many people
+        through your teaching and experiences.
+
+        </p>
+    
+        `
+    } else if (sCycleText === '22/4' || sCycleInt[0] === '22') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 22/4</h3> <br>
+        <p>
+        If your 2nd Period Cycle is a 22 Master, you have a lot of potential for creating a
+        long-lasting organization, something, or teaching that will help a lot of people.
+        You have the power to make a notion, a dream, or an innovation come true.
+        You've reached the height of your abilities as a builder, planner, and
+        visionary. You are able to identify the needs of others and develop creative
+        and realistic solutions to meet those needs. You devote your complete
+        attention to the task at hand. For many, this is a once-in-a-lifetime ambition that
+        necessitates every bit of energy and skill. An all-consuming responsibility
+        awaits, but it also offers a tremendous sense of personal achievement and
+        pleasure. You have the potential to make a long-term contribution to
+        humankind and well-being. <br> <br>
+        It may be a difficult and sluggish moment, but amazing things are on the
+        way. To construct anything enduring,
+        your intuition will become really powerful. It's possible that your
+        previous foundation may be wiped away, which can be difficult, but it will
+        motivate you to build something larger, better, and more durable for future
+        generations. Though, this energy sometimes manifested later than early.
+        During this time, you may be able to find genuine love.
+        </p>
+    
+        `
+    } else if (sCycleText === '2' || sCycleText === '20/2' || sCycleInt[sCycleInt.length - 1] === '2') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 2</h3> <br>
+        <p>
+        Suggests you can collaborate effectively with others and find a
+        partner to be really advantageous to your career. Though your emotions
+        may still swing, your conciliatory attitude is a plus. You will be more
+        cooperative and understanding during this time. <br> <br>
+        Not only will you be sensitive to your environment, but you will also be very
+        intuitive. You have a gift for bringing people together and have immense
+        influence via subtle persuasion. Develop your diplomatic and tactful
+        skills. Work along with others. You may develop empathic abilities through
+        empathizing with others. You may offer peace and diplomacy to the world while
+        also finding love or friendship. Collaboration with others will be crucial. During this period, try to achieve
+        balance and tranquility, otherwise, you'll get stressed and depressed. It's a
+        period of gradual but steady improvement. You should invest time in
+        arts, particularly music, ballet, theatre, and other forms of performance art,
+        which allows you to feel more relaxed and engaged.
+        
+        </p>
+    
+        `
+    } else if (sCycleText === '3' || sCycleText === '12/3' || sCycleText === '21/3' || sCycleText === '30/3' || sCycleInt[sCycleInt.length - 1] === '3') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 3</h3> <br>
+        <p>
+        The middle part of your life is a time you'll have plenty of energy, be able to
+        express yourself easily, socialize, be open to friendship, communicate, and
+        take pleasure in all you do. Any artistic talent you have, especially in writing,
+        acting, arts, poetry, designing, dancing, public speaking, and media will be
+        pushed to new heights and rewarded handsomely. People will want to be
+        around you, and it may be a joyful and happy moment. You will be creative in
+        your profession and can do your own thing, but you need to work on learning
+        how to plan ahead and focus because you may have difficulty focusing on
+        anything for an extended period of time. Try to be disciplined so that you
+        don’t scatter your energy. 
+        </p>
+    
+        `
+    } else if (sCycleText === '4' || sCycleText === '13/4' || sCycleText === '31/4' || sCycleInt[sCycleInt.length - 1] === '4') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 4</h3> <br>
+        <p>
+        The middle of your life is a time for hard effort and the benefits that come with it.
+        You are preoccupied with the practical aspects of life, such as your profession,
+        stable family, financial stability, buying and creating a home, and a strong
+        community. During this period, you are not prone to chasing idealistic or
+        impracticable ambitions, preferring instead to put your life on firmer
+        ground. It's time to set some long-term objectives and work hard to achieve
+        them. <br> <br>
+        To build a firm financial foundation for  yourself, it would be beneficial if you
+        worked in an orderly and methodical manner. It's also a good idea to keep
+        focused and avoid becoming overly interested in too many things. Find
+        employment that you enjoy so that your efforts are rewarded not merely in
+        terms of advancement, success, and money, but also in terms of happiness
+        and a sense of achievement. It's also a period when discipline, organization, 
+        and self-determination reign supreme,
+        qualities that will appeal to your relatives, colleagues, and society. So,
+        strive to construct a steady, secure, and focused life for yourself, but don't
+        overwork yourself and take vacations.
+        </p>
+    
+        `
+    } else if (sCycleText === '5' || sCycleText === '14/5' || sCycleText === '23/5' || sCycleInt[sCycleInt.length - 1] === '5') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 5</h3> <br>
+        <p>
+        The middle of your life is a time of significant change and development.
+        You pick up on the teachings, values, and obligations that come with having
+        your own freedom and independence. You probably travel, adapt, move
+        houses or towns, or change work on a regular basis. You can achieve
+        amazing things if you don't bounce about too much. You may move into
+        new things with hardly any consideration, so accept change. <br> <br>
+        You will encounter individuals from a variety of backgrounds. In the process,
+        you will learn new cultures and languages. You will embrace your
+        independence and spend your time traveling and experiencing new
+        locations. This is when you may be confronted with scenarios that will put
+        your mental foresight to the test. You should avoid a predictable, routine
+        lifestyle. You develop a talent for selfpromotion, which can help you advance
+        in your career. You improve your selfexpression and become less selfconscious. You will have many friends
+        and may find happiness. Negative traits are addictions, restlessness,
+        impulsiveness, fatigue, unstable, unreliable, and unfaithfulness. 
+        </p>
+    
+        `
+    } else if (sCycleText === '6' || sCycleText === '15/6' || sCycleText === '24/6' || sCycleInt[sCycleInt.length - 1] === '6') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 6</h3> <br>
+        <p>
+        The middle of your life is a period of responsibility and obligation.
+        Commitment, marriage, family, and community are all brought into a clear 
+        perspective. This may be a time of harmony and cooperation if you respect
+        your obligations with acceptance and love. <br> <br>
+        Now is the time to find love or settle into a happy and meaningful marriage.
+        Partnerships work well in the same way, and development is created via
+        teamwork. Relationships that are broken or not truly committed, on the
+        other hand, are more likely to terminate in divorce or separation during this
+        time. Your whole focus should be on cultivating healthy and pleasant
+        relationships. You will be presented with new opportunities. <br> <br>
+        You'll also be more concerned with others than with yourself. As a result,
+        people will require your services (that can be family, children, or strangers);
+        you are loved and valued. Your artistic abilities may emerge or develop, and
+        possibilities for self-expression may arise. A business opportunity,
+        potentially your own company, is supported. This is a period of progress
+        characterized by adaptability, collaboration, and compromise. You'll
+        also need to work with people and be adaptive to the many changes that life
+        throws at you.
+        </p>
+    
+        `
+    } else if (sCycleText === '7' || sCycleText === '16/7' || sCycleText === '25/7' || sCycleText === '35/7' || sCycleInt[sCycleInt.length - 1] === '7') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 7</h3> <br>
+        <p>
+        A 7-period is a phase of intellectual depth and introspection. It's a good
+        moment to think about life's major questions. Although you will be drawn
+        to a variety of disciplines, it would be beneficial if you concentrated on one.
+        Science, technology, philosophy, religion, spirituality, and metaphysics
+        may all appeal to you. Meditation and spirituality can help you gain
+        knowledge. This is the moment to put your skills to good use by assisting and
+        guiding others. You'll continue to study and acquire a great deal of information,
+        but you won't get much more done since you'd rather concentrate on your
+        intellect. Keep your attention on the task at hand and go for it with passion. <br> <br>
+        Due to your need to spend time alone, relationships might appear difficult at
+        times. There's also a reluctance to share your innermost thoughts with
+        others. It is helpful to share your expertise via teaching, advising, or
+        simply chatting with others. You may have revelation or vision. You could
+        acquire psychic abilities such as clairvoyant, Clair hearing and seeing,
+        and become highly intuitive. You can find yourself relocating to the
+        countryside from the bustling city. The negative trait of this cycle is that you
+        might feel depressed at times, anxious, paranoid, sad, lonely, impulsive, aloof,
+        distant, and suspicious. 
+        </p>
+    
+        `
+    } else if (sCycleText === '8' || sCycleText === '17/8' || sCycleText === '26/8' || sCycleInt[sCycleInt.length - 1] === '8') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 8</h3> <br>
+        <p>
+        The 8 Period Cycle is typically favorable for employment, professional
+        advancement, wealth accumulation, money, power, and financial gain. This
+        is a period when power is bestowed upon you, but it must be handled wisely
+        and strategically. You're almost certainly in a position of power and
+        influence. An 8 is incredibly productive, ambitious, goal-oriented, motivated,
+        adept at being a boss, and tries to achieve throughout the Second Period.
+        To succeed in your job or business, you'll need vision and a desire to take
+        chances. However, there is a risk of getting misled by get-rich-quick
+        programmers or scammers or you attempting to make money in any way
+        possible (stealing, cheating, and frauding others). <br> <br>
+        Know that you will harvest what you sow since balance is the most
+        important attribute. Financial reward is practically certain if you put out the
+        work and devotion. You will have many setbacks and hard lessons to learn but
+        you will be successful if you are determined and do not give up. If, on
+        the other hand, cutting corners, scrounging or opportunism is
+        the driving factor behind your work life, financial disaster may be the outcome.
+        When it comes to rewards and punishments, the number 8 is rarely
+        impartial. This is the perfect opportunity to learn from your mistakes and start
+        fresh. Working on your past errors and understanding how to deal with them
+        can help you build a business, administrative and leadership
+        skills. This is also a period of financial stability. This is the moment to exercise
+        patience and focus your attention on the task at hand. Make precise plans
+        that take into account all of the variables. You will become wealthy and
+        successful as you were born to be if you are positive, on the right track, and
+        then do the right things.
+
+        </p>
+    
+        `
+    } else if (sCycleText === '9' || sCycleText === '18/9' || sCycleInt[sCycleInt.length - 1]=== '9') {
+        spCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Second</b> Period Cycle or Middle Period
+                - Throughout your middle years of life, you are on a tough
+                journey of personal development (about ages 28/30 to 55/60).
+                On a regular basis, you must adapt to the numerous highs and
+                lows in your life. Carries to the gradual blossoming of our
+                unique and creative abilities.
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Second Period Cycle 9</h3> <br>
+        <p>
+        You'll be compelled to focus on the world and people rather than yourself,
+        and you may struggle to feel confident and alone. You will accomplish more
+        for humanity, and acquire compassion, acceptance, understanding, caring,
+        love, and empathy during the Second Period. You have a greater capacity for
+        personal development than the majority of people. As you are urged to forgive
+        previous grievances and let go of bad attachments and past suffering. <br> <br>
+        The 9 Cycle’s purposes are for humanity, and while such achievement
+        will not be entirely realized, the individual who is influenced by it will
+        progress towards such ideals. You will be blessed more the more you serve
+        others. You'll be extremely creative. You should live by a higher ethical
+        standard since this will provide you with tremendous spiritual and personal
+        richness. Some may become famous during his period. <br> <br>
+        Though, this is a moment of selfsacrifice in which you prioritize the
+        needs of others before your own. That is to say, you are sacrificing yourself for
+        the sake of others. You can be responsible for your loved ones or
+        family, raise children (sometimes by yourself), or aid society as a whole.
+        Past events might become a problem so try to let go. You might have some
+        losses, or you may have a lot of beginnings and endings in relationships, careers/jobs, or other
+        things. You should try to heal from traumatic or negative experiences.
+
+        </p>
+    
+        `
+    }
+    
+
 
     // Third Period Cycle 
     yearHold;
@@ -10584,6 +11005,15 @@ your    cool or temper.
     } else if (yearHold > 10 ) {
         mSplit = String(yearHold).split('');
         sum = eval(mSplit.join('+'));
+        if(sum === 10) {
+            sum = 1;
+        } else if (sum === 11 || sum === 22 || sum === 33) {
+            mSplit = String(sum).split('');
+            sum = sum + '/'+ eval(mSplit.join('+'));
+        } else if (sum > 10) {
+            mSplit = String(sum).split('');
+            sum = eval(mSplit.join('+'));
+        }
         yearHold = sum;
     }  
 
@@ -10641,6 +11071,386 @@ your    cool or temper.
         tpCycle.innerHTML = 'from age 58 and on'
         tpCycleNum.innerHTML = yearHold
     };
+
+    var tCycleText = (tpCycleNum.textContent).trim();
+    var tCycleInt = tCycleText.split('/');
+
+    if (tCycleText === '1' || tCycleText === '10/1' || tCycleInt[tCycleInt.length - 1] === '1' ) {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 1</h3> <br>
+        <p>
+        A 1 Third period cycle shows that you having a highly busy life, presumably
+        not retiring or losing steam, and maybe witnessing the culmination of what
+        you've been working so hard for your whole life. You will most likely be in a
+        leadership position in the latter half of your life. You are an initiator and a selfstarter who acts instead of reacts. <br> <br>
+        During this time, you may decide to choose a different path. To overcome
+        difficulties, you'll need to be proactive. Strength, self-confidence, and
+        endurance are required, and you may not receive support from others at this
+        time, leaving alone (singleness) and loneliness are possible. <br> <br>
+        Due to your active energy, though, it will be necessary to achieve your
+        objectives. While many individuals become less energetic or interested as
+        they become older, you on the other end have a fresh sense of purpose and
+        vitality. This is a time when you're combining diverse components of your
+        personality and focused on your life's ambition. Many people connected to
+        you may advise you to slow down, but you were born to achieve your greatest
+        success later in life.
+        
+        </p>
+    
+        `
+    } else if (tCycleText === '11/2' || tCycleInt[0] === '11') {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 11/2</h3> <br>
+        <p>
+        You'll spend the latter half of your life focusing on your spiritual self and
+        letting go of material goods. You're contemplative, study a lot, and want to
+        understand more about the universe. You'll notice that you're becoming more
+        intuitive and depending on your feelings. As you eliminate the fear of
+        exposing your genuine, inner self, you become less constrained. You are less
+        afraid to communicate your thoughts and are more straightforward. You get
+        to be a master of the exquisite art of communication and are better at
+        dealing or working with others. Others are drawn to you, especially those who
+        are in desperate need of assistance. <br> <br>
+        You'll almost certainly uncover a skill you didn't know you possessed,
+        possibly in the fine arts. During this period, you may experience
+        clairvoyance, hearing and seeing, or visions. You could find it easier to
+        connect to the spiritual realm than others. You must recognize the
+        advantages of the spiritual insight you have acquired. Share the wisdom and
+        spiritual understanding you've received with others. 
+        
+        </p>
+    
+        `
+    } else if (tCycleText === '22/4' || tCycleInt[0] === '22') {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 22/4</h3> <br>
+        <p>
+        You're always having something to do, something to strive for, and this is when
+        you may achieve your greatest achievement. This cycle has a lot of
+        promise for creating a long-lasting institution or education that will help a
+        lot of people. You have the power to make a notion, a dream, or an
+        innovation come true. You've reached the height of your abilities as a builder,
+        planner, and visionary. You are able to identify the needs of others and devise
+        creative and realistic solutions to meet those needs. You devote your
+        complete attention to the task at hand. For many, this is a once-in-a-lifetime
+        ambition that necessitates every ounce of strength and talent. A whole position
+        awaits, but it also offers a tremendous sense of personal achievement and
+        pleasure. You have the potential to make a long-term impact on society's
+        well-being. <br> <br>
+        It may be a difficult and sluggish moment, but amazing things are on the
+        way. To construct anything enduring, your intuition will become really
+        powerful. It's possible that your previous foundation may be wiped
+        away, which can be difficult, but it will motivate you to build something larger,
+        better, and more durable for future generations. During this time, you may
+        be able to find genuine love.
+        </p>
+    
+        `
+    } else if (tCycleText === '2' || tCycleText === '20/2' || tCycleInt[tCycleInt.length - 1] === '2') {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 2</h3> <br>
+        <p>
+        Having a large number of close relatives and friends around you,
+        retiring with comfort and security, and bringing people together are all shown
+        in the Third Period. Many people will be drawn to you, particularly those who
+        are in tough situations. <br> <br>
+        You become increasingly intuitive as you get older, relying more on your
+        instincts than your head. As you eliminate the fear of revealing your
+        actual and deeper self, you become less constrained. You are less afraid to
+        communicate your thoughts and are more straightforward. You're more
+        likely to trust your intuition. You become an expert in the exquisite art of
+        persuasion and are better at dealing with others. You improve your
+        interpersonal skills and become an expert in convincing. You could
+        uncover a skill you didn't know you had, such as in the creative arts.
+        
+        </p>
+    
+        `
+    } else if (tCycleText === '3' || tCycleText === '12/3' || tCycleText=== '21/3' || tCycleInt[tCycleInt.length - 1] === '3') {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 3</h3> <br>
+        <p>
+        You will be extremely outgoing in your latter years, allowing your creative
+        personality to completely express itself while also having a wonderful time.
+        You've noticed that you're aging slower than your friends. Yet, there is a
+        proclivity to squander time and effort on ineffective undertakings. You have a lot
+        of unique ideas, but you could have trouble telling the difference between
+        them. People are drawn to you because your energy is inspiring and
+        encouraging. However, maintaining concentration may be difficult, which
+        may jeopardize your capacity to achieve your goal. Your desire to
+        express oneself via art, particularly through communication and theatrical
+        improves with maturity. 
+        </p>
+    
+        `
+    } else if (tCycleText === '4' || tCycleText === '13/4' || tCycleText === '31/4' || tCycleInt[tCycleInt.length - 1] === '4') {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 4</h3> <br>
+        <p>
+        In your later years, you're likely to be as busy as you've always been. You keep
+        moving forward, whether it's because you keep working or because you've
+        chosen to get engaged in a mission. You don't like being inactive
+        or feeling useless, and you're always looking for ways to serve. In many
+        aspects of your life, you will strengthen your foundation during this period. Your
+        house, family, and wealth are still vital, but your internal divine and emotional
+        lives are also developing. This is the time some people are building a home
+        or creating a foundation for themselves or future generations. Moral and legal
+        concerns may become extremely relevant to you. You could feel
+        compelled to volunteer for a cause that addresses inequalities that exist, such
+        as a non-profit organization.
+        </p>
+    
+        `
+    } else if (tCycleText === '5' || tCycleText === '14/5' || tCycleInt[tCycleInt.length - 1] === '5') {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 5</h3> <br>
+        <p>
+        You continue to navigate through shifting situations throughout the later
+        part of your life. A 5 Period Cycle has innate energy to it that promotes a
+        more spontaneous response to conditions. You'll be going to have
+        adventures, learn new things, and most likely won't quit working since you're
+        finally doing something you enjoy. You are lured to travel, fresh faces, and
+        diverse cultures at this time. This is a dynamic, rather turbulent cycle in which
+        nothing goes as planned. Relocating is possible. You're at your best when
+        you're sociable, active, and engaged, providing your soul the experiences it
+        wants. You have a talent for effectively presenting yourself at this time. You are
+        captivated by everything innovative and forward-thinking. This is a moment to
+        be active and adaptable, to seize possibilities as they present
+        themselves.
+
+        </p>
+    
+        `
+    } else if (tCycleText === '6' || tCycleText === '15/6' || tCycleInt[tCycleInt.length - 1] === '6') {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 6</h3> <br>
+        <p>
+        In the later period of your life, you are mostly concerned with family and
+        community issues. You'll feel more at ease with your duties, and you'll feel
+        more at peace with yourself. It's probable that you'll continue to help
+        people well into your sixties or beyond, which will bring you tremendous joy.
+        You may get more active in the arts by helping or educating, as well as being
+        interested in public affairs or government. Your artistic abilities are
+        boosted, and you will be given opportunities to express yourself. This
+        is a period of security in relationships; however, it may not be romantic.
+        Partnerships and family-owned enterprises have a good probability of
+        succeeding.
+        
+        </p>
+    
+        `
+    } else if (tCycleText === '7' || tCycleText === '16/7' || tCycleInt[tCycleInt.length - 1] === '7') {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 7</h3> <br>
+        <p>
+        Wisdom and satisfaction are at the core of a 7 Period Cycle, especially in older
+        years. This is a period of spiritual and intellectual development, as well as the
+        discovery of the elegance that drives life. This might be one of the most
+        challenging final cycles of life since you can feel depressive and isolated at
+        times. You may feel socially aloof, lonely, and withdrawn. Try to get
+        involved in various activities such as art gatherings, reading, meditation,
+        religious gatherings, and spiritually engaging activities that might make you
+        stay connected. <br> <br>
+        Despite the fact that you are in yourlater years, this might be the most
+        fascinating period of your life in termsof personal growth and revelation. You
+        have the option of being alone and at one with your thoughts. You can come
+        up with amazing ideas, conduct extensive research, and attempt to
+        convey your findings. During this period, you study a lot and gain a lot of
+        wisdom, you may become more religious, and feel more connected to
+        God or sources.
+        
+        </p>
+    
+        `
+    } else if (tCycleText === '8' || tCycleText === '17/8' || tCycleInt[tCycleInt.length - 1] === '8') {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 8</h3> <br>
+        <p>
+        You'll have the ability to accomplish something you haven't done before,
+        participate in a group, and desire to feel useful. It's possible to be a late starter,
+        achieving success later in life such as wealth, money, and power. You
+        continue to recognize chances and are thrilled about your potential when you
+        approach the stage of life when most individuals want to slow down. Under
+        this Period Cycle, retiring is unlikely. <br> <br>
+        There's a sense of possibility in the air, both monetarily and in personal
+        relationships. Others look to you for direction and support, and you win
+        respect and appreciation. Your own power and influence grow, but you
+        exercise it with care and respect for others. As an administrator, organizer,
+        or financial planner, you have improved talents. With age, your capacity to
+        perceive the big picture and carry out audacious ideas improves. However,
+        this phase can be a bit of a slide ride with the possibility of unanticipated
+        losses. Knowing the limitations of monetary prosperity is crucial to your
+        success.
+        
+        </p>
+    
+        `
+    } else if (tCycleText === '9' || tCycleText === '18/9' || tCycleInt[tCycleInt.length - 1] === '9') {
+        tpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>Third</b> Period or Final Cycle
+                - May signify the blossoming of our inner essence, bringing our
+                real nature to manifestation. This is the time when you have the
+                most freedom and capacity to express yourself. around 55/60
+                till death.
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">Third Period Cycle 9</h3> <br>
+        <p>
+        You become progressively idealistic and passionate about the improvement
+        of humanity as you become older. You offer a lot to others because you want
+        to make a difference in the world. You may achieve the status of ultimate
+        humanitarian while remaining content with your life. You broaden your
+        horizons and interact with individuals from different walks of life. You donate
+        your time and resources to issues that you care about. Your interests are
+        becoming more and more focused on foreign cultures and societies. Your
+        approach to ethics, as well as your curiosity in political and social matters,
+        improves. You find yourself growing more impassioned as you get older
+        when most individuals are laid back. <br> <br>
+        Your creativity blossoms in your latter years, with an emphasis on design and
+        huge undertakings. You could be motivated to pursue a career in
+        designing, technology, or building. You can also become more intuitive
+        and spiritual during this cycle. 
+        </p>
+    
+        `
+    }
+
 
 
 

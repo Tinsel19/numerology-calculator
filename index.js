@@ -84,12 +84,15 @@ var epoeText = document.getElementById('epoeText');
 
 var fpCycle = document.getElementById('fpCycle');
 var fpCycleNum = document.getElementById('fpCycleNum');
+var fpCycleText = document.getElementById('fpCycleText')
 
 var spCycle = document.getElementById('spCycle');
 var spCycleNum = document.getElementById('spCycleNum');
+var spCycleText = document.getElementById('spCycleText');
 
 var tpCycle = document.getElementById('tpCycle');
 var tpCycleNum = document.getElementById('tpCycleNum');
+
 
 var fPin = document.getElementById('fPin');
 var fPinNum = document.getElementById('fPinNum');
@@ -275,7 +278,7 @@ calculate.addEventListener('click', ()=> {
     // console.log(sumDayArray, sumMonthArray, sumYearArray)
     
     sum = sumDayArray + sumMonthArray + sumYearArray;
-    console.log(sum)
+
     var keepDay = sumDayArray;
     var kdHold = sum;
 
@@ -316,7 +319,7 @@ calculate.addEventListener('click', ()=> {
     
     var lifePathText = (lpNum.textContent).trim();
     var lifePathNum = lifePathText.split('/');
-    console.log(lifePathNum)
+
 
     if (lifePathText === '11/2') {
         lpText.innerHTML = `
@@ -3704,7 +3707,6 @@ calculate.addEventListener('click', ()=> {
 
     var soulUrgeText = (suhdNum.textContent).trim();
     var soulUrgeInt = soulUrgeText.split('/');
-    console.log(soulUrgeText)
 
     if (soulUrgeText === '1' || soulUrgeText === '10/1' || soulUrgeInt[soulUrgeInt.length - 1] == '1') {
         suhdText.innerHTML = `
@@ -4287,7 +4289,7 @@ calculate.addEventListener('click', ()=> {
     var minorSoulUrgeInt = minorSoulUrgeText.split('/');
 
     if (minorSoulUrgeText === '1' || minorSoulUrgeText === '10/1' || minorSoulUrgeInt[minorSoulUrgeInt.length - 1] === '1')  {
-        console.log('hi')
+
         msuhdText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
@@ -5376,18 +5378,7 @@ your    cool or temper.
         attempt to mimic or replicate you. You become more successful, and
         this is where you lay the foundation for future achievement, as well as
         a life filled with excitement, adventure, and other things that will help
-        If your Maturity number is 1, you'll discover that as you get older, you'll
-        require more freedom and individualism. You learn how to be a leader,
-        a risk-taker, ambitious, opinionated, and someone who is eager to try
-        new things. You'll battle tooth and nail for the recognition and rewards
-        you believe you deserve, and you'll be less ready to accept defeat,
-        failure, or limits in any form. Your ability to take command and provide
-        very solid advice will improve, as will your drive, determination, and
-        passion.
-        People will look to you for good guidance. Other people may even
-        attempt to mimic or replicate you. You become more successful, and
-        this is where you lay the foundation for future achievement, as well as
-        a life filled with excitement, adventure, and other things that will help  
+         
         </p>
     
         `
@@ -6409,7 +6400,9 @@ your    cool or temper.
 
     // Heart's Desire ? Personlaity Bridge Number 
     hdpbNum.innerHTML;
-    var hdPB = suHold - pnHold;
+    pnHold = (pNum.textContent).split('/');
+    pnHold = pnHold[pnHold.length - 1];
+    var hdPB = suHold - Number(pnHold);
     var x = hdPB;
     if (x < 1) {
         hdPB = x * (-1);
@@ -7447,8 +7440,10 @@ your    cool or temper.
     var testLength = 9 - test.length;
     ssNum.innerHTML = testLength;
 
+    // for (let i = 0; i < )
     var subConText = (ssNum.textContent).trim();
     var subConInt = subConText.split('/');
+
 
     if (subConText === '3' || subConText === '12/3' || subConText === '21/3' || subConInt[subConInt.length - 1] === '3') {
         ssText.innerHTML = `
@@ -7648,208 +7643,162 @@ your    cool or temper.
 
     var klcText = (klNum.textContent).trim();
     var klcInt = klcText.split('/');
+    var klLoopList = klcText.split(',');
+    klText.innerHTML = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Karmic Lessons disclose weaknesses or undeveloped parts. It is
+        found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+        observing the missing numbers, you can gain an understanding and
+        insight into what you can do to help you overcome some of the
+        potential disadvantages of the missing characteristics these numbers
+        signify
+    </p> <br> <br>`
 
-    if (klcText === '1' || klcText === '10/1' || klcInt[klcInt.length - 1] === '1') {
-        klText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            Karmic Lessons disclose weaknesses or undeveloped parts. It is
-            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
-            observing the missing numbers, you can gain an understanding and
-            insight into what you can do to help you overcome some of the
-            potential disadvantages of the missing characteristics these numbers
-            signify
-        </p> <br> <br>
-        
-        <h3 class="bold-description-label">Karmic Lesson Number 1</h3> <br>
-        <p>
-        You lack confidence, are afraid to lead, and need to build strength. Be
-        more self-reliant by learning to think for yourself. The moral of the
-        lesson is to be more determined, decisive, resolute, and independent.
-        When the situation calls for it, try to be more aggressive. You may
-        work on being more confident in your daily chores, with others, and
-        while evaluating your own decisions, talents, and actions. 
-        </p>
+    var klString = ``
     
-        `
-    } else if (klcText === '2' || klcText === '20/2' || klcInt[klcInt.length - 1] === '2') {
-        klText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            Karmic Lessons disclose weaknesses or undeveloped parts. It is
-            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
-            observing the missing numbers, you can gain an understanding and
-            insight into what you can do to help you overcome some of the
-            potential disadvantages of the missing characteristics these numbers
-            signify
-        </p> <br> <br>
+
+    for (let i = 0; i <= klLoopList.length; i++) {
+        klcText = klLoopList[i];
+
+        if (klcText === '1' || klcText === '10/1' || klcInt[klcInt.length - 1] === '1') {
+            klString += `
+            
+            
+            <h3 class="bold-description-label">Karmic Lesson Number 1</h3> <br>
+            <p>
+            You lack confidence, are afraid to lead, and need to build strength. Be
+            more self-reliant by learning to think for yourself. The moral of the
+            lesson is to be more determined, decisive, resolute, and independent.
+            When the situation calls for it, try to be more aggressive. You may
+            work on being more confident in your daily chores, with others, and
+            while evaluating your own decisions, talents, and actions. 
+            </p> <br><br>
         
-        <h3 class="bold-description-label">Karmic Lesson Number 2</h3> <br>
-        <p>
-        Your lesson is that you must know when it is appropriate to say
-        something and what the appropriate response is. You must pay more
-        attention, be more conscious, and be more sensitive to others around
-        you. When working with others, you may become a valuable member
-        of the team by cooperating, being diplomatic, and being patient. Learn
-        to collaborate more effectively with others and to be more
-        compassionate. Therefore, you should learn to work better with others
-        and be sensitive toward them so that you can keep the peace. 
-        </p>
+            `
+        } else if (klcText === '2' || klcText === '20/2' || klcInt[klcInt.length - 1] === '2') {
+            klString += `
+            
+            
+            
+            <h3 class="bold-description-label">Karmic Lesson Number 2</h3> <br>
+            <p>
+            Your lesson is that you must know when it is appropriate to say
+            something and what the appropriate response is. You must pay more
+            attention, be more conscious, and be more sensitive to others around
+            you. When working with others, you may become a valuable member
+            of the team by cooperating, being diplomatic, and being patient. Learn
+            to collaborate more effectively with others and to be more
+            compassionate. Therefore, you should learn to work better with others
+            and be sensitive toward them so that you can keep the peace. 
+            </p> <br> <br>
+        
+            `
+        } else if (klcText === '3' || klcText === '12/3' || klcText === '21/3' || klcText === '30/3' || klcInt[klcInt.length - 1] === '3') {
+            klString += `
+            
+            
+            
+            <h3 class="bold-description-label">Karmic Lesson Number 3</h3> <br>
+            <p>
+            When you're in the limelight, you shouldn't expect too much of
+            yourself. Be creative/imaginative and learn to see the positive side of
+            things.  <br> <br>
+            </p>
+        
+            `
+        } else if (klcText === '4' || klcText === '13/4' || klcText === '31/4' || klcInt[klcInt.length - 1] === '4' ) {
+            klString += `
+            
+            
+            
+            <h3 class="bold-description-label">Karmic Lesson Number 4</h3> <br>
+            <p>
+            When it comes to your life's purpose and where you're heading, learn
+            to be more structured, royal, and disciplined. The lesson for you is to
+            be more careful, practical, and realistic in coping with whatever life
+            throws at you.
+            </p> <br> <br>
+        
+            `
+        } else if (klcText === '5' || klcText === '14/5' || klcText === '23/5' || klcInt[klcInt.length - 1] === '5') {
+            klString += `
+            
+            
+            
+            <h3 class="bold-description-label">Karmic Lesson Number 5</h3> <br>
+            <p>
+            You must grip your independence and be more courageous and
+            daring. Accept change, adapt to new situations, and take a chance or
+            risk
+            </p> <br> <br>
+        
+            `
+        } else if (klcText === '6' || klcText === '15/6' || klcText === '24/6' || klcInt[klcInt.length - 1] === '6') {
+            klString += `
+            
+            
+            <h3 class="bold-description-label">Karmic Lesson Number 6</h3> <br>
+            <p>
+            Instead of avoiding your obligations, you should commit to them and
+            accept them. Learn to give of yourself and open out to others.
+            </p> <br> <br>
+        
+            `
+        } else if (klcText === '7' || klcText === '16/7' || klcText === '25/7' || klcInt[klcInt.length - 1] === '7') {
+            klString += `
+            
+            
+            <h3 class="bold-description-label">Karmic Lesson Number 7</h3> <br>
+            <p>
+            Your lesson is to concentrate more on gaining experience and
+            knowledge in any of your numerous subjects of interest. Everything
+            should be questioned, and you should allow yourself to explore and
+            study. Rather than wasting your energy, attempt to be more organized
+            and disciplined in order to reach your full potential.
+            
+            </p> <br> <br>
+        
+            `
+        } else if (klcText === '8' || klcText === '17/8' || klcText === '26/8' || klcInt[klcInt.length - 1] === '8') {
+            klString += `
+            
+            
+            <h3 class="bold-description-label">Karmic Lesson Number 8</h3> <br>
+            <p>
+            Your lesson is to be more open to outside help and other people's
+            perspectives. Try to be less stubborn and listen rather than just
+            hearing when it comes to advise about your assets, whether it's
+            money, material goods, or the people in your life. You may have
+            challenges in your professional life, and you may have poor judgment
+            of others. Learn to be self-disciplined and self-restrained.
+            </p> <br> <br>
+        
+            `
+        } else if (klcText === '9' || klcText === '18/9' || klcText === '27/9' || klcInt[klcInt.length -1] === '9') {
+            klString += `
+            
+            
+            <h3 class="bold-description-label">Karmic Lesson Number 9</h3> <br>
+            <p>
+            Your lesson is to be more understanding, helpful, accepting, and
+            compassionate with everyone in your life, including family, friends,
+            colleagues, and the rest of the public. Try to observe things from a
+            different angle. <br> <br>
+            </p>
+        
+            `
+        } 
+
+        
+    } klText.innerHTML = klText.innerHTML + klString;
+
     
-        `
-    } else if (klcText === '3' || klcText === '12/3' || klcText === '21/3' || klcText === '30/3' || klcInt[klcInt.length - 1] === '3') {
-        klText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            Karmic Lessons disclose weaknesses or undeveloped parts. It is
-            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
-            observing the missing numbers, you can gain an understanding and
-            insight into what you can do to help you overcome some of the
-            potential disadvantages of the missing characteristics these numbers
-            signify
-        </p> <br> <br>
-        
-        <h3 class="bold-description-label">Karmic Lesson Number 3</h3> <br>
-        <p>
-        When you're in the limelight, you shouldn't expect too much of
-        yourself. Be creative/imaginative and learn to see the positive side of
-        things. 
-        </p>
-    
-        `
-    } else if (klcText === '4' || klcText === '13/4' || klcText === '31/4' || klcInt[klcInt.length - 1] === '4' ) {
-        klText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            Karmic Lessons disclose weaknesses or undeveloped parts. It is
-            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
-            observing the missing numbers, you can gain an understanding and
-            insight into what you can do to help you overcome some of the
-            potential disadvantages of the missing characteristics these numbers
-            signify
-        </p> <br> <br>
-        
-        <h3 class="bold-description-label">Karmic Lesson Number 4</h3> <br>
-        <p>
-        When it comes to your life's purpose and where you're heading, learn
-        to be more structured, royal, and disciplined. The lesson for you is to
-        be more careful, practical, and realistic in coping with whatever life
-        throws at you.
-        </p>
-    
-        `
-    } else if (klcText === '5' || klcText === '14/5' || klcText === '23/5' || klcInt[klcInt.length - 1] === '5') {
-        klText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            Karmic Lessons disclose weaknesses or undeveloped parts. It is
-            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
-            observing the missing numbers, you can gain an understanding and
-            insight into what you can do to help you overcome some of the
-            potential disadvantages of the missing characteristics these numbers
-            signify
-        </p> <br> <br>
-        
-        <h3 class="bold-description-label">Karmic Lesson Number 5</h3> <br>
-        <p>
-        You must grip your independence and be more courageous and
-        daring. Accept change, adapt to new situations, and take a chance or
-        risk
-        </p>
-    
-        `
-    } else if (klcText === '6' || klcText === '15/6' || klcText === '24/6' || klcInt[klcInt.length - 1] === '6') {
-        klText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            Karmic Lessons disclose weaknesses or undeveloped parts. It is
-            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
-            observing the missing numbers, you can gain an understanding and
-            insight into what you can do to help you overcome some of the
-            potential disadvantages of the missing characteristics these numbers
-            signify
-        </p> <br> <br>
-        
-        <h3 class="bold-description-label">Karmic Lesson Number 6</h3> <br>
-        <p>
-        Instead of avoiding your obligations, you should commit to them and
-        accept them. Learn to give of yourself and open out to others.
-        </p>
-    
-        `
-    } else if (klcText === '7' || klcText === '16/7' || klcText === '25/7' || klcInt[klcInt.length - 1] === '7') {
-        klText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            Karmic Lessons disclose weaknesses or undeveloped parts. It is
-            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
-            observing the missing numbers, you can gain an understanding and
-            insight into what you can do to help you overcome some of the
-            potential disadvantages of the missing characteristics these numbers
-            signify
-        </p> <br> <br>
-        
-        <h3 class="bold-description-label">Karmic Lesson Number 7</h3> <br>
-        <p>
-        Your lesson is to concentrate more on gaining experience and
-        knowledge in any of your numerous subjects of interest. Everything
-        should be questioned, and you should allow yourself to explore and
-        study. Rather than wasting your energy, attempt to be more organized
-        and disciplined in order to reach your full potential.
-        
-        </p>
-    
-        `
-    } else if (klcText === '8' || klcText === '17/8' || klcText === '26/8' || klcInt[klcInt.length - 1] === '8') {
-        klText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            Karmic Lessons disclose weaknesses or undeveloped parts. It is
-            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
-            observing the missing numbers, you can gain an understanding and
-            insight into what you can do to help you overcome some of the
-            potential disadvantages of the missing characteristics these numbers
-            signify
-        </p> <br> <br>
-        
-        <h3 class="bold-description-label">Karmic Lesson Number 8</h3> <br>
-        <p>
-        Your lesson is to be more open to outside help and other people's
-        perspectives. Try to be less stubborn and listen rather than just
-        hearing when it comes to advise about your assets, whether it's
-        money, material goods, or the people in your life. You may have
-        challenges in your professional life, and you may have poor judgment
-        of others. Learn to be self-disciplined and self-restrained.
-        </p>
-    
-        `
-    } else if (klcText === '9' || klcText === '18/9' || klcText === '27/9' || klcInt[klcInt.length -1] === '9') {
-        klText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            Karmic Lessons disclose weaknesses or undeveloped parts. It is
-            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
-            observing the missing numbers, you can gain an understanding and
-            insight into what you can do to help you overcome some of the
-            potential disadvantages of the missing characteristics these numbers
-            signify
-        </p> <br> <br>
-        
-        <h3 class="bold-description-label">Karmic Lesson Number 9</h3> <br>
-        <p>
-        Your lesson is to be more understanding, helpful, accepting, and
-        compassionate with everyone in your life, including family, friends,
-        colleagues, and the rest of the public. Try to observe things from a
-        different angle.
-        </p>
-    
-        `
-    } 
     
 
 
     // Karmic Debt Number
-    kdNum;
+    kdText.innerHTML = '';
     // life path 
     kdHold = lpNum.textContent;
     if (kdHold === '13/4') {
@@ -8048,6 +7997,13 @@ your    cool or temper.
     }; 
     // console.log(mainNumString)
     filteredNum = mainNumString;
+    var resultString = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        The hidden passion number tells you about your hidden talents and
+        strengths, it also reveals your personality like what you are good at,
+        and what you love to do.
+    </p> <br> <br>`;
     var emptyString = '';
     if (mainNumString.split('1').length-1 >= 2) {
         if (emptyString !== '') {
@@ -8055,64 +8011,166 @@ your    cool or temper.
         } else if (emptyString === ''){
             emptyString += '1';
         }
+        resultString += `
+            
+            <h3 class="bold-description-label">Hidden Passion Number 1</h3> <br>
+            <p>
+            You are a very perceptive person who is ambitious, energetic,
+            creative, and artistic. You have a good way of expressing your
+            creativity. You are continuously striving for perfection. You're a terrific
+            organizer with a rigorous approach to your work. You like to lead
+            rather than be led. You're highly competitive and, at times, bossy,
+            and arrogant. <br> <br>
+            
+            </p>
+
+        ` 
     };
     if (mainNumString.split('2').length-1 >= 2) {
         if (emptyString !== '') {
             emptyString += ', 2';
         } else if (emptyString === '') {
             emptyString += '2';
-        }
+        };
+        resultString += `
+            
+            <h3 class="bold-description-label">Hidden Passion Number 2</h3> <br>
+            <p>
+            You're sensitive, caring, understanding, can work and collaborate well
+            with people, and can resolve conflicts and reach agreements, all while
+            attempting to build peaceful situations.
+            </p>
+
+        ` 
     }
     if (mainNumString.split('3').length-1 >= 2) {
         if(emptyString !== '') {
             emptyString += ', 3';
         } else if (emptyString === '') {
             emptyString += '3';
-        }
+        };
+        resultString += `
+            
+            <h3 class="bold-description-label">Hidden Passion Number 3</h3> <br>
+            <p>
+            You're outgoing, entertaining, artistic, and inventive. You demonstrate
+            your abilities with ease. You're attractive and have an optimistic
+            outlook on life.
+            </p>
+
+        ` 
     }
     if (mainNumString.split('4').length-1 >= 2) {
         if(emptyString !== '') {
             emptyString += ', 4';
         } else if (emptyString === '') {
             emptyString += '4';
-        }
+        };
+        resultString += `
+            
+            <h3 class="bold-description-label">Hidden Passion Number 4</h3> <br>
+            <p>
+            You're responsible, grounded, stable, and keep things in order. You
+            are dependable because you have a realistic attitude and can stick to
+            a timetable. <br> <br>
+            </p>
+
+        ` 
+        
+
     } 
     if (mainNumString.split('5').length-1 >= 2) {
         if(emptyString !== '') {
             emptyString += ', 5';
         } else if (emptyString === '') {
             emptyString += '5';
-        }
+        };
+        resultString += `
+            
+            <h3 class="bold-description-label">Hidden Passion Number 5</h3> <br>
+            <p>
+            You're a free spirit who enjoys being fun, brave and adventurous, and
+            seductive. You can deal with any changes that arise without being
+            thrown off. You’re a risk-taker. <br> <br>
+            </p>
+
+        ` 
+        
     }
     if (mainNumString.split('6').length-1 >= 2) {
         if (emptyString !== '') {
             emptyString += ', 6';
         } else if (emptyString === ''){
             emptyString += '6';
-        }
+        };
+        resultString += `
+            
+            <h3 class="bold-description-label">Hidden Passion Number 6</h3> <br>
+            <p>
+            You're a generous person who wants to serve others and offer them
+            whatever you have. You're dependable, compassionate, loving,
+            selfless, peaceful, and nurturing. <br> <br>
+            </p>
+
+        ` 
+        
     }
     if (mainNumString.split('7').length-1 >= 2) {
         if (emptyString !== '') {
             emptyString += ', 7';
         } else if (emptyString === '') {
             emptyString += '7';
-        }
+        };
+        resultString += `
+            
+            <h3 class="bold-description-label">Hidden Passion Number 7</h3> <br>
+            <p>
+            You're a profound thinker who enjoys studying and is contemplative.
+            You're rational and analytical, and you want to know why things
+            happen the way they do. <br> <br>
+            </p>
+
+        ` 
+        
     }
     if (mainNumString.split('8').length-1 >= 2) {
         if (emptyString !== '') {
             emptyString += ', 8';
         } else if (emptyString === ''){
             emptyString += '8';
-        }
+        };
+        resultString += `
+            
+            <h3 class="bold-description-label">Hidden Passion Number 8</h3> <br>
+            <p>
+            You're determined, business-minded, ambitious, and hardworking, and
+            you'll keep going until you reach your goals. You're a natural leader,
+            manager, and judge of others. <br> <br>
+            </p>
+
+        ` 
+        
     }
     if (mainNumString.split('9').length-1 >= 2) {
         if (emptyString !== '') {
             emptyString += ', 9';
         } else if (emptyString === '') {
             emptyString += '9';
-        }
+        };
+        resultString += `
+            
+            <h3 class="bold-description-label">Hidden Passion Number 9</h3> <br>
+            <p>
+            You're caring and empathetic, and you want to make a difference in
+            the world. You can be artistic, imaginative, committed, accepting, and
+            self-sufficient. <br> <br>
+            </p>
+
+        ` 
+        
     };
     hpNum.innerHTML = emptyString;
+    hpText.innerHTML = resultString
 
 
 
@@ -8125,6 +8183,7 @@ your    cool or temper.
     var lastName = ednfName[ednfName.length - 1];
     indexList = lastName;
     countHold = 0;
+    count = 0;
     for ( let i = 0; i <= indexList.length; i++) {
 
         if (String(indexList[i]).toLowerCase() === 'a' ||  String(indexList[i]).toLowerCase() === 'j' || String(indexList[i]).toLowerCase() === 's' ) {
@@ -8148,16 +8207,17 @@ your    cool or temper.
         }
 
     };
+    console.log(count)
     if (count < 10) {
         count;
     } else if (count === 10) {
         count = 1;
     } else if (count === 11  ) {
-        count = '11/2';
+        count = '2';
     } else if (count === 22) {
-        count = '22/4';
+        count = '4';
     } else if (count === 33) {
-        count = '33/6';
+        count = '6';
     } else if (count > 10) {
         mSplit = String(count).split('');
         sum = eval(mSplit.join('+'));
@@ -8166,11 +8226,11 @@ your    cool or temper.
         } else if (sum === 10) {
             sum =1
         } else if (sum === 11) {
-            sum = '11/2'
+            sum = '2'
         } else if (sum === 22) {
-            sum = '22/4'
+            sum = '4'
         } else if (sum === 33) {
-            sum = '33/6'
+            sum = '6'
         } else if (sum > 10) {
             dbSplit = String(sum).split('');
             sum = eval(dbSplit.join('+'));
@@ -8178,6 +8238,169 @@ your    cool or temper.
         count = sum;
     };
     hnNum.innerHTML = count;
+
+    var hnnText = (hnNum.textContent).trim();
+    var hnInt = hnnText.split('/');
+
+    if (hnnText === '1' || hnnText === '10/1' || hnInt[hnInt.length - 1] === '1') {
+        hnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Heredity Number of your last name reveals your ancestors’ talents and
+            the ways the family interacts.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Hereditary Number 1</h3> <br>
+        <p>
+            If your hereditary number is 1, it denotes masculine power,
+            beginnings, leadership, individualism, self-confidence, ambition, and
+            bravery are all characteristics that are in your family lineage. 
+        </p>
+    
+        `
+    }  else if (hnnText === '2' || hnnText === '20/2' || hnInt[hnInt.length - 1] === '2') {
+        hnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Heredity Number of your last name reveals your ancestors’ talents and
+            the ways the family interacts.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Hereditary Number 2</h3> <br>
+        <p>
+        The concept of friendliness, sociability, loving, and kindness are part of
+        hereditary number 2. The number 2 is also associated with feminine
+        power, collaborations, relationships, sensitivity, harmony, peacemaker,
+        and balance. This might imply that the family members actively
+        interact within themselves or with their acquaintances easily.
+         
+        </p>
+    
+        `
+    } else if (hnnText === '3' || hnnText === '12/3' || hnnText === '21/3' || hnnText === '30/3' || hnInt[hnInt.length - 1] === '3') {
+        hnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Heredity Number of your last name reveals your ancestors’ talents and
+            the ways the family interacts.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Hereditary Number 3</h3> <br>
+        <p>
+        People with the last name heredity number 3 are known for being
+        outspoken, active, sociable, and charming. You have the capacity to
+        adapt to any circumstance and the ability to assimilate new
+        information. Expressional abilities are a gift from heredity number 3.
+        You want to be youthful, inventive, and engaged. You can be an artist,
+        an actress, a singer, a dancer, a designer, or any other profession that
+        allows you to express yourself.
+
+        </p>
+    
+        `
+    } else if (hnnText === '4' || hnnText === '13/4' || hnnText === '31/4' || hnInt[hnInt.length - 1] === '4') {
+        hnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Heredity Number of your last name reveals your ancestors’ talents and
+            the ways the family interacts.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Hereditary Number 4</h3> <br>
+        <p>
+        People with the 4 heredities of their family name are known for being
+        steady, organized, secure, dependable, hardworking, patient, loyal,
+        and realistic. Because of your meticulous work ethic, you are capable
+        of leading large organizations or corporations.
+        </p>
+    
+        `
+    } else if (hnnText === '5' || hnnText === '14/5' || hnnText === '23/5' || hnInt[hnInt.length - 1] === '5') {
+        hnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Heredity Number of your last name reveals your ancestors’ talents and
+            the ways the family interacts.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Hereditary Number 5</h3> <br>
+        <p>
+        Change, independence, exploration, adventure, and diversity are the
+        primary characteristics of persons with the last name of heredity
+        number 5. You are ambitious, adaptive, tolerant, freedom-loving,
+        traveler, sociable, and fun, according to your Heredity number 5.
+        </p>
+    
+        `
+    } else if (hnnText === '6' || hnnText === '15/6' || hnnText === '24/6' || hnInt[hnInt.length - 1] === '6') {
+        hnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Heredity Number of your last name reveals your ancestors’ talents and
+            the ways the family interacts.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Hereditary Number 6</h3> <br>
+        <p>
+        Compassion, friendliness, loving, home, family, responsibility, equality,
+        honesty, generosity, nurturing, and harmony are the key
+        characteristics of persons with the last name with the hereditary
+        number 6.
+
+        </p>
+    
+        `
+    } else if (hnnText === '7' || hnnText === '16/7' || hnnText === '25/7' || hnInt[hnInt.length - 1] === '7') {
+        hnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Heredity Number of your last name reveals your ancestors’ talents and
+            the ways the family interacts.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Hereditary Number 7</h3> <br>
+        <p>
+        Intellectual, analytical, mysterious, spiritual, guarded, skeptical,
+        observant, lonesome, contemplative, and secretive are the primary
+        characteristics of persons with the last name with the heredity number
+        7.
+        </p>
+    
+        `
+    } else if (hnnText === '8' || hnnText === '17/8' || hnText === '26/8' || hnText === '35/8' || hnInt[hnInt.length - 1] === '8') {
+        hnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Heredity Number of your last name reveals your ancestors’ talents and
+            the ways the family interacts.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Hereditary Number 8</h3> <br>
+        <p>
+        Authority, mastery, wealth, leadership, prosperity, power, and money
+        are the primary qualities of persons with the last name of the number
+        8.
+        </p>
+    
+        `
+    } else if (hnText === '9' || hnText === '18/9' || hnText === '27/9' || hnText == '36/9' || hnInt[hnInt.length - 1] === '9') {
+        hnText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Heredity Number of your last name reveals your ancestors’ talents and
+            the ways the family interacts.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Hereditary Number 9</h3> <br>
+        <p>
+        Humanitarian, compassionate, sympathetic, artistic, inventive,
+        dedicated, accepting, self-sufficient, and charitable are the primary
+        qualities of persons with the last name of heredity number 9.
+
+        </p>
+    
+        `
+    }
     
     
 
@@ -8188,7 +8411,465 @@ your    cool or temper.
     var firstLetter = (ednfName[0][0]).toUpperCase();
     cstNum.innerHTML = firstLetter;
 
+    switch (firstLetter) {
+        case 'A':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter A</h3> <br>
+            <p>
+            You have a brave and determined attitude toward life. The strategy is
+            based on independence, ambition, and commitment.
+            </p>
+            `
+            break;
 
+        case 'B':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter B</h3> <br>
+            <p>
+            You're likely to approach life on the lookout for possibilities to work as
+            part of a team, completing tasks in collaboration with others.
+            
+            </p>
+            `
+            break;
+
+        case 'C':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter C</h3> <br>
+            <p>
+            You're drawn to creative self-expression, inspiration, and originality as
+            a way of life.
+            </p>
+            `
+            break;
+        
+        case 'D':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter D</h3> <br>
+            <p>
+            You're more likely to approach life with the goal of improving whatever
+            position you're in and your social standing.
+            </p>
+            `
+            break;
+        
+        case 'E':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter E</h3> <br>
+            <p>
+            You have a tendency to approach life with a sense of personal
+            liberation and independence. Passion, inventiveness, and adaptability
+            are used in the approach.
+            </p>
+            `
+            break;
+        
+        case 'F':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter F</h3> <br>
+            <p>
+            With respect to family, home, and nurture, you are prone to approach
+            life with a feeling of responsibility.
+            </p>
+            `
+            break;
+        
+        case 'G':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter G</h3> <br>
+            <p>
+            You have a tendency to approach things from a scientific standpoint.
+            Solutions that have been thoroughly considered are favored.            
+            </p>
+            `
+            break;
+        
+        case 'H':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter H</h3> <br>
+            <p>
+            You are drawn to a way of life that is focused on achieving financial
+            success and material gain 
+            </p>
+            `
+            break;
+        
+        case 'I':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter I</h3> <br>
+            <p>
+            You'll approach life with kindness and humanitarian (human rights)
+            concerns, always keeping an ideal in mind.
+            
+            </p>
+            `
+            break;
+        
+        case 'J':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter J</h3> <br>
+            <p>
+            You are more likely to approach life with a sense of self-determination,
+            exhibiting independence, and choosing self-reliance over-relying on
+            others.
+            </p>
+            `
+            break;
+        
+        case 'K':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter K</h3> <br>
+            <p>
+            You have a charismatic and spiritual outlook on life, and you frequently
+            rely on intuition.            
+            </p>
+            `
+            break;
+
+        case 'L':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter L</h3> <br>
+            <p>
+            You have a proclivity for both creative and intellectual expression in
+            your life.
+            </p>
+            `
+            break;
+
+        case 'M':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter M</h3> <br>
+            <p>
+            You have a proclivity for approaching life with the goal of achieving a
+            desirable position or scenario, such as family or financial security.
+            </p>
+            `
+            break;
+        
+        case 'N':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter N</h3> <br>
+            <p>
+            You are drawn to a way of life that is full of uniqueness, creativity, and
+            true enjoyment of life – as well as a genuine delight when connecting
+            with people.
+            </p>
+            `
+            break;
+
+        case 'O':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter O</h3> <br>
+            <p>
+            You have a strong desire to prioritize family, home, and harmony in
+            your life. There is a natural tendency to lead the family toward a lofty
+            objective.
+            
+            </p>
+            `
+            break;
+
+        case 'P':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter P</h3> <br>
+            <p>
+            You're probably focusing on spiritual, philosophical, or metaphysical in
+            your outlook on life.
+            </p>
+            `
+            break;
+
+        case 'Q':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter Q</h3> <br>
+            <p>
+            You're more likely to approach life from a business and financial
+            standpoint, with some strange and unconventional activities thrown in
+            for good measure.
+            </p>
+            `
+            break;
+        
+        case 'R':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter R</h3> <br>
+            <p>
+            You're likely to approach life with a strong sense of self-determination
+            and inner power, as well as acceptance, efficiency, honesty, selfcontrol, and kindness.
+            
+            </p>
+            `
+            break;
+
+        case 'S':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter S</h3> <br>
+            <p>
+            You're prone to approaching life with a sense of personal autonomy,
+            as well as ambition, confidence, and attractiveness.
+            </p>
+            `
+            break;
+        
+        case 'T':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter T</h3> <br>
+            <p>
+            You prefer to view life as a shared experience with others. Being a
+            part of a team is more enticing than being in charge.
+            
+            </p>
+            `
+            break;
+        
+        case 'U':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter U</h3> <br>
+            <p>
+            You have a lot of admiration for the arts and prefer to approach life
+            with a positive attitude. You're likely to be charming and pleasant, as
+            well as incredibly creative, bright, and perceptive.            
+            </p>
+            `
+            break;
+
+        case 'V':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter V</h3> <br>
+            <p>
+            You are drawn to a way of life that emphasizes honesty, dependability,
+            efficiency, and focus. You are a team player and a builder.
+            </p>
+            `
+            break;
+        
+        case 'W':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter W</h3> <br>
+            <p>
+            You are likely to approach life with a feeling of spontaneity,
+            inventiveness, curiosity, humor, and a sense of personal
+            independence.
+            </p>
+            `
+            break;
+        
+        case 'X':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter X</h3> <br>
+            <p>
+            You have an optimistic outlook on life, which includes family, nurture,
+            security, and friendship.
+            </p>
+            `
+            break;
+        
+        case 'Y':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter Y</h3> <br>
+            <p>
+            You have a proclivity for intuition, clear vision, open-mindedness,
+            boldness, and reflection when it comes to life.
+            </p>
+            `
+            break;
+        
+        case 'Z':
+            cstText.innerHTML = `
+            <h3 class="bold-description-label">Definition</h3> <br>
+            <p>
+                The cornerstone letter can reveal information about you. How life is
+                handled has a lot to do with how it is experienced, this can lead to a
+                greater understanding.        
+            </p> <br> <br>
+            
+            <h3 class="bold-description-label">Cornerstone Letter Z</h3> <br>
+            <p>
+            You have a vitality and optimism about life, as well as a high level of
+            intellect, empathy, and good instinct.            
+            </p>
+            `
+            break;
+
+        default:
+            break;
+    }
+    
 
 
 
@@ -8273,7 +8954,6 @@ your    cool or temper.
         }
         mSplit = String(sumCount).split('');
         sum = eval(mSplit.join('+'));
-        // console.log(sum);
         if (sum === 1) {
             count = '10/1';
             ppoeNum.innerHTML = count;
@@ -8291,29 +8971,223 @@ your    cool or temper.
         }
     };
 
-    // mSplit = String(sumCount).split('');
-    // sum = eval(mSplit.join('+'));
-    // console.log(sum);
-    // if (sum === 1) {
-    //     count = '10/1';
-    //     ppoeNum.innerHTML = count;
-    // } else if (sum < 10) {
-    //     count = sum;
-    //     ppoeNum.innerHTML = count;
-    // } else if (sum === 11 || sum === 22 || sum === 33) {
-    //     count = sum;
-    //     ppoeNum.innerHTML = count;
-    // } else {
-    //     mSplit = String(sum).split('');
-    //     sum = eval(mSplit.join('+'));
-    //     count = sum;
-    //     ppoeNum.innerHTML = count;
-    // }
-    // count = sum;
+    var ppPlaneText = (ppoeNum.textContent).trim();
+    var ppPlaneInt = ppPlaneText.split('/');
 
-    // ppoeNum.innerHTML = count;
-
-
+    if (ppPlaneText === '1'  || ppPlaneText === '10/1' || ppPlaneInt[ppPlaneInt.length - 1] === '1') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 1</h3> <br>
+        <p>
+        You are a dedicated worker who is focused on achieving your
+        objectives. You are energetic and motivating. You’re flexible and have
+        a strong physique. You take risks in business and other aspects of
+        your life. You are a flexible individual who can excel in any profession
+        or industry. You have strong preferences and make your decisions in
+        accordance with them.
+        </p>
+    
+        `
+    } else if (ppPlaneText === '11/2' || ppPlaneInt[0] === '11') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 11/2</h3> <br>
+        <p>
+        You are always engaged in artistic endeavors and have developed an
+        inner appeal. Your thoughts are lively, intriguing, and humorous. You
+        have a keen sense of intuition and experience glimpses of vision. Your
+        beliefs and your creative imagination are your guides. One of your
+        biggest instructors is your real body. You must understand how to
+        properly care for it, including what keeps it healthy and robust.
+        Because of your hypersensitivity, you'll need to make choices about
+        food, exercise routine, and stress management techniques.
+        </p>
+    
+        `
+    } else if (ppPlaneText === '22/4' || ppPlaneInt[0] === '22') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 22/4</h3> <br>
+        <p>
+        You are a driven individual with excellent organizing abilities. You're
+        good at sticking to a routine. You are a master builder who wants to
+        create something that will help humanity. You are realistic, a hard
+        worker, committed, and honest.        
+        </p>
+    
+        `
+    } else if (ppPlaneText === '2' || ppPlaneText === '20/2' || ppPlaneInt[ppPlaneInt.length -1] === '2') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 2</h3> <br>
+        <p>
+        You have a sensitive and fragile nature and are easily irritated. You
+        pay close attention to the smallest details and consider it all. Your
+        power lies in a steady yet gentle attempt. You could be timid and
+        lacking in self-assurance. You have a tendency to be overly
+        concerned. You may have moments of terror as a result of your lack of
+        faith in your own particular ability.
+        </p>
+    
+        `
+    } else if (ppPlaneText === '3' || ppPlaneText === '12/3' || ppPlaneText === '21/3' || ppPlaneText === '30/3' || ppPlaneInt[ppPlaneInt.length - 1] === '3') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 3</h3> <br>
+        <p>
+        By nature, you are a highly attractive person. You have an enticing
+        aura about you. You have a strong artistic, inventive, and theatrical
+        side to you. You have a unique way of expressing yourself. You
+        despise arduous labor. You must learn to be disciplined. You're a
+        fantastic and interesting company during social gatherings since you
+        like having a good time.
+        
+        </p>
+    
+        `
+    } else if (ppPlaneText === '4' || ppPlaneText === '13/4' || ppPlaneText === '31/4' || ppPlaneText === '40/4' || ppPlaneInt[ppPlaneInt.length - 1] === '4') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 4</h3> <br>
+        <p>
+        You are self-disciplined, goal-oriented, well-organized, and pragmatic.
+        Routine is easily addressed. You pay close attention to details and
+        place a high value on them. You are dependable and trustworthy, as
+        well as warm and compassionate. Change irritates you, and you may
+        be stiff and inflexible. You're an excellent public speaker. You must
+        restrain your impulse to rule over others and events. When presented
+        with a challenge or an enemy, you can be stubborn.
+        </p>
+    
+        `
+    } else if (ppPlaneText === '5' || ppPlaneText === '14/5' || ppPlaneText === '23/5' || ppPlaneInt[ppPlaneInt.length - 1] === '5') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 5</h3> <br>
+        <p>
+        You're a flexible and adaptable individual who can handle a variety of
+        responsibilities. You’re strong and energetic. Your body's physical
+        ability can be greatly enhanced. Change, travel, and making new
+        friends are all things you appreciate. You're drawn to fresh and
+        fascinating things. From experience, you pursue knowledge and
+        insight. You live your life in an imaginative and exciting way,
+        avoiding routine and standards.
+        
+        </p>
+    
+        `
+    } else if (ppPlaneText === '6' || ppPlaneText === '15/6' || ppPlaneText === '24/6' || ppPlaneInt[ppPlaneInt.length -  1] === '6') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 6</h3> <br>
+        <p>
+        You are the one who mixes reality with compassion. You are a loving
+        person that always seeks harmony. This physical plane number is
+        shared by many artists. You are a sensitive, peaceful, and kind
+        individual. You're also quite interested in other people's lives. You're
+        an excellent teacher and healer. Your love of beauty and art may be
+        seen in your environments. You're a fantastic partner when it comes to
+        marriage. Parenting, as well as the little act of service to everybody
+        you interact with, brings you great joy. 
+        </p>
+    
+        `
+    } else if (ppPlaneText === '7' || ppPlaneText === '16/7' || ppPlaneText === '25/7' || ppPlaneInt[ppPlaneInt.length - 1] === '7') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 7</h3> <br>
+        <p>
+        You've acquired inner feelings, and you have excellent intuition and
+        the capacity to comprehend abstract concepts. As a healer, you have
+        a gift. Your intellect is naturally gifted at grasping science and
+        technology concepts, so you could excel in either of these professions.
+        You're at your best when you're in a calm environment. You require
+        mental clarity as well as time to ponder and reflect. You should
+        concentrate on one field of research. You have discipline and integrity,
+        but you should be careful not to detach or distance too much
+        </p>
+    
+        `
+    } else if (ppPlaneText === '8' || ppPlaneText === '17/8' || ppPlaneText === '26/8' || ppPlaneInt[ppPlaneInt.length - 1] === '8') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 8</h3> <br>
+        <p>
+        Your life revolves around money and power. You are a driven
+        individual with exceptional leadership and management skills. You are
+        always striving for the best and inspiring others to do the same. You
+        are very competitive. You have a strong personality and will battle
+        tooth and nail to obtain what you believe you are entitled to. Several
+        people with this number have strong bodies and great vocals. Many
+        people appreciate and respect you for your dedication, ambition,
+        hardworking, vision, determination, and accomplishment. In your latter
+        years, you have a great possibility of becoming successful, wealthy,
+        and comfortable. 
+        </p>
+    
+        `
+    } else if (ppPlaneText === '9' || ppPlaneText === '18/9' || ppPlaneText === '27/9' || ppPlaneInt[ppPlaneInt.length - 1] === '9') {
+        ppoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Stands for physical activity, moderation, practicality, and values.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Physical Plane of Expression 9</h3> <br>
+        <p>
+        You are a determined and powerful individual with artistic ability.
+        People like you should be performing in the arena. You're a good
+        person. You are worried about the well-being of the humanities.
+        Government, journalism, marketing, and public service are also
+        appealing to you. You have a great deal of sympathy, understanding,
+        and kindness in your heart. You like to satisfy everyone in some
+        manner, so you make commitments that you're not able to maintain.
+        Others frequently misunderstand you, because you are often
+        misinterpreted and distant.
+        </p>
+    
+        `
+    }
 
 
     // Mental Plane of Expression Number 
@@ -8340,7 +9214,6 @@ your    cool or temper.
         countList.push(count);
         count = 0;
     };
-    // console.log(countList)
     for (let i = 0; i < countList.length; i++) {
         if (countList[i] < 10) {
             sum = countList[i];
@@ -8362,7 +9235,6 @@ your    cool or temper.
             finalList.push(sum);
         }
     };
-    // console.log(finalList);
     count = 0;
     sumCount = 0;
     if (finalList.length === 1) {
@@ -8403,8 +9275,6 @@ your    cool or temper.
             sumCount += count
             
         }
-        // mSplit = String(sumCount).split('');
-        // sum = eval(mSplit.join('+'));
         sum = sumCount;
         if (sum < 10) {
             count = sum;
@@ -8425,6 +9295,206 @@ your    cool or temper.
         // count = sum;
         
     }
+
+    var mmpText = (mpoeNum.textContent).trim();
+    var mmpInt = mmpText.split('/');
+
+    if (mmpText === '1' || mmpText === '10/1' || mmpInt[mmpInt.length - 1] === '1') {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Symbolizes the state of mind, way of thinking, and ability to make
+        healthy conclusions and judgments.
+        
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 1</h3> <br>
+        <p>
+        Your thinking is brilliant, you are humorous and clever, and your
+        unique ideas can lead to success.
+        </p>
+    
+        `
+    } else if (mmpText === '11/2' || mmpInt[0] === '11') {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Symbolizes the state of mind, way of thinking, and ability to make
+        healthy conclusions and judgments.
+        
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 11/2</h3> <br>
+        <p>
+        Individuals like you are hard to find these days. You are naturally
+        creative, innovative, explorer, and inspirational.
+        
+        </p>
+    
+        `
+    } else if (mmpText === '22/4' || mmpInt[0] === '22') {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Symbolizes the state of mind, way of thinking, and ability to make
+        healthy conclusions and judgments.
+        
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 22/4</h3> <br>
+        <p>
+        You are intelligent and therefore can recognize the tiniest facts that
+        others might overlook. You're also a terrific organizer and thinker.
+        </p>
+    
+        `
+    } else if (mmpText === '2' || mmpText === '20/2' || mmpInt[mmpInt.length - 1] === '2') {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Symbolizes the state of mind, way of thinking, and ability to make
+        healthy conclusions and judgments.
+        
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 2</h3> <br>
+        <p>
+        You have exceptional memory skills and can comprehend and
+        remember a large quantity of data or information.
+        
+        </p>
+    
+        `
+    } else if (mmpText === '3' || mmpText === '12/3' || mmpText==='21/3' || mmpText=== '30/3' || mmpInt[mmpInt.length - 1] === '3') {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+        Symbolizes the state of mind, way of thinking, and ability to make
+        healthy conclusions and judgments.
+        
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 3</h3> <br>
+        <p>
+        You are a gifted and artistic individual. You have a lot of imagination
+        and are quite intelligent.
+        </p>
+    
+        `
+    } else if (mmpText === '4' || mmpText === '13/4' || mmpText === '31/4' || mmpInt[mmpInt.length - 1] === '4') {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Symbolizes the state of mind, way of thinking, and ability to make
+            healthy conclusions and judgments.
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 4</h3> <br>
+        <p>
+        You are meticulous in your detailing and enjoy making schedules and
+        checklists. You are a sensible, logical, and diligent person.
+        </p>
+    
+        `
+    } else if (mmpText === '5' || mmpText === '14/5' || mmpText === '23/5' || mmpInt[mmpInt.length - 1] === '5') {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Symbolizes the state of mind, way of thinking, and ability to make
+            healthy conclusions and judgments.
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 5</h3> <br>
+        <p>
+        You are a creative and intellectual individual. You have a good
+        memory and can memorize a great deal of information quickly.
+        </p>
+    
+        `
+    } else if (mmpText === '6' || mmpText === '15/6' || mmpText=== '24/6' || mmpInt[mmpInt.length - 1] === '6') {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Symbolizes the state of mind, way of thinking, and ability to make
+            healthy conclusions and judgments.
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 6</h3> <br>
+        <p>
+        You have a sensitive personality and a creative inclination. You have
+        the potential to be a fantastic actor or performer. You can also be an
+        excellent, nurse, physician, and educator. 
+        </p>
+    
+        `
+    } else if (mmpText === '7' || mmpText === '16/7' || mmpText === '25/7' || mmpInt[mmpInt.length - 1] === '7') {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Symbolizes the state of mind, way of thinking, and ability to make
+            healthy conclusions and judgments.
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 7</h3> <br>
+        <p>
+        You're hungry for information and the truth in everything. If you
+        continue to improve intellectually, you have a good possibility of
+        becoming a genius in any one of your fields of expertise.
+        </p>
+    
+        `
+    } else if (mmpText === '8' || mmpText === '17/8' || mmpText === '26/8' || mmpInt[mmpInt.length - 1] === '8') {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Symbolizes the state of mind, way of thinking, and ability to make
+            healthy conclusions and judgments.
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 8</h3> <br>
+        <p>
+        In business and entrepreneurship, you may achieve great success.
+        You're prepared for challenges and obstacles, and your goals are
+        quite legitimate.
+        
+        </p>
+    
+        `
+    } else if (mmpText === '9' || mmpText === '18/9' || mmpText === '27/9' || mmpInt[mmpInt.length - 1] === '9')  {
+        mpoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Symbolizes the state of mind, way of thinking, and ability to make
+            healthy conclusions and judgments.
+    
+    
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Mental Plane of Expression 9</h3> <br>
+        <p>
+        You would like to accomplish something amazing and motivating. You
+        are indeed a sensitive individual who has a tendency to exaggerate
+        situations.
+        </p>
+    
+        `
+    }
+    
 
 
 
@@ -8540,12 +9610,198 @@ your    cool or temper.
             ipoeNum.innerHTML = sum;
         }
         count = sum;
-        // ipoeNum.innerHTML = count;
-    }
-    // count = sumCount
+    };
+
+    var ippText = (ipoeNum.textContent).trim();
+    var ippInt = ippText.split('/');
+
+    if (ippText === '1' || ippText === '10/1' || ippInt[ippInt.length - 1] === '1') {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 1</h3> <br>
+        <p>
+        Your intuition works in combination with your conscious mind, it is
+        informed by your past experiences and knowledge, so it hardly leads
+        you mistaken. You can comprehend things of varying degrees of
+        difficulty.
+        </p>
     
-
-
+        `
+    } else if (ippText === '11/2' || ippInt[0] === '11') {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 11/2</h3> <br>
+        <p>
+        Your intuition is very sharp. You can predict what will happen in the
+        future, and you don't speculate; you explain what you think. You have
+        the ability to influence and alter the moods of others around you.
+        
+        </p>
+    
+        `
+    } else if (ippText === '22/4' || ippInt[0] === '22') {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 22/4</h3> <br>
+        <p>
+        If others around you start speculating things they don't know with
+        certainty, it makes you feel uneasy. You love accurate information and
+        evidence. You have similar religious beliefs.
+        </p>
+    
+        `
+    } else if (ippText === '2' || ippText === '20/2' || ippInt[ippInt.length - 1] === '2') {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 2</h3> <br>
+        <p>
+        Your instincts are spot on. You're a sentimental person who typically
+        follows the path of your ideas when it comes to spiritual things.
+        </p>
+    
+        `
+    } else if (ippText === '3' || ippText === '12/3' || ippText === '21/3' || ippInt[ippInt.length - 1] === '3') {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 3</h3> <br>
+        <p>
+        You have a lot of imagination, and you have profound ideas about a lot
+        of things on this planet. You're a daydreamer who frequently imagines
+        both conceivable and impossible scenarios for a given circumstance.
+        </p>
+    
+        `
+    } else if (ippText === '4' || ippText === '13/4' || ippText === '31/4' || ippInt[ippInt.length - 1] === 4) {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 4</h3> <br>
+        <p>
+        You prefer goods that have been thoroughly examined. You might be
+        religious and follow customs.
+        </p>
+    
+        `
+    } else if (ippText === '5' || ippText === '14/5' || ippText === '23/5' || ippInt[ippInt.length - 1] === '5') {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 5</h3> <br>
+        <p>
+        Your intuition is well evolved, and you depend on it frequently. Your
+        internal visions need to be more disciplined.
+        </p>
+    
+        `
+    } else if (ippText === '6' || ippText === '15/6' || ippText === '24/6' || ippInt[ippInt.length - 1] === '6') {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 6</h3> <br>
+        <p>
+        You have a strong sense of intuition. You normally take your own
+        experiences and opinions extremely seriously. You stick to your gut
+        instincts.
+        </p>
+    
+        `
+    } else if (ippText === '7' || ippText === '16/7' || ippText === '25/7' || ippInt[ippInt.length - 1] === '7') {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 7</h3> <br>
+        <p>
+        Your intuition or instinct is something to be proud of since it is forwardthinking. You have a strong understanding of a variety of intangible
+        issues. You're hoping for something amazing to occur.
+        </p>
+    
+        `
+    } else if (ippText === '8' || ippText === '17/8' || ippInt[ippInt.length - 1] === '8') {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 8</h3> <br>
+        <p>
+        You have exceptional intuition and can occasionally make predictions.
+        You can readily guess what people's underlying motivations are.
+        
+        </p>
+    
+        `
+    } else if (ippText === '9' || ippText === '18/9' || ippText === '27/9' || ippInt[ippInt.length - 1] === '9') {
+        ipoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Implicates an instinctive side, profound knowledge of self, and a
+            general understanding of people. Also called <span class="red-span">Spiritual Plane of
+            Expression </span>
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Intuitive/Spiritual Plane of Expresion 9</h3> <br>
+        <p>
+        You desire to be exposed to a wide range of spiritual experiences. You
+        have a deep grasp of life. Many folks think you're at the very least
+        attractive.
+        </p>
+    
+        `
+    }
+    
 
 
     // Emotional Plane of Expression Number 
@@ -8572,7 +9828,6 @@ your    cool or temper.
         countList.push(count);
         count = 0;
     };
-    // console.log(countList)
     for (let i = 0; i < countList.length; i++) {
         if (countList[i] < 10) {
             sum = countList[i];
@@ -8594,20 +9849,16 @@ your    cool or temper.
             finalList.push(sum);
         }
     };
-    // console.log(finalList);
     count = 0;
     sumCount = 0;
     if (finalList.length === 1) {
         if (finalList[0] < 10) {
-            // count = finalList[0];
             epoeNum.innerHTML = count;
         } else if (finalList[0] === 10) {
-            // count = 1;
             epoeNum.innerHTML = '10/<b>1</b>';
         } else if (finalList[0] === 11 || finalList[0] === 22 || finalList[0] === 33) {
             mSplit = String(countList[0]).split('');
             sum = eval(mSplit.join('+'));
-            // count = countList[0] + '/' + sum;
             epoeNum.innerHTML =finalList[0]  +'/'+ sum ;
         } else {
             mSplit = String(countList[0]).split('');
@@ -8635,12 +9886,9 @@ your    cool or temper.
             
         }
         sum = sumCount;
-        // console.log(sum)
         if (sum < 10) {
-            // count = sum
             epoeNum.innerHTML = sum;
         } else if (sum === 10) {
-            // count = 1;
             epoeNum.innerHTML = '10/1';
         } else if (sum === 11 || sum === 22 || sum === 33) {
             count = sum;
@@ -8653,10 +9901,188 @@ your    cool or temper.
             epoeNum.innerHTML = sum;
         }
         count = sum;
-        // epoeNum.innerHTML = count;
         
+    };
+
+    var eppText = (epoeNum.textContent).trim();
+    var eppInt = eppText.split('/');
+
+    if (eppText === '1' || eppText === '10/1' || eppInt[eppInt.length - 1] === '1') {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 1</h3> <br>
+        <p>
+        You have a stressful life, which is the source of your anxiety. Since
+        you might be the head in your marriage or relationship, it is best
+        for you to seek out an accepting and accommodating spouse
+        </p>
+    
+        `
+    } else if (eppText === '11/2' || eppInt[0] === '11') {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 11/2</h3> <br>
+        <p>
+        You are incredibly intuitive and follow your gut instincts. You love so
+        deeply that you might become lost in the other individual. You can be
+        certain of what other people's motivations and goals are.
+        
+        </p>
+    
+        `
+    } else if (eppText === '22/4' || eppInt[eppInt.length - 1] === '22') {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 22/4</h3> <br>
+        <p>
+        You hardly trust your thoughts, emotions, and sentiments since they
+        can injure you, jeopardizing your ambition to have a calm and stable
+        existence.
+        </p>
+    
+        `
+    } else if (eppText === '2' || eppText === '20/2' || eppInt[eppInt.length - 1] === '2') {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 2</h3> <br>
+        <p>
+        You are hypersensitive, which might have a negative impact on your
+        self-esteem. Because you have a defensive personality, it will take a
+        little time for you to trust other individuals.
+        
+        </p>
+    
+        `
+    } else if (eppText === '3' || eppText === '21/3' || eppText === '12/3' || eppInt[eppInt.length - 1] === '3') {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 3</h3> <br>
+        <p>
+        You have a loving, beautiful outlook on life and a creative imagination.
+        You are charming and have a wonderful sense of humor as well.
+        </p>
+    
+        `
+    } else if (eppText === '4' || eppText === '13/4' || eppText === '31/4' || eppInt[eppInt.length - 1] === '4') {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 4</h3> <br>
+        <p>
+        Any time your emotions take control, you strive to bring yourself
+        together. Excessive gestures might detract from your concentration.
+        </p>
+    
+        `
+    } else if (eppText === '5' || eppText === '14/5' || eppText === '23/5' || eppInt[eppInt.length - 1] === '5') {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 5</h3> <br>
+        <p>
+        You like observing other people's behavior, their speech patterns, and
+        their way of life. Traveling is ideal for you since it allows you to
+        understand a little more about the universe.        
+        </p>
+    
+        `
+    } else if (eppText === '6' || eppText === '15/6' || eppText === '24/6' || eppInt[eppInt.length - 1] === '6') {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 6</h3> <br>
+        <p>
+        You're extremely sensitive, and your emotions frequently take control.
+        If necessary, you will find it difficult to conceal your feelings. It is
+        priceless that you really love and cherish your relatives and friends,
+        and learn to remain calm.
+        </p>
+    
+        `
+    } else if (eppText === '7' || epoeText === '25/7' || eppText === '16/7' || eppInt[eppInt.length - 1] === '7') {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 7</h3> <br>
+        <p>
+        You're filled with emotions and in desperate need of affection. Yet, you
+        are having difficulty expressing your sentiments in the appropriate
+        manner.
+        </p>
+    
+        `
+    } else if (eppText === '8' || eppText === '17/8' || eppText === '26/8' || eppInt[eppInt.length - 1] === '8' ) {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 8</h3> <br>
+        <p>
+        You're someone who wants to have complete control and
+        authority over everybody and a lot of things around you. 
+        </p>
+    
+        `
+    } else if (eppText === '9' || eppText === '18/9' || eppText === '27/9' || eppInt[eppInt.length - 1] === '9') {
+        epoeText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Accounts for sensitivity, emotional reaction, and total ability to express
+            feelings during one's life.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label">Emotional Plane of Expresion 9</h3> <br>
+        <p>
+        You are indeed a genuine individual who seeks to assist everyone
+        who is in distress.        
+        </p>
+    
+        `
     }
-    // count = sumCount
     
 
 
@@ -8689,9 +10115,7 @@ your    cool or temper.
         } else if (lpHoldList[lpHoldList.length - 1] < 10) {
             fpHold = Number(lpHoldList[lpHoldList.length - 1])
         }
-    }
-
-    // console.log(fpHold, monthHold)
+    };
 
     if (fpHold === 1) {
         fpCycle.innerHTML = 'from birth to age 0 - 26';
@@ -8730,6 +10154,336 @@ your    cool or temper.
         fpCycle.innerHTML = 'from birth to age 0 - 30';
         fpCycleNum.innerHTML = monthHold;
     };
+
+    var fCycleText = (fpCycleNum.textContent).trim();
+    var fCycleInt = fCycleText.split('/');
+
+    if (fCycleText === '1' || fCycleText === '10/1' || fCycleInt[fCycleInt.length - 1] === '1') {
+        fpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>First</b> Period Cycle or Opening Period
+                - Your first three decades of your existence were a period of
+                intense activity. Attempting to manage the tremendous
+                influences that exist in our surroundings, our parents, and our
+                family's socio-economic circumstances. Age 0 to 28/30. 
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">First Period Cycle 1</h3> <br>
+        <p>
+        Signifies someone who is highly autonomous, constantly takes the lead
+        and has a difficult time following direction, which might get you into
+        problems as a youngster. You’ll acquire your own unique freedom and
+        originality, and you will be obliged to employ all of your abilities. Therefore,
+        you’re very independent and taking lead as a child or adolescence. <br> <br>
+        What to expect during a 1 cycle (in your 20s). Know that is a period of intensive
+        activity that may provide opportunities for personal advancement and growth.
+        You'll have greater self-assurance and freedom when it comes to trying new
+        things. At that moment, you will be focused on your own goals and
+        dreams. You will have the option of breaking out on your own in a
+        relationship or working for yourself. During this time, separation and
+        singleness are common. During this period, you can do great things and
+        lead others.
+        </p>
+    
+        `
+    } else if (fCycleText === '11/2' || fCycleInt[0] === '11') {
+        fpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>First</b> Period Cycle or Opening Period
+                - Your first three decades of your existence were a period of
+                intense activity. Attempting to manage the tremendous
+                influences that exist in our surroundings, our parents, and our
+                family's socio-economic circumstances. Age 0 to 28/30. 
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">First Period Cycle 11/2</h3> <br>
+        <p>
+        The first 30 years of your life are a period of spiritual growth, if not outright
+        revelation. You might be idealistic and still struggle to deal with the practical
+        world. As a kid, you'll be sensitive, cooperative, and kind. You will gain
+        knowledge and wisdom. This is not the time to pursue personal material
+        aspirations, but rather to explore larger human values. Most kids who start with
+        the master 11 cycle may have come from broken homes and had a
+        struggled childhood. <br> <br>
+        It's a moment of enormous spiritual development, insight, and inspiration.
+        You can be drawn to the spiritual realm if you have psychic powers such as
+        clairvoyance, clear hearing, and clear seeing. You are a messenger, and you 
+        will have many visions during this time. You may also gain fame and popularity. <br> <br>
+        Understand that in this period, you have a message or a skill that should
+        be presented among your society, but this gift can only be provided via
+        significant personal development and improved by expressing yourself. The
+        more determined you are to improve yourself, the greater the ability you'll
+        have to help the rest of the world. There is a tremendous reward for those
+        who adopt and embrace this route, including plenty of financial assistance
+        and even fame. There's also the added joy of knowing that your attempts have
+        aided individuals' growth. You will inspire many people along the way. 
+        </p>
+    
+        `
+    } else if (fCycleText === '2' || fCycleText === '20/2' || fCycleInt[fCycleInt.length - 1] === '2') {
+        fpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>First</b> Period Cycle or Opening Period
+                - Your first three decades of your existence were a period of
+                intense activity. Attempting to manage the tremendous
+                influences that exist in our surroundings, our parents, and our
+                family's socio-economic circumstances. Age 0 to 28/30. 
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">First Period Cycle 2</h3> <br>
+        <p>
+        You're particularly sensitive throughout this cycle, easily hurt by other
+        youngsters, and supportive with grownups. When you're young, having
+        a new hobby is beneficial. Not only will you be sensitive to your environment
+        after adolescence, but you will also be very intuitive. <br> <br>
+        You have a gift for bringing people together and have immense influence
+        via subtle persuasion. Develop your diplomatic and tactful skills. Work along
+        with others. You may develop empathic abilities through empathizing with
+        others. You may offer peace and diplomacy to the world while also
+        finding love or friendship. Collaboration with others will be crucial. During this
+        period, try to achieve balance and tranquility, otherwise, you'll get
+        stressed and depressed. It's a period of gradual but steady improvement
+        </p>
+    
+        `
+    } else if (fCycleText === '3' || fCycleText === '12/3' || fCycleText === '21/3' || fCycleText === '30/3' || fCycleInt[fCycleInt.length - 1] === '3') {
+        fpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>First</b> Period Cycle or Opening Period
+                - Your first three decades of your existence were a period of
+                intense activity. Attempting to manage the tremendous
+                influences that exist in our surroundings, our parents, and our
+                family's socio-economic circumstances. Age 0 to 28/30. 
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">First Period Cycle 3</h3> <br>
+        <p>
+        You'll have plenty of energy, be able to express yourself readily, socialize, be
+        open to friendship, communicate, and take pleasure in all you do. Any artistic
+        talent you have, especially in writing, acting, designing, and dancing, will be
+        pushed to new heights and rewarded handsomely. People will want to be
+        around you, and it may be a joyful and happy moment. However, you
+        may have difficulty focusing on anything for an extended period of
+        time. Try to be disciplined so that you don’t scatter your energy.
+        </p>
+    
+        `
+    } else if (fCycleText === '4' || fCycleText === '13/4' || fCycleText === '31/4' || fCycleInt[fCycleInt.length - 1] === '4') {
+        fpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>First</b> Period Cycle or Opening Period
+                - Your first three decades of your existence were a period of
+                intense activity. Attempting to manage the tremendous
+                influences that exist in our surroundings, our parents, and our
+                family's socio-economic circumstances. Age 0 to 28/30. 
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">First Period Cycle 4</h3> <br>
+        <p>
+        Demonstrates a problem with being young, having too many responsibilities
+        at a young age, being realistic, and starting a profession early. Number 4
+        can also be about laying a foundation, which can be difficult for young children
+        at this period because they are often preoccupied with other things. <br> <br>
+        It also signifies a period of hard effort with all of the benefits and reward that
+        comes with it. This is a time when you are mostly concerned with the practical
+        aspects of life such as a job and profession, financial stability, a stable
+        family, buying and creating a home, and a strong community. You're not
+        one for fantasy or idealism, but you do want to put your life on a solid financial
+        foundation.
+        </p>
+    
+        `
+    } else if (fCycleText === '5' || fCycleText === '14/5' || fCycleText === '23/5' || fCycleInt[fCycleInt.length - 1] === '5') {
+        fpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>First</b> Period Cycle or Opening Period
+                - Your first three decades of your existence were a period of
+                intense activity. Attempting to manage the tremendous
+                influences that exist in our surroundings, our parents, and our
+                family's socio-economic circumstances. Age 0 to 28/30. 
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">First Period Cycle 5</h3> <br>
+        <p>
+        You're restless and adventurous, yet you might have several highs and lows,
+        and your lack of structure and stability makes growing up tough for you. As a
+        kid, you’ll probably travel, relocate, or start childcare/school early or have
+        many changes in life at an early age. <br> <br>
+        In your youth, it will depict a time when there’s a lot of change and a lot of
+        growth. You're studying the subject of individual freedom. During this period,
+        you will travel, change jobs, and relocate several times. It will be a
+        period when you will be free of all duties. You'll be independent and have
+        a natural talent for advertising oneself. <br> <br>
+        You'll have fewer responsibilities, giving you more time to travel and see the
+        world and other countries. You'll become more adaptive, curious,
+        energetic, flexible, entertaining, and sociable as a consequence, and many
+        people will gravitate toward you. It's possible that you'll lose your
+        equilibrium. Make an effort to be disciplined. Don't be careless, addicted,
+        or unstable.
+        </p>
+    
+        `
+    } else if (fCycleText === '6' || fCycleText === '15/6' || fCycleText === '24/6' || fCycleInt[fCycleInt.length - 1] === '6') {
+        fpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>First</b> Period Cycle or Opening Period
+                - Your first three decades of your existence were a period of
+                intense activity. Attempting to manage the tremendous
+                influences that exist in our surroundings, our parents, and our
+                family's socio-economic circumstances. Age 0 to 28/30. 
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">First Period Cycle 6</h3> <br>
+        <p>
+        You are dedicated to your friends and family, eager to help out as much as
+        possible, and you have a tendency to take on too much responsibility and
+        obligation at an early age. <br> <br>
+        Commitment, home, marriage, family, and community are all brought into
+        great perspective. This is a phase of considerable peace and support when
+        promises are made and one reacts tenderly and with understanding.  <br> <br>
+        During this time, you may find yourself in an unprepared early marriage, which
+        might lead to separation or divorce. At this period, you could even become a
+        parent. You may also be the one who looks for and takes care of yourself and
+        your needs. During this time, you will be well-known, you may start your own
+        business, you will be creative, and you will find yourself frequently assisting
+        people.
+        </p>
+    
+        `
+    } else if (fCycleText === '7' || fCycleText === '16/7' || fCycleText === '25/7' || fCycleText === '34/7' || fCycleInt[fCycleInt.length - 1] === '7') {
+        fpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>First</b> Period Cycle or Opening Period
+                - Your first three decades of your existence were a period of
+                intense activity. Attempting to manage the tremendous
+                influences that exist in our surroundings, our parents, and our
+                family's socio-economic circumstances. Age 0 to 28/30. 
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">First Period Cycle 7</h3> <br>
+        <p>
+        You'll feel like an outcast, different from the other kids, quieter, and more
+        contemplative. You're a natural learner who doesn't actually care about
+        blending in. <br> <br>
+        It's also a good time to study, think deeply, and ponder life's bigger
+        concerns. Deepen your understanding of a subject you appreciate. Science,
+        technology, literature, and theology all pique your interest. Also, become a
+        specialist in a certain field. You have exceptional intuition and an intellect
+        that can go under the surface of any topic you want to pursue. It is indeed a
+        time for personal growth. Internal enrichment can be achieved via
+        meditation, introspection, and selfreflection. Create a sense of wisdom. <br> <br>
+        Due to a desire to spend time alone, a relationship might appear stressful at
+        times. Revealing your innermost sentiments with others might be
+        difficult. You'll look for answers to the question of life's meaning. Your intellect
+        will grow in strength, and you will study to become anything you choose. <br> <br>
+        People at times become more spiritual or religious. You will learn a lot of new
+        things. You can find yourself relocating to the countryside from the bustling city. <br> <br>
+        You could acquire psychic abilities and become highly perceptive. Negative
+        traits are depression, anxiety, sadness, aloofness, distance, impulsive,
+        suspicious, and paranoid
+        </p>
+    
+        `
+    } else if (fCycleText === '8' || fCycleText === '17/8' || fCycleText === '26/8' || fCycleInt[fCycleInt.length - 1] === '8') {
+        fpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>First</b> Period Cycle or Opening Period
+                - Your first three decades of your existence were a period of
+                intense activity. Attempting to manage the tremendous
+                influences that exist in our surroundings, our parents, and our
+                family's socio-economic circumstances. Age 0 to 28/30. 
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">First Period Cycle 8</h3> <br>
+        <p>
+        Starting at a young age and lasting until your mid-thirties, you will be blessed
+        with a favorable period for job, career, and financial reward. However,
+        you may be too concerned with material belongings and financial gain.
+        You may begin your job at any age. Hard effort and a desire to devote
+        oneself after failures or challenges are the keys to success. Your motivation
+        will improve, you will get braver and more ambitious, you will be challenged
+        and may experience setbacks, but you will be able to achieve great things. <br> <br>
+        As a manager, organizer, and financial planner, your talents will be
+        substantially strengthened. You have a talent for seeing the big picture and
+        putting daring vision into practice. During this time, you might achieve
+        financial independence. Business and employment activities are going well,
+        but they take a huge amount of focus and dedication. You will attract money
+        and success during this time. 
+        </p>
+    
+        `
+    } else if (fCycleText === '9' ||fCycleText === '18/9' || fCycleText === '27/9' || fCycleInt[fCycleInt.length - 1] === '9') {
+        fpCycleText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Our lives are divided into three major categories called period cycles.
+            Which cycle age of start and duration is based on your life path
+            number. <br> <br>
+            <b>First</b> Period Cycle or Opening Period
+                - Your first three decades of your existence were a period of
+                intense activity. Attempting to manage the tremendous
+                influences that exist in our surroundings, our parents, and our
+                family's socio-economic circumstances. Age 0 to 28/30. 
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label">First Period Cycle 9</h3> <br>
+        <p>
+        You'll be compelled to focus on the world and people rather than yourself,
+        and you may struggle to feel confident and alone as a child. <br> <br>
+        This is a time when people will develop a broad sense of humanity and genuine
+        care for the well-being of others. These 9 Cycle’s purposes are acceptance,
+        understanding, and love for humanity and while such achievement will not be
+        entirely realized, the individual who is influenced by it will progress towards
+        such ideals. You will be blessed more the more you serve others. You'll be
+        extremely creative. You should live by a higher ethical standard since this will
+        provide you with tremendous spiritual and personal richness. <br> <br>
+        This is a moment of self-sacrifice in which you prioritize the needs of others
+        before your own. That is to say, you are sacrificing yourself for the sake of
+        others. You can be responsible for your loved ones or family, raise children
+        (sometimes by yourself), or aid society as a whole. Past events might become
+        a problem so try to let go. You might have some losses, or you may have a
+        lot of beginnings and endings in relationships, things, and so on. You
+        should try to heal from traumatic or negative experiences.
+        </p>
+    
+        `
+    } 
 
 
     // Second Cycle Life 
@@ -8807,6 +10561,10 @@ your    cool or temper.
         spCycle.innerHTML = 'from age 31 to 57';
         spCycleNum.innerHTML = dayHold;
     };
+
+
+    var sCyceText = (spCycleNum.textContent).trim();
+    var sCyleInt = sCyceText.split('/')
 
     // Third Period Cycle 
     yearHold;

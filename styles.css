@@ -136,7 +136,10 @@ input:focus {
 }
               
 
-
+#yforecast {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 /* hidden section styles  */
 
@@ -222,6 +225,10 @@ details p {
     display:  grid;
     grid-template-columns: repeat(4, 1fr);;
     
+}
+
+.border {
+    border: 1px solid  black;
 }
 
 #small {

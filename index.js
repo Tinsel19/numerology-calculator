@@ -134,12 +134,15 @@ var escyNum = document.getElementById('escyNum');
 
 var cYear = document.getElementById('cYear');
 var cYearNum = document.getElementById('cYearNum');
+var perYearText = document.getElementById('perYearText')
 
 var cMonth = document.getElementById('cMonth');
 var cMonthNum = document.getElementById('cMonthNum');
+var perMonthText = document.getElementById('perMonthText')
 
 var cDay = document.getElementById('cDay');
 var cDayNum = document.getElementById('cDayNum');
+var perDayText = document.getElementById('perDayText');
 
 var bornDayText = document.getElementById('bornDayText');
 
@@ -6168,6 +6171,17 @@ your    cool or temper.
 
 
     // life Path / Expression Bridge
+    var lifePath = ((lpNum.textContent).trim()).split('/');
+    lpHold = Number(lifePath[lifePath.length - 1]);
+    mSplit = String(lpHold).split('');
+    lpHold = eval(mSplit.join('+'));
+    
+    var expPath = ((edNum.textContent).trim()).split('/');
+    edHold = Number(expPath[expPath.length - 1])
+    mSplit = String(edHold).split('');
+    edHold = eval(mSplit.join('+'));
+
+
     var subtract = lpHold - edHold;
     // console.log(subtract);
     if (subtract < 0) {
@@ -6181,7 +6195,7 @@ your    cool or temper.
     var lifePathExpText = (lpebNum.textContent).trim();
     var lifePathExpInt = lifePathExpText.split('/');
 
-    if (lifePathExpText === '0' || lifePathExpInt[lifePathExpInt.length - 1] === 0) {
+    if (lifePathExpText === '0' || lifePathExpInt[lifePathExpInt.length - 1] === '0') {
         lpebText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
@@ -6411,6 +6425,9 @@ your    cool or temper.
     hdpbNum.innerHTML;
     pnHold = (pNum.textContent).split('/');
     pnHold = pnHold[pnHold.length - 1];
+
+    suHold = ((suhdNum.textContent).trim()).split('/');
+    suHold = Number(suHold[suHold.length - 1])
     var hdPB = suHold - Number(pnHold);
     var x = hdPB;
     if (x < 1) {
@@ -6423,7 +6440,7 @@ your    cool or temper.
     var HerDesPerText = (hdpbNum.textContent).trim();
     var HerDesPerInt = HerDesPerText.split('/');
 
-    if (HerDesPerText === '0' || HerDesPerInt[HerDesPerInt.length - 1] === 0) {
+    if (HerDesPerText === '0' || HerDesPerInt[HerDesPerInt.length - 1] === '0') {
         hdpbText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
@@ -14403,6 +14420,71 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             }
         }
     };
+
+    var perCYText = (cYearNum.textContent).trim();
+    var perCYInt = perCYText.split('/');
+
+    if (perCYText === '9' || perCYInt[perCYInt.length - 1] === '9') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 9</h3> <br>
+        <p>
+            <p class="border">New beginnings, independent, adjustments to direction of life, plant new seed, leadership</p>
+            You're at the start of your pinnacle cycle. There will be a lot of change and new
+        beginnings for you (could be in career, family, love, relationship, friends, in
+        everything). This year, you'll have a lot of energy. You must take the initiative and
+        start new activities. This is a great year to start anything new. This year, you'll be
+        focused heavily on yourself. Remember that whatever you do this year will have an
+        impact on you in the future, so do well and build something you desire (business,
+        etc.). This year is a period of rebirth, as last year was a time of letting go at your last
+        pinnacle. This is the time to take responsibility for your own destiny and future. <br> <br>
+        Personal Year 1 is associated with freedom, new beginnings, opportunity, and people
+        like to do things their own way during this year. There is a strong desire to go forward,
+        better conditions, establish uniqueness, and move on with one's life. You will meet
+        new people and learn new things, and you will be full of energy, willpower, and
+        courage. Ambitions, independence, leadership characteristics, decisiveness,
+        ingenuity, and the desire to take initiative are all-natural to you this year. If you have a
+        partner, it might be tough for your partner who is used to doing everything together to
+        understand that you are starting to do things on your own and desire to be more
+        independent in certain ways. Your partners may develop suspensions and demand an
+        explanation, or they may begin to feel excluded and question where they went wrong.
+        However, some people in Personal Year 1 may feel quite lonely, have difficulty
+        making friends, and have trouble in their existing relationships. <br> <br>
+        Recognize that this is the year to make a difference and take action. Because
+        everything is changing, this is the year to reconsider your style, old beliefs, and
+        worldview. It's time to put your plans into action and make your ambitions a reality. It's
+        the start of a whole different era for you, one packed with vivid feelings and changes,
+        and this is an ideal year to plan your future. This is the year to broaden your horizons
+        and become more adaptable. All of your previous troubles will fade away as the new
+        year brings fresh events into focus. You should let go of your past in order to be
+        content, otherwise, you may probably wind up becoming the one who hangs on the
+        past. People and things will disclose their true selves to you this year. <br> <br>
+        Know that the bright side is that such a year may be full of fresh new ideas, giving you
+        a break from the previous year's excessive duties. If you've worked hard for years to
+        reach a goal, you'll be rewarded for your efforts during this vibration; you may even be
+        promoted at work or receive news that will transform your life for the better. It’s a year
+        to plant new seeds for the future. This is not a year for partnership so you should do
+        things on your own. <br> <br>
+        On the bad side, you'll be impulsive and make rash judgments, as well as
+        opinionated, chauvinistic, combative, may experience headache and tension,
+        impatient, and cynical to a degree. Although you may face challenges this year; avoid
+        procrastination and have an optimistic attitude. A fantastic opportunity will present
+        itself to you. <br> <br>
+        Keep in mind that, in addition to the pinnacle you're in, the physical, mental, and
+        spiritual transits you're having that year will have a big impact on your personal year
+        </p>
+    
+        `
+    }
+
+    
 
 
     // Personal Month 

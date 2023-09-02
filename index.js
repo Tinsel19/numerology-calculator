@@ -97,27 +97,35 @@ var tpCycleText = document.getElementById('tpCycleText');
 
 var fPin = document.getElementById('fPin');
 var fPinNum = document.getElementById('fPinNum');
+var fpPinText = document.getElementById('fpPinText');
 
 var sPin = document.getElementById('sPin');
 var sPinNum = document.getElementById('sPinNum');
+var spPinText = document.getElementById('spPinText');
 
 var tPin = document.getElementById('tPin');
 var tPinNum = document.getElementById('tPinNum');
+var tpPinText = document.getElementById('tpPinText');
 
 var ftPin = document.getElementById('ftPin');
 var ftPinNum = document.getElementById('ftPinNum');
+var ftpPinText = document.getElementById('ftpPinText')
 
 var fCha = document.getElementById('fCha');
 var fChaNum = document.getElementById('fChaNum');
+var fChaText = document.getElementById('fChaText');
 
 var sCha = document.getElementById('sCha');
 var sChaNum = document.getElementById('sChaNum');
+var sChaText = document.getElementById('sChaText');
 
 var tCha = document.getElementById('tCha');
 var tChaNum = document.getElementById('tChaNum');
+var tChaText = document.getElementById('tChaText');
 
 var ftCha = document.getElementById('ftCha');
-var ftChaNum = document.getElementById('ftChaNum')
+var ftChaNum = document.getElementById('ftChaNum');
+var ftChaText = document.getElementById('ftChaText');
 
 var phtrNum = document.getElementById('phtrNum');
 var metrNum = document.getElementById('metrNum');
@@ -6409,7 +6417,7 @@ your    cool or temper.
         hdPB = x * (-1);
     } else {
         hdPB = x;
-    }
+    };
     hdpbNum.innerHTML = hdPB;
 
     var HerDesPerText = (hdpbNum.textContent).trim();
@@ -11577,8 +11585,481 @@ your    cool or temper.
         fPinNum.innerHTML = fpSum;
     };
 
+    var fpinText = (fPinNum.textContent).trim();
+    var fpinInt = fpinText.split('/');
+
+
+
     
 
+    
+if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '1') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 1</h3> <br>
+    <p>
+    It's all about being a leader, becoming self-sufficient, and knowing how to be
+    strong without being confrontational in your early years. This young defining
+    moment encourages you to go alone, to establish your own uniqueness, and
+    build something unique. It is preferable to lead instead of being led throughout
+    this time. You may be disappointed simply because people will be in a
+    higher position to lead you early in life, and they might not accept your displays
+    of individualism. It is not your job to be obstinate and self-centered in your
+    response, just be you. <br> <br>
+    You will be more self-reliant, confident, ambitious, and desire freedom. You
+    can be pushed into a leadership role. You may face several difficulties or
+    barriers on your way to being selfsufficient. You might be self-centered,
+    selfish, and individualistic because you desire to be alone. During this period,
+    singleness or separation are common. Recognize that the goal at this level is
+    for you to be self-sufficient, resourceful, and innovative.
+    </p>
+
+    `
+} else if (fpinText === '11/2' || fpinInt[0] === '11') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label blue">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 11/2</h3> <br>
+    <p>
+    You're a sensitive person who may also be idealistic. You wish the world was a
+    better place. Possessing the very strong 11 energy may allow you to get
+    public attention early in life. Much is required of you during these years, and
+    you may experience anxious strain as a result. Your mission is to use the
+    knowledge, inspiration, and even innovative brilliance that has been
+    bestowed upon you to improve the lives of others. Understand that most
+    children that startup with a master's 11 have a difficult childhood or come from
+    broken homes at times. <br> <br>
+    In your youth, your stories and experiences will inspire and influence
+    others. It's possible that you'll acquire psychic talents and experience a 
+    spiritual awakening. You'll have a strong sense of intuition and may have
+    constant visions. You’ll be connected to the spiritual realm. You can work your
+    way up to a position of leadership, becoming well-known and influential.
+    You will face several trials in order to develop your strength.
+    </p>
+
+    `
+} else if (fpinText === '22/4' || fpinInt[0] === '22') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label blue">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 222/4</h3> <br>
+    <p>
+    You'll struggled to use this energy in your childhood because you'll
+    be terrified of its strength, and you'll be forced to learn responsibility and
+    discipline in your profession. Dedication and tenacity learned today will
+    undoubtedly pay off later. <br><br>
+    Having the extremely high vibration of 22 allows you to blend material
+    interests with your greatest objectives. As a result, you will be able to create
+    something substantial that will help others. Your challenge is to learn to
+    wield the immense power that has been bestowed upon you at such a
+    young age for the greater good of society. This will earn you a reputation
+    that you will cherish for the rest of your existence. Though if you work hard,
+    you can build something long-lasting and profitable for society. 
+    </p>
+
+    `
+} else if (fpinText === '33/6' || fpinInt[0] === '33') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 33/6</h3> <br>
+    <p>
+    You’ll be more concerned with your family and community. You have a lot
+    of potentials to better yourself and your life. You will be focused on your home,
+    family, and community. 
+    </p>
+
+    `
+} else if (fpinText === '2' ||fpinText === '20/2' || fpinInt[fpinInt.length - 1] === '2') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 2</h3> <br>
+    <p>
+    When you're young, you're sensitive, with powerful sentiments that you can't
+    handle, and you're emotional. You may be battling a propensity to be shy and
+    easily hurt at your juvenile-defining moment, and you may have a deep
+    affinity with your family. It also gives you the opportunity to learn how to
+    operate as part of a group and strengthen your diplomatic and
+    peacemaking abilities. <br> <br>
+    As a result, you must learn how to collaborate, comprehend, be kind,
+    cooperate, be a team player, and work with others. If you try to do tasks on
+    your own, you may not succeed. 
+    </p>
+
+    `
+} else if (fpinText === '3' || fpinText === '12/3' || fpinText === '21/3' || fpinInt[fpinInt.length - 1] === '3') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label ">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 3</h3> <br>
+    <p>
+    You'll be disorganized and distracted, with a lot of creative energy but again
+    no idea how to use it. These young defining moment provides an
+    opportunity to grow socially and creatively. Try to be happy and
+    inventive. You'll need to educate yourself to apply consistency and not
+    disperse your efforts if you want to maximize your creative abilities. After
+    then, you may get the opportunity to luxuriate in the spotlight and revel in
+    the adulation. <br> <br>
+    During your teen period, you will be very creative, and able to speak and
+    express yourself more effectively than ever before. You may become famous,
+    be outgoing and attract friends. You should be able to navigate across all
+    forms of creation. Gardening, decorating, designing, cooking, writing,
+    podcasting, social networking, internet, acting, dancing, singing, and other
+    similar activities are examples.
+    </p>
+
+    `
+} else if (fpinText === '4' || fpinText === '13/4' || fpinInt[fpinInt.length - 1] === '4') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label blue">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 4</h3> <br>
+    <p>
+    You either have too much responsibility to do regular child
+    activities, or you have to be too realistic and concentrate on other things. This
+    adolescent defining moment may leave you with no or little time to enjoy the
+    delights of childhood, but it does provide an opportunity to develop workrelated devotion and discipline. You will
+    reap the benefits of your dedication and  tenacity in the future. <br><br>
+    In your 20s, you might anticipate  discovering the genuine purpose of
+    work. You will put forth a lot of effort  and eventually succeed. You will
+    experience several hurdles and  setbacks in order to become more
+    motivated, focused, organized, selfdisciplined, and detail-oriented. You
+    may lay a solid foundation and achieve more stability and equilibrium. It is
+    possible to purchase a home and build your career. Know that many young
+    individuals who got a first pinnacle number 4 may struggle to work hard to
+    build a foundation in their early years due to a lack of knowledge or focus. 
+    </p>
+
+    `
+} else if (fpinText === '5' || fpinText === '14/5' || fpinInt[fpinInt.length - 1] === '5') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 5</h3> <br>
+    <p>
+    You may suffer a lack of consistency in your life and be subjected to continual
+    change. You are reluctant to obey the rules, which might lead to difficulties.
+    This young defining moment provides opportunities for travel, creative
+    approaches, and perhaps a new way of life. Face your fears front on, and you'll
+    be well on your way to developing your personality for the following stage. You
+    have a way of dealing with people, and  you can now use it to your advantage.
+    You may feel insecure and directionless at this time, and you'll
+    need to delay for a more appropriate time to lay a pleasingly strong
+    foundation for your adult years. <br> <br>
+    During this period, you should expect a lot of changes and transitions. You may
+    relocate many times, travel, or change jobs. You'll want to be more
+    adventurous, have more friends, and have more fun. You will be more
+    independent, and freedom will be more vital to you than ever before. You may
+    learn to be more extroverted and communicate more effectively. You'll
+    become more adaptive, flexible, curious, cheerful, and energetic as a
+    result of this experience. On the bad side, you risk becoming unstable,
+    unpredictable, and addicted to drugs, alcohol, sex, and other substances.
+    Learn to be self-disciplined and concentrate on your goals and
+    adventures.
+
+    </p>
+
+    `
+} else if (fpinText === '6' || fpinText === '15/6' || fpinInt[fpinInt.length - 1] === '6') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 6</h3> <br>
+    <p>
+    You have quite a lot of responsibilities as a young child, and you must devote
+    a lot of your time and energy to your family. This adolescent-defining
+    moment may prompt you to assume major home duties at a young age,
+    depriving you of a pleasant upbringing. If you accept these obligations
+    gracefully, you may indeed be rewarded with love, stability, protection,
+    commitment, and compassion, which you may offer and receive. This major
+    shift might also be an early marriage that occurs while you're still too young
+    to marry and have kids. <br><br>
+    Therefore, the major goal of this pinnacle is to promote home, family,
+    and community service. During this  time, you may fall in love and
+    get married. You'll have to be more domestic, and you'll be responsible for
+    a lot of things. Purchasing a home, starting a family, and having children
+    are all regular activities. You might become a caregiver for family
+    members, strangers, or children. You may face several obstacles in your
+    quest to become more domestic and helpful. During this time commitment
+    are important and if your relationship is broken this may lead to a separation or
+    divorce at an early age.
+    </p>
+
+    `
+} else if (fpinText === '7' || fpinText === '16/7' || fpinInt[fpinInt.length - 1] === '7') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 7</h3> <br>
+    <p>
+    You're a great learner, even though you're a teenager. You're different from
+    the other youngsters in that you're more serious and intelligent. When
+    you're young, this defining moment may provide the issue of loneliness and
+    alienation. It's conceivable that you'll be refused the knowledge you want or that
+    your family may exert pressure on you to learn and study. If you're fortunate,
+    you'll be allowed to retreat to your room to read and fantasize. This will allow
+    you to establish a profound meaning of life that will last you a lifetime. <br> <br>
+    Know that you can become more introspective and analytical, and you'll
+    have a greater mental capacity to study for a degree. You’ll be very intuitive,
+    and you'll have clear visions or spiritual awakenings. You could feel more
+    spiritual, religious, or connected to God or other sources. The negative side is
+    that you may become aloof, distant, withdrawn, paranoid, depressed, anxious, sad, and lonely at times. 
+    </p>
+
+    `
+} else if (fpinText === '8' || fpinText === '17/8' || fpinInt[fpinInt.length - 1] === '8') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+        
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 8</h3> <br>
+    <p>
+    You're realistic and hardworking, with a keen business sense from an early 
+    age. You have the opportunity to begin your career sooner than the majority of
+    others. These young defining moment requires you to cope with money and
+    influence, maybe at the sacrifice of having fun. Develop your organizing
+    skills, learn how to work hard, and set your sights on achievement. Early in
+    life, the talents you learn and the financial comfort you obtain can act as
+    a base for future pursuits. <br> <br>
+    (In your 20s) You can anticipate gaining a great deal of personal power,
+    money, and prosperity. You'll be ambitious, self-assured, well-organized, 
+    motivated, goal-oriented, and laserfocused. While you don't have to put in
+    a lot of effort, money will come easily. During this period, you will gain a
+    variety of skills. You could also be placed in a position of authority, so be
+    careful not to misuse it. Do things the correct way and don't cheat or steal to
+    get rich fast since this energy will compel you to seek more in life. Make
+    an effort to be disciplined and to have a strategy for success. 
+    It's harvest season, and it's time to reap what
+    you've sown. Be generous and respectful of others. During this time,
+    manifest whatever you desire. It's a great moment to start your own
+    business and be your own boss, and everything you do will be a success.
+    You might be excessively dominating, greedy, stubborn, aggressive, and
+    materialistic on the bad side.
+
+
+    </p>
+
+    ` 
+} else if (fpinText === '9' || fpinText === '18/9' || fpinInt[fpinInt.length - 1] === '9') {
+    fpPinText.innerHTML = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Pinnacles are four unique stages of growth that occur throughout our
+        lifetimes. In addition to your Life Path Number, the pinnacles are the
+        energies that surround and influence you during each designated era
+        of your life. Each Pinnacle Number denotes the lessons that must be
+        learned and understood during a specific time period. The longest
+        periods of time are found at the start and conclusion of your life, with
+        two 9-year cycles in the between that frequently correspond to the
+        energies associated with your Personal Year Cycle. It's also beneficial
+        to be aware of the challenge and period cycle number associated with
+        each pinnacle. Your Life Path # determines your age at each stage.
+        Pinnacles' number is calculated as follows: Add each # till reaching a
+        single digit. <br> <br>
+
+        First Pinnacle = Month of Birth + Day of Birth (3 decades)
+       </p> <br> <br>
+    
+    <h3 class="bold-description-label blue">First Pinnalce Number 9</h3> <br>
+    <p>
+    You're a young humanitarian who tries to help people who can't help
+    themselves. This adolescent defining moment may bring change or loss to
+    you at a young age with a lot of endings. It may be extremely
+    challenging for a young person to deal with the tremendous stress involved, as 
+    well as to love and give without expecting anything in return.
+    Nonetheless, happiness can be found at a 9 energy. The further you face this
+    difficulty; the more wonderful life appears to you. You may indeed be
+    able to attain wealth, money, and fame early in life if you strive for the welfare
+    of others. <br> <br>
+    (In or after teen years) You will grow in spirituality, charity, and self-sacrifice.
+    The difficulties arise when you are placed in a position of caring for others,
+    such as other individuals, children (sometimes alone), family members, or
+    society in general. Many people will gravitate toward you and may
+    constantly want your assistance, and you will be seen as a hero who always
+    saves the day. During this period, you can also start a family and have
+    children. You may experience losses, beginnings, and endings of things,
+    relationships, and so on are all levels.
+    </p>
+
+    `
+} 
 
     // Second Pinnacle 
     dayHold;
@@ -11709,6 +12190,284 @@ your    cool or temper.
         sPin.innerHTML = 'from age 31 to 39';
         sPinNum.innerHTML = spSum;
     };
+    var spinText = (sPinNum.textContent).trim();
+    var spinInt = spinText.split('/');
+
+    if (spinText === '1' || spinText === '10/1' || spinInt[spinInt.length - 1] === '1') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 1</h3> <br>
+        <p>
+        During this period, you’ll stand up for yourself, do what you want, and can do
+        everything you set your mind to. This  might be a fruitful period for you. You
+        will be more self-reliant, confident, ambitious, and desire freedom. You
+        can be pushed into a leadership role. You may face several difficulties or
+        barriers on your way to being selfsufficient. You might be self-centered,
+        selfish, and individualistic because you desire to be alone. During this period,
+        singleness, separation, and divorce are common. Recognize that the goal at
+        this level is for you to be self-sufficient, resourceful, and innovative. 
+        </p>
+    
+        `
+    } else if (spinText === '11/2' || spinInt[0] === '11') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 11/2</h3> <br>
+        <p>
+        During this period, your idealistic inclination has become more
+        prominent, and it motivates you in all you do. You grow spiritually as well.
+        Your stories and experiences will inspire others. It's possible that you'll
+        acquire psychic talents and experience  a spiritual awakening. You'll have a
+        strong sense of intuition. You can work your way up to a position of leadership,
+        becoming well-known and influential. You will face several trials in order to
+        develop your strength. You can collaborate effectively with others and
+        be more understanding, accepting, and compassionate. You can find love,
+        soulmate, and twin flame during this time.
+
+        </p>
+    
+        `
+    } else if (spinText === '22/4' || spinInt[0] === '22') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 22/4</h3> <br>
+        <p>
+        The following nine years of this pinnacle will challenge your capacity to
+        put your principles into action in the physical world to trial. Master number
+        22 can help you achieve tremendous success and riches. It is important to
+        use the power you will have at this time for the greater good of society rather
+        than for your own benefit. As you learn to acclimatize to the demands of this
+        extremely high and strong energy, you may experience increased mental
+        strain. You need to create something that will serve the community or the
+        world. If you work hard, you can build something long-lasting for society and it
+        will benefit your future generation. So be creative and come up with great
+        ideas, and your hard work will pay off. 
+        </p>
+    
+        `
+    } else if (spinText === '33/6' || spinInt[0] === '33') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 33/6</h3> <br>
+        <p>
+        You have a lot of potentials to better yourself and your life. You become the
+        master instructor, and your wisdom may have a huge influence. You will be
+        involved with family and community. 
+        </p>
+    
+        `
+    } else if (spinText === '2' || spinText === '20/2' || spinInt[spinInt.length - 1] === '2') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 2</h3> <br>
+        <p>
+        You need to be patient and practical As a result, you must learn how to
+        collaborate, comprehend, be kind, cooperate, be a team player, and work
+        with others. If you try to do tasks on your own, you may not succeed. This is
+        also a good time to look for love. You may also find your soulmate and twin
+        flame during this time. Though, you may be oversensitive and feel
+        depressed at times. 
+        </p>
+    
+        `
+    } else if (spinText === '3' || spinText === '12/3' || spinText == '21/3' || spinInt[spinInt.length - 1] === '3') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 3</h3> <br>
+        <p>
+        During this period, you will be very creative, and able to speak and
+        express yourself more effectively than ever before. You may become famous,
+        have children, be outgoing, and attract friends. You should be able to navigate
+        across all forms of creation. Gardening, decorating, designing, cooking, writing,
+        podcasting, social networking, acting, dancing, singing, and other similar
+        activities are examples.
+        
+        </p>
+    
+        `
+    } else if (spinText === '4' || spinText === '13/4' || spinInt[spinInt.length - 1] === '4') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 4</h3> <br>
+        <p>
+        You might anticipate discovering the genuine purpose of work. If you work
+        harder, you may build a foundation slowly, with patience, and achieve
+        success. You will experience several hurdles and setbacks in order to
+        become more motivated, focused, organized, self-disciplined, and 
+        detailoriented. This is a time to lay a solid foundation and achieve more financial
+        stability and equilibrium. It is possible to start a family or purchase a home.
+        Career and work are very important during this period. 
+        </p>
+    
+        `
+    } else if (spinText === '5' || spinText === '14/5' || spinInt[spinInt.length - 1] === '5') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 5</h3> <br>
+        <p>
+        During this period, you should expect a lot of changes and transitions. You can
+        succeed if you are able to go with the flow. You yearn for greater freedom
+        and desire to travel. You may relocate many times, travel, or change jobs.
+        You'll want to be more adventurous, have more friends, and have more fun.
+        You will be more independent, and freedom will be more vital to you than
+        ever before. You may learn to be more extroverted and communicate more
+        effectively. You'll become more adaptive, flexible, curious, cheerful, and
+        energetic as a result of this experience. On the bad side, you risk becoming
+        unstable, unpredictable, and addicted to drugs, alcohol, sex, and other
+        substances. Learn to be self-disciplined and concentrate on your goals and
+        adventures.
+        
+        </p>
+    
+        `
+    } else if (spinText === '6' || spinText === '15/6' || spinInt[spinInt.length - 1] === '6') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 6</h3> <br>
+        <p>
+        The major goal of this pinnacle is to promote the home, family, and
+        community service. During this time, you may fall in love and get married.
+        You'll have to be more domestic, and you'll be responsible for a lot of things.
+        Purchasing a home, starting a family, and having children are all common.  <br>
+        You might become a caregiver for family members, strangers, or children.
+        You may face several obstacles in your quest to become more domestic and
+        helpful. Separation and divorce may occur if a commitment is not made or if
+        your current partnership is broken. This is a moment for self-sacrifice as well as
+        experiencing and being loved.
+
+        </p>
+    
+        `
+    } else if (spinText === '7' || spinText === '16/7' || spinInt[spinInt.length - 1] === '7') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 7</h3> <br>
+        <p>
+        This is a time you can achieve intellectual, emotional, and spiritual
+        improvement, but you won't see much money growth. Know that you can
+        become more introspective and analytical, and you'll have a greater
+        mental capacity to study for a degree. It's possible that your psychic powers
+        may grow, and you'll have visions and spiritual awakenings. You could feel
+        more spiritual, religious, or connected to God or other sources. The negative
+        side is that you may become aloof, distant, withdrawn, paranoid, sad, and
+        lonely at times. 
+        </p>
+    
+        `
+    } else if (spinText === '8' || spinText === '17/8' || spinInt[spinInt.length -1] === '8') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 8</h3> <br>
+        <p>
+        During this time, you are more practical and less irrational, and you desire to be
+        successful in life. You can anticipate gaining a great deal of personal power,
+        money, and prosperity. You'll be ambitious, self-assured, well-organized,
+        motivated, goal-oriented, and laserfocused. While you don't have to put in
+        a lot of effort, money will come easily. During this period, you will gain a
+        variety of skills. You could also be placed in a position of authority, so be
+        careful not to misuse or abuse it. Do things the correct way and don't cheat
+        or steal to get rich fast since this energy will compel you to seek more in life.
+        Make an effort to be disciplined and to have a strategy for success. It's harvest
+        season, and it's time to reap what you've sown. Be generous and
+        respectful of others. During this time, manifest whatever you desire. It's a
+        great moment to start your own business and be your own boss, and
+        everything you do will be a success. You might be excessively dominating,
+        greedy, stubborn, aggressive, and materialistic on the bad        
+        </p>
+    
+        `
+    } else if (spinText === '9' || spinText === '18/9' || spinInt[spinInt.length - 1] === '9') {
+        spPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+    
+            Second Pinnacle = Day of Birth + Year of Birth (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Second Pinnalce Number 9</h3> <br>
+        <p>
+        You have a broader perspective on the world and wish to make a significant
+        contribution to it. You have the ability to be charitable and empathetic. <br> <br>
+        You'll start to care more about society and other people. You will grow in
+        spirituality, charity, and self-sacrifice. The difficulties arise when you are
+        placed in a position of caring for others, such as other individuals, children
+        (sometimes alone), family members, or society in general. Many people will
+        gravitate toward you and may constantly want your assistance, and
+        you will be seen as a hero who always saves the day. During this period, you
+        can also start a family and have children. You may also experience
+        losses, beginnings, and endings of things, relationships, and so on are all
+        possibilities.
+        
+        </p>
+    
+        `
+    }
+    
 
 
     // Third Pinnacle Cycle 
@@ -11806,6 +12565,276 @@ your    cool or temper.
         tPinNum.innerHTML = tpSum
     };
 
+    var tPinText = (tPinNum.textContent).trim();
+    var tPintInt = tPinText.split('/');
+
+    if (tPinText === '1' || tPinText === '10/1' || tPintInt[tPintInt.length - 1] === '1') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 1</h3> <br>
+        <p>
+        You stand up for yourself, do what you want, and can do everything you set
+        your mind to. This might be a  successful period for you. It is
+        increasingly preferred to work alone or to be the boss. You will 
+        be more selfreliant, confident, ambitious, and desire
+        freedom. You can be pushed into a leadership role. You may face several
+        difficulties or barriers on your way to being self-sufficient. You might
+        be selfcentered, selfish, and individualistic because you desire to be alone. During
+        this period, singleness, separation, and divorce are common. Recognize that
+        the goal at this level is for you to be  self-sufficient, resourceful, and
+        innovative. 
+        </p>
+    
+        `
+    } else if (tPinText === '11/2' || tPintInt[0] === '11') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 11/2</h3> <br>
+        <p>
+        During this period, your idealistic side is more prominent, and it motivates you in
+        all you do. You also grow more spiritual. Your stories and experiences
+        will inspire others. It's possible that you'll acquire psychic talents and
+        experience a spiritual awakening. You'll have a strong sense of intuition. You
+        can work your way up to a position of leadership, becoming well-known and
+        influential. You will face several trials in order to develop your strength. During
+        this time, you can collaborate well with others and have more friends. You can
+        also find love if you are single or strengthen your existing relationship.
+        You can meet your soulmate or twin flame as well.
+        
+        </p>
+    
+        `
+    } else if (tPinText === '22/4' || tPintInt[0] === '22') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 22/4</h3> <br>
+        <p>
+        Possessing the master number 22 energy when you are in the bloom of
+        your life is a wonderful gift, because this is the period when you can make
+        the most impact. This is your chance to create something big and earn a lot of
+        money. It is important to use the strength you will have at this time for
+        the greater good of the community rather than for your own benefit. You
+        will put a lot of hard work to create something long-lasting for society and
+        your future generation will benefit from it. 
+
+        </p>
+    
+        `
+    } else if (tPinText === '33/6' || tPintInt[0] === '33') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 33/6</h3> <br>
+        <p>
+        You have a lot of potentials to better yourself and your life. You become the
+        master instructor, and your wisdom may have a huge influence. You’ll still
+        be involved with family and community
+        </p>
+    
+        `
+    } else if (tPinText === '2' || tPinText === '20/2' || tPintInt[tPintInt.length - 1] === '2') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 2</h3> <br>
+        <p>
+        The majority of your achievement is due to the support of a partnership or
+        others. Patience and practicality are required. As a result, you must learn
+        how to collaborate, comprehend, be kind, cooperate, be a team player, and
+        work with others. If you try to do tasks on your own, you may not succeed.
+        This is also a good time to look for love. <br> <br>
+        The 2 energies in your peak allow you to figure out your fate through marriage
+        or business collaboration. Finding a balance among equals is the
+        fundamental lesson of a relationship. This entails not just learning to love, but
+        also learning to battle, or finding a kinder approach to meet both your own
+        and your partner's demands.
+        </p>
+    
+        `
+    } else if (tPinText === '3' || tPinText === '12/3' || tPintInt[tPintInt.length - 1] === '3') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 3</h3> <br>
+        <p>
+        During this period, you will be very creative, and able to speak and
+        express yourself more effectively than ever before. You may become famous,
+        have children, and you'll be more outgoing and attract friends. You
+        should be able to navigate across all forms of creation. Gardening, 
+        During this period, you will be very creative, and able to speak and
+        express yourself more effectively than ever before. You may become famous,
+        have children, and you'll be more outgoing and attract friends. You
+        should be able to navigate across all forms of creation. Gardening, 
+        </p>
+    
+        `
+    } else if (tPinText === '4' || tPinText === '13/4' || tPintInt[tPintInt.length - 1] === '4') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 4</h3> <br>
+        <p>
+        You might anticipate discovering the genuine purpose of work. If you work
+        harder, you may create a foundation slowly, with patience, and achieve
+        success. You will experience several hurdles and setbacks in order to
+        become more motivated, focused, organized, self-disciplined, and 
+        detail-oriented. You may lay a solid foundation and achieve more stability
+        and equilibrium. It is possible to start a family or purchase a home during this
+        time. You’ll also be more focused on your work career and achieving your
+        goal.
+        </p>
+    
+        `
+    } else if (tPinText === '5' || tPinText === '14/5' || tPintInt[tPintInt.length - 1] === '5') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 5</h3> <br>
+        <p>
+        During this period, you should expect a lot of changes and transitions. You can
+        succeed if you are able to go with the flow. You yearn for greater freedom
+        and desire to travel. You may relocate many times, travel, or change jobs.
+        You'll want to be more adventurous, have more friends, and have more fun.
+        You will be more independent, and freedom will be more vital to you than
+        ever before. You may learn to be more extroverted and communicate more
+        effectively. You'll become more adaptive, flexible, curious, cheerful, and
+        energetic as a result of this experience. On the bad side, you risk becoming
+        unstable, unpredictable, and addicted to drugs, alcohol, sex, and other
+        substances. Learn to be self-disciplined and concentrate on your goals and
+        adventures.
+        </p>
+    
+        `
+    } else if (tPinText === '6' || tPinText === '15/6' || tPintInt[tPintInt.length - 1] === '6') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 6</h3> <br>
+        <p>
+        The major goal of this pinnacle is to promote the home, family, and
+        community service. During this time, you may fall in love and get married.
+        You'll have to be more domestic, and you'll be responsible for a lot of things.
+        Purchasing a home, starting a family, and having children are all major
+        events. You might become a caregiver for family members, strangers, or
+        children. You may face several obstacles in your quest to become
+        more domestic and helpful. Good time to start a business. Divorce or
+        separation is common if relationships are broken. 
+        </p>
+    
+        `
+    } else if (tPinText === '7' || tPinText === '16/7' || tPintInt[tPintInt.length - 1] === '7') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 7</h3> <br>
+        <p>
+        You can achieve intellectual, emotional, and spiritual improvement, but you
+        won't see much money progress. Know that you can become more
+        introspective and analytical, and you'll have a greater mental capacity to study
+        for a degree. It's possible that your psychic powers may grow, and you'll
+        have visions and spiritual awakenings. You could feel more spiritual, religious,
+        or connected to God or other sources. The negative side is that you may
+        become aloof, distant, withdrawn, paranoid, sad, and lonely at times.
+        </p>
+    
+        `
+    } else if (tPinText === '8' || tPinText === '17/8' || tPintInt[tPintInt.length - 1] === '8') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 8</h3> <br>
+        <p>
+        You are more practical and less irrational, and you desire to be
+        successful in life. You can anticipate gaining a great deal of personal power,
+        money, and prosperity. You'll be ambitious, self-assured, well-organized,
+        motivated, goal-oriented, and laserfocused. While you don't have to put in
+        a lot of effort, money will come easily.  <br>
+        During this period, you will gain a variety of skills. You could also be
+        placed in a position of authority, so be careful not to misuse it. Do things the
+        correct way and don't cheat or steal to get rich fast since this energy will
+        compel you to seek more in life. Make an effort to be disciplined and to have a
+        strategy for success. It's harvest season, and it's time to reap what
+        you've sown. Be generous and respectful of others. During this time,
+        manifest whatever you desire. It's a great moment to start your own
+        business and be your own boss, and everything you do will be a success.
+        You might be excessively dominating, greedy, stubborn, aggressive, and
+        materialistic on the bad side.
+        </p>
+    
+        `
+    } else if (tPinText === '9' || tPinText === '18/9' || tPintInt[tPintInt.length - 1] === '9') {
+        tpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Third Pinnacle = First Pinnacle + Second Pinnacle (lasted 9 years)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Third Pinnalce Number 9</h3> <br>
+        <p>
+        You have a broader perspective on the world and wish to make a significant
+        contribution to it. You have the ability to be charitable and empathetic. <br> <br>
+        You'll start to care more about society and other people. You will grow in
+        spirituality, charity, and self-sacrifice. The difficulties arise when you are
+        placed in a position of caring for others, such as other individuals, children
+        (sometimes alone), family members, or society in general. Many people will
+        gravitate toward you and may constantly want your assistance, and
+        you will be seen as a hero who always saves the day. During this period, you
+        can also start a family and have children. You may have losses,
+        beginnings, and endings on things, relationships, and so on are all
+        possibilities.
+        </p>
+    
+        `
+    } 
+
 
     // fourth pinnacle 
     var ftSum = monthHold + yearHold;
@@ -11889,6 +12918,240 @@ your    cool or temper.
         ftPinNum.innerHTML = ftSum;
     };
 
+    var ftText = (ftPinNum.textContent).trim();
+    var ftInt = ftText.split('/');
+
+    if (ftText === '1' || ftText === '10/1' || ftInt[ftInt.length - 1] === '1') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 1</h3> <br>
+        <p>
+        You want to keep moving forward in life, express yourself, and be in
+        command. You’ll have the energy to work, be self-reliant, and desire
+        freedom. You might be self-centered, selfish, and individualistic because you
+        desire to be alone. It is possible to find yourself alone or living alone during this
+        time. 
+        
+        </p>
+    
+        `
+    } else if (ftText === '11/2' || ftInt[0] === '11') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 11/2</h3> <br>
+        <p>
+        During this period, you’re spiritually enlightened, and your activity will be
+        centered on assisting others. Your stories and experiences will inspire
+        others. It's possible that you'll acquire psychic talents and experience a
+        spiritual awakening. You'll have a strong sense of intuition. You’ll attract
+        many friends and you’ll be very corporate in working with others. 
+        </p>
+    
+        `
+    } else if (ftText === '22/4' || ftInt[0] === '22') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 22/4</h3> <br>
+        <p>
+        This master number 22 requires you to put your principles into action for the
+        greater good. You should develop something that will benefit people or
+        society for an extended period of time. Therefore, you are the master builder,
+        with a long history of success and engagement. You’ll be working in your
+        later years to achieve your goal or to build a foundation for future
+        generations.
+        
+        </p>
+    
+        `
+    } else if (ftText === '33/6' || ftInt[0] === '33') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 33/6</h3> <br>
+        <p>
+        You have a lot of potentials to better yourself and your life. You become the
+        master instructor, and your wisdom may have a huge influence. You’ll be
+        involved with your family and community. 
+        </p>
+    
+        `
+    } else if (ftText === '2' || ftText === '20/2' || ftInt[ftInt.length - 1] === '2') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 2</h3> <br>
+        <p>
+        You're still sensitive, but you want to be among others and have a quiet
+        existence. At this time, you will be more collaborative, comprehending, kind,
+        compassionate, and a team player
+        </p>
+    
+        `
+    } else if (ftText === '3' || ftText === '12/3' || ftInt[ftInt.length - 1] === '3') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 3</h3> <br>
+        <p>
+        During this period, you may travel extensively, make a large number of
+        friends, and not be concerned about money. You will be very creative, able
+        to speak and express yourself more effectively than ever before, you may
+        become famous, you'll be outgoing and attract friends. You should be able to
+        navigate across all forms of creation. Gardening, decorating, designing,
+        cooking, writing, podcasting, social networking, acting, dancing, singing,
+        and other similar activities are examples.
+        </p>
+    
+        `
+    } else if (ftText === '4' || ftText === '13/4' || ftInt[ftInt.length - 1] === '4') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 4</h3> <br>
+        <p>
+        You keep working hard and don't quit what you're doing. It's time to start
+        laying a foundation for the future by purchasing or building a home.
+        You might anticipate discovering the genuine purpose of work. You will put
+        forth a lot of effort and eventually succeed. You’ll become more
+        motivated, focused, organized, selfdisciplined, and detail-oriented. You 
+        may lay a solid foundation and achieve more stability and equilibrium. 
+        </p>
+    
+        `
+    } else if (ftText === '5' || ftText === '14/5' || ftInt[ftInt.length - 1] === '5') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 5</h3> <br>
+        <p>
+        During this period, you still have a lot of changes in your life, you like diversity,
+        and you don't have any financial or family concerns. You should expect a
+        lot of changes and transitions. You may relocate many times and travel the
+        world. You'll want to be more adventurous, have more friends, and
+        have more fun. Independent and freedom are more vital to you than ever
+        before. You may learn to be more extroverted and communicate more
+        effectively. You'll become more adaptive, flexible, curious, cheerful, and
+        energetic as a result of this experience. On the bad side, you risk becoming
+        unstable, unpredictable, and addicted to drugs, alcohol, sex, and other
+        substances. Learn to be self-disciplined and concentrate on your goals and
+        adventures.
+        
+        </p>
+    
+        `
+    } else if (ftText === '6' || ftText === '15/6' || ftInt[ftInt.length - 1] === '6') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 6</h3> <br>
+        <p>
+        You're content with your home life and like spending time with your family.
+        Home, family, and community service are still important and you’ll still be
+        selfsacrificing for others. 
+        </p>
+    
+        `
+    } else if (ftText === '7' || ftText === '16/7' || ftInt[ftInt.length - 1] === '7') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 7</h3> <br>
+        <p>
+        You devote time to studying, researching, introspection, and
+        solitude. Know that you can become more introspective and analytical, and
+        you'll have a greater mental capacity to read and research. It's possible that
+        your psychic powers may grow, and you'll have visions and spiritual
+        awakenings. You could feel more spiritual, religious, or connected to God
+        or other sources. The negative side is that you may become aloof, distant,
+        withdrawn, paranoid, sad, and lonely at times. 
+        </p>
+    
+        `
+    } else if (ftText === '8' || ftText === '17/8' || ftInt[ftInt.length - 1] === '8') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 8</h3> <br>
+        <p>
+        You can rise through the ranks of life and most likely continue to work.
+        You can anticipate gaining a great deal of personal power, money, and
+        prosperity. You'll be self-assured, wellorganized, motivated, goal-oriented,
+        and laser-focused. While money will come easily. You could also be placed
+        in a position of authority, so be careful not to misuse it. It's harvest season,
+        and it's time to reap what you've sown. Be generous and respectful of others.
+        You might be excessively dominating, greedy, stubborn, aggressive, and
+        materialistic on the bad side.
+        
+        </p>
+    
+        `
+    } else if (ftText === '9' || ftText === '18/9' || ftInt[ftInt.length - 1] === '9') {
+        ftpPinText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Fourth Pinnacle = Month of Birth + Year of Birth (late 40s till death)
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label blue">Fourth Pinnalce Number 9</h3> <br>
+        <p>
+        You care about humanity and go out of your way to help others, whether via
+        volunteer labor or through charitable contributions. You will grow in
+        spirituality and self-sacrifice. You may become famous. You may experience
+        losses and endings during this time.
+        </p>
+    
+        `
+    }
+
+
 
 
     // Challenges in Life 
@@ -11909,7 +13172,6 @@ your    cool or temper.
     } else if (monthHold < 10) {
         monthHold
     }
-    // console.log(dayHold, monthHold)
     var fAnims, sAnims;
     var fAnim = dayHold - monthHold;
     if (fAnim < 0) {
@@ -11936,6 +13198,282 @@ your    cool or temper.
         fAnims = fAnim;
     }
     fChaNum.innerHTML = fAnim;
+    var ffchaText = (fChaNum.textContent).trim();
+    var ffchaInt = ffchaText.split('/');
+
+    if (ffchaText === '0' || ffchaInt[ffchaInt.length - 1] === '0') {
+        fChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Your Challenge numbers show weaknesses and blocks in your life that
+            serve to help you learn and grow. There are 4 challenges, and each
+            has its own number. <br>
+            <b>The first Challenge number</b> is an issue you’ll have in the first half of
+            your life. Lasts from birth until about the age of 30/35 years.
+            <br> 
+            First Challenge Number = Day of Birth – Month of Birth <br> 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">First Challenge Number 0</h3> <br>
+        <p>
+        In life, you must be prepared for obstacles. So, challenge 0 is all about
+        coming up with a long-term solution to any problem you may come into
+        in your quest for success. <br> <br>
+        Life's challenges might be few or numerous, and they can come from
+        all sources. The choice challenge is the name given to this problem.
+        It's possible that you'll have trouble relying on your choices. You can
+        analyze an issue and realistically consider different approaches. You
+        must have trust in your own talents to tackle the problem. This is a
+        task that is often encountered in a highly developed person; in many
+        other regards, you have to be a particularly gifted individual to face this
+        obstacle. 
+        </p>
+    
+        `
+    } else if (ffchaText === '1' || ffchaText === '10/1' || ffchaInt[ffchaInt.length - 1] === '1') {
+        fChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Your Challenge numbers show weaknesses and blocks in your life that
+            serve to help you learn and grow. There are 4 challenges, and each
+            has its own number. <br>
+            <b>The first Challenge number</b> is an issue you’ll have in the first half of
+            your life. Lasts from birth until about the age of 30/35 years.
+            <br> 
+            First Challenge Number = Day of Birth – Month of Birth <br> 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">First Challenge Number 1</h3> <br>
+        <p>
+        You have a large ego and believe that others are attempting to control
+        or dominate you. People with a lot of power over you, such as your
+        parents or others with whom you struggle, are likely to make you feel
+        controlled. The issue is to avoid becoming dominated while also
+        ensuring that others are not dominated. It's critical to keep your ego in
+        check. You're currently at a phase where you're learning to be
+        independent and solve difficulties on your own. This challenge can be
+        overcome with awareness.        
+        </p>
+    
+        `
+    } else if (ffchaText === '2' || ffchaText === '20/2' || ffchaInt[ffchaInt.length - 1] === '2') {
+        fChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Your Challenge numbers show weaknesses and blocks in your life that
+            serve to help you learn and grow. There are 4 challenges, and each
+            has its own number. <br>
+            <b>The first Challenge number</b> is an issue you’ll have in the first half of
+            your life. Lasts from birth until about the age of 30/35 years.
+            <br> 
+            First Challenge Number = Day of Birth – Month of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">First Challenge Number 2</h3> <br>
+        <p>
+        Because you are terrified of being criticized or ignored, you are likely
+        to be exceedingly sensitive and find it difficult to cooperate with others.
+        Your feelings are easily hurt, and you may be an empath who picks up
+        on other people's feelings. Emotions have the ability to overtake you.
+        You have a high level of self-assurance. There's a propensity to be
+        continually concerned about what people think of you. Your high
+        sensitivity may be a tremendous strength when used constructively,
+        allowing you to be extremely conscious of so much that others barely
+        notice. However, you will find it difficult to make decisions at this time.
+        During this period, friendships provide you with a great deal of
+        pleasure. You should be sensitive to others' feelings, and value your
+        capacity to compromise and grow in a peaceful manner. Also, strive to
+        keep your energy safe.
+        
+        </p>
+    
+        `
+    } else if (ffchaText === '3' || ffchaText === '12/3' || ffchaInt[ffchaInt.length - 1] === '3') {
+        fChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Your Challenge numbers show weaknesses and blocks in your life that
+            serve to help you learn and grow. There are 4 challenges, and each
+            has its own number. <br>
+            <b>The first Challenge number</b> is an issue you’ll have in the first half of
+            your life. Lasts from birth until about the age of 30/35 years.
+            <br> 
+            First Challenge Number = Day of Birth – Month of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">First Challenge Number 3</h3> <br>
+        <p>
+        You're afraid of being judged, and you're scared that others will
+        criticize you. You're disorganized and scattered, and you tend to focus
+        your attention on many projects or attempt to accomplish too many
+        things at once. You may have a vivid imagination and a talent for
+        communication, yet you struggle to communicate effectively. Despite
+        the fact that you are aware that you should make friendships and be 
+        sociable, you are somewhat isolated and guarded. You may have a
+        gift for writing, singing, acting, or speaking, but you are hesitant to
+        engage in these hobbies because you are afraid of receiving negative
+        feedback. You're using a negative tone to describe yourself, and
+        you're burying your creative abilities behind a wall of timidity. It's
+        difficult to simply unwind and enjoy yourself. You must work hard to
+        improve your social and creative skills without being afraid of critics.
+
+        </p>
+    
+        `
+    } else if (ffchaText === '4' || ffchaText === '13/4' || ffchaInt[ffchaInt.length - 1] === '4') {
+        fChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Your Challenge numbers show weaknesses and blocks in your life that
+            serve to help you learn and grow. There are 4 challenges, and each
+            has its own number. <br>
+            <b>The first Challenge number</b> is an issue you’ll have in the first half of
+            your life. Lasts from birth until about the age of 30/35 years.
+            <br> 
+            First Challenge Number = Day of Birth – Month of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">First Challenge Number 4</h3> <br>
+        <p>
+        You may be having difficulties with work because you are lazy or
+        overworked. Maybe you dislike working, or the work you are required
+        to accomplish, or you are having trouble completing chores and
+        functioning effectively. You might be irresponsible and lacking in
+        practicality. It's indeed critical that you develop tolerance,
+        understanding, and a realistic, rational approach to handling duties.
+        
+        </p>
+    
+        `
+    } else if (ffchaText === '5' || ffchaText === '14/5' || ffchaInt[ffchaInt.length - 1] === '5') {
+        fChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Your Challenge numbers show weaknesses and blocks in your life that
+            serve to help you learn and grow. There are 4 challenges, and each
+            has its own number. <br>
+            <b>The first Challenge number</b> is an issue you’ll have in the first half of
+            your life. Lasts from birth until about the age of 30/35 years.
+            <br> 
+            First Challenge Number = Day of Birth – Month of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">First Challenge Number 5</h3> <br>
+        <p>
+        Your goal is to conquer the yearning and need for complete
+        independence at whatever cost, which could also end up destroying
+        your relationship. You place a higher value on freedom than anything
+        else. It's possible that you'll be having a lot of changes or traveling.
+        This problem is particularly tough for you to face because you are
+        prone to being impulsive where you want to try anything at least
+        occasionally, and you are in many ways unstable. You easily can
+        become hooked on drugs or alcohol, sex, and so on. Change may be
+        vital for you, but it must be treated with caution and precaution, and
+        you must exercise discipline.
+        </p>
+    
+        `
+    } else if (ffchaText === '6' || ffchaText === '15/6' || ffchaInt[ffchaInt.length - 1] === '6') {
+        fChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Your Challenge numbers show weaknesses and blocks in your life that
+            serve to help you learn and grow. There are 4 challenges, and each
+            has its own number. <br>
+            <b>The first Challenge number</b> is an issue you’ll have in the first half of
+            your life. Lasts from birth until about the age of 30/35 years.
+            <br> 
+            First Challenge Number = Day of Birth – Month of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">First Challenge Number 6</h3> <br>
+        <p>
+        Because of your focus on exceedingly high standards, you may face
+        obstacles. You could come across as intolerant and a bit arrogant.
+        Others find it difficult to live up to your high expectations, as a result,
+        you may have relationship problems with your romantic partner or with
+        people in general. You must understand that people will enjoy your
+        diplomatic attitude if they feel their needs are addressed, their wishes
+        are acknowledged, and their opinion is valued. You need to show
+        compassion, harmony, love, and understanding. 
+        </p>
+    
+        `
+    } else if (ffchaText === '7' || ffchaText === '16/7' || ffchaInt[ffchaInt.length - 1] === '7') {
+        fChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Your Challenge numbers show weaknesses and blocks in your life that
+            serve to help you learn and grow. There are 4 challenges, and each
+            has its own number. <br>
+            <b>The first Challenge number</b> is an issue you’ll have in the first half of
+            your life. Lasts from birth until about the age of 30/35 years.
+            <br> 
+            First Challenge Number = Day of Birth – Month of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">First Challenge Number 7</h3> <br>
+        <p>
+        It's possible that you're uncomfortable with your own inner sentiments.
+        You may believe that you are powerless to alter or better your
+        situation. With this obstacle, it's easy to become a persistent critic and
+        whiner. Discrimination is a powerful feeling, yet it is conveyed in a bad 
+        way. Avoid the inclination to approach individuals with caution and
+        establish confidence in your own talents. <br> <br>
+        As a result, you are harsh with yourself and others, which might harm
+        your relationship. You have a tendency to be negative at times. The
+        greatest method to tackle this difficulty is to examine yourself before
+        passing judgment.
+
+        </p>
+    
+        `
+    } else if (ffchaText === '8' || ffchaText === '17/8' || ffchaInt[ffchaInt.length - 1] === '8') {
+        fChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            Your Challenge numbers show weaknesses and blocks in your life that
+            serve to help you learn and grow. There are 4 challenges, and each
+            has its own number. <br>
+            <b>The first Challenge number</b> is an issue you’ll have in the first half of
+            your life. Lasts from birth until about the age of 30/35 years.
+            <br> 
+            First Challenge Number = Day of Birth – Month of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">First Challenge Number 8</h3> <br>
+        <p>
+        You have a tendency to be highly frugal, according to challenge 8. You
+        may be stingy with your money and dislike spending it. You
+        have financial problems where you don't like to contribute or waste
+        cash. Material acquisition is the only way to achieve and maintain
+        happiness. Money, prestige, wealth, and power may require a
+        significant amount of effort. You must learn to balance your abilities to
+        attain money, position, power, and wealth with a grip on reality in order
+        to interact comfortably with the material world.
+        
+        </p>
+    
+        `
+    } 
 
     // Second Challenge 
     sAnims;
@@ -11963,6 +13501,256 @@ your    cool or temper.
         sAnims = sAnim;
     };
     sChaNum.innerHTML = sAnim;
+    var sschaText = (sChaNum.textContent).trim();
+    var sschaInt = sschaText.split('/');
+
+    if (sschaText === '0' || sschaInt[sschaInt.length - 1] === '0') {
+        sChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The second Challenge number</b> is an issue you’ll have during the
+            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+    
+            Second Challenge Number = Year of Birth – Day of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Second Challenge Number 0</h3> <br>
+        <p>
+        In life, you must be prepared for obstacles. So, challenge 0 is all about
+        coming up with a long-term solution to any problem you may come into
+        in your quest for success. <br> <br>
+        Life's challenges might be few or numerous, and they can come from
+        all sources. The choice challenge is the name given to this problem.
+        It's possible that you'll have trouble relying on your choices. You can
+        analyze an issue and realistically consider different approaches. You
+        must have trust in your own talents to tackle the problem. This is a
+        task that is often encountered in a highly developed person; in many
+        other regards, you have to be a particularly gifted individual to face this
+        obstacle. 
+        </p>
+    
+        `
+    } else if (sschaText === '1' || sschaText === '10/1' || sschaInt[sschaInt.length - 1] === '1') {
+        sChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The second Challenge number</b> is an issue you’ll have during the
+            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+    
+            Second Challenge Number = Year of Birth – Day of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Second Challenge Number 1</h3> <br>
+        <p>
+        You have a large ego and believe that others are attempting to control
+        or dominate you. People with a lot of power over you, such as your
+        parents or others with whom you struggle, are likely to make you feel
+        controlled. The issue is to avoid becoming dominated while also
+        ensuring that others are not dominated. It's critical to keep your ego in
+        check. You're currently at a phase where you're learning to be
+        independent and solve difficulties on your own. This challenge can be
+        overcome with awareness.
+        </p>
+    
+        `
+    } else if (sschaText === '2' || sschaText === '20/2' || sschaInt[sschaInt.length - 1] === '2') {
+        sChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The second Challenge number</b> is an issue you’ll have during the
+            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+    
+            Second Challenge Number = Year of Birth – Day of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Second Challenge Number 2</h3> <br>
+        <p>
+        Because you are terrified of being criticized or ignored, you are likely
+        to be exceedingly sensitive and find it difficult to cooperate with others.
+        Your feelings are easily hurt, and you may be an empath who picks up
+        on other people's feelings. Emotions have the ability to overtake you.
+        You have a high level of self-assurance. There's a propensity to be
+        continually concerned about what people think of you. Your high
+        sensitivity may be a tremendous strength when used constructively,
+        allowing you to be extremely conscious of so much that others barely
+        notice. However, you will find it difficult to make decisions at this time.
+        During this period, friendships provide you with a great deal of
+        pleasure. You should be sensitive to others' feelings, and value your
+        capacity to compromise and grow in a peaceful manner. Also, strive to
+        keep your energy safe.
+        
+        </p>
+    
+        `
+    } else if (sschaText === '3' || sschaText === '12/3' || sschaInt[sschaInt.length - 1] === '3') {
+        sChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The second Challenge number</b> is an issue you’ll have during the
+            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+    
+            Second Challenge Number = Year of Birth – Day of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Second Challenge Number 3</h3> <br>
+        <p>
+        You're afraid of being judged, and you're scared that others will
+        criticize you. You're disorganized and scattered, and you tend to focus
+        your attention on many projects or attempt to accomplish too many
+        things at once. You may have a vivid imagination and a talent for
+        communication, yet you struggle to communicate effectively. Despite
+        the fact that you are aware that you should make friendships and be
+        sociable, you are somewhat isolated and guarded. You may have a
+        gift for writing, singing, acting, or speaking, but you are hesitant to
+        engage in these hobbies because you are afraid of receiving negative
+        feedback. You're using a negative tone to describe yourself, and
+        you're burying your creative abilities behind a wall of timidity. It's
+        difficult to simply unwind and enjoy yourself. You must work hard to
+        improve your social and creative skills without being afraid of critics.
+        </p>
+    
+        `
+    } else if (sschaText === '4' || sschaText === '13/4' || sschaInt[sschaInt.length - 1] === '4') {
+        sChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The second Challenge number</b> is an issue you’ll have during the
+            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+    
+            Second Challenge Number = Year of Birth – Day of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Second Challenge Number 4</h3> <br>
+        <p>
+        You may be having difficulties with work because you are lazy or
+        overworked. Maybe you dislike working, or the work you are required
+        to accomplish, or you are having trouble completing chores and
+        functioning effectively. You might be irresponsible and lacking in
+        practicality. It's indeed critical that you develop tolerance,
+        understanding, and a realistic, rational approach to handling duties.
+        
+        </p>
+    
+        `
+    } else if (sschaText === '5' || sschaText === '14/5' || sschaInt[sschaInt.length - 1] === '5') {
+        sChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The second Challenge number</b> is an issue you’ll have during the
+            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+    
+            Second Challenge Number = Year of Birth – Day of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Second Challenge Number 5</h3> <br>
+        <p>
+        Your goal is to conquer the yearning and need for complete
+        independence at whatever cost, which could also end up destroying
+        your relationship. Therefore, you place a higher value on freedom than
+        anything else. It's possible that you'll be having a lot of changes during
+        this time. This problem is particularly tough for you to face because
+        you are prone to being impulsive and hot-tempered where you want to
+        try anything at least occasionally, and you are in many ways unstable. <br> 
+        You easily can become hooked on drugs or alcohol, sex, and so on.
+        Change may be vital for you, but it must be treated with caution and
+        precaution, and you must exercise discipline.
+
+        </p>
+    
+        `
+    } else if (sschaText === '6' || sschaText === '15/6' || sschaInt[sschaInt.length -1 ] === '6') {
+        sChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The second Challenge number</b> is an issue you’ll have during the
+            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+    
+            Second Challenge Number = Year of Birth – Day of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Second Challenge Number 6</h3> <br>
+        <p>
+        Because of your focus on exceedingly high standards, you may face
+        obstacles. You could come across as intolerant and a bit arrogant.
+        Others find it difficult to live up to your high expectations, as a result,
+        you may have relationship problems with your romantic partner or with
+        people in general. You need to learn how to love, appreciate others,
+        be understanding, compassionate, and peaceful. You must
+        understand that people will enjoy your diplomatic attitude if they feel
+        their needs are addressed, their wishes are acknowledged, and their
+        opinion is valued.
+        </p>
+    
+        `
+    } else if (sschaText === '7' || sschaText === '16/7' || sschaInt[sschaInt.length - 1] === '7') {
+        sChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The second Challenge number</b> is an issue you’ll have during the
+            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+    
+            Second Challenge Number = Year of Birth – Day of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Second Challenge Number 7</h3> <br>
+        <p>
+        It's possible that you're uncomfortable with your own inner sentiments.
+        You may believe that you are powerless to alter or better your
+        situation. With this obstacle, it's easy to become a persistent critic and
+        whiner. Discrimination is a powerful feeling, yet it is conveyed in a bad
+        way. Avoid the inclination to approach individuals with caution and
+        establish confidence in your own talents.<br>
+        As a result, you are harsh with yourself and others, which might harm
+        your relationship. You have a tendency to be negative at times. The
+        greatest method to tackle this difficulty is to examine yourself before
+        passing judgment.
+        
+        </p>
+    
+        `
+    } else if (sschaText === '8' || sschaText === '17/8' || sschaInt[sschaInt.length -1] === '8') {
+        sChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The second Challenge number</b> is an issue you’ll have during the
+            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+    
+            Second Challenge Number = Year of Birth – Day of Birth
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Second Challenge Number 8</h3> <br>
+        <p>
+        You have a tendency to be highly frugal, according to challenge 8. You
+        may be stingy with your money and dislike spending it. In other ways,
+        you have financial problems where you don't like to contribute or waste
+        cash. Material acquisition is the only way to achieve and maintain
+        happiness. Money, prestige, wealth, and power may require a
+        significant amount of effort. You must learn to balance your abilities to
+        attain money, position, power, and wealth with a grip on reality in order
+        to interact comfortably with the material world.
+        
+        </p>
+    
+        `
+    } 
 
     // Third Challenge 
     var tAnim = sAnims - fAnims;
@@ -11972,6 +13760,253 @@ your    cool or temper.
         tAnim;
     };
     tChaNum.innerHTML = tAnim;
+    var ttchaText = (tChaNum.textContent).trim();
+    var ttchaInt = ttchaText.split('/');
+
+    if (ttchaText === '0' || ttchaInt[ttchaInt.length -1] === '0') {
+        tChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>third and fourth challenge number</b> is an issue and weakness
+            you can have all of your life. It is the most important challenge. <br><br>
+    
+            Third Challenge Number = Second Challenge # – First Challenge # <br>
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Third Challenge Number 0</h3> <br>
+        <p>
+        In life, you must be prepared for obstacles. So, challenge 0 is all about
+        coming up with a long-term solution to any problem you may come into
+        in your quest for success. <br> <br>
+        Life's challenges might be few or numerous, and they can come from
+        all sources. The choice challenge is the name given to this problem.
+        It's possible that you'll have trouble relying on your choices. You can
+        analyze an issue and realistically consider different approaches. You
+        must have trust in your own talents to tackle the problem. This is a
+        task that is often encountered in a highly developed person; in many
+        other regards, you have to be a particularly gifted individual to face this
+        obstacle. 
+        </p>
+    
+        `
+    } else if (ttchaText === '1' || ttchaText === '10/1' || ttchaInt[ttchaInt.length - 1] === '1') {
+        tChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>third and fourth challenge number</b> is an issue and weakness
+            you can have all of your life. It is the most important challenge. <br><br>
+    
+            Third Challenge Number = Second Challenge # – First Challenge # <br>
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Third Challenge Number 1</h3> <br>
+        <p>
+        You have a large ego and believe that others are attempting to control
+        or dominate you. People with a lot of power over you, such as your
+        parents or others with whom you struggle, are likely to make you feel
+        controlled. The issue is to avoid becoming dominated while also
+        ensuring that others are not dominated. It's critical to keep your ego in
+        check. You're currently at a phase where you're learning to be
+        independent and solve difficulties on your own. This challenge can be
+        overcome with awareness.
+        </p>
+    
+        `
+    } else if (ttchaText === '2' || ttchaText === '20/2' || ttchaInt[ttchaInt.length -1] === '2') {
+        tChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>third and fourth challenge number</b> is an issue and weakness
+            you can have all of your life. It is the most important challenge. <br><br>
+    
+            Third Challenge Number = Second Challenge # – First Challenge # <br>
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Third Challenge Number 2</h3> <br>
+        <p>
+        Because you are terrified of being criticized or ignored, you are likely
+        to be exceedingly sensitive and find it difficult to cooperate with others.
+        Your feelings are easily hurt, and you may be an empath who picks up
+        on other people's feelings. Emotions have the ability to overtake you.
+        You have a high level of self-assurance. There's a propensity to be
+        continually concerned about what people think of you. Your high
+        sensitivity may be a tremendous strength when used constructively,
+        allowing you to be extremely conscious of so much that others barely
+        notice. However, you will find it difficult to make decisions at this time.
+        During this period, friendships provide you with a great deal of
+        pleasure. You should be sensitive to others' feelings, and value your
+        capacity to compromise and grow in a peaceful manner. Also, strive to
+        keep your energy safe.
+        </p>
+    
+        `
+    } else if (ttchaText === '3' || ttchaText === '12/3' || ttchaInt[ttchaInt.length - 1] === '3') {
+        tChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>third and fourth challenge number</b> is an issue and weakness
+            you can have all of your life. It is the most important challenge. <br><br>
+    
+            Third Challenge Number = Second Challenge # – First Challenge # <br>
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Third Challenge Number 3</h3> <br>
+        <p>
+        You're afraid of being judged, and you're scared that others will
+        criticize you. You're disorganized and scattered, and you tend to focus
+        your attention on many projects or attempt to accomplish too many
+        things at once. You may have a vivid imagination and a talent for
+        communication, yet you struggle to communicate effectively. Despite
+        the fact that you are aware that you should make friendships and be
+        sociable, you are somewhat isolated and guarded. You may have a
+        gift for writing, singing, acting, or speaking, but you are hesitant to
+        engage in these hobbies because you are afraid of receiving negative
+        feedback. You're using a negative tone to describe yourself, and 
+        you're burying your creative abilities behind a wall of timidity. It's
+        difficult to simply unwind and enjoy yourself. You must work hard to
+        improve your social and creative skills without being afraid of critics.
+
+        </p>
+    
+        `
+    } else if (ttchaText === '4' || ttchaText === '13/4' || ttchaInt[ttchaInt.length - 1] === '4') {
+        tChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>third and fourth challenge number</b> is an issue and weakness
+            you can have all of your life. It is the most important challenge. <br><br>
+    
+            Third Challenge Number = Second Challenge # – First Challenge # <br>
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Third Challenge Number 4</h3> <br>
+        <p>
+        You may be having difficulties with work because you are lazy or
+        overworked. Maybe you dislike working, or the work you are required
+        to accomplish, or you are having trouble completing chores and
+        functioning effectively. You might be irresponsible and lacking in
+        practicality. It's indeed critical that you develop tolerance,
+        understanding, and a realistic, rational approach to handling duties.
+        </p>
+    
+        `
+    } else if (ttchaText === '5' || ttchaText === '14/5' || ttchaInt[ttchaInt.length - 1 ] === '5') {
+        tChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>third and fourth challenge number</b> is an issue and weakness
+            you can have all of your life. It is the most important challenge. <br><br>
+    
+            Third Challenge Number = Second Challenge # – First Challenge # <br>
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Third Challenge Number 5</h3> <br>
+        <p>
+        Your goal is to conquer the yearning and need for complete
+        independence at whatever cost, which could also end up destroying
+        your relationship. You place a higher value on freedom than anything
+        else. It's possible that you'll be having a lot of changes or traveling.
+        This problem is particularly tough for you to face because you are
+        prone to being impulsive or hot-tempered where you want to try
+        anything at least occasionally, and you are in many ways unstable.
+        You easily can become hooked on drugs or alcohol, sex, and so on.
+        Change may be vital for you, but it must be treated with caution and
+        precaution, and you must exercise discipline.
+        
+        </p>
+    
+        `
+    } else if (ttchaText === '6' || ttchaText === '15/6' || ttchaInt[ttchaInt.length - 1] === '6') {
+        tChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>third and fourth challenge number</b> is an issue and weakness
+            you can have all of your life. It is the most important challenge. <br><br>
+    
+            Third Challenge Number = Second Challenge # – First Challenge # <br>
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Third Challenge Number 6</h3> <br>
+        <p>
+        Because of your focus on exceedingly high standards, you may face
+        obstacles. You could come across as intolerant and a bit arrogant.
+        Others find it difficult to live up to your high expectations, as a result,
+        you may have relationship problems with your romantic partner or with
+        people in general. You must understand that people will enjoy your
+        diplomatic attitude if they feel their needs are addressed, their wishes
+        are acknowledged, and their opinion is valued. You need to show
+        compassion, harmony, love, and understanding. 
+        </p>
+    
+        `
+    } else if (ttchaText === '7' || ttchaText === '16/7' || ttchaInt[ttchaInt.length - 1] === '7') {
+        tChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>third and fourth challenge number</b> is an issue and weakness
+            you can have all of your life. It is the most important challenge. <br><br>
+    
+            Third Challenge Number = Second Challenge # – First Challenge # <br>
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Third Challenge Number 7</h3> <br>
+        <p>
+        It's possible that you're uncomfortable with your own inner sentiments.
+        You may believe that you are powerless to alter or better your
+        situation. With this obstacle, it's easy to become a persistent critic and
+        whiner. Discrimination is a powerful feeling, yet it is conveyed in a bad
+        way. Avoid the inclination to approach individuals with caution and
+        establish confidence in your own talents. <br> <br>
+        As a result, you are harsh with yourself and others, which might harm
+        your relationship. You have a tendency to be negative at times. The 
+        greatest method to tackle this difficulty is to examine yourself before
+        passing judgment.
+        </p>
+    
+        `
+    } else if (ttchaText === '8' || ttchaText === '17/8' || ttchaInt[ttchaInt.length - 1] === '8') {
+        tChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>third and fourth challenge number</b> is an issue and weakness
+            you can have all of your life. It is the most important challenge. <br><br>
+    
+            Third Challenge Number = Second Challenge # – First Challenge # <br>
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Third Challenge Number 8</h3> <br>
+        <p>
+        You have a tendency to be highly frugal, according to challenge 8. You
+        may be stingy with your money and dislike spending it. You
+        have financial problems where you don't like to contribute or waste
+        cash. Material acquisition is the only way to achieve and maintain
+        happiness. Therefore, money, prestige, wealth, and power may
+        require a significant amount of effort. You must learn to balance your
+        abilities to attain money, position, power, and wealth with a grip on
+        reality in order to interact comfortably with the material world.
+        
+        </p>
+    
+        `
+    } 
 
     // Forth Challenge 
     var ftAnim = yearHold - monthHold;
@@ -11981,6 +14016,279 @@ your    cool or temper.
         ftAnim;
     };
     ftChaNum.innerHTML = ftAnim;
+    var fttChaText = (ftChaNum.textContent).trim();
+    var fttChaInt = fttChaText.split('/');
+
+    if (fttChaText === '0' || fttChaInt[fttChaInt.length - 1] === '0') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 0</h3> <br>
+        <p>
+        In life, you must be prepared for obstacles. So, challenge 0 is all about
+        coming up with a long-term solution to any problem you may come into
+        in your quest for success. <br> <br>
+        Life's challenges might be few or numerous, and they can come from
+        all sources. The choice challenge is the name given to this problem.
+        It's possible that you'll have trouble relying on your choices. You can
+        analyze an issue and realistically consider different approaches. You
+        must have trust in your own talents to tackle the problem. This is a
+        task that is often encountered in a highly developed person; in many
+        other regards, you have to be a particularly gifted individual to face this
+        obstacle. 
+        </p>
+    
+        `
+    } else if (fttChaText === '1' || fttChaText === '10/1' || fttChaInt[fttChaInt.length - 1] === '1') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 1</h3> <br>
+        <p>
+        You have a large ego and believe that others are attempting to control
+        or dominate you. People with a lot of power over you, such as your
+        parents or others with whom you struggle, are likely to make you feel
+        controlled. The issue is to avoid becoming dominated while also
+        ensuring that others are not dominated. It's critical to keep your ego in
+        check. You're currently at a phase where you're learning to be
+        independent and solve difficulties on your own. This challenge can be
+        overcome with awareness.
+        
+        </p>
+    
+        `
+    } else if (fttChaText === '2' || fttChaText === '20/2' || fttChaInt[fttChaInt.length - 1] === '2') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 2</h3> <br>
+        <p>
+        Because you are terrified of being criticized or ignored, you are likely
+        to be exceedingly sensitive and find it difficult to cooperate with others.
+        Your feelings are easily hurt, and you may be an empath who picks up
+        on other people's feelings. Emotions have the ability to overtake you. <br> <br>
+        You have a high level of self-assurance. There's a propensity to be
+        continually concerned about what people think of you. Your high
+        sensitivity may be a tremendous strength when used constructively,
+        allowing you to be extremely conscious of so much that others barely
+        notice. However, you will find it difficult to make decisions at this time.
+        During this period, friendships provide you with a great deal of
+        pleasure. You should be sensitive to others' feelings, and value your
+        capacity to compromise and grow in a peaceful manner. Also, strive to
+        keep your energy safe.
+        </p>
+    
+        `
+    } else if (fttChaText === '3' || fttChaText === '12/3' || fttChaInt[fttChaInt.length - 1] === '3') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 3</h3> <br>
+        <p>
+        You're afraid of being judged, and you're scared that others will
+        criticize you. You're disorganized and scattered, and you tend to focus
+        your attention on many projects or attempt to accomplish too many
+        things at once. You may have a vivid imagination and a talent for
+        communication, yet you struggle to communicate effectively. Despite
+        the fact that you are aware that you should make friendships and be
+        sociable, you are somewhat isolated and guarded. You may have a
+        gift for writing, singing, acting, or speaking, but you are hesitant to
+        engage in these hobbies because you are afraid of receiving negative
+        feedback. You're using a negative tone to describe yourself, and
+        you're burying your creative abilities behind a wall of timidity. It's
+        difficult to simply unwind and enjoy yourself. You must work hard to
+        improve your social and creative skills without being afraid of critics.
+        
+        </p>
+    
+        `
+    } else if (fttChaText === '4' || fttChaText === '13/4' || fttChaInt[fttChaInt.length - 1]=== '4') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 4</h3> <br>
+        <p>
+        You may be having difficulties with work because you are lazy or
+        overworked. Maybe you dislike working, or the work you are required
+        to accomplish, or you are having trouble completing chores and
+        functioning effectively. You might be irresponsible and lacking in
+        practicality. It's indeed critical that you develop tolerance,
+        understanding, and a realistic, rational approach to handling duties.
+        </p>
+    
+        `
+    } else if (fttChaText === '5' || fttChaText === '14/5' || fttChaInt[fttChaInt.length - 1] === '5') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 5</h3> <br>
+        <p>
+        Your goal is to conquer the yearning and need for complete
+        independence at whatever cost, which could also end up destroying
+        your relationship. You place a higher value on freedom than anything
+        else. It's possible that you'll be having a lot of changes or traveling.
+        This problem is particularly tough for you to face because you are
+        prone to being impulsive or hot-tempered where you want to try
+        anything at least occasionally, and you are in many ways unstable.
+        You easily can become hooked on drugs or alcohol, sex, and so on.
+        Change may be vital for you, but it must be treated with caution and
+        precaution, and you must exercise discipline.
+        </p>
+    
+        `
+    } else if (fttChaText === '6' || fttChaText === '15/6' || fttChaInt[fttChaInt.length - 1] === '6') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 6</h3> <br>
+        <p>
+        Because of your focus on exceedingly high standards, you may face
+        obstacles. You could come across as intolerant and a bit arrogant.
+        Others find it difficult to live up to your high expectations, as a result,
+        you may have relationship problems with your romantic partner or with
+        people in general. You must understand that people will enjoy your
+        diplomatic attitude if they feel their needs are addressed, their wishes
+        are acknowledged, and their opinion is valued. You need to show
+        compassion, harmony, love, and understanding. 
+        </p>
+    
+        `
+    } else if (fttChaText === '7' || fttChaText === '16/7' || fttChaInt[fttChaInt.length -1] === '7') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 7</h3> <br>
+        <p>
+        It's possible that you're uncomfortable with your own inner sentiments.
+        You may believe that you are powerless to alter or better your
+        situation. With this obstacle, it's easy to become a persistent critic and
+        whiner. Discrimination is a powerful feeling, yet it is conveyed in a bad
+        way. Avoid the inclination to approach individuals with caution and
+        establish confidence in your own talents. <br> <br>
+        As a result, you are harsh with yourself and others, which might harm
+        your relationship. You have a tendency to be negative at times. The
+        greatest method to tackle this difficulty is to examine yourself before
+        passing judgment.
+        
+        </p>
+    
+        `
+    } else if (fttChaText === '8' || fttChaText === '17/8' || fttChaInt[fttChaInt.length - 1] === '8') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 8</h3> <br>
+        <p>
+        You have a tendency to be highly frugal, according to challenge 8. You
+        may be stingy with your money and dislike spending it. You
+        have financial problems where you don't like to contribute or waste
+        cash. Material acquisition is the only way to achieve and maintain
+        happiness. Money, prestige, wealth, and power may require a
+        significant amount of effort. You must learn to balance your abilities to
+        attain money, position, power, and wealth with a grip on reality in order
+        to interact comfortably with the material world.
+        
+        </p>
+    
+        `
+    } else if (fttChaText === '1') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 1</h3> <br>
+        <p>
+            
+        </p>
+    
+        `
+    } else if (fttChaText === '1') {
+        ftChaText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            <b>The fourth challenge number</b> is an issue and weakness you can
+            have all of your life. (55/60 - Till death) <br> <br>
+    
+            Fourth Challenge Number = Year of Birth – Month of Birth
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Fourth Challenge Number 1</h3> <br>
+        <p>
+            
+        </p>
+    
+        `
+    }
 
 
 
@@ -12192,7 +14500,7 @@ your    cool or temper.
 
     
     // Personal Day 
-    var currentDay = new Date().getDay();
+    var currentDay = (new Date().toLocaleDateString()).split('/')[0];
     
     var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     var d = new Date();

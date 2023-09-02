@@ -7836,7 +7836,7 @@ your    cool or temper.
     } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
     } else if(kdNum.textContent === '') {
-        kdNum.innerHTML = 'None'
+        kdNum.textContent = 'None'
     }
 
     // destiny
@@ -7850,7 +7850,7 @@ your    cool or temper.
     } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
     } else if(kdNum.textContent === '') {
-        kdNum.innerHTML = 'None'
+        kdNum.textContent = 'None'
     }
 
     // soul urge 
@@ -7864,7 +7864,7 @@ your    cool or temper.
     } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
     } else if(kdNum.textContent === '') {
-        kdNum.innerHTML = 'None'
+        kdNum.textContent = 'None'
     }
 
     // birthday number 
@@ -7878,7 +7878,7 @@ your    cool or temper.
     } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
     } else if(kdNum.textContent === '') {
-        kdNum.innerHTML = 'None'
+        kdNum.textContent = 'None'
     }
 
     // expression 
@@ -7892,7 +7892,7 @@ your    cool or temper.
     } else if (kdHold === '19/1') {
         kdNum.innerHTML = '19/1'
     } else if(kdNum.textContent === '') {
-        kdNum.innerHTML = 'None'
+        kdNum.textContent = 'None'
     }
 
     switch ((kdNum.textContent).trim()) {
@@ -13497,6 +13497,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     var sAnim = yearHold - dayHold;
     if (sAnim < 0) {
         sAnim = sAnim * (-1);
+        sAnims = sAnim;
     } else if (sAnim < 10) {
         sAnim;
         sAnims = sAnim;
@@ -13771,6 +13772,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
     // Third Challenge 
     var tAnim = sAnims - fAnims;
+    console.log(sAnims);
+    console.log(fAnims)
     if (tAnim < 0) {
         tAnim = tAnim * (-1);
     } else {

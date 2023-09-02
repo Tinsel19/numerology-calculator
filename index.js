@@ -11577,6 +11577,8 @@ your    cool or temper.
         fPinNum.innerHTML = fpSum;
     };
 
+    
+
 
     // Second Pinnacle 
     dayHold;
@@ -12192,7 +12194,7 @@ your    cool or temper.
     // Personal Day 
     var currentDay = new Date().getDay();
     
-    var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satursday'];
+    var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     var d = new Date();
     name = day[d.getDay()];
     cDay.innerHTML = name ;

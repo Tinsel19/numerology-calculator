@@ -14254,41 +14254,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         </p>
     
         `
-    } else if (fttChaText === '1') {
-        ftChaText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
-    
-            Fourth Challenge Number = Year of Birth – Month of Birth
-           </p> <br> <br>
-        
-        <h3 class="bold-description-label ">Fourth Challenge Number 1</h3> <br>
-        <p>
-            
-        </p>
-    
-        `
-    } else if (fttChaText === '1') {
-        ftChaText.innerHTML = `
-        <h3 class="bold-description-label">Definition</h3> <br>
-        <p>
-            
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
-    
-            Fourth Challenge Number = Year of Birth – Month of Birth
-           </p> <br> <br>
-        
-        <h3 class="bold-description-label ">Fourth Challenge Number 1</h3> <br>
-        <p>
-            
-        </p>
-    
-        `
-    }
+    } 
 
 
 

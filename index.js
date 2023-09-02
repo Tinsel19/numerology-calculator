@@ -13482,8 +13482,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         sAnim = sAnim * (-1);
     } else if (sAnim < 10) {
         sAnim;
-        sAnims = fAnim;
-    } else if (fAnim === 10) {
+        sAnims = sAnim;
+    } else if (sAnim === 10) {
         sAnim = 1;
         sAnims = 1
     } else if ( sAnim === 11) {
@@ -14012,6 +14012,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     var ftAnim = yearHold - monthHold;
     if (ftAnim < 0) {
         ftAnim = ftAnim * (-1)
+    } else if (ftAnim === 10) {
+        ftAnim = 1;
     } else {
         ftAnim;
     };

@@ -149,6 +149,7 @@ var bornDayText = document.getElementById('bornDayText');
 
 
 calculate.addEventListener('click', ()=> {
+    document.querySelector('.hide').style.display = 'none';
     var month = Number(dMonth.value);
     var monthHold = month;
     var dayHold = dDay.value;
@@ -8239,11 +8240,11 @@ your    cool or temper.
     } else if (count === 10) {
         count = 1;
     } else if (count === 11  ) {
-        count = '2';
+        count = 2;
     } else if (count === 22) {
-        count = '4';
+        count = 4;
     } else if (count === 33) {
-        count = '6';
+        count = 6;
     } else if (count > 10) {
         mSplit = String(count).split('');
         sum = eval(mSplit.join('+'));
@@ -8252,11 +8253,11 @@ your    cool or temper.
         } else if (sum === 10) {
             sum =1
         } else if (sum === 11) {
-            sum = '2'
+            sum = 2
         } else if (sum === 22) {
-            sum = '4'
+            sum = 4;
         } else if (sum === 33) {
-            sum = '6'
+            sum = 6;
         } else if (sum > 10) {
             dbSplit = String(sum).split('');
             sum = eval(dbSplit.join('+'));
@@ -13772,8 +13773,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
     // Third Challenge 
     var tAnim = sAnims - fAnims;
-    console.log(sAnims);
-    console.log(fAnims)
+    // console.log(sAnims);
+    // console.log(fAnims)
     if (tAnim < 0) {
         tAnim = tAnim * (-1);
     } else {
@@ -15413,7 +15414,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     
     // Personal Day 
     var currentDay = new Date().getDate();
-    console.log(currentDay);
+    // console.log(currentDay);
     
     var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     var d = new Date();

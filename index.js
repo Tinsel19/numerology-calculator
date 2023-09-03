@@ -8437,9 +8437,9 @@ your    cool or temper.
 
 
     // CornerStone Letter 
-    ednfName = (fName.value).split(' ');
+    ednfName = ((fName.value).split(' '))[0];
     // console.log((ednfName[0][0]))
-    var firstLetter = (ednfName[0][0]).toUpperCase();
+    var firstLetter = (ednfName[0]).toUpperCase();
     cstNum.innerHTML = firstLetter;
 
     switch (firstLetter) {
@@ -14345,6 +14345,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     // Spiritual Transit
     ednfName = fName.value.split(' ');
     lastName = ednfName[ednfName.length - 1];
+    console.log(lastName)
 
     emptyNameString = '';
     firstName = lastName.repeat(yearDiff/2);

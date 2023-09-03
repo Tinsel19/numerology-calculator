@@ -155,6 +155,7 @@ input:focus {
 .blue {
     color:  blue;
     text-align: center;
+    font-weight: bold;
 }
 
 details {
@@ -231,6 +232,7 @@ details p {
 .border {
     border: 1px solid  black;
     font-weight: bold;
+    text-align: center;
 }
 
 #small {

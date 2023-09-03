@@ -14435,6 +14435,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
     
            </p> <br> <br>
         
@@ -14493,7 +14496,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 11/2</h3> <br> <br>
@@ -14536,7 +14541,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 22/4</h3> <br>
@@ -14573,7 +14580,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 33/6</h3> <br>
@@ -14612,7 +14621,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 2</h3> <br>
@@ -14671,7 +14682,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 3</h3> <br>
@@ -14723,7 +14736,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 4</h3> <br>
@@ -14764,7 +14779,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 5</h3> <br>
@@ -14807,7 +14824,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 6</h3> <br>
@@ -14846,7 +14865,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 7</h3> <br>
@@ -14922,7 +14943,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 8</h3> <br>
@@ -14973,7 +14996,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             The Personal Year Cycles disclose external influences, changing circumstances,
             situations, opportunities, and challenges for the upcoming year. 
-    
+            Your personal year number is based on your month and day of birth. It gives you awareness into the current calendar year. The energy begins January 1st – December 31st. It describes the energies that you'll have and what may happen.
+
+            To calculate the Personal Year # for a given year, first reduce the numbers of the birthday, month, and given year to a single digit.
            </p> <br> <br>
         
         <h3 class="bold-description-label red-span">Personal Year - 9</h3> <br>
@@ -15091,8 +15116,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
-           </p> <br>
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+        </p> <br>
         
         <h3 class="bold-description-label ">Personal Month - 1</h3> <br>
         <p>
@@ -15120,8 +15147,11 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
-           </p> <br>
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+          
+        </p> <br>
         
         <h3 class="bold-description-label ">Personal Month - 11/2</h3> <br>
         <p>
@@ -15143,8 +15173,11 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
-           </p> <br>
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+          
+        </p> <br>
         
         <h3 class="bold-description-label ">Personal Month - 22/4</h3> <br>
         <p>
@@ -15163,7 +15196,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+        
            </p> <br>
         
         <h3 class="bold-description-label ">Personal Month - 33/6</h3> <br>
@@ -15182,7 +15218,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+        
            </p> <br>
         
         <h3 class="bold-description-label">Personal Month - 2</h3> <br>
@@ -15208,7 +15247,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+        
            </p> <br>
         
         <h3 class="bold-description-label">Personal Month - 3</h3> <br>
@@ -15235,7 +15277,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+        
            </p> <br>
         
         <h3 class="bold-description-label">Personal Month - 4</h3> <br>
@@ -15261,7 +15306,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+        
            </p> <br>
         
         <h3 class="bold-description-label">Personal Month - 5</h3> <br>
@@ -15285,7 +15333,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+        
            </p> <br>
         
         <h3 class="bold-description-label">Personal Month - 6</h3> <br>
@@ -15311,7 +15362,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+        
            </p> <br>
         
         <h3 class="bold-description-label">Personal Month - 7</h3> <br>
@@ -15355,7 +15409,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+        
            </p> <br>
         
         <h3 class="bold-description-label">Personal Month - 8</h3> <br>
@@ -15383,7 +15440,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal month definitions: The Personal Month number provides useful information on the energies you'll have and what may occur. The energy of the Personal Month begins on the 1st of the month and ends on the last day.
+        To calculate your Personal Month #, 
+        add the Calendar Month (reduced to a single digit or Master number) and the Personal Year number and then reduce to one digit.  
+        
            </p> <br>
         
         <h3 class="bold-description-label">Personal Month - 9</h3> <br>
@@ -15461,7 +15521,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 1</h3> <br>
@@ -15483,7 +15545,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 11/2</h3> <br>
@@ -15506,7 +15571,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 22/4</h3> <br>
@@ -15525,7 +15593,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 33/6</h3> <br>
@@ -15543,7 +15614,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 2</h3> <br>
@@ -15564,7 +15638,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 3</h3> <br>
@@ -15586,7 +15663,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 4</h3> <br>
@@ -15607,7 +15687,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 5</h3> <br>
@@ -15633,7 +15716,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 6</h3> <br>
@@ -15657,7 +15743,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 7</h3> <br>
@@ -15677,7 +15766,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 8</h3> <br>
@@ -15699,7 +15791,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         perDayText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            
+        Personal day definition: The Personal Day Number gives you insights on the energy you'll have and what may happen. 
+        To calculate your Personal Day #, add the values together and (reduced to single digits or Master numbers) of the 
+        Calendar Month, the Calendar Day, and your Personal Year, then reduce to single digit #.
+
            </p> <br>
         
         <h3 class="bold-description-label red-span">Personal Day Number - 9</h3> <br>

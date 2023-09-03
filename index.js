@@ -14292,45 +14292,142 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     lastName = ednfName[ednfName.length - 1];
     indexList = lastName;
     firstName = ednfName[0];
-    var fNameLength = firstName.length;
     count = 0;
 
     var currentYear = Number(new Date().getFullYear());
     yearNum = Number(yearString);
-    var yearDiff = currentYear - yearNum;
-    var remainder = yearDiff % fNameLength;
-    var divisible = Math.floor(yearDiff / fNameLength);
-    var transit;
+    var yearDiff;
+    
 
-    if (yearDiff < fNameLength) {
-        transit = firstName[yearDiff - 1]
-    } else if (remainder === 0) {
-        transit = firstName[fNameLength -1]
-    } else if (remainder > 0) {
-        transit = firstName[remainder -1];
+    if (currentYear === yearNum) {
+        yearDiff = 1;
+    } else if (currentYear < yearNum) {
+        yearDiff = (yearNum - currentYear) ;
+    } else if (currentYear > yearNum) {
+        yearDiff = (currentYear - yearNum) ;
+    };
+    var emptyNameString = '';
+    firstName = firstName.repeat(yearDiff/2);
+    var fNameList = firstName.split('');
+    
+    
+    for (let i = 0; i< yearDiff; i++) {
+        if (String(fNameList[i]).toLowerCase() === 'a' ||  String(fNameList[i]).toLowerCase() === 'j' || String(fNameList[i]).toLowerCase() === 's' ) {
+            emptyNameString += (fNameList[i]) ;
+       } else if (String(fNameList[i]).toLowerCase() === 'b' || String(fNameList[i]).toLowerCase() === 'k' || String(fNameList[i]).toLowerCase() === 't') {
+            emptyNameString += (fNameList[i]).repeat(2);
+        } else if (String(fNameList[i]).toLowerCase() === 'c' || String(fNameList[i]).toLowerCase() === 'l' || String(fNameList[i]).toLowerCase() === 'u') {
+            emptyNameString += (fNameList[i]).repeat(3);
+        } else if (String(fNameList[i]).toLowerCase() === 'd' || String(fNameList[i]).toLowerCase() === 'm' || String(fNameList[i]).toLowerCase() === 'v') {
+            emptyNameString += (fNameList[i] ).repeat(4);
+        } else if (String(fNameList[i]).toLowerCase() === 'e' || String(fNameList[i]).toLowerCase() === 'n' || String(fNameList[i]).toLowerCase() === 'w') {
+            emptyNameString += (fNameList[i]).repeat(5);
+        } else if (String(fNameList[i]).toLowerCase()=== 'f' || String(fNameList[i]).toLowerCase() === 'o' || String(fNameList[i]).toLowerCase() === 'x') {
+            emptyNameString += (fNameList[i]).repeat(6);
+        } else if (String(fNameList[i]).toLowerCase()=== 'g' || String(fNameList[i]).toLowerCase() === 'p' || String(fNameList[i]).toLowerCase() === 'y') {
+            emptyNameString += (fNameList[i]).repeat(7);
+        } else if (String(fNameList[i]).toLowerCase() === 'h' || String(fNameList[i]).toLowerCase() === 'q' || String(fNameList[i]).toLowerCase() === 'z') {
+            emptyNameString += (fNameList[i]).repeat(8);
+        } else if (String(fNameList[i]).toLowerCase() === 'i' || String(fNameList[i]).toLowerCase() === 'r' ) {
+            emptyNameString += (fNameList[i]).repeat(9);
+        }
     }
 
+    
+    var transit = emptyNameString[yearDiff];
     phtrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
 
     // Spiritual Transit
-    lastName;
-    var lNameLength = lastName.length;
-    remainder = yearDiff % lNameLength;
-    divisible = Math.floor(yearDiff / lNameLength);
+    ednfName = fName.value.split(' ');
+    lastName = ednfName[ednfName.length - 1];
 
-    if (yearDiff < lNameLength) {
-        transit = lastName[yearDiff - 1]
-    } else if (remainder === 0) {
-        transit = lastName[lNameLength -1]
-    } else if (remainder > 0) {
-        transit = lastName[remainder -1];
+    emptyNameString = '';
+    firstName = lastName.repeat(yearDiff/2);
+    fNameList = firstName.split('');
+
+    
+    for (let i = 0; i< yearDiff; i++) {
+        if (String(fNameList[i]).toLowerCase() === 'a' ||  String(fNameList[i]).toLowerCase() === 'j' || String(fNameList[i]).toLowerCase() === 's' ) {
+            emptyNameString += (fNameList[i]) ;
+       } else if (String(fNameList[i]).toLowerCase() === 'b' || String(fNameList[i]).toLowerCase() === 'k' || String(fNameList[i]).toLowerCase() === 't') {
+            emptyNameString += (fNameList[i]).repeat(2);
+        } else if (String(fNameList[i]).toLowerCase() === 'c' || String(fNameList[i]).toLowerCase() === 'l' || String(fNameList[i]).toLowerCase() === 'u') {
+            emptyNameString += (fNameList[i]).repeat(3);
+        } else if (String(fNameList[i]).toLowerCase() === 'd' || String(fNameList[i]).toLowerCase() === 'm' || String(fNameList[i]).toLowerCase() === 'v') {
+            emptyNameString += (fNameList[i] ).repeat(4);
+        } else if (String(fNameList[i]).toLowerCase() === 'e' || String(fNameList[i]).toLowerCase() === 'n' || String(fNameList[i]).toLowerCase() === 'w') {
+            emptyNameString += (fNameList[i]).repeat(5);
+        } else if (String(fNameList[i]).toLowerCase()=== 'f' || String(fNameList[i]).toLowerCase() === 'o' || String(fNameList[i]).toLowerCase() === 'x') {
+            emptyNameString += (fNameList[i]).repeat(6);
+        } else if (String(fNameList[i]).toLowerCase()=== 'g' || String(fNameList[i]).toLowerCase() === 'p' || String(fNameList[i]).toLowerCase() === 'y') {
+            emptyNameString += (fNameList[i]).repeat(7);
+        } else if (String(fNameList[i]).toLowerCase() === 'h' || String(fNameList[i]).toLowerCase() === 'q' || String(fNameList[i]).toLowerCase() === 'z') {
+            emptyNameString += (fNameList[i]).repeat(8);
+        } else if (String(fNameList[i]).toLowerCase() === 'i' || String(fNameList[i]).toLowerCase() === 'r' ) {
+            emptyNameString += (fNameList[i]).repeat(9);
+        }
     }
+
+    
+    transit = emptyNameString[yearDiff -1];
     sptrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
     // Mental Transit
+    var ednfName = fName.value.split(' ');
+    var empty = '';
+    var lastName;
+    if (ednfName.length > 2) {
+        ednfName = ednfName.slice(1, -1);
+        // console.log(ednfName)
+        for (let i = 0; i < ednfName.length; i ++) {
+            empty += ednfName[i];
+        };
+        lastName = empty;
+    } else {
+        lastName = ednfName[ednfName.length - 1];
+    };
 
+    
+    if (currentYear === yearNum) {
+        yearDiff = 1;
+    } else if (currentYear < yearNum) {
+        yearDiff = (yearNum - currentYear) ;
+    } else if (currentYear > yearNum) {
+        yearDiff = (currentYear - yearNum) ;
+    };
+    var middle = lastName;
 
+    emptyNameString = '';
+    firstName = middle.repeat(yearDiff/2);
+    fNameList = firstName.split('');
+
+    
+    for (let i = 0; i< yearDiff; i++) {
+        if (String(fNameList[i]).toLowerCase() === 'a' ||  String(fNameList[i]).toLowerCase() === 'j' || String(fNameList[i]).toLowerCase() === 's' ) {
+            emptyNameString += (fNameList[i]) ;
+       } else if (String(fNameList[i]).toLowerCase() === 'b' || String(fNameList[i]).toLowerCase() === 'k' || String(fNameList[i]).toLowerCase() === 't') {
+            emptyNameString += (fNameList[i]).repeat(2);
+        } else if (String(fNameList[i]).toLowerCase() === 'c' || String(fNameList[i]).toLowerCase() === 'l' || String(fNameList[i]).toLowerCase() === 'u') {
+            emptyNameString += (fNameList[i]).repeat(3);
+        } else if (String(fNameList[i]).toLowerCase() === 'd' || String(fNameList[i]).toLowerCase() === 'm' || String(fNameList[i]).toLowerCase() === 'v') {
+            emptyNameString += (fNameList[i] ).repeat(4);
+        } else if (String(fNameList[i]).toLowerCase() === 'e' || String(fNameList[i]).toLowerCase() === 'n' || String(fNameList[i]).toLowerCase() === 'w') {
+            emptyNameString += (fNameList[i]).repeat(5);
+        } else if (String(fNameList[i]).toLowerCase()=== 'f' || String(fNameList[i]).toLowerCase() === 'o' || String(fNameList[i]).toLowerCase() === 'x') {
+            emptyNameString += (fNameList[i]).repeat(6);
+        } else if (String(fNameList[i]).toLowerCase()=== 'g' || String(fNameList[i]).toLowerCase() === 'p' || String(fNameList[i]).toLowerCase() === 'y') {
+            emptyNameString += (fNameList[i]).repeat(7);
+        } else if (String(fNameList[i]).toLowerCase() === 'h' || String(fNameList[i]).toLowerCase() === 'q' || String(fNameList[i]).toLowerCase() === 'z') {
+            emptyNameString += (fNameList[i]).repeat(8);
+        } else if (String(fNameList[i]).toLowerCase() === 'i' || String(fNameList[i]).toLowerCase() === 'r' ) {
+            emptyNameString += (fNameList[i]).repeat(9);
+        }
+    }
+
+    
+    transit = emptyNameString[yearDiff -1];
+    metrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
     // Essence Cycle
     var middleName, mNameLength;

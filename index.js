@@ -14427,7 +14427,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     var perCYText = (cYearNum.textContent).trim();
     var perCYInt = perCYText.split('/');
 
-    if (perCYText === '9' || perCYInt[perCYInt.length - 1] === '9') {
+    if (perCYText === '1' || perCYText === '10/1' || perCYInt[perCYInt.length - 1] === '1') {
         perYearText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
@@ -14437,7 +14437,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     
            </p> <br> <br>
         
-        <h3 class="bold-description-label red-span">Personal Year - 9</h3> <br>
+        <h3 class="bold-description-label red-span">Personal Year - 1</h3> <br>
         <p>
             <p class="border">New beginnings, independent, adjustments to direction of life, plant new seed, leadership</p>
             You're at the start of your pinnacle cycle. There will be a lot of change and new
@@ -14480,12 +14480,543 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         impatient, and cynical to a degree. Although you may face challenges this year; avoid
         procrastination and have an optimistic attitude. A fantastic opportunity will present
         itself to you. <br> <br>
-        Keep in mind that, in addition to the pinnacle you're in, the physical, mental, and
-        spiritual transits you're having that year will have a big impact on your personal year
+        Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+        <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year
         </p>
     
         `
-    }
+    }else if (perCYText === '11/2' || perCYInt[0] === '11') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 11/2</h3> <br> <br>
+        <p>
+            <p class="border">Inspiration, adaptability, diplomacy, relationships, partnerships, cooperation, receptivity</p> <br>
+            You should expect huge changes in your life if your personal year number is 11.
+            You'd be aspirational, with new ideas and objectives. This is an excellent time to plan
+            and make decisions in your life. Get suggestions and encouragement from your
+            friends and relatives. Anything you do today will have an impact on your future, so
+            proceed with caution. In actuality, there would be greater commitment. Allow your
+            ideas to fly. This is also an excellent time to make significant changes in your life, like
+            beginning something new or enrolling in a new field of study. You'll face some
+            emotional roadblocks along the way, but keep going forward. The only thing that
+            collects grass is a moving stone. <br> <br>
+            People can collect inspiring energy at a higher level under the influence of the year,
+            which they can then utilize to inspire others. Be prepared for anything this year. This
+            master number 11 has the ability to bring enlightenment, inspiration, and spirituality
+            into one's life. Your psychic abilities may improve, and your intuition will sharpen. You
+            can discover love, meet your soulmate, or twin flame. Caffeine and alcohol should not
+            be consumed in large quantities. <br> <br>
+            During this time, people will conceal emotions from others they encounter. They can
+            also hone their intuitive abilities to the point where they can sense and bring to the
+            surface sensations that others cannot. People will be able to detect and unleash the
+            hidden characteristics and opportunities in everything they meet during Personal Year
+            11, and if they can calmly and thoroughly utilize all they see around them, they will be
+            able to assist others in realizing their aspirations. Any tension this year will be tiring,
+            but those who can use Personal Year 11's intuitive qualities to express kindness and
+            provide a bit of assistance may find tremendous delight. Be aware of depression,
+            anxiety, and emotional imbalance this year. <br> <br>
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year
+        
+        </p>
+    
+        `
+    } else if (perCYText === '22/4' || perCYInt[0] === '22') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 22/4</h3> <br>
+        <p>
+            <p class="border">Work, foundations, family, health</p> <br>
+            You should expect a lot of huge things if you put in a lot of effort with master 22 this
+            year. You will be put to test to create something long-lasting and substantial for the
+            future. It may be necessary to demolish something in order to construct something
+            new, but whatever you make will be better and more stable. So, if you see something
+            has been taken away from your life, know that you will rebuild and that something
+            greater is on the way. This is an excellent year for finding love. Try not to put too
+            much pressure on yourself. <br> <br> 
+            Know that this year, more than in past years, you will have a lot of steadiness in your
+            life. A steady relationship is possible. It's possible that you'll need to be more focused
+            and work harder. You will put in a lot of effort and be successful. You will be tested
+            and limited, but you will be rewarded afterward for your perseverance. Don't overwork
+            yourself and try to have a good time. It's time to buy a home or make an investment in
+            real estate. Although much may be accomplished at this time, it is vital to learn how to
+            organize one's life and channel energy positively; otherwise, stress can induce
+            nervous strain or even physical sickness. When challenged, the native would be
+            limited, frustrated, disorderly, sluggish, rigid, and furious. <br> <br>
+            Personal Year 22/4 may be a tremendous success if you try and relax and cope with
+            this energy and sometimes difficulties may arise. <br> <br>
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year
+        
+        </p>
+    
+        `
+    } else if (perCYText === '33/6' || perCYInt[0] === '33') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 33/6</h3> <br>
+        <p>
+            <p class="border">Teaching, healing, responsibility, family, burdens, search for peace, love, balance, harmony</p> <br>
+            Big things are likely to occur that are unexpected and unforeseeable. This may be a
+            difficult year, but you will be rewarded. This is a year of personal healing; you will
+            have the ability to heal yourself or others. Your guardian angels will keep a careful
+            eye on you. This is a year for you to give advice and guidance to others. This year,
+            you'll be more innovative and attractive. You'll be assisting a large number of folks in
+            any manner you can. <br> <br>
+            This year, you will be responsible for a number of things, including your family,
+            children, community, and career. The attention is on other people or things, such as
+            your house. You'll be more engaged and disciplined. A major career and business
+            opportunity may present itself to you. If you are jobless, you will most likely find work
+            or get promoted. This year, you'll feel more loved and appreciated. Partnership or
+            marital problems might emerge, especially if the relationship is broken. It's an
+            excellent year for finding a partner or going on a date, getting married, having a
+            family, purchasing a home, or renovating an existing property. During this year,
+            people from your past may reappear in your life. You will be rewarded if you try to be
+            of help to others. You may want to improve your appearance and dress properly since
+            you will desire to appear more lovely than ever before. Although this is a year of love,
+            it is also a year to end a bad relationship if you’re unhappy. <br> <br>
+            The drawbacks are that you will experience guilt, self-sacrificing, resentment,
+            selfishness, loss, and instability on a regular basis. <br> <br>
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year
+        
+        </p>
+    
+        `
+    } else if (perCYText === '2' || perCYText === '20/2' || perCYInt[perCYInt.length - 1] === '2') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 2</h3> <br>
+        <p>
+            <p class="border">Adaptability, diplomacy, relationships, partnerships, cooperation, receptivity</p> <br>
+            This personal number 2 denotes sensitivity, tact, diplomacy, cooperation with others,
+            persuasion, modesty in lifestyle, resilience in the face of adversity, outgoing, friendly,
+            amorous, healing, and soothing in partnerships. You will be more inclined to work
+            together this year, as well as more understanding and involvement. It is the year in
+            which it is possible to expand and mature ideas that emerged in Personal Year 1, as
+            well as to take advantage of new chances and make the most of them. Seeds were
+            planted in Personal Year 1 that can now germinate and flourish in Personal Year 2.
+            You will feel better if others assist you and if you are able to share your views with
+            others. You won't need to spend as much time alone as you did last year, and you'll
+            feel much more at ease with yourself. <br> <br>
+            You will see a lot of improvement in the field of relationships, but if you work alone,
+            you will not get very far. This year marks the beginning of a new partnership that will
+            be balanced and cheerful. If you're already in a relationship, you'll have the energy to
+            make it work again. When dealing with others, avoid becoming obnoxious. This year,
+            your intuition will be enhanced. Because you will be more sensitive, try to safeguard
+            your energy. You may be unhappy, nervous, and tired compared to the previous year.
+            This is a slow-paced year, and you will notice that things move slowly. Since you will
+            have less energy this year, it is not a good year to start a business or do anything
+            substantial. If you are wise in all of your relationships, you will most likely discover
+            your soulmate or twin flame this year and be able to develop a successful romantic
+            relationship. <br> <br>
+            Because this year comes with emotional instability, the most important areas for you
+            to focus on are communication and comprehension. It's time to grow and meet new
+            individuals who may provide you with fresh perspectives and innovative ideas. Don't
+            rush your projects, this is a year for reflection and accumulation rather than action.
+            Before taking any actions that may have financial implications, double-check
+            everything. Make time for yourself and your personal growth. There will be a lot of
+            ordinary chores to complete this year. Pay attention to your body, educate yourself on
+            vitamins, and pick an activity that best meets your needs. <br> <br>
+            Personal Year two is ideal for establishing new relationships and finding love. It's the
+            year when individuals make more friends and get along better with others. It's a time
+            when people need to express themselves and share significant sentiments and
+            experiences from their daily lives. Stress would be felt strongly by you during this
+            vibration; thus, it is critical that you live in a quiet atmosphere where you can retain a
+            sense of balance in your life; otherwise, you risk becoming unwell or emotional. You
+            may experience digestion and stomach issues, so drink plenty of fluid and stay active
+            during this year. <br> <br>
+            On the negative side, you are likely to be self-conscious, anxious, emotional
+            instability, hot-temped, timid, and discordant with those around you. You are also
+            likely to be deceitful, melodramatic, and cowardly. <br> <br>
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year.
+
+        </p>
+    
+        `
+    } else if (perCYText === '3' || perCYText === '12/3' || perCYInt[perCYInt.length - 1] === '3') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 3</h3> <br>
+        <p>
+            <p class="border">The social life, communication, creativity, happy/joy, self-expression</p> <br>
+            This personal number 3 denotes a strong level of creativity, imagination, inspiration,
+            motivation, and optimism in life. When it comes to your natural characteristics, you'll
+            be considered to be highly self-expressive, lively, joyous, lucky, beautiful, loving, and
+            prophetic. As a result, if you have number 3, you are planning something spectacular
+            this year. It will be pleasant and profitable to you in the majority of your endeavors.
+            You will be given full credit for whatever you have accomplished. You will be
+            rewarded if you were challenged at work. If you've been having relationship issues,
+            you'll finally be able to deal with them and feel better. If you experienced any issues,
+            you should wait until the fourth quarter of the year to get them fixed. <br> <br>
+            There's no way you'll be bored in year three because it's jam-packed with exciting
+            events. You will be presented with several opportunities. It's a great year to start
+            anything new, such as a family or baby. You'll have a lot of energy. This year, all
+            forms of communication, including the internet, media, writing, and podcasting, will be
+            embraced. Attempt to avoid working on many projects at the same time. You'll
+            experience a lot of fun and happiness. Before making any major decisions, you
+            should consider them again. Avoid making any unintended purchases or taking any
+            spontaneous vacations. Consider organizing your schedule and turning on your calm
+            mode at least once a week, as you need to relax and prepare for the next year. This
+            is not the year for mundane, day-to-day activity. This year, individuals are becoming
+            more innovative, and all activities must be demanding and interesting in order to fully
+            utilize the available intellectual energy. <br> <br>
+            People may be compelled to cope with the past this year, with a variety of unresolved
+            relationships and circumstances. It's almost astounding how many individuals meet
+            with family or old friends they haven't seen in a long time during this personal year to
+            attempt to settle buried problems they didn't want to think about until now. When
+            individuals strive to solve their problems via reasonable discussion, the emotional
+            distress of the circumstance naturally fades away. This is also the optimum time to
+            study because brain energy is at its highest. This is a great year to earn money, sell
+            property, invest, travel, and socialize. <br> <br>
+            There would be some egoism, impulsiveness, manipulative, dispersed energy
+            resulting in losses, disappointment, emotional overload, stress, moodiness, 
+            gossipiest, nervousness, fatigue, extravagance, and criticalness among the
+            drawbacks.
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year.
+
+        </p>
+    
+        `
+    } else if (perCYText === '4' || perCYText === '13/4' || perCYInt[perCYInt.length - 1] === '4') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 4</h3> <br>
+        <p>
+            <p class="border">Work, foundations, family, health</p> <br>
+            Personal year number 4 is associated with hard work and getting things done, with an
+            emphasis on laying a more solid foundation for the future. It's a pragmatic and
+            resourceful year, with a practical vitality. This year, more than the previous year, you
+            will have a lot of steadiness in your life. A stable relationship is possible. You'll be
+            more focused and work harder, and you'll achieve your goals. This is the year to lay
+            the groundwork for the next generation. You will be tested and limited, but you will be
+            rewarded for your perseverance eventually. Don't overwork yourself and try to have a
+            good time. It's a fantastic moment to purchase a house, make real estate
+            investments, or put money into investments or activities you enjoy. <br> <br>
+            You'd be an excellent manager this year because you're hardworking, proactive,
+            detail-oriented, dependable, timely, realistic, systematic in your thoughts and deeds,
+            of constructive ideas, driven, concentrative, and perseverant until the finish. Because
+            you may feel uneasy and doubtful about your abilities to attain success in life this
+            year, you will seek support and encouragement. It's because you're so focused on
+            your job that you don't recognize how far you've come. Much may be accomplished at
+            this time, but it is vital to learn how to organize one's life and channel energy
+            positively; otherwise, stress can induce nervous strain or even physical sickness.
+            When challenged, the native would be limited, frustrated, tired, disorderly, sluggish,
+            rigid, and furious. Watch out for back pain, kidneys, or bladder issues. Try to exercise
+            as much as you can to reduce your stress level. <br> <br>
+            Personal Year 4 may be a tremendous success if you try and relax and cope with the
+            energy and the difficulties. <br> <br>
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year.
+
+        </p>
+    
+        `
+    } else if (perCYText === '5' || perCYInt[perCYInt.length - 1] === '5') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 5</h3> <br>
+        <p>
+            <p class="border">Change, instability, Traveling, adventure, new experiences, creativity, freedom</p> <br>
+            This would be a good year to take a break because your personal year 4 was quite
+            demanding and involved a lot of labor. During Personal Year 5, people place a high
+            value on freedom, which includes both freedom of thinking, the ability to explore one's
+            own ideas without excessive influence or pressure from others, and freedom of
+            movement. This year, you'll want to get out into nature and be alone for a bit while 
+            thinking, but you'll also want to meet new people and build friendships. You can have
+            a good time and travel this year. You'll feel more relaxed, excited, and ready to meet
+            new people or dating. If you're already in a relationship, you can make it more
+            enjoyable and romantic. You will experience some changes in your life, including the
+            possibility of relocating, and much goodwill result. This will be an unpredictable and
+            surprising year, so be prepared for everything, including unexpected adventures.
+            Avoid becoming unstable by drinking excessively or experimenting. <br> <br>
+            The energy of number five encourages us to cope with change responsibly while also
+            considering the needs of those who may be impacted, so strengthening our own drive
+            and self-discipline. Then it will be easier to focus all of one's efforts on one problem at
+            a time, rather than being distracted by attempting to tackle too many things at once.
+            You can find tremendous inspiration this year, and if you select a goal and focus on it,
+            your energy levels will remain strong. As a result, you are a dynamic, progressive,
+            vocal, social with others, original, faster, flexible, adaptive to changes, creative,
+            versatile, freedom-loving, accepting of restriction, amorous, adventurous, and travelloving character with a 5 personal number.
+            The disadvantages include a lack of concentration, anxiety, limb injuries, insomnia,
+            restlessness, changeability, nervousness, impatience, the potential to be
+            untrustworthy at times, avoid substance use, unpredictable, and dissatisfied in
+            relationships.
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year.
+
+        </p>
+    
+        `
+    } else if (perCYText === '6' || perCYInt[perCYInt.length - 1] === '6') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 6</h3> <br>
+        <p>
+            <p class="border">Responsibility, family, burdens, search for peace, love, balance, harmony</p> <br>
+            This year, you will be responsible for a number of things, including your family,
+            children, community, and career. The attention is on other people or things, such as
+            your house. You'll be more engaged and disciplined. A major career and business
+            opportunity may present itself to you. If you are jobless, you will most likely find work
+            or get promoted. This year, you'll feel more loved and appreciated. Partnership or
+            marital problems might emerge, especially if the relationship is broken. It's an
+            excellent year for finding a partner or going on a date, getting married, having a
+            family, purchasing a home, or renovating an existing property. During this year,
+            people from your past may reappear in your life. You will be rewarded if you try to be
+            of help to others. You may also be tested to take on more responsibility at work or at
+            home. You may want to improve your appearance and dress properly since you will
+            desire to appear more lovely than ever before. Although this is a year of love, it is also
+            a year to end a bad relationship if you’re unhappy. <br> <br>
+            The energy of this year will make you a domestic-loving person, devoted to
+            relationships, helpful to people around you, self-sacrificing, peaceful, loving, kind, 
+            sympathetic, counseling, balanced, happy with material resources, responsive,
+            romantic, artistic, and proficient in talents if you have a 6 personal number.
+            The drawbacks are that you may experience guilt, resentment, frustration, burden,
+            selfishness, loss, lung issues, and instability on a regular basis. Try to eat healthily
+            and exercise. <br> <br>
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year.
+
+        </p>
+    
+        `
+    } else if (perCYText === '7' || perCYInt[perCYInt.length - 1] === '7') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 7</h3> <br>
+        <p>
+            <p class="border">Study, soul-searching, research, the inner life, spirituality, withdraw, honing skills, meditation</p> <br>
+        
+            This is a spiritually significant year where you’re supposed to research and try to
+            know who you are at the soul level. You'll spend a lot of time inside your mind. This is
+            a contemplative year, and you'll be reflecting on where you've been and where you're
+            going. You'll reflect on the past and the future, as well as where you wish to go in life.
+            What aspect of your life would you like to improve? This is a year for you to grow
+            spiritually and learn about yourself. You'll spend a lot of time analyzing yourself or the
+            environment around you. Because your mental ability is high, this is an excellent year
+            for studying or earning a degree so that your mind can keep working instead of
+            wondering. <br> <br>
+            Because 7 is a spiritual number, you may have a spiritual awakening, acquire psychic
+            abilities, become more religious, have heightened intuition, and sense a stronger
+            connection to God or sources on all levels. This is the year you withdraw from society
+            and take some time to reflect on your life. This is a soul-searching year in which you
+            must look within to discover more about yourself, who you are, and what your mission
+            is in this life. This is not a good year for business or significant projects since you are
+            likely to have many delays, obstacles, and setbacks. It's also not a good year to catch
+            up with friends because your communication is not good due to overwhelming
+            emotions. However, try your best to stay close to family so you don’t be too lonely.
+            In this period, you may be mentally challenging, with many misconceptions, anxiety,
+            disobedience, impatience, questioning, depression, or inconveniences. You'll put in a
+            lot of hours yet make very little. Internal conflicts have arisen within you, then you
+            have no understanding of where they originated from, so you'll have less energy at
+            this time. You'll be forced to speak your feelings as a result of your emotional pain,
+            which can quickly lead to disputes. Strive to be cool, relax, and come up with an
+            alternative that benefits all parties. If you’re facing legal issues, you should settle the
+            matter instead of fighting it. Because your financial situation isn't ideal, be cautious of
+            bad investments, and scammers, and consider things very thoroughly. Try to
+            meditate, relax, get a massage, watch your favorite TV show or movie, read, reflect,
+            or go on a walk in the woods/nature or by the sea. Enjoy the beauty of life rather than
+            focusing on the material world this year. Try not to spend a lot of money which you
+            may regret later, and this is not the time to make short-term investments. It’s also not
+            a time to sign contracts or agreements. <br> <br>
+            So, if you had negative feelings/emotions before entering this 7th year, you will face
+            many emotional obstacles and this year may be difficult for you. Be aware that the
+            energies of number seven cause processes in the brain that can be quite hurtful to
+            emotions. Expect changes to occur in friendships and sexual relationships, at home
+            and in the workplace, and even in one's soul, making this a difficult year. You may
+            not get along with your loved ones, which might lead to you growing apart and ending
+            up in a divorce or separation. The goal of challenges that develop during this time is
+            for the person to reconnect with his own internal capabilities and begin to depend on
+            oneself rather than others, as well as to recognize his own strengths. <br> <br>
+            Understand that the Personal Year 7 is a year of spiritual instead of physical growth,
+            so everything that transpires during this year causes the individual to focus on
+            spiritual matters such as life, life lessons, death, and life beyond death. People may
+            be afflicted or lose a friend or relative this year. In terrible life conditions, people may
+            be required to care for others or to demonstrate compassion and empathy. If it is for
+            someone outside of their immediate family, it is likely that the individual going through
+            Personal Year 7 psychological alterations will be unable to offer emotional help to
+            another. As a result, if you are conscious of yourself or at a good spiritual place in
+            your life, 7 may be a magnificent year. Though, after a difficult seven years, you may
+            recognize that your challenges aren't quite as serious as they once appeared. You will
+            continue to grow and change in the way that God desires. <br>  <br>
+            The other negative side of the year 7 is that you can be isolated, depressed, anxious,
+            angry, paranoid, distrustful, suspicious, feeling like you’re going crazy, and
+            possessive. Try to get a complete health check at the end of this year since all the
+            emotional distress may have an impact on your wellbeing. <br> <br>
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year.
+
+        </p>
+    
+        `
+    } else if (perCYText === '8' || perCYInt[perCYInt.length - 1] === '8') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 8</h3> <br>
+        <p>
+            <p class="border">Career, promotion, results, power, investment, accomplishment, money, business</p> <br>
+            Business, accomplishment, results, capital gains, and material acquisition are all
+            themes that come up in personal year number eight. It's usually a year of success.
+            This energy is usually associated with a desire to improve one's financial situation.
+            This is a breakthrough year. This year is the year of achievement, money, power, and
+            promotion. Whatever you've been struggling with for the last seven years is now over.
+            This is the year of the light at the end of the tunnel since all will work out for the
+            better in the end. Last year may have been a depressing year in which you didn't
+            have much energy to accomplish anything or setback, but this year, you'll have plenty
+            of energy to do anything you want. This is an excellent year to start up a business and
+            it will be profitable. <br><br>
+            If you are unemployed, you can find a secure employment or advance in your career
+            at any level. You'll be more confident, have a great investment year, and have a
+            business-like-minded, efficient, focused, strong, profitable attitude. You'll be
+            respected, recognized, generous, powerful, and authoritative by nature. This year,
+            you will be a visionary and a planner, and you're good with agreements, sales, and
+            money, as well as being a smart judge of character. Keep an eye on your finances
+            since you may wind up spending a lot of money, and many people may seek and
+            demand financial assistance from you. Be generous and kind to others. You'll be able
+            to build a financial foundation for yourself that will remain steady. It is also possible to
+            strike a pleasant balance in love relationships. Even though personal year number 8
+            is a successful year, there could also be disappointments or losses. <br> <br>
+            Understand that the number eight represents karma and balance, therefore the
+            achievement of this time is determined by how good the individual has been in his life
+            thus far. If he puts in a lot of effort, thought, and goodwill, he will more than likely be
+            honored, if he is greedy and acts without regard and compassion for others, he will
+            most likely receive what he deserves. Karma is a cycle of a sequence of events
+            including giving and receiving, fairness and injustice, action and response that
+            continues until a natural equilibrium is reached and maintained. <br> <br>
+            Even though your health will strengthen this year and your physical state will
+            increase, the bad side of number 8 is that you may be greedy to some level, hungry
+            for money or materialistic, dishonest, have money issues, and you may be aggressive
+            at times. Watch out for headaches or high blood pressure. <br><br>
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year.
+
+        </p>
+    
+        `
+    } else if (perCYText === '9' || perCYInt[perCYInt.length - 1] === '9') {
+        perYearText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+            The Personal Year Cycles disclose external influences, changing circumstances,
+            situations, opportunities, and challenges for the upcoming year. 
+    
+           </p> <br> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Year - 9</h3> <br>
+        <p>
+            <p class="border">Endings, Letting go of the old, charity, humanitarianism, the arts, completion</p> <br>
+            Congratulations on the completion of your 9-year cycle. Personal Year 9 indicates the
+            completion and end of cycles, as well as the preparation to proceed to a higher level
+            with Personal Year 1 in the future year. Whatever you've been struggling with for the
+            past eight years, that's the end of it. This year is about letting go of bad habits, poor
+            relationships, and negative experiences, among other things. People may feel as
+            though their stuff, situations, and relationships are getting out of control during this
+            period, and may feel worried and dissatisfied. There will be numerous endings this
+            year; in other words, a lot of things will come to an end. <br> <br>
+            Don’t start anything important this year since it makes marks the end of a cycle and
+            do not start a relationship this year since it may end quickly. During this year,
+            someone from your past may visit or appear. You will be put to test to take care of
+            others or help others, such as your family, children, community, or by doing
+            something public. This is the year to clean up your residence, pay off old debt, donate
+            generously, and compromise. This is a moment for reflection and can be emotional. <br> <br> 
+            This year, your relationship may be smoother or terminate totally. Divorce and
+            separation are both common events. Make positive space for next year as your 9-
+            year pinnacle cycle comes to a conclusion. <br><br> 
+            During this time, people may relocate, change careers, travel greater distances,
+            redirect their efforts, or lose something of significant worth. It is indeed the year in
+            which people are given responsibilities or assume responsibility for oneself, and for a
+            part of their lives that they've always desired to alter. It can occur inside the family,
+            such as via marriage, the birth of a kid, or the buying of real estate, or it can occur
+            outside the family, such as through job or community engagements. People are
+            compelled to restructure their goals during this time, and this sparks numerous ideas,
+            which are then nurtured and extended in the following cycle. <br> <br>
+            This year's events and duties raise awareness and allow for spiritual and
+            personal transformation. Personal Year 9, along with Four and Seven, is among the
+            most challenging years, yet despite all of the obstacles that individuals seem to
+            encounter throughout this period, it provides them with the chance to learn something
+            different and strengthen their characters by becoming their true self. <br> <br>
+            Indifference, coldness, narcissism, aloofness, isolation, and self-pity are all
+            undesirable traits that should be avoided at all costs. <br><br>
+            Keep in mind that, in addition to the pinnacle you're in, the <b>physical</b>, <b>mental</b>, and
+            <b>spiritual</b> transits you're having that year will have a <span class='underline'>big impact</span> on your personal year.
+
+        </p>
+    
+        `
+    } 
 
     
 
@@ -14551,9 +15082,338 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     };
     cMonthNum.innerHTML = '<b>' + personalMonth + '</b>';
 
+    var perCMText = (cMonthNum.textContent).trim();
+    var perCMInt = perCYText.split('/');
+
+
+    if (perCMText === '1' || perCMText === '10/1' || perCMInt[perCMInt.length - 1] === '1') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label ">Personal Month - 1</h3> <br>
+        <p>
+            <p class="blue">New beginnings, adjustments to direction of life, leadership, plant new seeds, independent.</p> <br>
+            You're starting at the beginning of your personal first-month cycle. You will
+            experience some change and a fresh start in your profession, family, love,
+            relationship, friends, and everything else. This month, you'll have a lot of energy.
+            You will feel the energy of leadership, freedom, confidence, and
+            independence. The emphasis is on you and your future plans. Be willing to try
+            new things and meet new people. If you have an idea in the month preceding to
+            this month, now is the time to put it into action. Override other people's counsel
+            with your own instincts and judgment. You are in control of your life and its
+            circumstances this month. <br><br>
+            This is a great month to get started on whatever you desire. This month, you'll put more emphasis on yourself.
+            Recognize that whatever you do this month will have an impact, so do well and
+            develop something you enjoy, whether it's a business or anything else. This month
+            is a time for rebirth and for planting new seeds so use your time wisely. This is the
+            time to take responsibility for your own destiny and future. Be careful who you
+            meet this month or what you start this month because that relationship may last
+            a long time. 
+        </p>
+    
+        `
+    } else if (perCMText === '11/2' || perCMInt[0] === '11') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label ">Personal Month - 11/2</h3> <br>
+        <p>
+            <br>
+            The master number 11's personal month energy is profoundly spiritual in character.
+            A month for contemplation on life's greater aims. This month, be a reflection
+            of light and motivation for others. Describe your ideals and aspirations. This
+            is not a month for self-indulgence, but rather for collaborating with others for the
+            greater benefit. It has an intuitive quality to it, as well as charm, harmony, and
+            calm. It inspires a focus on the spiritual sides of relationships as well as a desire
+            to teach. Being a team player, considering each other's feelings, playing
+            the role of mediator, and settling conflicts with grace and diplomacy are all
+            important qualities. Relationships are expected to take center stage. Spend
+            time with love one.
+        </p>
+    
+        `
+    } else if (perCMText === '22/4' || perCMInt[0] === '22') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label ">Personal Month - 22/4</h3> <br>
+        <p>
+            <br>
+            The energy of this month is resonant with producing things that are both societal
+            and spiritually beneficial. It is realistic, systematic, self-assured, and typically
+            finds it simple to enlist the help of others to achieve a common objective. This
+            month energy is systematic. It usually attracts the notion that the best approach
+            to get things done is to do them the way they've always been done effectively. It
+            also raises the issue of laying a solid basis for the future
+            
+        </p>
+    
+        `
+    } else if (perCMText === '33/6' || perCMInt[0] === '33') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label ">Personal Month - 33/6</h3> <br>
+        <p>
+            <br>
+            This master number's energy is pleasant, caring, and brings about harmony. It
+            conjures up images of caring, instructing, and guiding a group of individuals toward
+            a common purpose. The predominant focus is home and family. It is an energy
+            that inspires people to be nurtured and supported. Also, the formation of an ideal
+            relating to society's actions and goals in general. You can be taking care of
+            children, family member, or others. 
+        </p>
+    
+        `
+    } else if (perCMText === '2' || perCMText === '20/2' || perCMInt[perCMInt.length - 1] === '2') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label">Personal Month - 2</h3> <br>
+        <p>
+            <p class="blue">Adaptability, relationships, collaboration partnerships, cooperation, receptivity.</p> <br>
+            This personal month 2 denotes  sensitivity, tact, diplomacy, cooperation
+            with others, persuasion, modesty in  lifestyle, resilience in the face of
+            adversity, outgoing, friendly, amorous,  healing, and soothing in partnerships.
+            The second month is ideal for being  surrounded by friends and family. Now is
+            the moment to work together and interact  with others. This is a good month to take
+            a break since you will have less energy. If  you require assistance, ask for it. You can
+            feel as if you're going backward rather  than forwards. Keep your cool and relax
+            so you don't get into any trouble. It's a  bad time to do business. Be cautious with
+            your money month, as you may wind up  spending a lot. Do not make rash
+            decisions. It's a fantastic month to look for  love and go on a date. Try your best to
+            show understanding and collaboration. <br> <br>
+            Anxiety, depression, rage, disorganization, dishonesty, hypocrisy,
+            and a lack of willpower are all negative attributes.
+        </p>
+    
+        `
+    } else if (perCMText === '3' || perCMText === '12/3' || perCMInt[perCMInt.length - 1] === '3') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label">Personal Month - 3</h3> <br>
+        <p>
+            <p class="blue">The social life, creativity, joyful/fun, selfexpression, communication</p> <br>
+            There's no way you'll be bored in the month of three because it's jam-packed
+            with exciting events. You will be presented with several opportunities. It's
+            a great month to start anything new, such as a family or baby. This month, you'll
+            have a lot of energy, you’ll be outgoing, and make new friends. This month, all
+            forms of communication, including the internet, media, writing, and podcasting,
+            will be embraced. Attempt to avoid working on many projects at the same
+            time. You'll experience a lot of fun and happiness. Before making any major
+            decisions, you should consider them again. Avoid making any unintended
+            purchases or taking any spontaneous vacations. Consider organizing your
+            schedule and turning on your calm mode at least once a week, as you need to
+            relax and prepare for the next month. <br> <br>
+            This is not the month for mundane, dayto-day activity. This month, individuals are
+            becoming more innovative, and all activities must be demanding and
+            interesting in order to fully utilize the available intellectual energy.
+        </p>
+    
+        `
+    } else if (perCMText === '4' || perCMText === '13/4' || perCMInt[perCMInt.length - 1] === '4') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label">Personal Month - 4</h3> <br>
+        <p>
+            <p class="blue">Work, foundations, family, health</p> <br>
+            This is the month to put in the most work and achieve the most success in your
+            professional endeavors. The goal of the 4 Personal month is to make every effort
+            as fruitful as possible, and it is a good month for signing agreements. This is
+            also a good month to resolve business matters. You should be proud of what you
+            have accomplished so far. Arguments should be avoided at all costs. You have
+            the ability to resolve housing and legal problems. Purchase a house and
+            renovation are favored this month. <br> <br>
+            Material gain is also possible. Be patient and don't put too much pressure on
+            yourself since this is a stressful month that is full of constraints, limitations, and
+            hard labor. <br> <br>
+            This might be a difficult day. You may have headaches and exhaustion on a
+            regular basis. Keep a close eye on your kidneys and bladder.
+            
+        </p>
+    
+        `
+    } else if (perCMText === '5' || perCMText === '14/5' || perCMInt[perCMInt.length -1 ] === '5') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label">Personal Month - 5</h3> <br>
+        <p>
+            <p class="blue">Change, instability, adventure, new experiences,travel, creativity, freedom</p> <br>
+            On this particular month, you'd want to relax by traveling and you’ll feel relief.
+            This is a great month to relocate and rearrange your home. You will feel
+            compelled to flee the constraints, limitations, and hard work of the last
+            month number 4. This is a month when you are ready to take on the world with
+            new adventure, enthusiasm, and vitality. This month is the perfect month to meet
+            some new friends and socialize. The number 5 represents sexual desire, and
+            you will attract others this month. If you're single and seeking love, this month is a
+            fantastic month to go out and meet other singles. Do not make rash decisions.
+            Capital or financial increase is possible. You’ll be more open to collaboration and
+            you’ll be conversing more. Unpredictable change may occur at work or at home. <br><br>
+            Be aware of possible insomnia, tension, physical exhaustion, and impulsiveness. 
+        </p>
+    
+        `
+    } else if (perCMText === '6' || perCMText === '15/6' || perCMInt[perCMInt.length - 1] === '6') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label">Personal Month - 6</h3> <br>
+        <p>
+            <p class="blue">Responsibility, family, home, search for peace, balance, love, and harmony.</p> <br>
+            This month, you will be responsible for a number of things, including your family,
+            children, community, and career. The attention is on other people or things,
+            such as your house. You'll be more engaged and disciplined. If you are
+            jobless, you will most likely find work or get promoted. Partnership or marital
+            problems might emerge, especially if the relationship is broken. It's an excellent
+            month for finding a partner or going on a date, getting married, having a family,
+            purchasing a home, or renovating an existing property. You will be rewarded if
+            you try to be of help to others. You may want to improve your appearance and
+            dress properly since you will desire to appear more lovely than ever before. You
+            may be responsible for taking care of children, family, or others. You may also
+            encounter burdens at work. <br> <br>
+            The drawbacks are that you may selfsacrificing, and experience guilt,
+            resentment, selfishness, loss, and instability on a regular basis.
+        </p>
+    
+        `
+    } else if (perCMText === '7' || perCMText === '16/7' || perCMInt[perCMInt.length - 1] === '7') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label">Personal Month - 7</h3> <br>
+        <p>
+            <p class="blue">Study, research, the inner life, honing your skills meditation, deep thoughts, soul-search and reasoning.</p> <br>
+            Take a break from the stresses of daily life this month to calm your mind and
+            replenish your spirit. You may occasionally feel as though your emotions
+            or external situations are ripping you apart, leaving you furious or disoriented.
+            This is a chance for you to develop control over your thinking so that you feel
+            in control of your life rather than feeling like things happen at random. Take some 
+            deep breaths and stay in the present moment if you feel overwhelmed. You'll
+            spend a lot of time inside your mind. This is a contemplative month, you'll reflect on
+            the past and the future, as well as where you wish to go in life. You'll spend a lot of
+            time analyzing yourself and your surroundings. <br> <br>
+            This month, you’ll have a heightened intuition. Try to withdraw from society
+            and take some time to reflect on your life. This is a soul-searching month in which
+            you must look within to discover more about yourself. This is not a good month
+            for business or significant projects since you are likely to have many delays,
+            obstacles, setbacks, many misconceptions, anxiety, disobedience,
+            impatience, questioning, or inconveniences. You'll put in a lot of
+            hours yet make very little which will frustrate you. Internal conflicts have
+            arisen within you, then you have no understanding of where they originated
+            from, so you'll have less energy at this time. You'll be forced to speak
+            your feelings as a result of your emotional pain, which can quickly lead to disputes.
+            Strive to be cool, relax. You may not get along with your loved ones. It's also not a
+            good month to catch up with acquaintances because your
+            communication is not good due to overwhelming emotions. But try to
+            socialize with families or close friends so you don’t be alone. You may encounter
+            problems with your partner or others if they triggered you. Try to meditate, read,
+            reflect, or go on a walk in the woods/nature or by the sea. Enjoy the
+            beauty of life rather than focusing on the material world this month. Try not to
+            spend a lot of money or investing. It’s also not a good month to sign contracts
+            or agreements since you may experience mental distress and emotions. If you get
+            into legal issues, try to settle the matter. The other negative side of the year 7 is
+            that you can be isolated, angry, paranoid, resentful, distrustful, suspicious, annoyed,
+            and possessive.
+        </p> 
+    
+        `
+    } else if (perCMText === '8' || perCMText === '17/8' || perCMInt[perCMInt.length -1 ] === '8') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label">Personal Month - 8</h3> <br>
+        <p>
+            <p class="blue">Career, results, power, promotion, accomplishment, money, business</p> <br>
+            This month, there is an energetic correlation with money and material
+            acquisition. It's a business-oriented energy that also evokes efficiency,
+            results, pragmatism, and the creation of long-term gain. You will have plenty of
+            energy this month and be at your most powerful, allowing you to command and
+            direct your actions. You will be ambitious, confident, focused, practical, and realistic
+            in your pursuit of your objectives. This month is the month you will reap the
+            blessings or repercussions of whatever you have sown in the past. It might be a
+            materialistic month, with an emphasis on getting money or results, increase in
+            investments, and belongings, but it can also be a month of losses and
+            disappointment. <br> <br>
+            Therefore, this is the month to press forward and accomplish those gains if
+            you can improve your financial situation. Emotional ties or hobbies are likely to be
+            set aside in order to give you the proper mindset and focus you'll need to attain
+            your objectives. If you're feeling stuck or worried, use your instinct, which is
+            unusually sharp this month, to help you make judgments.
+        </p>
+    
+        `
+    } else if (perCMText === '9' || perCMText === '18/9' || perCMInt[perCMInt.length - 1] === '9') {
+        perMonthText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label">Personal Month - 9</h3> <br>
+        <p>
+            <p class="blue">Endings, Letting go of the old, humanitarianism, artistic</p> <br>
+            This month is about letting go of bad habits, poor relationships, and negative
+            experiences, among other things. You may feel worried and
+            dissatisfied. Don’t start anything important this month since it mark the end
+            of a 9 months cycle and do not start a new relationship this month since it may
+            end quickly. During this month, someone from your past may appear in your life.
+            You may be put to test to take care of others or helping others, such as your
+            family, children, community, or by doing something public. This is the month to
+            clean up your residence, pay off old debt, donate generously, and compromise.
+            This is a moment for reflection and can be emotional. This month, your
+            relationship may be smoother or terminate totally. Divorce and separation
+            are both common events. Make positive space for next month as your 9-month
+            cycle comes to an end. <br> <br>
+            You may feel depressed, anxious, emotional, mood swing. aloof, and
+            distant.
+        </p>
+    
+        `
+    } 
+    
+
+
+
     
     // Personal Day 
-    var currentDay = (new Date().toLocaleDateString()).split('/')[0];
+    var currentDay = new Date().getDate();
+    console.log(currentDay);
     
     var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     var d = new Date();
@@ -14593,6 +15453,273 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
 
     cDayNum.innerHTML = '<b>'+personalDay +'</b>';
+    var perCDText = (cDayNum.textContent).trim();
+    var perCDInt = perCDText.split('/');
+
+    if (perCDText === '1' || perCDText === '10/1' || perCDInt[perCDInt.length -1 ] === '1') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 1</h3> <br>
+        <p>
+            <p class="blue">New beginnings, adjustments to direction of life, leadership, plant new seeds, independent.</p> <br>
+            This is the day when you're most concerned with yourself, you will want
+            your freedom to focus on your own objectives and your aspirations. Personal
+            day number 1 gives driving energy and it’s the beginning of a nine-day cycle.
+            You'll have plenty of energy to get things done so plant new seeds. Hopefully, you
+            have some unique and imaginative ideas that you'd want to put to good use. This is
+            also a moment when you are more susceptible to other people's bad effects. <br> <br>
+            To succeed, you need to have faith in your ability and work independently for
+            you to examine your dreams, goals, and wants. Solve unsettled issues and expect
+            results later. 
+        </p>
+    
+        `
+    } else if (perCDText === '11/2' || perCDInt[0]=== '11') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 11/2</h3> <br>
+        <p>
+        The master number 11's personal day energy is profoundly spiritual in character.
+        A day for contemplation on life's greater aims. Today, be a reflection of light and
+        motivation for others. Describe your ideals and aspirations. This is not a day
+        for self-indulgence, but rather for collaborating with others for the greater
+        benefit. <br> <br>
+        It has an intuitive quality to it, as well as charm, harmony, and calm. It inspires a
+        focus on the spiritual sides of relationships as well as a desire to
+        teach. Being a team player, considering each other's feelings, playing the role of
+        mediator, and settling conflicts with grace and diplomacy are all important qualities.
+        Relationships are expected to take center stage. Spend time with loved ones.
+
+        </p>
+    
+        `
+    } else if (perCDText === '22/4' || perCDInt[0] === '22') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 22/4</h3> <br>
+        <p>
+            <br>
+            The energy of today is resonant with producing things that are both societal
+            and spiritually beneficial. It is realistic, systematic, self-assured, and typically
+            finds it simple to enlist the help of others to achieve a common objective. Today's
+            energy is systematic. It usually attracts the notion that the best approach to get
+            things done is to do them the way they've always been done effectively. It also
+            raises the issue of laying a solid basis for the future.
+        </p>
+    
+        `
+    } else if (perCDText === '33/6' || perCDInt[0] === '33') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 33/6</h3> <br>
+        <p>
+            <br>
+            This master number's energy is pleasant, caring, and brings about harmony. It
+            conjures up images of caring, instructing, and guiding a group of individuals toward
+            a common purpose. The predominant focus is home and family. It is an energy
+            that inspires people to be nurtured and supported. Also, the formation of an ideal 
+            relating to society's actions and goals in general.
+        </p>
+    
+        `
+    } else if (perCDText === '2' || perCDText === '20/2' || perCDText[perCDText.length - 1] === '2') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 2</h3> <br>
+        <p>
+            <p class="blue">Adaptability, relationships, collaboration partnerships, cooperation, receptivity.</p> <br>
+            The second day is ideal for being surrounded by friends and family. Now is
+            the moment to work together and interact with others. Today is a good day to take a
+            break. If you require assistance, ask for it since it’s a collaboration day. You can
+            feel as if you're going backward rather than forwards. Keep your cool and relax
+            so you don't get into any trouble. It's a bad time to do business. Be cautious with
+            your money today, as you may wind up spending a lot. Do not make rash
+            decisions. It's a fantastic day for a date and catching up with pals. Try your best
+            to show understanding and collaboration
+        </p>
+    
+        `
+    } else if (perCDText === '3' || perCDText === '12/3' || perCDInt[perCDInt.length - 1] === '3') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 3</h3> <br>
+        <p>
+            <p class="blue">The social life, creativity, joyful/fun, selfexpression, communication</p> <br>
+            This number 3 indicate that you will have a good time participating in some active
+            leisure activities on this day. On this particular day, you like to find joy in the
+            simple pleasures that life has to offer. Make the most of it and don't let your
+            anxieties get the best of you. It's the ideal day for having some fun and
+            enjoying yourself with friends or loved ones. It would be beneficial if you were
+            occupied with recreational activities. You'll be a great communicator. You'll
+            have to be cautious about what you say to others. You'll feel artistic and more
+            talkative today.
+            
+        </p>
+    
+        `
+    } else if (perCDText === '4' || perCDText === '13/4' || perCDInt[perCDInt.length - 1] === '4') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 4</h3> <br>
+        <p>
+            <p class="blue">Work, foundations, family, health</p> <br>
+            This is the day to put in the most work and achieve the most success in your
+            business endeavors. The goal of the 4 Personal Day is to make every effort as
+            fruitful as possible and is a good day for signing agreements and resolving
+            business matters. Arguments should be avoided at all costs. Material gain is also
+            possible. Be patient and don't put too much pressure on yourself since this
+            might be a stressful day full of hard work. This might be a difficult day. You may
+            have headaches, worrisome, inner turmoil, and exhaustion on a regular
+            basis.
+        </p>
+    
+        `
+    } else if (perCDText === '5' || perCDText === '14/5' || perCDInt[perCDInt.length - 1] === '5') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 5</h3> <br>
+        <p>
+            <p class="blue">Change, instability, adventure, new experiences, travel, creativity, freedom</p> <br>
+
+            On day number 5, you'd want to unwind by traveling to faraway locations. Today
+            is a great day to relocate and rearrange your home. You will feel compelled to flee
+            the constraints, limitations, and hard labor of yesterday's day 4. This is a day when
+            you are ready to take on the world with new enthusiasm and vitality. Today is the
+            perfect day to meet some new acquaintances and socialize. The number
+            5 represents sexual desire, and you will fascinate others today. If you're single
+            and seeking love, today is a fantastic day to go out and meet other singles. <br> <br>
+            Financial gain or possible changes that may occur at work or home. Do not argue
+            with others. <br> <br>
+            Insecurity, fear, a lack of control, physical exhaustion, rage, unpredictability,
+            impulsiveness, and explosiveness are all negative attributes to avoid.
+    
+        </p>
+    
+        `
+    } else if (perCDText === '6' || perCDText === '15/6' || perCDInt[perCDInt.length - 1] === '6') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 6</h3> <br>
+        <p>
+            <p class="blue">Responsibility, family, home, search for peace, balance, love, and harmony.</p> <br>
+            Today is a day to keep life's balance and harmony. This is a great opportunity to
+            spend time with your friends and family. Great day to look for a job by sending
+            your application. You'll have to look for and facilitate understanding in every
+            manner imaginable. This is an excellent time to seek out lasting happiness by
+            going on a date, starting a relationship, or working on your love life. If you are
+            miserable in a relationship, this is also a day to end. This is a good time to conduct
+            household chores. You may be put to test to take care of family, children, etc. Dress
+            up nicely and try to relax or go shopping.
+            Anxiety, egotism, burdens, and a lack of self-sufficiency are all negative attributes.
+            Wear bright red, yellow, mustard, sea green, and silver as accent colors.
+            
+        </p>
+    
+        `
+    } else if (perCDText === '7' || perCDText === '16/7' || perCDInt[perCDInt.length - 1] === '7') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 7</h3> <br>
+        <p>
+            <p class="blue">Study, research, the inner life, honing your skills, meditation, deep thoughts, soul-search and reasoning.</p> <br>
+            The energy of the day fosters reflection and the search for solutions inside. It’s
+            associated with overcoming challenges and researching both intellectual spiritual
+            matters, and gaining knowledge. Today, you’ll have a heightened intuition, and
+            sense a stronger connection to God or sources on all levels. This is the day you
+            withdraw from society and take some time to reflect on your life. This is a 
+            soulsearching day in which you must look within to discover more about yourself.
+            Reading and meditation are helpful. 
+        </p>
+    
+        `
+    } else if (perCDText === '8' || perCDText === '17/8' || perCDInt[perCDInt.length - 1] === '8') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 8</h3> <br>
+        <p>
+            <p class="blue">Career, results, power, accomplishment, money, business</p> <br>
+            Today, there is an energetic correlation with money and material acquisition. It's a
+            business-oriented energy that also evokes efficiency, pragmatism, and the
+            creation of long-term gain. You will have plenty of energy today and be at your
+            most powerful, allowing you to command and direct your actions. You will be
+            ambitious, focused, practical, and realistic in your pursuit of your objectives. Today
+            is the day you will reap the blessings or repercussions of whatever you have
+            sown in the past. It might be a materialistic day, with an emphasis on
+            getting money and belongings, but it can also be a day of losses and
+            disappointment. 
+        </p>
+    
+        `
+    } else if (perCDText === '9' || perCDText === '18/9' || perCDInt[perCDInt.length - 1] === '9') {
+        perDayText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            
+           </p> <br>
+        
+        <h3 class="bold-description-label red-span">Personal Day Number - 9</h3> <br>
+        <p>
+            <p class="blue">Endings, Letting go of the old,</p> <br>
+            Today is the end of a 9-day cycle, is the day to clean up and get rid of anything
+            that has gone off the rails in your life. It's an excellent day to call it quits on a
+            terrible relationship or undesirable habits. Complete all of the chores and projects
+            that remain unfinished. This is an end-ofthe-day kind of day so don't start anything
+            important today which might end quickly. <br> <br>
+            If you started a new project on one personal day, today is the day to
+            finish it. Because the number 9 represents humanity, today is a good day
+            to be a humanitarian and donate to charity. You might be put to test to care
+            for loved ones, children, or strangers. If you are in a bad relationship or job, today
+            is a good day to end it without feeling
+            guilty. 
+        </p>
+    
+        `
+    }
+
 
 
 

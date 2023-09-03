@@ -149,7 +149,11 @@ var bornDayText = document.getElementById('bornDayText');
 
 
 calculate.addEventListener('click', ()=> {
+    if (cName.textContent === '' || fName.textContent === '') {
+        document.querySelector('.hide').style.display = 'none';
+    }
     document.querySelector('.hide').style.display = 'none';
+
     var month = Number(dMonth.value);
     var monthHold = month;
     var dayHold = dDay.value;
@@ -14331,7 +14335,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         } else if (String(fNameList[i]).toLowerCase() === 'i' || String(fNameList[i]).toLowerCase() === 'r' ) {
             emptyNameString += (fNameList[i]).repeat(9);
         }
-    }
+    };
 
     
     var transit = emptyNameString[yearDiff];

@@ -132,6 +132,11 @@ var metrNum = document.getElementById('metrNum');
 var sptrNum = document.getElementById('sptrNum');
 var escyNum = document.getElementById('escyNum');
 
+var phyText = document.getElementById('phyText');
+// var spiText = document.getElementById('spiText');
+// var menText = document.getElementById('menText');
+var essText = document.getElementById('essText');
+
 var cYear = document.getElementById('cYear');
 var cYearNum = document.getElementById('cYearNum');
 var perYearText = document.getElementById('perYearText')
@@ -7829,172 +7834,179 @@ your    cool or temper.
 
 
     // Karmic Debt Number
+    var karmicString = '';
     kdText.innerHTML = '';
     // life path 
     kdHold = lpNum.textContent;
     if (kdHold === '13/4') {
-        kdNum.innerHTML = '13/4'
+        karmicString += '13/4 '
     } else if (kdHold === '14/5') {
-        kdNum.innerHTML = '14/5'
+        karmicString += ' 14/5 '
     } else if (kdHold === '16/7') {
-        kdNum.innerHTML = '16/7'
+        karmicString += ' 16/7 '
     } else if (kdHold === '19/1') {
-        kdNum.innerHTML = '19/1'
-    } else if(kdNum.textContent === '') {
-        kdNum.textContent = 'None'
-    }
+       karmicString += ' 19/1 '
+    } 
 
     // destiny
     kdHold = edNum.textContent
     if (kdHold === '13/4') {
-        kdNum.innerHTML = '13/4'
+        karmicString += ' 13/4 '
     } else if (kdHold === '14/5') {
-        kdNum.innerHTML = '14/5'
+        karmicString += ' 14/5 '
     } else if (kdHold === '16/7') {
-        kdNum.innerHTML = '16/7'
+        karmicString += ' 16/7 '
     } else if (kdHold === '19/1') {
-        kdNum.innerHTML = '19/1'
-    } else if(kdNum.textContent === '') {
-        kdNum.textContent = 'None'
-    }
+        karmicString += ' 19/1 '
+    } 
 
     // soul urge 
     kdHold = suhdNum.textContent
     if (kdHold === '13/4') {
-        kdNum.innerHTML = '13/4'
+        karmicString += ' 13/4 '
     } else if (kdHold === '14/5') {
-        kdNum.innerHTML = '14/5'
+        karmicString += ' 14/5  '
     } else if (kdHold === '16/7') {
-        kdNum.innerHTML = '16/7'
+        karmicString += ' 16/7 '
     } else if (kdHold === '19/1') {
-        kdNum.innerHTML = '19/1'
-    } else if(kdNum.textContent === '') {
-        kdNum.textContent = 'None'
-    }
+        karmicString += ' 19/1 '
+    } 
 
     // birthday number 
     kdHold = bdNum.textContent
     if (kdHold === '13/4') {
-        kdNum.innerHTML = '13/4'
+        karmicString += ' 13/4 '
     } else if (kdHold === '14/5') {
-        kdNum.innerHTML = '14/5'
+        karmicString += ' 14/5 '
     } else if (kdHold === '16/7') {
-        kdNum.innerHTML = '16/7'
+        karmicString += ' 16/7 '
     } else if (kdHold === '19/1') {
-        kdNum.innerHTML = '19/1'
-    } else if(kdNum.textContent === '') {
-        kdNum.textContent = 'None'
-    }
+        karmicString += ' 19/1 '
+    } 
 
-    // expression 
+    // personality
     kdHold = pNum.textContent
     if (kdHold === '13/4') {
-        kdNum.innerHTML = '13/4'
+        karmicString += ' 13/4 '
     } else if (kdHold === '14/5') {
-        kdNum.innerHTML = '14/5'
+        karmicString += ' 14/5 '
     } else if (kdHold === '16/7') {
-        kdNum.innerHTML = '16/7'
+        karmicString += ' 16/7 '
     } else if (kdHold === '19/1') {
-        kdNum.innerHTML = '19/1'
-    } else if(kdNum.textContent === '') {
-        kdNum.textContent = 'None'
+        karmicString += ' 19/1 '
+    } else if(karmicString === '') {
+        karmicString = 'None'
+    };
+    kdNum.textContent = ''
+    if (karmicString !== 'None' ) {
+        karmicString.replace('None', '')
     }
+    kdNum.textContent = karmicString;
+    var kdList = (kdNum.textContent).split(' ');
+    var kdResult = '';
 
-    switch ((kdNum.textContent).trim()) {
-        case '13/4':
-            kdText.innerHTML = `
-            <h3 class="bold-description-label">Definition</h3> <br>
-            <p>
-                Usually derived from your date of birth, which can be discovered by
-                looking at the numbers present (day of birth or life path number). Can
-                be viewed as current challenges that you may experience during your
-                lifetime.   
-            </p> <br> <br>
+    for (let i = 0; i < kdList.length; i ++) {
+        switch ((kdList[i]).trim()) {
+            case '13/4':
+                kdResult  += `
+                <br> <br>
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    Usually derived from your date of birth, which can be discovered by
+                    looking at the numbers present (day of birth or life path number). Can
+                    be viewed as current challenges that you may experience during your
+                    lifetime.   
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">Karmic Debt Number 13/4</h3> <br>
+                <p>
+                With a 13 Karmic Debt, you must face the challenges that life throws
+                at you. Delays, difficulties, and roadblocks appear along the way,
+                forcing you to work twice as hard to accomplish your goals. It may
+                appear that you will never receive what you want, but this is not the
+                case. All you have to do now is put in the extra effort. You must learn
+                to put in a lot of effort in this lifetime to achieve your goal. 
+                </p>
+                `
+                break;
+            case '14/5':
+                kdResult += `
+                <br> <br>
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    Usually derived from your date of birth, which can be discovered by
+                    looking at the numbers present (day of birth or life path number). Can
+                    be viewed as current challenges that you may experience during your
+                    lifetime.   
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">Karmic Debt Number 14/5</h3> <br>
+                <p>
+                With a 14 Karmic Debt, you must conquer your fear of change. You
+                must learn to familiarize yourself with whatsoever life throws at you
+                and regain internal strength. Refrain from doing terrible things and
+                escaping from life. The way to victory is moderation. No matter how
+                often you move up and down in life, you must devote yourself to
+                whatever you want.
+                </p>
+                `
+                break;
+            case '16/7':
+                kdResult += `
+                <br> <br>
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    Usually derived from your date of birth, which can be discovered by
+                    looking at the numbers present (day of birth or life path number). Can
+                    be viewed as current challenges that you may experience during your
+                    lifetime.   
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">Karmic Debt Number 16/7</h3> <br>
+                <p>
+                With a 16 Karmic Debt, you continuously feel as if your life is being
+                ripped apart and rebuilt, or that some aspect of yourself is being ripped
+                apart and rebuilt. Everything being torn down is a terrible process, but
+                you must be humbled by it and learn from it. It allows you to expand
+                your consciousness and connect with your true self. This Karmic Debt
+                Number 16 may affect your marital home or relationship where it feels
+                like something is missing to make the relationship flourish or complete.
+                It may also be manifested by making you feel unloved, unappreciated,
+                and neglected in your relationship or marriage. Most people with this
+                karmic debt may experience divorce or separation. Therefore, you
+                need to learn to love and value yourself and heal. You should try to be
+                strong and positive. 
+                </p>
+                `
+                break;
             
-            <h3 class="bold-description-label">Karmic Debt Number 13/4</h3> <br>
-            <p>
-            With a 13 Karmic Debt, you must face the challenges that life throws
-            at you. Delays, difficulties, and roadblocks appear along the way,
-            forcing you to work twice as hard to accomplish your goals. It may
-            appear that you will never receive what you want, but this is not the
-            case. All you have to do now is put in the extra effort. You must learn
-            to put in a lot of effort in this lifetime to achieve your goal. 
-            </p>
-            `
-            break;
-        case '14/5':
-            kdText.innerHTML = `
-            <h3 class="bold-description-label">Definition</h3> <br>
-            <p>
-                Usually derived from your date of birth, which can be discovered by
-                looking at the numbers present (day of birth or life path number). Can
-                be viewed as current challenges that you may experience during your
-                lifetime.   
-            </p> <br> <br>
-            
-            <h3 class="bold-description-label">Karmic Debt Number 14/5</h3> <br>
-            <p>
-            With a 14 Karmic Debt, you must conquer your fear of change. You
-            must learn to familiarize yourself with whatsoever life throws at you
-            and regain internal strength. Refrain from doing terrible things and
-            escaping from life. The way to victory is moderation. No matter how
-            often you move up and down in life, you must devote yourself to
-            whatever you want.
-            </p>
-            `
-            break;
-        case '16/7':
-            kdText.innerHTML = `
-            <h3 class="bold-description-label">Definition</h3> <br>
-            <p>
-                Usually derived from your date of birth, which can be discovered by
-                looking at the numbers present (day of birth or life path number). Can
-                be viewed as current challenges that you may experience during your
-                lifetime.   
-            </p> <br> <br>
-            
-            <h3 class="bold-description-label">Karmic Debt Number 16/7</h3> <br>
-            <p>
-            With a 16 Karmic Debt, you continuously feel as if your life is being
-            ripped apart and rebuilt, or that some aspect of yourself is being ripped
-            apart and rebuilt. Everything being torn down is a terrible process, but
-            you must be humbled by it and learn from it. It allows you to expand
-            your consciousness and connect with your true self. This Karmic Debt
-            Number 16 may affect your marital home or relationship where it feels
-            like something is missing to make the relationship flourish or complete.
-            It may also be manifested by making you feel unloved, unappreciated,
-            and neglected in your relationship or marriage. Most people with this
-            karmic debt may experience divorce or separation. Therefore, you
-            need to learn to love and value yourself and heal. You should try to be
-            strong and positive. 
-            </p>
-            `
-            break;
-        
-        case '19/1':
-            kdText.innerHTML = `
-            <h3 class="bold-description-label">Definition</h3> <br>
-            <p>
-                Usually derived from your date of birth, which can be discovered by
-                looking at the numbers present (day of birth or life path number). Can
-                be viewed as current challenges that you may experience during your
-                lifetime.   
-            </p> <br> <br>
-            
-            <h3 class="bold-description-label">Karmic Debt Number 19/1</h3> <br>
-            <p>
-            With a Karmic Debt 19, You must learn to be interdependent. You may
-            find yourself alone all of the time, having to battle for yourself without
-            the assistance of others, and feeling separated from the rest of the
-            world, but this is mainly due to a refusal to open up to people or accept
-            support. You must learn to accept help and understand that doing so
-            does not imply that you are less autonomous
-            </p>
-            `
-            break;
-        default:
-            break;
-    }
+            case '19/1':
+                kdResult += `
+                <br> <br>
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    Usually derived from your date of birth, which can be discovered by
+                    looking at the numbers present (day of birth or life path number). Can
+                    be viewed as current challenges that you may experience during your
+                    lifetime.   
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">Karmic Debt Number 19/1</h3> <br>
+                <p>
+                With a Karmic Debt 19, You must learn to be interdependent. You may
+                find yourself alone all of the time, having to battle for yourself without
+                the assistance of others, and feeling separated from the rest of the
+                world, but this is mainly due to a refusal to open up to people or accept
+                support. You must learn to accept help and understand that doing so
+                does not imply that you are less autonomous
+                </p>
+                `
+                break;
+            default:
+                break;
+        }
+    }; kdText.innerHTML = kdResult;
+    
     
 
 
@@ -14341,11 +14353,17 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     var transit = emptyNameString[yearDiff];
     phtrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
+    var physicalText = (phtrNum.textContent).trim();
+    var physicalInt = physicalText.split('/');
+
+
+
+
+
 
     // Spiritual Transit
     ednfName = fName.value.split(' ');
     lastName = ednfName[ednfName.length - 1];
-    console.log(lastName)
 
     emptyNameString = '';
     firstName = lastName.repeat(yearDiff/2);
@@ -14435,8 +14453,1199 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     metrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
     // Essence Cycle
-    var middleName, mNameLength;
+    var physicalTransit = phtrNum.textContent;
+    var spiritualTransit = sptrNum.textContent;
+    var mentalTransit = metrNum.textContent;
+    var transitList = [];
+    transitList.push(physicalTransit, spiritualTransit, mentalTransit);
+    fNameList = transitList;
+    count = 0;
+    for (let i = 0; i< yearDiff; i++) {
+        if (String(fNameList[i]).toLowerCase() === 'a' ||  String(fNameList[i]).toLowerCase() === 'j' || String(fNameList[i]).toLowerCase() === 's' ) {
+            count += 1;
+       } else if (String(fNameList[i]).toLowerCase() === 'b' || String(fNameList[i]).toLowerCase() === 'k' || String(fNameList[i]).toLowerCase() === 't') {
+            count += 2;
+        } else if (String(fNameList[i]).toLowerCase() === 'c' || String(fNameList[i]).toLowerCase() === 'l' || String(fNameList[i]).toLowerCase() === 'u') {
+            count += 3;
+        } else if (String(fNameList[i]).toLowerCase() === 'd' || String(fNameList[i]).toLowerCase() === 'm' || String(fNameList[i]).toLowerCase() === 'v') {
+            count += 4;
+        } else if (String(fNameList[i]).toLowerCase() === 'e' || String(fNameList[i]).toLowerCase() === 'n' || String(fNameList[i]).toLowerCase() === 'w') {
+            count += 5;
+        } else if (String(fNameList[i]).toLowerCase()=== 'f' || String(fNameList[i]).toLowerCase() === 'o' || String(fNameList[i]).toLowerCase() === 'x') {
+            count += 6;
+        } else if (String(fNameList[i]).toLowerCase()=== 'g' || String(fNameList[i]).toLowerCase() === 'p' || String(fNameList[i]).toLowerCase() === 'y') {
+            count += 7;
+        } else if (String(fNameList[i]).toLowerCase() === 'h' || String(fNameList[i]).toLowerCase() === 'q' || String(fNameList[i]).toLowerCase() === 'z') {
+            count += 8;
+        } else if (String(fNameList[i]).toLowerCase() === 'i' || String(fNameList[i]).toLowerCase() === 'r' ) {
+            count += 9;
+        }
+    };
 
+    if (count < 10) {
+        count;
+    } else if (count === 10) {
+        count = 1
+    } else if (count === 11) {
+        count = '11/2'
+    } else if (count === 16) {
+        count = '16/7'
+    } else if(count === 19) {
+        count = '19/1'
+    } else if (count === 22) {
+        count = '22/4'
+    } else if (count > 10) {
+        mSplit = String(count).split('');
+        count = eval(mSplit.join('+'));
+        if (count < 10) {
+            count;
+        } else if (count === 10) {
+            count = 1
+        } else if (count === 11) {
+            count = '11/2'
+        } else if (count === 16) {
+            count = '16/7'
+        } else if(count === 19) {
+            count = '19/1'
+        } else if (count === 22) {
+            count = '22/4'
+        } else if ( count > 10) {
+            mSplit = String(count).split('');
+            count = eval(mSplit.join('+'));
+        }
+    };
+
+    escyNum.innerHTML = '<b>' + count + '</b>';
+    var transitString = '';
+    for (let i = 0; i< transitList.length; i++) {
+        switch (transitList[i]) {
+            case 'A':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">A Transit</h3> <br> <br> 
+                <p>
+                This Essence gives you a new outlook on life. It serves as a turning point,
+                presenting new chances for the horn to seize. You always second-guess yourself
+                before acting, and you feel compelled to apply your mental talents in everything
+                you do. This is a moment of transformation, a dynamic way of life, and
+                uniqueness. This letter awakens your inner leader and helps you become more
+                self-reliant. <br> <br>
+                There is the option of traveling and maybe relocating. You might also gain
+                insight into your place in life during this time. This is an excellent moment to
+                begin a new chapter in your life, whether personal or professional. You can marry,
+                start up a new relationship, or business, establish a family, and so forth. Your
+                creative talents will be at their height, and now is the moment to demonstrate them
+                off to the entire world. There will be numerous changes in your life at this time.
+                
+                </p>
+                `
+                break;
+            
+            case 'B':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">B Transit</h3> <br> <br> 
+                <p>
+                It's possible that you're more sensitive, timid, or emotional than normal. You are
+                desperate for love and are vulnerable to passionate love affairs. You should pay
+                great attention to your health in general, and your neurological system in
+                particular, during this time. You should get lots of rest and relax. Be receptive to
+                what others have to say. Due to your compassion and diplomacy, your career
+                may flourish. People in your surrounding would be particularly nice
+                and helpful.
+                </p>
+                `
+                break;
+            
+            case 'C':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">C Transit</h3> <br> <br> 
+                <p>
+                You'll notice that expressing yourself is becoming simpler for you. You have
+                additional notions and ideas. Prepare for some form of prophecy, as well as
+                premonitions or other spiritual experiences, since your brain is in an
+                extremely creative period and your intuition is as sharp as it's ever been. You
+                have a new sense of adventure and make numerous new acquaintances. There will
+                be more social gatherings. You have the ability to promote yourself. You'll meet
+                someone fresh and fascinating and become friends with them. It's an
+                excellent moment to expand your business.
+                
+                </p>
+                `
+                break;
+            
+            case 'D':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">D Transit</h3> <br> <br> 
+                <p>
+                You must take care of your health while also paying attention to your nutrition and
+                physical activities. Taking care of your health today might help you avoid
+                problems in the future. These days, you have a great need to be loved and
+                respected. You need to communicate your concerns more in your love
+                relationships, even if they are hazy or stressful. You'll have the chance to grow
+                and gain self-confidence, become more autonomous, and travel is a distinct
+                possibility.
+                </p>
+                `
+                break;
+            
+            case 'E':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">E Transit</h3> <br> <br> 
+                <p>
+                You'll be motivated and helpful. Changes in job, travel, and maybe relocating are all
+                possibilities. You're energized, full of fresh aspirations, and eager to go on new
+                adventures. You are drawn to new and exciting experiences, especially romantic
+                relationships. There is also the possibility of marriage. Despite the fact that this is
+                an excellent letter for finances or getting a promotion, there could be a lack of
+                concentration and a much more carefree attitude, which may harm your prospects
+                of making actual progress. New religions and philosophical concepts excite your
+                interest.
+                </p>
+                `
+                break;
+            
+            case 'F':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">F Transit</h3> <br> <br> 
+                <p>
+                    It's time to go into your soul (soul searching and spiritual development) and
+                    stay true to yourself. At work and at home, you will face several challenges
+                    and greater liabilities. You'll begin to question your past beliefs and authority.
+                    This year, your intuitive and emotional part will triumph, but it will not provide you
+                    with the answers to your life's questions. You'll need to focus on yourself, reflect
+                    and meditate, and listen to your inner voice. During this time, you may feel
+                    compelled to behave as though you are suffering, but this is only an act of 
+                    deception rather than self-sacrifice. A large number of individuals will seek your
+                    assistance and direction, as well as your
+                    compassion. 
+                </p>
+                `
+                break;
+            
+            case 'G':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">G Transit</h3> <br> <br> 
+                <p>
+                This is a contentious time in your life. On the one side, you will be compensated
+                financially, but you should not expect people to thank you for your efforts. The
+                letter G has to do with mental and spiritual matters. This season is often
+                successful and positive, but you should not hurry into it. You will feel isolated and
+                lonely many times, and you will have to go inside yourself and reflect on all that is
+                happening at some point throughout this time. Your energy is focused on the
+                correct things, although you might be a little more secretive than normal. During
+                this time, you're more emotional than usual when it comes to romantic
+                connections.
+                
+                </p>
+                `
+                break;
+            
+            case 'H':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">H Transit</h3> <br> <br> 
+                <p>
+                During this year, your mind will be quite busy and have a lot of activity. Your ideas
+                are a little out of the ordinary. You have a talent for coming up with unique, even
+                imaginative ideas. This is an exciting ambitious period, and self-promotion will
+                be advantageous. It is possible to advance and succeed. You are focused and determined,
+                 which is a winning combination. You are self-disciplined and have a strong vision of 
+                 your goals. You're emotionally fragile and in need of affectionate love and care.
+                
+                </p>
+                `
+                break;
+            
+            case 'I':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">I Transit</h3> <br> <br> 
+                <p>
+                Prepare for both good and bad happenings at this sensitive and
+                emotional time. You're overworked and need to get some rest, or you'll get
+                anxious. Learn how to maintain your  composure and remain cool. Do not
+                allowing things in your life and environment to ruin your attitude and
+                mood. Insecurity and self-indulgence should be avoided. Despite the
+                unfavorable aspects, this year has the potential to be fruitful for you in terms of
+                offers and material compensation.
+                </p>
+                `
+                break;
+            
+            case 'J':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">J Transit</h3> <br> <br> 
+                <p>
+                This time will bring along the energy and tremendous changes. You will have a
+                number of significant opportunities to improve your financial status. It won't be
+                simple, and you'll have to make check sure and study every aspect and
+                conceivable scenario. Make an effort to finish everything. There will be new
+                obligations. Most likely, you will relocate from where you currently reside. But, after
+                a time of erratic peaks and falls, you will have a sense of rejuvenation or rebirth,
+                and it will be a fresh start for you, giving you renewed confidence.
+                
+                </p>
+                `
+                break;
+            
+            case 'K':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">K Transit</h3> <br> <br> 
+                <p>
+                You will be more sensitive than normal throughout this time. Things that others
+                find obscure will appear plain to you. You're going to meet some new
+                individuals. Your thoughts are original, and they provide spice to your life. Allow
+                yourself to experience all of the great aspects of teamwork and cooperation
+                with others, as you will be sharing your achievements as well as your obligations
+                with them. During this time, you will be extra sensitive, and you will encounter
+                some strange and difficult events. In general, the letter K is associated with
+                good fortune and celebrity. Avoid having too much of anything. Therefore, Cheating, 
+                discretion, and misrepresentation must all be avoided.
+                </p>
+                `
+                break;
+
+            case 'L':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">L Transit</h3> <br> <br> 
+                <p>
+                It's time to take it easy. You should consider your future ambitions and
+                objectives. It is a time to reflect on your life, figure out your true feelings, and
+                separate your wants from your requirements and responsibilities. If you
+                have the opportunity to travel, take advantage of it. Consider what you enjoy
+                doing more and express yourself. Throughout this time, every kind of artistic
+                expression is definitely welcome. New individuals will come into your life with
+                ease. This is also a good time to be married. Nonetheless, you must analyze
+                each option carefully, or you risk losing crucial individuals.
+                
+                </p>
+                `
+                break;
+            
+            case 'M':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">M Transit</h3> <br> <br> 
+                <p>
+                This will be a period of strenuous work and practicality. You may be secretive,
+                which might cause others close to you to be worried. So, strive to express your
+                sentiments to others around you more. Relationships may face difficulties or be
+                put to the test. Before making major life decisions, think carefully. Get yourself
+                together and don't allow your emotions or impulse to run your life or damage it.
+                Allow time to clean away the clutter. 
+                
+                </p>
+                `
+                break;
+            
+            case 'N':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">N Transit</h3> <br> <br> 
+                <p>
+                You will have the opportunity to extend your views. This time period is jampacked 
+                with adventures and activities. Most likely, you will relocate to a new
+                location. It's a busy time with a lot of opportunities. You're looking for love and
+                happiness. Sacrifice, flexibility, and adaptation are all required. You'll make a
+                few important acknowledgments. You'll have to adjust to and fit various
+                conditions. The financial aspect of your life will be a big source of concern for you.
+                Because you are more sensitive and your attention is not stable, try to focus on only
+                the most important things. During this period, you have a tendency to forget
+                things. Consider altering your diet and getting some physical activity.
+                
+                </p>
+                `
+                break;
+            
+                case 'O':
+                    transitString += `
+                    <h3 class="bold-description-label">Definition</h3> <br>
+                    <p>
+                        The Transits are included in your developmental and will reveal a lot about
+                        certain influences in your life during various years. The letters of your first,
+                        middle, and last names are used to create transits. Each name represents a different
+                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                        is based on your first name, while the Mental Transit is based on your middle
+                        name, and the Spiritual Transit is based on your last name.
+                            
+                    </p> <br> <br>
+                    
+                    <h3 class="bold-description-label">O Transit</h3> <br> <br> 
+                    <p>
+                    It's a worried and stressful period that, if you let it, might have significant health
+                    implications. You might become overly concerned all of the time. It's
+                    understandable because you're responsible for so many things. Perhaps
+                    you'll be drawn to religious and philosophical study. During this time, your
+                    managerial and leadership abilities will improve.
+                    
+                    </p>
+                    `
+                    break;
+
+                case 'P':
+                    transitString += `
+                    <h3 class="bold-description-label">Definition</h3> <br>
+                    <p>
+                        The Transits are included in your developmental and will reveal a lot about
+                        certain influences in your life during various years. The letters of your first,
+                        middle, and last names are used to create transits. Each name represents a different
+                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                        is based on your first name, while the Mental Transit is based on your middle
+                        name, and the Spiritual Transit is based on your last name.
+                            
+                    </p> <br> <br>
+                    
+                    <h3 class="bold-description-label">P Transit</h3> <br> <br> 
+                    <p>
+                    In your life, new things and people will arrive out of nowhere. You won't be able
+                    to effectively manage your life throughout this time. Avoid taking any risks that aren't
+                    necessary. During this period, you're a little confused. Relationships may also
+                    face difficulties, making it difficult for you to express your true sentiments. So,
+                    make the most of this opportunity to grow spiritually. You will be rewarded for your
+                    abilities and talents throughout this time, and promotion is a definite possibility.
+                    However, it is more of a spiritual period than a time for worldly matters in general
+                    </p>
+                    `
+                    break;
+
+                case 'Q':
+                    transitString += `
+                    <h3 class="bold-description-label">Definition</h3> <br>
+                    <p>
+                        The Transits are included in your developmental and will reveal a lot about
+                        certain influences in your life during various years. The letters of your first,
+                        middle, and last names are used to create transits. Each name represents a different
+                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                        is based on your first name, while the Mental Transit is based on your middle
+                        name, and the Spiritual Transit is based on your last name.
+                            
+                    </p> <br> <br>
+                    
+                    <h3 class="bold-description-label">Q Transit</h3> <br> <br> 
+                    <p>
+                    Under the effect of the Q, your intuition and intelligence are substantially
+                    strengthened. You'll come up with a lot of unique ideas and may even invent
+                    something. At this moment, your problemsolving abilities are exceptional. However,
+                    you've become increasingly unsteady and chaotic. You'll meet some weird and
+                    quirky people, and you'll have to be wary about acting on impulse. Therefore, 
+                    strange and remarkable individuals will be drawn to you in some way, so make
+                    logical judgments. Keep an eye on your finances. This is an excellent time for
+                    financial expansion. You have a strong desire for power and recognition. Your
+                    working environment may undergo significant changes. You have the option of 
+                    changing jobs. This is the time when you truly need to feel valued and worthy
+                    </p>
+                    `
+                    break;
+
+                case 'R':
+                    transitString += `
+                    <h3 class="bold-description-label">Definition</h3> <br>
+                    <p>
+                        The Transits are included in your developmental and will reveal a lot about
+                        certain influences in your life during various years. The letters of your first,
+                        middle, and last names are used to create transits. Each name represents a different
+                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                        is based on your first name, while the Mental Transit is based on your middle
+                        name, and the Spiritual Transit is based on your last name.
+                            
+                    </p> <br> <br>
+                    
+                    <h3 class="bold-description-label">R Transit</h3> <br> <br> 
+                    <p>
+                    During this stage, you have a lot of understanding and insight. You'll have to
+                    cope with money, power, and leadership during this period. You have the chance
+                    to improve your financial situation as well as your personal development. It's a
+                    period of extreme ups and downs. You'll have to be extremely cautious and
+                    double-check your activities. This is a moment when you will encounter both the
+                    good and the bad. Therefore, anything you do and any decision you make must
+                    be done with prudence. Keep an eye on what's going on around you
+                    and unfamiliar surroundings.
+                    </p>
+                    `
+                    break;
+
+                case 'S':
+                    transitString += `
+                    <h3 class="bold-description-label">Definition</h3> <br>
+                    <p>
+                        The Transits are included in your developmental and will reveal a lot about
+                        certain influences in your life during various years. The letters of your first,
+                        middle, and last names are used to create transits. Each name represents a different
+                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                        is based on your first name, while the Mental Transit is based on your middle
+                        name, and the Spiritual Transit is based on your last name.
+                            
+                    </p> <br> <br>
+                    
+                    <h3 class="bold-description-label">S Transit</h3> <br> <br> 
+                    <p>
+                    You have a clear mind and are able to express your objectives accurately. It's a
+                    period of universal awakening, and the underlying anxieties and thoughts will
+                    come to the surface as well. During this time, you will achieve true independence
+                    in every meaning of the term. Prepare yourself for sudden changes in your life
+                    that will leave you feeling relieved and refreshed. You will comprehend and
+                    review your dreams. Once you've made the decision to alter your life, be prepared
+                    to face those who want to keep you from doing so. It's an exciting period, full of
+                    new and unexpected experiences.
+                    </p>
+                    `
+                    break;
+
+                case 'T':
+                    transitString += `
+                    <h3 class="bold-description-label">Definition</h3> <br>
+                    <p>
+                        The Transits are included in your developmental and will reveal a lot about
+                        certain influences in your life during various years. The letters of your first,
+                        middle, and last names are used to create transits. Each name represents a different
+                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                        is based on your first name, while the Mental Transit is based on your middle
+                        name, and the Spiritual Transit is based on your last name.
+                            
+                    </p> <br> <br>
+                    
+                    <h3 class="bold-description-label">T Transit</h3> <br> <br> 
+                    <p>
+                    During this time, you don't feel like discussing your thoughts with others. You
+                    want to put yourself out there and do your job well, but you should be wary of
+                    excessive self-pity. Take the time to think about every decision you make;
+                    some solitude will be beneficial to you. You will have a great drive to learn new
+                    things. You can try picking up a new activity, going on a trip, or educating
+                    yourself in some way because your knowledge intake is high and productive
+                    right now. This is a terrific and profitable moment for business and new
+                    relationships, but you must protect your turf from those who want to interfere with
+                    your efforts. know that this time is a terrific time for fresh collaboration, but
+                    don't allow anyone to take advantage of it.
+                    </p>
+                    `
+                    break;
+
+                case 'U':
+                    transitString += `
+                    <h3 class="bold-description-label">Definition</h3> <br>
+                    <p>
+                        The Transits are included in your developmental and will reveal a lot about
+                        certain influences in your life during various years. The letters of your first,
+                        middle, and last names are used to create transits. Each name represents a different
+                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                        is based on your first name, while the Mental Transit is based on your middle
+                        name, and the Spiritual Transit is based on your last name.
+                            
+                    </p> <br> <br>
+                    
+                    <h3 class="bold-description-label">U Transit</h3> <br> <br> 
+                    <p>
+                    During this period, you will notice an increase in intuition and perception, yet
+                    you may be too relaxed for essential duties. You will have a lower level of
+                    motivation than normal. Some pictures from your history may emerge, a lot of old
+                    and long-forgotten emotional issues may surface, and individuals you've met before
+                    may reappear. Pay greater attention to your family and friends. Make the most of
+                    your instincts and ideas. You may accomplish remarkable success,
+                    especially in the artistic and selfexpression fields, if you conquer your
+                    laziness. Make use of it to advertise yourself. Therefore, this Transit can help
+                    you achieve great things in the arts, particularly in writing, acting, music, and
+                    so on. 
+                    
+                    </p>
+                    `
+                    break;
+
+                case 'V':
+                    transitString += `
+                    <h3 class="bold-description-label">Definition</h3> <br>
+                    <p>
+                        The Transits are included in your developmental and will reveal a lot about
+                        certain influences in your life during various years. The letters of your first,
+                        middle, and last names are used to create transits. Each name represents a different
+                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                        is based on your first name, while the Mental Transit is based on your middle
+                        name, and the Spiritual Transit is based on your last name.
+                            
+                    </p> <br> <br>
+                    
+                    <h3 class="bold-description-label">V Transit</h3> <br> <br> 
+                    <p>
+                    The letter V is by far the most mystical, mysterious, and spiritually potent of all the
+                    letters. You'll have a strong intuitive sense and have revelations and deep religious
+                    insights. You'll feel incredibly inspired, but you'll need some alone time to process
+                    your ideas. This is also an excellent financial moment. You'll have the chance
+                    to invest in potential businesses. You are able to pay off previous debts and
+                    achieve increased wealth. You'll need to retain a firm grip on your tasks and pay
+                    attention to your intuition.
+                    </p>
+                    `
+                    break;
+
+                case 'W':
+                    transitString += `
+                    <h3 class="bold-description-label">Definition</h3> <br>
+                    <p>
+                        The Transits are included in your developmental and will reveal a lot about
+                        certain influences in your life during various years. The letters of your first,
+                        middle, and last names are used to create transits. Each name represents a different
+                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                        is based on your first name, while the Mental Transit is based on your middle
+                        name, and the Spiritual Transit is based on your last name.
+                            
+                    </p> <br> <br>
+                    
+                    <h3 class="bold-description-label">W Transit</h3> <br> <br> 
+                    <p>
+                    This is an excellent moment to forget about the past and focus on the future.
+                    The letter W is usually associated with forthcoming adventures. You will,
+                    nevertheless, occasionally feel disoriented and confused. To avoid
+                    regrets, you'll need to get your act together and effectively manage your time
+                    and life. Your major characteristics should be purposefulness and determination if
+                    you want to succeed during this time. There may be some legal proceedings,
+                    but you will come out on top. Pay greater attention to your physical well-being.
+                    </p>
+                    `
+                    break;
+
+            case 'X':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">X Transit</h3> <br> <br> 
+                <p>
+                You'll become more sensitive and your emotions will be extremely conflicted.
+                During this time, stay away from unusual people and ideas; instead, wait until your
+                thoughts have calmed down. Changes should be expected in all areas of your
+                life, but they will be especially important in the area of romantic relationships. You're
+                going to have a lot of problems if you keep anything from others who need to
+                know about it. It's a fantastic moment to face your fears and expose the truth. You
+                can typically make quick and helpful judgments, but you'll need someone to
+                keep a close eye on you throughout this time. It is possible to obtain material
+                wealth and achieve success.
+                </p>
+                `
+                break;
+
+            case 'Y':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">Y Transit</h3> <br> <br> 
+                <p>
+                It is a moment of spiritual development, maturation, and awareness of higher
+                realms. Your intuition is well developed; thus, use it. You are highly intuitive, and
+                psychic impressions will occur. During this period, soul-searching and
+                mindfulness are incredibly useful to you. Try to reflect on your life and how you
+                perceive it since the decisions you make now will have a significant impact on your
+                future. Don't be scared of selfexamination; it will provide you with
+                knowledge. You'll be on the lookout for new folks to add to your life. Keep a
+                watch on your health because there might be some small issues, and avoid eating
+                too much and eating items that aren't natural.
+                </p>
+                `
+                break;
+
+            case 'Z':
+                transitString += `
+                <h3 class="bold-description-label">Definition</h3> <br>
+                <p>
+                    The Transits are included in your developmental and will reveal a lot about
+                    certain influences in your life during various years. The letters of your first,
+                    middle, and last names are used to create transits. Each name represents a different
+                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+                    is based on your first name, while the Mental Transit is based on your middle
+                    name, and the Spiritual Transit is based on your last name.
+                        
+                </p> <br> <br>
+                
+                <h3 class="bold-description-label">Z Transit</h3> <br> <br> 
+                <p>
+                It's an energizing time of year. You are prepared for any degree of intricacy as
+                well as a life progression. You will enjoy financial security throughout this period if
+                you work honestly, and avoid schemes. Don't be frightened to follow
+                your intuition because it is profound. A new and unusual relationship may
+                develop which will cause many changes in your life, and you may even relocate to
+                a new residence.
+                
+                </p>
+                `
+                break;
+
+            default:
+                break;
+        }
+    }; 
+    phyText.innerHTML = transitString;
+
+
+
+    var essenceText = (escyNum.textContent).trim();
+    var essenceInt = essenceText.split('/');
+
+    if (essenceText === '1' || essenceText === '10/1') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  1</h3> <br>
+        <p>
+        This Essence holds the energy to be unique, to make a fresh start, to take on
+        and handle tasks on your own. It usually leads to success and promotions. You
+        are on the verge of a new beginning. This might also be a time of transitions, such
+        as leaving your home and traveling. You'll be full of ideas and willing to try anything
+        new, and have a lot of energy. You will be able to develop your own leadership
+        abilities. Things and people around you might constantly demand your attention,
+        causing you a load of problems. Make an effort to protect and conserve your
+        energy so you can achieve your goal. <br> <br>
+        You'll feel liberated and have more options. It is a significant test of your
+        willpower. This time will boost your selfconfidence, fearlessness, and self-
+        awareness. You will be more connected with your internal self, and you
+        will be able to quickly identify your genuine aspirations and ambitions. This
+        time denotes doing things on your own or going alone, therefore it's an excellent
+        time to start your own business or create something new and unique.
+    
+        </p>
+    
+        `
+    } else if (essenceText === '11/2' || essenceInt[0] === '11') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  11/2</h3> <br>
+        <p>
+        Inspiration, intuition, a certain attraction, and occasionally tremendous
+        accomplishment are favored by this Essence. This time is marked by an
+        increase in emotionality and a complete shift in lifestyle. You are perceptive and
+        energetic, and you may even have psychic abilities. Now that you know
+        more, you can see and appreciate the horrific contrast between positive and
+        negative in this world. You're overly sensitive, which might have a detrimental
+        impact on you. As a result, you might wish to take a break from society for a
+        while. After you've gone through the trials of this time, you'll know exactly what your
+        objective is and how to achieve it. This time serves as a building block for your 
+        future happiness. You will undergo an inner shift that will significantly affect you.
+        It is a time of self-development. Trust your instincts, and they will guide you in
+        the correct direction. Mindfulness and a connection with nature might help you
+        find your center. Taking walks in the woods or a picnic by the lake are
+        excellent ways to connect with your inner and outside world.
+    
+        </p>
+    
+        `
+    } else if (essenceText === '16/7' || essenceInt[0] === '16') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  16/7</h3> <br>
+        <p>
+        This moment may appear to you like a storm wreaking on you, yet it is only a
+        restructuring of your life. It's an emotionally trying period for you, and you
+        were just not prepared for it. You may feel alone and lost. This time will also
+        teach you to be appreciative. You will require some time to comprehend and
+        assess all that has been presented to you. The love you ignore, the ability you
+        possess, and the positive memories in your life that were created without your
+        awareness. <br> <br>
+        The 16 Essence is generally only present for a brief time. After this time, you will
+        realize that you have become stronger and more self-reliant. It denotes the start
+        of a new stage in life. It's time to express yourself and the simple words and
+        it's crucial to your change. As a result, make an effort to become freer and more
+        open and realize that your perspective isn't always correct. You may feel deeply
+        disappointed at this time, but you must cultivate faith. Trust will enable you to
+        persevere through difficult periods in your life with the assurance that things will
+        improve. Consider, listening to soothing music, meditating, pray, and establishing
+        spiritual habits for yourself.
+    
+        </p>
+    
+        `
+    } else if (essenceText === '19/1' || essenceInt[0] === '19') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  19/1</h3> <br>
+        <p>
+        Your desire for independence will be as strong as it has ever been at this time.
+        You're driven and determined. You realize that you must work hard today in
+        order to create the foundation for your future financial security and
+        accomplishment. Internal conflicts may arise as a result of an immediate conflict
+        between your aspirations and the ones you love. Regardless of your viewpoint,
+        strive not to silence your inner dialogue, which guides you toward better goals. <br> <br>
+        distant and less talkative than in previous years, or even disappear from society.
+        You might be irritated and perplexed when your aspirations demand greater
+        and greater work, and you have little time to devote to them. During this essence,
+        your major difficulty and goal are to maintain a balance between your desire
+        for worldly wealth and higher ideals like love, morality, and relatives. Typically, a
+        person's material well-being improves greatly towards the end, his or her job
+        prospers, but interpersonal relationships deteriorate.
+        
+    
+        </p>
+    
+        `
+    } else if (essenceText === '22/4' || essenceInt[0] === '22') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  22/4</h3> <br>
+        <p>
+        This Essence is ideal for large projects, innovation, and high-quality ideas.
+        Mastering the energy is both powerful and sensitive. Number 22's essence is
+        one of the most potent of all numbers. It does have a strong desire to collaborate
+        with others while also having a strong desire to create something valuable for
+        the future. You'll be pragmatic, ambitious, team-oriented, diplomatic, disciplined,
+        and self-assured. You will be extremely capable, powerful, and efficient. It's one
+        of the most likely numbers to turn aspirations become reality. You must
+        concentrate and plan for the future and build something that serves society.
+    
+        </p>
+    
+        `
+    } else if (essenceText === '2' || essenceText === '20/2' || essenceInt[essenceInt.length - 1] === '2') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  2</h3> <br>
+        <p>
+        During this time, you should strive to communicate with others more and
+        collaborate more. The focus is on partnerships, agreements, friendships,
+        marriage, love life, and sentiments, as well as the difficulties that they entail. It's
+        time to relax and follow the advice you've been given. You should wait for
+        responses and the completion of previous acts, as well as consolidation
+        and arrangement. You must make the most of your capacity to work together. <br> <br>
+        Be gentle with people and events. It's important to keep in mind that there's no
+        need to hurry. Be willing to accept assistance from others. Always look on
+        the bright side of things and keep an optimistic attitude. Keep track of the
+        specifics and complete the tasks you've set out to complete. Even though you are
+        not a leader at this time, your intuition will guide you on the proper route. It's a good
+        idea to pay attention to how your neurological system since you could be
+        having anxiety issues. Try to be calm and meditate.
+        
+    
+        </p>
+    
+        `
+    } else if (essenceText === '3' || essenceText === '12/3' || essenceInt[essenceInt.length - 1] === '3') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  3</h3> <br>
+        <p>
+        This essence 3 conveys energy that may be used to communicate, express
+        oneself, build, and sustain social relationships, as well as provide joy to
+        one's life. Personal development, as well as the birth of a project or a baby. Your
+        abilities will be highly valued, and you will be inspired artistically, particularly in 
+        writing. Because of your charm, talent, and vibrant self-expression, you have a
+        tremendous opportunity to advertise yourself. You will feel rejuvenated and
+        pleased since you are in the spotlight. <br> <br>
+        There will be a lot of social events. You can be pushed to research history,
+        culture, or something else. Because you love connecting and engaging with
+        others, you will be more motivated to work and your fresh enthusiasm for work
+        may pay off financially. It's a time when all of your buried emotions rise to the
+        surface, and all of the feelings you've blocked off will be revealed. Always
+        speak to your rational mind and maintain your stability in this manner. You
+        must avoid overspending and strive to make smart investments and choices. <br> <br>
+        Consistently fulfill your responsibilities, and you will be rewarded at work. It is
+        critical that you consider the long term rather than the short term when it comes
+        to doing things such as investment or other things. Be careful of rushed
+        weddings or get-rich-quick scams. <br> <br>
+        Therefore, try to enjoy yourself and express yourself in many ways you can
+        such as decorating, gardening, painting anything that makes you happy.
+    
+        </p>
+    
+        `
+    } else if (essenceText === '4' || essenceInt[essenceInt.length - 1] === '4') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  4</h3> <br>
+        <p>
+        It's a time when you put in a lot of effort, save a lot of money, take care of your
+        house and family, and advance in your job. It is indeed a materialistic time. You'll
+        obtain what you've been striving for, so if you put in the effort, you'll be rewarded
+        handsomely. It's a period when you can be certain of a secure future. This is a
+        good time to be disciplined and pay attention to all elements of your life. It's a
+        period of disclosures when you finally understand certain things that had
+        previously perplexed you. Things may progress slowly, but if you stay
+        disciplined and stick to the process, you will reap the benefits of your effort. This is
+        a constricting and restricting moment that requires you to be vigilant in your task.
+        Be prepared because many of those close to you, both family or friends, may
+        beg for your assistance and make financial demands. Make appointments
+        for health screenings and self-care. Try out just the things in which you are
+        completely certain; else, any ambiguity will lead to disaster. Always make time
+        for yourself when you're stressed. <br> <br>
+        Maintain a healthy relationship with your body.
+    
+        </p>
+    
+        `
+    } else if (essenceText === '5' || essenceInt[essenceInt.length - 1] === '5') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  5</h3> <br>
+        <p>
+        Changes, novelty, diversity, the possibility of moving, traveling, and
+        transformations are all highlighted, as well as sensuality, emotive adventures,
+        and pleasures. Breathe deeply and take command of the waves because you'll
+        feel more independent and freer of your worries and routine. During this time,
+        your current abilities will be enhanced and preferred. With the influx of new
+        ideas and initiatives, business and financial improvement are also on the
+        way. The people in your immediate vicinity are pleasant and helpful. <br> <br>
+        Your self-expression is really vibrant and intriguing. It's a good time to go on
+        adventures and work on yourself. You will have several possibilities to travel
+        throughout the world and interact with people from other cultures. A lot of the
+        behaviors and activities you used to like will just go from your life because you no
+        longer require them. It is indeed part of the self-renewal process; you're
+        transitioning to a new and improved person. <br> <br>
+        At this time, your wants will be difficult to fulfill as you become more hypersensitive 
+        and demanding. Strive not to overindulge in food, alcohol, sex, or substances. You
+        can feel as though you're being pulled in every way. You may find yourself
+        procrastinating and leaving things incomplete. Duties may bore you to
+        death, and you will eventually abandon them. You are always on the go,
+        traveling, and taking short vacations. Try to be disciplined and take care of your
+        duties because if you fail to fulfill your responsibilities you might land yourself in
+        hot water.
+        </p>
+    
+        `
+    } else if (essenceText === '6' || essenceInt[essenceInt.length - 1] === '6') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  6</h3> <br>
+        <p>
+        It's a period of responsibilities, liabilities, family relationships, personal
+        development, commitments, marriage, the household, comfort, and the need to
+        resolve a problem or assist others are all highlighted. People in your immediate
+        vicinity will require your constant assistance, guidance, or attention. Others
+        will be encouraged and influenced by you. It may be used to improve and
+        decorate the inside of your home. You want to be surrounded by beautiful things
+        while yet being able to relax and unwind. Know that unanticipated medical
+        expenses may be a source of tragedy sometimes. <br> <br>
+        During this time, you should expect your friendship, and financial situation to
+        improve, and you’ll also be fortunate in your career and your romantic
+        relationships will prosper. You could receive a raise or a monetary
+        bonus. Know that close connection that affects your mental health should be
+        avoided. You will be recognized and elevated in society if you have provided
+        excellent service to others. You might be able to profit financially from the other
+        sex. In your life, the subject of love will come up. People frequently realize what
+        their genuine desires in their love life or spouse are, which leads to
+        marriage or divorce if the commitment is broken.
+    
+        </p>
+    
+        `
+    } else if (essenceText === '7') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  7</h3> <br>
+        <p>
+        Allow yourself some solitude and quiet to reconnect with your inner self. A moment
+        of introversion, separation, reflection, knowledge, inquiry, philosophy, and
+        intellectual camaraderie is represented by Essence Number 7. Your need for
+        independence or alone will be evident. Finances might be favored to the extent
+        that you allow things to come to you. Meditation, spiritual contemplation, and
+        personal improvement are all connected with this period. Your investigation should
+        be focused on yourself. You'll need some alone time to reflect on life and where
+        you want to go, what you want to accomplish, and how you envision
+        yourself in your aspirations. This is an excellent time to think about things that
+        aren't material. It's time to investigate spiritual and religious practices and
+        mysticism. <br> <br>
+        You may experience coincidence and unexpected, which will prompt you to
+        reconsider your life views. Make the most of your academic and artistic potential.
+        Before you do anything, think about your long-term contentment. There may be
+        some strain or tension if you are already married or in a relationship. To ensure
+        your happiness, learn to regulate your thoughts and balance your emotions.
+    
+        </p>
+    
+        `
+    } else if (essenceText === '8' || essenceInt[essenceInt.length - 1] === '8') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  8</h3> <br>
+        <p>
+        Essence Number 8 is a fortunate number in which you may easily advance
+        financially and build your self-worth and net-worth. The focus is on business,
+        projects, wealth, money, investments, and power, which may be beneficial but 
+        can also be detrimental. This is a moment when you may be given authority and power.
+        You could be asked to perform leadership roles or utilize your executive talents 
+        to sort out financial matters. It's possible that you're involved in real estate during this time. <br> <br>
+        During this time, money should be easy to come by. Make sure you manage your
+        finances because while you may be making a lot, you may also be spending a
+        lot. At this point, it's critical to remember that working in groups instead of doing
+        everything by oneself yields better results. This Essence frequently brings
+        up old memories, as well as previous obligations. People to whom you owe
+        money may become a genuine issue, therefore it may be time to pay off your
+        obligations and live a less stressful life. <br> <br>
+        Many people will constantly ask or demand money from you, so be careful
+        not to give all you have but be genuine to others. Although it’s a favorable time that
+        can bring financial stability, it can also bring financial troubles, losses, situations
+        that flip upside down, and your health may be put to the test. Be careful of getrich-quick 
+        scams since your ambition might be heightened. 
+    
+        </p>
+    
+        `
+    } else if (essenceText === '9' || essenceInt[essenceInt.length - 1] === '9') {
+        essText.innerHTML = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transit and Essence cycles represent your inner state of mind,
+        internal changes, and progress, as well as how you will manage any challenges
+        you face in the future year. The essence - is how you feel from the inside.
+        </p> <br> <br>
+        
+        <h3 class="bold-description-label ">Essence Number  9</h3> <br>
+        <p>
+        The essence number 9 significant transformation and might represent a
+        moment when your emotions have a stronghold on you. According to the
+        nature of your activities during the past years, the emphasis is placed on joyful
+        results, goals, aspirations, exposure to the world, or disillusionment. Public life
+        and travel to distant regions are occasionally favored. Because things are
+        going to be dramatic, strive for balance and spiritual purification. The majority of
+        your principles and authority will be questioned and re-examined. You'll make
+        strides in areas you never imagined possible. You have a good chance of
+        becoming deeper on a psychological and spiritual level. <br> <br>
+        People and relationships that no longer serve you will end. The behaviors you
+        believed defined you are likely to alter or go away. Many gifts can come your way
+        if you stay open-minded, trustworthy, and kind throughout this period. However, on
+        the other hand, romantic affairs and love partnerships may bloom at this time. <br> <br>
+        Losses are possible at this time, yet these catastrophes will pave the way for
+        a new and brighter beginning and even greater prospects. You’ll gain some
+        material gain during this period, as well as better commercial and government
+        relations. If you're an artist, this time period is associated with creative
+        advancement, new ideas, and a plethora of other prospects for artistic
+        advancement. To prevent lawsuits and conflict, it is critical to be completely
+        honest.
+    
+        </p>
+    
+        `
+    } 
 
 
     // Personal Cycles 
@@ -15576,7 +16785,6 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     
     // Personal Day 
     var currentDay = new Date().getDate();
-    // console.log(currentDay);
     
     var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     var d = new Date();
@@ -15586,7 +16794,6 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     var personalDay, cMonthInt;
 
     var cMonthText = monthNum;
-    // console.log(cMonthText)
     if (cMonthText === '11/2') {
         cMonthInt = 11
     } else if (cMonthText === '22/4') {

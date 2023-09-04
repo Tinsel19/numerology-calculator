@@ -3702,7 +3702,6 @@ calculate.addEventListener('click', ()=> {
             }
             countHold += nSum;
         }
-        
         count = 0;
     };
     if (countHold < 10) {
@@ -3758,9 +3757,7 @@ calculate.addEventListener('click', ()=> {
     }
     
 
-
     suHold = sum;
-    // suhdNum.innerHTML = '<b>' +sum+ '</b>';
 
     var soulUrgeText = (suhdNum.textContent).trim();
     var soulUrgeInt = soulUrgeText.split('/');
@@ -4637,7 +4634,7 @@ calculate.addEventListener('click', ()=> {
                 count += 5;
             } else if (String(pnfName[iterate][i]).toLowerCase() === 'f' || String(pnfName[iterate][i]).toLowerCase() === 'x') {
                 count += 6;
-            } else if (String(pnfName[iterate][i]).toLowerCase() === 'g' || String(pnfName[iterate][i]).toLowerCase() === 'p' || String(pnfName[iterate][i]).toLowerCase() === 'y') {
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'g' || String(pnfName[iterate][i]).toLowerCase() === 'p' ) {
                 count += 7;
             } else if (String(pnfName[iterate][i]).toLowerCase() === 'h' || String(pnfName[iterate][i]).toLowerCase() === 'q' || String(pnfName[iterate][i]).toLowerCase() === 'z') {
                 count += 8;
@@ -5106,7 +5103,7 @@ your    cool or temper.
                 count += 5;
             } else if (String(pnfName[iterate][i]).toLowerCase() === 'f' || String(pnfName[iterate][i]).toLowerCase() === 'x') {
                 count += 6;
-            } else if (String(pnfName[iterate][i]).toLowerCase() === 'g' || String(pnfName[iterate][i]).toLowerCase() === 'p' || String(pnfName[iterate][i]).toLowerCase() === 'y') {
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'g' || String(pnfName[iterate][i]).toLowerCase() === 'p' ) {
                 count += 7;
             } else if (String(pnfName[iterate][i]).toLowerCase() === 'h' || String(pnfName[iterate][i]).toLowerCase() === 'q' || String(pnfName[iterate][i]).toLowerCase() === 'z') {
                 count += 8;

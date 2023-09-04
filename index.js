@@ -15439,7 +15439,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     } else if (Number(dayString) > 10) {
         mSplit = String(dayString).split('');
         xsum = eval(mSplit.join('+'));
-        sumDayArray = xsum
+        sumDayArray = xsum;
     };
     
     if (Number(monthString) < 10) {
@@ -16572,9 +16572,11 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     } else if (Number(cMonthText) < 10) {
         cMonthInt = Number(cMonthText);
     };
-
-    personalDay = cMonthInt + Number(currentDay);
-    console.log(personalDay)
+    var newYear = (cYearNum.textContent).trim();
+    newYear = (newYear.split('/'))[0];
+    // console.log(newYear);
+    personalDay = cMonthInt + Number(currentDay) + Number(newYear);
+    // console.log(personalDay)
     // console.log(personalDay, cMonthInt, currentDay)
 
     if (personalDay <  10) {

@@ -44,8 +44,22 @@ h1 {
     color: black;
     text-align: center;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1rem;
+}
+
+.bluePrint {
+    border:  3px solid  #016A70;
+    border-radius: 10px;
+    color: #016A70;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.chart {
+    font-size: 2.2rem;
+    color: #0E8388;
+    
 }
 
 header button {

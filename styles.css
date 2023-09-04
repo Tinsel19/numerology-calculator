@@ -110,6 +110,14 @@ input {
     color: grey;
 }
 
+.green {
+    color: #0B666A;
+    font-weight: bold;
+}
+.blueM {
+    color:  blue;
+    font-weight: bold;
+}
 
 #dBirth {
     width: 80%;

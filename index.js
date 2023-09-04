@@ -7840,66 +7840,73 @@ your    cool or temper.
 
 
     // Karmic Debt Number
-    var karmicString = '';
+    var karmicString = `<br> <br>
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Usually derived from your date of birth, which can be discovered by
+        looking at the numbers present (day of birth or life path number). Can
+        be viewed as current challenges that you may experience during your
+        lifetime.   
+    </p> <br> <br>`;
     kdText.innerHTML = '';
     // life path 
     kdHold = lpNum.textContent;
     if (kdHold === '13/4') {
-        karmicString += '13/4 '
+        karmicString += '13/4<br> '
     } else if (kdHold === '14/5') {
-        karmicString += ' 14/5 '
+        karmicString += ' 14/5<br> '
     } else if (kdHold === '16/7') {
-        karmicString += ' 16/7 '
+        karmicString += ' 16/7<br> '
     } else if (kdHold === '19/1') {
-       karmicString += ' 19/1 '
+       karmicString += ' 19/1<br> '
     } 
 
     // destiny
     kdHold = edNum.textContent
     if (kdHold === '13/4') {
-        karmicString += ' 13/4 '
+        karmicString += ' <br>13/4<br> '
     } else if (kdHold === '14/5') {
-        karmicString += ' 14/5 '
+        karmicString += ' 14/5<br> '
     } else if (kdHold === '16/7') {
-        karmicString += ' 16/7 '
+        karmicString += ' 16/7<br> '
     } else if (kdHold === '19/1') {
-        karmicString += ' 19/1 '
+        karmicString += ' 19/1<br> '
     } 
 
     // soul urge 
     kdHold = suhdNum.textContent
     if (kdHold === '13/4') {
-        karmicString += ' 13/4 '
+        karmicString += ' 13/4<br> '
     } else if (kdHold === '14/5') {
-        karmicString += ' 14/5  '
+        karmicString += ' 14/5<br>  '
     } else if (kdHold === '16/7') {
-        karmicString += ' 16/7 '
+        karmicString += ' 16/7<br> '
     } else if (kdHold === '19/1') {
-        karmicString += ' 19/1 '
+        karmicString += ' 19/1<br> '
     } 
 
     // birthday number 
     kdHold = bdNum.textContent
     if (kdHold === '13/4') {
-        karmicString += ' 13/4 '
+        karmicString += ' 13/4<br> '
     } else if (kdHold === '14/5') {
-        karmicString += ' 14/5 '
+        karmicString += ' 14/5<br> '
     } else if (kdHold === '16/7') {
-        karmicString += ' 16/7 '
+        karmicString += ' 16/7<br> '
     } else if (kdHold === '19/1') {
-        karmicString += ' 19/1 '
+        karmicString += ' 19/1<br> '
     } 
 
     // personality
     kdHold = pNum.textContent
     if (kdHold === '13/4') {
-        karmicString += ' 13/4 '
+        karmicString += ' 13/4<br> '
     } else if (kdHold === '14/5') {
-        karmicString += ' 14/5 '
+        karmicString += ' 14/5<br> '
     } else if (kdHold === '16/7') {
-        karmicString += ' 16/7 '
+        karmicString += ' 16/7<br> '
     } else if (kdHold === '19/1') {
-        karmicString += ' 19/1 '
+        karmicString += ' 19/1<br> '
     } else if(karmicString === '') {
         karmicString = 'None'
     };
@@ -7907,7 +7914,8 @@ your    cool or temper.
     if (karmicString !== 'None' ) {
         karmicString.replace('None', '')
     }
-    kdNum.textContent = karmicString;
+    karmicString = karmicString.trim();
+    kdNum.innerHTML = karmicString;
     var kdList = (kdNum.textContent).split(' ');
     var kdResult = '';
 
@@ -7915,14 +7923,7 @@ your    cool or temper.
         switch ((kdList[i]).trim()) {
             case '13/4':
                 kdResult  += `
-                <br> <br>
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    Usually derived from your date of birth, which can be discovered by
-                    looking at the numbers present (day of birth or life path number). Can
-                    be viewed as current challenges that you may experience during your
-                    lifetime.   
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">Karmic Debt Number 13/4</h3> <br>
                 <p>
@@ -7937,14 +7938,7 @@ your    cool or temper.
                 break;
             case '14/5':
                 kdResult += `
-                <br> <br>
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    Usually derived from your date of birth, which can be discovered by
-                    looking at the numbers present (day of birth or life path number). Can
-                    be viewed as current challenges that you may experience during your
-                    lifetime.   
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">Karmic Debt Number 14/5</h3> <br>
                 <p>
@@ -7959,14 +7953,7 @@ your    cool or temper.
                 break;
             case '16/7':
                 kdResult += `
-                <br> <br>
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    Usually derived from your date of birth, which can be discovered by
-                    looking at the numbers present (day of birth or life path number). Can
-                    be viewed as current challenges that you may experience during your
-                    lifetime.   
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">Karmic Debt Number 16/7</h3> <br>
                 <p>
@@ -7988,14 +7975,7 @@ your    cool or temper.
             
             case '19/1':
                 kdResult += `
-                <br> <br>
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    Usually derived from your date of birth, which can be discovered by
-                    looking at the numbers present (day of birth or life path number). Can
-                    be viewed as current challenges that you may experience during your
-                    lifetime.   
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">Karmic Debt Number 19/1</h3> <br>
                 <p>

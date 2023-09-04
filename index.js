@@ -3661,6 +3661,7 @@ calculate.addEventListener('click', ()=> {
     count = 0;
     countList = [];
     suhdfName = Array.from(suhdfName);
+    countHold = 0;
     for (let iterate  = 0; iterate < suhdfName.length; iterate++) {
         for ( let i = 0; i <= suhdfName[iterate].length; i++) {
             if ( String(suhdfName[iterate][i]).toLowerCase() === 'a' ) {
@@ -3676,54 +3677,87 @@ calculate.addEventListener('click', ()=> {
             } else if ( String(suhdfName[iterate][i]).toLowerCase() === 'y' ) {
                 count += 7;
             }
+            else {
+                count+=0;
+            }
         };
-        countList.push(count);
+        if (count < 10) {
+            countHold += count;
+        } else if (count === 10) {
+            countHold += 1
+        } else if (count === 11 || count === 22 || count === 33) {
+            countHold += count;
+        } else if (count > 10) {
+            dbSplit = String(count).split('');
+            nSum = eval(dbSplit.join('+'));
+            if (nSum < 10) {
+                nSum;
+            } else if (nSum === 10) {
+                nSum = 1;
+            } else if (nSum === 11 || nSum === 22 || nSum === 33 ) {
+                nSum;
+            } else if (nSum > 10) {
+                dbSplit = String(count).split('');
+                nSum = eval(dbSplit.join('+'));
+            }
+            countHold += nSum;
+        }
+        
         count = 0;
     };
-    var dfList = [];
-    var suhdSplit, sum,  suhdSumList = [], suhdResult, y, count = 0;
-    for (let x = 0; x < countList.length; x++) {
-        if (countList[x] === 11) {
-            sum = 11
-        } else if (countList[x] === 10) {
-            sum = 1;
-        } else if (countList[x] < 10) {
-            sum = countList[x];
-        } else if (countList[x] === 22) {
-            sum = 22
-        } else if (countList[x] === 33) {
-            sum = 33;
-        } else {
-            suhdSplit = String(countList[x]).split('');
-            sum = eval(suhdSplit.join('+'));
-            suhdSumList.push(sum);
-            x = eval(countList.join('+'));
-            var xx = String(x).split('');
-            sum = eval(xx.join('+'));
-            y = eval(suhdSplit.join('+'));
-        };
-        dfList.push(sum);
-    };
-
-    count = 0;
-    for (let i = 0; i < dfList.length; i++) {
-        count += dfList[i];
-    };
-    if (count < 10) {
-        sum = count;
-        suhdNum.innerHTML = '<b>' +sum+ '</b>';
-    } else if (count === 10){
-        sum = 1;
-        suhdNum.innerHTML = '10/<b>'+ 1+ '</b>';
-    } else if (count === 11 || count === 22 || count === 33) {
-        mSplit = String(count).split('');
-        sum = eval(mSplit.join('+'));
-        suhdNum.innerHTML = count + '/<b>' +sum+ '</b>';
-    } else {
-        mSplit = String(count).split('');
-        sum = eval(mSplit.join('+'));
-        suhdNum.innerHTML = '<b>' +sum+ '</b>';
+    if (countHold < 10) {
+        dbTotalSum = countHold;
+        nSum = countHold;
+        suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+    } else if (countHold === 10) {
+        dbTotalSum = 10;
+        nSum = 1;
+        suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+    } else if (countHold === 11) {
+        dbTotalSum = 11;
+        nSum = 2
+        suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+    } else if (countHold === 22) {
+        dbTotalSum = 22;
+        nSum = 4
+        suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+    } else if (countHold === 33) {
+        dbTotalSum = 33;
+        nSum = 6;
+        suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+    } else if (countHold > 10) {
+        dbTotalSum = countHold;
+        dbSplit = String(countHold).split('');
+        nSum = eval(dbSplit.join('+'));
+        if (nSum < 10) {
+            dbTotalSum;
+            nSum;
+            suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+        } else if (nSum === 10) {
+            dbTotalSum = 10;
+            nSum = 1;
+            suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+        } else if (nSum === 11) {
+            dbTotalSum = 11;
+            nSum = 2;
+            suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+        } else if (nSum === 22) {
+            dbTotalSum = 22;
+            nSum = 4;
+            suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+        } else if (nSum === 33) {
+            dbTotalSum = 33;
+            nSum = 6;
+            suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+        } else if (nSum > 10) {
+            dbTotalSum = nSum;
+            dbSplit = String(dbTotalSum).split('');
+            nSum = eval(dbSplit.join('+'));
+            suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+        }
     }
+    
+
 
     suHold = sum;
     // suhdNum.innerHTML = '<b>' +sum+ '</b>';

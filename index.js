@@ -5053,7 +5053,7 @@ your    cool or temper.
     pnfName = cName.value.split(' ');
     count = 0;
     countList = [];
-    pnfName = Array.from(pnfName);
+    // pnfName = Array.from(pnfName);
 
     for (let iterate  = 0; iterate < pnfName.length; iterate++) {
 
@@ -5080,9 +5080,10 @@ your    cool or temper.
             } else {
                 count += 0;
             }
+            console.log(count)
         };
         countList.push(count);
-        // console.log(countList);
+        console.log(countList);
         count = 0;
     };
     var pnSplit, sum,  pnSumList = [];
@@ -5395,12 +5396,17 @@ your    cool or temper.
         you believe you deserve, and you'll be less ready to accept defeat,
         failure, or limits in any form. Your ability to take command and provide
         very solid advice will improve, as will your drive, determination, and
-        passion. <br> <br>
+        passion. <br><br>
         People will look to you for good guidance. Other people may even
         attempt to mimic or replicate you. You become more successful, and
         this is where you lay the foundation for future achievement, as well as
-        a life filled with excitement, adventure, and other things that will help
-         
+        a life filled with excitement, adventure, and other things that will help 
+        you go forward in life. You will become entirely self-sufficient as you
+        get older, relying only on yourself for all of your needs. You'll have to
+        work extremely hard to avoid becoming overly picky, too demanding,
+        too arrogant, too self-centered, or too stubborn, to name a few flaws
+        you should be mindful of. It’s possible you may find yourself becoming
+        very irritated and lonely later in life. 
         </p>
     
         `

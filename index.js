@@ -1629,8 +1629,8 @@ calculate.addEventListener('click', ()=> {
         stubborn attitude, a procrastinating propensity, and relationship issues.
         Despite the fact that 8 appears to be associated with the material
         world. It has a spiritual component as well. If you have 8 in your 
-        <span class='red-span'>core chart</span>: <span class='underline'>life path number</span>, <span class='underlinne'>birth number</span>, <span class='underline'>expression/destiny </span>, <span class='underline'>soul</span>
-        urge/heart desire, and personality number, then you have the number
+        <span class='red-span'>core chart</span>: <span class='underline'>life path number</span>, <span class='underlinne'>birth number</span>, <span class='underline'>expression/destiny </span>,
+          <span class='underline'>soul urge/heart desire</span> , and <span class='underline'>personality number</span>, then you have the number
         8 vibration, which is a very strong energy that can be both powerful
         and destructive. Understand that the more 8s you have in your core
         chart, the more opportunities, prosperity, and achievement you will
@@ -7922,7 +7922,7 @@ your    cool or temper.
     <h3 class="bold-description-label">Definition</h3> <br>
     <p>
         Usually derived from your date of birth, which can be discovered by
-        looking at the numbers present (day of birth or life path number). Can
+        looking at the numbers present (day of birth or life path, and name numbers). Can
         be viewed as current challenges that you may experience during your
         lifetime.   
     </p> <br> <br>
@@ -16236,6 +16236,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label ">Personal Month - 11/2</h3> <br>
         <p>
             <br>
+            <p class="blue">Adaptability, relationships, collaboration partnerships, cooperation, receptivity.</p> <br>
             The master number 11's personal month energy is profoundly spiritual in character.
             A month for contemplation on life's greater aims. This month, be a reflection
             of light and motivation for others. Describe your ideals and aspirations. This
@@ -16262,6 +16263,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label ">Personal Month - 22/4</h3> <br>
         <p>
             <br>
+            <p class="blue">Work, foundations, family, health</p> <br>
             The energy of this month is resonant with producing things that are both societal
             and spiritually beneficial. It is realistic, systematic, self-assured, and typically
             finds it simple to enlist the help of others to achieve a common objective. This
@@ -16285,6 +16287,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label ">Personal Month - 33/6</h3> <br>
         <p>
             <br>
+            <p class="blue">Responsibility, family, home, search for peace, balance, love, and harmony.</p> <br>
             This master number's energy is pleasant, caring, and brings about harmony. It
             conjures up images of caring, instructing, and guiding a group of individuals toward
             a common purpose. The predominant focus is home and family. It is an energy
@@ -16705,7 +16708,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
             <p class="blue">Adaptability, relationships, collaboration partnerships, cooperation, receptivity.</p> <br>
             The second day is ideal for being surrounded by friends and family. Now is
-            the moment to work together and interact with others. Today is a good day to take a
+            the moment to work together and -interact with others. Today is a good day to take a
             break. If you require assistance, ask for it since it’s a collaboration day. You can
             feel as if you're going backward rather than forwards. Keep your cool and relax
             so you don't get into any trouble. It's a bad time to do business. Be cautious with

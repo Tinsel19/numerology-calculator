@@ -3427,8 +3427,9 @@ calculate.addEventListener('click', ()=> {
 
     var minorExpressionText = (medNum.textContent).trim();
     var minorExpressionInt = minorExpressionText.split('/');
-
-    if (minorExpressionText === '1' || minorExpressionText === '10/1' || minorExpressionText === '19/1' || minorExpressionInt[minorExpressionInt.length -1] === '1') {
+    if (minorExpressionText === '0' || minorExpressionText === '0/0') {
+        memeText.innerHTML = ''
+    } else if (minorExpressionText === '1' || minorExpressionText === '10/1' || minorExpressionText === '19/1' || minorExpressionInt[minorExpressionInt.length -1] === '1') {
         memeText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
@@ -4309,8 +4310,9 @@ calculate.addEventListener('click', ()=> {
 
     var minorSoulUrgeText = (msuhdNum.textContent).trim();
     var minorSoulUrgeInt = minorSoulUrgeText.split('/');
-
-    if (minorSoulUrgeText === '1' || minorSoulUrgeText === '10/1' || minorSoulUrgeInt[minorSoulUrgeInt.length - 1] === '1')  {
+    if (minorSoulUrgeText === '0' || minorExpressionText === '0/0') {
+        msuhdText.innerHTML = '';
+    } else if (minorSoulUrgeText === '1' || minorSoulUrgeText === '10/1' || minorSoulUrgeInt[minorSoulUrgeInt.length - 1] === '1')  {
 
         msuhdText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
@@ -5053,7 +5055,6 @@ your    cool or temper.
     pnfName = cName.value.split(' ');
     count = 0;
     countList = [];
-    // pnfName = Array.from(pnfName);
 
     for (let iterate  = 0; iterate < pnfName.length; iterate++) {
 
@@ -5080,10 +5081,8 @@ your    cool or temper.
             } else {
                 count += 0;
             }
-            console.log(count)
         };
         countList.push(count);
-        console.log(countList);
         count = 0;
     };
     var pnSplit, sum,  pnSumList = [];
@@ -5125,7 +5124,9 @@ your    cool or temper.
     var minorPerText = (mpNum.textContent).trim();
     var minorPerInt = (minorPerText.split('/'));
 
-    if (minorPerText === '1') {
+    if (minorPerText === '0' || minorPerText === '0/0') {
+        mperText.innerHTML = '';
+    } else if (minorPerText === '1') {
         mperText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
@@ -7681,6 +7682,9 @@ your    cool or temper.
 
 
     filteredNum = mainNumString;
+    if (filteredNum === '' || filteredNum === ' ') {
+        filteredNum = 'None';
+    }
     klNum.innerHTML = filteredNum;
 
     var klcText = (klNum.textContent).trim();
@@ -7703,7 +7707,9 @@ your    cool or temper.
     for (let i = 0; i <= klLoopList.length; i++) {
         klcText = klLoopList[i];
 
-        if (klcText === '1' || klcText === '10/1' || klcInt[klcInt.length - 1] === '1') {
+        if (klcText = 'None') {
+            klString = ''
+        } else if (klcText === '1' || klcText === '10/1' || klcInt[klcInt.length - 1] === '1') {
             klString += `
             
             

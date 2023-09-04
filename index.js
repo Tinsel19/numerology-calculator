@@ -1629,7 +1629,7 @@ calculate.addEventListener('click', ()=> {
         stubborn attitude, a procrastinating propensity, and relationship issues.
         Despite the fact that 8 appears to be associated with the material
         world. It has a spiritual component as well. If you have 8 in your 
-        <span class='red-span'>core chart</span>: <span class='underline'>life path number</span>, <span class='underlinne'>birth number</span>, <span class='underline'>expression/destiny </span>,
+        <span class='red-span'>core chart</span>: <span class='underline'>life path number</span>, <span class='underline'>birth number</span>, <span class='underline'>expression/destiny </span>,
           <span class='underline'>soul urge/heart desire</span> , and <span class='underline'>personality number</span>, then you have the number
         8 vibration, which is a very strong energy that can be both powerful
         and destructive. Understand that the more 8s you have in your core
@@ -15529,7 +15529,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             numbers = digitArray.map(str => parseInt(str));     
             sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
             if (sum === 10) {
-                cYearNum.innerHTML = '/<b>1</b>';
+                cYearNum.innerHTML = '<b>1</b>';
             } else {
                 cYearNum.innerHTML = '<b>' +sum + '</b>';
             }

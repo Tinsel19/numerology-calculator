@@ -99,7 +99,9 @@ form {
 input {
     background-color: white;
     border: 1px solid transparent;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding-top: 1rem;
+    padding-bottom:  1rem;
     width: 100%;
     background-color: transparent;
     text-align: center;
@@ -202,14 +204,16 @@ summary p{
 details p {
     /* margin-left: 1rem; */
     text-align: left;
-    padding: .8rem .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     line-height: 2;
+    padding-left: 2px;
     
 }
 
 .special {
     padding: 0px;
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 
@@ -413,4 +417,22 @@ select {
     text-decoration: underline;
     color: red;
     font-weight: bold;
+}
+
+@media (max-width: 444px) {
+    .chart{
+        font-size: 1.4rem;
+    }
+    .bluePrint{
+        font-size: 1.4rem;
+    }
+    .span {
+        font-size: 1.3rem;
+    }
+
+    details p{
+        font-size: .9rem;
+    } .main-table p {
+        font-size: .9rem;
+    }
 }

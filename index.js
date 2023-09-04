@@ -14506,16 +14506,17 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
     escyNum.innerHTML = '<b>' + count + '</b>';
     var transitString = `
-    <h3 class="bold-description-label">Definition</h3> <br>
-    <p>
-        The Transits are included in your developmental and will reveal a lot about
-        certain influences in your life during various years. The letters of your first,
-        middle, and last names are used to create transits. Each name represents a different
-        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-        is based on your first name, while the Mental Transit is based on your middle
-        name, and the Spiritual Transit is based on your last name.
-            
-    </p> <br> <br>`;
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            The Transits are included in your developmental and will reveal a lot about
+            certain influences in your life during various years. The letters of your first,
+            middle, and last names are used to create transits. Each name represents a different
+            aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+            is based on your first name, while the Mental Transit is based on your middle
+            name, and the Spiritual Transit is based on your last name.
+                
+        </p> <br> <br>
+    `;
     for (let i = 0; i< transitList.length; i++) {
         switch (transitList[i]) {
             case 'A':

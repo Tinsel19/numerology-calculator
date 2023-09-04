@@ -7840,15 +7840,9 @@ your    cool or temper.
 
 
     // Karmic Debt Number
-    var karmicString = `<br> <br>
-    <h3 class="bold-description-label">Definition</h3> <br>
-    <p>
-        Usually derived from your date of birth, which can be discovered by
-        looking at the numbers present (day of birth or life path number). Can
-        be viewed as current challenges that you may experience during your
-        lifetime.   
-    </p> <br> <br>`;
+    var karmicString = ``;
     kdText.innerHTML = '';
+
     // life path 
     kdHold = lpNum.textContent;
     if (kdHold === '13/4') {
@@ -7864,7 +7858,7 @@ your    cool or temper.
     // destiny
     kdHold = edNum.textContent
     if (kdHold === '13/4') {
-        karmicString += ' <br>13/4<br> '
+        karmicString += ' 13/4<br> '
     } else if (kdHold === '14/5') {
         karmicString += ' 14/5<br> '
     } else if (kdHold === '16/7') {
@@ -7917,7 +7911,16 @@ your    cool or temper.
     karmicString = karmicString.trim();
     kdNum.innerHTML = karmicString;
     var kdList = (kdNum.textContent).split(' ');
-    var kdResult = '';
+    var kdResult = `
+    <br> <br>
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        Usually derived from your date of birth, which can be discovered by
+        looking at the numbers present (day of birth or life path number). Can
+        be viewed as current challenges that you may experience during your
+        lifetime.   
+    </p> <br> <br>
+    `;
 
     for (let i = 0; i < kdList.length; i ++) {
         switch ((kdList[i]).trim()) {
@@ -14502,21 +14505,22 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     };
 
     escyNum.innerHTML = '<b>' + count + '</b>';
-    var transitString = '';
+    var transitString = `
+    <h3 class="bold-description-label">Definition</h3> <br>
+    <p>
+        The Transits are included in your developmental and will reveal a lot about
+        certain influences in your life during various years. The letters of your first,
+        middle, and last names are used to create transits. Each name represents a different
+        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
+        is based on your first name, while the Mental Transit is based on your middle
+        name, and the Spiritual Transit is based on your last name.
+            
+    </p> <br> <br>`;
     for (let i = 0; i< transitList.length; i++) {
         switch (transitList[i]) {
             case 'A':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">A Transit</h3> <br> <br> 
                 <p>
@@ -14539,16 +14543,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'B':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">B Transit</h3> <br> <br> 
                 <p>
@@ -14565,16 +14560,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'C':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">C Transit</h3> <br> <br> 
                 <p>
@@ -14593,16 +14579,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'D':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">D Transit</h3> <br> <br> 
                 <p>
@@ -14619,16 +14596,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'E':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">E Transit</h3> <br> <br> 
                 <p>
@@ -14646,16 +14614,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'F':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">F Transit</h3> <br> <br> 
                 <p>
@@ -14675,16 +14634,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'G':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">G Transit</h3> <br> <br> 
                 <p>
@@ -14704,16 +14654,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'H':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">H Transit</h3> <br> <br> 
                 <p>
@@ -14730,16 +14671,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'I':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">I Transit</h3> <br> <br> 
                 <p>
@@ -14756,16 +14688,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'J':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">J Transit</h3> <br> <br> 
                 <p>
@@ -14783,16 +14706,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'K':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">K Transit</h3> <br> <br> 
                 <p>
@@ -14811,16 +14725,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
             case 'L':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">L Transit</h3> <br> <br> 
                 <p>
@@ -14839,16 +14744,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'M':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">M Transit</h3> <br> <br> 
                 <p>
@@ -14865,16 +14761,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             
             case 'N':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">N Transit</h3> <br> <br> 
                 <p>
@@ -14892,152 +14779,98 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
                 `
                 break;
             
-                case 'O':
-                    transitString += `
-                    <h3 class="bold-description-label">Definition</h3> <br>
-                    <p>
-                        The Transits are included in your developmental and will reveal a lot about
-                        certain influences in your life during various years. The letters of your first,
-                        middle, and last names are used to create transits. Each name represents a different
-                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                        is based on your first name, while the Mental Transit is based on your middle
-                        name, and the Spiritual Transit is based on your last name.
-                            
-                    </p> <br> <br>
-                    
-                    <h3 class="bold-description-label">O Transit</h3> <br> <br> 
-                    <p>
-                    It's a worried and stressful period that, if you let it, might have significant health
-                    implications. You might become overly concerned all of the time. It's
-                    understandable because you're responsible for so many things. Perhaps
-                    you'll be drawn to religious and philosophical study. During this time, your
-                    managerial and leadership abilities will improve.
-                    
-                    </p>
-                    `
-                    break;
+            case 'O':
+                transitString += `
+                
+                
+                <h3 class="bold-description-label">O Transit</h3> <br> <br> 
+                <p>
+                It's a worried and stressful period that, if you let it, might have significant health
+                implications. You might become overly concerned all of the time. It's
+                understandable because you're responsible for so many things. Perhaps
+                you'll be drawn to religious and philosophical study. During this time, your
+                managerial and leadership abilities will improve.
+                
+                </p>
+                `
+                break;
 
-                case 'P':
-                    transitString += `
-                    <h3 class="bold-description-label">Definition</h3> <br>
-                    <p>
-                        The Transits are included in your developmental and will reveal a lot about
-                        certain influences in your life during various years. The letters of your first,
-                        middle, and last names are used to create transits. Each name represents a different
-                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                        is based on your first name, while the Mental Transit is based on your middle
-                        name, and the Spiritual Transit is based on your last name.
-                            
-                    </p> <br> <br>
-                    
-                    <h3 class="bold-description-label">P Transit</h3> <br> <br> 
-                    <p>
-                    In your life, new things and people will arrive out of nowhere. You won't be able
-                    to effectively manage your life throughout this time. Avoid taking any risks that aren't
-                    necessary. During this period, you're a little confused. Relationships may also
-                    face difficulties, making it difficult for you to express your true sentiments. So,
-                    make the most of this opportunity to grow spiritually. You will be rewarded for your
-                    abilities and talents throughout this time, and promotion is a definite possibility.
-                    However, it is more of a spiritual period than a time for worldly matters in general
-                    </p>
-                    `
-                    break;
+            case 'P':
+                transitString += `
+                
+                
+                <h3 class="bold-description-label">P Transit</h3> <br> <br> 
+                <p>
+                In your life, new things and people will arrive out of nowhere. You won't be able
+                to effectively manage your life throughout this time. Avoid taking any risks that aren't
+                necessary. During this period, you're a little confused. Relationships may also
+                face difficulties, making it difficult for you to express your true sentiments. So,
+                make the most of this opportunity to grow spiritually. You will be rewarded for your
+                abilities and talents throughout this time, and promotion is a definite possibility.
+                However, it is more of a spiritual period than a time for worldly matters in general
+                </p>
+                `
+                break;
 
-                case 'Q':
-                    transitString += `
-                    <h3 class="bold-description-label">Definition</h3> <br>
-                    <p>
-                        The Transits are included in your developmental and will reveal a lot about
-                        certain influences in your life during various years. The letters of your first,
-                        middle, and last names are used to create transits. Each name represents a different
-                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                        is based on your first name, while the Mental Transit is based on your middle
-                        name, and the Spiritual Transit is based on your last name.
-                            
-                    </p> <br> <br>
-                    
-                    <h3 class="bold-description-label">Q Transit</h3> <br> <br> 
-                    <p>
-                    Under the effect of the Q, your intuition and intelligence are substantially
-                    strengthened. You'll come up with a lot of unique ideas and may even invent
-                    something. At this moment, your problemsolving abilities are exceptional. However,
-                    you've become increasingly unsteady and chaotic. You'll meet some weird and
-                    quirky people, and you'll have to be wary about acting on impulse. Therefore, 
-                    strange and remarkable individuals will be drawn to you in some way, so make
-                    logical judgments. Keep an eye on your finances. This is an excellent time for
-                    financial expansion. You have a strong desire for power and recognition. Your
-                    working environment may undergo significant changes. You have the option of 
-                    changing jobs. This is the time when you truly need to feel valued and worthy
-                    </p>
-                    `
-                    break;
+            case 'Q':
+                transitString += `
+                
+                
+                <h3 class="bold-description-label">Q Transit</h3> <br> <br> 
+                <p>
+                Under the effect of the Q, your intuition and intelligence are substantially
+                strengthened. You'll come up with a lot of unique ideas and may even invent
+                something. At this moment, your problemsolving abilities are exceptional. However,
+                you've become increasingly unsteady and chaotic. You'll meet some weird and
+                quirky people, and you'll have to be wary about acting on impulse. Therefore, 
+                strange and remarkable individuals will be drawn to you in some way, so make
+                logical judgments. Keep an eye on your finances. This is an excellent time for
+                financial expansion. You have a strong desire for power and recognition. Your
+                working environment may undergo significant changes. You have the option of 
+                changing jobs. This is the time when you truly need to feel valued and worthy
+                </p>
+                `
+                break;
 
-                case 'R':
-                    transitString += `
-                    <h3 class="bold-description-label">Definition</h3> <br>
-                    <p>
-                        The Transits are included in your developmental and will reveal a lot about
-                        certain influences in your life during various years. The letters of your first,
-                        middle, and last names are used to create transits. Each name represents a different
-                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                        is based on your first name, while the Mental Transit is based on your middle
-                        name, and the Spiritual Transit is based on your last name.
-                            
-                    </p> <br> <br>
-                    
-                    <h3 class="bold-description-label">R Transit</h3> <br> <br> 
-                    <p>
-                    During this stage, you have a lot of understanding and insight. You'll have to
-                    cope with money, power, and leadership during this period. You have the chance
-                    to improve your financial situation as well as your personal development. It's a
-                    period of extreme ups and downs. You'll have to be extremely cautious and
-                    double-check your activities. This is a moment when you will encounter both the
-                    good and the bad. Therefore, anything you do and any decision you make must
-                    be done with prudence. Keep an eye on what's going on around you
-                    and unfamiliar surroundings.
-                    </p>
-                    `
-                    break;
+            case 'R':
+                transitString += `
+                
+                
+                <h3 class="bold-description-label">R Transit</h3> <br> <br> 
+                <p>
+                During this stage, you have a lot of understanding and insight. You'll have to
+                cope with money, power, and leadership during this period. You have the chance
+                to improve your financial situation as well as your personal development. It's a
+                period of extreme ups and downs. You'll have to be extremely cautious and
+                double-check your activities. This is a moment when you will encounter both the
+                good and the bad. Therefore, anything you do and any decision you make must
+                be done with prudence. Keep an eye on what's going on around you
+                and unfamiliar surroundings.
+                </p>
+                `
+                break;
 
-                case 'S':
-                    transitString += `
-                    <h3 class="bold-description-label">Definition</h3> <br>
-                    <p>
-                        The Transits are included in your developmental and will reveal a lot about
-                        certain influences in your life during various years. The letters of your first,
-                        middle, and last names are used to create transits. Each name represents a different
-                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                        is based on your first name, while the Mental Transit is based on your middle
-                        name, and the Spiritual Transit is based on your last name.
-                            
-                    </p> <br> <br>
-                    
-                    <h3 class="bold-description-label">S Transit</h3> <br> <br> 
-                    <p>
-                    You have a clear mind and are able to express your objectives accurately. It's a
-                    period of universal awakening, and the underlying anxieties and thoughts will
-                    come to the surface as well. During this time, you will achieve true independence
-                    in every meaning of the term. Prepare yourself for sudden changes in your life
-                    that will leave you feeling relieved and refreshed. You will comprehend and
-                    review your dreams. Once you've made the decision to alter your life, be prepared
-                    to face those who want to keep you from doing so. It's an exciting period, full of
-                    new and unexpected experiences.
-                    </p>
-                    `
-                    break;
+            case 'S':
+                transitString += `
+                
+                
+                <h3 class="bold-description-label">S Transit</h3> <br> <br> 
+                <p>
+                You have a clear mind and are able to express your objectives accurately. It's a
+                period of universal awakening, and the underlying anxieties and thoughts will
+                come to the surface as well. During this time, you will achieve true independence
+                in every meaning of the term. Prepare yourself for sudden changes in your life
+                that will leave you feeling relieved and refreshed. You will comprehend and
+                review your dreams. Once you've made the decision to alter your life, be prepared
+                to face those who want to keep you from doing so. It's an exciting period, full of
+                new and unexpected experiences.
+                </p>
+                `
+                break;
 
                 case 'T':
                     transitString += `
-                    <h3 class="bold-description-label">Definition</h3> <br>
-                    <p>
-                        The Transits are included in your developmental and will reveal a lot about
-                        certain influences in your life during various years. The letters of your first,
-                        middle, and last names are used to create transits. Each name represents a different
-                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                        is based on your first name, while the Mental Transit is based on your middle
-                        name, and the Spiritual Transit is based on your last name.
-                            
-                    </p> <br> <br>
+                    
                     
                     <h3 class="bold-description-label">T Transit</h3> <br> <br> 
                     <p>
@@ -15057,16 +14890,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
                 case 'U':
                     transitString += `
-                    <h3 class="bold-description-label">Definition</h3> <br>
-                    <p>
-                        The Transits are included in your developmental and will reveal a lot about
-                        certain influences in your life during various years. The letters of your first,
-                        middle, and last names are used to create transits. Each name represents a different
-                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                        is based on your first name, while the Mental Transit is based on your middle
-                        name, and the Spiritual Transit is based on your last name.
-                            
-                    </p> <br> <br>
+                    
                     
                     <h3 class="bold-description-label">U Transit</h3> <br> <br> 
                     <p>
@@ -15087,16 +14911,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
                 case 'V':
                     transitString += `
-                    <h3 class="bold-description-label">Definition</h3> <br>
-                    <p>
-                        The Transits are included in your developmental and will reveal a lot about
-                        certain influences in your life during various years. The letters of your first,
-                        middle, and last names are used to create transits. Each name represents a different
-                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                        is based on your first name, while the Mental Transit is based on your middle
-                        name, and the Spiritual Transit is based on your last name.
-                            
-                    </p> <br> <br>
+                    
                     
                     <h3 class="bold-description-label">V Transit</h3> <br> <br> 
                     <p>
@@ -15113,16 +14928,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
                 case 'W':
                     transitString += `
-                    <h3 class="bold-description-label">Definition</h3> <br>
-                    <p>
-                        The Transits are included in your developmental and will reveal a lot about
-                        certain influences in your life during various years. The letters of your first,
-                        middle, and last names are used to create transits. Each name represents a different
-                        aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                        is based on your first name, while the Mental Transit is based on your middle
-                        name, and the Spiritual Transit is based on your last name.
-                            
-                    </p> <br> <br>
+                    
                     
                     <h3 class="bold-description-label">W Transit</h3> <br> <br> 
                     <p>
@@ -15139,16 +14945,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
             case 'X':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">X Transit</h3> <br> <br> 
                 <p>
@@ -15167,16 +14964,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
             case 'Y':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">Y Transit</h3> <br> <br> 
                 <p>
@@ -15195,16 +14983,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
             case 'Z':
                 transitString += `
-                <h3 class="bold-description-label">Definition</h3> <br>
-                <p>
-                    The Transits are included in your developmental and will reveal a lot about
-                    certain influences in your life during various years. The letters of your first,
-                    middle, and last names are used to create transits. Each name represents a different
-                    aspect of your consciousness (physical, mental, or spiritual). The Physical Transit
-                    is based on your first name, while the Mental Transit is based on your middle
-                    name, and the Spiritual Transit is based on your last name.
-                        
-                </p> <br> <br>
+                
                 
                 <h3 class="bold-description-label">Z Transit</h3> <br> <br> 
                 <p>

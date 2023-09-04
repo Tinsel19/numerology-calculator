@@ -16574,10 +16574,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     };
     var newYear = (cYearNum.textContent).trim();
     newYear = (newYear.split('/'))[0];
-    // console.log(newYear);
     personalDay = cMonthInt + Number(currentDay) + Number(newYear);
-    // console.log(personalDay)
-    // console.log(personalDay, cMonthInt, currentDay)
 
     if (personalDay <  10) {
         personalDay;

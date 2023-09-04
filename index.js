@@ -15425,9 +15425,6 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     // cDay.innerHTML = day.value
 
     // Personal Year 
-
-    
-
     var sum = 0;
     mSplit = String(currentYear).split('');
     xsum = eval(mSplit.join('+'));
@@ -16577,6 +16574,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     };
 
     personalDay = cMonthInt + Number(currentDay);
+    console.log(personalDay)
     // console.log(personalDay, cMonthInt, currentDay)
 
     if (personalDay <  10) {

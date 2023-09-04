@@ -16631,6 +16631,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         
         <h3 class="bold-description-label red-span">Personal Day Number - 11/2</h3> <br>
         <p>
+        <p class="blue">Adaptability, relationships, collaboration partnerships, cooperation, receptivity.</p> <br>
         The master number 11's personal day energy is profoundly spiritual in character.
         A day for contemplation on life's greater aims. Today, be a reflection of light and
         motivation for others. Describe your ideals and aspirations. This is not a day
@@ -16657,7 +16658,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         
         <h3 class="bold-description-label red-span">Personal Day Number - 22/4</h3> <br>
         <p>
+            
             <br>
+            <p class="blue">Work, foundations, family, health</p> <br>
             The energy of today is resonant with producing things that are both societal
             and spiritually beneficial. It is realistic, systematic, self-assured, and typically
             finds it simple to enlist the help of others to achieve a common objective. Today's

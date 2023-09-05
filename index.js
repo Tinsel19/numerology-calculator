@@ -14492,11 +14492,13 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     var spiritualTransit = sptrNum.textContent;
     var mentalTransit = metrNum.textContent;
     var transitList = [];
+    transitHold = fName.value.split(' ')
     transitList.push(physicalTransit, spiritualTransit, mentalTransit);
     if (transitHold.length === 2) {
         transitList.pop();
     };
-    console.log(transitHold)
+
+    console.log(transitList)
     fNameList = transitList;
     count = 0;
     for (let i = 0; i< yearDiff; i++) {

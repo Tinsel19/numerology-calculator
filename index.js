@@ -1680,8 +1680,9 @@ calculate.addEventListener('click', ()=> {
         law enforcement, top-level administration, management, and
         leadership position are all fairly frequent occupations for 8s
         </p>
+        
         `
-    } else if (sumDayArray === 9) {
+    } else if (sumDayArray === 9) { 
         bdText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
@@ -4620,7 +4621,12 @@ calculate.addEventListener('click', ()=> {
     count = 0;
     countList = [], countHold = 0;
     pnfName = Array.from(pnfName);
+    
     for (let iterate  = 0; iterate < pnfName.length; iterate++) {
+        var L = pnfName[iterate].length
+        if (pnfName[iterate][L - 1] === 'y' || pnfName[iterate][L - 1] === 'Y') {
+            pnfName[iterate]=(pnfName[iterate]).slice(0, -1);
+        }
         for ( let i = 0; i <= pnfName[iterate].length; i++) {
             if (String(pnfName[iterate][i]).toLowerCase() === 'j' ||  String(pnfName[iterate][i]).toLowerCase() === 's'  ) {
                 count += 1;
@@ -4634,7 +4640,7 @@ calculate.addEventListener('click', ()=> {
                 count += 5;
             } else if (String(pnfName[iterate][i]).toLowerCase() === 'f' || String(pnfName[iterate][i]).toLowerCase() === 'x') {
                 count += 6;
-            } else if (String(pnfName[iterate][i]).toLowerCase() === 'g' || String(pnfName[iterate][i]).toLowerCase() === 'p' ) {
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'g' || String(pnfName[iterate][i]).toLowerCase() === 'p' || String(pnfName[iterate][i]).toLowerCase() === 'y'  ) {
                 count += 7;
             } else if (String(pnfName[iterate][i]).toLowerCase() === 'h' || String(pnfName[iterate][i]).toLowerCase() === 'q' || String(pnfName[iterate][i]).toLowerCase() === 'z') {
                 count += 8;
@@ -5088,7 +5094,10 @@ your    cool or temper.
     countList = [];
 
     for (let iterate  = 0; iterate < pnfName.length; iterate++) {
-
+        L = pnfName[iterate].length
+        if (pnfName[iterate][L - 1] === 'y' || pnfName[iterate][L - 1] === 'Y') {
+            pnfName[iterate]=(pnfName[iterate]).slice(0, -1);
+        }
         for ( let i = 0; i <= pnfName[iterate].length; i++) {
 
             if (String(pnfName[iterate][i]).toLowerCase() === 'j' ||  String(pnfName[iterate][i]).toLowerCase() === 's'  ) {
@@ -5103,7 +5112,7 @@ your    cool or temper.
                 count += 5;
             } else if (String(pnfName[iterate][i]).toLowerCase() === 'f' || String(pnfName[iterate][i]).toLowerCase() === 'x') {
                 count += 6;
-            } else if (String(pnfName[iterate][i]).toLowerCase() === 'g' || String(pnfName[iterate][i]).toLowerCase() === 'p' ) {
+            } else if (String(pnfName[iterate][i]).toLowerCase() === 'g' || String(pnfName[iterate][i]).toLowerCase() === 'p' || String(pnfName[iterate][i]).toLowerCase() === 'y' ) {
                 count += 7;
             } else if (String(pnfName[iterate][i]).toLowerCase() === 'h' || String(pnfName[iterate][i]).toLowerCase() === 'q' || String(pnfName[iterate][i]).toLowerCase() === 'z') {
                 count += 8;

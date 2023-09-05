@@ -2908,6 +2908,7 @@ calculate.addEventListener('click', ()=> {
 
     // expression / destiny number 
     var ednfName = fName.value.split(' ');
+    var transitHold = ednfName;
     var count = 0;
     var countList = [];
     var countHold = 0;
@@ -14492,6 +14493,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     var mentalTransit = metrNum.textContent;
     var transitList = [];
     transitList.push(physicalTransit, spiritualTransit, mentalTransit);
+    if (transitHold.length === 2) {
+        transitList.pop();
+    };
+    console.log(transitHold)
     fNameList = transitList;
     count = 0;
     for (let i = 0; i< yearDiff; i++) {

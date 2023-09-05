@@ -300,7 +300,9 @@ calculate.addEventListener('click', ()=> {
     // console.log(sumDayArray, sumMonthArray, sumYearArray)
     
     sum = sumDayArray + sumMonthArray + sumYearArray;
-
+    var ddayHold = sumDayArray;
+    var mmonthHold = sumMonthArray;
+    var yyearHold = sumYearArray;
     var keepDay = sumDayArray;
     var kdHold = sum;
 
@@ -13230,20 +13232,35 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     dayHold, monthHold, yearHold;
     fCha;
 
+    dayHold = ddayHold;
+    monthHold = mmonthHold;
+    yearHold = yyearHold;
     if (dayHold === 11) {
         dayHold =2
     } else if (dayHold === 22) {
         dayHold = 4
-    } else if (dayHold < 10) {
-        dayHold
-    };
+    }
+
     if (monthHold === 11) {
         monthHold = 2
     } else if (monthHold < 10) {
         monthHold
+    } else if (monthHold === 10) {
+        monthHold = 1
+    };
+
+    if (yearHold === 11) {
+        yearHold = 2
+    } else if (yearHold === 22) {
+        yearHold = 4
+    } else if (yearHold === 33) {
+        yearHold = 6
     }
+
     var fAnims, sAnims;
+    
     var fAnim = dayHold - monthHold;
+    console.log(dayHold, monthHold, yearHold)
     if (fAnim < 0) {
         fAnim = fAnim * (-1);
         fAnims = fAnim;
@@ -13254,14 +13271,14 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         fAnim = 1;
         fAnims = 1
     } else if ( fAnim === 11) {
-        fAnim = '11/2'
-        fAnims = 11;
+        fAnim = 2
+        fAnims = 2;
     } else if (fAnim === 22) {
-        fAnim = '22/4';
-        fAnims = 22;
+        fAnim = 4;
+        fAnims = 4;
     } else if (fAnim === 33) {
-        fAnim = '33/6';
-        fAnims = 33;
+        fAnim = 6;
+        fAnims = 6;
     } else if (fAnim > 10) {
         mSplit = String(fAnim).split('');
         fAnim = eval(mSplit.join('+'));
@@ -13558,18 +13575,41 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         sAnim = 1;
         sAnims = 1
     } else if ( sAnim === 11) {
-        sAnim = '11/2'
-        sAnims = 11;
+        sAnim = 2;
+        sAnims = 2;
     } else if (sAnim === 22) {
-        sAnim = '22/4';
-        sAnims = 22;
+        sAnim =  4;
+        sAnims = 4;
     } else if (sAnim === 33) {
-        fAnim = '33/6';
-        sAnims = 33;
+        sAnim = 6;
+        sAnims = 6;
     } else if (sAnim > 10) {
         mSplit = String(sAnim).split('');
         sAnim = eval(mSplit.join('+'));
         sAnims = sAnim;
+        if (sAnim < 0) {
+            sAnim = sAnim * (-1);
+            sAnims = sAnim;
+        } else if (sAnim < 10) {
+            sAnim;
+            sAnims = sAnim;
+        } else if (sAnim === 10) {
+            sAnim = 1;
+            sAnims = 1
+        } else if ( sAnim === 11) {
+            sAnim = 2;
+            sAnims = 11;
+        } else if (sAnim === 22) {
+            sAnim =  4;
+            sAnims = 4;
+        } else if (sAnim === 33) {
+            sAnim = 6;
+            sAnims = 6;
+        } else if (sAnim > 10) {
+            mSplit = String(sAnim).split('');
+            sAnim = eval(mSplit.join('+'));
+            sAnims = sAnim;
+        };
     };
     sChaNum.innerHTML = sAnim;
     var sschaText = (sChaNum.textContent).trim();
@@ -14493,7 +14533,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     var mentalTransit = metrNum.textContent;
     var transitList = [];
     transitHold = fName.value.split(' ');
-    
+
     transitList.push(physicalTransit, spiritualTransit, mentalTransit);
     if (transitHold.length === 2) {
         transitList.pop();

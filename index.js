@@ -14445,7 +14445,6 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     } else {
         lastName = ednfName[ednfName.length - 1];
     };
-
     
     if (currentYear === yearNum) {
         yearDiff = 1;
@@ -15462,7 +15461,6 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
     // Personal Cycles 
     cYear.innerHTML = currentYear;
-    // cDay.innerHTML = day.value
 
     // Personal Year 
     var sum = 0;

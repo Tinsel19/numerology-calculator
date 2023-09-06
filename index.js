@@ -10173,8 +10173,7 @@ your    cool or temper.
     monthHold;
     if (monthHold < 10) {
         monthHold;
-    }
-    if (monthHold === 10) {
+    }else if (monthHold === 10) {
         monthHold = 1;
     } else if (monthHold === 11) {
         monthHold = '11/2';
@@ -10184,8 +10183,9 @@ your    cool or temper.
     var fpHold;
     var lpHoldList = lpNum.textContent.split('/');
     var lpHoldText = lpNum.textContent;
+
     if (lpHoldList.length === 1) {
-        fpHold = Number(lpHoldText[0])
+        fpHold = Number(lpHoldText)
     } else if (lpHoldList.length > 1) {
         if (lpHoldText === '11/2') {
             fpHold = '11/2'
@@ -10198,6 +10198,7 @@ your    cool or temper.
         }
     };
 
+    console.log(fpHold)
     if (fpHold === 1) {
         fpCycle.innerHTML = 'from birth to age 0 - 26';
         fpCycleNum.innerHTML = monthHold
@@ -10592,7 +10593,7 @@ your    cool or temper.
     lpHoldList = lpNum.textContent.split('/');
     lpHoldText = lpNum.textContent;
     if (lpHoldList.length === 1) {
-        spHold = Number(lpHoldText[0])
+        spHold = Number(lpHoldText)
     } else if (lpHoldList.length > 1) {
         if (lpHoldText === '11/2') {
             spHold = '11/2'
@@ -11079,7 +11080,7 @@ your    cool or temper.
     lpHoldList = lpNum.textContent.split('/');
     lpHoldText = lpNum.textContent;
     if (lpHoldList.length === 1) {
-        tpHold = Number(lpHoldText[0])
+        tpHold = Number(lpHoldText)
     } else if (lpHoldList.length > 1) {
         if (lpHoldText === '11/2') {
             tpHold = '11/2'
@@ -11606,7 +11607,7 @@ your    cool or temper.
     lpHoldList = lpNum.textContent.split('/');
     lpHoldText = lpNum.textContent;
     if (lpHoldList.length === 1) {
-        fpHold = Number(lpHoldText[0])
+        fpHold = Number(lpHoldText)
     } else if (lpHoldList.length > 1) {
         if (lpHoldText === '11/2') {
             fpHold = '11/2'
@@ -12212,7 +12213,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     lpHoldList = lpNum.textContent.split('/');
     lpHoldText = lpNum.textContent;
     if (lpHoldList.length === 1) {
-        spHold = Number(lpHoldText[0])
+        spHold = Number(lpHoldText)
     } else if (lpHoldList.length > 1) {
         if (lpHoldText === '11/2') {
             spHold = '11/2'
@@ -12586,7 +12587,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     lpHoldText = lpNum.textContent;
 
     if (lpHoldList.length === 1) {
-        tpHold = Number(lpHoldText[0])
+        tpHold = Number(lpHoldText)
     } else if (lpHoldList.length > 1) {
         if (lpHoldText === '11/2') {
             tpHold = '11/2'
@@ -12939,7 +12940,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     lpHoldList = lpNum.textContent.split('/');
     lpHoldText = lpNum.textContent;
     if (lpHoldList.length === 1) {
-        fpHold = Number(lpHoldText[0])
+        fpHold = Number(lpHoldText)
     } else if (lpHoldList.length > 1) {
         if (lpHoldText === '11/2') {
             fpHold = '11/2'

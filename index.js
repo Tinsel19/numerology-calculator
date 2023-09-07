@@ -558,7 +558,7 @@ calculate.addEventListener('click', ()=> {
             destiny, soul urge, and personality numbers. 
             </p>
             `
-        } else if (lifePathText === '1' || lifePathNum[lifePathNum.length - 1] === 1) {
+        } else if (lifePathText === '1' || lifePathText === '10/1' || lifePathText === '19/1' || lifePathNum[lifePathNum.length - 1] === 1) {
             lpText.innerHTML = `
             <h3 class="bold-description-label">Definition</h3> <br>
             <p> 
@@ -5379,6 +5379,16 @@ your    cool or temper.
 
 
     // Maturity Number 
+    var lifePath = ((lpNum.textContent).trim()).split('/');
+    lpHold = Number(lifePath[lifePath.length - 1]);
+    mSplit = String(lpHold).split('');
+    lpHold = eval(mSplit.join('+'));
+    
+    var expPath = ((edNum.textContent).trim()).split('/');
+    edHold = Number(expPath[expPath.length - 1])
+    mSplit = String(edHold).split('');
+    edHold = eval(mSplit.join('+'));
+    
     count = lpHold + edHold;
     mSplit = String(count).split('');
     sum = eval(mSplit.join('+'));

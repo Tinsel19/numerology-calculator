@@ -448,7 +448,8 @@ select {
 
 @media(min-width: 445px) and(max-width: 750px) {
     .bold-head p {
-        font-size: .8rem;
+        font-size: .7rem;
         text-align: center;
+        
     }
 }

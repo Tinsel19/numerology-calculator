@@ -7460,33 +7460,47 @@ your    cool or temper.
     count = 0;
     var filtered, filteredList = [];
     for (let i = 0; i < ednfName.length; i++ ) {
-        filtered = Array.from(new Set((ednfName[i]).toLowerCase().split(''))).toString();
+        filtered =  Array.from(new Set((ednfName[i]).toLowerCase().split(''))).toString();
         filteredList.push(filtered);
     };
+    console.log(filteredList)
+    var filteredNum = new Set();
     for (let iterate  = 0; iterate < filteredList.length; iterate++) {
         for ( let i = 0; i <= filteredList[iterate].length; i++) {
 
             if (String(filteredList[iterate][i]).toLowerCase() === 'a' ||  String(filteredList[iterate][i]).toLowerCase() === 'j' || String(filteredList[iterate][i]).toLowerCase() === 's' ) {
                 count += 1;
+                filteredNum.add('1')
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'b' || String(filteredList[iterate][i]).toLowerCase() === 'k' || String(filteredList[iterate][i]).toLowerCase() === 't') {
-                count += 1;
+                count += 2;
+                filteredNum.add('2')
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'c' || String(filteredList[iterate][i]).toLowerCase() === 'l' || String(filteredList[iterate][i]).toLowerCase() === 'u') {
-                count += 1;
+                count += 3;
+                filteredNum.add('3')
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'd' || String(filteredList[iterate][i]).toLowerCase() === 'm' || String(filteredList[iterate][i]).toLowerCase() === 'v') {
-                count += 1;
+                count += 4;
+                filteredNum.add('4')
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'e' || String(filteredList[iterate][i]).toLowerCase() === 'n' || String(filteredList[iterate][i]).toLowerCase() === 'w') {
-                count += 1;
+                count += 5;
+                filteredNum.add('5')
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'f' || String(filteredList[iterate][i]).toLowerCase() === 'o' || String(filteredList[iterate][i]).toLowerCase() === 'x') {
-                count += 1;
+                count += 6;
+                filteredNum.add('6')
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'g' || String(filteredList[iterate][i]).toLowerCase() === 'p' || String(filteredList[iterate][i]).toLowerCase() === 'y') {
-                count += 1;
+                count += 7;
+                filteredNum.add('7')
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'h' || String(filteredList[iterate][i]).toLowerCase() === 'q' || String(filteredList[iterate][i]).toLowerCase() === 'z') {
-                count += 1;
+                count += 8;
+                filteredNum.add('8')
             } else if (String(filteredList[iterate][i]).toLowerCase() === 'i' || String(filteredList[iterate][i]).toLowerCase() === 'r' ) {
-                count += 1;
+                count += 9;
+                filteredNum.add('9')
             }
         };
     };
+    // console.log(filteredNum.size)
+    var filteredLen = Array.from(filteredNum)
+    count = filteredLen.length
     ssNum.innerHTML = count;
     
 
@@ -7533,7 +7547,7 @@ your    cool or temper.
     }
     var test = mainNumString.split(',');
     var testLength = 9 - test.length;
-    ssNum.innerHTML = testLength;
+    // ssNum.innerHTML = testLength;
 
     // for (let i = 0; i < )
     var subConText = (ssNum.textContent).trim();

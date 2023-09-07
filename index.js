@@ -332,8 +332,10 @@ calculate.addEventListener('click', ()=> {
             numbers = digitArray.map(str => parseInt(str));     
             sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
             lpHold = sum;
-            if (sum === 10) {
-                lpNum.innerHTML = numberString + '/' + 10 + '/<b>1</b>';
+            if (Number(numberString) = 19){
+                lpNum.innerHTML =  19 + '/<b>1</b>';
+            } else if (sum === 10) {
+                lpNum.innerHTML =  10 + '/<b>1</b>';
             } else {
                 lpNum.innerHTML = lsum + '/<b>' +sum + '</b>';
             }
@@ -5940,8 +5942,13 @@ your    cool or temper.
         intMonthNum = 3;
     }
     sumAttitude = intDayNum + intMonthNum;
+    // console.log(sumAttitude)
     if (sumAttitude === 10) {
         sumAttitude = 1;
+    } else if (sumAttitude === 11) {
+        sumAttitude = '11/2';
+    } else if (sumAttitude === 22) {
+        sumAttitude = '22/4'
     } else if (sumAttitude > 10) {
         mSplit = String(sumAttitude).split('');
         sum = eval(mSplit.join('+'));
@@ -8288,7 +8295,7 @@ your    cool or temper.
         }
 
     };
-    console.log(count)
+    // console.log(count)
     if (count < 10) {
         count;
     } else if (count === 10) {
@@ -10198,7 +10205,7 @@ your    cool or temper.
         }
     };
 
-    console.log(fpHold)
+    // console.log(fpHold)
     if (fpHold === 1) {
         fpCycle.innerHTML = 'from birth to age 0 - 26';
         fpCycleNum.innerHTML = monthHold
@@ -12955,7 +12962,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         }
         ftSum = sum;
     };
-    console.log(ftSum)
+    // console.log(ftSum)
     
     fpHold;
     lpHoldList = lpNum.textContent.split('/');

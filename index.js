@@ -9306,7 +9306,7 @@ your    cool or temper.
 
     // Mental Plane of Expression Number 
     ednfName = fName.value;
-    indexList = ednfName.split(' ');
+    indexList = ednfName.split('');
     count = 0;
     countList = [];
     var finalList = []

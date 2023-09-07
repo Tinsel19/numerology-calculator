@@ -332,7 +332,7 @@ calculate.addEventListener('click', ()=> {
             numbers = digitArray.map(str => parseInt(str));     
             sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
             lpHold = sum;
-            if (Number(numberString) = 19){
+            if (Number(numberString) === 19){
                 lpNum.innerHTML =  19 + '/<b>1</b>';
             } else if (sum === 10) {
                 lpNum.innerHTML =  10 + '/<b>1</b>';

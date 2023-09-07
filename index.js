@@ -5942,8 +5942,10 @@ your    cool or temper.
         intMonthNum = 3;
     }
     sumAttitude = intDayNum + intMonthNum;
-    // console.log(sumAttitude)
-    if (sumAttitude === 10) {
+    console.log(sumAttitude)
+    if (sumAttitude < 10) {
+        sumAttitude;
+    } else if (sumAttitude === 10) {
         sumAttitude = 1;
     } else if (sumAttitude === 11) {
         sumAttitude = '11/2';

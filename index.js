@@ -12914,8 +12914,14 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
     if (ftSum === 10) {
         ftSum = 1;
-    } else if (ftSum === 11 || ftSum === 22 || ftSum === 33 || ftSum < 10) {
+    } else if (ftSum < 10) {
         ftSum;
+    } else if(ftSum === 11) {
+        ftSum = '11/2'
+    } else if (ftSum === 22) {
+        ftSum = '22/4'
+    } else if(ftSum === 33) {
+        ftSum = '33/6'
     } else if (ftSum > 10) {
         mSplit = String(ftSum).split('');
         sum = eval(mSplit.join('+'));
@@ -12932,9 +12938,24 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         } else if (sum > 10) {
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
+            if (sum < 10) {
+                sum;
+            } else if (sum === 10) {
+                sum = 1
+            } else if (sum === 11) {
+                sum = '11/2'
+            } else if ( sum === 22 ) {
+                sum = '22/4'
+            } else if (sum === 33) {
+                sum === '33/6';
+            } else if (sum > 10) {
+                mSplit = String(sum).split('');
+                sum = eval(mSplit.join('+'));
+            }
         }
         ftSum = sum;
     };
+    console.log(ftSum)
     
     fpHold;
     lpHoldList = lpNum.textContent.split('/');
@@ -13261,7 +13282,6 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     var fAnims, sAnims;
     
     var fAnim = dayHold - monthHold;
-    console.log(dayHold, monthHold, yearHold)
     if (fAnim < 0) {
         fAnim = fAnim * (-1);
         fAnims = fAnim;
@@ -13565,6 +13585,31 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
     // Second Challenge 
     sAnims;
+    dayHold = ddayHold;
+    monthHold = mmonthHold;
+    yearHold = yyearHold;
+    if (dayHold === 11) {
+        dayHold =2
+    } else if (dayHold === 22) {
+        dayHold = 4
+    }
+
+    if (monthHold === 11) {
+        monthHold = 2
+    } else if (monthHold < 10) {
+        monthHold
+    } else if (monthHold === 10) {
+        monthHold = 1
+    };
+
+    if (yearHold === 11) {
+        yearHold = 2
+    } else if (yearHold === 22) {
+        yearHold = 4
+    } else if (yearHold === 33) {
+        yearHold = 6
+    }
+
     var sAnim = yearHold - dayHold;
     if (sAnim < 0) {
         sAnim = sAnim * (-1);
@@ -13864,7 +13909,32 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         `
     } 
 
-    // Third Challenge 
+    // Third Challenge
+    dayHold = ddayHold;
+    monthHold = mmonthHold;
+    yearHold = yyearHold;
+    if (dayHold === 11) {
+        dayHold =2
+    } else if (dayHold === 22) {
+        dayHold = 4
+    }
+
+    if (monthHold === 11) {
+        monthHold = 2
+    } else if (monthHold < 10) {
+        monthHold
+    } else if (monthHold === 10) {
+        monthHold = 1
+    };
+
+    if (yearHold === 11) {
+        yearHold = 2
+    } else if (yearHold === 22) {
+        yearHold = 4
+    } else if (yearHold === 33) {
+        yearHold = 6
+    }
+ 
     var tAnim = sAnims - fAnims;
     // console.log(sAnims);
     // console.log(fAnims)
@@ -14123,6 +14193,31 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     } 
 
     // Forth Challenge 
+    dayHold = ddayHold;
+    monthHold = mmonthHold;
+    yearHold = yyearHold;
+    if (dayHold === 11) {
+        dayHold =2
+    } else if (dayHold === 22) {
+        dayHold = 4
+    }
+
+    if (monthHold === 11) {
+        monthHold = 2
+    } else if (monthHold < 10) {
+        monthHold
+    } else if (monthHold === 10) {
+        monthHold = 1
+    };
+
+    if (yearHold === 11) {
+        yearHold = 2
+    } else if (yearHold === 22) {
+        yearHold = 4
+    } else if (yearHold === 33) {
+        yearHold = 6
+    }
+
     var ftAnim = yearHold - monthHold;
     if (ftAnim < 0) {
         ftAnim = ftAnim * (-1)
@@ -14440,14 +14535,16 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
     // Spiritual Transit
     ednfName = fName.value.split(' ');
-    lastName = ednfName[ednfName.length - 1];
-
+    lastName = (ednfName[ednfName.length - 1]).toLowerCase();
+    // console.log(lastName)
+    fNameList = [];
     emptyNameString = '';
     firstName = lastName.repeat(yearDiff/2);
     fNameList = firstName.split('');
 
     
     for (let i = 0; i< yearDiff; i++) {
+        // console.log(fNameList[i])
         if (String(fNameList[i]).toLowerCase() === 'a' ||  String(fNameList[i]).toLowerCase() === 'j' || String(fNameList[i]).toLowerCase() === 's' ) {
             emptyNameString += (fNameList[i]) ;
        } else if (String(fNameList[i]).toLowerCase() === 'b' || String(fNameList[i]).toLowerCase() === 'k' || String(fNameList[i]).toLowerCase() === 't') {
@@ -14467,10 +14564,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         } else if (String(fNameList[i]).toLowerCase() === 'i' || String(fNameList[i]).toLowerCase() === 'r' ) {
             emptyNameString += (fNameList[i]).repeat(9);
         }
-    }
-
+    };
+    // console.log(emptyNameString)
     
-    transit = emptyNameString[yearDiff -1];
+    transit = emptyNameString[yearDiff ];
     sptrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
     // Mental Transit
@@ -14525,7 +14622,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
 
     
-    transit = emptyNameString[yearDiff -1];
+    transit = emptyNameString[yearDiff ];
     metrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
     // Essence Cycle
@@ -15515,7 +15612,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     xsum = eval(mSplit.join('+'));
     sumYearArray = xsum;
 
-    if (Number(dayString) < 10) {
+    if (Number(dayString) < 10) { 
         sumDayArray = Number(dayString);
     } else if (Number(dayString) === 10) {
         sumDayArray = 1;
@@ -16677,6 +16774,20 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     } else if (personalDay > 10) {
         mSplit = String(personalDay).split('');
         personalDay = eval(mSplit.join('+'));
+        if (personalDay <  10) {
+            personalDay;
+        } else if (personalDay === 10) {
+            personalDay = 1;
+        } else if (personalDay === 11) {
+            personalDay = '11/2'
+        } else if (personalDay === 22) {
+            personalDay = '22/4'
+        } else if (personalDay === 33) {
+            personalDay = '33/6'
+        } else if (personalDay > 10) {
+            mSplit = String(personalDay).split('');
+            personalDay = eval(mSplit.join('+'));
+        }
     }
 
     cDayNum.innerHTML = '<b>'+personalDay +'</b>';

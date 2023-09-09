@@ -9347,6 +9347,25 @@ your    cool or temper.
             mSplit = String(countList[i]).split('');
             sum = eval(mSplit.join('+'));
             finalList.push(sum);
+            if (countList[i] < 10) {
+                sum = countList[i];
+                finalList.push(sum);
+            } else if (countList === 10) {
+                sum = 1;
+                finalList.push(sum);
+            } else if (countList[i] === 11) {
+                sum = 11;
+                finalList.push(sum);
+            } else if (countList[i] === 22) {
+                sum = 22;
+            } else if (countList[i] === 33) {
+                sum = 33;
+                finalList.push(sum);
+            } else {
+                mSplit = String(countList[i]).split('');
+                sum = eval(mSplit.join('+'));
+                finalList.push(sum);
+            }
         }
     };
     count = 0;
@@ -9368,6 +9387,7 @@ your    cool or temper.
             sum = eval(mSplit.join('+'));
             count = sum;
             mpoeNum.innerHTML = count;
+            
         } 
     
     } else if (finalList.length > 1) {
@@ -9385,6 +9405,20 @@ your    cool or temper.
                 mSplit = String(countList[i]).split('');
                 sum = eval(mSplit.join('+'));
                 count = sum;
+                if (finalList[i] < 10) {
+                    count = finalList[i];
+                    
+                } else if (finalList[i] === 10) {
+                    count = 1;
+                } else if (finalList[i] === 11 || finalList[i] === 22 || finalList[i] === 33) {
+                    mSplit = String(countList[i]).split('');
+                    sum = eval(mSplit.join('+'));
+                    count = countList[i] + '/' + sum;
+                } else {
+                    mSplit = String(countList[i]).split('');
+                    sum = eval(mSplit.join('+'));
+                    count = sum;
+                }
             }
             sumCount += count
             
@@ -9405,6 +9439,22 @@ your    cool or temper.
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
             mpoeNum.innerHTML = sum;
+            if (sum < 10) {
+                count = sum;
+                mpoeNum.innerHTML = count;
+            } else if (sum === 10) {
+                count = 1;
+                mpoeNum.innerHTML = '10/1';
+            } else if (sum === 11 || sum === 22 || sum === 33) {
+                count = sum;
+                mSplit = String(sum).split('');
+                sum = eval(mSplit.join('+'));
+                mpoeNum.innerHTML = count + '/' + sum;
+            } else if (sum > 10) {
+                mSplit = String(sum).split('');
+                sum = eval(mSplit.join('+'));
+                mpoeNum.innerHTML = sum;
+            }
         }
         // count = sum;
         

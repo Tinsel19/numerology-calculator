@@ -3002,6 +3002,26 @@ calculate.addEventListener('click', ()=> {
             dbTotalSum = nSum;
             dbSplit = String(dbTotalSum).split('');
             nSum = eval(dbSplit.join('+'));
+            if (nSum < 10) {
+                dbTotalSum;
+                nSum;
+            } else if (nSum === 10) {
+                dbTotalSum = 10;
+                nSum = 1;
+            } else if (nSum === 11) {
+                dbTotalSum = 11;
+                nSum = 2;
+            } else if (nSum === 22) {
+                dbTotalSum = 22;
+                nSum = 4;
+            } else if (nSum === 33) {
+                dbTotalSum = 33;
+                nSum = 6;
+            } else if (nSum > 10) {
+                dbTotalSum = nSum;
+                dbSplit = String(dbTotalSum).split('');
+                nSum = eval(dbSplit.join('+'));
+            }
         }
     }
    
@@ -3399,6 +3419,26 @@ calculate.addEventListener('click', ()=> {
             dbTotalSum = nSum;
             dbSplit = String(dbTotalSum).split('');
             nSum = eval(dbSplit.join('+'));
+            if (nSum < 10) {
+                dbTotalSum;
+                nSum;
+            } else if (nSum === 10) {
+                dbTotalSum = 10;
+                nSum = 1;
+            } else if (nSum === 11) {
+                dbTotalSum = 11;
+                nSum = 2;
+            } else if (nSum === 22) {
+                dbTotalSum = 22;
+                nSum = 4;
+            } else if (nSum === 33) {
+                dbTotalSum = 33;
+                nSum = 6;
+            } else if (nSum > 10) {
+                dbTotalSum = nSum;
+                dbSplit = String(dbTotalSum).split('');
+                nSum = eval(dbSplit.join('+'));
+            }
         }
     }
 
@@ -3759,6 +3799,33 @@ calculate.addEventListener('click', ()=> {
             dbSplit = String(dbTotalSum).split('');
             nSum = eval(dbSplit.join('+'));
             suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+
+            if (nSum < 10) {
+                dbTotalSum;
+                nSum;
+                suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+            } else if (nSum === 10) {
+                dbTotalSum = 10;
+                nSum = 1;
+                suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+            } else if (nSum === 11) {
+                dbTotalSum = 11;
+                nSum = 2;
+                suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+            } else if (nSum === 22) {
+                dbTotalSum = 22;
+                nSum = 4;
+                suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+            } else if (nSum === 33) {
+                dbTotalSum = 33;
+                nSum = 6;
+                suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+            } else if (nSum > 10) {
+                dbTotalSum = nSum;
+                dbSplit = String(dbTotalSum).split('');
+                nSum = eval(dbSplit.join('+'));
+                suhdNum.innerHTML = dbTotalSum + '/<b>' + nSum + '</b>';
+            }
         }
     }
     
@@ -4341,6 +4408,27 @@ calculate.addEventListener('click', ()=> {
             dbTotalSum = nSum;
             dbSplit = String(dbTotalSum).split('');
             nSum = eval(dbSplit.join('+'));
+
+            if (nSum < 10) {
+                dbTotalSum;
+                nSum;
+            } else if (nSum === 10) {
+                dbTotalSum = 10;
+                nSum = 1;
+            } else if (nSum === 11) {
+                dbTotalSum = 11;
+                nSum = 2;
+            } else if (nSum === 22) {
+                dbTotalSum = 22;
+                nSum = 4;
+            } else if (nSum === 33) {
+                dbTotalSum = 33;
+                nSum = 6;
+            } else if (nSum > 10) {
+                dbTotalSum = nSum;
+                dbSplit = String(dbTotalSum).split('');
+                nSum = eval(dbSplit.join('+'));
+            }
         }
     }
     msuhdNum.innerHTML = dbTotalSum + '/' + nSum;
@@ -4721,6 +4809,40 @@ calculate.addEventListener('click', ()=> {
         sum = eval(pnSplit.join('+'));
         pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
         count = sum
+
+        if (count < 10) {
+            count;
+            pNum.innerHTML = '<b>' + count + '</b>' ;
+        } else if (count == 10) {
+            count = 1;
+            pNum.innerHTML = 10 + '/<b>1</b>' ;
+        } else if (count === 11 || count === 22 || count === 33) {
+            count;
+            pnSplit = String(count).split('');
+            sum = eval(pnSplit.join('+'));
+            pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
+        } else if ( count === 13) {
+            count = 13;
+            sum = 4;
+            pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
+        } else if ( count === 14) {
+            count = 14;
+            sum = 5;
+            pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
+        } else if ( count === 16) {
+            count = 16;
+            sum = 7;
+            pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
+        } else if ( count === 19) {
+            count = 19;
+            sum = 1;
+            pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
+        } else if (count > 10) {
+            pnSplit = String(count).split('');
+            sum = eval(pnSplit.join('+'));
+            pNum.innerHTML = count + '/<b>' +sum+ '</b>' ;
+            count = sum
+        }
     }
     pnHold = count ;
 
@@ -5162,7 +5284,25 @@ your    cool or temper.
         pnSplit = String(count).split('');
         sum = eval(pnSplit.join('+'));
         mpNum.innerHTML = count + '/' +sum ;
-        count = sum
+        count = sum;
+
+        if (count < 10) {
+            count;
+            mpNum.innerHTML =  count  ;
+        } else if (count == 10) {
+            count = 1;
+            mpNum.innerHTML = 10 + '/1' ;
+        } else if (count === 11 || count === 22 || count === 33) {
+            count;
+            pnSplit = String(count).split('');
+            sum = eval(pnSplit.join('+'));
+            mpNum.innerHTML = count + '/' +sum ;
+        } else if (count > 10) {
+            pnSplit = String(count).split('');
+            sum = eval(pnSplit.join('+'));
+            mpNum.innerHTML = count + '/' +sum ;
+            count = sum
+        }
     }
     mpHold = count ;
 
@@ -5420,6 +5560,21 @@ your    cool or temper.
         } else if (sum > 10) {
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
+
+            if (sum < 10) {
+                sum;
+            } else if (sum === 10) {
+                sum  = 1;
+            } else if (sum === 11) {
+                sum = '11/2'
+            } else if (sum === 22) {
+                sum = '22/4'
+            } else if (sum === 33) {
+                sum = '33/6'
+            } else if (sum > 10) {
+                mSplit = String(sum).split('');
+                sum = eval(mSplit.join('+'));
+            }
         }
         mNum.innerHTML = sum;
     }
@@ -5952,7 +6107,6 @@ your    cool or temper.
         intMonthNum = 3;
     }
     sumAttitude = intDayNum + intMonthNum;
-    console.log(sumAttitude)
     if (sumAttitude < 10) {
         sumAttitude;
     } else if (sumAttitude === 10) {
@@ -5977,6 +6131,21 @@ your    cool or temper.
         } else if (sum > 10) {
             mSplit = String(sumAttitude).split('');
             sum = eval(mSplit.join('+'));
+
+            if (sum < 10) {
+                sum;
+            } else if (sum === 10) {
+                sum =1
+            } else if (sum === 11) {
+                sum = '11/2'
+            } else if (sum === 22) {
+                sum = '22/4'
+            } else if (sum === 33) {
+                sum = '33/6'
+            } else if (sum > 10) {
+                mSplit = String(sumAttitude).split('');
+                sum = eval(mSplit.join('+'));
+            }
         }
         sumAttitude = sum;
     }

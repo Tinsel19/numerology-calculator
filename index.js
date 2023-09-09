@@ -9860,7 +9860,7 @@ your    cool or temper.
         countList.push(count);
         count = 0;
     };
-    // console.log(countList)
+
     for (let i = 0; i < countList.length; i++) {
         if (countList[i] < 10) {
             sum = countList[i];
@@ -14774,7 +14774,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     };
 
     
-    var transit = emptyNameString[yearDiff];
+    var transit = emptyNameString.charAt(yearDiff)
     phtrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
     var physicalText = (phtrNum.textContent).trim();
@@ -14791,7 +14791,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     // console.log(lastName)
     fNameList = [];
     emptyNameString = '';
-    firstName = lastName.repeat(yearDiff/2);
+    firstName = lastName.repeat(yearDiff * 10);
     fNameList = firstName.split('');
 
     
@@ -14817,10 +14817,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             emptyNameString += (fNameList[i]).repeat(9);
         }
     };
-    // console.log(emptyNameString)
-    
-    transit = emptyNameString[yearDiff ];
-    sptrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
+    console.log(emptyNameString.length)
+    var xtransit = emptyNameString.charAt(yearDiff - 1);
+    console.log(xtransit, yearDiff)
+    sptrNum.innerHTML = '<b>' + xtransit.toUpperCase() + '</b>';
 
     // Mental Transit
     var ednfName = fName.value.split(' ');
@@ -14874,7 +14874,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
 
     
-    transit = emptyNameString[yearDiff ];
+    transit = emptyNameString.charAt(yearDiff);
     metrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
     // Essence Cycle

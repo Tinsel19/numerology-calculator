@@ -10825,7 +10825,9 @@ your    cool or temper.
     mSplit = String(dayHold).split('');
     sum = eval(mSplit.join('+'));
     dayHold = sum;
-    if (dayHold === 10) {
+    if (dayHold < 10) {
+        dayHold
+    } else if (dayHold === 10) {
         dayHold = 1;
     } else if (dayHold === 11) {
         dayHold = '11/2';
@@ -10833,13 +10835,11 @@ your    cool or temper.
         dayHold = '22/4'
     } else if (dayHold === 33 ) {
         dayHold = '33/6'
-    } else if (dayHold > 11 ) {
+    } else if (dayHold > 10) {
         mSplit = String(dayHold).split('');
         sum = eval(mSplit.join('+'));
         dayHold = sum;
-    }  else {
-        dayHold;
-    };
+    } 
 
     var spHold;
     lpHoldList = lpNum.textContent.split('/');
@@ -10848,11 +10848,11 @@ your    cool or temper.
         spHold = Number(lpHoldText)
     } else if (lpHoldList.length > 1) {
         if (lpHoldText === '11/2') {
-            spHold = '11/2'
+            spHold = '11/2';
         } else if (lpHoldText === '22/4') {
-            spHold = '22/4'
+            spHold = '22/4';
         } else if (lpHoldText === '33/6') {
-            spHold = '33/6'
+            spHold = '33/6';
         } else if (lpHoldList[lpHoldList.length - 1] < 10) {
             spHold = Number(lpHoldList[lpHoldList.length - 1])
         }

@@ -419,7 +419,24 @@ calculate.addEventListener('click', ()=> {
         You're a born mediator who will make concessions in a relationship for
         the sake of harmony. Just remember that you were born to make a big
         difference in the world, and as a result, you have the power to
-        positively influence a lot of people's lives.
+        positively influence a lot of people's lives. <br><br>
+        Your <b>weaknesses</b> are that you can have extreme stress because you
+        have great expectations for your life, mental turmoil, self-critical, selfconsciousness, worried a lot about the future, situation, or anything.
+        Unhappy, overly self-reflective, nervous, prone to depression and
+        anxiety due to higher frequency or energy from the spiritual realm
+        which you may not be aware of. You can be addicted, impatience,
+        delusions, hardness and stubbornness, misunderstandings, wasted
+        talents, codependent - depended on others instead of self, too
+        sensitive, huge ego, push people away, physical illness, manipulative,
+        lack of confidence, anxiety, and emotionality, as well as a reluctance
+        to pursue your passions. You may find it difficult to adjust to change
+        and are frequently criticized for your lack of ambition. You may find
+        yourself in an unsatisfactory or toxic relationship or environment as a
+        result of your codependency. <br> <br>
+        Know that you can fall anywhere between the positive or the negative
+        of this life path, and if you have the majority of the positive, that's
+        fantastic. Your life path number is also influenced by your birthdate,
+        destiny, soul urge, and personality numbers. 
         </p> 
         `   } else if (lifePathText === '22/4') {
             lpText.innerHTML = `
@@ -14786,7 +14803,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     };
 
     
-    var transit = emptyNameString.charAt(yearDiff)
+    var transit = emptyNameString.charAt(yearDiff - 1)
     phtrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
     var physicalText = (phtrNum.textContent).trim();
@@ -14803,7 +14820,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     // console.log(lastName)
     fNameList = [];
     emptyNameString = '';
-    firstName = lastName.repeat(yearDiff * 10);
+    firstName = lastName.repeat(yearDiff );
     fNameList = firstName.split('');
 
     
@@ -14886,7 +14903,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
 
     
-    transit = emptyNameString.charAt(yearDiff);
+    transit = emptyNameString.charAt(yearDiff - 1);
     metrNum.innerHTML = '<b>' + transit.toUpperCase() + '</b>';
 
     // Essence Cycle

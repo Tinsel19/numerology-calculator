@@ -7975,7 +7975,7 @@ your    cool or temper.
             case 'None':
                 klcText = ''
                 break
-                
+
             case '1':
                 klString += `
             
@@ -9210,9 +9210,9 @@ your    cool or temper.
 
     for ( let i = 0; i < indexList.length; i++) {
         for (let ii = 0; ii < indexList[i].length; ii++) {
-            if (String(indexList[i][ii]).toLowerCase() === 'd' || String(indexList[i][ii]).toLowerCase() === 'm' ) {
+            if (String(indexList[i][ii]).toLowerCase() === 'd' || String(indexList[i][ii]).toLowerCase() === 'm' || String(indexList[i][ii]).toLowerCase() === 'v' ) {
                     count += 4;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'e' || String(indexList[i][ii]).toLowerCase() === 'w') {
+            } else if (String(indexList[i][ii]).toLowerCase() === 'e' || String(indexList[i][ii]).toLowerCase() === 'w' || String(indexList[i][ii]).toLowerCase() === 'n') {
                     count += 5;
             }
             
@@ -9527,15 +9527,9 @@ your    cool or temper.
 
     for ( let i = 0; i < indexList.length; i++) {
         for (let ii = 0; ii < indexList[i].length; ii++) {
-            if (String(indexList[i][ii]).toLowerCase() === 'a' || String(indexList[i][ii]).toLowerCase() === 'j' ) {
+            if (String(indexList[i][ii]).toLowerCase() === 'a' || String(indexList[i][ii]).toLowerCase() === 'j' || String(indexList[i][ii]).toLowerCase() === 's'  ) {
                     count += 1;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'l' ) {
-                    count += 3;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'n' ) {
-                count += 5;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'p' || String(indexList[i][ii]).toLowerCase() === 'g') {
-                count += 7;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'h' ) {
+            }else if (String(indexList[i][ii]).toLowerCase() === 'h' || String(indexList[i][ii]).toLowerCase() === 'q' || String(indexList[i][ii]).toLowerCase() === 'z'  ) {
                 count += 8;
             }
         }
@@ -9888,18 +9882,10 @@ your    cool or temper.
 
     for ( let i = 0; i < indexList.length; i++) {
         for (let ii = 0; ii < indexList[i].length; ii++) {
-            if (String(indexList[i][ii]).toLowerCase() === 'k'  ) {
-                    count += 2;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'u' || String(indexList[i][ii]).toLowerCase() === 'c'  ) {
-                    count += 3;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'v' ) {
-                count += 4;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'f') {
-                count += 6;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'y' ) {
+            if (String(indexList[i][ii]).toLowerCase() === 'g' || String(indexList[i][ii]).toLowerCase() === 'p'   || String(indexList[i][ii]).toLowerCase() === 'y' ) {
                 count += 7;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'q' ) {
-                count += 8;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'i' || String(indexList[i][ii]).toLowerCase() === 'r'  ) {
+                count += 9;
             }
         }
         countList.push(count);
@@ -10191,16 +10177,12 @@ your    cool or temper.
 
     for ( let i = 0; i < indexList.length; i++) {
         for (let ii = 0; ii < indexList[i].length; ii++) {
-            if (String(indexList[i][ii]).toLowerCase() === 's'  ) {
-                    count += 1;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'b' || String(indexList[i][ii]).toLowerCase() === 't'  ) {
+            if (String(indexList[i][ii]).toLowerCase() === 'b' || String(indexList[i][ii]).toLowerCase() === 'k' || String(indexList[i][ii]).toLowerCase() === 't' ) {
                     count += 2;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'o' || String(indexList[i][ii]).toLowerCase() === 'x' ) {
+            } else if (String(indexList[i][ii]).toLowerCase() === 'c' || String(indexList[i][ii]).toLowerCase() === 'l' || String(indexList[i][ii]).toLowerCase() === 'u'   ) {
+                    count += 3;
+            } else if (String(indexList[i][ii]).toLowerCase() === 'f' || String(indexList[i][ii]).toLowerCase() === 'o' || String(indexList[i][ii]).toLowerCase() === 'x'   ) {
                 count += 6;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'z') {
-                count += 8;
-            } else if (String(indexList[i][ii]).toLowerCase() === 'i' || String(indexList[i][ii]).toLowerCase() === 'r' ) {
-                count += 9;
             } 
         }
         countList.push(count);

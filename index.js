@@ -7642,7 +7642,7 @@ your    cool or temper.
         filtered =  Array.from(new Set((ednfName[i]).toLowerCase().split(''))).toString();
         filteredList.push(filtered);
     };
-    console.log(filteredList)
+    // console.log(filteredList)
     var filteredNum = new Set();
     for (let iterate  = 0; iterate < filteredList.length; iterate++) {
         for ( let i = 0; i <= filteredList[iterate].length; i++) {
@@ -10821,10 +10821,7 @@ your    cool or temper.
 
 
     // Second Cycle Life 
-    dayHold;
-    mSplit = String(dayHold).split('');
-    sum = eval(mSplit.join('+'));
-    dayHold = sum;
+    dayHold = ddayHold;
     if (dayHold < 10) {
         dayHold
     } else if (dayHold === 10) {
@@ -10839,6 +10836,23 @@ your    cool or temper.
         mSplit = String(dayHold).split('');
         sum = eval(mSplit.join('+'));
         dayHold = sum;
+
+        if (dayHold < 10) {
+            dayHold
+        } else if (dayHold === 10) {
+            dayHold = 1;
+        } else if (dayHold === 11) {
+            dayHold = '11/2';
+        } else if (dayHold === 22) {
+            dayHold = '22/4'
+        } else if (dayHold === 33 ) {
+            dayHold = '33/6'
+        } else if (dayHold > 10) {
+            mSplit = String(dayHold).split('');
+            sum = eval(mSplit.join('+'));
+            dayHold = sum;
+        } 
+    
     } 
 
     var spHold;
@@ -11299,10 +11313,8 @@ your    cool or temper.
 
 
     // Third Period Cycle 
-    yearHold;
-    mSplit = String(yearHold).split('');
-    sum = eval(mSplit.join('+'));
-    yearHold = sum;
+    yearHold = yyearHold;
+    
     if (yearHold < 10) {
         yearHold;
     } else if (yearHold === 10) {
@@ -14817,9 +14829,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             emptyNameString += (fNameList[i]).repeat(9);
         }
     };
-    console.log(emptyNameString.length)
+    // console.log(emptyNameString.length)
     var xtransit = emptyNameString.charAt(yearDiff - 1);
-    console.log(xtransit, yearDiff)
+    // console.log(xtransit, yearDiff)
     sptrNum.innerHTML = '<b>' + xtransit.toUpperCase() + '</b>';
 
     // Mental Transit

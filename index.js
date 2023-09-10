@@ -7952,7 +7952,7 @@ your    cool or temper.
     var klcText = (klNum.textContent).trim();
     var klcInt = klcText.split('/');
     var klLoopList = klcText.split(',');
-    klText.innerHTML = `
+    var klString = `
     <h3 class="bold-description-label">Definition</h3> <br>
     <p>
         Karmic Lessons disclose weaknesses or undeveloped parts. It is
@@ -7961,33 +7961,41 @@ your    cool or temper.
         insight into what you can do to help you overcome some of the
         potential disadvantages of the missing characteristics these numbers
         signify
-    </p> <br> <br>`
+    </p> <br> <br>
+    `
 
-    var klString = ``
     
+    // console.log(klLoopList.length)
+    for (let i = 0; i < klLoopList.length; i++) {
+        klcText = (klLoopList[i]).trim();
+        console.log(klcText)
 
-    for (let i = 0; i <= klLoopList.length; i++) {
-        klcText = klLoopList[i];
+        switch (klcText) {
 
-        if (klcText = 'None') {
-            klString = ''
-        } else if (klcText === '1' || klcText === '10/1' || klcInt[klcInt.length - 1] === '1') {
-            klString += `
+            case 'None':
+                klcText = ''
+                break
+                
+            case '1':
+                klString += `
             
             
-            <h3 class="bold-description-label">Karmic Lesson Number 1</h3> <br>
-            <p>
-            You lack confidence, are afraid to lead, and need to build strength. Be
-            more self-reliant by learning to think for yourself. The moral of the
-            lesson is to be more determined, decisive, resolute, and independent.
-            When the situation calls for it, try to be more aggressive. You may
-            work on being more confident in your daily chores, with others, and
-            while evaluating your own decisions, talents, and actions. 
-            </p> <br><br>
-        
-            `
-        } else if (klcText === '2' || klcText === '20/2' || klcInt[klcInt.length - 1] === '2') {
-            klString += `
+                <h3 class="bold-description-label">Karmic Lesson Number 1</h3> <br>
+                <p>
+                You lack confidence, are afraid to lead, and need to build strength. Be
+                more self-reliant by learning to think for yourself. The moral of the
+                lesson is to be more determined, decisive, resolute, and independent.
+                When the situation calls for it, try to be more aggressive. You may
+                work on being more confident in your daily chores, with others, and
+                while evaluating your own decisions, talents, and actions. 
+                </p> <br><br>
+            
+                `
+    
+                break;
+            
+            case '2':
+                klString += `
             
             
             
@@ -8004,10 +8012,11 @@ your    cool or temper.
             </p> <br> <br>
         
             `
-        } else if (klcText === '3' || klcText === '12/3' || klcText === '21/3' || klcText === '30/3' || klcInt[klcInt.length - 1] === '3') {
-            klString += `
-            
-            
+            break;
+        
+            case '3':
+                klString += `
+
             
             <h3 class="bold-description-label">Karmic Lesson Number 3</h3> <br>
             <p>
@@ -8017,8 +8026,10 @@ your    cool or temper.
             </p>
         
             `
-        } else if (klcText === '4' || klcText === '13/4' || klcText === '31/4' || klcInt[klcInt.length - 1] === '4' ) {
-            klString += `
+            break;
+
+            case '4':
+                klString += `
             
             
             
@@ -8031,8 +8042,10 @@ your    cool or temper.
             </p> <br> <br>
         
             `
-        } else if (klcText === '5' || klcText === '14/5' || klcText === '23/5' || klcInt[klcInt.length - 1] === '5') {
-            klString += `
+            break;
+
+            case '5':
+                klString += `
             
             
             
@@ -8044,8 +8057,10 @@ your    cool or temper.
             </p> <br> <br>
         
             `
-        } else if (klcText === '6' || klcText === '15/6' || klcText === '24/6' || klcInt[klcInt.length - 1] === '6') {
-            klString += `
+            break;
+
+            case '6':
+                klString += `
             
             
             <h3 class="bold-description-label">Karmic Lesson Number 6</h3> <br>
@@ -8055,8 +8070,11 @@ your    cool or temper.
             </p> <br> <br>
         
             `
-        } else if (klcText === '7' || klcText === '16/7' || klcText === '25/7' || klcInt[klcInt.length - 1] === '7') {
-            klString += `
+
+            break;
+
+            case '7':
+                klString += `
             
             
             <h3 class="bold-description-label">Karmic Lesson Number 7</h3> <br>
@@ -8070,8 +8088,10 @@ your    cool or temper.
             </p> <br> <br>
         
             `
-        } else if (klcText === '8' || klcText === '17/8' || klcText === '26/8' || klcInt[klcInt.length - 1] === '8') {
-            klString += `
+            break;
+
+            case '8':
+                klString =  `
             
             
             <h3 class="bold-description-label">Karmic Lesson Number 8</h3> <br>
@@ -8085,8 +8105,10 @@ your    cool or temper.
             </p> <br> <br>
         
             `
-        } else if (klcText === '9' || klcText === '18/9' || klcText === '27/9' || klcInt[klcInt.length -1] === '9') {
-            klString += `
+            break;
+
+            case '9':
+                klString += `
             
             
             <h3 class="bold-description-label">Karmic Lesson Number 9</h3> <br>
@@ -8098,10 +8120,16 @@ your    cool or temper.
             </p>
         
             `
-        } 
-
+            break;
         
-    } klText.innerHTML = klText.innerHTML + klString;
+            default:
+                break;
+        }
+        
+
+        // console.log('hi')
+        
+    }; klText.innerHTML = klString;
 
     
     

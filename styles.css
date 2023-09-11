@@ -14,7 +14,7 @@ body {
     /* padding: 2rem; */
     border-radius: 10px;
     box-shadow: 2px 3px 5px grey;
-    background-color: white;
+    background-color: #ffc439;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -385,9 +385,12 @@ select {
     display: grid;
     grid-template-columns: 1fr;
 }
-
+.hide {
+    background-color: white;
+}
 .main-table p{ 
     font-size: .9rem;
+
 }
 
 

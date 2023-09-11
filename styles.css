@@ -438,6 +438,7 @@ input::after {
 
 }
 
+
 @media (max-width: 444px) {
     .chart{
         font-size: 1.4rem;

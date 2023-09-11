@@ -7952,7 +7952,7 @@ your    cool or temper.
     var klcText = (klNum.textContent).trim();
     var klcInt = klcText.split('/');
     var klLoopList = klcText.split(',');
-    var klString = `
+    klText.innerHTML = `
     <h3 class="bold-description-label">Definition</h3> <br>
     <p>
         Karmic Lessons disclose weaknesses or undeveloped parts. It is
@@ -7968,12 +7968,11 @@ your    cool or temper.
     // console.log(klLoopList.length)
     for (let i = 0; i < klLoopList.length; i++) {
         klcText = (klLoopList[i]).trim();
-        console.log(klcText)
 
         switch (klcText) {
 
             case 'None':
-                klcText = ''
+                klString = ''
                 break
 
             case '1':
@@ -8129,7 +8128,7 @@ your    cool or temper.
 
         // console.log('hi')
         
-    }; klText.innerHTML = klString;
+    }; klText.innerHTML = klText.innerHTML + klString;
 
     
     

@@ -7964,7 +7964,7 @@ your    cool or temper.
     </p> <br> <br>
     `
 
-    
+    var klString;
     // console.log(klLoopList.length)
     for (let i = 0; i < klLoopList.length; i++) {
         klcText = (klLoopList[i]).trim();
@@ -7995,37 +7995,36 @@ your    cool or temper.
             
             case '2':
                 klString += `
+                      
             
+                <h3 class="bold-description-label">Karmic Lesson Number 2</h3> <br>
+                <p>
+                Your lesson is that you must know when it is appropriate to say
+                something and what the appropriate response is. You must pay more
+                attention, be more conscious, and be more sensitive to others around
+                you. When working with others, you may become a valuable member
+                of the team by cooperating, being diplomatic, and being patient. Learn
+                to collaborate more effectively with others and to be more
+                compassionate. Therefore, you should learn to work better with others
+                and be sensitive toward them so that you can keep the peace. 
+                </p> <br> <br>
             
-            
-            <h3 class="bold-description-label">Karmic Lesson Number 2</h3> <br>
-            <p>
-            Your lesson is that you must know when it is appropriate to say
-            something and what the appropriate response is. You must pay more
-            attention, be more conscious, and be more sensitive to others around
-            you. When working with others, you may become a valuable member
-            of the team by cooperating, being diplomatic, and being patient. Learn
-            to collaborate more effectively with others and to be more
-            compassionate. Therefore, you should learn to work better with others
-            and be sensitive toward them so that you can keep the peace. 
-            </p> <br> <br>
-        
-            `
-            break;
+                `
+                break;
         
             case '3':
                 klString += `
 
             
-            <h3 class="bold-description-label">Karmic Lesson Number 3</h3> <br>
-            <p>
-            When you're in the limelight, you shouldn't expect too much of
-            yourself. Be creative/imaginative and learn to see the positive side of
-            things.  <br> <br>
-            </p>
-        
-            `
-            break;
+                    <h3 class="bold-description-label">Karmic Lesson Number 3</h3> <br>
+                    <p>
+                    When you're in the limelight, you shouldn't expect too much of
+                    yourself. Be creative/imaginative and learn to see the positive side of
+                    things.  <br> <br>
+                    </p>
+                
+                    `
+                    break;
 
             case '4':
                 klString += `
@@ -8124,9 +8123,7 @@ your    cool or temper.
             default:
                 break;
         }
-        
 
-        // console.log('hi')
         
     }; klText.innerHTML = klText.innerHTML + klString;
 

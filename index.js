@@ -7947,35 +7947,31 @@ your    cool or temper.
 
     var klcText = (klNum.textContent).trim();
     var klLoopList = klcText.split(',');
-    console.log(klcText, klLoopList)
 
-    klText.innerHTML = `
-    <h3 class="bold-description-label">Definition</h3> <br>
-    <p>
-        Karmic Lessons disclose weaknesses or undeveloped parts. It is
-        found by looking at the missing letters in your <span class="underline">full birth name</span>. By
-        observing the missing numbers, you can gain an understanding and
-        insight into what you can do to help you overcome some of the
-        potential disadvantages of the missing characteristics these numbers
-        signify
-    </p> <br> <br>
-    `
+    klString = `
+        <h3 class="bold-description-label">Definition</h3> <br>
+        <p>
+            Karmic Lessons disclose weaknesses or undeveloped parts. It is
+            found by looking at the missing letters in your <span class="underline">full birth name</span>. By
+            observing the missing numbers, you can gain an understanding and
+            insight into what you can do to help you overcome some of the
+            potential disadvantages of the missing characteristics these numbers
+            signify
+        </p> 
+        <br> <br>
+
+        `
 
     var klString;
-    // console.log(klLoopList.length)
     for (let i = 0; i < klLoopList.length; i++) {
         klcText = (klLoopList[i]).trim();
 
         switch (klcText) {
 
-            case 'None':
-                klString = ''
-                break
+
 
             case '1':
                 klString += `
-            
-            
                 <h3 class="bold-description-label">Karmic Lesson Number 1</h3> <br>
                 <p>
                 You lack confidence, are afraid to lead, and need to build strength. Be
@@ -7992,8 +7988,6 @@ your    cool or temper.
             
             case '2':
                 klString += `
-                      
-            
                 <h3 class="bold-description-label">Karmic Lesson Number 2</h3> <br>
                 <p>
                 Your lesson is that you must know when it is appropriate to say
@@ -8039,7 +8033,6 @@ your    cool or temper.
 
             case '5':
                 klString += `
-            
                     <h3 class="bold-description-label">Karmic Lesson Number 5</h3> <br>
                     <p>
                     You must grip your independence and be more courageous and
@@ -8052,15 +8045,14 @@ your    cool or temper.
 
             case '6':
                 klString += `
-            
-            
-            <h3 class="bold-description-label">Karmic Lesson Number 6</h3> <br>
-            <p>
-            Instead of avoiding your obligations, you should commit to them and
-            accept them. Learn to give of yourself and open out to others.
-            </p> <br> <br>
-        
-            `
+                            
+                    <h3 class="bold-description-label">Karmic Lesson Number 6</h3> <br>
+                    <p>
+                    Instead of avoiding your obligations, you should commit to them and
+                    accept them. Learn to give of yourself and open out to others.
+                    </p> <br> <br>
+                
+                `
 
             break;
 
@@ -8118,7 +8110,9 @@ your    cool or temper.
         }
 
         
-    }; klText.innerHTML = klText.innerHTML + klString;
+    }; 
+    var prevText = klText.innerHTML
+    klText.innerHTML =  klString;
 
     
     

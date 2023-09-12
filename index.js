@@ -7698,54 +7698,6 @@ your    cool or temper.
     var filteredLen = Array.from(filteredNum)
     count = filteredLen.length
     ssNum.innerHTML = count;
-    
-
-
-
-
-    // Karmic Lesson 
-    count = 0;
-    ednfName = fName.value.split(' ');
-    var filtered, filteredList = [], filteredNum, combString = '';
-    let mainNumString = '1,2,3,4,5,6,7,8,9';
-    
-    for (let i = 0; i < ednfName.length; i++ ) {
-        filtered = Array.from(new Set((ednfName[i]).toLowerCase().split(''))).toString();
-        filteredList.push(filtered);
-    };
-    for (let iterate  = 0; iterate < filteredList.length; iterate++) {
-        for ( let i = 0; i <= filteredList[iterate].length; i++) {
-
-            if (String(filteredList[iterate][i]).toLowerCase() === 'a' ||  String(filteredList[iterate][i]).toLowerCase() === 'j' || String(filteredList[iterate][i]).toLowerCase() === 's' ) {
-                mainNumString = mainNumString.replace('1,', '');
-            } else if (String(filteredList[iterate][i]).toLowerCase() === 'b' || String(filteredList[iterate][i]).toLowerCase() === 'k' || String(filteredList[iterate][i]).toLowerCase() === 't') {
-                mainNumString = mainNumString.replace('2,', '');
-            } else if (String(filteredList[iterate][i]).toLowerCase() === 'c' || String(filteredList[iterate][i]).toLowerCase() === 'l' || String(filteredList[iterate][i]).toLowerCase() === 'u') {
-                mainNumString = mainNumString.replace('3,', '');
-            } else if (String(filteredList[iterate][i]).toLowerCase() === 'd' || String(filteredList[iterate][i]).toLowerCase() === 'm' || String(filteredList[iterate][i]).toLowerCase() === 'v') {
-                mainNumString = mainNumString.replace('4,', '');
-            } else if (String(filteredList[iterate][i]).toLowerCase() === 'e' || String(filteredList[iterate][i]).toLowerCase() === 'n' || String(filteredList[iterate][i]).toLowerCase() === 'w') {
-                mainNumString = mainNumString.replace('5,', '');
-            } else if (String(filteredList[iterate][i]).toLowerCase() === 'f' || String(filteredList[iterate][i]).toLowerCase() === 'o' || String(filteredList[iterate][i]).toLowerCase() === 'x') {
-                mainNumString = mainNumString.replace('6,', '');
-            } else if (String(filteredList[iterate][i]).toLowerCase() === 'g' || String(filteredList[iterate][i]).toLowerCase() === 'p' || String(filteredList[iterate][i]).toLowerCase() === 'y') {
-                mainNumString = mainNumString.replace('7,', '');
-            } else if (String(filteredList[iterate][i]).toLowerCase() === 'h' || String(filteredList[iterate][i]).toLowerCase() === 'q' || String(filteredList[iterate][i]).toLowerCase() === 'z') {
-                mainNumString = mainNumString.replace('8', '');
-            } else if (String(filteredList[iterate][i]).toLowerCase() === 'i' || String(filteredList[iterate][i]).toLowerCase() === 'r' ) {
-                mainNumString = mainNumString.replace(',9', '');
-            }
-        };
-    };
-
-    if (mainNumString[mainNumString.length - 1] === ',') {
-        mainNumString = mainNumString.slice(0, -1);
-    }
-    var test = mainNumString.split(',');
-    var testLength = 9 - test.length;
-    // ssNum.innerHTML = testLength;
-
-    // for (let i = 0; i < )
     var subConText = (ssNum.textContent).trim();
     var subConInt = subConText.split('/');
 
@@ -7943,6 +7895,50 @@ your    cool or temper.
     
 
 
+
+
+    // Karmic Lesson 
+    count = 0;
+    ednfName = fName.value.split(' ');
+    var filtered, filteredList = [], filteredNum, combString = '';
+    let mainNumString = '1,2,3,4,5,6,7,8,9';
+    
+    for (let i = 0; i < ednfName.length; i++ ) {
+        filtered = Array.from(new Set((ednfName[i]).toLowerCase().split(''))).toString();
+        filteredList.push(filtered);
+    };
+    for (let iterate  = 0; iterate < filteredList.length; iterate++) {
+        for ( let i = 0; i <= filteredList[iterate].length; i++) {
+
+            if (String(filteredList[iterate][i]).toLowerCase() === 'a' ||  String(filteredList[iterate][i]).toLowerCase() === 'j' || String(filteredList[iterate][i]).toLowerCase() === 's' ) {
+                mainNumString = mainNumString.replace('1,', '');
+            } else if (String(filteredList[iterate][i]).toLowerCase() === 'b' || String(filteredList[iterate][i]).toLowerCase() === 'k' || String(filteredList[iterate][i]).toLowerCase() === 't') {
+                mainNumString = mainNumString.replace('2,', '');
+            } else if (String(filteredList[iterate][i]).toLowerCase() === 'c' || String(filteredList[iterate][i]).toLowerCase() === 'l' || String(filteredList[iterate][i]).toLowerCase() === 'u') {
+                mainNumString = mainNumString.replace('3,', '');
+            } else if (String(filteredList[iterate][i]).toLowerCase() === 'd' || String(filteredList[iterate][i]).toLowerCase() === 'm' || String(filteredList[iterate][i]).toLowerCase() === 'v') {
+                mainNumString = mainNumString.replace('4,', '');
+            } else if (String(filteredList[iterate][i]).toLowerCase() === 'e' || String(filteredList[iterate][i]).toLowerCase() === 'n' || String(filteredList[iterate][i]).toLowerCase() === 'w') {
+                mainNumString = mainNumString.replace('5,', '');
+            } else if (String(filteredList[iterate][i]).toLowerCase() === 'f' || String(filteredList[iterate][i]).toLowerCase() === 'o' || String(filteredList[iterate][i]).toLowerCase() === 'x') {
+                mainNumString = mainNumString.replace('6,', '');
+            } else if (String(filteredList[iterate][i]).toLowerCase() === 'g' || String(filteredList[iterate][i]).toLowerCase() === 'p' || String(filteredList[iterate][i]).toLowerCase() === 'y') {
+                mainNumString = mainNumString.replace('7,', '');
+            } else if (String(filteredList[iterate][i]).toLowerCase() === 'h' || String(filteredList[iterate][i]).toLowerCase() === 'q' || String(filteredList[iterate][i]).toLowerCase() === 'z') {
+                mainNumString = mainNumString.replace('8', '');
+            } else if (String(filteredList[iterate][i]).toLowerCase() === 'i' || String(filteredList[iterate][i]).toLowerCase() === 'r' ) {
+                mainNumString = mainNumString.replace(',9', '');
+            }
+        };
+    };
+
+    if (mainNumString[mainNumString.length - 1] === ',') {
+        mainNumString = mainNumString.slice(0, -1);
+    }
+    
+    
+
+
     filteredNum = mainNumString;
     if (filteredNum === '' || filteredNum === ' ') {
         filteredNum = 'None';
@@ -7950,8 +7946,9 @@ your    cool or temper.
     klNum.innerHTML = filteredNum;
 
     var klcText = (klNum.textContent).trim();
-    var klcInt = klcText.split('/');
     var klLoopList = klcText.split(',');
+    console.log(klcText, klLoopList)
+
     klText.innerHTML = `
     <h3 class="bold-description-label">Definition</h3> <br>
     <p>
@@ -8024,38 +8021,34 @@ your    cool or temper.
                     </p>
                 
                     `
-                    break;
+                break;
 
             case '4':
                 klString += `
             
-            
-            
-            <h3 class="bold-description-label">Karmic Lesson Number 4</h3> <br>
-            <p>
-            When it comes to your life's purpose and where you're heading, learn
-            to be more structured, royal, and disciplined. The lesson for you is to
-            be more careful, practical, and realistic in coping with whatever life
-            throws at you.
-            </p> <br> <br>
-        
-            `
-            break;
+                    <h3 class="bold-description-label">Karmic Lesson Number 4</h3> <br>
+                    <p>
+                    When it comes to your life's purpose and where you're heading, learn
+                    to be more structured, royal, and disciplined. The lesson for you is to
+                    be more careful, practical, and realistic in coping with whatever life
+                    throws at you.
+                    </p> <br> <br>
+                
+                    `
+                break;
 
             case '5':
                 klString += `
             
-            
-            
-            <h3 class="bold-description-label">Karmic Lesson Number 5</h3> <br>
-            <p>
-            You must grip your independence and be more courageous and
-            daring. Accept change, adapt to new situations, and take a chance or
-            risk
-            </p> <br> <br>
-        
-            `
-            break;
+                    <h3 class="bold-description-label">Karmic Lesson Number 5</h3> <br>
+                    <p>
+                    You must grip your independence and be more courageous and
+                    daring. Accept change, adapt to new situations, and take a chance or
+                    risk
+                    </p> <br> <br>
+                
+                    `
+                break;
 
             case '6':
                 klString += `
@@ -8075,50 +8068,50 @@ your    cool or temper.
                 klString += `
             
             
-            <h3 class="bold-description-label">Karmic Lesson Number 7</h3> <br>
-            <p>
-            Your lesson is to concentrate more on gaining experience and
-            knowledge in any of your numerous subjects of interest. Everything
-            should be questioned, and you should allow yourself to explore and
-            study. Rather than wasting your energy, attempt to be more organized
-            and disciplined in order to reach your full potential.
+                <h3 class="bold-description-label">Karmic Lesson Number 7</h3> <br>
+                <p>
+                Your lesson is to concentrate more on gaining experience and
+                knowledge in any of your numerous subjects of interest. Everything
+                should be questioned, and you should allow yourself to explore and
+                study. Rather than wasting your energy, attempt to be more organized
+                and disciplined in order to reach your full potential.
+                
+                </p> <br> <br>
             
-            </p> <br> <br>
-        
-            `
-            break;
+                `
+                break;
 
             case '8':
-                klString =  `
+                klString +=  `
             
+                
+                <h3 class="bold-description-label">Karmic Lesson Number 8</h3> <br>
+                <p>
+                Your lesson is to be more open to outside help and other people's
+                perspectives. Try to be less stubborn and listen rather than just
+                hearing when it comes to advise about your assets, whether it's
+                money, material goods, or the people in your life. You may have
+                challenges in your professional life, and you may have poor judgment
+                of others. Learn to be self-disciplined and self-restrained.
+                </p> <br> <br>
             
-            <h3 class="bold-description-label">Karmic Lesson Number 8</h3> <br>
-            <p>
-            Your lesson is to be more open to outside help and other people's
-            perspectives. Try to be less stubborn and listen rather than just
-            hearing when it comes to advise about your assets, whether it's
-            money, material goods, or the people in your life. You may have
-            challenges in your professional life, and you may have poor judgment
-            of others. Learn to be self-disciplined and self-restrained.
-            </p> <br> <br>
-        
-            `
-            break;
+                `
+                break;
 
             case '9':
                 klString += `
             
+                
+                <h3 class="bold-description-label">Karmic Lesson Number 9</h3> <br>
+                <p>
+                Your lesson is to be more understanding, helpful, accepting, and
+                compassionate with everyone in your life, including family, friends,
+                colleagues, and the rest of the public. Try to observe things from a
+                different angle. <br> <br>
+                </p>
             
-            <h3 class="bold-description-label">Karmic Lesson Number 9</h3> <br>
-            <p>
-            Your lesson is to be more understanding, helpful, accepting, and
-            compassionate with everyone in your life, including family, friends,
-            colleagues, and the rest of the public. Try to observe things from a
-            different angle. <br> <br>
-            </p>
-        
-            `
-            break;
+                `
+                break;
         
             default:
                 break;

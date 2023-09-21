@@ -15039,7 +15039,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
     
     // nine percent 
-    var nine = Math.round((count['1'] / lenPerList) * 100);
+    var nine = Math.round((count['9'] / lenPerList) * 100);
     if (nine <= 100) {
         ninePerc.textContent = nine + '%';
     } else {

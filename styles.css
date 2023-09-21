@@ -176,7 +176,7 @@ input:focus {
 .hide {
     box-shadow: 5px 5px 7px grey;
     border-radius: 10px;
-    display: none;
+    /* display: none; */
     padding: 1rem;
     
     
@@ -254,10 +254,64 @@ details p {
     
 }
 
+#cols4Equal {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 5px;
+}
+
+.numHead  {
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffc439;
+    color: white;
+    border: 1px solid none;
+    padding: .4rem;
+}
+
+.perc {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    /* background-color:; */
+    border: 2px solid none;
+    padding: .4rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+
+}
+
+.per-div {
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    display: grid;
+    padding: .2rem;
+
+}
+
 .cols8 {
     display:  grid;
-    grid-template-columns: repeat(4, 1fr);;
+    grid-template-columns: repeat(4, 1fr);
     
+}
+
+.comp-div {
+    border-radius: 10px;
+    display: grid;
+    padding: .3rem;
+
+}
+
+.comp {
+    padding: .2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .border {
@@ -455,12 +509,24 @@ input::after {
     } .main-table p {
         font-size: .9rem;
     }
+    #cols4Equal {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-@media(min-width: 445px) and(max-width: 750px) {
+@media(min-width: 444px) and (max-width: 750px) {
     .bold-head p {
         font-size: .7rem;
         text-align: center;
         
     }
+    #cols4Equal {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
+
+/* @media  (max-width : 613px) {
+    #cols4Equal {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */

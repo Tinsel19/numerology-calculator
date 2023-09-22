@@ -14781,8 +14781,6 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     variable = ((lpNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
-
 
     // Born day/ Birthday Number  push
     variable = ((bdNum.textContent).trim()).split('/');
@@ -14795,61 +14793,66 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     variable = ((edNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
+
+    // minor expression num push 
+    variable = ((medNum.textContent).trim()).split('/');
+    variable = variable[variable.length - 1];
+    percentList.push(variable.trim());
 
     // Heart desire num push 
     variable = ((suhdNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
+
+    // minor heart desire num push 
+    variable = ((msuhdNum.textContent).trim()).split('/');
+    variable = variable[variable.length - 1];
+    percentList.push(variable.trim());
 
     // personality num push 
     variable = ((pNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
 
     // Maturity num push 
     variable = ((mNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
+
+    // minor personality num push 
+    variable = ((mpNum.textContent).trim()).split('/');
+    variable = variable[variable.length - 1];
+    percentList.push(variable.trim());
 
     // attitude num push 
     variable = ((aNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
 
     // life path / expression bridge num push 
     variable = ((lpebNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
 
     // Heart desire / Personality bridge num push 
     variable = ((hdpbNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
 
     // Rational thought num push 
     variable = ((rtNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
 
     // balance number num push 
     variable = ((bnNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
 
     // subconscious self num push  
     variable = ((ssNum.textContent).trim()).split('/');
     variable = variable[variable.length - 1];
     percentList.push(variable.trim());
-    variableString += variable;
 
     // karmic lesson num push 
     variable = ((klNum.textContent).trim()).split(',');
@@ -15046,151 +15049,151 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         ninePerc.textContent = 0 + '%';
     };
 
-    percentText.innerHTML = `
-        <h3 class="bold-description-label">Percentage Number 1</h3> <br>
-        <p>
-        <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-        Initiator of action, masculine trait, creative mind, courageous,
-        pioneering spirit, inventive ideas, leadership abilities, focused, original,
-        competitive, independent, ambitious, individualist, executive abilities,
-        determine, optimistic, inventive, selfreliant, explorer, will power, strong,
-        resourcefulness, self-confident.                 
-        </p> <br>
+    // percentText.innerHTML = `
+    //     <h3 class="bold-description-label">Percentage Number 1</h3> <br>
+    //     <p>
+    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
+    //     Initiator of action, masculine trait, creative mind, courageous,
+    //     pioneering spirit, inventive ideas, leadership abilities, focused, original,
+    //     competitive, independent, ambitious, individualist, executive abilities,
+    //     determine, optimistic, inventive, selfreliant, explorer, will power, strong,
+    //     resourcefulness, self-confident.                 
+    //     </p> <br>
 
-        <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-            Selfish, domineering, impulsive, arrogant, aggressive, stubborn,
-            self-centered, pompous, bossy. Insensitive, egoist, overly
-            assertive or aggressive, lonely, boastfulness, willfulness,
-            rebellious. 
-        </p> <br> <br>
+    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
+    //         Selfish, domineering, impulsive, arrogant, aggressive, stubborn,
+    //         self-centered, pompous, bossy. Insensitive, egoist, overly
+    //         assertive or aggressive, lonely, boastfulness, willfulness,
+    //         rebellious. 
+    //     </p> <br> <br>
 
 
-        <h3 class="bold-description-label">Percentage Number 2</h3> <br>
-        <p>
-        <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-        Cooperation, adaptation, consideration for others, sensitivity
-        to others' needs, partnership, an adjudicator or mediator, modesty,
-        sincerity, spiritual influence, a diplomat.              
-        </p> <br>
+    //     <h3 class="bold-description-label">Percentage Number 2</h3> <br>
+    //     <p>
+    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
+    //     Cooperation, adaptation, consideration for others, sensitivity
+    //     to others' needs, partnership, an adjudicator or mediator, modesty,
+    //     sincerity, spiritual influence, a diplomat.              
+    //     </p> <br>
 
-        <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-        Shyness, anxiety, timidity, overly sensitive, codependent, fear, 
-        selfconsciousness, drowning in detail, depression, submissive. 
-        </p> <br> <br>
+    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
+    //     Shyness, anxiety, timidity, overly sensitive, codependent, fear, 
+    //     selfconsciousness, drowning in detail, depression, submissive. 
+    //     </p> <br> <br>
 
-        <h3 class="bold-description-label">Percentage Number 3</h3> <br>
-        <p>
-        <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-        Self-expressive, communication verbalization, inspiration and strong
-        imagination, artistic gifts, correct impressions and insights, optimism,
-        charming, happy and fun-loving, appreciates life.
+    //     <h3 class="bold-description-label">Percentage Number 3</h3> <br>
+    //     <p>
+    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
+    //     Self-expressive, communication verbalization, inspiration and strong
+    //     imagination, artistic gifts, correct impressions and insights, optimism,
+    //     charming, happy and fun-loving, appreciates life.
                    
-        </p> <br>
+    //     </p> <br>
 
-        <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-        Scattered energies, overstatement, unfinished
-        projects, lack of purpose, mood swing, self-centered,
-        manipulative. 
-        </p> <br> <br>
+    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
+    //     Scattered energies, overstatement, unfinished
+    //     projects, lack of purpose, mood swing, self-centered,
+    //     manipulative. 
+    //     </p> <br> <br>
 
-        <h3 class="bold-description-label">Percentage Number 4</h3> <br>
-        <p>
-        <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-        Strong sense of order and values, battle against limitations, steady
-        progress, very practical, logical mind, strong work ethic, basis for
-        accomplishment, organizational brilliance, great management skills,
-        responsible, reliable. 
+    //     <h3 class="bold-description-label">Percentage Number 4</h3> <br>
+    //     <p>
+    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
+    //     Strong sense of order and values, battle against limitations, steady
+    //     progress, very practical, logical mind, strong work ethic, basis for
+    //     accomplishment, organizational brilliance, great management skills,
+    //     responsible, reliable. 
         
-        </p> <br>
+    //     </p> <br>
 
-        <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-        Lack of creativity, obsessive attention to detail, workaholic or
-        lazy, firm set beliefs, controlling, argumentative, sluggish to act,
-        stubborn, overly serious, and worried
-        </p> <br> <br>
+    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
+    //     Lack of creativity, obsessive attention to detail, workaholic or
+    //     lazy, firm set beliefs, controlling, argumentative, sluggish to act,
+    //     stubborn, overly serious, and worried
+    //     </p> <br> <br>
 
-        <h3 class="bold-description-label">Percentage Number 5</h3> <br>
-        <p>
-        <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-        Expansiveness, freedom-loving, innovative and imaginative thoughts,
-        rapid thinking, flexibility and everchanging, daring, adaptability, action
-        oriented, active and exploring, charming, playful, ambitious,
-        adventurous, promoting, resourceful in using freedom effectively. 
-        </p> <br>
+    //     <h3 class="bold-description-label">Percentage Number 5</h3> <br>
+    //     <p>
+    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
+    //     Expansiveness, freedom-loving, innovative and imaginative thoughts,
+    //     rapid thinking, flexibility and everchanging, daring, adaptability, action
+    //     oriented, active and exploring, charming, playful, ambitious,
+    //     adventurous, promoting, resourceful in using freedom effectively. 
+    //     </p> <br>
 
-        <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-        Unpredictable, too many fast decisions, unfaithful, impatience,
-        lack of commitment, restless, dissatisfied, edgy personality and
-        attitude, unreliable
-        </p> <br> <br>
-
-
-        <h3 class="bold-description-label">Percentage Number 6</h3> <br>
-        <p>
-        <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-        Responsible, artistic, nurturing, community-oriented, balanced,
-        compassion for others, loving, humanitarian, peaceful, devoted,
-        unselfishness, love of home and domestic matters, freely gives
-        service to others, loyal.  
-        </p> <br>
-
-        <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-        Self-righteousness, obstinacy, stubbornness, perfectionism,
-        dominance over family and friends, interfering, arrogant and
-        prone to flattery, high standard, outspoken.
-        </p> <br> <br>
+    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
+    //     Unpredictable, too many fast decisions, unfaithful, impatience,
+    //     lack of commitment, restless, dissatisfied, edgy personality and
+    //     attitude, unreliable
+    //     </p> <br> <br>
 
 
-        <h3 class="bold-description-label">Percentage Number 7</h3> <br>
-        <p>
-        <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-        Perfectionist, analytical and research skills, an intellectual seeker of
-        information, scientific and imaginative, spiritual, studious,
-        meditative, captivating attitude and manner, love of isolation and
-        quietness.  
-        </p> <br>
+    //     <h3 class="bold-description-label">Percentage Number 6</h3> <br>
+    //     <p>
+    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
+    //     Responsible, artistic, nurturing, community-oriented, balanced,
+    //     compassion for others, loving, humanitarian, peaceful, devoted,
+    //     unselfishness, love of home and domestic matters, freely gives
+    //     service to others, loyal.  
+    //     </p> <br>
 
-        <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-        Hidden motivations and suspicions, secretive, excessive
-        reserve, arguments accompanied by silence or criticism, aloof,
-        stubborn stances, easily agitated by distractions, annoyed. 
-        </p> <br> <br>
+    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
+    //     Self-righteousness, obstinacy, stubbornness, perfectionism,
+    //     dominance over family and friends, interfering, arrogant and
+    //     prone to flattery, high standard, outspoken.
+    //     </p> <br> <br>
 
 
-        <h3 class="bold-description-label">Percentage Number 8</h3> <br>
-        <p>
-        <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-        Executive abilities, political skills, ambitious, expert handling of power
-        and authority, administrative skills, hard-working, money, achieving
-        recognition, power, exercising sound judgment, wealth, decisive and
-        commanding.
+    //     <h3 class="bold-description-label">Percentage Number 7</h3> <br>
+    //     <p>
+    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
+    //     Perfectionist, analytical and research skills, an intellectual seeker of
+    //     information, scientific and imaginative, spiritual, studious,
+    //     meditative, captivating attitude and manner, love of isolation and
+    //     quietness.  
+    //     </p> <br>
+
+    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
+    //     Hidden motivations and suspicions, secretive, excessive
+    //     reserve, arguments accompanied by silence or criticism, aloof,
+    //     stubborn stances, easily agitated by distractions, annoyed. 
+    //     </p> <br> <br>
+
+
+    //     <h3 class="bold-description-label">Percentage Number 8</h3> <br>
+    //     <p>
+    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
+    //     Executive abilities, political skills, ambitious, expert handling of power
+    //     and authority, administrative skills, hard-working, money, achieving
+    //     recognition, power, exercising sound judgment, wealth, decisive and
+    //     commanding.
         
-        </p> <br>
+    //     </p> <br>
 
-        <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-        Workaholic, aggressive, extremely ambitious, bossy,
-        humanitarian instincts deficient, misuse or abuse of power,
-        mismanaging money, suppressing subordinates, forceful, impatient
-        with people, anxious, lack empathy, materialistic, controlling
-        </p> <br> <br>
+    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
+    //     Workaholic, aggressive, extremely ambitious, bossy,
+    //     humanitarian instincts deficient, misuse or abuse of power,
+    //     mismanaging money, suppressing subordinates, forceful, impatient
+    //     with people, anxious, lack empathy, materialistic, controlling
+    //     </p> <br> <br>
 
 
-        <h3 class="bold-description-label">Percentage Number 9</h3> <br>
-        <p>
-        <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-        Humanitarian inclinations, giving disposition, selflessness, duties,
-        creative expression, easily motivated to accomplish good things, artistic
-        and writing abilities, charitable.
+    //     <h3 class="bold-description-label">Percentage Number 9</h3> <br>
+    //     <p>
+    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
+    //     Humanitarian inclinations, giving disposition, selflessness, duties,
+    //     creative expression, easily motivated to accomplish good things, artistic
+    //     and writing abilities, charitable.
         
-        </p> <br>
+    //     </p> <br>
 
-        <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-        Self-adulation, narcissistic, confusion of interests,
-        possessiveness, moodiness, financial irresponsibility, and a
-        need for peer attention
-        </p> <br> <br>
+    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
+    //     Self-adulation, narcissistic, confusion of interests,
+    //     possessiveness, moodiness, financial irresponsibility, and a
+    //     need for peer attention
+    //     </p> <br> <br>
 
-    `;
+    // `;
 
 
     

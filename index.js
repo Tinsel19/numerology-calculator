@@ -14779,85 +14779,85 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     var variable, variableString = '';
     // lifePath num push 
     variable = ((lpNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '12%';
     percentList.push(variable.trim());
 
     // Born day/ Birthday Number  push
     variable = ((bdNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '10%';
     percentList.push(variable.trim());
-    variableString += variable;
     
 
     // Expression Num push 
     variable = ((edNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '10%';
     percentList.push(variable.trim());
 
     // minor expression num push 
     variable = ((medNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // Heart desire num push 
     variable = ((suhdNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '10%';
     percentList.push(variable.trim());
 
     // minor heart desire num push 
     variable = ((msuhdNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // personality num push 
     variable = ((pNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
-    percentList.push(variable.trim());
-
-    // Maturity num push 
-    variable = ((mNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '10%';
     percentList.push(variable.trim());
 
     // minor personality num push 
     variable = ((mpNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
+    percentList.push(variable.trim());
+
+
+    // Maturity num push 
+    variable = ((mNum.textContent).trim()).split('/');
+    variable = variable[variable.length - 1] + '5%';
     percentList.push(variable.trim());
 
     // attitude num push 
     variable = ((aNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '5%';
     percentList.push(variable.trim());
 
     // life path / expression bridge num push 
     variable = ((lpebNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '2%';
     percentList.push(variable.trim());
 
     // Heart desire / Personality bridge num push 
     variable = ((hdpbNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '2%';
     percentList.push(variable.trim());
 
     // Rational thought num push 
     variable = ((rtNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '2%';
     percentList.push(variable.trim());
 
     // balance number num push 
     variable = ((bnNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '2%';
     percentList.push(variable.trim());
 
     // subconscious self num push  
     variable = ((ssNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '2%';
     percentList.push(variable.trim());
 
     // karmic lesson num push 
     variable = ((klNum.textContent).trim()).split(',');
     for(var i = 0; i< variable.length; i ++) {
-        percentList.push(variable[i].trim())
+        percentList.push(variable[i].trim() + '2%')
     };
 
     // karic debt num push 
@@ -14871,7 +14871,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             if (variate === '' || variate === ' ') {
                 percentList;
             } else {
-                percentList.push(variate.trim())
+                percentList.push(variate.trim() + '2%')
             }
             
         };
@@ -14880,88 +14880,90 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     // hidden passion num push 
     variable = ((hpNum.textContent).trim()).split(',');
     for(var i = 0; i< variable.length; i ++) {
-        percentList.push(variable[i].trim())
+        percentList.push(variable[i].trim() + '2%')
     };
     
     // Herediatary name num push 
     variable = ((hnNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '2%';
     percentList.push(variable.trim());
 
     // physical plane of expression num push 
     variable = ((ppoeNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '2%';
     percentList.push(variable.trim());
 
     // mental plane of expresion num psuh 
     variable = ((mpoeNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '2%';
     percentList.push(variable.trim());
 
     // intuitive plane of expression num push 
     variable = ((ipoeNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '2%';
     percentList.push(variable.trim());
 
     // emotional plane of expression num push 
     variable = ((epoeNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '2%';
     percentList.push(variable.trim());
 
     // first period cycle num push 
     variable = ((fpCycleNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // second period cycle num push 
     variable = ((spCycleNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // third period cycle num push 
     variable = ((tpCycleNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // first pinnacle cycle num push
     variable = ((fPinNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // second pinnacle num push 
     variable = ((sPinNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // third pinnacle num push 
     variable = ((tPinNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // fourth pinnacle num push 
     variable = ((ftPinNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // first challenge num push 
     variable = ((fChaNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // second challenge num push 
     variable = ((sChaNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // third challenge num push 
     variable = ((tChaNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
 
     // fourth challenge num push 
     variable = ((ftChaNum.textContent).trim()).split('/');
-    variable = variable[variable.length - 1];
+    variable = variable[variable.length - 1] + '1%';
     percentList.push(variable.trim());
+
+    console.log(percentList);
 
     var lenPerList = percentList.length;
     
@@ -14975,10 +14977,52 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         }
     };
 
-    lenPerList = lenPerList - count['0'];
+    // console.log(count)
 
+    lenPerList = lenPerList - count['0'];
+    var one, oneAdd = 0, any;
+    var two, twoAdd = 0;
+    var three, threeAdd = 0;
+    var four, fourAdd = 0;
+    var five, fiveAdd = 0;
+    var six, sixAdd = 0;
+    var seven, sevenAdd = 0;
+    var eight, eightAdd = 0;
+    var nine, nineAdd = 0;
     // one percent 
-    var one = Math.round((count['1'] / lenPerList) * 100);
+    for (var i = 0; i< percentList.length; i++) {
+        any = percentList[i]
+        if (any[0] === '1') {
+            one  = Number(any.slice(1, -1));
+            oneAdd+= one;
+        } else if (any[0] === '2') {
+            two  = Number(any.slice(1, -1));
+            twoAdd+= two;
+        } else if (any[0] === '3') {
+            three  = Number(any.slice(1, -1));
+            threeAdd+= three;
+        } else if (any[0] === '4') {
+            four  = Number(any.slice(1, -1));
+            fourAdd+= four;
+        } else if (any[0] === '5') {
+            five  = Number(any.slice(1, -1));
+            fiveAdd+= five;
+        } else if (any[0] === '6') {
+            six  = Number(any.slice(1, -1));
+            sixAdd+= six;
+        } else if (any[0] === '7') {
+            seven  = Number(any.slice(1, -1));
+            sevenAdd+= seven;
+        } else if (any[0] === '8') {
+            eight  = Number(any.slice(1, -1));
+            eightAdd+= eight;
+        } else if (any[0] === '9') {
+            nine  = Number(any.slice(1, -1));
+            nineAdd+= nine;
+        }
+        
+    };
+    one = oneAdd
     if (one <= 100) {
         onePerc.textContent = one + '%';
     } else {
@@ -14986,7 +15030,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
     
     // two percent 
-    var two = Math.round((count['2'] / lenPerList) * 100);
+    two = twoAdd;
     if (two <= 100) {
         twoPerc.textContent = two + '%';
     } else {
@@ -14994,7 +15038,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
 
     // three percent 
-    var three = Math.round((count['3'] / lenPerList) * 100);
+    three = threeAdd;
     if (three <= 100) {
         threePerc.textContent = three + '%';
     } else {
@@ -15002,7 +15046,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
 
     // four percent 
-    var four = Math.round((count['4'] / lenPerList) * 100);
+    four = fourAdd;
     if (four <= 100) {
         fourPerc.textContent = four + '%';
     } else {
@@ -15010,7 +15054,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
 
     // five percent 
-    var five = Math.round((count['5'] / lenPerList) * 100)
+    five = fiveAdd;
     if (five <= 100) {
         fivePerc.textContent = five + '%';
     } else {
@@ -15018,7 +15062,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
 
     // six percent 
-    var six = Math.round((count['6'] / lenPerList) * 100)
+    six = sixAdd;
     if (six <= 100) {
         sixPerc.textContent = six + '%';
     } else {
@@ -15026,7 +15070,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
 
     // seven percent 
-    var seven = Math.round((count['7'] / lenPerList) * 100);
+    seven = sevenAdd;
     if (seven <= 100) {
         sevenPerc.textContent = seven + '%';
     } else {
@@ -15034,7 +15078,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
 
     // eight percent 
-    var eight = Math.round((count['8'] / lenPerList) * 100);
+    eight = eightAdd;
     if (eight <= 100) {
         eightPerc.textContent = eight + '%';
     } else {
@@ -15042,168 +15086,14 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     }
     
     // nine percent 
-    var nine = Math.round((count['9'] / lenPerList) * 100);
+    nine = nineAdd;
     if (nine <= 100) {
         ninePerc.textContent = nine + '%';
     } else {
         ninePerc.textContent = 0 + '%';
     };
 
-    // percentText.innerHTML = `
-    //     <h3 class="bold-description-label">Percentage Number 1</h3> <br>
-    //     <p>
-    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-    //     Initiator of action, masculine trait, creative mind, courageous,
-    //     pioneering spirit, inventive ideas, leadership abilities, focused, original,
-    //     competitive, independent, ambitious, individualist, executive abilities,
-    //     determine, optimistic, inventive, selfreliant, explorer, will power, strong,
-    //     resourcefulness, self-confident.                 
-    //     </p> <br>
-
-    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-    //         Selfish, domineering, impulsive, arrogant, aggressive, stubborn,
-    //         self-centered, pompous, bossy. Insensitive, egoist, overly
-    //         assertive or aggressive, lonely, boastfulness, willfulness,
-    //         rebellious. 
-    //     </p> <br> <br>
-
-
-    //     <h3 class="bold-description-label">Percentage Number 2</h3> <br>
-    //     <p>
-    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-    //     Cooperation, adaptation, consideration for others, sensitivity
-    //     to others' needs, partnership, an adjudicator or mediator, modesty,
-    //     sincerity, spiritual influence, a diplomat.              
-    //     </p> <br>
-
-    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-    //     Shyness, anxiety, timidity, overly sensitive, codependent, fear, 
-    //     selfconsciousness, drowning in detail, depression, submissive. 
-    //     </p> <br> <br>
-
-    //     <h3 class="bold-description-label">Percentage Number 3</h3> <br>
-    //     <p>
-    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-    //     Self-expressive, communication verbalization, inspiration and strong
-    //     imagination, artistic gifts, correct impressions and insights, optimism,
-    //     charming, happy and fun-loving, appreciates life.
-                   
-    //     </p> <br>
-
-    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-    //     Scattered energies, overstatement, unfinished
-    //     projects, lack of purpose, mood swing, self-centered,
-    //     manipulative. 
-    //     </p> <br> <br>
-
-    //     <h3 class="bold-description-label">Percentage Number 4</h3> <br>
-    //     <p>
-    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-    //     Strong sense of order and values, battle against limitations, steady
-    //     progress, very practical, logical mind, strong work ethic, basis for
-    //     accomplishment, organizational brilliance, great management skills,
-    //     responsible, reliable. 
-        
-    //     </p> <br>
-
-    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-    //     Lack of creativity, obsessive attention to detail, workaholic or
-    //     lazy, firm set beliefs, controlling, argumentative, sluggish to act,
-    //     stubborn, overly serious, and worried
-    //     </p> <br> <br>
-
-    //     <h3 class="bold-description-label">Percentage Number 5</h3> <br>
-    //     <p>
-    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-    //     Expansiveness, freedom-loving, innovative and imaginative thoughts,
-    //     rapid thinking, flexibility and everchanging, daring, adaptability, action
-    //     oriented, active and exploring, charming, playful, ambitious,
-    //     adventurous, promoting, resourceful in using freedom effectively. 
-    //     </p> <br>
-
-    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-    //     Unpredictable, too many fast decisions, unfaithful, impatience,
-    //     lack of commitment, restless, dissatisfied, edgy personality and
-    //     attitude, unreliable
-    //     </p> <br> <br>
-
-
-    //     <h3 class="bold-description-label">Percentage Number 6</h3> <br>
-    //     <p>
-    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-    //     Responsible, artistic, nurturing, community-oriented, balanced,
-    //     compassion for others, loving, humanitarian, peaceful, devoted,
-    //     unselfishness, love of home and domestic matters, freely gives
-    //     service to others, loyal.  
-    //     </p> <br>
-
-    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-    //     Self-righteousness, obstinacy, stubbornness, perfectionism,
-    //     dominance over family and friends, interfering, arrogant and
-    //     prone to flattery, high standard, outspoken.
-    //     </p> <br> <br>
-
-
-    //     <h3 class="bold-description-label">Percentage Number 7</h3> <br>
-    //     <p>
-    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-    //     Perfectionist, analytical and research skills, an intellectual seeker of
-    //     information, scientific and imaginative, spiritual, studious,
-    //     meditative, captivating attitude and manner, love of isolation and
-    //     quietness.  
-    //     </p> <br>
-
-    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-    //     Hidden motivations and suspicions, secretive, excessive
-    //     reserve, arguments accompanied by silence or criticism, aloof,
-    //     stubborn stances, easily agitated by distractions, annoyed. 
-    //     </p> <br> <br>
-
-
-    //     <h3 class="bold-description-label">Percentage Number 8</h3> <br>
-    //     <p>
-    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-    //     Executive abilities, political skills, ambitious, expert handling of power
-    //     and authority, administrative skills, hard-working, money, achieving
-    //     recognition, power, exercising sound judgment, wealth, decisive and
-    //     commanding.
-        
-    //     </p> <br>
-
-    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-    //     Workaholic, aggressive, extremely ambitious, bossy,
-    //     humanitarian instincts deficient, misuse or abuse of power,
-    //     mismanaging money, suppressing subordinates, forceful, impatient
-    //     with people, anxious, lack empathy, materialistic, controlling
-    //     </p> <br> <br>
-
-
-    //     <h3 class="bold-description-label">Percentage Number 9</h3> <br>
-    //     <p>
-    //     <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
-    //     Humanitarian inclinations, giving disposition, selflessness, duties,
-    //     creative expression, easily motivated to accomplish good things, artistic
-    //     and writing abilities, charitable.
-        
-    //     </p> <br>
-
-    //     <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
-    //     Self-adulation, narcissistic, confusion of interests,
-    //     possessiveness, moodiness, financial irresponsibility, and a
-    //     need for peer attention
-    //     </p> <br> <br>
-
-    // `;
-
-
     
-    
-    
-
-
-
-
-
     // Yearly Forecast Compabibility 
 
     // Tansit Cycle

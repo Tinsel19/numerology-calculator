@@ -15093,7 +15093,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
     percentText.innerHTML = `
     <p class="lined">
-        <h3 class="bold-description-label">Number 1</h3> <br>
+        <h3 class="bold-description-label">Number 1` + ' ->  ' + one+ '%' + ` </h3> <br>
         <p>
         <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
         Initiator of action, masculine trait, creative mind, courageous,
@@ -15111,7 +15111,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     </p> <br> <br>
 
     <p class="lined" >
-        <h3 class="bold-description-label">Number 2</h3> <br>
+        <h3 class="bold-description-label">Number 2 ` + ' ->  ' + two+ '%' + ` </h3> <br>
         <p>
         <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
         Cooperation, adaptation, consideration for others, sensitivity
@@ -15125,7 +15125,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     </p> <br> <br>
 
     <p class="lined">
-        <h3 class="bold-description-label">Number 3</h3> <br>
+        <h3 class="bold-description-label">Number 3 ` + ' ->  ' + three+ '%' + ` </h3> <br>
         <p>
         <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
         Self-expressive, communication verbalization, inspiration and strong
@@ -15141,7 +15141,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     </p> <br> <br>
 
     <p class="lined" >
-        <h3 class="bold-description-label">Number 4</h3> <br>
+        <h3 class="bold-description-label">Number 4 ` + ' ->  ' + four+ '%' + ` </h3> <br>
         <p>
         <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
         Strong sense of order and values, battle against limitations, steady
@@ -15158,7 +15158,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     </p> <br> <br>
 
     <p class="lined" >
-        <h3 class="bold-description-label">Number 5</h3> <br>
+        <h3 class="bold-description-label">Number 5 ` + ' ->  ' + five+ '%' + ` </h3> <br>
         <p>
         <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
         Expansiveness, freedom-loving, innovative and imaginative thoughts,
@@ -15174,7 +15174,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     </p> <br> <br>
 
     <p class="lined" >
-        <h3 class="bold-description-label">Number 6</h3> <br>
+        <h3 class="bold-description-label">Number 6 ` + ' ->  ' + six+ '%' + ` </h3> <br>
         <p>
         <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
         Responsible, artistic, nurturing, community-oriented, balanced,
@@ -15190,7 +15190,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     </p> <br> <br>
 
     <p class="lined" >
-        <h3 class="bold-description-label">Number 7</h3> <br>
+        <h3 class="bold-description-label">Number 7 ` + ' ->  ' + seven+ '%' + ` </h3> <br>
         <p>
         <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
         Perfectionist, analytical and research skills, an intellectual seeker of
@@ -15208,7 +15208,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     </p> <br> <br>
 
     <p class="lined" >
-        <h3 class="bold-description-label">Number 8</h3> <br>
+        <h3 class="bold-description-label">Number 8 ` + ' ->  ' + eight+ '%' + ` </h3> <br>
         <p>
         <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
         Executive abilities, political skills, ambitious, expert handling of power
@@ -15226,7 +15226,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     </p> <br> <br>
 
     <p class="lined" >
-        <h3 class="bold-description-label">Number 9</h3> <br>
+        <h3 class="bold-description-label">Number 9 ` + ' ->  ' + nine+ '%' + ` </h3> <br>
         <p>
         <h3 class="bold-description-label">Positive Characteristics</h3> <br> <br>
         humanitarian inclinations, giving disposition, selflessness, duties,

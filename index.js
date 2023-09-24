@@ -1344,12 +1344,20 @@ calculate.addEventListener('click', ()=> {
     // Birthday Number 
     var xSum;
     mSplit = String(dayString).split('');
-    xSum = eval(mSplit.join('+'));
+    xSum = Number(dayString);
 
     if (xSum < 10) {
         sumDayArray = xSum;
     } else if (xSum === 10) {
         sumDayArray = 1;
+    } else if (xSum === 13) {
+        sumDayArray = '13/4';
+    } else if (xSum === 14) {
+        sumDayArray = '14/5';
+    }else if (xSum === 16) {
+        sumDayArray = '16/7';
+    } else if (xSum === 19) {
+        sumDayArray = '19/1';
     } else if (xSum > 10) {
         mSplit = String(xSum).split('');
         xSum = eval(mSplit.join('+'));
@@ -1358,6 +1366,14 @@ calculate.addEventListener('click', ()=> {
             xSum
         } else if (xSum === 10) {
             xSum = 1
+        } else if (xSum === 13) {
+            xSum = '13/4';
+        } else if (xSum === 14) {
+            xSum = '14/5';
+        }else if (xSum === 16) {
+            xSum = '16/7';
+        } else if (xSum === 19) {
+            xSum = '19/1';
         } else if (xSum > 10) {
             mSplit = String(xSum).split('');
             xSum = eval(mSplit.join('+'));
@@ -1382,6 +1398,14 @@ calculate.addEventListener('click', ()=> {
         bdNum.innerHTML = parseInt(dayString) + '/' + '<b>8</b>';
     } else if (sumDayArray === 9) {
         bdNum.innerHTML = parseInt(dayString) + '/' + '<b>9</b>';
+    } else if (sumDayArray === '13/4') {
+        bdNum.innerHTML =  '13/<b>4</b>';
+    } else if (sumDayArray === '14/5') {
+        bdNum.innerHTML = '14/<b>5</b>';
+    } else if (sumDayArray === '16/7') {
+        bdNum.innerHTML = '16/<b>7</b>';
+    } else if (sumDayArray === '19/1') {
+        bdNum.innerHTML = '19/<b>1</b>';
     };
 
     if (sumDayArray === 1) {

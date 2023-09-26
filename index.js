@@ -161,7 +161,9 @@ var sevenPerc = document.getElementById('sevenPerc');
 var eightPerc = document.getElementById('eightPerc');
 var ninePerc = document.getElementById('ninePerc');
 
-var percentText = document.getElementById('percentText')
+var percentText = document.getElementById('percentText');
+
+var relCompText = document.getElementById('relCompText');
 
 
 
@@ -15265,6 +15267,748 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     </p> <br> <br>
 
     `
+
+    /* Relationship compatibility  */
+    var rcHold = (lpNum.textContent.split('/'));
+    rcHold = (rcHold[rcHold.length - 1]).trim();
+    
+    if(rcHold === '1') {
+        relCompText.innerHTML = `
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
+        <div class='twos'>
+        <span><b>Life path 1 relationship compatibility</b></span>  
+        <span><b>Love rating out of 3</b></span>
+        </div> <br>
+        <div class='twos'>
+        <div>
+        <span class='greenLove'>Life path 1 and life path 1</span>             
+        <span class='yellowLove'>Life path 1 and life path 2</span>             
+        <span class='greenLove'>Life path 1 and life path 3 </span>            
+        <span class='redLove'>Life path 1 and life path 4 </span>            
+        <span class='greenLove'>Life path 1 and life path 5</span>             
+        <span class='yellowLove'>Life path 1 and life path 6</span>             
+        <span class='greenLove'>Life path 1 and life path 7 </span>            
+        <span class='redLove'>Life path 1 and life path 8</span>             
+        <span class='greenLove'>Life path 1 and life path 9 </span>            
+        </div>
+        
+        <div>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='redLove'>❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='redLove'>❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        </div>
+        
+        </div> <br>
+
+        <br> <br>
+        1. You comprehend each other's drive to be self-sufficient and a leader, but
+        you must avoid allowing your competitive characteristics to get in the
+        middle of your relationship. <br><br>
+        2. The 1 assumes command, and the 2-follow suit. 1 must not impose
+        excessive control over 2 in order for 2 to feel at ease, and 2 must be
+        willing to keep things interesting so that 1 does not become bored. <br><br>
+        3. The perfect partnership! The bright impacts of life path 1 will wonderfully
+        combine with the attractiveness and intellect of life path 3. In this
+        connection, there is a lot of shared creativity. <br><br>
+        4. A complicated partnership that needs mutual understanding. 1 is
+        impetuous, controlling, and wants to keep things exciting, whereas 4 like
+        to take their time, be in control, and are bossy. Some conflicts may
+        arise as a result of your differing perspectives and understanding of life.<br><br>
+        5. The energy of life path 5 ensures personal progress for both parties in
+        this relationship because they're continually moving. You both like being
+        independent and are full of life. Your issue is that you spend far too
+        much time apart to establish something meaningful which might get the
+        way of the relationship.<br><br>
+        6. 6 wants to look after 1, but 1 wants autonomy to do its particular thing,
+        thus 1 feel suffocated by 6, while 6 feels unappreciated by 1. You can,
+        however, create a terrific partnership, especially if 1 pays attention to 6,
+        who has a strong sense of responsibility, devotion, and harmony, as well
+        as a number of valuable advices. Although, this partnership may be
+        stressful on your nerves at times.<br><br>
+        7. 7 offers their expertise, which aids 1 in achieving their objectives, yet 7
+        might be too overthinking for 1 and 1 can be too materialistic for 7.
+        Overall, if 1 does not try to control 7 and gives 7 privacies at times for
+        reflections, this can be a perfect match that is more intellectual than
+        emotional in nature.<br><br>
+        8. Professionally, you can work well together, motivating each other and
+        setting clear objectives, while personally, neither of you is very loving,
+        and both are overly controlling. The egos of both partners may clash and
+        finally tier each other down. You don't have a lot of patience, but you
+        both need to be patient for the relationship to work out. <br><br>
+        9. 9 demonstrates how to think of others, whereas 1 demonstrates how to
+        think of oneself. As long as 1 doesn't get too pushy with 9, you get along
+        OK. <br>
+
+
+        `
+    } else if (rcHold === '2') {
+        relCompText.innerHTML = `
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
+        <div class= 'twos'>
+        <span><b>Life path 2 relationship compatibility</b></span>   
+        <span><b>Love rating out of 3</b></span> 
+        </div> <br>
+        <div class='twos'>
+        <div>
+        <span class='yellowLove'>Life path 2 and life path 1</span>
+        <span class='greenLove'>Life path 2 and life path 2 </span>             
+        <span class='yellowLove'>Life path 2 and life path 3 </span>             
+        <span class='greenLove'>Life path 2 and life path 4 </span>             
+        <span class='redLove'>Life path 2 and life path 5 </span>             
+        <span class='greenLove'>Life path 2 and life path 6 </span>             
+        <span class='redLove'>Life path 2 and life path 7   </span>           
+        <span class='greenLove'>Life path 2 and life path 8 </span>             
+        <span class='yellowLove'>Life path 2 and life path 9 </span>             
+        </div>
+
+        <div>
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='redLove'>❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='redLove'>❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='yellowLove'>❤❤</span>
+        </div>
+
+        </div>
+        <br> <br>
+
+        1. The 1 assumes command, and the 2-follow suit. 1 must not impose
+        excessive control over 2 in order for 2 to feel at ease, and 2 must be
+        willing to keep things interesting so that 1 does not become bored.<br><br>
+
+        2. You're both gentle and caring, yet none of you likes to argue about
+        insignificant matters, so you quickly negotiate. You'll be OK if you
+        argue gently. Despite the fact that you are both emotional and passive
+        individuals who are paralyzed by uncertainties and a lack of action. <br><br>
+
+        3. 3 can amuse 2 with their exuberant attitude, and 2 can soothe 3 by
+        offering stable, pragmatic energy to balance the tense, worried energy of
+        the 3. <br> <br>
+
+        4. You're both laid-back, stable, practical, and responsible, 4 provides a
+        comfortable environment for the two of them. This definitely works if 4
+        can exhibit more compassion. <br><br>
+
+        5. Getting what you require might be challenging for every one of you. 5
+        desires independence, whilst 2 needs ongoing companionship. 5 feel
+        suffocated, while 2 feel ignored. However, if 2 appreciates and
+        embraces 5's goofiness, enjoyable sex life is guaranteed. <br><br>
+        
+        6. You're both compassionate and committed to each other, and you're
+        capable of establishing a stable family life jointly. 6 only needs to ensure
+        that their frank remarks do not harm sensitive 2. <br><br>
+
+        7. This is a nice friendship rather than a romantic connection because 2 is
+        affectionate and kind, while 7 hardly communicates their feelings, 7
+        should be more open to express their sentiments more frequently, and 2
+        should allow 7 the space and time they require. <br><br>
+
+        8. The number 8 represents a businessperson who is responsible for both
+        professional and financial problems. The number two is domestic, who
+        looks after the home and family. It lasts as long as 8 doesn't neglect 2. <br><br>
+
+        9. 2 can be excessively demanding of 9's attentiveness, and 9 may
+        struggle to accommodate 2's requirements. Humanitarian activities, on
+        the other hand, can be well-coordinated. 2 romantic beliefs, which
+        convert into fantastical aspirations, may overwhelm 9.
+
+        
+        `
+    } else if (rcHold === '3') {
+        relCompText.innerHTML = `
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
+        <div class='twos'>
+        <span><b>Life path 3 relationship compatibility</b></span>   
+        <span><b>Love rating out of 3</b></span>
+        </div> <br>
+        <div class='twos'>
+        <div>
+        <span class='yellowLove'>Life path 3 and life path 1</span>              
+        <span class='yellowLove'>Life path 3 and life path 2</span>              
+        <span class='greenLove'>Life path 3 and life path 3</span>
+        <span class='redLove'>Life path 3 and life path 4 </span>             
+        <span class='yellowLove'>Life path 3 and life path 5 </span>             
+        <span class='greenLove'>Life path 3 and life path 6 </span>             
+        <span class='yellowLove'>Life path 3 and life path 7</span>              
+        <span class='redLove'>Life path 3 and life path 8 </span>
+        <span class='greenLove'>Life path 3 and life path 9  </span>
+        </div>
+
+        <div>
+        <span class='yellowLove'>❤❤</span>
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='redLove'>❤</span>
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='yellowLove'>❤❤</span>
+        <span class='redLove'>❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        </div>
+
+        </div>
+        <br> <br>
+
+        1. The perfect partnership! The bright impacts of life path 1 will wonderfully
+        combine with the attractiveness and intellect of life path 3. In this
+        connection, there is a lot of shared creativity.<br><br>
+
+        2. 3 can amuse 2 with their exuberant attitude, and 2 can soothe 3 by
+        offering stable, pragmatic energy to balance the tense, worried energy of
+        the 3.<br><br>
+
+        3. You're both artistic and full of energy, and you may have a lively
+        relationship, yet problems with day-to-day tasks may occur, making the
+        partnership short-lived.<br><br>
+
+        4. Since 3 is fun-loving and a bit overly chaotic for 4, and 4 seems to be too
+        practical, stubborn, and boring to please 3, a strong business
+        partnership might be achievable. You must be prepared to compromise,
+        but you are unlikely to do so when it comes to a love relationship.<br><br>
+
+        5. It's a thrilling connection. You're both outgoing and enjoy being out and
+        about at parties. You're all really inventive and creative folks. You'll
+        have issues with little things.<br><br>
+
+        6. This is the ideal love connection, which everyone wishes for! 3 is the
+        person who comes up with new ideas, is energetic, and has a good time.
+        6 brings some stability to 3's wacky ideas while also encouraging them.
+        You have an amazing chemistry and operate together quite well.<br><br>
+
+        7. This connection is cognitively fascinating due to psychological parallels.
+        3 enjoys change and desires an active existence, whereas 7 likes
+        peace, isolation, and introspection. 7's aloof personality isn't exactly
+        welcome to 3. You must communicate what you anticipate from each other. <br><br>
+
+        8. Objectives and achievement are the focus of number eight, whereas
+        enjoyment and enthusiasm are the focus of number three. You desire
+        very different things, and when it succeeds, it might be a case of platonic
+        love. <br><br>
+
+        9. You float across the domains of romance and imagination. 9 has a lot to
+        teach 3, and 3 is eager to pick up on what 9 teaches. You like trying new
+        things and traveling across the world. All you have to do now is focus on
+        establishing foundations.<br>
+
+        `
+    } else if (rcHold === '4') {
+        relCompText.innerHTML = `
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
+        <div class='twos'>
+        <span><b>Life path 4 relationship compatibility</b></span>   
+        <span><b>Love rating out of 3</b></span>
+        </div> <br>
+
+        <div class='twos'>
+        <div>
+        <span class='redLove'>Life path 4 and life path 1</span>       
+        <span class='greenLove'>Life path 4 and life path 2 </span>  
+        <span class='redLove'>Life path 4 and life path 3 </span>             
+        <span class='greenLove'>Life path 4 and life path 4 </span>             
+        <span class='redLove'>Life path 4 and life path 5</span>              
+        <span class='greenLove'>Life path 4 and life path 6</span>              
+        <span class='yellowLove'>Life path 4 and life path 7</span>              
+        <span class='greenLove'>Life path 4 and life path 8 </span>             
+        <span class='redLove'>Life path 4 and life path 9 </span>             
+        </div>
+
+        <div>
+        <span class='redLove'>❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='redLove'>❤</span>
+        <span class='redLove'>❤</span>
+        <span class='redLove'>❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='redLove'>❤</span>
+        </div>
+        
+        </div>
+        <br> <br>
+
+        1. A complicated partnership that needs mutual understanding. 1 is
+        impetuous, controlling, and wants to keep things exciting, whereas 4 like
+        to take their time, be in control, and are bossy. Some conflicts may
+        arise as a result of your differing perspectives and understanding of life. <br>  <br>
+
+        2. You're both laid-back, stable, practical, and responsible, 4 provides a
+        comfortable environment for the two of them. This definitely works if 4
+        can exhibit more compassion. <br>  <br>
+
+        3. Since 3 is fun-loving and a bit overly chaotic for 4, and 4 seems to be too
+        practical, stubborn, and boring to please 3, a strong business
+        partnership might be achievable. You must be prepared to compromise,
+        but you are unlikely to do so when it comes to a love relationship. <br>  <br>
+
+        4. You're both steady, responsible, and dependable, and you're both
+        worried about security, and you've laid a solid foundation for your
+        relationship to grow on. However, you might keep things dull if you don't
+        spice things up in your connection. <br>  <br>
+
+        5. You have very different lifestyles. This is a complicated group, so there
+        will undoubtedly be some conflicts. Complete freedom and change are
+        desired by 5, whereas complete stability and security are desired by 4. It
+        is necessary for you to tolerate your uniqueness otherwise the
+        relationship will not last. <br> <br>
+
+        6. Your bond is deep and powerful because you'll get along well, and it's
+        based on a sense of obligation, a shared need for stability and security.
+        6 is the leader, and 4 eagerly follow. You both desire to have a great
+        home life and are willing to help one other. All you have to do is work on
+        meeting in the middle now and then. <br> <br>
+
+        7. There is a guarantee of intellectual and professional comprehension.
+        You're both loyal, but you have a tendency to be overly affectionate,
+        particularly when you're 7, so this could be a better acquaintance than a
+        love connection for you. Although the relationship can work if you're
+        tolerate each other. <br> <br>
+
+        8. 4 places a high priority on security and a solid basis, and 8 may exploit
+        that security and foundation to achieve their objectives. Once you make
+        your romance a priority, it will last a long time. <br> <br>
+
+        9. A tense, shaky connection. 9 is idealistic and interested in the well-being
+        of others and the vast world, while 4 is focused on their own life and the
+        tiny world and is stubborn. It's tough for you to communicate with one
+        another. <br>
+
+
+
+        `
+    } else if (rcHold === '5') {
+        relCompText.innerHTML = `
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
+
+        <div class='twos'>
+        <span><b>Life path 5 relationship compatibility</b></span>   
+        <span><b>Love rating out of 3</b></span>
+        </div> <br>
+
+        <div class='twos'>
+        <div>
+        <span class='greenLove'>Life path 5 and life path 1 </span>            
+        <span class='redLove'>Life path 5 and life path 2 </span>             
+        <span class='yellowLove'>Life path 5 and life path 3 </span>
+        <span class='redLove'>Life path 5 and life path 4  </span>           
+        <span class='greenLove'>Life path 5 and life path 5</span>
+        <span class='redLove'>Life path 5 and life path 6  </span>            
+        <span class='greenLove'>Life path 5 and life path 7</span>              
+        <span class='yellowLove'>Life path 5 and life path 8 </span>             
+        <span class='yellowLove'>Life path 5 and life path 9 </span>        
+        </div>
+
+        <div>
+        <span class='greenLove'>Life ❤❤❤</span> 
+        <span class='redLove'>❤</span> 
+        <span class='yellowLove'>❤❤</span> 
+        <span class='redLove'>❤</span> 
+        <span class='greenLove'>❤❤❤</span> 
+        <span class='redLove'>❤</span> 
+        <span class='greenLove'>❤❤❤</span> 
+        <span class='yellowLove'>❤❤</span> 
+        <span class='yellowLove'>❤❤</span> 
+        </div>
+
+        </div>
+        <br> <br>
+
+        1. The energy of life path 5 ensures personal progress for both parties in
+        this relationship because they're continually moving. You both like being
+        independent and are full of life. Your issue is that you spend far too
+        much time apart to establish something meaningful which might get the
+        way of the relationship. <br><br>
+
+        2. Getting what you require might be challenging for every one of you. 5
+        desire independence, while 2 need ongoing companionship. 5 feel
+        suffocated, while 2 feel ignored. However, if 2 appreciates and
+        embraces 5's goofiness, enjoyable sex life is guaranteed. <br><br>
+
+        3. It's a thrilling connection. You're both outgoing and enjoy being out and
+        about at parties. You're all really inventive and creative folks. You'll
+        have issues with little things. <br><br>
+
+        4. You have very different lifestyles. This is a complicated group, so there
+        will undoubtedly be some conflicts. Complete freedom and change are
+        desired by 5, whereas complete stability and security are desired by 4. It
+        is necessary for you to tolerate your uniqueness otherwise the
+        relationship will not last. <br><br>
+
+        5. You two are a match made in heaven! On every level, you and your
+        partner are in a lively relationship. You both like independence and
+        adventure, and you may share new experiences together. You help each
+        other out, yet you struggle to find direction or cope with day-to-day
+        existence. <br> <br>
+
+        6. Your partnership appears to be an appealing struggle at first look, but 6's
+        demands and crunchiness will soon upset 5, who is too fast-paced and
+        energetic. 6 wants to dominate 5, whereas 5 only wants to be free. For
+        5, 6 can be excessively clinging, while 5 can be too untrustworthy. You
+        both don't want to go halfway. <br> <br>
+
+        7. This is a fascinating intellectual match, yet their apparent independence
+        perplexes them both, and you both have the flexibility to pursue your
+        own interests. You share a mutual admiration for each other. Friendship
+        may serve as a solid basis for a partnership. <br> <br>
+
+        8. You'll constantly argue with each other and may have major conflicts,
+        with 8 always wanting to be the boss and controlling everything while 5
+        despise being told what to do. You have distinct perspectives on life. <br> <br>
+
+        9. You have a good understanding of each other, and 9 offers 5 the
+        independence they desire, and your connection is always changing. You
+        must work on your commitment to one another. <br> <br>
+
+        `
+    } else if (rcHold === '6') {
+        relCompText.innerHTML = `
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
+        <div class='twos'>
+        <span><b>Life path 6 relationship compatibility</b></span>   
+        <span><b>Love rating out of 3</b></span>
+        </div> <br>
+
+        <div class='twos'>
+
+        <div>
+        <span class='yellowLove'>Life path 6 and life path 1</span>              
+        <span class='greenLove'>Life path 6 and life path 2 </span>             
+        <span class='greenLove'>Life path 6 and life path 3 </span>
+        <span class='greenLove'>Life path 6 and life path 4 </span> 
+        <span class='redLove'>Life path 6 and life path 5</span>   
+        <span class='greenLove'>Life path 6 and life path 6 </span>
+        <span class='redLove'>Life path 6 and life path 7 </span>         
+        <span class='yellowLove'>Life path 6 and life path 8 </span>        
+        <span class='greenLove'>Life path 6 and life path 9 </span>     
+        </div>
+
+        <div>
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='greenLove'>❤❤❤</span> 
+        <span class='greenLove'>❤❤❤</span> 
+        <span class='redLove'>❤</span> 
+        <span class='greenLove'>❤❤❤</span> 
+        <span class='redLove'>❤</span> 
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        </div>
+
+        </div>
+
+        <br> <br>
+
+        1. 6 wants to look after 1, but 1 wants autonomy to do its particular thing,
+        thus 1 feel suffocated by 6, while 6 feels unappreciated by 1. You can,
+        however, create a terrific partnership, especially if 1 pays attention to 6,
+        who has a strong sense of responsibility, devotion, and harmony, as well
+        as a number of valuable advices. Although, this partnership may be
+        stressful on your nerves at times. <br><br>
+
+        2. You're both compassionate and committed to each other, and you're
+        capable of establishing a stable family life jointly. 6 only needs to ensure
+        that their frank remarks do not harm sensitive 2.<br><br>
+
+        3. This is the ideal love connection, which everyone wishes for! 3 is the
+        person who comes up with new ideas, is energetic, and has a good time.
+        6 brings some stability to 3's wacky ideas while also encouraging them.
+        You have an amazing chemistry and operate together quite well. <br><br>
+
+        4. Your bond is deep and powerful because you'll get along well, and it's
+        based on a sense of obligation, a shared need for stability and security.
+        6 is the leader, and 4 eagerly follow. You both desire to have a great
+        home life and are willing to help one other. All you have to do is work on
+        meeting in the middle now and then.<br><br>
+
+
+        5. Your partnership appears to be an appealing struggle at first look, but 6's
+        demands and crunchiness will soon upset 5, who is too fast-paced and
+        energetic. 6 wants to dominate 5, whereas 5 only wants to be free. For
+        5, 6 can be excessively clinging, while 5 can be too untrustworthy. You
+        both don't want to go halfway. <br><br>
+
+        6. You are attracted to each other in the same way that two lovers are
+        attracted to one another. You're both realistic individuals that are loyal,
+        loving, responsible and committed to one another, and sincerely care
+        about each other. You'll look after one another and prioritize your lives
+        together. <br><br>
+
+        7. You create a good team with 7's methodical mind, capable of completing
+        assignments on schedule. The number 6 is all about relationships, being
+        loyal, and loving. The number 7 is all about their intellect and spiritual
+        endeavors, and it's difficult to nail down. The number 7 is enigmatic,
+        while the number 6 is commanding. <br><br>
+
+        8. 6 is responsible for the household, whereas 8 is in charge of business
+        ambitions and money. This can work as long as you don't expect too
+        much from each other and turn a blind eye to any furious tantrums. <br><br>
+
+        9. Because of your extreme romanticism, your strong connection is
+        balanced. 9 admires 6's approach to everything, and 6 admires 9's
+        worldview. You complement one another, appreciate one another, and
+        strive for excellence in one another. <br>
+
+
+
+        
+        `
+    } else if (rcHold === '7') {
+        relCompText.innerHTML = `
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
+        <div class= 'twos'>
+        <span><b>Life path 7 relationship compatibility</b></span>
+        <span><b>Love rating out of 3</b></span>
+        </div> <br>
+        
+        <div class= 'twos'>
+
+        <div>
+        <span class='greenLove'>Life path 7 and life path 1  </span>           
+        <span class='redLove'>Life path 7 and life path 2</span>              
+        <span class='yellowLove'>Life path 7 and life path 3 </span>             
+        <span class='yellowLove'>Life path 7 and life path 4 </span> 
+        <span class='greenLove'>Life path 7 and life path 5 </span> 
+        <span class='redLove'>Life path 7 and life path 6  </span>   
+        <span class='greenLove'>Life path 7 and life path 7</span>    
+        <span class='yellowLove'>Life path 7 and life path 8 </span>             
+        <span class='yellowLove'>Life path 7 and life path 9 </span>             
+        </div>
+
+        <div>
+        <span class='greenLove'> ❤❤❤</span> 
+        <span class='redLove'>❤</span> 
+        <span class='yellowLove'>❤❤</span> 
+        <span class='yellowLove'>❤❤</span> 
+        <span class='greenLove'> ❤❤❤</span> 
+        <span class='redLove'>❤</span> 
+        <span class='greenLove'> ❤❤❤</span> 
+        <span class='yellowLove'>❤❤</span> 
+        <span class='yellowLove'>❤❤</span> 
+        </div>
+
+        </div>
+        <br> <br>
+
+        1. 7 offers their expertise, which aids 1 in achieving their objectives, yet 7
+        might be too overthinking for 1 and 1 can be too materialistic for 7.
+        Overall, if 1 does not try to control 7 and gives 7 privacies at times for
+        reflections, this can be a perfect match that is more intellectual than
+        emotional in nature.<br><br>
+
+        2. This is a nice friendship rather than a romantic connection because 2 is
+        affectionate and kind, while 7 hardly communicates their feelings, 7
+        should be more open to express their sentiments more frequently, and 2
+        should allow 7 the space and time they require.<br><br>
+
+        3. This connection is cognitively fascinating due to psychological parallels.
+        3 enjoys change and desires an active existence, whereas 7 likes
+        peace, isolation, and introspection. 7's aloof personality isn't exactly
+        welcome to 3. You must communicate what you anticipate from each
+        other.<br><br>
+
+        4. There is a guarantee of intellectual and professional comprehension.
+        You're both loyal, but you have a tendency to be overly affectionate, so
+        this could be a better acquaintance than a love connection for you.
+        Although the relationship can work if you're tolerate each other. <br><br>
+
+        5. This is a fascinating intellectual match, yet their apparent independence
+        perplexes them both, and you both have the flexibility to pursue your
+        own interests. You share a mutual admiration for each other. Friendship
+        may serve as a solid basis for a partnership <br><br>
+
+        6. You create a good team with 7's methodical mind, capable of completing
+        assignments on schedule. The number 6 is all about relationships, being
+        loyal, and loving. The number 7 is all about their intellect and spiritual
+        endeavors, and it's difficult to nail down. The number 7 is enigmatic,
+        while the number 6 is commanding.  <br><br>
+
+        7. You comprehend each other's thirst for education, spiritual aspirations,
+        and a life that is independent of everybody else. Be honest with one
+        another and the relationship will last. <br><br>
+
+        8. This relationship will allow you to take advantage of potential financial
+        security and you two will be great for building wealth. The chemistry
+        between you is undeniable, but you're probably the type of couple who
+        argues and makes up all the time, which is not really healthy. The
+        number eight is authoritative and too controlling, whereas the number 
+        seven is rebellious. They can last only if 8 don’t neglect 7 emotional
+        needs. <br><br>
+
+        9. This is an interesting combo. You're both spiritual, so this is a fantastic
+        match if you share similar ideas. If you don't, you won't be able to
+        communicate with each other and won't even attempt. <br>
+        `
+    } else if (rcHold === '8') {
+        relCompText.innerHTML = `
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
+
+        <div class='twos'>
+        <span><b>Life path 8 relationship compatibility</b></span>
+        <span><b>Love rating out of 3</b></span> 
+        </div> <br>
+
+        <div class='twos'>
+
+        <div>
+        <span class='redLove'>Life path 8 and life path 1 </span>             
+        <span class='greenLove'>Life path 8 and life path 2 </span>             
+        <span class='redLove'>Life path 8 and life path 3 </span> 
+        <span class='greenLove'>Life path 8 and life path 4  </span>            
+        <span class='yellowLove'>Life path 8 and life path 5 </span>              
+        <span class='yellowLove'>Life path 8 and life path 6 </span>              
+        <span class='yellowLove'>Life path 8 and life path 7 </span>              
+        <span class='greenLove'>Life path 8 and life path 8 </span>              
+        <span class='redLove'>Life path 8 and life path 9 </span>
+        </div>
+
+        <div>
+        <span class='redLove'>❤</span> 
+        <span class='greenLove'>❤❤❤</span> 
+        <span class='redLove'>❤</span>
+        <span class='greenLove'>❤❤❤</span> 
+        <span class='yellowLove'>❤❤</span> 
+        <span class='yellowLove'>❤❤</span> 
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>  
+        <span class='redLove'>❤</span> 
+        </div>
+
+        </div>
+        <br> <br>
+
+        1. Professionally, you can work well together, motivating each other and
+        setting clear objectives, while personally, neither of you is very loving,
+        and both are overly controlling. The egos of both partners may clash and
+        finally tier each other down. You don't have a lot of patience, but you
+        both need to be patient for the relationship to work out. <br><br>
+
+        2. The number 8 represents a businessperson who is responsible for both
+        professional and financial problems. The number two is domestic, who
+        looks after the home and family. It lasts as long as 8 doesn't neglect 2. <br><br>
+
+        3. Objectives and achievement are the focus of number eight, whereas
+        enjoyment and enthusiasm are the focus of number three. You desire
+        very different things, and when it succeeds, it might be a case of platonic
+        love. <br><br>
+
+        4. 4 places a high priority on security and a solid basis, and 8 may exploit
+        that security and foundation to achieve their objectives. Once you make
+        your romance a priority, it will last a long time. <br><br>
+
+        5. You'll constantly argue with each other and may have major conflicts,
+        with 8 always wanting to be the boss and controlling everything while 5
+        despise being told what to do. You have distinct perspectives on life. <br><br>
+
+        6. 6 is responsible for the household, whereas 8 is in charge of business
+        ambitions and money. This can work as long as you don't expect too
+        much from each other and turn a blind eye to any furious tantrums. <br><br>
+
+        7. This relationship will allow you to take advantage of potential financial
+        security and you two will be great for building wealth. The chemistry
+        between you is undeniable, but you're probably the type of couple who
+        argues and makes up all the time, which is not really healthy. The
+        number 8 is bossy and controlling, whereas the number 7 is rebellious. <br><br>
+
+        8. This is a fantastic combination if you can make the connection a
+        commitment. You support one another, you're passionate, and you're
+        realistic. Don't let competition get in the way of your relationship. <br><br>
+
+        9. 8 want to be successful and acquire material possessions, whereas 9
+        has a higher worldview. You don't want to meet in the center with your
+        opposing viewpoints. Not a good match!
+
+        `
+    } else if (rcHold === '9') {
+        relCompText.innerHTML = `
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
+        
+        <div class='twos'>
+        <span><b>Life path 9 relationship compatibility</b></span>   
+        <span><b>Love rating out of 3</b></span>
+        </div> <br>
+
+        <div class='twos'>
+
+        <div>
+        <span class='yellowLove'> Life path 9 and life path 1  </span>            
+        <span class='redLove'> Life path 9 and life path 2 </span>             
+        <span class='greenLove'> Life path 9 and life path 3</span>
+        <span class= 'redLove'> Life path 9 and life path 4  </span>            
+        <span class='yellowLove'> Life path 9 and life path 5 </span>
+        <span class='greenLove'> Life path 9 and life path 6  </span>            
+        <span class= 'yellowLove'> Life path 9 and life path 7</span>              
+        <span class='redLove'> Life path 9 and life path 8   </span>           
+        <span class='greenLove'> Life path 9 and life path 9 </span>          
+        </div>
+
+        <div>
+        <span class='yellowLove'>❤❤</span>
+        <span class='redLove'>❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class= 'redLove'> ❤</span>
+        <span class='yellowLove'>❤❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        <span class='yellowLove'>❤❤</span>
+        <span class='redLove'>❤</span>
+        <span class='greenLove'>❤❤❤</span>
+        </div>
+
+        </div>
+        <br> <br>
+
+        1. 9 demonstrates how to think of others, whereas 1 demonstrates how to
+        think of oneself. As long as 1 doesn't get too pushy with 9, you get along
+        OK. <br><br>
+
+        2. 2 can be excessively demanding of 9's attentiveness, and 9 may
+        struggle to accommodate 2's requirements. Humanitarian activities, on
+        the other hand, can be well-coordinated. 2 romantic beliefs, which
+        convert into fantastical aspirations, may overwhelm 9. <br><br>
+
+        3. You float across the domains of romance and imagination. 9 has a lot to
+        teach 3, and 3 is eager to pick up on what 9 teaches. You like trying new
+        things and traveling across the world. All you have to do now is focus on
+        establishing foundations. <br><br>
+
+        4. A tense, shaky connection. 9 is idealistic and interested in the well-being
+        of others and the vast world, while 4 is focused on their own life and the
+        tiny world and is stubborn. It's tough for you to communicate with one
+        another. <br><br>
+
+        5. You have a good understanding of each other, and 9 offers 5 the
+        independence they desire, and your connection is always changing. You
+        must work on your commitment to one another. <br><br>
+
+        6. Because of your extreme romanticism, your strong connection is
+        balanced. 9 admires 6's approach to everything, and 6 admires 9's
+        worldview. You complement one another, appreciate one another, and
+        strive for excellence in one another. <br><br>
+
+        7. This is an interesting combo. You're both spiritual, so this is a fantastic
+        match if you share similar ideas. If you don't, you won't be able to
+        communicate with each other and won't even attempt. <br><br>
+
+        8. 8 want to be successful and acquire material possessions, whereas 9
+        has a higher worldview. You don't want to meet in the center with your
+        opposing viewpoints. Not a good match! <br><br>
+
+        9. You all want to help each other and the planet, and you can do far more
+        as a group than you can alone. This is beneficial on an interpersonal,
+        business, and altruistic level.
+
+        ` 
+    }
+    
 
     
     // Yearly Forecast Compabibility 

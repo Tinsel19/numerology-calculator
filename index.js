@@ -12146,6 +12146,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     You’ll be more concerned with your family and community. You have a lot
     of potentials to better yourself and your life. You will be focused on your home,
     family, and community. 
+    During this time, you may fall in love and get married. You'll have to be more domestic, and you'll be responsible for a lot of things. Purchasing a home, starting a family, and having children are all regular activities. You might become a caregiver for family members, strangers, or children. You may face several obstacles in your quest to become more domestic and helpful. During this time commitment are important and if your relationship is broken this may lead to a separation or divorce.
+        
     </p>
 
     `

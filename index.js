@@ -15295,9 +15295,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         nineColor.style.backgroundColor = 'green';
 
         relCompText.innerHTML = `
-        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
-        
-        <br>
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br>
 
         <span class='green'>1</span>. You comprehend each other's drive to be self-sufficient and a leader, but
         you must avoid allowing your competitive characteristics to get in the
@@ -15360,9 +15358,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         nineColor.style.backgroundColor = 'yellow';
 
         relCompText.innerHTML = `
-        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
-        
-        <br>
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> 
 
         <span class='yellow'>1</span>. The 1 assumes command, and the 2-follow suit. 1 must not impose
         excessive control over 2 in order for 2 to feel at ease, and 2 must be
@@ -15419,9 +15415,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         nineColor.style.backgroundColor = 'green';
 
         relCompText.innerHTML = `
-        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
-        
-        <br>
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> 
 
         <span class='yellow'>1</span>. The perfect partnership! The bright impacts of life path 1 will wonderfully
         combine with the attractiveness and intellect of life path 3. In this
@@ -15470,7 +15464,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         oneCoolor.style.backgroundColor ='red';
         twoColor.style.backgroundColor = 'green';
         threeColor.style.backgroundColor = 'red';
-        fourColor.style.backgroundColor = 'red';
+        fourColor.style.backgroundColor = 'green';
         fiveColor.style.backgroundColor = 'red';
         sixColor.style.backgroundColor = 'green';
         sevenColor.style.backgroundColor = 'yellow';
@@ -15478,9 +15472,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         nineColor.style.backgroundColor = 'red';
 
         relCompText.innerHTML = `
-        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
-        
-        <br>
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br>
 
         <span class='red'>1</span>. A complicated partnership that needs mutual understanding. 1 is
         impetuous, controlling, and wants to keep things exciting, whereas 4 like
@@ -15544,9 +15536,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         nineColor.style.backgroundColor = 'yellow';
 
         relCompText.innerHTML = `
-        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
-
-        <br>
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> 
 
         <span class='green'>1</span>. The energy of life path 5 ensures personal progress for both parties in
         this relationship because they're continually moving. You both like being
@@ -15607,9 +15597,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         nineColor.style.backgroundColor = 'green';
 
         relCompText.innerHTML = `
-        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
-        
-        <br>
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> 
 
         <span class='yellow'>1</span>. 6 wants to look after 1, but 1 wants autonomy to do its particular thing,
         thus 1 feel suffocated by 6, while 6 feels unappreciated by 1. You can,
@@ -15678,9 +15666,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         nineColor.style.backgroundColor = 'yellow';
 
         relCompText.innerHTML = `
-        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
-        
-        <br>
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> 
 
         <span class='green'>1</span>. 7 offers their expertise, which aids 1 in achieving their objectives, yet 7
         might be too overthinking for 1 and 1 can be too materialistic for 7.
@@ -15743,10 +15729,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         nineColor.style.backgroundColor = 'red';
 
         relCompText.innerHTML = `
-        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
-
-
-        <br> 
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> 
 
         <span class='red'>1</span>. Professionally, you can work well together, motivating each other and
         setting clear objectives, while personally, neither of you is very loving,
@@ -15802,10 +15785,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         nineColor.style.backgroundColor = 'green';
 
         relCompText.innerHTML = `
-        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> <br> 
-        
-        
-        <br>
+        <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> 
 
         <span class='yellow'>1</span>. 9 demonstrates how to think of others, whereas 1 demonstrates how to
         think of oneself. As long as 1 doesn't get too pushy with 9, you get along

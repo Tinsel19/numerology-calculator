@@ -12688,7 +12688,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
         You have a lot of potentials to better yourself and your life. You become the
         master instructor, and your wisdom may have a huge influence. You will be
-        involved with family and community. 
+        involved with family and community. <br> <br>
+        During this time, you may fall in love and get married. You'll have to be more domestic, and you'll be responsible for a lot of things. Purchasing a home, starting a family, and having children are all regular activities. You might become a caregiver for family members, strangers, or children. You may face several obstacles in your quest to become more domestic and helpful. During this time commitment are important and if your relationship is broken this may lead to a separation or divorce.
         </p>
     
         `
@@ -13061,7 +13062,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
         You have a lot of potentials to better yourself and your life. You become the
         master instructor, and your wisdom may have a huge influence. You’ll still
-        be involved with family and community
+        be involved with family and community. <br> <br>
+        During this time, you may fall in love and get married. You'll have to be more domestic, and you'll be responsible for a lot of things. Purchasing a home, starting a family, and having children are all regular activities. You might become a caregiver for family members, strangers, or children. You may face several obstacles in your quest to become more domestic and helpful. During this time commitment are important and if your relationship is broken this may lead to a separation or divorce.
         </p>
     
         `
@@ -15297,7 +15299,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         relCompText.innerHTML = `
         <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br>
 
-        <span class='green'>1</span>. You comprehend each other's drive to be self-sufficient and a leader, but
+        <span class='green1'>1</span>. You comprehend each other's drive to be self-sufficient and a leader, but
         you must avoid allowing your competitive characteristics to get in the
         middle of your relationship. <br><br>
 
@@ -15305,7 +15307,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         excessive control over 2 in order for 2 to feel at ease, and 2 must be
         willing to keep things interesting so that 1 does not become bored. <br><br>
 
-        <span class='green'>3</span>. The perfect partnership! The bright impacts of life path 1 will wonderfully
+        <span class='green1'>3</span>. The perfect partnership! The bright impacts of life path 1 will wonderfully
         combine with the attractiveness and intellect of life path 3. In this
         connection, there is a lot of shared creativity. <br><br>
 
@@ -15314,7 +15316,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         to take their time, be in control, and are bossy. Some conflicts may
         arise as a result of your differing perspectives and understanding of life.<br><br>
 
-        <span class='green'>5</span>. The energy of life path 5 ensures personal progress for both parties in
+        <span class='green1'>5</span>. The energy of life path 5 ensures personal progress for both parties in
         this relationship because they're continually moving. You both like being
         independent and are full of life. Your issue is that you spend far too
         much time apart to establish something meaningful which might get the
@@ -15327,7 +15329,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         as a number of valuable advices. Although, this partnership may be
         stressful on your nerves at times.<br><br>
 
-        <span class='green'>7</span>. 7 offers their expertise, which aids 1 in achieving their objectives, yet 7
+        <span class='green1'>7</span>. 7 offers their expertise, which aids 1 in achieving their objectives, yet 7
         might be too overthinking for 1 and 1 can be too materialistic for 7.
         Overall, if 1 does not try to control 7 and gives 7 privacies at times for
         reflections, this can be a perfect match that is more intellectual than
@@ -15339,7 +15341,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         finally tier each other down. You don't have a lot of patience, but you
         both need to be patient for the relationship to work out. <br><br>
 
-        <span class='green'>9</span>. 9 demonstrates how to think of others, whereas 1 demonstrates how to
+        <span class='green1'>9</span>. 9 demonstrates how to think of others, whereas 1 demonstrates how to
         think of oneself. As long as 1 doesn't get too pushy with 9, you get along
         OK. <br>
 
@@ -15364,7 +15366,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         excessive control over 2 in order for 2 to feel at ease, and 2 must be
         willing to keep things interesting so that 1 does not become bored.<br><br>
 
-        <span class='green'>2</span>. You're both gentle and caring, yet none of you likes to argue about
+        <span class='green1'>2</span>. You're both gentle and caring, yet none of you likes to argue about
         insignificant matters, so you quickly negotiate. You'll be OK if you
         argue gently. Despite the fact that you are both emotional and passive
         individuals who are paralyzed by uncertainties and a lack of action. <br><br>
@@ -15373,7 +15375,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         offering stable, pragmatic energy to balance the tense, worried energy of
         the 3. <br> <br>
 
-        <span class='green'>4</span>. You're both laid-back, stable, practical, and responsible, 4 provides a
+        <span class='green1'>4</span>. You're both laid-back, stable, practical, and responsible, 4 provides a
         comfortable environment for the two of them. This definitely works if 4
         can exhibit more compassion. <br><br>
 
@@ -15382,7 +15384,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         suffocated, while 2 feel ignored. However, if 2 appreciates and
         embraces 5's goofiness, enjoyable sex life is guaranteed. <br><br>
         
-        <span class='green'>6</span>. You're both compassionate and committed to each other, and you're
+        <span class='green1'>6</span>. You're both compassionate and committed to each other, and you're
         capable of establishing a stable family life jointly. 6 only needs to ensure
         that their frank remarks do not harm sensitive 2. <br><br>
 
@@ -15391,7 +15393,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         should be more open to express their sentiments more frequently, and 2
         should allow 7 the space and time they require. <br><br>
 
-        <span class='green'>8</span>. The number 8 represents a businessperson who is responsible for both
+        <span class='green1'>8</span>. The number 8 represents a businessperson who is responsible for both
         professional and financial problems. The number two is domestic, who
         looks after the home and family. It lasts as long as 8 doesn't neglect 2. <br><br>
 
@@ -15425,7 +15427,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         offering stable, pragmatic energy to balance the tense, worried energy of
         the 3.<br><br>
 
-        <span class='green'>3</span>. You're both artistic and full of energy, and you may have a lively
+        <span class='green1'>3</span>. You're both artistic and full of energy, and you may have a lively
         relationship, yet problems with day-to-day tasks may occur, making the
         partnership short-lived.<br><br>
 
@@ -15438,7 +15440,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         about at parties. You're all really inventive and creative folks. You'll
         have issues with little things.<br><br>
 
-        <span class='green'>6</span>. This is the ideal love connection, which everyone wishes for! 3 is the
+        <span class='green1'>6</span>. This is the ideal love connection, which everyone wishes for! 3 is the
         person who comes up with new ideas, is energetic, and has a good time.
         6 brings some stability to 3's wacky ideas while also encouraging them.
         You have an amazing chemistry and operate together quite well.<br><br>
@@ -15453,7 +15455,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         very different things, and when it succeeds, it might be a case of platonic
         love. <br><br>
 
-        <span class='green'>9</span>. You float across the domains of romance and imagination. 9 has a lot to
+        <span class='green1'>9</span>. You float across the domains of romance and imagination. 9 has a lot to
         teach 3, and 3 is eager to pick up on what 9 teaches. You like trying new
         things and traveling across the world. All you have to do now is focus on
         establishing foundations.<br>
@@ -15479,7 +15481,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         to take their time, be in control, and are bossy. Some conflicts may
         arise as a result of your differing perspectives and understanding of life. <br>  <br>
 
-        <span class='green'>2</span>. You're both laid-back, stable, practical, and responsible, 4 provides a
+        <span class='green1'>2</span>. You're both laid-back, stable, practical, and responsible, 4 provides a
         comfortable environment for the two of them. This definitely works if 4
         can exhibit more compassion. <br>  <br>
 
@@ -15499,7 +15501,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         is necessary for you to tolerate your uniqueness otherwise the
         relationship will not last. <br> <br>
 
-        <span class='green'>6</span>. Your bond is deep and powerful because you'll get along well, and it's
+        <span class='green1'>6</span>. Your bond is deep and powerful because you'll get along well, and it's
         based on a sense of obligation, a shared need for stability and security.
         6 is the leader, and 4 eagerly follow. You both desire to have a great
         home life and are willing to help one other. All you have to do is work on
@@ -15511,7 +15513,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         love connection for you. Although the relationship can work if you're
         tolerate each other. <br> <br>
 
-        <span class='green'>8</span>. 4 places a high priority on security and a solid basis, and 8 may exploit
+        <span class='green1'>8</span>. 4 places a high priority on security and a solid basis, and 8 may exploit
         that security and foundation to achieve their objectives. Once you make
         your romance a priority, it will last a long time. <br> <br>
 
@@ -15538,7 +15540,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         relCompText.innerHTML = `
         <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> 
 
-        <span class='green'>1</span>. The energy of life path 5 ensures personal progress for both parties in
+        <span class='green1'>1</span>. The energy of life path 5 ensures personal progress for both parties in
         this relationship because they're continually moving. You both like being
         independent and are full of life. Your issue is that you spend far too
         much time apart to establish something meaningful which might get the
@@ -15559,7 +15561,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         is necessary for you to tolerate your uniqueness otherwise the
         relationship will not last. <br><br>
 
-        <span class='green'>5</span>. You two are a match made in heaven! On every level, you and your
+        <span class='green1'>5</span>. You two are a match made in heaven! On every level, you and your
         partner are in a lively relationship. You both like independence and
         adventure, and you may share new experiences together. You help each
         other out, yet you struggle to find direction or cope with day-to-day
@@ -15571,7 +15573,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         5, 6 can be excessively clinging, while 5 can be too untrustworthy. You
         both don't want to go halfway. <br> <br>
 
-        <span class='green'>7</span>. This is a fascinating intellectual match, yet their apparent independence
+        <span class='green1'>7</span>. This is a fascinating intellectual match, yet their apparent independence
         perplexes them both, and you both have the flexibility to pursue your
         own interests. You share a mutual admiration for each other. Friendship
         may serve as a solid basis for a partnership. <br> <br>
@@ -15606,16 +15608,16 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         as a number of valuable advices. Although, this partnership may be
         stressful on your nerves at times. <br><br>
 
-        <span class='green'>2</span>. You're both compassionate and committed to each other, and you're
+        <span class='green1'>2</span>. You're both compassionate and committed to each other, and you're
         capable of establishing a stable family life jointly. 6 only needs to ensure
         that their frank remarks do not harm sensitive 2.<br><br>
 
-        <span class='green'>3</span>. This is the ideal love connection, which everyone wishes for! 3 is the
+        <span class='green1'>3</span>. This is the ideal love connection, which everyone wishes for! 3 is the
         person who comes up with new ideas, is energetic, and has a good time.
         6 brings some stability to 3's wacky ideas while also encouraging them.
         You have an amazing chemistry and operate together quite well. <br><br>
 
-        <span class='green'>4</span>. Your bond is deep and powerful because you'll get along well, and it's
+        <span class='green1'>4</span>. Your bond is deep and powerful because you'll get along well, and it's
         based on a sense of obligation, a shared need for stability and security.
         6 is the leader, and 4 eagerly follow. You both desire to have a great
         home life and are willing to help one other. All you have to do is work on
@@ -15628,7 +15630,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         5, 6 can be excessively clinging, while 5 can be too untrustworthy. You
         both don't want to go halfway. <br><br>
 
-        <span class='green'>6</span>. You are attracted to each other in the same way that two lovers are
+        <span class='green1'>6</span>. You are attracted to each other in the same way that two lovers are
         attracted to one another. You're both realistic individuals that are loyal,
         loving, responsible and committed to one another, and sincerely care
         about each other. You'll look after one another and prioritize your lives
@@ -15644,7 +15646,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         ambitions and money. This can work as long as you don't expect too
         much from each other and turn a blind eye to any furious tantrums. <br><br>
 
-        <span class='green'>9</span>. Because of your extreme romanticism, your strong connection is
+        <span class='green1'>9</span>. Because of your extreme romanticism, your strong connection is
         balanced. 9 admires 6's approach to everything, and 6 admires 9's
         worldview. You complement one another, appreciate one another, and
         strive for excellence in one another. <br>
@@ -15668,7 +15670,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         relCompText.innerHTML = `
         <h3 class="bold-description-label">Relationship Compatibility Based on Life Path</h3> <br> 
 
-        <span class='green'>1</span>. 7 offers their expertise, which aids 1 in achieving their objectives, yet 7
+        <span class='green1'>1</span>. 7 offers their expertise, which aids 1 in achieving their objectives, yet 7
         might be too overthinking for 1 and 1 can be too materialistic for 7.
         Overall, if 1 does not try to control 7 and gives 7 privacies at times for
         reflections, this can be a perfect match that is more intellectual than
@@ -15690,7 +15692,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         this could be a better acquaintance than a love connection for you.
         Although the relationship can work if you're tolerate each other. <br><br>
 
-        <span class='green'>5</span>. This is a fascinating intellectual match, yet their apparent independence
+        <span class='green1'>5</span>. This is a fascinating intellectual match, yet their apparent independence
         perplexes them both, and you both have the flexibility to pursue your
         own interests. You share a mutual admiration for each other. Friendship
         may serve as a solid basis for a partnership <br><br>
@@ -15701,7 +15703,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         endeavors, and it's difficult to nail down. The number 7 is enigmatic,
         while the number 6 is commanding.  <br><br>
 
-        <span class='green'>7</span>. You comprehend each other's thirst for education, spiritual aspirations,
+        <span class='green1'>7</span>. You comprehend each other's thirst for education, spiritual aspirations,
         and a life that is independent of everybody else. Be honest with one
         another and the relationship will last. <br><br>
 
@@ -15737,7 +15739,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         finally tier each other down. You don't have a lot of patience, but you
         both need to be patient for the relationship to work out. <br><br>
 
-        <span class='green'>2</span>. The number 8 represents a businessperson who is responsible for both
+        <span class='green1'>2</span>. The number 8 represents a businessperson who is responsible for both
         professional and financial problems. The number two is domestic, who
         looks after the home and family. It lasts as long as 8 doesn't neglect 2. <br><br>
 
@@ -15746,7 +15748,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         very different things, and when it succeeds, it might be a case of platonic
         love. <br><br>
 
-        <span class='green'>4</span>. 4 places a high priority on security and a solid basis, and 8 may exploit
+        <span class='green1'>4</span>. 4 places a high priority on security and a solid basis, and 8 may exploit
         that security and foundation to achieve their objectives. Once you make
         your romance a priority, it will last a long time. <br><br>
 
@@ -15764,7 +15766,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         argues and makes up all the time, which is not really healthy. The
         number 8 is bossy and controlling, whereas the number 7 is rebellious. <br><br>
 
-        <span class='green'>8</span>. This is a fantastic combination if you can make the connection a
+        <span class='green1'>8</span>. This is a fantastic combination if you can make the connection a
         commitment. You support one another, you're passionate, and you're
         realistic. Don't let competition get in the way of your relationship. <br><br>
 
@@ -15796,7 +15798,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         the other hand, can be well-coordinated. 2 romantic beliefs, which
         convert into fantastical aspirations, may overwhelm 9. <br><br>
 
-        <span class='green'>3</span>. You float across the domains of romance and imagination. 9 has a lot to
+        <span class='green1'>3</span>. You float across the domains of romance and imagination. 9 has a lot to
         teach 3, and 3 is eager to pick up on what 9 teaches. You like trying new
         things and traveling across the world. All you have to do now is focus on
         establishing foundations. <br><br>
@@ -15810,7 +15812,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         independence they desire, and your connection is always changing. You
         must work on your commitment to one another. <br><br>
 
-        <span class='green'>6</span>. Because of your extreme romanticism, your strong connection is
+        <span class='green1'>6</span>. Because of your extreme romanticism, your strong connection is
         balanced. 9 admires 6's approach to everything, and 6 admires 9's
         worldview. You complement one another, appreciate one another, and
         strive for excellence in one another. <br><br>
@@ -15823,7 +15825,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         has a higher worldview. You don't want to meet in the center with your
         opposing viewpoints. Not a good match! <br><br>
 
-        <span class='green'>9</span>. You all want to help each other and the planet, and you can do far more
+        <span class='green1'>9</span>. You all want to help each other and the planet, and you can do far more
         as a group than you can alone. This is beneficial on an interpersonal,
         business, and altruistic level.
 

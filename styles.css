@@ -31,19 +31,22 @@ button {
     text-align: center;
 }
 
-.green {
-    color: rgb(22, 230, 22);
+.green1 {
+    color: green;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .yellow {
     color: yellow;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .red {
     color:  red;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 /* header  */

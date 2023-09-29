@@ -8243,10 +8243,9 @@ your    cool or temper.
     <br> <br>
     <h3 class="bold-description-label">Definition</h3> <br>
     <p>
-        Usually derived from your date of birth, which can be discovered by
-        looking at the numbers present (day of birth or life path, and name numbers). Can
-        be viewed as current challenges that you may experience during your
-        lifetime.   
+        Usually derived from your date of birth, which can be discovered by looking at the numbers present (day of birth or life path number). There are four karmic debt numbers which are 13/4, 14/5, 16/7, and 19/1. Your life path number is used to determine the corresponding karmic debt number. There is a possibility that the double digit number your Life Path originated from has a Karmic Debt attached to it if your Life Path number is 1, 4, 5, or 7.
+        <br> <br>
+        Just know that any number in your core numerology chart, including our name numbers (the expression, heart's desire, and personality numbers), may be associated with a karmic debt as a result of the choices your soul made during your past life, it is a sign of a struggle you have to bear or lessons you need to learn, as well as any further difficulties and hardships you may have to face in this lifetime.  
     </p> <br> <br>
     `;
 
@@ -10573,9 +10572,8 @@ your    cool or temper.
         fpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+        Our lives are divided into three major categories called period cycles. Each cycle age of start and duration is based on your life path number.
+        <br> <br>
             <b>First</b> Period Cycle or Opening Period
                 - Your first three decades of your existence were a period of
                 intense activity. Attempting to manage the tremendous
@@ -10605,9 +10603,8 @@ your    cool or temper.
         fpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+        Our lives are divided into three major categories called period cycles. Each cycle age of start and duration is based on your life path number.
+        <br> <br>
             <b>First</b> Period Cycle or Opening Period
                 - Your first three decades of your existence were a period of
                 intense activity. Attempting to manage the tremendous
@@ -10643,9 +10640,8 @@ your    cool or temper.
         fpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+        Our lives are divided into three major categories called period cycles. Each cycle age of start and duration is based on your life path number.
+        <br> <br>
             <b>First</b> Period Cycle or Opening Period
                 - Your first three decades of your existence were a period of
                 intense activity. Attempting to manage the tremendous
@@ -10673,9 +10669,8 @@ your    cool or temper.
         fpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+        Our lives are divided into three major categories called period cycles. Each cycle age of start and duration is based on your life path number.
+        <br> <br>
             <b>First</b> Period Cycle or Opening Period
                 - Your first three decades of your existence were a period of
                 intense activity. Attempting to manage the tremendous
@@ -10699,9 +10694,8 @@ your    cool or temper.
         fpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+        Our lives are divided into three major categories called period cycles. Each cycle age of start and duration is based on your life path number.
+        <br> <br>
             <b>First</b> Period Cycle or Opening Period
                 - Your first three decades of your existence were a period of
                 intense activity. Attempting to manage the tremendous
@@ -10728,9 +10722,8 @@ your    cool or temper.
         fpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+        Our lives are divided into three major categories called period cycles. Each cycle age of start and duration is based on your life path number.
+        <br> <br>
             <b>First</b> Period Cycle or Opening Period
                 - Your first three decades of your existence were a period of
                 intense activity. Attempting to manage the tremendous
@@ -10762,9 +10755,8 @@ your    cool or temper.
         fpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+        Our lives are divided into three major categories called period cycles. Each cycle age of start and duration is based on your life path number.
+        <br> <br>
             <b>First</b> Period Cycle or Opening Period
                 - Your first three decades of your existence were a period of
                 intense activity. Attempting to manage the tremendous
@@ -10793,9 +10785,8 @@ your    cool or temper.
         fpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+        Our lives are divided into three major categories called period cycles. Each cycle age of start and duration is based on your life path number.
+        <br> <br>
             <b>First</b> Period Cycle or Opening Period
                 - Your first three decades of your existence were a period of
                 intense activity. Attempting to manage the tremendous
@@ -10831,9 +10822,8 @@ your    cool or temper.
         fpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+        Our lives are divided into three major categories called period cycles. Each cycle age of start and duration is based on your life path number.
+        <br> <br>
             <b>First</b> Period Cycle or Opening Period
                 - Your first three decades of your existence were a period of
                 intense activity. Attempting to manage the tremendous
@@ -10863,9 +10853,8 @@ your    cool or temper.
         fpCycleText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
-            Our lives are divided into three major categories called period cycles.
-            Which cycle age of start and duration is based on your life path
-            number. <br> <br>
+        Our lives are divided into three major categories called period cycles. Each cycle age of start and duration is based on your life path number.
+        <br> <br>
             <b>First</b> Period Cycle or Opening Period
                 - Your first three decades of your existence were a period of
                 intense activity. Attempting to manage the tremendous

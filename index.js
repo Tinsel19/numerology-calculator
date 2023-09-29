@@ -13652,7 +13652,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             serve to help you learn and grow. There are 4 challenges, and each
             has its own number. <br>
             <b>The first Challenge number</b> is an issue you’ll have in the first half of
-            your life. From birth until about the age of 30/35 years..
+            your life. From birth until about the age of 30/35 years.
             <br> 
             First Challenge Number = Day of Birth – Month of Birth <br> 
     

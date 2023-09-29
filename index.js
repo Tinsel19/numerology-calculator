@@ -13652,7 +13652,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             serve to help you learn and grow. There are 4 challenges, and each
             has its own number. <br>
             <b>The first Challenge number</b> is an issue you’ll have in the first half of
-            your life. Lasts from birth until about the age of 30/35 years.
+            your life. From birth until about the age of 30/35 years..
             <br> 
             First Challenge Number = Day of Birth – Month of Birth <br> 
     
@@ -13683,7 +13683,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             serve to help you learn and grow. There are 4 challenges, and each
             has its own number. <br>
             <b>The first Challenge number</b> is an issue you’ll have in the first half of
-            your life. Lasts from birth until about the age of 30/35 years.
+            your life. From birth until about the age of 30/35 years.
             <br> 
             First Challenge Number = Day of Birth – Month of Birth <br> 
     
@@ -13711,7 +13711,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             serve to help you learn and grow. There are 4 challenges, and each
             has its own number. <br>
             <b>The first Challenge number</b> is an issue you’ll have in the first half of
-            your life. Lasts from birth until about the age of 30/35 years.
+            your life. From birth until about the age of 30/35 years.
             <br> 
             First Challenge Number = Day of Birth – Month of Birth
     
@@ -13745,7 +13745,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             serve to help you learn and grow. There are 4 challenges, and each
             has its own number. <br>
             <b>The first Challenge number</b> is an issue you’ll have in the first half of
-            your life. Lasts from birth until about the age of 30/35 years.
+            your life. From birth until about the age of 30/35 years.
             <br> 
             First Challenge Number = Day of Birth – Month of Birth
     
@@ -13779,7 +13779,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             serve to help you learn and grow. There are 4 challenges, and each
             has its own number. <br>
             <b>The first Challenge number</b> is an issue you’ll have in the first half of
-            your life. Lasts from birth until about the age of 30/35 years.
+            your life. From birth until about the age of 30/35 years.
             <br> 
             First Challenge Number = Day of Birth – Month of Birth
     
@@ -13806,7 +13806,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             serve to help you learn and grow. There are 4 challenges, and each
             has its own number. <br>
             <b>The first Challenge number</b> is an issue you’ll have in the first half of
-            your life. Lasts from birth until about the age of 30/35 years.
+            your life. From birth until about the age of 30/35 years.
             <br> 
             First Challenge Number = Day of Birth – Month of Birth
     
@@ -13836,7 +13836,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             serve to help you learn and grow. There are 4 challenges, and each
             has its own number. <br>
             <b>The first Challenge number</b> is an issue you’ll have in the first half of
-            your life. Lasts from birth until about the age of 30/35 years.
+            your life. From birth until about the age of 30/35 years.
             <br> 
             First Challenge Number = Day of Birth – Month of Birth
     
@@ -13864,7 +13864,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             serve to help you learn and grow. There are 4 challenges, and each
             has its own number. <br>
             <b>The first Challenge number</b> is an issue you’ll have in the first half of
-            your life. Lasts from birth until about the age of 30/35 years.
+            your life. From birth until about the age of 30/35 years.
             <br> 
             First Challenge Number = Day of Birth – Month of Birth
     
@@ -13895,7 +13895,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
             serve to help you learn and grow. There are 4 challenges, and each
             has its own number. <br>
             <b>The first Challenge number</b> is an issue you’ll have in the first half of
-            your life. Lasts from birth until about the age of 30/35 years.
+            your life. From birth until about the age of 30/35 years.
             <br> 
             First Challenge Number = Day of Birth – Month of Birth
     
@@ -14001,7 +14001,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
             
             <b>The second Challenge number</b> is an issue you’ll have during the
-            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+            second half of your life.  From 35 to 55/60. <br> 
     
             Second Challenge Number = Year of Birth – Day of Birth
     
@@ -14029,7 +14029,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
             
             <b>The second Challenge number</b> is an issue you’ll have during the
-            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+            second half of your life.  From 35 to 55/60. <br> 
     
             Second Challenge Number = Year of Birth – Day of Birth
     
@@ -14054,7 +14054,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
             
             <b>The second Challenge number</b> is an issue you’ll have during the
-            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+            second half of your life.  From 35 to 55/60. <br> 
     
             Second Challenge Number = Year of Birth – Day of Birth
     
@@ -14085,7 +14085,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
             
             <b>The second Challenge number</b> is an issue you’ll have during the
-            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+            second half of your life.  From 35 to 55/60. <br> 
     
             Second Challenge Number = Year of Birth – Day of Birth
     
@@ -14115,7 +14115,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
             
             <b>The second Challenge number</b> is an issue you’ll have during the
-            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+            second half of your life.  From 35 to 55/60. <br> 
     
             Second Challenge Number = Year of Birth – Day of Birth
     
@@ -14139,7 +14139,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
             
             <b>The second Challenge number</b> is an issue you’ll have during the
-            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+            second half of your life.  From 35 to 55/60. <br> 
     
             Second Challenge Number = Year of Birth – Day of Birth
     
@@ -14167,7 +14167,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
             
             <b>The second Challenge number</b> is an issue you’ll have during the
-            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+            second half of your life.  From 35 to 55/60. <br> 
     
             Second Challenge Number = Year of Birth – Day of Birth
     
@@ -14193,7 +14193,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
             
             <b>The second Challenge number</b> is an issue you’ll have during the
-            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+            second half of your life.  From 35 to 55/60. <br> 
     
             Second Challenge Number = Year of Birth – Day of Birth
     
@@ -14221,7 +14221,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <p>
             
             <b>The second Challenge number</b> is an issue you’ll have during the
-            second half of your life. Lasts till about the age of 35 to 55/60. <br> 
+            second half of your life.  From 35 to 55/60. <br> 
     
             Second Challenge Number = Year of Birth – Day of Birth
     
@@ -14503,8 +14503,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
             
-            <b>third and fourth challenge number</b> is an issue and weakness
-            you can have all of your life. It is the most important challenge. <br><br>
+            <b>third and fourth challenge number</b>  is an issue and weakness you have from 55/60 - Till death.
+            <br><br>
     
             Third Challenge Number = Second Challenge # – First Challenge # <br>
     
@@ -14569,8 +14569,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
             
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
+            <b>The fourth challenge number</b>  is an issue and weakness you have from 55/60 - Till death
+            <br> <br>
     
             Fourth Challenge Number = Year of Birth – Month of Birth
            </p> <br> <br>
@@ -14596,8 +14596,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
             
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
+            <b>The fourth challenge number</b>  is an issue and weakness you have from 55/60 - Till death
+            <br> <br>
     
             Fourth Challenge Number = Year of Birth – Month of Birth
            </p> <br> <br>
@@ -14621,8 +14621,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
             
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
+            <b>The fourth challenge number</b>  is an issue and weakness you have from 55/60 - Till death
+            <br> <br>
     
             Fourth Challenge Number = Year of Birth – Month of Birth
            </p> <br> <br>
@@ -14650,8 +14650,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
             
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
+            <b>The fourth challenge number</b>  is an issue and weakness you have from 55/60 - Till death
+            <br> <br>
     
             Fourth Challenge Number = Year of Birth – Month of Birth
            </p> <br> <br>
@@ -14680,8 +14680,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
             
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
+            <b>The fourth challenge number</b>  is an issue and weakness you have from 55/60 - Till death
+            <br> <br>
     
             Fourth Challenge Number = Year of Birth – Month of Birth
            </p> <br> <br>
@@ -14702,8 +14702,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
             
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
+            <b>The fourth challenge number</b>  is an issue and weakness you have from 55/60 - Till death
+            <br> <br>
     
             Fourth Challenge Number = Year of Birth – Month of Birth
            </p> <br> <br>
@@ -14728,8 +14728,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
             
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
+            <b>The fourth challenge number</b>  is an issue and weakness you have from 55/60 - Till death
+            <br> <br>
     
             Fourth Challenge Number = Year of Birth – Month of Birth
            </p> <br> <br>
@@ -14752,8 +14752,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
             
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
+            <b>The fourth challenge number</b>  is an issue and weakness you have from 55/60 - Till death
+            <br> <br>
     
             Fourth Challenge Number = Year of Birth – Month of Birth
            </p> <br> <br>
@@ -14779,8 +14779,8 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Definition</h3> <br>
         <p>
             
-            <b>The fourth challenge number</b> is an issue and weakness you can
-            have all of your life. (55/60 - Till death) <br> <br>
+            <b>The fourth challenge number</b>  is an issue and weakness you have from 55/60 - Till death
+            <br> <br>
     
             Fourth Challenge Number = Year of Birth – Month of Birth
            </p> <br> <br>

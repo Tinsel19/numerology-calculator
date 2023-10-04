@@ -15150,7 +15150,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
         <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
         Shyness, anxiety, timidity, overly sensitive, codependent, fear, 
-        selfconsciousness, drowning in detail, depression, submissive. 
+        selfconsciousness, drowning in detail, vulnerable, depression, submissive. 
     </p> <br> <br>
 
     <p class="lined">
@@ -15215,7 +15215,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
         Self-righteousness, obstinacy, stubbornness, perfectionism,
         dominance over family and friends, interfering, arrogant and
-        prone to flattery, high standard, outspoken.
+        prone to flattery, gossip, high standard, outspoken.
     </p> <br> <br>
 
     <p class="lined" >

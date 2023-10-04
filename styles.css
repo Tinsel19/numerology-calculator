@@ -4,13 +4,8 @@
     margin: 0px;
 }
 
-html {
-    /* font-family:  sans-serif; */
-    padding: 1rem;
-    
-}
 
-body {
+.body {
     /* padding: 2rem; */
     border-radius: 10px;
     box-shadow: 2px 3px 5px grey;

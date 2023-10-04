@@ -15,629 +15,632 @@
 </head>
 <body>
     
-    <header id="header">
-        <h1 class="bluePrint">Discover Your Soul Blueprint</h1>
-        <h1 class="chart">Complete Numerology Chart Calculator <br>& <br>Readings</h1>
-    </header>
-
-    <section class="main-body">
-
-    <form class="form" id="myForm">
-        <div class="styled-input">
-            <span class="span">Current Name</span>
-            <input type="text" id="cName" placeholder="first & last name" required>
-        </div>
-
-        <div class="styled-input">
-            <span class="span">Full Name at Birth</span>
-            <input type="text" id="fName" placeholder="first, middle & last name" required>
-        </div>
-
-        <div class="styled-input">
-            <span class="span">Date of Birth</span>
-            <select  id="month" required>
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-            </select>
-
-            <select  id="day" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select>
-            <input type="number" id="year" placeholder="year"  required>
-        </div>
-
-        <div class="trigger-btns">
-            <button type="submit" class="btn" id="calc">Calculate</button>
-            <button id="reset" class="btn">Reset</button>
-        </div>
-        
-    </form>
-
+    <section class="body">
+        <header id="header">
+            <h1 class="bluePrint">Discover Your Soul Blueprint</h1>
+            <h1 class="chart">Complete Numerology Chart Calculator <br>& <br>Readings</h1>
+        </header>
     
-    <section class="main-table hide">
+        <section class="main-body">
+    
+        <form class="form" id="myForm">
+            <div class="styled-input">
+                <span class="span">Current Name</span>
+                <input type="text" id="cName" placeholder="first & last name" required>
+            </div>
+    
+            <div class="styled-input">
+                <span class="span">Full Name at Birth</span>
+                <input type="text" id="fName" placeholder="first, middle & last name" required>
+            </div>
+    
+            <div class="styled-input">
+                <span class="span">Date of Birth</span>
+                <select  id="month" required>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+    
+                <select  id="day" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <input type="number" id="year" placeholder="year"  required>
+            </div>
+    
+            <div class="trigger-btns">
+                <button type="submit" class="btn" id="calc">Calculate</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+            
+        </form>
+    
         
-        <div class="bold-head" >
-            <p >Present <br>Name</p> 
-            <p>Full Name at <br>Birth</p>
-            <p>Date of Birth</p>
-        </div>
-
-        <div class="cols3-equal lined" id="cols3">
-            <p id="ccName"></p>
-            <p id="ffName"></p>
-            <p id="ddBirth"></p>
-        </div>
-
-        <!-- Life path  -->
-        <div class="  lined">
+        <section class="main-table hide">
+            
+            <div class="bold-head" >
+                <p >Present <br>Name</p> 
+                <p>Full Name at <br>Birth</p>
+                <p>Date of Birth</p>
+            </div>
+    
+            <div class="cols3-equal lined" id="cols3">
+                <p id="ccName"></p>
+                <p id="ffName"></p>
+                <p id="ddBirth"></p>
+            </div>
+    
+            <!-- Life path  -->
+            <div class="  lined">
+                <details>
+                    <summary class="cols2">
+                            <p class="label green">Life Path number</p>
+                            <p class="result" id="lpNum"></p>
+                    </summary>
+                    <p id="lpText"></p>
+                </details>
+            </div>
+    
+            <!-- Born day ? Birthday Number  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p class="label green">Born Day/ Birthday Number</p>
+                            <p  id="bdNum"></p>
+                    </summary>
+                    <p id="bdText"></p>
+                    <p id="bornDayText"></p>
+                </details>
+            </div>
+    
+            <!-- Expression ? Destiny  -->
             <details>
-                <summary class="cols2">
-                        <p class="label green">Life Path number</p>
-                        <p class="result" id="lpNum"></p>
-                </summary>
-                <p id="lpText"></p>
-            </details>
-        </div>
-
-        <!-- Born day ? Birthday Number  -->
-        <div class=" lined">
-            <details>
-                <summary class="cols2">
-                        <p class="label green">Born Day/ Birthday Number</p>
-                        <p  id="bdNum"></p>
-                </summary>
-                <p id="bdText"></p>
-                <p id="bornDayText"></p>
-            </details>
-        </div>
-
-        <!-- Expression ? Destiny  -->
-        <details>
-            <summary class="cols2-nil">
-                <div class="f-row" >
-                    <p class="green">Expression / Destiny</p>
-                    <p class="textpad">Minor Expression / Destiny</p>
-                    <p ></p>
-                </div>
-                <div class="cols-half">
-                    <div class="f-row">
-                        <p id="edNum"  ></p>
+                <summary class="cols2-nil">
+                    <div class="f-row" >
+                        <p class="green">Expression / Destiny</p>
+                        <p class="textpad">Minor Expression / Destiny</p>
                         <p ></p>
                     </div>
-                    <div class="s-row padlow" >
-                        <p ></p>
-                        <p id="medNum" class="special"></p>                
+                    <div class="cols-half">
+                        <div class="f-row">
+                            <p id="edNum"  ></p>
+                            <p ></p>
+                        </div>
+                        <div class="s-row padlow" >
+                            <p ></p>
+                            <p id="medNum" class="special"></p>                
+                        </div>
                     </div>
-                </div>
-            </summary>
-            <p class="lined" id="emeText"></p>
-            <p class="lined" id="memeText"></p>
-        </details>
-
-        <!-- Soul urge ? heart desire  -->
-        <details>
-            <summary class="cols2-nil">
-                <div class=" f-row " >
-                    <p class="green">Soul Urge / Heart Desire</p>
-                    <p class="textpad">Minor Soul Urge / Heart's Desire</p>
-                </div>
-                <div class="cols-half">
-                    <div class="f-row">
-                        <p id="suhdNum" ></p>
-                        <p ></p>
+                </summary>
+                <p class="lined" id="emeText"></p>
+                <p class="lined" id="memeText"></p>
+            </details>
+    
+            <!-- Soul urge ? heart desire  -->
+            <details>
+                <summary class="cols2-nil">
+                    <div class=" f-row " >
+                        <p class="green">Soul Urge / Heart Desire</p>
+                        <p class="textpad">Minor Soul Urge / Heart's Desire</p>
                     </div>
-                    <div class="s-row padlow" >
-                        <p ></p>
-                        <p id="msuhdNum" class="special"></p>               
+                    <div class="cols-half">
+                        <div class="f-row">
+                            <p id="suhdNum" ></p>
+                            <p ></p>
+                        </div>
+                        <div class="s-row padlow" >
+                            <p ></p>
+                            <p id="msuhdNum" class="special"></p>               
+                        </div>
                     </div>
-                </div>
-            </summary>
-            <p id="suhdText" class="lined"></p>
-            <p id="msuhdText" class="lined"></p>
-        </details>
-
-
-        <!-- Personality / Minor Personality  -->
-        <details>
-            <summary class="cols2-nil">
-                <div class=" f-row " >
-                    <p class="green">Personality</p>
-                    <p class="textpad">Minor Personlaity</p>
-                </div>
-                <div class="cols-half">
-                    <div class="f-row">
-                        <p id="pNum" ></p>
-                        <p ></p>
+                </summary>
+                <p id="suhdText" class="lined"></p>
+                <p id="msuhdText" class="lined"></p>
+            </details>
+    
+    
+            <!-- Personality / Minor Personality  -->
+            <details>
+                <summary class="cols2-nil">
+                    <div class=" f-row " >
+                        <p class="green">Personality</p>
+                        <p class="textpad">Minor Personlaity</p>
                     </div>
-                    <div class="s-row padlow" >
-                        <p ></p>
-                        <p id="mpNum" class="special"></p>             
+                    <div class="cols-half">
+                        <div class="f-row">
+                            <p id="pNum" ></p>
+                            <p ></p>
+                        </div>
+                        <div class="s-row padlow" >
+                            <p ></p>
+                            <p id="mpNum" class="special"></p>             
+                        </div>
                     </div>
-                </div>
-            </summary>
-            <p id="perText" class="lined"></p>
-            <p id="mperText" class="lined"></p>
-        </details>
-
-
-        <!-- Maturity  -->
-        <div class=" lined">
-            <details>
-                <summary class="cols2">
-                        <p class="blueM">Maturity</p>
-                        <p id="mNum"></p>
                 </summary>
-                <p id="mText"></p>
+                <p id="perText" class="lined"></p>
+                <p id="mperText" class="lined"></p>
             </details>
-        </div>
-
-        <!-- Attitude  -->
-        <div class=" lined">
+    
+    
+            <!-- Maturity  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p class="blueM">Maturity</p>
+                            <p id="mNum"></p>
+                    </summary>
+                    <p id="mText"></p>
+                </details>
+            </div>
+    
+            <!-- Attitude  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Attitude</p>
+                            <p id="aNum"></p>
+                    </summary>
+                    <p id="aText"></p>
+                </details>
+            </div>
+    
+            <!-- Life Path ? Expression Bridge  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Life Path/ Expression Bridge</p>
+                            <p id="lpebNum"></p>
+                    </summary>
+                    <p id="lpebText"></p>
+                </details>
+            </div>
+    
+            <!-- Hearts desire ? Personality Bridge  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Heart's desire/ Personality Bridge</p>
+                            <p id="hdpbNum"></p>
+                    </summary>
+                    <p id="hdpbText"></p>
+                </details>
+            </div>
+    
+            <!-- Rational THought  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Rational Thought</p>
+                            <p id="rtNum"></p>
+                    </summary>
+                    <p id="rtText"></p>
+                </details>
+            </div>
+    
+            <!-- Balance Number  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Balance Number</p>
+                            <p id="bnNum"></p>
+                    </summary>
+                    <p id="bnText"></p>
+                </details>
+            </div>
+            
+            <!-- Subconcious Self  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Subconscious Self</p>
+                            <p id="ssNum"></p>
+                    </summary>
+                    <p id="ssText"></p>
+                </details>
+            </div>
+    
+            <!-- Karmic Lesson  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Karmic Lesson</p>
+                            <p id="klNum"></p>
+                    </summary>
+                    <p id="klText"></p>
+                </details>
+            </div>
+    
+            <!-- Karmic Debt  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Karmic Debt</p>
+                            <p id="kdNum"></p>
+                    </summary>
+                    <p id="kdText"></p>
+                </details>
+            </div>
+    
+            <!-- Hidden Passion  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Hidden Passion</p>
+                            <p id="hpNum"></p>
+                    </summary>
+                    <p id="hpText"></p>
+                </details>
+            </div>
+    
+            <!-- Hereditary Name  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Hereditary Name</p>
+                            <p id="hnNum"></p>
+                    </summary>
+                    <p id="hnText"></p>
+                </details>
+            </div>
+    
+            <!-- CornerStone  -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Cornerstone</p>
+                            <p id="cstNum"></p>
+                    </summary>
+                    <p id="cstText"></p>
+                </details>
+            </div>
+    
+            <!-- Physical Plane of Expression -->
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Physical Plane of Expression</p>
+                            <p id="ppoeNum"></p>
+                    </summary>
+                    <p id="ppoeText"></p>
+                </details>
+            </div>
+    
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Mental Plane of Expression</p>
+                            <p id="mpoeNum"></p>
+                    </summary>
+                    <p id="mpoeText"></p>
+                </details>
+            </div>
+    
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Intuitive Plane of Expression</p>
+                            <p id="ipoeNum"></p>
+                    </summary>
+                    <p id="ipoeText"></p>
+                </details>
+            </div>
+    
+    
+            <div class=" lined">
+                <details>
+                    <summary class="cols2">
+                            <p>Emotional Plane of Expression</p>
+                            <p id="epoeNum"></p>
+                    </summary>
+                    <p id="epoeText"></p>
+                </details>
+            </div>
+    
+    
+            <div class="cols2 line">
+                <p class="head1">Chapters of Life: Period Cycle</p>
+                <p class="head2"></p>
+            </div>
+    
             <details>
-                <summary class="cols2">
-                        <p>Attitude</p>
-                        <p id="aNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">First</span> Period Cycle</p>
+                    <p id="fpCycle" > from birth to age _</p>
+                    <p id="fpCycleNum"></p>
                 </summary>
-                <p id="aText"></p>
+                <p id="fpCycleText" class="lined"></p>
             </details>
-        </div>
-
-        <!-- Life Path ? Expression Bridge  -->
-        <div class=" lined">
+            
             <details>
-                <summary class="cols2">
-                        <p>Life Path/ Expression Bridge</p>
-                        <p id="lpebNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">Second</span> Period Cycle</p>
+                    <p id="spCycle"> from age _ to _</p>
+                    <p id="spCycleNum"></p>
                 </summary>
-                <p id="lpebText"></p>
+                <p class="lined" id="spCycleText"></p>
             </details>
-        </div>
-
-        <!-- Hearts desire ? Personality Bridge  -->
-        <div class=" lined">
+    
             <details>
-                <summary class="cols2">
-                        <p>Heart's desire/ Personality Bridge</p>
-                        <p id="hdpbNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">Third</span> Period Cycle</p>
+                    <p id="tpCycle"> from age _ and on</p>
+                    <p id="tpCycleNum"></p>
                 </summary>
-                <p id="hdpbText"></p>
+                <p class="lined" id="tpCycleText"></p>
             </details>
-        </div>
-
-        <!-- Rational THought  -->
-        <div class=" lined">
+    
+    
+    
+            <div class="cols2 line">
+                <p class="head1">Season of Your Life: Pinnacle #</p>
+                <p class="head2"></p>
+            </div>
+    
+            
             <details>
-                <summary class="cols2">
-                        <p>Rational Thought</p>
-                        <p id="rtNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">First</span> Pinnacle</p>
+                    <p id="fPin"> from birth to age _</p>
+                    <p id="fPinNum"></p>
                 </summary>
-                <p id="rtText"></p>
+                <p id="fpPinText" class="lined"></p>
             </details>
-        </div>
-
-        <!-- Balance Number  -->
-        <div class=" lined">
+    
             <details>
-                <summary class="cols2">
-                        <p>Balance Number</p>
-                        <p id="bnNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">Second</span> Pinncale</p>
+                    <p id="sPin"> from age _ to _</p>
+                    <p id="sPinNum"></p>
                 </summary>
-                <p id="bnText"></p>
+                <p class="lined" id="spPinText"></p>
             </details>
-        </div>
-        
-        <!-- Subconcious Self  -->
-        <div class=" lined">
+    
             <details>
-                <summary class="cols2">
-                        <p>Subconscious Self</p>
-                        <p id="ssNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">Third</span> Pinnacle</p>
+                    <p id="tPin"> from age _ to _</p>
+                    <p id="tPinNum"></p>
                 </summary>
-                <p id="ssText"></p>
+                <p id="tpPinText" class="lined"></p>
             </details>
-        </div>
-
-        <!-- Karmic Lesson  -->
-        <div class=" lined">
+    
             <details>
-                <summary class="cols2">
-                        <p>Karmic Lesson</p>
-                        <p id="klNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">Fourth</span> Pinnacle</p>
+                    <p id="ftPin"> from age _ and on</p>
+                    <p id="ftPinNum"></p>
                 </summary>
-                <p id="klText"></p>
+                <p class="lined" id="ftpPinText"></p>
             </details>
-        </div>
-
-        <!-- Karmic Debt  -->
-        <div class=" lined">
+    
+    
+            <div class="cols2 line">
+                <p class="head1">Your Challenges in Life : </p>
+                <p class="head2"></p>
+            </div>
+    
             <details>
-                <summary class="cols2">
-                        <p>Karmic Debt</p>
-                        <p id="kdNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">First</span> Challenge</p>
+                    <p id="fCha">From Birth to 30/35</p>
+                    <p id="fChaNum"></p>
                 </summary>
-                <p id="kdText"></p>
+                <p id="fChaText" class="lined"></p>
             </details>
-        </div>
-
-        <!-- Hidden Passion  -->
-        <div class=" lined">
+            
             <details>
-                <summary class="cols2">
-                        <p>Hidden Passion</p>
-                        <p id="hpNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">Second</span> Challenge</p>
+                    <p id="sCha">From 35 to 55/60</p>
+                    <p id="sChaNum"></p>
                 </summary>
-                <p id="hpText"></p>
+                <p class="lined" id="sChaText"></p>
             </details>
-        </div>
-
-        <!-- Hereditary Name  -->
-        <div class=" lined">
+    
             <details>
-                <summary class="cols2">
-                        <p>Hereditary Name</p>
-                        <p id="hnNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">Third</span> Challenge</p>
+                    <p id="tCha">All your life</p>
+                    <p id="tChaNum"></p>
                 </summary>
-                <p id="hnText"></p>
+                <p class="lined" id="tChaText"></p>
             </details>
-        </div>
-
-        <!-- CornerStone  -->
-        <div class=" lined">
+    
+    
             <details>
-                <summary class="cols2">
-                        <p>Cornerstone</p>
-                        <p id="cstNum"></p>
+                <summary class="cols3-equal lined" id="cols3">
+                    <p > <span class="blue">Fourth</span> Challenge</p>
+                    <p id="ftCha">From 55/60 until death</p>
+                    <p id="ftChaNum"></p>
                 </summary>
-                <p id="cstText"></p>
+                <p class="lined" id="ftChaText"></p>
             </details>
-        </div>
-
-        <!-- Physical Plane of Expression -->
-        <div class=" lined">
+    
+    
+            <!-- Percentage of Numbers  -->
+            <h3 id="yforecast">Percentage of Your Numbers</h3>
             <details>
-                <summary class="cols2">
-                        <p>Physical Plane of Expression</p>
-                        <p id="ppoeNum"></p>
+                <summary class=" lined" id="cols4Equal">
+                    <div class="per-div">
+                        <span class="numHead">1</span>
+                        <span class="perc" id="onePerc">10%</span>
+                    </div>
+                        
+                    <div class="per-div">
+                        <span class="numHead">2</span>
+                        <span class="perc" id="twoPerc">10%</span>
+                    </div>
+     
+                    <div class="per-div">
+                        <span class="numHead">3</span>
+                        <span class="perc" id="threePerc">10%</span>
+                    </div>
+    
+    
+                    <div class="per-div">
+                        <span class="numHead">4</span>
+                        <span class="perc" id="fourPerc">10%</span>
+                    </div>
+    
+                    <div class="per-div">
+                        <span class="numHead">5</span>
+                        <span class="perc" id="fivePerc">10%</span>
+                    </div>
+    
+                    <div class="per-div">
+                        <span class="numHead">6</span>
+                        <span class="perc" id="sixPerc">10%</span>
+                    </div>
+    
+                    <div class="per-div">
+                        <span class="numHead">7</span>
+                        <span class="perc" id="sevenPerc">10%</span>
+                    </div>
+    
+                    <div class="per-div">
+                        <span class="numHead">8</span>
+                        <span class="perc" id="eightPerc">10%</span>
+                    </div>
+    
+                    <div class="per-div">
+                        <span class="numHead">9</span>
+                        <span class="perc" id="ninePerc">10%</span>
+                    </div>
+    
+    
                 </summary>
-                <p id="ppoeText"></p>
+    
+                <p class="lined" id="percentText"></p>
             </details>
-        </div>
-
-        <div class=" lined">
+    
+    
+            <!-- Relationship compatibility  -->
+            <h3 id="yforecast">Relationship Compatibility </h3>
             <details>
-                <summary class="cols2">
-                        <p>Mental Plane of Expression</p>
-                        <p id="mpoeNum"></p>
+                <summary class=" lined" id="cols4Equal" >
+                    <div class="comp-div">
+                        <span class="comp" id="oneColor">1</span>
+                    </div>
+                    <div class="comp-div">
+                        <span class="comp" id="twoColor">2</span>
+                    </div>
+                    <div class="comp-div">
+                        <span class="comp" id="threeColor">3</span>
+                    </div>
+                    <div class="comp-div">
+                        <span class="comp" id="fourColor">4</span>
+                    </div>
+                    <div class="comp-div">
+                        <span class="comp" id="fiveColor">5</span>
+                    </div>
+                    <div class="comp-div">
+                        <span class="comp" id="sixColor">6</span>
+                    </div>
+                    <div class="comp-div">
+                        <span class="comp" id="sevenColor">7</span>
+                    </div>
+                    <div class="comp-div">
+                        <span class="comp" id="eightColor">8</span>
+                    </div>
+                    <div class="comp-div">
+                        <span class="comp" id="nineColor">9</span>
+                    </div>
                 </summary>
-                <p id="mpoeText"></p>
+                <p class="lined" id="relCompText"></p>
             </details>
-        </div>
-
-        <div class=" lined">
+    
+    
+            <h3 id="yforecast">Yearly Forecast Cycles </h3>
             <details>
-                <summary class="cols2">
-                        <p>Intuitive Plane of Expression</p>
-                        <p id="ipoeNum"></p>
-                </summary>
-                <p id="ipoeText"></p>
-            </details>
-        </div>
-
-
-        <div class=" lined">
-            <details>
-                <summary class="cols2">
-                        <p>Emotional Plane of Expression</p>
-                        <p id="epoeNum"></p>
-                </summary>
-                <p id="epoeText"></p>
-            </details>
-        </div>
-
-
-        <div class="cols2 line">
-            <p class="head1">Chapters of Life: Period Cycle</p>
-            <p class="head2"></p>
-        </div>
-
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">First</span> Period Cycle</p>
-                <p id="fpCycle" > from birth to age _</p>
-                <p id="fpCycleNum"></p>
-            </summary>
-            <p id="fpCycleText" class="lined"></p>
-        </details>
-        
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">Second</span> Period Cycle</p>
-                <p id="spCycle"> from age _ to _</p>
-                <p id="spCycleNum"></p>
-            </summary>
-            <p class="lined" id="spCycleText"></p>
-        </details>
-
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">Third</span> Period Cycle</p>
-                <p id="tpCycle"> from age _ and on</p>
-                <p id="tpCycleNum"></p>
-            </summary>
-            <p class="lined" id="tpCycleText"></p>
-        </details>
-
-
-
-        <div class="cols2 line">
-            <p class="head1">Season of Your Life: Pinnacle #</p>
-            <p class="head2"></p>
-        </div>
-
-        
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">First</span> Pinnacle</p>
-                <p id="fPin"> from birth to age _</p>
-                <p id="fPinNum"></p>
-            </summary>
-            <p id="fpPinText" class="lined"></p>
-        </details>
-
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">Second</span> Pinncale</p>
-                <p id="sPin"> from age _ to _</p>
-                <p id="sPinNum"></p>
-            </summary>
-            <p class="lined" id="spPinText"></p>
-        </details>
-
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">Third</span> Pinnacle</p>
-                <p id="tPin"> from age _ to _</p>
-                <p id="tPinNum"></p>
-            </summary>
-            <p id="tpPinText" class="lined"></p>
-        </details>
-
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">Fourth</span> Pinnacle</p>
-                <p id="ftPin"> from age _ and on</p>
-                <p id="ftPinNum"></p>
-            </summary>
-            <p class="lined" id="ftpPinText"></p>
-        </details>
-
-
-        <div class="cols2 line">
-            <p class="head1">Your Challenges in Life : </p>
-            <p class="head2"></p>
-        </div>
-
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">First</span> Challenge</p>
-                <p id="fCha">From Birth to 30/35</p>
-                <p id="fChaNum"></p>
-            </summary>
-            <p id="fChaText" class="lined"></p>
-        </details>
-        
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">Second</span> Challenge</p>
-                <p id="sCha">From 35 to 55/60</p>
-                <p id="sChaNum"></p>
-            </summary>
-            <p class="lined" id="sChaText"></p>
-        </details>
-
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">Third</span> Challenge</p>
-                <p id="tCha">All your life</p>
-                <p id="tChaNum"></p>
-            </summary>
-            <p class="lined" id="tChaText"></p>
-        </details>
-
-
-        <details>
-            <summary class="cols3-equal lined" id="cols3">
-                <p > <span class="blue">Fourth</span> Challenge</p>
-                <p id="ftCha">From 55/60 until death</p>
-                <p id="ftChaNum"></p>
-            </summary>
-            <p class="lined" id="ftChaText"></p>
-        </details>
-
-
-        <!-- Percentage of Numbers  -->
-        <h3 id="yforecast">Percentage of Your Numbers</h3>
-        <details>
-            <summary class=" lined" id="cols4Equal">
-                <div class="per-div">
-                    <span class="numHead">1</span>
-                    <span class="perc" id="onePerc">10%</span>
-                </div>
+                <summary class="cols8 lined"  >
+                    <p class="numHead" >Physical <br>Transit</p>                 
+                    <p class="numHead" >Spiritual <br>Transit</p>       
+                    <p class="numHead">Mental <br>Transit</p>
+                    <p class="numHead">Essence <br>Cycle</p>
                     
-                <div class="per-div">
-                    <span class="numHead">2</span>
-                    <span class="perc" id="twoPerc">10%</span>
-                </div>
- 
-                <div class="per-div">
-                    <span class="numHead">3</span>
-                    <span class="perc" id="threePerc">10%</span>
-                </div>
-
-
-                <div class="per-div">
-                    <span class="numHead">4</span>
-                    <span class="perc" id="fourPerc">10%</span>
-                </div>
-
-                <div class="per-div">
-                    <span class="numHead">5</span>
-                    <span class="perc" id="fivePerc">10%</span>
-                </div>
-
-                <div class="per-div">
-                    <span class="numHead">6</span>
-                    <span class="perc" id="sixPerc">10%</span>
-                </div>
-
-                <div class="per-div">
-                    <span class="numHead">7</span>
-                    <span class="perc" id="sevenPerc">10%</span>
-                </div>
-
-                <div class="per-div">
-                    <span class="numHead">8</span>
-                    <span class="perc" id="eightPerc">10%</span>
-                </div>
-
-                <div class="per-div">
-                    <span class="numHead">9</span>
-                    <span class="perc" id="ninePerc">10%</span>
-                </div>
-
-
-            </summary>
-
-            <p class="lined" id="percentText"></p>
-        </details>
-
-
-        <!-- Relationship compatibility  -->
-        <h3 id="yforecast">Relationship Compatibility </h3>
-        <details>
-            <summary class=" lined" id="cols4Equal" >
-                <div class="comp-div">
-                    <span class="comp" id="oneColor">1</span>
-                </div>
-                <div class="comp-div">
-                    <span class="comp" id="twoColor">2</span>
-                </div>
-                <div class="comp-div">
-                    <span class="comp" id="threeColor">3</span>
-                </div>
-                <div class="comp-div">
-                    <span class="comp" id="fourColor">4</span>
-                </div>
-                <div class="comp-div">
-                    <span class="comp" id="fiveColor">5</span>
-                </div>
-                <div class="comp-div">
-                    <span class="comp" id="sixColor">6</span>
-                </div>
-                <div class="comp-div">
-                    <span class="comp" id="sevenColor">7</span>
-                </div>
-                <div class="comp-div">
-                    <span class="comp" id="eightColor">8</span>
-                </div>
-                <div class="comp-div">
-                    <span class="comp" id="nineColor">9</span>
-                </div>
-            </summary>
-            <p class="lined" id="relCompText"></p>
-        </details>
-
-
-        <h3 id="yforecast">Yearly Forecast Cycles </h3>
-        <details>
-            <summary class="cols8 lined"  >
-                <p class="numHead" >Physical <br>Transit</p>                 
-                <p class="numHead" >Spiritual <br>Transit</p>       
-                <p class="numHead">Mental <br>Transit</p>
-                <p class="numHead">Essence <br>Cycle</p>
-                
-                <p class="perc" id="phtrNum"></p>
-                <p  class="perc" id="sptrNum"></p>
-                <p class="perc" id="metrNum"></p>            
-                <p class="perc" id="escyNum"></p>
-            </summary>
-            <p id="phyText" class="lined"></p>
-            <p id="essText" class="lined"></p>
-        </details>
-        
-
-        <h3 id="ymdp">Yearly/Monthly/Daily Personal Cylces</h3>
-
-        <div class="bold-head" id="force" >
-            <p >Personal <br>Year</p> 
-            <p>Personal <br>Month</p>
-            <p>Personal <br>Day</p>
-        </div>
-
-        <div class="cols3-equal lined" >
-            <p class="numHead" id="cYear">2022</p>
-            <p class="numHead" id="cMonth">February</p>
-            <p class="numHead" id="cDay">Thursday</p>
-        </div>
-
-        <details>
-            <summary class="cols3-equal lined">
-                <p class="perc" id="cYearNum"></p>
-                <p class="perc" id="cMonthNum"></p>
-                <p class="perc" id="cDayNum"></p>
-            </summary>
-            <p class="lined" id="perYearText"></p>
-            <p class="lined" id="perMonthText"></p>
-            <p class="lined" id="perDayText"></p>
-        </details>
-
-
-
+                    <p class="perc" id="phtrNum"></p>
+                    <p  class="perc" id="sptrNum"></p>
+                    <p class="perc" id="metrNum"></p>            
+                    <p class="perc" id="escyNum"></p>
+                </summary>
+                <p id="phyText" class="lined"></p>
+                <p id="essText" class="lined"></p>
+            </details>
+            
+    
+            <h3 id="ymdp">Yearly/Monthly/Daily Personal Cylces</h3>
+    
+            <div class="bold-head" id="force" >
+                <p >Personal <br>Year</p> 
+                <p>Personal <br>Month</p>
+                <p>Personal <br>Day</p>
+            </div>
+    
+            <div class="cols3-equal lined" >
+                <p class="numHead" id="cYear">2022</p>
+                <p class="numHead" id="cMonth">February</p>
+                <p class="numHead" id="cDay">Thursday</p>
+            </div>
+    
+            <details>
+                <summary class="cols3-equal lined">
+                    <p class="perc" id="cYearNum"></p>
+                    <p class="perc" id="cMonthNum"></p>
+                    <p class="perc" id="cDayNum"></p>
+                </summary>
+                <p class="lined" id="perYearText"></p>
+                <p class="lined" id="perMonthText"></p>
+                <p class="lined" id="perDayText"></p>
+            </details>
+    
+    
+    
+        </section>
+    
+        <!-- <iframe src="https://tinsel19.github.io/numerology-calculator/" frameborder="0" width="100%" height="1000px"></iframe> -->
+    
+        </section>
     </section>
-
-    <!-- <iframe src="https://tinsel19.github.io/numerology-calculator/" frameborder="0" width="100%" height="1000px"></iframe> -->
-
-    </section>
+    
 
     
   <script src="index.js">

@@ -15199,7 +15199,7 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
         <h3 class="bold-description-label">Negative Characteristics</h3> <br> <br>
         Unpredictable, too many fast decisions, unfaithful, impatience,
         lack of commitment, restless, dissatisfied, edgy personality and
-        attitude, unreliable
+        attitude, unreliable, always on the go or moving.
     </p> <br> <br>
 
     <p class="lined" >

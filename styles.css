@@ -141,6 +141,8 @@ input {
     color: grey;
 }
 
+
+
 .green {
     color: #0B666A;
     font-weight: bold;
@@ -519,6 +521,10 @@ select {
 input::after {
     background-color: red;
 
+}
+
+.styled-input input {
+    text-align: center;
 }
 
 

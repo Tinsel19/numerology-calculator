@@ -18099,10 +18099,10 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
 
     var personalDay, cMonthInt;
 
-    var cMonthText = monthNum;
-    if (cMonthText === '11/2') {
+    var cMonthText = String(monthNum);
+    if (cMonthText === '11/2' || cMonthText === '11') {
         cMonthInt = 11
-    } else if (cMonthText === '22/4') {
+    } else if (cMonthText === '22/4' || cMonthText === '22') {
         cMonthInt = 22;
     } else if (cMonthText === '33/6') {
         cMonthInt = 33;

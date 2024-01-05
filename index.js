@@ -17723,9 +17723,9 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     cMonthNum.innerHTML = '<b>' + personalMonth + '</b>';
 
     var perCMText = (cMonthNum.textContent).trim();
-    var perCMInt = perCYText.split('/');
+    var perCMInt = perCMText.split('/');
 
-
+    
     if (perCMText === '1' || perCMText === '10/1' || perCMInt[perCMInt.length - 1] === '1') {
         perMonthText.innerHTML = `
         <h3 class="bold-description-label">Definition</h3> <br>

@@ -15840,7 +15840,6 @@ if (fpinText === '1' || fpinText === '10/1' || fpinInt[fpinInt.length - 1] === '
     yearNum = Number(yearString);
     var yearDiff;
     
-
     if (currentYear === yearNum) {
         yearDiff = 1;
     } else if (currentYear < yearNum) {

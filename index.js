@@ -9990,15 +9990,17 @@ your    cool or temper.
             } else if (finalList[i] === 11 || finalList[i] === 22 || finalList[i] === 33) {
                 mSplit = String(countList[i]).split('');
                 sum = eval(mSplit.join('+'));
-                count = countList[i] + '/' + sum;
+                count = countList[i] ;
+                // console.log(count);
             } else {
                 mSplit = String(countList[i]).split('');
                 sum = eval(mSplit.join('+'));
                 count = sum;
             }
-            sumCount += count
+            sumCount += count;
             
         }
+        console.log(sumCount);
         // mSplit = String(sumCount).split('');
         // sum = eval(mSplit.join('+'));
         sum = sumCount;
@@ -10013,9 +10015,17 @@ your    cool or temper.
             mSplit = String(sum).split('');
             sum = eval(mSplit.join('+'));
             ipoeNum.innerHTML = count + '/' + sum;
+        } else if (sum === '11/2') {
+            ipoeNum.innerHTML = sum;
+        } else if (sum === '22/4') {
+            ipoeNum.innerHTML = sum;
+        } else if (sum === '33/6') {
+            ipoeNum.innerHTML = sum;
         } else {
             mSplit = String(sum).split('');
+            console.log(mSplit);
             sum = eval(mSplit.join('+'));
+            console.log(sum);
             ipoeNum.innerHTML = sum;
         }
         count = sum;
